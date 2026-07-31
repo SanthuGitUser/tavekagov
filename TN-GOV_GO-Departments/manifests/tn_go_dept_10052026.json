@@ -1,0 +1,23 @@
+{
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "target_date": "10-05-2026",
+  "count": 2,
+  "orders": [
+    {
+      "go_date": "10-05-2026",
+      "go_number": "G.O Ms. No. 328",
+      "go_name": "MINISTERS-Resignation-Notified.",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_328_2026.pdf"
+    },
+    {
+      "go_date": "10-05-2026",
+      "go_number": "G.O Ms.No. 329",
+      "go_name": "MINISTERS-Appointment-Notified.",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_329_2026.pdf"
+    }
+  ]
+}

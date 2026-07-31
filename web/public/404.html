@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TavekaGov</title>
+    <script>
+      (function () {
+        var redirect = sessionStorage.getItem("gh-pages-redirect");
+        if (redirect) {
+          sessionStorage.removeItem("gh-pages-redirect");
+          history.replaceState(null, "", redirect);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <script>
+      sessionStorage.setItem(
+        "gh-pages-redirect",
+        location.pathname + location.search + location.hash,
+      );
+      location.replace(
+        location.origin + location.pathname.split("/").slice(0, 2).join("/") + "/",
+      );
+    </script>
+  </body>
+</html>

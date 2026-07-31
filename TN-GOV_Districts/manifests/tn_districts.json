@@ -1,0 +1,386 @@
+{
+  "source_url": "https://www.tn.gov.in/district_list.php",
+  "count": 38,
+  "districts": [
+    {
+      "id": 1,
+      "name": "Ariyalur",
+      "dt_cd_encoded": "MQ==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MQ==",
+      "area_size": "1,93,398 sq. kms.",
+      "population": "7,54,894",
+      "website_url": "https://ariyalur.nic.in/",
+      "display_order": 1
+    },
+    {
+      "id": 35,
+      "name": "Chengalpattu",
+      "dt_cd_encoded": "MzU=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MzU=",
+      "area_size": "2,63,892 sq.km.",
+      "population": "25,56,244",
+      "website_url": "https://chengalpattu.nic.in/",
+      "display_order": 2
+    },
+    {
+      "id": 2,
+      "name": "Chennai",
+      "dt_cd_encoded": "Mg==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Mg==",
+      "area_size": "4,4111 sq. kms.",
+      "population": "67,48,026",
+      "website_url": "https://chennai.nic.in/",
+      "display_order": 3
+    },
+    {
+      "id": 3,
+      "name": "Coimbatore",
+      "dt_cd_encoded": "Mw==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Mw==",
+      "area_size": "4950.675923 Sq. Km.",
+      "population": "34,58,045",
+      "website_url": "https://coimbatore.nic.in/",
+      "display_order": 4
+    },
+    {
+      "id": 4,
+      "name": "Cuddalore",
+      "dt_cd_encoded": "NA==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=NA==",
+      "area_size": "3,67,781 Sq. k.m.",
+      "population": "26,05,914",
+      "website_url": "https://cuddalore.nic.in/",
+      "display_order": 5
+    },
+    {
+      "id": 5,
+      "name": "Dharmapuri",
+      "dt_cd_encoded": "NQ==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=NQ==",
+      "area_size": "4,49,777 Sq. Km.",
+      "population": "15,06,843",
+      "website_url": "https://dharmapuri.nic.in/",
+      "display_order": 6
+    },
+    {
+      "id": 6,
+      "name": "Dindigul",
+      "dt_cd_encoded": "Ng==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Ng==",
+      "area_size": "6,26,664 sq. km.",
+      "population": "21,59,775",
+      "website_url": "https://dindigul.nic.in/",
+      "display_order": 7
+    },
+    {
+      "id": 7,
+      "name": "Erode",
+      "dt_cd_encoded": "Nw==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Nw==",
+      "area_size": "5,72,264 sq. k.m.",
+      "population": "22,51,744",
+      "website_url": "https://erode.nic.in/",
+      "display_order": 8
+    },
+    {
+      "id": 34,
+      "name": "Kallakurichi",
+      "dt_cd_encoded": "MzQ=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MzQ=",
+      "area_size": "3,30,735 sq. km.",
+      "population": "13,70,281",
+      "website_url": "https://kallakurichi.nic.in/",
+      "display_order": 9
+    },
+    {
+      "id": 8,
+      "name": "Kancheepuram",
+      "dt_cd_encoded": "OA==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=OA==",
+      "area_size": "1,70,479 sq. km.",
+      "population": "11,66,401",
+      "website_url": "https://kancheepuram.nic.in/",
+      "display_order": 10
+    },
+    {
+      "id": 9,
+      "name": "Kanniyakumari",
+      "dt_cd_encoded": "OQ==",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=OQ==",
+      "area_size": "1,67,200 Sq. Km.",
+      "population": "18,70,374",
+      "website_url": "https://kanniyakumari.nic.in/",
+      "display_order": 11
+    },
+    {
+      "id": 10,
+      "name": "Karur",
+      "dt_cd_encoded": "MTA=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTA=",
+      "area_size": "2,89,557 sq. km.",
+      "population": "10,64,493",
+      "website_url": "https://karur.nic.in/",
+      "display_order": 12
+    },
+    {
+      "id": 11,
+      "name": "Krishnagiri",
+      "dt_cd_encoded": "MTE=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTE=",
+      "area_size": "5,14,326 sq. km.",
+      "population": "18,83,731",
+      "website_url": "https://krishnagiri.nic.in/",
+      "display_order": 13
+    },
+    {
+      "id": 12,
+      "name": "Madurai",
+      "dt_cd_encoded": "MTI=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTI=",
+      "area_size": "3,74,173 sq. km.",
+      "population": "30,38,252",
+      "website_url": "https://madurai.nic.in/",
+      "display_order": 14
+    },
+    {
+      "id": 38,
+      "name": "Mayiladuthurai",
+      "dt_cd_encoded": "Mzg=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Mzg=",
+      "area_size": "1,17,358 sq.km.",
+      "population": "9,18,356",
+      "website_url": "https://mayiladuthurai.nic.in/",
+      "display_order": 15
+    },
+    {
+      "id": 13,
+      "name": "Nagapattinam",
+      "dt_cd_encoded": "MTM=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTM=",
+      "area_size": "1,54,225 sq. km.",
+      "population": "16,16,450",
+      "website_url": "https://www.nagapattinam.nic.in/",
+      "display_order": 16
+    },
+    {
+      "id": 14,
+      "name": "Namakkal",
+      "dt_cd_encoded": "MTQ=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTQ=",
+      "area_size": "3,36,719 Sq.Kms.",
+      "population": "17,26,601",
+      "website_url": "https://namakkal.nic.in/",
+      "display_order": 17
+    },
+    {
+      "id": 15,
+      "name": "Perambalur",
+      "dt_cd_encoded": "MTU=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTU=",
+      "area_size": "1,757 sq. k.m.",
+      "population": "5,65,223",
+      "website_url": "https://perambalur.nic.in/",
+      "display_order": 18
+    },
+    {
+      "id": 16,
+      "name": "Pudukkottai",
+      "dt_cd_encoded": "MTY=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTY=",
+      "area_size": "4,66,329 sq. km.",
+      "population": "16,18,345",
+      "website_url": "https://pudukkottai.nic.in/",
+      "display_order": 19
+    },
+    {
+      "id": 17,
+      "name": "Ramanathapuram",
+      "dt_cd_encoded": "MTc=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTc=",
+      "area_size": "4,08,957 sq. km.",
+      "population": "13,53,445",
+      "website_url": "https://ramanathapuram.nic.in/",
+      "display_order": 20
+    },
+    {
+      "id": 37,
+      "name": "Ranipet",
+      "dt_cd_encoded": "Mzc=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Mzc=",
+      "area_size": "1,85,553 sq. km.",
+      "population": "12,10,277",
+      "website_url": "https://ranipet.nic.in/",
+      "display_order": 21
+    },
+    {
+      "id": 18,
+      "name": "Salem",
+      "dt_cd_encoded": "MTg=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTg=",
+      "area_size": "5,20,530 sq. km.",
+      "population": "34,82,056",
+      "website_url": "https://salem.nic.in/",
+      "display_order": 22
+    },
+    {
+      "id": 19,
+      "name": "Sivaganga",
+      "dt_cd_encoded": "MTk=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MTk=",
+      "area_size": "4,18,900 sq. k.m.",
+      "population": "13,39,101",
+      "website_url": "https://sivaganga.nic.in/in/",
+      "display_order": 23
+    },
+    {
+      "id": 33,
+      "name": "Tenkasi",
+      "dt_cd_encoded": "MzM=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MzM=",
+      "area_size": "2,88,244 sq. km .",
+      "population": "33,22,644",
+      "website_url": "https://tenkasi.nic.in/",
+      "display_order": 24
+    },
+    {
+      "id": 20,
+      "name": "Thanjavur",
+      "dt_cd_encoded": "MjA=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MjA=",
+      "area_size": "3,39,657 sq. k.m.",
+      "population": "24,05,890",
+      "website_url": "https://thanjavur.nic.in/",
+      "display_order": 25
+    },
+    {
+      "id": 22,
+      "name": "Theni",
+      "dt_cd_encoded": "MjI=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MjI=",
+      "area_size": "3242.3 sq. km.",
+      "population": "12,45,899",
+      "website_url": "https://theni.nic.in/",
+      "display_order": 26
+    },
+    {
+      "id": 21,
+      "name": "The Nilgiris",
+      "dt_cd_encoded": "MjE=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MjE=",
+      "area_size": "2,54,485 Sq. K.M.",
+      "population": "7,35,394",
+      "website_url": "https://nilgiris.nic.in/",
+      "display_order": 27
+    },
+    {
+      "id": 29,
+      "name": "Thoothukudi",
+      "dt_cd_encoded": "Mjk=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Mjk=",
+      "area_size": "4,70,724",
+      "population": "17,50,176",
+      "website_url": "https://thoothukudi.nic.in/",
+      "display_order": 28
+    },
+    {
+      "id": 27,
+      "name": "Tiruchirappalli",
+      "dt_cd_encoded": "Mjc=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Mjc=",
+      "area_size": "4,40,383",
+      "population": "27,22,290",
+      "website_url": "https://tiruchirappalli.nic.in/",
+      "display_order": 29
+    },
+    {
+      "id": 26,
+      "name": "Tirunelveli",
+      "dt_cd_encoded": "MjY=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MjY=",
+      "area_size": "3,87,606 sq. km.",
+      "population": "33,22,644",
+      "website_url": "https://tirunelveli.nic.in/",
+      "display_order": 30
+    },
+    {
+      "id": 36,
+      "name": "Tirupathur",
+      "dt_cd_encoded": "MzY=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MzY=",
+      "area_size": "1,83,201 sq. km.",
+      "population": "12,79,953",
+      "website_url": "https://tirupathur.nic.in/",
+      "display_order": 31
+    },
+    {
+      "id": 28,
+      "name": "Tiruppur",
+      "dt_cd_encoded": "Mjg=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=Mjg=",
+      "area_size": "5,19,559 sq.kms",
+      "population": "24,79,052",
+      "website_url": "https://tiruppur.nic.in/",
+      "display_order": 32
+    },
+    {
+      "id": 23,
+      "name": "Tiruvallur",
+      "dt_cd_encoded": "MjM=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MjM=",
+      "area_size": "3,24,069 sq. km.",
+      "population": "37,28,104",
+      "website_url": "https://tiruvallur.nic.in/",
+      "display_order": 33
+    },
+    {
+      "id": 24,
+      "name": "Tiruvannamalai",
+      "dt_cd_encoded": "MjQ=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MjQ=",
+      "area_size": "6,31,205",
+      "population": "24,64,875",
+      "website_url": "https://tiruvannamalai.nic.in/",
+      "display_order": 34
+    },
+    {
+      "id": 25,
+      "name": "Tiruvarur",
+      "dt_cd_encoded": "MjU=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MjU=",
+      "area_size": "2,09,709",
+      "population": "12,64,277",
+      "website_url": "https://tiruvarur.nic.in/",
+      "display_order": 35
+    },
+    {
+      "id": 30,
+      "name": "Vellore",
+      "dt_cd_encoded": "MzA=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MzA=",
+      "area_size": "2,23,264 sq.km.",
+      "population": "16,14,242",
+      "website_url": "https://vellore.nic.in/",
+      "display_order": 36
+    },
+    {
+      "id": 31,
+      "name": "Viluppuram",
+      "dt_cd_encoded": "MzE=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MzE=",
+      "area_size": "3,91,468 sq. km.",
+      "population": "20,71,179",
+      "website_url": "https://viluppuram.nic.in/",
+      "display_order": 37
+    },
+    {
+      "id": 32,
+      "name": "Virudhunagar",
+      "dt_cd_encoded": "MzI=",
+      "profile_url": "https://www.tn.gov.in/district1.php?dt_cd=MzI=",
+      "area_size": "4,24,323 sq. km.",
+      "population": "19,43,309",
+      "website_url": "https://virudhunagar.nic.in/",
+      "display_order": 38
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+export type PressRelease = {
+  id: number;
+  name: string;
+  pr_date: string;
+  dipr_pr_no: string | null;
+  pdf_url: string;
+  release_type: string | null;
+  department_name: string | null;
+  topic: string | null;
+  department_id: number | null;
+  minister_id: number | null;
+  name_parsed: boolean;
+  parse_confidence: string | null;
+  minister_match_confidence: string | null;
+  created_at: string;
+};
+
+export type TnDept = {
+  id: number;
+  name: string;
+  dep_id_encoded: string;
+  minister_name: string | null;
+  display_order: number;
+};
+
+export type TnMinister = {
+  id: number;
+  name: string;
+  designation: string;
+  portfolio: string | null;
+  photo_url: string | null;
+  display_order: number;
+  is_chief_minister: boolean;
+};
+
+export type TnDistrict = {
+  id: number;
+  name: string;
+  dt_cd_encoded: string;
+  area_size: string | null;
+  population: string | null;
+  website_url: string | null;
+  display_order: number;
+};
+
+export type TnGoDept = {
+  id: number;
+  go_date: string;
+  go_number: string;
+  go_name: string;
+  department_name: string;
+  dep_id_encoded: string;
+  pdf_url: string;
+};
+
+export type Magazine = {
+  id: number;
+  name: string;
+  issue_date: string;
+  url: string;
+  created_at: string;
+  updated_at: string;
+};
+
+export type GovPressRelease = {
+  id: number;
+  image_url: string;
+  release_date: string;
+  title: string | null;
+  file_name: string | null;
+  minister_name: string | null;
+  department_name: string | null;
+  minister_id: number | null;
+  department_id: number | null;
+  district_id: number | null;
+  title_parsed: boolean;
+  parse_confidence: string | null;
+  minister_match_confidence: string | null;
+  department_match_confidence: string | null;
+  district_match_confidence: string | null;
+  cm_visits: boolean;
+  postings: boolean;
+  review_meetings: boolean;
+  budget: boolean;
+  tributes: boolean;
+  others: boolean;
+  inspection: boolean;
+  portfolio: boolean;
+  created_at: string;
+  updated_at: string;
+};
+
+export type TnTransfersPosting = {
+  id: number;
+  serial_number: number;
+  go_date: string;
+  go_number: string;
+  subject: string;
+  pdf_url: string;
+  created_at: string;
+  updated_at: string;
+};
+
+export type DashboardStats = {
+  pressReleases: number;
+  departments: number;
+  ministers: number;
+  districts: number;
+  governmentOrders: number;
+  transfersPostings: number;
+};
+
+export type Database = {
+  public: {
+    Tables: {
+      tn_press_release: { Row: PressRelease };
+      tn_dept: { Row: TnDept };
+      tn_ministers: { Row: TnMinister };
+      tn_districts: { Row: TnDistrict };
+      tn_go_dept: { Row: TnGoDept };
+      magazine: { Row: Magazine };
+      tn_gov_press_releases: { Row: GovPressRelease };
+      tn_transfers_postings: { Row: TnTransfersPosting };
+    };
+  };
+};

@@ -1,0 +1,85 @@
+import type { NewsArticle, NewsFeedResponse } from "@/types/news";
+
+type NewsResponseFile = {
+  fetchedAt?: string;
+  request?: {
+    url?: string;
+    params?: Record<string, string>;
+  };
+  response?: {
+    status: string;
+    totalResults: number;
+    results: NewsArticle[];
+  };
+  status?: string;
+  totalResults?: number;
+  results?: NewsArticle[];
+};
+
+const responseJsonFiles = import.meta.glob(
+  "../../../TN-News/Response JSON/*.json",
+  { eager: true, import: "default" },
+) as Record<string, NewsResponseFile>;
+
+function getArticleDate(article: NewsArticle): string {
+  const normalized = article.pubDate.includes("T")
+    ? article.pubDate
+    : article.pubDate.replace(" ", "T");
+  return normalized.slice(0, 10);
+}
+
+function extractResults(file: NewsResponseFile): NewsArticle[] {
+  if (file.response?.results) return file.response.results;
+  if (file.results) return file.results;
+  return [];
+}
+
+function extractRequestMeta(file: NewsResponseFile): NewsResponseFile["request"] | undefined {
+  return file.request;
+}
+
+function buildFeed(): NewsFeedResponse {
+  const files = Object.values(responseJsonFiles);
+  const seen = new Set<string>();
+  const results: NewsArticle[] = [];
+  let firstRequest: NewsResponseFile["request"];
+
+  for (const file of files) {
+    if (!firstRequest) {
+      firstRequest = extractRequestMeta(file);
+    }
+
+    for (const article of extractResults(file)) {
+      const dedupeKey = article.article_id || article.link;
+      if (!dedupeKey || seen.has(dedupeKey)) continue;
+      seen.add(dedupeKey);
+      results.push(article);
+    }
+  }
+
+  results.sort((a, b) => b.pubDate.localeCompare(a.pubDate));
+
+  const dates = results.map(getArticleDate).sort();
+  const filterDate = dates.at(-1) ?? "";
+  const params = firstRequest?.params ?? {};
+
+  return {
+    status: "success",
+    totalResults: results.length,
+    filterDate,
+    sourceQuery: {
+      endpoint: firstRequest?.url ?? "https://newsdata.io/api/1/news",
+      q: params.q ?? "Tamil Nadu",
+      country: params.country ?? "in",
+      language: params.language ?? "en",
+    },
+    results,
+  };
+}
+
+export const tamilNaduNewsFeed = buildFeed();
+
+export function getAvailableNewsDates(): string[] {
+  const dates = new Set(tamilNaduNewsFeed.results.map(getArticleDate));
+  return [...dates].sort().reverse();
+}

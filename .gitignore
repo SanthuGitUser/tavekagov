@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+.env.local
+*.local
+
+# Node / frontend build
+node_modules/
+dist/
+dist-ssr/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.sw?
