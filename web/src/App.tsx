@@ -167,7 +167,7 @@ export default function App() {
             <NewsSearchProvider>
               <AppLayout
                 title="Tamil Nadu News"
-                description="English-language Tamil Nadu news from thenewsminute.com and timesnownews.com."
+                description="Tamil Nadu news via NewsData.io"
               />
             </NewsSearchProvider>
           }
