@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 import { ActivityChart } from "@/components/dashboard/ActivityChart";
+import { NewsCategoryChart } from "@/components/dashboard/NewsCategoryChart";
 import { StatCard } from "@/components/dashboard/StatCard";
 import { DataTable } from "@/components/data/DataTable";
 import { ErrorState } from "@/components/shared/ErrorState";
@@ -23,6 +24,7 @@ import {
   fetchMonthlyCounts,
   fetchRecentPressReleases,
 } from "@/lib/queries";
+import { tamilNaduNewsFeed } from "@/lib/tamilNaduNewsFeed";
 import { formatDate } from "@/lib/utils";
 import type { PressRelease } from "@/types/database";
 
@@ -129,6 +131,8 @@ export function DashboardPage() {
           </CardContent>
         </Card>
       </div>
+
+      <NewsCategoryChart articles={tamilNaduNewsFeed.results} />
 
       <Card>
         <CardHeader className="flex flex-row items-center justify-between">
