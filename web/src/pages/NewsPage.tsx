@@ -1,9 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 
-import { NewsArticleCard } from "@/components/news/NewsArticleCard";
+import { NewsStoryCard } from "@/components/news/NewsStoryCard";
 import { NewsCategoryFilters } from "@/components/news/NewsCategoryFilters";
 import { isDateInNewsRange } from "@/components/news/NewsDatePicker";
-import { getNewsFilters, matchesNewsFilter } from "@/components/news/newsFilterUtils";
+import {
+  getStoryFilters,
+  groupNewsArticles,
+  storyMatchesCategory,
+  storyMatchesSearch,
+} from "@/components/news/newsGroupUtils";
 import { getLatestValidDate } from "@/components/shared/VerticalDatePicker";
 import { useNewsSearch } from "@/context/NewsSearchContext";
 import { getAvailableNewsDates, tamilNaduNewsFeed as feed } from "@/lib/tamilNaduNewsFeed";
@@ -16,21 +21,8 @@ function getArticleDate(article: NewsArticle): string {
   return normalized.slice(0, 10);
 }
 
-function matchesSearch(article: NewsArticle, query: string): boolean {
-  const haystack = [
-    article.title,
-    article.description,
-    article.source_name,
-    article.source_id,
-    ...(article.keywords ?? []),
-    ...(article.creator ?? []),
-    ...article.category,
-    ...article.country,
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-  return haystack.includes(query);
+function isArticleInDateRange(article: NewsArticle, from: string, to: string): boolean {
+  return isDateInNewsRange(getArticleDate(article), { from, to });
 }
 
 export function NewsPage() {
@@ -42,6 +34,7 @@ export function NewsPage() {
   };
   const [activeCategory, setActiveCategory] = useState("all");
 
+  const allStoryGroups = useMemo(() => groupNewsArticles(feed.results), []);
   const latestDate = useMemo(() => getLatestValidDate(getAvailableNewsDates()), []);
 
   useEffect(() => {
@@ -52,27 +45,31 @@ export function NewsPage() {
     }
   }, [latestDate, newsSearch]);
 
-  const articlesForFilters = useMemo(() => {
+  const groupsForFilters = useMemo(() => {
     const query = search.trim().toLowerCase();
-    return feed.results.filter((article) => {
-      const dateMatch = isDateInNewsRange(getArticleDate(article), filterDateRange);
-      const searchMatch = !query || matchesSearch(article, query);
+    return allStoryGroups.filter((group) => {
+      const dateMatch = group.sources.some((article) =>
+        isArticleInDateRange(article, filterDateRange.from, filterDateRange.to),
+      );
+      const searchMatch = !query || storyMatchesSearch(group, query);
       return dateMatch && searchMatch;
     });
-  }, [search, filterDateRange]);
+  }, [allStoryGroups, search, filterDateRange]);
 
-  const filters = useMemo(() => getNewsFilters(articlesForFilters), [articlesForFilters]);
+  const filters = useMemo(() => getStoryFilters(groupsForFilters), [groupsForFilters]);
 
-  const filtered = useMemo(() => {
+  const filteredGroups = useMemo(() => {
     const query = search.trim().toLowerCase();
-    return feed.results.filter((article) => {
-      const dateMatch = isDateInNewsRange(getArticleDate(article), filterDateRange);
+    return allStoryGroups.filter((group) => {
+      const dateMatch = group.sources.some((article) =>
+        isArticleInDateRange(article, filterDateRange.from, filterDateRange.to),
+      );
       const categoryMatch =
-        activeCategory === "all" || matchesNewsFilter(article, activeCategory);
-      const searchMatch = !query || matchesSearch(article, query);
+        activeCategory === "all" || storyMatchesCategory(group, activeCategory);
+      const searchMatch = !query || storyMatchesSearch(group, query);
       return dateMatch && categoryMatch && searchMatch;
     });
-  }, [search, filterDateRange, activeCategory]);
+  }, [allStoryGroups, search, filterDateRange, activeCategory]);
 
   useEffect(() => {
     if (activeCategory !== "all" && !filters.some((filter) => filter.id === activeCategory)) {
@@ -81,8 +78,8 @@ export function NewsPage() {
   }, [activeCategory, filters]);
 
   useEffect(() => {
-    newsSearch?.setArticleCounts(filtered.length, feed.totalResults);
-  }, [filtered.length, newsSearch?.setArticleCounts]);
+    newsSearch?.setArticleCounts(filteredGroups.length, allStoryGroups.length);
+  }, [filteredGroups.length, allStoryGroups.length, newsSearch?.setArticleCounts]);
 
   if (feed.results.length === 0) {
     return (
@@ -100,14 +97,14 @@ export function NewsPage() {
         filters={filters}
       />
 
-      {filtered.length === 0 ? (
+      {filteredGroups.length === 0 ? (
         <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-          No articles match your search, date, or category filter.
+          No stories match your search, date, or category filter.
         </p>
       ) : (
         <div className="grid gap-4 lg:grid-cols-2">
-          {filtered.map((article) => (
-            <NewsArticleCard key={article.article_id} article={article} />
+          {filteredGroups.map((group) => (
+            <NewsStoryCard key={group.id} group={group} />
           ))}
         </div>
       )}

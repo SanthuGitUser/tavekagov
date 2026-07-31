@@ -1,4 +1,5 @@
 import {
+  addDays,
   addMonths,
   addYears,
   eachDayOfInterval,
@@ -59,6 +60,29 @@ function normalizeRange(from: Date, to: Date): NewsDateRange {
   return { from: toIsoDate(from), to: toIsoDate(to) };
 }
 
+function shiftRangeByDays(range: NewsDateRange, deltaDays: number, today: Date): NewsDateRange {
+  const from = parseIsoDate(range.from || range.to);
+  const to = parseIsoDate(range.to || range.from);
+  let newFrom = addDays(from, deltaDays);
+  let newTo = addDays(to, deltaDays);
+
+  if (isAfter(startOfDay(newTo), startOfDay(today))) {
+    const daysUntilToday = Math.floor(
+      (startOfDay(today).getTime() - startOfDay(to).getTime()) / (24 * 60 * 60 * 1000),
+    );
+    if (daysUntilToday <= 0) return range;
+    newFrom = addDays(from, daysUntilToday);
+    newTo = addDays(to, daysUntilToday);
+  }
+
+  return normalizeRange(newFrom, newTo);
+}
+
+function canShiftRangeForward(range: NewsDateRange, today: Date): boolean {
+  const to = parseIsoDate(range.to || range.from);
+  return isBefore(startOfDay(to), startOfDay(today));
+}
+
 function formatRangeLabel(range: NewsDateRange): string {
   const from = parseIsoDate(range.from);
   const to = parseIsoDate(range.to);
@@ -77,18 +101,45 @@ function formatRangeLabel(range: NewsDateRange): string {
 function NavButton({
   label,
   onClick,
+  disabled,
   children,
 }: {
   label: string;
   onClick: () => void;
+  disabled?: boolean;
   children: ReactNode;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
+      disabled={disabled}
       aria-label={label}
-      className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-border bg-card text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+      className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-border bg-card text-muted-foreground transition-colors hover:bg-accent hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-card"
+    >
+      {children}
+    </button>
+  );
+}
+
+function DayNavButton({
+  label,
+  onClick,
+  disabled,
+  children,
+}: {
+  label: string;
+  onClick: () => void;
+  disabled?: boolean;
+  children: ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      aria-label={label}
+      className="inline-flex h-9 w-8 shrink-0 items-center justify-center text-muted-foreground transition-colors hover:bg-accent hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent"
     >
       {children}
     </button>
@@ -102,10 +153,12 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
   const [panelPosition, setPanelPosition] = useState<{ top: number; left: number } | null>(null);
 
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
   const today = useMemo(() => startOfDay(new Date()), []);
   const availableDateSet = useMemo(() => new Set(availableDates), [availableDates]);
+  const canGoForward = useMemo(() => canShiftRangeForward(value, today), [value, today]);
 
   const selectedFrom = value.from ? parseIsoDate(value.from) : null;
   const selectedTo = value.to ? parseIsoDate(value.to) : null;
@@ -119,7 +172,7 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
   }, [viewDate]);
 
   const updatePanelPosition = () => {
-    const rect = triggerRef.current?.getBoundingClientRect();
+    const rect = containerRef.current?.getBoundingClientRect();
     if (!rect) return;
 
     const left = Math.max(
@@ -150,7 +203,7 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
 
     function handlePointerDown(event: MouseEvent) {
       const target = event.target as Node;
-      if (triggerRef.current?.contains(target) || panelRef.current?.contains(target)) {
+      if (containerRef.current?.contains(target) || panelRef.current?.contains(target)) {
         return;
       }
       setOpen(false);
@@ -172,7 +225,7 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
   }, [open]);
 
   function openPicker() {
-    const rect = triggerRef.current?.getBoundingClientRect();
+    const rect = containerRef.current?.getBoundingClientRect();
     if (rect) {
       const left = Math.max(
         8,
@@ -184,6 +237,12 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
       });
     }
     setOpen(true);
+  }
+
+  function shiftDay(deltaDays: number) {
+    if (!value.from && !value.to) return;
+    setDraftStart(null);
+    onChange(shiftRangeByDays(value, deltaDays, today));
   }
 
   function handleDayClick(day: Date) {
@@ -330,25 +389,42 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
 
   return (
     <>
-      <button
-        ref={triggerRef}
-        type="button"
-        onClick={() => {
-          if (open) {
-            setOpen(false);
-            return;
-          }
-          openPicker();
-        }}
-        className="inline-flex h-9 min-w-[168px] shrink-0 items-center gap-2 rounded-md border border-border bg-card px-3 text-sm shadow-sm transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/30"
-        aria-label="Select date range"
-        aria-expanded={open}
+      <div
+        ref={containerRef}
+        className="inline-flex h-9 shrink-0 items-stretch overflow-hidden rounded-md border border-border bg-card shadow-sm"
       >
-        <Calendar className="h-4 w-4 shrink-0 text-muted-foreground" />
-        <span className="truncate text-left">
-          {value.from ? formatRangeLabel(value) : "Pick dates"}
-        </span>
-      </button>
+        <DayNavButton label="Previous day" onClick={() => shiftDay(-1)}>
+          <ChevronLeft className="h-4 w-4" />
+        </DayNavButton>
+
+        <button
+          ref={triggerRef}
+          type="button"
+          onClick={() => {
+            if (open) {
+              setOpen(false);
+              return;
+            }
+            openPicker();
+          }}
+          className="inline-flex min-w-[168px] flex-1 items-center gap-2 border-x border-border px-3 text-sm transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary/30"
+          aria-label="Select date range"
+          aria-expanded={open}
+        >
+          <Calendar className="h-4 w-4 shrink-0 text-muted-foreground" />
+          <span className="truncate text-left">
+            {value.from ? formatRangeLabel(value) : "Pick dates"}
+          </span>
+        </button>
+
+        <DayNavButton
+          label="Next day"
+          disabled={!canGoForward}
+          onClick={() => shiftDay(1)}
+        >
+          <ChevronRight className="h-4 w-4" />
+        </DayNavButton>
+      </div>
       {panel}
     </>
   );

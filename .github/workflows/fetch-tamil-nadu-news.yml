@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -36,8 +36,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "TN-News/Response JSON/"
           if git diff --staged --quiet; then
-            echo "No new JSON file to commit."
+            echo "No news JSON changes to commit."
           else
-            git commit -m "chore: fetch Tamil Nadu news $(date -u +%Y-%m-%d)"
+            git commit -m "chore: update Tamil Nadu news $(date -u +%Y-%m-%d)"
             git push
           fi

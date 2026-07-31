@@ -1,9 +1,11 @@
 """
-Fetch Tamil Nadu news from NewsData.io for selected domains and save a timestamped JSON file.
+Fetch Tamil Nadu news from NewsData.io and save one JSON file per day.
+
+Each run writes to Response JSON/YYYY-MM-DD.json (Asia/Kolkata). If the file already exists
+for that day, new articles are merged in by article_id/link (incoming entries win on conflict).
 
 API:
-  https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=Tamil+Nadu&country=in
-  &language=en&timezone=Asia/Kolkata&domain=thenewsminute.com,timesnownews.com
+  https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=Tamil+Nadu,Tamil,TVK,Tamilaga+Vettri+Kazhagam&country=in&language=en
 
 Usage:
   1. Add NEWSDATA_API_KEY=your-key to Public DB/.env
@@ -30,7 +32,9 @@ _PUBLIC_DB = _REPO_ROOT / "Public DB"
 _OUTPUT_DIR = Path(__file__).resolve().parent.parent / "Response JSON"
 
 NEWSDATA_NEWS_URL = "https://newsdata.io/api/1/news"
-DEFAULT_DOMAINS = "thenewsminute.com,timesnownews.com"
+DEFAULT_Q = "Tamil Nadu,Tamil,TVK,Tamilaga Vettri Kazhagam"
+DEFAULT_COUNTRY = "in"
+DEFAULT_LANGUAGE = "en"
 KOLKATA = ZoneInfo("Asia/Kolkata")
 
 
@@ -40,14 +44,6 @@ def _load_api_key() -> str:
     from config import get_newsdata_api_key
 
     return get_newsdata_api_key()
-
-
-def _apply_domain_param(params: dict[str, str], domains: str) -> None:
-    value = ",".join(part.strip() for part in domains.split(",") if part.strip())
-    if any("." in part for part in value.split(",")):
-        params["domainurl"] = value
-    else:
-        params["domain"] = value
 
 
 def fetch_page(
@@ -122,9 +118,35 @@ def merge_results(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return merged
 
 
+def merge_article_lists(
+    existing: list[dict[str, Any]],
+    incoming: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    merged: dict[str, dict[str, Any]] = {}
+
+    for article in existing:
+        key = str(article.get("article_id") or article.get("link") or "")
+        if key:
+            merged[key] = article
+
+    for article in incoming:
+        key = str(article.get("article_id") or article.get("link") or "")
+        if key:
+            merged[key] = article
+
+    results = list(merged.values())
+    results.sort(key=lambda article: str(article.get("pubDate") or ""), reverse=True)
+    return results
+
+
 def build_output_filename(fetched_at: datetime) -> str:
-    stamp = fetched_at.strftime("%Y-%m-%d_%H-%M-%S")
-    return f"{stamp}.json"
+    return f"{fetched_at.strftime('%Y-%m-%d')}.json"
+
+
+def load_existing_record(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def save_response(
@@ -135,11 +157,26 @@ def save_response(
     fetched_at: datetime,
 ) -> Path:
     output_dir.mkdir(parents=True, exist_ok=True)
-    merged_results = merge_results(pages)
+    incoming_results = merge_results(pages)
     out_path = output_dir / build_output_filename(fetched_at)
 
+    existing_record = load_existing_record(out_path)
+    existing_results: list[dict[str, Any]] = []
+    fetch_count = 1
+    first_fetched_at = fetched_at.isoformat()
+
+    if existing_record:
+        existing_results = existing_record.get("response", {}).get("results") or []
+        fetch_count = int(existing_record.get("fetchCount") or 0) + 1
+        first_fetched_at = str(existing_record.get("fetchedAt") or first_fetched_at)
+
+    merged_results = merge_article_lists(existing_results, incoming_results)
+
     record = {
-        "fetchedAt": fetched_at.isoformat(),
+        "date": fetched_at.strftime("%Y-%m-%d"),
+        "fetchedAt": first_fetched_at,
+        "lastFetchedAt": fetched_at.isoformat(),
+        "fetchCount": fetch_count,
         "request": {
             "method": "GET",
             "url": NEWSDATA_NEWS_URL,
@@ -147,7 +184,7 @@ def save_response(
         },
         "response": {
             "status": "success",
-            "totalResults": total_results,
+            "totalResults": len(merged_results),
             "results": merged_results,
             "pagesFetched": len(pages),
         },
@@ -160,15 +197,10 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Fetch Tamil Nadu news from NewsData.io and save to Response JSON/.",
     )
-    parser.add_argument("--q", default="Tamil Nadu", help="Search query.")
-    parser.add_argument("--country", default="in", help="Country filter.")
-    parser.add_argument("--language", default="en", help="Language filter.")
-    parser.add_argument("--timezone", default="Asia/Kolkata", help="Timezone for pubDate.")
-    parser.add_argument("--domain", default=DEFAULT_DOMAINS, help="Comma-separated domain filter.")
     parser.add_argument(
         "--output-dir",
         default=str(_OUTPUT_DIR),
-        help="Folder for timestamped JSON responses.",
+        help="Folder for daily JSON responses (YYYY-MM-DD.json).",
     )
     parser.add_argument(
         "--max-pages",
@@ -191,19 +223,11 @@ def main() -> int:
         return 1
 
     requested_params = {
-        "q": args.q,
-        "country": args.country,
-        "language": args.language,
-        "timezone": args.timezone,
-        "domain": args.domain,
+        "q": DEFAULT_Q,
+        "country": DEFAULT_COUNTRY,
+        "language": DEFAULT_LANGUAGE,
     }
-    api_params = {
-        "q": args.q,
-        "country": args.country,
-        "language": args.language,
-        "timezone": args.timezone,
-    }
-    _apply_domain_param(api_params, args.domain)
+    api_params = dict(requested_params)
 
     fetched_at = datetime.now(KOLKATA)
 
@@ -233,7 +257,7 @@ def main() -> int:
         print(exc, file=sys.stderr)
         return 1
 
-    merged_count = len(merge_results(pages))
+    merged_count = len(load_existing_record(out_path).get("response", {}).get("results") or [])
     print(f"Saved {out_path}")
     print(f"pages fetched: {len(pages)}")
     print(f"totalResults (page 1): {total_results}")

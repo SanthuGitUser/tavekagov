@@ -120,7 +120,7 @@ export function Header({ title, description }: HeaderProps) {
               availableDates={getAvailableNewsDates()}
             />
             <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
-              {newsSearch.filteredCount} shown · {newsSearch.totalCount} total
+              {newsSearch.filteredCount} stories shown · {newsSearch.totalCount} total
             </p>
           </div>
         </div>

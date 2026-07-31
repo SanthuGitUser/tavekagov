@@ -1,7 +1,10 @@
 import type { NewsArticle, NewsFeedResponse } from "@/types/news";
 
 type NewsResponseFile = {
+  date?: string;
   fetchedAt?: string;
+  lastFetchedAt?: string;
+  fetchCount?: number;
   request?: {
     url?: string;
     params?: Record<string, string>;
@@ -16,8 +19,9 @@ type NewsResponseFile = {
   results?: NewsArticle[];
 };
 
+// One JSON file per fetch day: TN-News/Response JSON/YYYY-MM-DD.json
 const responseJsonFiles = import.meta.glob(
-  "../../../TN-News/Response JSON/*.json",
+  "../../../TN-News/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { eager: true, import: "default" },
 ) as Record<string, NewsResponseFile>;
 
@@ -39,15 +43,16 @@ function extractRequestMeta(file: NewsResponseFile): NewsResponseFile["request"]
 }
 
 function buildFeed(): NewsFeedResponse {
-  const files = Object.values(responseJsonFiles);
+  const files = Object.entries(responseJsonFiles)
+    .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath))
+    .map(([, file]) => file);
+
   const seen = new Set<string>();
   const results: NewsArticle[] = [];
-  let firstRequest: NewsResponseFile["request"];
+  let latestRequest: NewsResponseFile["request"];
 
   for (const file of files) {
-    if (!firstRequest) {
-      firstRequest = extractRequestMeta(file);
-    }
+    latestRequest = extractRequestMeta(file) ?? latestRequest;
 
     for (const article of extractResults(file)) {
       const dedupeKey = article.article_id || article.link;
@@ -61,14 +66,14 @@ function buildFeed(): NewsFeedResponse {
 
   const dates = results.map(getArticleDate).sort();
   const filterDate = dates.at(-1) ?? "";
-  const params = firstRequest?.params ?? {};
+  const params = latestRequest?.params ?? {};
 
   return {
     status: "success",
     totalResults: results.length,
     filterDate,
     sourceQuery: {
-      endpoint: firstRequest?.url ?? "https://newsdata.io/api/1/news",
+      endpoint: latestRequest?.url ?? "https://newsdata.io/api/1/news",
       q: params.q ?? "Tamil Nadu",
       country: params.country ?? "in",
       language: params.language ?? "en",

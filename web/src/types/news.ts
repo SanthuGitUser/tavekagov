@@ -29,6 +29,12 @@ export type NewsArticle = {
   duplicate: boolean;
 };
 
+export type NewsStoryGroup = {
+  id: string;
+  primary: NewsArticle;
+  sources: NewsArticle[];
+};
+
 export type NewsSourceQuery = {
   endpoint: string;
   q: string;
