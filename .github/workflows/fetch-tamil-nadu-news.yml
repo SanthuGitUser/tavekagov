@@ -1,0 +1,43 @@
+name: Fetch Tamil Nadu News
+
+on:
+  schedule:
+    # 11:00 PM IST (Asia/Kolkata) = 17:30 UTC
+    - cron: "30 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r TN-News/Code/requirements.txt
+
+      - name: Fetch Tamil Nadu news
+        env:
+          NEWSDATA_API_KEY: ${{ secrets.NEWSDATA_API_KEY }}
+        run: python TN-News/Code/fetch_tamil_nadu_news.py
+
+      - name: Commit and push new JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "TN-News/Response JSON/"
+          if git diff --staged --quiet; then
+            echo "No new JSON file to commit."
+          else
+            git commit -m "chore: fetch Tamil Nadu news $(date -u +%Y-%m-%d)"
+            git push
+          fi
