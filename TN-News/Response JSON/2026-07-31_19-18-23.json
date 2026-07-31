@@ -1,0 +1,897 @@
+{
+  "fetchedAt": "2026-07-31T19:18:23.385607+05:30",
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "timezone": "Asia/Kolkata",
+      "domain": "thenewsminute.com,timesnownews.com",
+      "apikey": "<redacted>"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 19,
+    "results": [
+      {
+        "article_id": "f2b630b2d1a1511fd73e8bc75b48ce74",
+        "link": "https://www.timesnownews.com/chennai/chennai-power-cut-today-july-31-outages-scheduled-in-pallavaram-velachery-adyar-thiruvanmiyur-and-nazarathpet-check-timings-article-155220716",
+        "title": "Chennai Power Cut Today: Outages Scheduled In Pallavaram, Velachery, Adyar, Thiruvanmiyur And Nazarathpet; Check Timings",
+        "description": "Chennai Power Cut Today: Several areas across Chennai, including Pallavaram, Velachery, Adyar, Thiruvanmiyur and Nazarathpet, will witness a scheduled power shutdown on July 31 from 9 am to 2 pm for maintenance work.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "velachery power shutdown",
+          "chennai maintenance work",
+          "july 31 chennai power outage",
+          "chennai power cut timings",
+          "chennai power cut today",
+          "adyar power outage",
+          "pallavaram power cut",
+          "tangedco power outage",
+          "chennai power shutdown july 31",
+          "chennai electricity shutdown"
+        ],
+        "creator": [
+          "sudhanshu mishra"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-31 06:30:41",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-31 06:33:27",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155220728,thumbsize-15052,width-1280,height-720,resizemode-75/155220728.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "bd4608d67c1d3ea344d671f3de608c35",
+        "link": "https://www.timesnownews.com/sports/athletics/praveen-chitravel-selva-thirumaran-qualify-for-mens-triple-jump-final-at-commonwealth-games-2026-article-155220515",
+        "title": "Praveen Chitravel, Selva Thirumaran Qualify For Men's Triple Jump Final At Commonwealth Games 2026",
+        "description": "India's prospects for the Commonwealth Games 2026 improved as Praveen Chitravel and Selva Thirumaran qualified for the men’s triple jump final in Glasgow, showcasing impressive performances.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "rohit yadav",
+          "commonwealth games",
+          "neeraj chopra",
+          "india",
+          "praveen chitravel",
+          "selva thirumaran"
+        ],
+        "creator": [
+          "shaunak ghosh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "sports"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-31 02:07:00",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-31 02:33:27",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155220525,thumbsize-29508,width-1280,height-720,resizemode-75/155220525.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "84f574f3cd80ef610dd585fcc07729aa",
+        "link": "https://www.timesnownews.com/india/cauvery-water-wars-dk-shivakumar-signals-talks-with-vijay-centres-mekedatu-response-in-parliament-article-155218858",
+        "title": "Cauvery Water Wars: DK Shivakumar Signals Talks With Vijay, Centre's Mekedatu Response In Parliament",
+        "description": "The Cauvery water dispute has escalated following the Union Government's remarks in Parliament about the Mekedatu Reservoir Project, provoking strong reactions from Tamil Nadu and Karnataka.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "karnataka",
+          "vijay",
+          "mandya",
+          "tamil",
+          "narendra modi",
+          "lok sabha",
+          "tks elangovan",
+          "vijay s",
+          "cauvery"
+        ],
+        "creator": [
+          "sriram ganesh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 19:14:33",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 19:33:52",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155219102,thumbsize-1863640,width-1280,height-720,resizemode-75/155219102.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "8841f364b4f745be6f4220a2a24965db",
+        "link": "https://www.timesnownews.com/business-economy/companies/vedanta-real-estate-demerger-heres-what-shareholders-will-receive-in-spun-off-article-155218629",
+        "title": "Vedanta Real Estate Demerger: Here's What Shareholders Will Receive In Spun Off",
+        "description": "Vedanta will demerge its real estate business into Vedanta Property Platforms Ltd., unlocking value from a 2,200-acre property portfolio.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "vedanta ltd",
+          "vppl",
+          "vedanta real estate business",
+          "vedanta property platforms ltd",
+          "vedanta demerger"
+        ],
+        "creator": [
+          "priya raghuvanshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 18:00:35",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 18:05:16",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155218648,thumbsize-106338,width-1280,height-720,resizemode-75/155218648.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e4cb8ef127f89c5b7e768a59b4d24eb2",
+        "link": "https://www.thenewsminute.com/tamil-nadu/madras-hc-rejects-senthil-balajis-anticipatory-bail-in-tasmac-case",
+        "title": "Madras HC rejects Senthil Balaji's anticipatory bail in TASMAC case",
+        "description": "The Madras High Court on Thursday refused anticipatory bail to the former Tamil Nadu minister and DMK MLA stating that custodial interrogation was necessary in view of the allegations of large-scale financial irregularities and abuse of official position.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "justice gk ilanthiraiyan",
+          "supreme court senthil balaji",
+          "directorate of vigilance and anti-corruption",
+          "madras high court",
+          "anticipatory bail",
+          "july 30 2026 court news",
+          "custodial interrogation",
+          "senthil balaji bail",
+          "corruption allegations",
+          "tamil nadu corruption case",
+          "tasmac scam",
+          "tamil nadu excise",
+          "transport tender scam",
+          "karur gang",
+          "tamil nadu high court news",
+          "senthil balaji",
+          "ed affidavit",
+          "liquor procurement scam",
+          "tasmac corruption case",
+          "tamil nadu politics"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 17:24:34",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 17:37:56",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-07-30/s3uzthaw/balaji.avif?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "0f0a1ae0db3e506a6f17e427e956d32b",
+        "link": "https://www.thenewsminute.com/tamil-nadu/in-kanyakumari-sea-gets-closer-and-villages-vanish-as-residents-fight-mining-expansion",
+        "title": "In Kanyakumari, sea gets closer and villages vanish as residents fight mining expansion",
+        "description": "Kanyakumari fisherfolk fear IREL’s proposed 1,144-hectare sand mining project, pointing to coastal erosion and displacement in Manavalakurichi and Kerala.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "fisherfolk",
+          "ilmenite",
+          "manavalakurichi",
+          "alappad",
+          "thottappally",
+          "tamil nadu",
+          "coastal communities",
+          "kanyakumari coast",
+          "monazite",
+          "zircon",
+          "kerala coast",
+          "kanyakumari sand mining",
+          "irel",
+          "coastal erosion",
+          "chavara",
+          "rutile",
+          "atomic mineral mining",
+          "beach sand minerals",
+          "mineral sand mining",
+          "environmental impact"
+        ],
+        "creator": [
+          "haritha john"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 15:36:57",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 15:37:28",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-07-30%2Fgy4rksit%2FIREL-board.jpeg?rect=0%2C0%2C1208%2C680&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1dd8868df592588873ea709f92255978",
+        "link": "https://www.timesnownews.com/health/lancet-study-sounds-alarm-india-meets-only-0-2-of-heart-transplant-demand-article-155216971",
+        "title": "Lancet Study Sounds Alarm: India Meets Only 0.2% of Heart Transplant Demand",
+        "description": "A Lancet study reveals India meets just 0.2% of heart transplant demand, highlighting severe organ shortages and urgent healthcare reforms nationwide.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india heart transplant demand",
+          "organ donation india",
+          "lancet",
+          "kidney",
+          "lancet organ transplant study",
+          "liver",
+          "tamil nadu",
+          "lung",
+          "india"
+        ],
+        "creator": [
+          "ashima sharda mahindra"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "health"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 14:00:00",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 14:02:54",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155217007,thumbsize-47818,width-1280,height-720,resizemode-75/155217007.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "29b3d2fc37075d5771df6ada7c07e136",
+        "link": "https://www.timesnownews.com/education/proposal-to-serve-chicken-biryani-once-a-week-in-tamil-nadu-govt-schools-under-review-article-155216033",
+        "title": "Proposal to Serve Chicken Biryani Once a Week in Tamil Nadu Govt Schools Under Review",
+        "description": "Tamil Nadu is considering serving chicken biryani once a week under its noon-meal scheme. The proposal is under the Chief Minister's review alongside plans to revamp school breakfast menus.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "c joseph vijay",
+          "tn govt plans school breakfast menu revamprajmohan",
+          "government school nutrition",
+          "tamil nadu",
+          "chicken biryani in schools"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 13:19:00",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 13:32:41",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155217082,thumbsize-1397028,width-1280,height-720,resizemode-75/155217082.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c4acebb0dcf1f44d5c6db10b80109eb2",
+        "link": "https://www.timesnownews.com/india/dmks-senthil-balaji-to-be-arrested-again-article-155216690",
+        "title": "DMK's Senthil Balaji To Be Arrested Again? Anticipatory Bail Cancelled,",
+        "description": "The Madras High Court dismissed the anticipatory bail petition filed by former Tamil Nadu Minister and DMK MLA V. Senthil Balaji in the latest corruption case registered against him.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "directorate of vigilance and anti-corruption",
+          "dmk",
+          "dvac",
+          "tamil nadu",
+          "senthil balaji"
+        ],
+        "creator": [
+          "varshini ramu"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 12:44:41",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 13:02:39",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155216727,thumbsize-26412,width-1280,height-720,resizemode-75/155216727.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c80ffb5a112506bde28c88ab2f75ded7",
+        "link": "https://www.timesnownews.com/entertainment-news/south/jana-nayagan-box-office-collection-day-7-cm-vijay-last-film-sees-major-dip-mints-rs-6-10-crore-on-wednesday-article-155216723",
+        "title": "Jana Nayagan Box Office Collection Day 7: CM Vijay’s Last Film Sees Major Dip; Mints Rs 6.10 Crore On Wednesday",
+        "description": "Jana Nayagan Box Office Collection Day 7: CM Vijay's last film struggled to mint numbers at the box office on Wednesday. It failed to cross Rs 150 crore mark. Read full story to know more.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "jana nayagan",
+          "thalapathy vijay",
+          "c joseph vijay",
+          "box office",
+          "tamil nadu",
+          "jana nayagan box office",
+          "vijay"
+        ],
+        "creator": [
+          "sumit rajguru"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "entertainment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 12:35:02",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 13:03:10",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155216734,thumbsize-53744,width-1280,height-720,resizemode-75/155216734.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "57be677f6d7260bd4cf4312978a1ceea",
+        "link": "https://www.timesnownews.com/opinion/india/anarchy-is-not-dissent-article-155216579",
+        "title": "Anarchy Is Not Dissent",
+        "description": "The Indian Constitution grants citizens the right to assemble peacefully, vital for democracy, but this right is not absolute.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": null,
+        "creator": null,
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "other"
+        ],
+        "datatype": "opinion",
+        "pubDate": "2026-07-30 12:20:30",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 12:33:43",
+        "image_url": null,
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1cb862446f44d653bd6497d37c1b8e97",
+        "link": "https://www.timesnownews.com/spiritual/sawan-2026-begins-first-day-shiv-puja-muhurat-jalabhishek-timings-and-rare-auspicious-yogas-article-155216334",
+        "title": "Sawan 2026 Begins: First Day Shiv Puja Muhurat, Jalabhishek Timings and Rare Auspicious Yogas",
+        "description": "As the sacred month of Sawan begins, seek Lord Shiva's blessings through heartfelt worship. Discover the most auspicious puja and Jalabhishek timings, rare yogas and essential rituals for the first day.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "sawan 2026 puja timings",
+          "sawan 2026",
+          "first day of sawan",
+          "sawan shiv puja",
+          "ayushman yoga",
+          "jalabhishek muhurat",
+          "saubhagya yoga"
+        ],
+        "creator": [
+          "tn lifestyle desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "lifestyle"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 11:49:23",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 12:03:03",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155216349,thumbsize-53116,width-1280,height-720,resizemode-75/155216349.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "48b28588bbac5afc42c1a3863da38c17",
+        "link": "https://www.thenewsminute.com/karnataka/karnataka-cm-invites-cm-vijay-to-inspect-cauvery-dams-by-helicopter",
+        "title": "Karnataka CM invites CM Vijay to inspect Cauvery dams by helicopter",
+        "description": "Karnataka Chief Minister DK Shivakumar invited Tamil Nadu Chief Minister C Joseph Vijay to undertake an aerial survey of the Cauvery basin, saying the state would arrange a helicopter so he could assess the rainfall deficit before deciding on water release.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "aerial survey",
+          "mandya",
+          "inter-state river dispute",
+          "water release",
+          "cwrc",
+          "3",
+          "dk shivakumar",
+          "500 cusecs",
+          "august 3 visit",
+          "cauvery water management authority",
+          "cauvery basin",
+          "joseph vijay",
+          "tamil nadu",
+          "cwma",
+          "cauvery water dispute",
+          "ramalinga reddy",
+          "karnataka water crisis",
+          "cauvery water sharing",
+          "karnataka",
+          "cauvery reservoirs"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 09:31:07",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 09:37:36",
+        "image_url": null,
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "b91607b495fbdfe3b9e9ecb3f7acbd14",
+        "link": "https://www.thenewsminute.com/tamil-nadu/dvac-books-senthil-balaji-in-tasmac-corruption-case-raids-41-locations",
+        "title": "DVAC books Senthil Balaji in TASMAC corruption case, raids 41 locations",
+        "description": "Former Tamil Nadu minister V Senthil Balaji was questioned by the DVAC after the agency booked him and six others over alleged tender manipulation, cartelisation and corruption in TASMAC.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tender manipulation",
+          "ed",
+          "raids",
+          "erode",
+          "tamil nadu politics",
+          "tiruppur",
+          "v senthil balaji",
+          "tasmac",
+          "rathesh raj shanmugavel",
+          "revenue loss",
+          "v senthil balaji inquiry",
+          "cartelisation",
+          "mrp violation",
+          "000 crore liquor scam",
+          "tamil nadu",
+          "ias officer",
+          "liquor scam",
+          "s visakan",
+          "nilgiris",
+          "₹1"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 09:17:02",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 09:37:36",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2023-10%2F2fc560fa-52ee-465d-8136-1c850dc48d08%2Fv_senthil_balaji_facebook_27052023.jpg?rect=0%2C391%2C1455%2C818&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "a0a667d1447c1b847e31aa31a7d33a22",
+        "link": "https://www.timesnownews.com/health/icmr-sounds-dengue-alarm-all-four-virus-strains-now-circulating-across-8-indian-states-article-155215457",
+        "title": "ICMR Sounds Dengue Alarm: All Four Virus Strains Now Circulating Across 8 Indian States",
+        "description": "ICMR's first nationwide study found that all four dengue virus strains were circulating in eight Indian states, raising concerns about severe infections and vaccine planning.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "icmr",
+          "thrombocytopenia",
+          "deet",
+          "dengue",
+          "dengue virus strains india",
+          "icmr dengue study",
+          "dengue vaccine india",
+          "virus research"
+        ],
+        "creator": [
+          "ashima sharda mahindra"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "health"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 09:00:00",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 09:02:36",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155215472,thumbsize-36970,width-1280,height-720,resizemode-75/155215472.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "3c7deed13148c279162b36f2eb479169",
+        "link": "https://www.thenewsminute.com/tamil-nadu/chennai-chromepet-residents-demand-closure-of-tasmac-outlet-spared-in-states-crackdown",
+        "title": "Chennai: Chromepet residents demand closure of TASMAC outlet spared in state's crackdown",
+        "description": "The demand for the closure of the Chromepet outlet has gained renewed attention after CM C Joseph Vijay announced the closure of 717 TASMAC outlets across Tamil Nadu, located 500 metres near bus terminals, educational institutions, places of worship and other public places.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "chromepet tasmac",
+          "chennai tasmac closure",
+          "chennai tasmac closed",
+          "chennai chromepet tasmac shop",
+          "chromepet tasmac shop closed"
+        ],
+        "creator": [
+          "nithesh kumar m"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 08:00:00",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 08:07:46",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-07-29/73wkyeg3/WhatsApp-Image-2026-07-29-at-11.53.46-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f5371a3d12d0ccf4c9b554ee7d220b12",
+        "link": "https://www.timesnownews.com/education/school-assembly-news-headlines-today-july-30-top-national-international-sports-updates-thought-of-the-day-anti-paper-leak-bill-article-155215090",
+        "title": "School Assembly News Headlines Today (July 30): Top National, International & Sports Updates + Thought of the Day",
+        "description": "Take a look at the major national, international, and sports highlights of the day. You may use it in the school assembly on July 30, 2026.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "dharmendra pradhan",
+          "nta",
+          "education news",
+          "neet",
+          "trending news",
+          "school assembly news headlines"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-30 05:45:11",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-30 06:02:39",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155215091,thumbsize-107668,width-1280,height-720,resizemode-75/155215091.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "8c793510629d0b7aba5c60f319cdc058",
+        "link": "https://www.timesnownews.com/india/tamil-nadu-cm-vijay-rides-metro-for-inspection-commuters-give-him-rockstar-welcome-watch-article-155214296",
+        "title": "Tamil Nadu CM Vijay Rides Metro for Inspection, Commuters Give Him Rockstar Welcome | Watch",
+        "description": "During a Metro inspection in Chennai, Chief Minister C Joseph Vijay attracted a large crowd of commuters and fans.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": null,
+        "creator": null,
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-29 23:26:40",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-29 23:32:59",
+        "image_url": null,
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f3b26c727f674d3b6fc3a09317fa6f22",
+        "link": "https://www.timesnownews.com/chennai/chennai-power-cut-on-july-30-over-100-localities-to-face-5-hour-outage-tomorrow-check-affected-areas-article-155213340",
+        "title": "Chennai Power Cut on July 30: Over 100 Localities to Face 5-Hour Outage Tomorrow - Check Affected Areas",
+        "description": "Chennai residents should prepare for a scheduled power cut on July 30, lasting five hours from 9:00 AM to 2:00 PM, affecting over 100 localities. Several neighborhoods, including Pallavaram, Velachery, Tambaram, and others, will experience the outage.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "chennai power cut july 30",
+          "chennai",
+          "chennai power cut",
+          "power outage"
+        ],
+        "creator": [
+          "mansi arora"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-29 20:42:24",
+        "pubDateTZ": "Asia/Kolkata",
+        "fetched_at": "2026-07-29 21:03:03",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155213351,thumbsize-15052,width-1280,height-720,resizemode-75/155213351.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}
