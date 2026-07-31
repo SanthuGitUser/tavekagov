@@ -1,11 +1,10 @@
 """
-Fetch Tamil Nadu Council of Ministers from tn.gov.in and upsert into Supabase.
+Fetch Tamil Nadu Council of Ministers from tn.gov.in and save to manifests/tn_ministers.json.
 
 Usage:
-  1. Ensure Public DB/.env has Supabase keys (see Public DB/.env.example).
-  2. pip install -r requirements.txt
-  3. python tn_ministers_sync.py
-  4. Optional: python tn_ministers_sync.py --dry-run
+  1. pip install -r requirements.txt
+  2. python tn_ministers_sync.py
+  3. Optional: python tn_ministers_sync.py --output-dir path/to/manifests
 """
 
 from __future__ import annotations
@@ -15,13 +14,16 @@ import json
 import re
 import sys
 from dataclasses import asdict, dataclass
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
+_SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
+_KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _ENTRY_RE = re.compile(
     r"minister_col_number['\"][^>]*>(\d+)</div>.*?"
@@ -32,11 +34,17 @@ _ENTRY_RE = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 _TAG_RE = re.compile(r"<[^>]+>")
+_DEFAULT_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    ),
+}
 
 
 def _load_source_url() -> str:
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
     from config import get_tn_ministers_source_url
 
     return get_tn_ministers_source_url()
@@ -61,12 +69,13 @@ def _clean_text(value: str) -> str:
 def fetch_ministers(session: requests.Session | None = None) -> list[Minister]:
     source_url = _load_source_url()
     sess = session or requests.Session()
+    sess.headers.update(_DEFAULT_HEADERS)
     response = sess.get(source_url, timeout=(20, 60))
     response.raise_for_status()
-    html = response.text
+    page_html = response.text
 
     ministers: list[Minister] = []
-    for match in _ENTRY_RE.finditer(html):
+    for match in _ENTRY_RE.finditer(page_html):
         order_raw, photo_url, raw_name, raw_designation, raw_portfolio = match.groups()
         designation = _clean_text(raw_designation)
         ministers.append(
@@ -87,66 +96,44 @@ def fetch_ministers(session: requests.Session | None = None) -> list[Minister]:
     return ministers
 
 
-def _load_supabase_client():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
-    from client import get_supabase_client
-
-    return get_supabase_client(use_service_role=True)
-
-
-def upsert_ministers(ministers: list[Minister]) -> int:
-    client = _load_supabase_client()
-    rows = [
-        {
-            "id": minister.id,
-            "name": minister.name,
-            "designation": minister.designation,
-            "portfolio": minister.portfolio,
-            "photo_url": minister.photo_url,
-            "display_order": minister.display_order,
-            "is_chief_minister": minister.is_chief_minister,
-        }
-        for minister in ministers
-    ]
-    client.table("tn_ministers").upsert(rows, on_conflict="id").execute()
-    return len(rows)
-
-
-def write_manifest(ministers: list[Minister]) -> Path:
-    _MANIFESTS_DIR.mkdir(parents=True, exist_ok=True)
-    path = _MANIFESTS_DIR / "tn_ministers.json"
+def write_manifest(ministers: list[Minister], *, output_dir: Path) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    path = output_dir / "tn_ministers.json"
     payload = {
         "source_url": _load_source_url(),
+        "fetchedAt": datetime.now(_KOLKATA).isoformat(),
         "count": len(ministers),
         "ministers": [asdict(minister) for minister in ministers],
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Sync TN Council of Ministers to Supabase.")
+    parser = argparse.ArgumentParser(
+        description="Fetch TN Council of Ministers and save tn_ministers.json.",
+    )
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Fetch and write manifest only; do not upsert to Supabase.",
+        "--output-dir",
+        default=str(_MANIFESTS_DIR),
+        help="Folder for tn_ministers.json (default: manifests/).",
     )
     args = parser.parse_args()
 
-    print(f"Fetching ministers from {_load_source_url()} ...")
-    ministers = fetch_ministers()
+    source_url = _load_source_url()
+    print(f"Fetching ministers from {source_url} ...")
+    try:
+        ministers = fetch_ministers()
+    except requests.RequestException as exc:
+        print(f"Request failed: {exc}", file=sys.stderr)
+        return 1
+    except RuntimeError as exc:
+        print(exc, file=sys.stderr)
+        return 1
+
+    manifest_path = write_manifest(ministers, output_dir=Path(args.output_dir))
     print(f"Parsed {len(ministers)} ministers.")
-
-    manifest_path = write_manifest(ministers)
     print(f"Wrote manifest: {manifest_path}")
-
-    if args.dry_run:
-        print("Dry run complete (no database changes).")
-        return 0
-
-    count = upsert_ministers(ministers)
-    print(f"Upserted {count} rows into public.tn_ministers.")
     return 0
 
 

@@ -1,0 +1,161 @@
+{
+  "date": "2026-07-01",
+  "fetchedAt": "2026-08-01T00:10:44.317647+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:44.317647+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-01"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22068,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-315-Hon_ble_CM_Social_Media_Message_-_Condolence_for_the_death_of_Kavignar_Puviarasu-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-315-Hon'ble CM Social Media Message - Condolence for the death of Kavignar Puviarasu-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22069,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-316-Hon_ble_CM_Social_Media_Message_-__National_Doctors_Day_2026-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-316-Hon'ble CM Social Media Message -  National Doctors Day 2026-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22070,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-317-Hon_ble_Minister_for_Rural_Development_and_Water_Resources_Press_Release-Guidelines_for_the_restoration_of_water_bodies_-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-317-Hon'ble Minister for Rural Development and Water Resources Press Release-Guidelines for the restoration of water bodies -Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22071,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-318-Hon_ble_Minister_for_Rural_Development_and_Water_Resources_Press_Release-Guidelines_for_Registration_of_Contractors-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-318-Hon'ble Minister for Rural Development and Water Resources Press Release-Guidelines for Registration of Contractors-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22072,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-319_-Hon_ble_Housing_and_Urban_Development_Minister_Press_Release-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-319 -Hon'ble Housing and Urban Development Minister Press Release-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22073,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-320-_Hon_ble_Labour_Minister_Press_Release-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-320- Hon'ble Labour Minister Press Release-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22074,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-321-Hon_ble_Forest_Minister_Press_Release-English_-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-321-Hon'ble Forest Minister Press Release-English -Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22075,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-321-Hon_ble_Forest_Minister_Press_Release-Tamil-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-321-Hon'ble Forest Minister Press Release-Tamil-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22076,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-322-Hon_ble_Environment_and_Climate_Change__Minister__Press_Release-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-322-Hon'ble Environment and Climate Change  Minister  Press Release-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22077,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.323-Hon_ble_CM_DO_Letter_to_Hon_ble_PM_-Reg_VB-GRAMG_Scheme_-Date__1.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.323-Hon'ble CM DO Letter to Hon'ble PM -Reg VB-GRAMG Scheme -Date  1.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22078,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-324-Hon_ble_Food_Minister_Press_Release-_Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-324-Hon'ble Food Minister Press Release- Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22079,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.325-_Hon_ble_Higher_Education_Minister_Press_Release-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.325- Hon'ble Higher Education Minister Press Release-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      },
+      {
+        "id": 22080,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-326-CRA_Press_Release-Date_01.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-326-CRA Press Release-Date 01.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-01",
+        "language": "en"
+      }
+    ]
+  }
+}

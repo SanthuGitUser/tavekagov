@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-13",
+  "fetchedAt": "2026-08-01T00:10:47.156360+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:47.156360+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-13"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22149,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.382-Hon_ble_CM_Social_media_message_-_Condolence_for_the_death_of_writer_Poomani_-Date__13.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-13",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.382-Hon'ble CM Social media message - Condolence for the death of writer Poomani -Date  13.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-13",
+        "language": "en"
+      },
+      {
+        "id": 22150,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.383-Hon_ble_CM_press_Release_-_Condolence_and_Relief_-_Road_Accident_at_Madurai_Dist_Kottampatti_-Date__13.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-13",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.383-Hon'ble CM press Release - Condolence and Relief - Road Accident at Madurai Dist Kottampatti -Date  13.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-13",
+        "language": "en"
+      },
+      {
+        "id": 22151,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.384_-_WRD_Department_-_Water_Release_Erode_Dist_-_Date_-_13.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.384 - WRD Department - Water Release Erode Dist - Date - 13.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-13",
+        "language": "en"
+      },
+      {
+        "id": 22152,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.385_-_Tamil_Development_Press_Release_-_Date_-_13.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.385 - Tamil Development Press Release - Date - 13.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-13",
+        "language": "en"
+      },
+      {
+        "id": 22153,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.386_-_Hon_ble_Minister_for_Animal_Husbandry_Press_Release_-_Date_-_13.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.386 - Hon'ble Minister for Animal Husbandry Press Release - Date - 13.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-13",
+        "language": "en"
+      },
+      {
+        "id": 22154,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.387_-_Hon_ble_Minister_for_Food_and_Civil_Supplies_Press_Release_-_Date_-_13.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.387 - Hon'ble Minister for Food and Civil Supplies Press Release - Date - 13.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-13",
+        "language": "en"
+      },
+      {
+        "id": 22155,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.388_-_Hon_ble_CM_Press_Release_-_Perambur_Renovated_MLA_office_and_Esavai_Office__Issue_of_New_Ration_Cards_and_Vyasarpadi_MTC_EV_Charging_Station_-_Date_-_13.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.388 - Hon'ble CM Press Release - Perambur Renovated MLA office and Esavai Office, Issue of New Ration Cards and Vyasarpadi MTC EV Charging Station - Date - 13.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-13",
+        "language": "en"
+      }
+    ]
+  }
+}

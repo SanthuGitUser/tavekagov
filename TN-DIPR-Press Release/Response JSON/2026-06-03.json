@@ -1,0 +1,128 @@
+{
+  "date": "2026-06-03",
+  "fetchedAt": "2026-08-01T00:10:37.714297+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:37.714297+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-03"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21878,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-158-Hon_ble_CM-_Social_Media_Message__-_Muthamizh_Arignar_Kalignar_Birthday-Date_03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-158-Hon'ble CM- Social Media Message  - Muthamizh Arignar Kalignar Birthday-Date 03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21879,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-159-Hon_ble_Minister_for_Agriculture_-_Farmers_Welfare_Press_Release-_payaru_vagaigal-Date_03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-159-Hon'ble Minister for Agriculture - Farmers Welfare Press Release- payaru vagaigal-Date 03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21880,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-160-HON_BLE_PUBLIC_WORK_AND_SPORTS_DEVELOPMENT_MINISTER_PRESS_RELEASE-Hon_ble_Union_Sports_Minister_met_with_Hon_ble_Sports_Minister_at_New_Delhi_-English-Date_03.06.202.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-160-HON'BLE PUBLIC WORK AND SPORTS DEVELOPMENT MINISTER PRESS RELEASE-Hon'ble Union Sports Minister met with Hon'ble Sports Minister at New Delhi -English-Date 03.06.202.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21881,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-160-HON_BLE_PUBLIC_WORK_AND_SPORTS_DEVELOPMENT_MINISTER_PRESS_RELEASE-Hon_ble_Union_Sports_Minister_met_with_Hon_ble_Sports_Minister_at_New_Delhi_-Tamil-Date_03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-160-HON'BLE PUBLIC WORK AND SPORTS DEVELOPMENT MINISTER PRESS RELEASE-Hon'ble Union Sports Minister met with Hon'ble Sports Minister at New Delhi -Tamil-Date 03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21882,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.161_-_Hon_ble_Labour_Welfare_and_Skill_Development_Minister_Press_Release_-_Date.03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.161 - Hon'ble Labour Welfare and Skill Development Minister Press Release - Date.03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21883,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.162_-_Hon_ble_CM_Social_Media_Mesage__-_HCM_wishes_to_Karnataka_CM_Thiru_TK._ShivaKumar_-_Date.03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.162 - Hon'ble CM Social Media Mesage  - HCM wishes to Karnataka CM Thiru TK. ShivaKumar - Date.03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21884,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.163_-_Hon_ble_Rural_Development_and_Water_Resources_Minister_Inspection_RD_Works_Press_Release_-_Date.03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.163 - Hon'ble Rural Development and Water Resources Minister Inspection RD Works Press Release - Date.03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21885,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.164_-_Hon_ble_Rural_Development_and_Water_Resources_Minister_Inspection_WR_Work_Press_Release_-_Date.03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.164 - Hon'ble Rural Development and Water Resources Minister Inspection WR Work Press Release - Date.03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21886,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.165_-_Law_Department_Press_Release_-_English_-_Date.03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.165 - Law Department Press Release - English - Date.03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      },
+      {
+        "id": 21887,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.165_-_Law_Department_Press_Release_-_Tamil_-_Date.03.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.165 - Law Department Press Release - Tamil - Date.03.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-03",
+        "language": "en"
+      }
+    ]
+  }
+}

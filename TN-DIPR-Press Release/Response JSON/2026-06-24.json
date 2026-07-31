@@ -1,0 +1,161 @@
+{
+  "date": "2026-06-24",
+  "fetchedAt": "2026-08-01T00:10:42.684890+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:42.684890+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-24"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22021,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.274_-_Hon_ble_CM_Social_Media_Message_Kaviarasar_Kannadasan_Centenary_Birthday_-_Date.24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.274 - Hon'ble CM Social Media Message Kaviarasar Kannadasan Centenary Birthday - Date.24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22022,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.275_-__Kaviarasu_Kannadasan_Birthday_Function_Press_Release_-_Date.24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.275 -  Kaviarasu Kannadasan Birthday Function Press Release - Date.24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22023,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.276_-_Hon_ble_CM_Press_Release_-_EB_Dept_-_Appt_Orders_for_Asst_Engineers_and_Asst_Accounts_Officer_-_Date.24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.276 - Hon'ble CM Press Release - EB Dept - Appt Orders for Asst Engineers and Asst Accounts Officer - Date.24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22024,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.277_-_Police_Dept_Press_Release_-_English-_Date.24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.277 - Police Dept Press Release - English- Date.24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22025,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.277_-_Police_Dept_Press_Release_-_Tamil_-_Date.24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.277 - Police Dept Press Release - Tamil - Date.24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22026,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.278_-_Information___Publicity_Dept_Admission_Extension_Press_Release_-_Date.24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.278 - Information & Publicity Dept Admission Extension Press Release - Date.24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22027,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.279_-_EDII_-_Drone_Operations_Training_Programme_English_-_Date_-_24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.279 - EDII - Drone Operations Training Programme English - Date - 24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22028,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.279_-_EDII_-_Drone_Operations_Training_Programme_Tamil_-_Date_-_24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.279 - EDII - Drone Operations Training Programme Tamil - Date - 24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22029,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.280_-_Hon_ble_CM_Press_Release_-_Maws_Dept_-_New_Street_Name_Tambaram_-_Velachery_Road_as_Major_Mukund_Varadarajan_Salai_-_24.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.280 - Hon'ble CM Press Release - Maws Dept - New Street Name Tambaram - Velachery Road as Major Mukund Varadarajan Salai - 24.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22030,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.281_-_WRD_Dept_Water_Release_Kadana_-_Date_-_24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.281 - WRD Dept Water Release Kadana - Date - 24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22031,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.282_-_WRD_Dept_Water_Release_Ramanathi_-_Date_-_24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.282 - WRD Dept Water Release Ramanathi - Date - 24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22032,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.283_-_Welfare_of_Differently_Abled_Persons_Dept_Press_Release_Award_application_extention_-_Date_-_24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.283 - Welfare of Differently Abled Persons Dept Press Release Award application extention - Date - 24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      },
+      {
+        "id": 22033,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.284_-_Hon_ble_Ministers_Press_Release_-_agri_Dept_Review_Meeting_-Date_-_24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.284 - Hon'ble Ministers Press Release - agri Dept Review Meeting -Date - 24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-24",
+        "language": "en"
+      }
+    ]
+  }
+}

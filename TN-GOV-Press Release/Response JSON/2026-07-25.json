@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-25",
+  "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr250726_fcs.jpg",
+      "release_date": "2026-07-25",
+      "title": "Honble Minister for Food and Civil Supplies distributed allotment orders for Tamil Nadu Urban Habitat Development Board Tenements",
+      "file_name": "pr250726_fcs.jpg",
+      "minister_name": "Hon'ble Minister for Food and Civil Supplies",
+      "department_name": "Food and Civil Supplies Department",
+      "minister_id": 6,
+      "department_id": 5,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 6,
+      "name": "Thiru P. Venkataramanan",
+      "designation": "Minister for Food and Civil Supplies",
+      "portfolio": "Food and Civil Supplies, Consumer Protection and Price Control.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/025_Venkataramanan.png",
+      "display_order": 6,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 5,
+      "name": "Co-operation, Food and Consumer Protection Department",
+      "dep_id_encoded": "NQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru V. Gandhiraj",
+      "display_order": 5
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "date": "2026-06-11",
+  "fetchedAt": "2026-08-01T00:10:39.661503+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:39.661503+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-11"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21942,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.210_-_Hon_ble_CM_Message_-_ANTI_CHILD_LABOUR_DAY_2026_-_Date_-_11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.210 - Hon'ble CM Message - ANTI CHILD LABOUR DAY 2026 - Date - 11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21943,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.211_-_Hon_ble_Minister_for_Housing_and_Urban_Development_Review_Meeting_Press_Release_-_Date_-_11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.211 - Hon'ble Minister for Housing and Urban Development Review Meeting Press Release - Date - 11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21944,
+        "press_file_name": "/uploads/tn_govt_press_release/TNLA-P.R.No.04_-_Legislative_Assembly_Secretarial_Press_Release_-_Tamil___English_-_Date.11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-11",
+        "press_release_no": null,
+        "press_name": "TNLA-P.R.No.04 - Legislative Assembly Secretarial Press Release - Tamil & English - Date.11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21945,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.212_-_SDAT_-_June_26_Anti_Durg_Day_Press_Release_-_Date.11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.212 - SDAT - June 26 Anti Durg Day Press Release - Date.11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21946,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.213_-_Hon_ble_CM_Speech_-_NITI_Aayog_Meeting_at_Delhi_-_Tamil__-_Date.11.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.213 - Hon'ble CM Speech - NITI Aayog Meeting at Delhi - Tamil  - Date.11.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21947,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO.213_-_Hon_ble_CM_Speech_-_NITI_Aayog_Meeting_at_Delhi_-_English_-_Date.11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO.213 - Hon'ble CM Speech - NITI Aayog Meeting at Delhi - English - Date.11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21948,
+        "press_file_name": "/uploads/tn_govt_press_release/DIR-P.R.No.214_-_Finance_Dept_Press_Release_-_English_-_Date.11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-11",
+        "press_release_no": null,
+        "press_name": "DIR-P.R.No.214 - Finance Dept Press Release - English - Date.11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21949,
+        "press_file_name": "/uploads/tn_govt_press_release/DIR-P.R.No.214_-_Finance_Dept_Press_Release_-_Tamil_-_Date.11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-11",
+        "press_release_no": null,
+        "press_name": "DIR-P.R.No.214 - Finance Dept Press Release - Tamil - Date.11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21950,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.215_-_Hon_ble_Natural_Resources_Minister_Meeting_Press_Release_-_Date.11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.215 - Hon'ble Natural Resources Minister Meeting Press Release - Date.11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21951,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.216_-_Hon_ble_CM_Press_Release_-_Kallakuruchi_-_Date.11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.216 - Hon'ble CM Press Release - Kallakuruchi - Date.11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      },
+      {
+        "id": 21952,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO.217_-_Hon_ble_CM_Press_Release_-_________________________________________________________CMPRF_-_Date.11.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO.217 - Hon'ble CM Press Release - மன்னார்குடி விபத்து CMPRF - Date.11.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-11",
+        "language": "en"
+      }
+    ]
+  }
+}

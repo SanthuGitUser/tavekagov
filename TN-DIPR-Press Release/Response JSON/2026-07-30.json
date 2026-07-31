@@ -1,0 +1,194 @@
+{
+  "date": "2026-07-30",
+  "fetchedAt": "2026-08-01T00:10:51.181318+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:51.181318+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-30"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22242,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-464-Hon_ble_CM_Social_Media_Message_-_Dr._Muthulakshmi_Reddy_Birthday-Date_30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-464-Hon'ble CM Social Media Message - Dr. Muthulakshmi Reddy Birthday-Date 30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22243,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-465-Hon_ble_CM_Press_Release_-_Industries_Dept_-_MoU_with_Chub__Nordex__Univ_of_Western_Australia_and_Motivelink_-_Date_30.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-465-Hon'ble CM Press Release - Industries Dept - MoU with Chub, Nordex, Univ of Western Australia and Motivelink - Date 30.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22244,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-466-Hon_ble_Animal_Husbandry_Minister_Press_Release-_Press_Release-Tamil__-Date_30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-466-Hon'ble Animal Husbandry Minister Press Release- Press Release-Tamil  -Date 30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22245,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-466-Hon_ble_Animal_Husbandry_Minister_Press_Release-English_-Date_30.07.2206.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-466-Hon'ble Animal Husbandry Minister Press Release-English -Date 30.07.2206.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22246,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-467_-Hon_ble_PWD___Sports_Minister_PR-Pension-Date_30.7._2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-467 -Hon'ble PWD & Sports Minister PR-Pension-Date 30.7. 2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22247,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.468_-_Hon_ble__Labour_Welfare_and_Skill_Development_Minister_Press_Release_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.468 - Hon'ble  Labour Welfare and Skill Development Minister Press Release - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22248,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.469_-_Hon_ble_CM_Press_Release_-_Formation_of_Expert_Committee_for_El-Nino_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.469 - Hon'ble CM Press Release - Formation of Expert Committee for El-Nino - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22249,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.470_-_EDII_AI_and_Dgital_Marketing_Training_Press_Release_-_English_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.470 - EDII AI and Dgital Marketing Training Press Release - English - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22250,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.470_-_EDII_AI_and_Dgital_Marketing_Training_Press_Release_-_Tamil_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.470 - EDII AI and Dgital Marketing Training Press Release - Tamil - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22251,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.471_-_EDII_One_Year_Course_Press_Release_-_English_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.471 - EDII One Year Course Press Release - English - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22252,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.471_-_EDII_One_Year_Course_Press_Release_-_Tamil_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.471 - EDII One Year Course Press Release - Tamil - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22253,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.472_-_Indian_Medicine___Homoeopathy_Dept_Press_Release_-_English_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.472 - Indian Medicine & Homoeopathy Dept Press Release - English - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22254,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.472_-_Indian_Medicine___Homoeopathy_Dept_Press_Release_-_Tamil_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.472 - Indian Medicine & Homoeopathy Dept Press Release - Tamil - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22255,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.473_-_Finance_Department_Press_Release_-_English_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.473 - Finance Department Press Release - English - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22256,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.473_-_Finance_Department_Press_Release_-_Tamil_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.473 - Finance Department Press Release - Tamil - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      },
+      {
+        "id": 22257,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.474_-_Hon_ble_Rural_Development_and_Water_Resources_Minister_Review_Meeting_Press_Relase_-_Date.30.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-31",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.474 - Hon'ble Rural Development and Water Resources Minister Review Meeting Press Relase - Date.30.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-30",
+        "language": "en"
+      }
+    ]
+  }
+}

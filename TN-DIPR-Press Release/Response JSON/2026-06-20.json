@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-20",
+  "fetchedAt": "2026-08-01T00:10:41.732251+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:41.732251+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-20"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22005,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.261_-_Hon_ble_CM_Social_Media_Message_-_President_of_India_Birthday_wishes_-_Date.20.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.261 - Hon'ble CM Social Media Message - President of India Birthday wishes - Date.20.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-20",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-08",
+  "fetchedAt": "2026-08-01T00:10:45.977213+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:45.977213+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-08"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22116,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.357_-Hon_ble__CT_Minister__Press_Release-_Review_Meeting-Date_08.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.357 -Hon'ble  CT Minister  Press Release- Review Meeting-Date 08.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-08",
+        "language": "en"
+      },
+      {
+        "id": 22117,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-358_-Hon_ble_Agriculture_Minister_Press_Release-Extension_through_interaction_-Date__08.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-358 -Hon'ble Agriculture Minister Press Release-Extension through interaction -Date  08.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-08",
+        "language": "en"
+      },
+      {
+        "id": 22118,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-359_-MAWS_Dept_Press_Release_-24X_7_Water_Supply_-Date_8.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-359 -MAWS Dept Press Release -24X 7 Water Supply -Date 8.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-08",
+        "language": "en"
+      },
+      {
+        "id": 22119,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-360_-Hon_ble_Social_Welfare_Minister_Press_Release-Date_08.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-360 -Hon'ble Social Welfare Minister Press Release-Date 08.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-08",
+        "language": "en"
+      },
+      {
+        "id": 22120,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.361-TN_Electricity_Regulatory_Commission_Press_Release-Date_08.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.361-TN Electricity Regulatory Commission Press Release-Date 08.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-08",
+        "language": "en"
+      },
+      {
+        "id": 22121,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-362-Civil_Supplies___Consumer_Protection_Dept_Press_Release-Grievance_Day_Camp-Date_08.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-362-Civil Supplies & Consumer Protection Dept Press Release-Grievance Day Camp-Date 08.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-08",
+        "language": "en"
+      },
+      {
+        "id": 22122,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-363-Hon_ble_Health_Minister_Press_Release-NalamAI__E-ICU-Inauguration-Date_8.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-363-Hon'ble Health Minister Press Release-NalamAI, E-ICU-Inauguration-Date 8.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-08",
+        "language": "en"
+      }
+    ]
+  }
+}

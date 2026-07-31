@@ -1,0 +1,106 @@
+{
+  "date": "2026-07-11",
+  "fetchedAt": "2026-08-01T00:10:46.679771+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:46.679771+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-11"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22141,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.376_-_Hon_ble_CM_Social_Media_Message_-_Freedom_Fighter_Maveeran_Azhagumuthukon_Birthday_-_Date_-_11.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.376 - Hon'ble CM Social Media Message - Freedom Fighter Maveeran Azhagumuthukon Birthday - Date - 11.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-11",
+        "language": "en"
+      },
+      {
+        "id": 22142,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.377_-_Hon_ble_Ministers_Press_Release_-__Maveeran_Alagumuthu_Kone_Birthday_-_Date_-_11.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.377 - Hon'ble Ministers Press Release -  Maveeran Alagumuthu Kone Birthday - Date - 11.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-11",
+        "language": "en"
+      },
+      {
+        "id": 22143,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.378_-_Directorate_of_Indian_Medicine_and_Homoeopathy_Press_Release_English_-_Date_-_11.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.378 - Directorate of Indian Medicine and Homoeopathy Press Release English - Date - 11.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-11",
+        "language": "en"
+      },
+      {
+        "id": 22144,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.378_-_Directorate_of_Indian_Medicine_and_Homoeopathy_Press_Release_Tamil_-_Date_-_11.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.378 - Directorate of Indian Medicine and Homoeopathy Press Release Tamil - Date - 11.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-11",
+        "language": "en"
+      },
+      {
+        "id": 22145,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.379_-_Directorate_of_Indian_Medicine_and_Homoeopathy_Press_Release_English_-_Date_-_11.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.379 - Directorate of Indian Medicine and Homoeopathy Press Release English - Date - 11.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-11",
+        "language": "en"
+      },
+      {
+        "id": 22146,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.379_-_Directorate_of_Indian_Medicine_and_Homoeopathy_Press_Release_Tamil_-_Date_-_11.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.379 - Directorate of Indian Medicine and Homoeopathy Press Release Tamil - Date - 11.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-11",
+        "language": "en"
+      },
+      {
+        "id": 22147,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.380_-_Hon_ble_CM_Social_Media_Message_-_Vietnam_Boat_Accident_-_Date.11.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.380 - Hon'ble CM Social Media Message - Vietnam Boat Accident - Date.11.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-11",
+        "language": "en"
+      },
+      {
+        "id": 22148,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.381_-_Hon_ble_CM_Social_Media_Message_-_Death_of_Singar_Tmt.S.Janaki_-_Date.11.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.381 - Hon'ble CM Social Media Message - Death of Singar Tmt.S.Janaki - Date.11.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-11",
+        "language": "en"
+      }
+    ]
+  }
+}

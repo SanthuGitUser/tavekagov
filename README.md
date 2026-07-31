@@ -1,133 +1,152 @@
 # TavekaGov
 
-Open-data platform for Tamil Nadu government publications and directories. Python sync scripts scrape official sources, store structured data in [Supabase](https://supabase.com/), and a static React dashboard presents it for browsing and search.
+Open-data platform for Tamil Nadu government publications and directories. Python sync scripts scrape official sources into JSON files in this repository, and a static React dashboard presents them for browsing and search.
 
 **Live dashboard:** [santhugituser.github.io/tavekagov](https://santhugituser.github.io/tavekagov/)
 
+> **Disclaimer:** This is an independent project, not affiliated with the Government of Tamil Nadu. See [docs/DISCLAIMER.md](docs/DISCLAIMER.md).
+
+## Quick start (dashboard only)
+
+```powershell
+git clone https://github.com/santhugituser/tavekagov.git
+cd tavekagov/web
+copy .env.example .env.local
+npm install
+npm run dev
+```
+
+Open the URL shown in the terminal (usually `http://localhost:5173`). JSON data is already in the repo — no Python setup required to browse locally.
+
 ## What it includes
 
-| Area | Source | Storage |
-|------|--------|---------|
-| DIPR press releases | [dipr.tn.gov.in](https://dipr.tn.gov.in/press-release1.html) | Supabase |
-| Government press release images | [tn.gov.in](https://www.tn.gov.in/press_release.php) | Supabase |
-| Government orders (G.O.s) | [tn.gov.in](https://www.tn.gov.in/godept_list.php) | Supabase |
-| IAS transfers & postings | [tn.gov.in](https://tnsectdemo.tn.gov.in/ias/transferandpostings.php) | Supabase |
-| Departments | [tn.gov.in](https://www.tn.gov.in/department_list.php) | Supabase |
-| Council of ministers | [tn.gov.in](https://www.tn.gov.in/minister_list.php) | Supabase |
-| Districts | [tn.gov.in](https://www.tn.gov.in/district_list.php) | Supabase |
-| Tamil Arasu magazine | [Tamil Digital Library](https://tamildigitallibrary.in/) | Supabase |
-| Tamil Nadu news | [NewsData.io](https://newsdata.io/) | JSON in repo |
+| Area | Source | Storage | UI tab |
+|------|--------|---------|--------|
+| DIPR press releases | [dipr.tn.gov.in](https://dipr.tn.gov.in/press-release1.html) | `TN-DIPR-Press Release/Response JSON/` | Press Releases |
+| Government press release images | [tn.gov.in](https://www.tn.gov.in/press_release.php) | `TN-GOV-Press Release/Response JSON/` | PR Images |
+| Government orders (G.O.s) | [tn.gov.in](https://www.tn.gov.in/godept_list.php) | `TN-GOV_GO-Departments/Response JSON/` | Government Orders |
+| IAS transfers & postings | [tn.gov.in](https://tnsectdemo.tn.gov.in/ias/transferandpostings.php) | `TN-IAS_Transfers-Postings/Response JSON/` | Transfers and Postings |
+| Departments (directory) | [tn.gov.in](https://www.tn.gov.in/department_list.php) | `TN-GOV_Departments/manifests/tn_departments.json` | Departments |
+| Council of ministers | [tn.gov.in](https://www.tn.gov.in/minister_list.php) | `TN-GOV_Council Of Ministers/manifests/tn_ministers.json` | Ministers |
+| Districts | [tn.gov.in](https://www.tn.gov.in/district_list.php) | `TN-GOV_Districts/manifests/tn_districts.json` | Districts |
+| Tamil Arasu magazine | [Tamil Digital Library](https://tamildigitallibrary.in/) | `TN-TVA-Magazine/manifests/magazine.json` (+ optional `Response JSON/`) | Magazine |
+| Tamil Nadu news | [NewsData.io](https://newsdata.io/) | `TN-News/Response JSON/` | News |
+
+Daily scrapers write one JSON file per date under each folder's `Response JSON/`. Directory syncs (departments, ministers, districts) and the magazine manifest are single snapshot files refreshed by scheduled jobs.
+
+### `TN-GOV_Departments` vs `TN-GOV_GO-Departments`
+
+These names look similar but serve different purposes:
+
+| Folder | What it stores | tn.gov.in page |
+|--------|----------------|----------------|
+| `TN-GOV_Departments` | **Department directory** — names, IDs, minister assignments | [department_list.php](https://www.tn.gov.in/department_list.php) |
+| `TN-GOV_GO-Departments` | **Government Orders (G.O.s)** — order number, subject, PDF link by date | [godept_list.php](https://www.tn.gov.in/godept_list.php) |
+
+**GO** here means **Government Order**, not "go to departments."
 
 ## Architecture
 
 ```
-Official TN gov sites          Python sync scripts          Supabase (Postgres + RLS)
+Official TN gov sites          Python sync scripts          JSON in this repo
         │                              │                              │
-        └──────── scrape / parse ──────┴────── upsert ─────────────────┘
+        └──────── scrape / parse ──────┴────── write JSON ──────────────┘
                                                     │
                                                     ▼
                                          React dashboard (GitHub Pages)
-                                         Supabase anon key + public read policies
+                                         Bundles JSON at build time
 ```
 
-News is fetched separately into `TN-News/Response JSON/` and served as static JSON bundled with the web app.
+No database is used at runtime. The web app reads JSON via Vite `import.meta.glob` and ships it in the static build. See [docs/DATA.md](docs/DATA.md) for file formats.
 
 ## Repository layout
 
 ```
 tavekagov/
 ├── web/                          # Vite + React dashboard (see web/README.md)
-├── Public DB/                    # Supabase schema, client helpers, shared .env
+├── Sync-Config/                  # Shared sync settings (.env) and JSON helpers
+├── docs/                         # Project documentation (see below)
 ├── TN-DIPR-Press Release/        # DIPR press release sync + PDF downloader
-├── TN-GOV-Press Release/           # tn.gov.in press release image sync
-├── TN-GOV_GO-Departments/          # Government orders sync
-├── TN-IAS_Transfers-Postings/      # IAS transfers & postings sync
-├── TN-GOV_Departments/             # Department directory sync
-├── TN-GOV_Council Of Ministers/    # Ministers sync
-├── TN-GOV_Districts/               # District directory sync
-├── TN-TVA-Magazine/                # Tamil Arasu magazine sync
-├── TN-News/                        # Daily news fetch (NewsData.io)
-├── scripts/                        # Utility scripts (e.g. GitHub Pages setup)
-└── .github/workflows/              # CI: deploy web, fetch news
+├── TN-GOV-Press Release/         # tn.gov.in press release image sync
+├── TN-GOV_GO-Departments/        # Government orders (G.O.s) sync
+├── TN-GOV_Departments/           # Department directory sync (not G.O.s)
+├── TN-IAS_Transfers-Postings/    # IAS transfers & postings sync
+├── TN-GOV_Council Of Ministers/  # Ministers sync
+├── TN-GOV_Districts/             # District directory sync
+├── TN-TVA-Magazine/              # Tamil Arasu magazine sync
+├── TN-News/                      # Daily news fetch (NewsData.io)
+├── scripts/                      # Utility scripts (e.g. GitHub Pages setup)
+└── .github/workflows/            # CI: fetch data, deploy web
 ```
+
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [docs/DATA.md](docs/DATA.md) | JSON architecture, schemas, feed modules |
+| [docs/SYNC_SCRIPTS.md](docs/SYNC_SCRIPTS.md) | All Python sync scripts and CLI flags |
+| [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) | Scheduled workflows, secrets, fork setup |
+| [docs/DISCLAIMER.md](docs/DISCLAIMER.md) | Non-affiliation, data accuracy, usage |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [SECURITY.md](SECURITY.md) | Reporting vulnerabilities |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
+| [web/README.md](web/README.md) | Frontend development and deploy |
+| [Sync-Config/README.md](Sync-Config/README.md) | Shared Python configuration |
 
 ## Prerequisites
 
 - **Node.js 22+** — web dashboard
-- **Python 3.12+** — sync scripts
-- **Supabase project** — Postgres database with Row Level Security enabled
+- **Python 3.12+** — sync scripts (optional for local data refresh)
 - **NewsData.io API key** *(optional)* — for the Tamil Nadu news feed
 
 ## Setup
 
-### 1. Supabase and environment
+### 1. Shared sync settings
 
-Copy the example env file and fill in your project credentials:
-
-```powershell
-copy "Public DB\.env.example" "Public DB\.env"
-```
-
-Required keys:
-
-| Variable | Used by |
-|----------|---------|
-| `SUPABASE_URL` | Sync scripts, web app |
-| `SUPABASE_ANON_KEY` | Web app (browser-safe with RLS) |
-| `SUPABASE_SERVICE_ROLE_KEY` | Sync scripts only — **never expose in client code** |
-| `DATABASE_URL` or `SUPABASE_DB_PASSWORD` | Schema migration scripts |
-
-Source URLs and start dates for sync jobs are also configured in `Public DB/.env.example`.
-
-### 2. Apply database schema
+Copy the example env file and adjust source URLs or start dates if needed:
 
 ```powershell
-cd "Public DB"
-python -m pip install -r requirements.txt
-python apply_schema.py
+copy "Sync-Config\.env.example" "Sync-Config\.env"
 ```
 
-Additional migration scripts in `Public DB/` add columns and tables for newer data types (press release parsing, G.O. flags, etc.). Run them as needed after the base schema.
+For news fetch only, add `NEWSDATA_API_KEY` to `Sync-Config/.env`.
 
-### 3. Sync data
+### 2. Sync data
 
-Each data module has its own folder with a `requirements.txt` and a `*_sync.py` script. Typical workflow:
+Each data module has its own folder with a `requirements.txt` and a `*_sync.py` script. See [docs/SYNC_SCRIPTS.md](docs/SYNC_SCRIPTS.md) for the full reference.
 
 ```powershell
 cd "TN-GOV_Departments"
 python -m pip install -r requirements.txt
-python tn_dept_sync.py          # live sync
-python tn_dept_sync.py --dry-run  # preview without writing
+python tn_dept_sync.py
 ```
 
-| Script | Folder |
-|--------|--------|
-| `tn_dept_sync.py` | `TN-GOV_Departments/` |
-| `tn_ministers_sync.py` | `TN-GOV_Council Of Ministers/` |
-| `tn_districts_sync.py` | `TN-GOV_Districts/` |
-| `tn_go_dept_sync.py` | `TN-GOV_GO-Departments/` |
-| `tn_press_release_sync.py` | `TN-DIPR-Press Release/` |
-| `tn_gov_press_release_sync.py` | `TN-GOV-Press Release/` |
-| `tn_transfers_postings_sync.py` | `TN-IAS_Transfers-Postings/` |
-| `tn_magazine_sync.py` | `TN-TVA-Magazine/` |
+| Script | Folder | Output |
+|--------|--------|--------|
+| `tn_dept_sync.py` | `TN-GOV_Departments/` | `manifests/tn_departments.json` |
+| `tn_ministers_sync.py` | `TN-GOV_Council Of Ministers/` | `manifests/tn_ministers.json` |
+| `tn_districts_sync.py` | `TN-GOV_Districts/` | `manifests/tn_districts.json` |
+| `tn_go_dept_sync.py` | `TN-GOV_GO-Departments/` | `Response JSON/YYYY-MM-DD.json` |
+| `tn_press_release_sync.py` | `TN-DIPR-Press Release/` | `Response JSON/YYYY-MM-DD.json` |
+| `tn_gov_press_release_sync.py` | `TN-GOV-Press Release/` | `Response JSON/YYYY-MM-DD.json` |
+| `tn_transfers_postings_sync.py` | `TN-IAS_Transfers-Postings/` | `Response JSON/YYYY-MM-DD.json` |
+| `tn_magazine_sync.py` | `TN-TVA-Magazine/` | `manifests/magazine.json` (+ daily JSON) |
+| `fetch_tamil_nadu_news.py` | `TN-News/Code/` | `TN-News/Response JSON/YYYY-MM-DD.json` |
 
-The DIPR folder also includes a standalone PDF downloader — see [TN-DIPR-Press Release/README.md](TN-DIPR-Press%20Release/README.md).
-
-### 4. Run the web dashboard locally
+### 3. Run the web dashboard locally
 
 ```powershell
 cd web
 copy .env.example .env.local
-# Edit .env.local, or rely on Public DB/.env (loaded automatically)
 npm install
 npm run dev
 ```
 
-Restart the dev server after changing env files. The header should show **Live data**, not **Demo mode**.
+Optional: set `VITE_BASE_PATH=/tavekagov/` in `web/.env.local` when previewing the GitHub Pages layout.
 
 See [web/README.md](web/README.md) for build, preview, and GitHub Pages details.
 
-### 5. Fetch Tamil Nadu news *(optional)*
+### 4. Fetch Tamil Nadu news *(optional)*
 
 ```powershell
 cd "TN-News\Code"
@@ -135,46 +154,62 @@ python -m pip install -r requirements.txt
 python fetch_tamil_nadu_news.py
 ```
 
-A GitHub Actions workflow runs this daily at 11:00 PM IST and commits new JSON to the repo.
+Requires `NEWSDATA_API_KEY` in `Sync-Config/.env` or as a GitHub Actions secret.
+
+### 5. Automated daily updates
+
+All fetch workflows run at **11:00 PM IST** (17:30 UTC). Details: [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md).
+
+| Workflow | What it updates |
+|----------|-----------------|
+| `fetch-tn-dipr-press-releases.yml` | DIPR press releases |
+| `fetch-tn-gov-manifests.yml` | Ministers, departments, districts manifests |
+| `fetch-tn-scraped-data.yml` | PR images, G.O.s, transfers/postings, magazine |
+| `fetch-tamil-nadu-news.yml` | News JSON |
+| `deploy-web.yml` | GitHub Pages site from `web/dist` (on push to `main`) |
+
+## Fork and deploy your own
+
+1. **Fork** this repository on GitHub.
+2. **Enable GitHub Pages** — Settings → Pages → Source: **GitHub Actions**.
+3. **Add secret** `NEWSDATA_API_KEY` if you want the news workflow (Settings → Secrets → Actions).
+4. **Update base path** if your repo name differs from `tavekagov`:
+   - `.github/workflows/deploy-web.yml` → `VITE_BASE_PATH`
+   - For a user site at `username.github.io`, use `/` instead of `/tavekagov/`.
+5. Push to `main` — Actions will fetch data nightly and deploy the dashboard.
+
+See [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) for permissions, deploy triggers, and manual workflow runs.
 
 ## Web dashboard
 
 Built with Vite, React 19, TypeScript, Tailwind CSS v4, TanStack Table, and Recharts. Pages include:
 
-- **Dashboard** — KPIs, activity chart, recent press releases
-- **Press Releases** — DIPR releases with search and PDF links
-- **PR Images** — Government press release photos from tn.gov.in
+- **Dashboard** — KPIs, activity chart, recent press releases, news category chart
+- **Press Releases** — DIPR releases with search, PDF links, and department/minister browse tabs
+- **PR Images** — Government press release photos from tn.gov.in with category filters
 - **Government Orders** — Department G.O.s with timeline and table views
 - **Transfers & Postings** — IAS G.O.s
 - **Departments, Ministers, Districts** — Directory listings
 - **Magazine** — Tamil Arasu issues from the Tamil Digital Library
 - **News** — Curated Tamil Nadu news headlines
-- **About** — Project overview and connection status
+- **About** — Project overview and data sources
 
 ## Deployment
 
-### GitHub Pages (web dashboard)
+Push to `main` triggers `.github/workflows/deploy-web.yml`, which builds `web/dist` and deploys to GitHub Pages at `/tavekagov/`.
 
-Push to `main` triggers `.github/workflows/deploy-web.yml`, which builds `web/dist` and deploys to GitHub Pages.
-
-Add these repository secrets:
-
-- `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY`
-
-For a project site at `https://<user>.github.io/tavekagov/`, the workflow sets `VITE_BASE_PATH=/tavekagov/`.
-
-### Automated news fetch
-
-`.github/workflows/fetch-tamil-nadu-news.yml` runs on a daily schedule (and on manual dispatch). Requires the `NEWSDATA_API_KEY` secret.
+No database configuration is required.
 
 ## Security
 
-- Only the Supabase **anon** key belongs in frontend code or GitHub Actions build secrets for the web app.
-- The **service role** key bypasses RLS — keep it in `Public DB/.env` locally and never commit it.
-- All Supabase tables use Row Level Security with public read policies for anonymous users.
+- Do not commit API keys. Use `Sync-Config/.env` locally and GitHub Actions secrets for `NEWSDATA_API_KEY`.
 - `.env` and `.env.local` are gitignored.
+- See [SECURITY.md](SECURITY.md) for reporting vulnerabilities.
+
+## Contributing
+
+Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before opening a PR.
 
 ## License
 
-No license file is included yet. Add one if you plan to open-source or share this project.
+[MIT License](LICENSE) — Copyright (c) 2026 SanthuGitUser

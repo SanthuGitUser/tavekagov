@@ -1,0 +1,106 @@
+{
+  "date": "2026-06-04",
+  "fetchedAt": "2026-08-01T00:10:38.008080+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:38.008080+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-04"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21888,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.166-Hon_ble_CM__Social_Media_Message__-_HCM_Wishes_to_Students_for_School_Reopening_-Date__4.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-04",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.166-Hon'ble CM  Social Media Message  - HCM Wishes to Students for School Reopening -Date  4.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-04",
+        "language": "en"
+      },
+      {
+        "id": 21889,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.167-Hon_ble_CM_Press_Release_-_Industries_Dept_-_L_T_MoU_-Date__4.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-04",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.167-Hon'ble CM Press Release - Industries Dept - L&T MoU -Date  4.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-04",
+        "language": "en"
+      },
+      {
+        "id": 21890,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.168_-_Hon_ble_Social_welfare_Minister-CM_Morning_Breakfast_Inspection-Press_Release_-_Date_-_04.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-04",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.168 - Hon'ble Social welfare Minister-CM Morning Breakfast Inspection-Press Release - Date - 04.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-04",
+        "language": "en"
+      },
+      {
+        "id": 21891,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-169-Hon_ble_CM_Press_Release_-_Natural_Resources_Dept_Review_Meeting-Date_04.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-169-Hon'ble CM Press Release - Natural Resources Dept Review Meeting-Date 04.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-04",
+        "language": "en"
+      },
+      {
+        "id": 21892,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-170-Finance_Ways_and_Means-II__Department-Press_Release-English-Date_04.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-170-Finance(Ways and Means-II) Department-Press Release-English-Date 04.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-04",
+        "language": "en"
+      },
+      {
+        "id": 21893,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-170-Finance_Ways_and_Means-II__Department-Press_Release-Tamil-Date_04.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-170-Finance(Ways and Means-II) Department-Press Release-Tamil-Date 04.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-04",
+        "language": "en"
+      },
+      {
+        "id": 21894,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-171-Hon_ble_Minister_for_Commercial_Taxes_and_Registration_Press_Release-Date_04.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-171-Hon'ble Minister for Commercial Taxes and Registration Press Release-Date 04.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-04",
+        "language": "en"
+      },
+      {
+        "id": 21895,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-172-Hon_ble_Minister_for_Food_and_Civil_Supplies_Press_release_-Date_04.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-172-Hon'ble Minister for Food and Civil Supplies Press release -Date 04.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-04",
+        "language": "en"
+      }
+    ]
+  }
+}

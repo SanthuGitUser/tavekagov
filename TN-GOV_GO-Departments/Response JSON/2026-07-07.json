@@ -1,0 +1,26 @@
+{
+  "date": "2026-07-07",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 2,
+  "orders": [
+    {
+      "go_date": "2026-07-07",
+      "go_number": "G.O.MS.NO.69",
+      "go_name": "Registration Department - Project STAR 3.0 - Anywhere Registration - Phase-I Mandating two deeds only through Presenceless Registration - Administrative Sanction - Accorded - Orders - Issued.",
+      "department_name": "Commercial Taxes and Registration Department",
+      "dep_id_encoded": "Ng==",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/ctax_e_69_2026.pdf"
+    },
+    {
+      "go_date": "2026-07-07",
+      "go_number": "G.O.(MS)No.180",
+      "go_name": "National Health Mission – Tamil Nadu – Change of nomenclature of the post of Medical Officers sanctioned to District Early Intervention Centres – Orders – Issued.",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_180_MS_2026.pdf"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "date": "2026-05-18",
+  "fetchedAt": "2026-08-01T00:10:33.859436+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:33.859436+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-18"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21745,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.031-Hon_ble_CM_Press_Release_-_Industries_-_FICCI_Officials_met_HCM_-_Date_18.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.031-Hon'ble CM Press Release - Industries - FICCI Officials met HCM - Date 18.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21746,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.032-Hon_ble_CM_Condolence_Message_-_Death_of_Film_Producer_Thiru_K._Rajan_-_Date_18.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.032-Hon'ble CM Condolence Message - Death of Film Producer Thiru K. Rajan - Date 18.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21747,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.033-Hon_ble_CM_Press_Release_-_MCCI_Officials_Met_HCM_-_Date_18.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.033-Hon'ble CM Press Release - MCCI Officials Met HCM - Date 18.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21748,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.034-Hon_ble_Minister_for_School_Education_Department_-_Press_Release_-Date_18-05-2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.034-Hon'ble Minister for School Education Department - Press Release -Date 18-05-2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21749,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.035_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-_Ramco_officials_met_Hon_ble_CM_-_Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.035 - Hon'ble CM Press Release - Industries Dept - Ramco officials met Hon'ble CM - Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21750,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.036_-_Hon_ble_CM_Press_Release_-_Industries_dept_-_Renault_Group_Higher_officials_met_Hon_ble_CM_-_Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.036 - Hon'ble CM Press Release - Industries dept - Renault Group Higher officials met Hon'ble CM - Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21751,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.037_-_Hon_ble_Public_Works_and_Sports_Development_Minister_Inspection_Press_Release_-_Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.037 - Hon'ble Public Works and Sports Development Minister Inspection Press Release - Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21752,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.038_-_Labour_Welfare_and_Skill_Development_Dept_Press_Release_-_English_-Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.038 - Labour Welfare and Skill Development Dept Press Release - English -Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21753,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.038_-_Labour_Welfare_and_Skill_Development_Dept_Press_Release_-_Tamil_-Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.038 - Labour Welfare and Skill Development Dept Press Release - Tamil -Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21754,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO.039_-_Hon_ble_CM_Press_Release_-_EB_Dept_Review_Meeting_-_Date.18.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO.039 - Hon'ble CM Press Release - EB Dept Review Meeting - Date.18.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21755,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.040_-_Hon_ble_CM_Press_Release_-_Renovation_of_Amma_Unavagam_-_Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.040 - Hon'ble CM Press Release - Renovation of Amma Unavagam - Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21756,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.041_-_Hon_ble_Rural_Development_and_Water_Resources_Review_Meeting_Press_Release_-_Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-19",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.041 - Hon'ble Rural Development and Water Resources Review Meeting Press Release - Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21757,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO.042_-_Hon_ble_RD___WR_Minister_Meeting_Press_Release_-_Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO.042 - Hon'ble RD & WR Minister Meeting Press Release - Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      },
+      {
+        "id": 21758,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.043_-_Hon_ble_Industries_Minister_Review_Meeting_Press_Release_-_Date.18.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-19",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.043 - Hon'ble Industries Minister Review Meeting Press Release - Date.18.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-18",
+        "language": "en"
+      }
+    ]
+  }
+}

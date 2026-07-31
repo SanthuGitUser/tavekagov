@@ -1,0 +1,84 @@
+{
+  "date": "2026-06-16",
+  "fetchedAt": "2026-08-01T00:10:40.813496+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:40.813496+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-16"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21969,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.234_-_Hon_ble_CM_Press_Release_-_Cooperative_Bank_Crop_Loan_Waiver_for_Farmers_-_Date_16.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-16",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.234 - Hon'ble CM Press Release - Cooperative Bank Crop Loan Waiver for Farmers - Date 16.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-16",
+        "language": "en"
+      },
+      {
+        "id": 21971,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-235-SDAT_Press_Release-June_26_Anti_Drug_Day-Date_16.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-16",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-235-SDAT Press Release-June 26 Anti Drug Day-Date 16.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-16",
+        "language": "en"
+      },
+      {
+        "id": 21972,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.236_-_Hon_ble_CM_Press_Release_-_EB_Dept_Review_Meeting_-_Date_-_16.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-16",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.236 - Hon'ble CM Press Release - EB Dept Review Meeting - Date - 16.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-16",
+        "language": "en"
+      },
+      {
+        "id": 21973,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.237_-_I___PR_Department_Admission_-_Press_Release_-_Date_-_16.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-16",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.237 - I & PR Department Admission - Press Release - Date - 16.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-16",
+        "language": "en"
+      },
+      {
+        "id": 21974,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.238_-__AICSCC_Mains_Results__Press_Release_-_Date_-_16.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-16",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.238 -  AICSCC Mains Results  Press Release - Date - 16.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-16",
+        "language": "en"
+      },
+      {
+        "id": 21975,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.239_-_DIPR_-_Hon_ble_Rural_Development___WRD_Minister_Press_Release_-_Date_-_16.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.239 - DIPR - Hon'ble Rural Development & WRD Minister Press Release - Date - 16.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-16",
+        "language": "en"
+      }
+    ]
+  }
+}

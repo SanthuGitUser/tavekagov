@@ -32,7 +32,7 @@ export default function App() {
           element={
             <AppLayout
               title="Dashboard"
-              description="Overview of Tamil Nadu government open data synced to Supabase."
+              description="Overview of Tamil Nadu government open data from bundled JSON feeds."
             />
           }
         >

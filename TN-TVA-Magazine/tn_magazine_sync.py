@@ -1,12 +1,14 @@
 """
-Fetch Tamil Arasu magazines from Tamil Virtual Academy Digital Library and upsert into Supabase.
+Fetch Tamil Arasu magazines from Tamil Virtual Academy Digital Library and save to JSON.
+
+Writes a rolling catalog to manifests/magazine.json and a daily snapshot to
+Response JSON/YYYY-MM-DD.json on each run.
 
 Usage:
-  1. Ensure Public DB/.env has Supabase keys and TVA_MAGAZINE_SOURCE_URL.
-  2. pip install -r requirements.txt
-  3. python tn_magazine_sync.py
-  4. Optional: python tn_magazine_sync.py --dry-run
-  5. Optional: python tn_magazine_sync.py --month 5 --year 2026
+  1. pip install -r requirements.txt
+  2. python tn_magazine_sync.py
+  3. Optional: python tn_magazine_sync.py --since-date 10-05-2026
+  4. Optional: python tn_magazine_sync.py --month 5 --year 2026
 """
 
 from __future__ import annotations
@@ -18,16 +20,19 @@ import re
 import sys
 import time
 from dataclasses import asdict, dataclass
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
+_SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_KOLKATA = ZoneInfo("Asia/Kolkata")
 _BASE_URL = "https://tamildigitallibrary.in"
 _LIST_ENDPOINT = f"{_BASE_URL}/book-list-data-ajax-new"
 _ARTICLE_ID_RE = re.compile(r"/Articles/(\d+)_")
@@ -87,8 +92,8 @@ class Magazine:
 
 
 def _load_config() -> str:
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
     from config import get_tva_magazine_source_url
 
     return get_tva_magazine_source_url()
@@ -281,38 +286,59 @@ def fetch_magazines(
             break
 
     magazines = sorted(magazines_by_month.values(), key=lambda item: item.issue_date, reverse=True)
-
-    if not magazines:
-        label = ""
-        if target_month and target_year:
-            label = f" for {calendar.month_name[target_month]} {target_year}"
-        raise RuntimeError(f"No Tamil Arasu magazines found{label}.")
-
     return magazines
 
 
-def _load_supabase_client():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
-    from client import get_supabase_client
-
-    return get_supabase_client(use_service_role=True)
+def _normalize_date(value: str) -> str:
+    return value.replace(".", "-").replace("/", "-").strip()
 
 
-def upsert_magazines(magazines: list[Magazine], *, since_date: date = _DEFAULT_SINCE_DATE) -> int:
-    client = _load_supabase_client()
-    client.table("magazine").delete().lt("issue_date", since_date.isoformat()).execute()
-    rows = [
-        {
-            "id": magazine.id,
-            "name": magazine.name,
-            "issue_date": magazine.issue_date,
-            "url": magazine.url,
-        }
-        for magazine in magazines
-    ]
-    client.table("magazine").upsert(rows, on_conflict="id").execute()
-    return len(rows)
+def _parse_display_date(value: str) -> date:
+    normalized = _normalize_date(value)
+    return datetime.strptime(normalized, "%d-%m-%Y").date()
+
+
+def _since_date_from_display(value: str) -> date:
+    """Monthly issues use the first of the month; May 10 still includes the May issue."""
+    parsed = _parse_display_date(value)
+    return date(parsed.year, parsed.month, 1)
+
+
+def _load_existing_magazines(manifest_path: Path) -> list[Magazine]:
+    if not manifest_path.exists():
+        return []
+    payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+    magazines = payload.get("magazines")
+    if not isinstance(magazines, list):
+        return []
+    results: list[Magazine] = []
+    for item in magazines:
+        if not isinstance(item, dict):
+            continue
+        article_id = item.get("id")
+        name = item.get("name")
+        issue_date = item.get("issue_date")
+        url = item.get("url")
+        if article_id is None or not name or not issue_date or not url:
+            continue
+        results.append(
+            Magazine(
+                id=int(article_id),
+                name=str(name),
+                issue_date=str(issue_date),
+                url=str(url),
+            )
+        )
+    return results
+
+
+def _merge_magazines(*groups: list[Magazine]) -> list[Magazine]:
+    merged: dict[int, Magazine] = {}
+    for group in groups:
+        for magazine in group:
+            existing = merged.get(magazine.id)
+            merged[magazine.id] = _prefer_magazine(existing, magazine) if existing else magazine
+    return sorted(merged.values(), key=lambda item: item.issue_date, reverse=True)
 
 
 def write_manifest(magazines: list[Magazine]) -> Path:
@@ -320,22 +346,52 @@ def write_manifest(magazines: list[Magazine]) -> Path:
     path = _MANIFESTS_DIR / "magazine.json"
     payload = {
         "source_url": _load_config(),
+        "fetchedAt": datetime.now(_KOLKATA).isoformat(),
         "count": len(magazines),
         "magazines": [asdict(magazine) for magazine in magazines],
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
+
+
+def write_daily_response(
+    output_dir: Path,
+    *,
+    magazines: list[Magazine],
+    source_url: str,
+) -> Path:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from daily_json import save_daily_json
+
+    fetched_at = datetime.now(_KOLKATA)
+    today = fetched_at.date()
+    records = [asdict(magazine) for magazine in magazines]
+
+    return save_daily_json(
+        output_dir,
+        day=today,
+        items_key="magazines",
+        items=records,
+        source_url=source_url,
+        fetched_at=fetched_at,
+        merge_key_fn=lambda item: str(item.get("id") or ""),
+    )
 
 
 def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
 
-    parser = argparse.ArgumentParser(description="Sync Tamil Arasu magazines to Supabase.")
+    parser = argparse.ArgumentParser(description="Fetch Tamil Arasu magazines and save JSON manifest.")
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Fetch and write manifest only; do not upsert to Supabase.",
+        "--since-date",
+        help="Include issues from this date onward (DD-MM-YYYY). Defaults to 10-05-2026.",
+    )
+    parser.add_argument(
+        "--output-dir",
+        default=str(_OUTPUT_DIR),
+        help="Folder for daily JSON responses (YYYY-MM-DD.json).",
     )
     parser.add_argument(
         "--month",
@@ -360,23 +416,39 @@ def main() -> int:
     if (args.month is None) ^ (args.year is None):
         parser.error("Pass both --month and --year to filter to a single issue month.")
 
-    print(f"Fetching Tamil Arasu magazines from {_load_config()} ...")
-    magazines = fetch_magazines(
+    source_url = _load_config()
+    since_date = (
+        _since_date_from_display(args.since_date)
+        if args.since_date
+        else _DEFAULT_SINCE_DATE
+    )
+    manifest_path = _MANIFESTS_DIR / "magazine.json"
+    existing = _load_existing_magazines(manifest_path)
+
+    print(f"Fetching Tamil Arasu magazines from {source_url} ...")
+    print(f"Including issues since {since_date.isoformat()} ...")
+    fetched = fetch_magazines(
         target_month=args.month,
         target_year=args.year,
+        since_date=since_date,
         max_pages=args.max_pages,
     )
-    print(f"Parsed {len(magazines)} magazines.")
+    magazines = _merge_magazines(existing, fetched)
+    if not magazines:
+        label = ""
+        if args.month and args.year:
+            label = f" for {calendar.month_name[args.month]} {args.year}"
+        raise RuntimeError(f"No Tamil Arasu magazines found{label}.")
+    print(f"Parsed {len(magazines)} magazine issue(s).")
 
     manifest_path = write_manifest(magazines)
+    daily_path = write_daily_response(
+        Path(args.output_dir),
+        magazines=magazines,
+        source_url=source_url,
+    )
     print(f"Wrote manifest: {manifest_path}")
-
-    if args.dry_run:
-        print("Dry run complete (no database changes).")
-        return 0
-
-    count = upsert_magazines(magazines)
-    print(f"Upserted {count} rows into public.magazine.")
+    print(f"Wrote daily JSON: {daily_path}")
     return 0
 
 

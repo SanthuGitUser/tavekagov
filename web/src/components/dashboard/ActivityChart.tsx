@@ -33,7 +33,7 @@ export function ActivityChart({ data, loading }: ActivityChartProps) {
           <Skeleton className="h-full w-full" />
         ) : data.length === 0 ? (
           <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
-            No chart data yet. Run sync scripts to populate Supabase.
+            No chart data yet. Run the DIPR press release sync script to populate JSON files.
           </div>
         ) : (
           <ResponsiveContainer width="100%" height="100%">

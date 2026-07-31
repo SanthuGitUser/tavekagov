@@ -1,0 +1,106 @@
+{
+  "date": "2026-06-15",
+  "fetchedAt": "2026-08-01T00:10:40.588633+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:40.588633+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-15"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21961,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.226-Hon_ble_CM_Press_Release_-_Incentive_to_Keerthi_Chakra_Award_Winner_Army_Officer_Thiru_Meenakshi_Sundaram_-Date__15.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.226-Hon'ble CM Press Release - Incentive to Keerthi Chakra Award Winner Army Officer Thiru Meenakshi Sundaram -Date  15.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-15",
+        "language": "en"
+      },
+      {
+        "id": 21962,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.227-Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Death_of_Head_Constable__in_Road_Accident_-_CMPRF_-_Date_15.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.227-Hon'ble CM Press Release - Condolence and Relief - Death of Head Constable  in Road Accident - CMPRF - Date 15.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-15",
+        "language": "en"
+      },
+      {
+        "id": 21963,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.228-Hon_ble_Rural_Development_and_Water_Resources_Minister_Press_Release-Date_15.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.228-Hon'ble Rural Development and Water Resources Minister Press Release-Date 15.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-15",
+        "language": "en"
+      },
+      {
+        "id": 21964,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.229-Hon_ble_CM_Press_Release_-_Social_Welfare_Dept-Review_Meeting_-Date_15.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.229-Hon'ble CM Press Release - Social Welfare Dept-Review Meeting -Date 15.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-15",
+        "language": "en"
+      },
+      {
+        "id": 21965,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.230-WRD_Department-Kanniyakumari_District-Radhapuram_Canal-Water_Release-Date_15.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.230-WRD Department-Kanniyakumari District-Radhapuram Canal-Water Release-Date 15.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-15",
+        "language": "en"
+      },
+      {
+        "id": 21966,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.231-Employment_and_Training-Press_Release-Date_15.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.231-Employment and Training-Press Release-Date 15.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-15",
+        "language": "en"
+      },
+      {
+        "id": 21967,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.232-CMDA-PP-Press_Release-Date_15.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.232-CMDA-PP-Press Release-Date 15.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-15",
+        "language": "en"
+      },
+      {
+        "id": 21968,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.233-Hon_ble_Minister_for_Rural_Development_and_Water_Resources-RD_Review_Meeting-Press_Release-Date_15.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.233-Hon'ble Minister for Rural Development and Water Resources-RD Review Meeting-Press Release-Date 15.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-15",
+        "language": "en"
+      }
+    ]
+  }
+}

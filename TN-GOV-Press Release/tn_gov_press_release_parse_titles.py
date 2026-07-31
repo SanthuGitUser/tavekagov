@@ -1,24 +1,24 @@
 """
-Parse tn_gov_press_releases.title into minister and department fields with FK links.
+Parse gov press release titles into minister and department enrichment fields.
+
+Used by tn_gov_press_release_sync.py during JSON export. Optional CLI audits
+enrichment coverage across Response JSON files.
 
 Usage:
   python tn_gov_press_release_parse_titles.py
-  python tn_gov_press_release_parse_titles.py --id 1
-  python tn_gov_press_release_parse_titles.py --all
-  python tn_gov_press_release_parse_titles.py --dry-run --verbose
+  python tn_gov_press_release_parse_titles.py --verbose
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import re
-import sys
 from dataclasses import dataclass
 from difflib import get_close_matches
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
 
 _NORMALIZE_TEXT_RE = re.compile(r"[^a-z0-9]+")
 _APOSTROPHE_RE = re.compile(r"[`’]")
@@ -49,14 +49,6 @@ _MINISTER_PERSON_RE = re.compile(
     r"hon'?ble\s+minister\s+(thiru|tmt)\s+(.+?)(?=\s+(?:inspected|chaired|inaugurated|released|flagged|met|paid|distributed|conducted|visited|travelled|felicitated|witnessed|welcomed|reviewed)\b)",
     flags=re.IGNORECASE,
 )
-
-
-@dataclass(frozen=True)
-class GovPressReleaseRow:
-    id: int
-    title: str | None
-    minister_id: int | None = None
-    department_id: int | None = None
 
 
 @dataclass(frozen=True)
@@ -219,17 +211,6 @@ def _is_title_complete(
     return minister_id is not None and department_id is not None
 
 
-def _load_db_url() -> str:
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
-    from config import get_database_url
-
-    url = get_database_url()
-    if not url:
-        raise SystemExit("DATABASE_URL / SUPABASE_DB_PASSWORD is not configured in Public DB/.env")
-    return url
-
-
 def _normalize_text(value: str) -> str:
     lowered = _APOSTROPHE_RE.sub("'", value.lower())
     lowered = lowered.replace("&", " and ")
@@ -330,76 +311,6 @@ def parse_gov_press_release_title(title: str | None) -> ParsedTitle:
         is_chief_minister=is_chief_minister,
         confidence=confidence,
     )
-
-
-def fetch_rows(*, release_id: int | None = None, pending_only: bool = True) -> list[GovPressReleaseRow]:
-    import psycopg2
-
-    conditions: list[str] = []
-    params: list[object] = []
-
-    if release_id is not None:
-        conditions.append("id = %s")
-        params.append(release_id)
-    elif pending_only:
-        conditions.append(
-            "(title_parsed = false or minister_id is null or department_id is null)"
-        )
-
-    query = "select id, title, minister_id, department_id from public.tn_gov_press_releases"
-    if conditions:
-        query += " where " + " and ".join(conditions)
-    query += " order by id"
-
-    with psycopg2.connect(_load_db_url()) as conn:
-        with conn.cursor() as cur:
-            cur.execute(query, tuple(params))
-            rows = cur.fetchall()
-
-    if release_id is not None and not rows:
-        raise SystemExit(f"No tn_gov_press_releases row found for id={release_id}.")
-
-    return [
-        GovPressReleaseRow(id=row[0], title=row[1], minister_id=row[2], department_id=row[3])
-        for row in rows
-    ]
-
-
-def fetch_ministers() -> list[MinisterRow]:
-    import psycopg2
-
-    with psycopg2.connect(_load_db_url()) as conn:
-        with conn.cursor() as cur:
-            cur.execute(
-                """
-                select id, name, designation, portfolio, is_chief_minister
-                from public.tn_ministers
-                order by id
-                """
-            )
-            rows = cur.fetchall()
-
-    return [
-        MinisterRow(
-            id=row[0],
-            name=row[1],
-            designation=row[2],
-            portfolio=row[3],
-            is_chief_minister=bool(row[4]),
-        )
-        for row in rows
-    ]
-
-
-def fetch_departments() -> list[DepartmentRow]:
-    import psycopg2
-
-    with psycopg2.connect(_load_db_url()) as conn:
-        with conn.cursor() as cur:
-            cur.execute("select id, name, minister_name from public.tn_dept order by id")
-            rows = cur.fetchall()
-
-    return [DepartmentRow(id=row[0], name=row[1], minister_name=row[2]) for row in rows]
 
 
 def _portfolio_key(value: str | None) -> str:
@@ -663,324 +574,243 @@ def _department_from_minister(
     return best[1], "medium"
 
 
-def save_parsed_titles(
-    updates: list[
-        tuple[
-            GovPressReleaseRow,
-            ParsedTitle,
-            int | None,
-            int | None,
-            bool,
-            bool,
-            bool,
-            bool,
-            bool,
-            bool,
-            bool,
-            bool,
-            str | None,
-            str | None,
-        ]
-    ],
-) -> None:
-    if not updates:
-        return
-
-    import psycopg2
-
-    with psycopg2.connect(_load_db_url()) as conn:
-        with conn.cursor() as cur:
-            cur.executemany(
-                """
-                update public.tn_gov_press_releases
-                set minister_name = %s,
-                    department_name = %s,
-                    minister_id = %s,
-                    department_id = %s,
-                    cm_visits = %s,
-                    postings = %s,
-                    review_meetings = %s,
-                    budget = %s,
-                    tributes = %s,
-                    others = %s,
-                    inspection = %s,
-                    portfolio = %s,
-                    title_parsed = %s,
-                    parse_confidence = %s,
-                    minister_match_confidence = %s,
-                    department_match_confidence = %s
-                where id = %s
-                """,
-                [
-                    (
-                        parsed.minister_name,
-                        parsed.department_name,
-                        minister_id,
-                        department_id,
-                        cm_visits,
-                        postings,
-                        review_meetings,
-                        budget,
-                        tributes,
-                        others,
-                        inspection,
-                        portfolio,
-                        _is_title_complete(
-                            minister_id=minister_id,
-                            department_id=department_id,
-                            cm_visits=cm_visits,
-                            review_meetings=review_meetings,
-                            budget=budget,
-                            tributes=tributes,
-                            others=others,
-                            inspection=inspection,
-                            postings=postings,
-                        ),
-                        parsed.confidence,
-                        minister_confidence,
-                        department_confidence,
-                        row.id,
-                    )
-                    for row, parsed, minister_id, department_id, cm_visits, postings, review_meetings, budget, tributes, others, inspection, portfolio, minister_confidence, department_confidence in updates
-                ],
-            )
-        conn.commit()
-
-
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description="Parse tn_gov_press_releases.title into minister and department links.",
+def load_ministers_from_manifest(manifest_path: Path | None = None) -> list[MinisterRow]:
+    path = manifest_path or (
+        _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json"
     )
-    parser.add_argument("--id", type=int, help="Process only this tn_gov_press_releases.id.")
-    parser.add_argument(
-        "--all",
-        action="store_true",
-        help="Process all rows, not only pending/unlinked rows.",
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return [
+        MinisterRow(
+            id=int(item["id"]),
+            name=str(item["name"]),
+            designation=str(item["designation"]),
+            portfolio=item.get("portfolio"),
+            is_chief_minister=bool(item.get("is_chief_minister")),
+        )
+        for item in payload.get("ministers", [])
+    ]
+
+
+def load_departments_from_manifest(manifest_path: Path | None = None) -> list[DepartmentRow]:
+    path = manifest_path or (_REPO_ROOT / "TN-GOV_Departments" / "manifests" / "tn_departments.json")
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return [
+        DepartmentRow(
+            id=int(item["id"]),
+            name=str(item["name"]),
+            minister_name=item.get("minister_name"),
+        )
+        for item in payload.get("departments", [])
+    ]
+
+
+def enrich_gov_press_release(
+    title: str | None,
+    *,
+    ministers: list[MinisterRow],
+    departments: list[DepartmentRow],
+) -> dict[str, object]:
+    is_posting = _is_posting_title(title)
+    is_cm_visit = False if is_posting else _is_cm_visit_title(title)
+    is_review_meeting = _is_review_meeting_title(title)
+    if is_cm_visit and is_review_meeting:
+        is_cm_visit = False
+    is_budget = _is_budget_title(title)
+    is_tributes = _is_tributes_title(title)
+    is_others = _is_others_title(title)
+    is_inspection = _is_inspection_title(title)
+
+    parsed = parse_gov_press_release_title(title)
+    department_id, department_confidence = _match_department(parsed.department_name, departments)
+    dept_name_from_title: str | None = None
+    if department_id is None:
+        department_id, department_confidence, dept_name_from_title = _match_department_in_title(
+            title,
+            departments,
+        )
+
+    override_department_id = _department_override_id(title)
+    if override_department_id is not None:
+        department_id = override_department_id
+        department_confidence = "high"
+
+    if dept_name_from_title:
+        parsed = ParsedTitle(
+            minister_name=parsed.minister_name,
+            department_name=dept_name_from_title,
+            is_chief_minister=parsed.is_chief_minister,
+            confidence="high" if parsed.minister_name else "medium",
+        )
+
+    minister_id, minister_confidence = _match_minister(
+        parsed,
+        departments=departments,
+        ministers=ministers,
+        department_id=department_id,
     )
-    parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Parse and print only; do not update tn_gov_press_releases.",
-    )
-    parser.add_argument(
-        "--verbose",
-        action="store_true",
-        help="Print parsed output for each processed row.",
-    )
-    args = parser.parse_args()
-
-    pending_only = not args.all and args.id is None
-    rows = fetch_rows(release_id=args.id, pending_only=pending_only)
-
-    departments: list[DepartmentRow] = []
-    ministers: list[MinisterRow] = []
-    if not args.dry_run or args.verbose:
-        departments = fetch_departments()
-        ministers = fetch_ministers()
-
-    print(f"Found {len(rows)} tn_gov_press_releases row(s) to parse.")
-    counts = {"high": 0, "medium": 0, "low": 0}
-    linked = 0
-    cm_visits_count = 0
-    review_meetings_count = 0
-    postings_count = 0
-    budget_count = 0
-    tributes_count = 0
-    others_count = 0
-    inspection_count = 0
-    portfolio_count = 0
-    updates: list[
-        tuple[
-            GovPressReleaseRow,
-            ParsedTitle,
-            int | None,
-            int | None,
-            bool,
-            bool,
-            bool,
-            bool,
-            bool,
-            bool,
-            bool,
-            bool,
-            str | None,
-            str | None,
-        ]
-    ] = []
-
-    for index, row in enumerate(rows, start=1):
-        is_posting = _is_posting_title(row.title)
-        is_cm_visit = False if is_posting else _is_cm_visit_title(row.title)
-        is_review_meeting = _is_review_meeting_title(row.title)
-        if is_cm_visit and is_review_meeting:
-            is_cm_visit = False
-        is_budget = _is_budget_title(row.title)
-        is_tributes = _is_tributes_title(row.title)
-        is_others = _is_others_title(row.title)
-        is_inspection = _is_inspection_title(row.title)
-
-        if is_budget:
-            budget_count += 1
-        if is_tributes:
-            tributes_count += 1
-        if is_others:
-            others_count += 1
-        if is_inspection:
-            inspection_count += 1
-        parsed = parse_gov_press_release_title(row.title)
-        counts[parsed.confidence] = counts.get(parsed.confidence, 0) + 1
-
-        department_id, department_confidence = _match_department(parsed.department_name, departments)
-        dept_name_from_title: str | None = None
-        if department_id is None:
-            department_id, department_confidence, dept_name_from_title = _match_department_in_title(
-                row.title,
-                departments,
-            )
-
-        override_department_id = _department_override_id(row.title)
-        if override_department_id is not None:
-            department_id = override_department_id
-            department_confidence = "high"
-
-        if dept_name_from_title:
-            parsed = ParsedTitle(
-                minister_name=parsed.minister_name,
-                department_name=dept_name_from_title,
-                is_chief_minister=parsed.is_chief_minister,
-                confidence="high" if parsed.minister_name else "medium",
-            )
-
-        minister_id, minister_confidence = _match_minister(
-            parsed,
+    if minister_id is None:
+        minister_id, minister_confidence = _minister_from_department(
+            department_id,
             departments=departments,
             ministers=ministers,
-            department_id=department_id,
         )
-        if minister_id is None:
-            minister_id, minister_confidence = _minister_from_department(
-                department_id,
-                departments=departments,
-                ministers=ministers,
+
+    if department_id is None and minister_id is not None and not is_cm_visit:
+        dept_from_minister, dept_from_minister_conf = _department_from_minister(
+            minister_id,
+            ministers=ministers,
+            departments=departments,
+        )
+        if dept_from_minister is not None:
+            department_id = dept_from_minister
+            department_confidence = dept_from_minister_conf or "medium"
+
+    if parsed.department_name is None and department_id is not None:
+        matched_department = next(
+            (dept.name for dept in departments if dept.id == department_id),
+            None,
+        )
+        if matched_department:
+            parsed = ParsedTitle(
+                minister_name=parsed.minister_name,
+                department_name=matched_department,
+                is_chief_minister=parsed.is_chief_minister,
+                confidence=parsed.confidence,
             )
-        minister_id = minister_id if minister_id is not None else row.minister_id
-        department_id = department_id if department_id is not None else row.department_id
 
-        if department_id is None and minister_id is not None and not is_cm_visit:
-            dept_from_minister, dept_from_minister_conf = _department_from_minister(
-                minister_id,
-                ministers=ministers,
-                departments=departments,
+    if parsed.minister_name is None and minister_id is not None:
+        matched_minister = next(
+            (minister.name for minister in ministers if minister.id == minister_id),
+            None,
+        )
+        if matched_minister:
+            parsed = ParsedTitle(
+                minister_name=matched_minister,
+                department_name=parsed.department_name,
+                is_chief_minister=parsed.is_chief_minister,
+                confidence=parsed.confidence,
             )
-            if dept_from_minister is not None:
-                department_id = dept_from_minister
-                department_confidence = dept_from_minister_conf or "medium"
 
-        if parsed.department_name is None and department_id is not None:
-            matched_department = next(
-                (dept.name for dept in departments if dept.id == department_id),
-                None,
+    if is_posting:
+        pass
+    elif is_review_meeting:
+        pass
+    elif is_cm_visit:
+        chief = _chief_minister(ministers)
+        department_id = None
+        department_confidence = None
+        if chief:
+            minister_id = chief.id
+            minister_confidence = "high"
+            parsed = ParsedTitle(
+                minister_name=chief.name,
+                department_name=None,
+                is_chief_minister=True,
+                confidence="high",
             )
-            if matched_department:
-                parsed = ParsedTitle(
-                    minister_name=parsed.minister_name,
-                    department_name=matched_department,
-                    is_chief_minister=parsed.is_chief_minister,
-                    confidence=parsed.confidence,
-                )
 
-        if parsed.minister_name is None and minister_id is not None:
-            matched_minister = next(
-                (minister.name for minister in ministers if minister.id == minister_id),
-                None,
-            )
-            if matched_minister:
-                parsed = ParsedTitle(
-                    minister_name=matched_minister,
-                    department_name=parsed.department_name,
-                    is_chief_minister=parsed.is_chief_minister,
-                    confidence=parsed.confidence,
-                )
+    is_portfolio = _is_portfolio_release(
+        cm_visits=is_cm_visit,
+        postings=is_posting,
+        review_meetings=is_review_meeting,
+        budget=is_budget,
+        tributes=is_tributes,
+        others=is_others,
+        inspection=is_inspection,
+        minister_id=minister_id,
+        department_id=department_id,
+    )
 
-        if is_posting:
-            postings_count += 1
-        elif is_review_meeting:
-            review_meetings_count += 1
-        elif is_cm_visit:
-            cm_visits_count += 1
-            chief = _chief_minister(ministers)
-            department_id = None
-            department_confidence = None
-            if chief:
-                minister_id = chief.id
-                minister_confidence = "high"
-                parsed = ParsedTitle(
-                    minister_name=chief.name,
-                    department_name=None,
-                    is_chief_minister=True,
-                    confidence="high",
-                )
-
-        if minister_id is not None and department_id is not None:
-            linked += 1
-
-        is_portfolio = _is_portfolio_release(
+    return {
+        "minister_name": parsed.minister_name,
+        "department_name": parsed.department_name,
+        "minister_id": minister_id,
+        "department_id": department_id,
+        "district_id": None,
+        "title_parsed": _is_title_complete(
+            minister_id=minister_id,
+            department_id=department_id,
             cm_visits=is_cm_visit,
-            postings=is_posting,
             review_meetings=is_review_meeting,
             budget=is_budget,
             tributes=is_tributes,
             others=is_others,
             inspection=is_inspection,
-            minister_id=minister_id,
-            department_id=department_id,
-        )
-        if is_portfolio:
-            portfolio_count += 1
+            postings=is_posting,
+        ),
+        "parse_confidence": parsed.confidence,
+        "minister_match_confidence": minister_confidence,
+        "department_match_confidence": department_confidence,
+        "cm_visits": is_cm_visit,
+        "postings": is_posting,
+        "review_meetings": is_review_meeting,
+        "budget": is_budget,
+        "tributes": is_tributes,
+        "others": is_others,
+        "inspection": is_inspection,
+        "portfolio": is_portfolio,
+    }
 
-        updates.append(
-            (
-                row,
-                parsed,
-                minister_id,
-                department_id,
-                is_cm_visit,
-                is_posting,
-                is_review_meeting,
-                is_budget,
-                is_tributes,
-                is_others,
-                is_inspection,
-                is_portfolio,
-                minister_confidence,
-                department_confidence,
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Audit title enrichment on gov press release JSON files.",
+    )
+    parser.add_argument(
+        "--json-dir",
+        default=str(_REPO_ROOT / "TN-GOV-Press Release" / "Response JSON"),
+        help="Folder containing YYYY-MM-DD.json files.",
+    )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Print enrichment details for each release.",
+    )
+    args = parser.parse_args()
+
+    json_dir = Path(args.json_dir)
+    if not json_dir.is_dir():
+        raise SystemExit(f"JSON directory not found: {json_dir}")
+
+    ministers = load_ministers_from_manifest()
+    departments = load_departments_from_manifest()
+
+    total = 0
+    linked = 0
+    parsed = 0
+    counts = {"high": 0, "medium": 0, "low": 0}
+
+    for path in sorted(json_dir.glob("*.json")):
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        releases = payload.get("releases", [])
+        if not isinstance(releases, list):
+            continue
+
+        for release in releases:
+            if not isinstance(release, dict):
+                continue
+            title = release.get("title")
+            total += 1
+            enrichment = enrich_gov_press_release(
+                str(title) if title is not None else None,
+                ministers=ministers,
+                departments=departments,
             )
-        )
-
-        if args.verbose or args.id is not None or args.dry_run:
-            print(f"\n[{index}/{len(rows)}] id={row.id}")
-            print(f"title: {row.title}")
-            print(f"minister_name: {parsed.minister_name}")
-            print(f"department_name: {parsed.department_name}")
-            print(f"cm_visits: {is_cm_visit}")
-            print(f"review_meetings: {is_review_meeting}")
-            print(f"postings: {is_posting}")
-            print(f"budget: {is_budget}")
-            print(f"tributes: {is_tributes}")
-            print(f"others: {is_others}")
-            print(f"inspection: {is_inspection}")
-            print(f"portfolio: {is_portfolio}")
-            print(f"parse_confidence: {parsed.confidence}")
-            print(f"minister_id: {minister_id} ({minister_confidence})")
-            print(f"department_id: {department_id} ({department_confidence})")
-
-    if not args.dry_run:
-        save_parsed_titles(updates)
+            confidence = str(enrichment.get("parse_confidence") or "low")
+            counts[confidence] = counts.get(confidence, 0) + 1
+            if enrichment.get("title_parsed"):
+                parsed += 1
+            if enrichment.get("minister_id") is not None and enrichment.get("department_id") is not None:
+                linked += 1
+            if args.verbose:
+                print(f"\n{path.name}: {title}")
+                print(f"  minister_id={enrichment.get('minister_id')}")
+                print(f"  department_id={enrichment.get('department_id')}")
+                print(f"  parse_confidence={confidence}")
 
     print(
-        f"\nDone. linked={linked}, cm_visits={cm_visits_count}, review_meetings={review_meetings_count}, "
-        f"postings={postings_count}, budget={budget_count}, tributes={tributes_count}, others={others_count}, "
-        f"inspection={inspection_count}, portfolio={portfolio_count}, "
+        f"Audited {total} release(s) in {json_dir}. "
+        f"parsed={parsed}, linked={linked}, "
         f"high={counts.get('high', 0)}, medium={counts.get('medium', 0)}, low={counts.get('low', 0)}"
     )
     return 0

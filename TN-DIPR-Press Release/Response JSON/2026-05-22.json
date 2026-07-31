@@ -1,0 +1,95 @@
+{
+  "date": "2026-05-22",
+  "fetchedAt": "2026-08-01T00:10:34.809857+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:34.809857+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-22"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21776,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.061_-_Hon_ble_Public_Works_and_Sports_Development_Minister_Press_Release_and__Photo_from_DIPR-Date.22.05.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.061 - Hon'ble Public Works and Sports Development Minister Press Release and  Photo from DIPR-Date.22.05.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-22",
+        "language": "en"
+      },
+      {
+        "id": 21777,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-062-Hon_ble_Human_Resources_Mgnt_Minister_Press_Release-Date_22.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-062-Hon'ble Human Resources Mgnt Minister Press Release-Date 22.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-22",
+        "language": "en"
+      },
+      {
+        "id": 21778,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-063-Hon_ble_Social_Justice_Minister_Press_Release-Date_22.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-063-Hon'ble Social Justice Minister Press Release-Date 22.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-22",
+        "language": "en"
+      },
+      {
+        "id": 21779,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.064-Hon_ble_CM_Press_Release_-_TN_Urban_Habitat_Development_Board_Chairman_-_Date_22.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.064-Hon'ble CM Press Release - TN Urban Habitat Development Board Chairman - Date 22.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-22",
+        "language": "en"
+      },
+      {
+        "id": 21780,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-065-Hon_ble_Transport_Minister_Press_Release-Date_22.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-065-Hon'ble Transport Minister Press Release-Date 22.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-22",
+        "language": "en"
+      },
+      {
+        "id": 21781,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-066-Hon_ble_Natural_Resources_Minister_Press_Release-Date_22.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-066-Hon'ble Natural Resources Minister Press Release-Date 22.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-22",
+        "language": "en"
+      },
+      {
+        "id": 21782,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.067-Hon_ble_Agriculture___Farmers_Minister_Press_Release-Date_22.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.067-Hon'ble Agriculture & Farmers Minister Press Release-Date 22.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-22",
+        "language": "en"
+      }
+    ]
+  }
+}

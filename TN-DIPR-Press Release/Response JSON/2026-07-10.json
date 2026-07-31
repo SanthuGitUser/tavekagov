@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-10",
+  "fetchedAt": "2026-08-01T00:10:46.449780+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:46.449780+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-10"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22137,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.373_-_OML_-_Finance_Department_Press_Release_-_English_-_Date_-_10.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.373 - OML - Finance Department Press Release - English - Date - 10.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-10",
+        "language": "en"
+      },
+      {
+        "id": 22138,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.373_-_OML_-_Finance_Department_Press_Release_-_Tamil_-_Date_-_10.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.373 - OML - Finance Department Press Release - Tamil - Date - 10.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-10",
+        "language": "en"
+      },
+      {
+        "id": 22139,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.374_-_Hon_ble_CM_Press_Release_-__Karur_Meeting_Death_-_Compassionate_Appt_order_for_legal_heirs_-_Date.10.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.374 - Hon'ble CM Press Release -  Karur Meeting Death - Compassionate Appt order for legal heirs - Date.10.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-10",
+        "language": "en"
+      },
+      {
+        "id": 22140,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.375_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-_Evervan_Kothari_Footwear_Laying_foundation_at_Karur_-__Date.10.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.375 - Hon'ble CM Press Release - Industries Dept - Evervan Kothari Footwear Laying foundation at Karur -  Date.10.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-10",
+        "language": "en"
+      }
+    ]
+  }
+}

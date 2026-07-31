@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-06",
+  "fetchedAt": "2026-08-01T00:10:45.508005+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:45.508005+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-06"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22095,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.338_-_SDAT_Press_Release_-_CM_Youth_Award__-_Date.06.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.338 - SDAT Press Release - CM Youth Award  - Date.06.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-06",
+        "language": "en"
+      },
+      {
+        "id": 22096,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.339_-_Town_and_Country_planning_Press_Release_-_English_-_Date_-_06.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.339 - Town and Country planning Press Release - English - Date - 06.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-06",
+        "language": "en"
+      },
+      {
+        "id": 22097,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.339_-_Town_and_Country_planning_Press_Release_-_Tamil_-_Date_-_06.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.339 - Town and Country planning Press Release - Tamil - Date - 06.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-06",
+        "language": "en"
+      },
+      {
+        "id": 22098,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.340_-_Hon_ble_CM_DO_letter_to_Hon_ble_PM_-_Reg_AAY_Cardholders_-Date_-_6.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.340 - Hon'ble CM DO letter to Hon'ble PM - Reg AAY Cardholders -Date - 6.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-06",
+        "language": "en"
+      },
+      {
+        "id": 22099,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.341_-_Hon_ble_CM_Press_Release_-_HCM__Inspection_at_110__150_MLD_Nemmeli___400_MLD_Perur_Desalination_Plant_-_Date_-_6.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.341 - Hon'ble CM Press Release - HCM  Inspection at 110, 150 MLD Nemmeli & 400 MLD Perur Desalination Plant - Date - 6.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-06",
+        "language": "en"
+      },
+      {
+        "id": 22100,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.342_-_Hon_ble_Minister_for_Food_and_Civil_Supplies_Price_monitary_meeting_Press_Release_-_Date_-_06.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.342 - Hon'ble Minister for Food and Civil Supplies Price monitary meeting Press Release - Date - 06.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-06",
+        "language": "en"
+      }
+    ]
+  }
+}

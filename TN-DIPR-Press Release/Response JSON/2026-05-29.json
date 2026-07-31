@@ -1,0 +1,139 @@
+{
+  "date": "2026-05-29",
+  "fetchedAt": "2026-08-01T00:10:36.541244+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:36.541244+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-29"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21840,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.124-Hon_ble_Minister_for_Public_Works_and_Sports_Development-Press_Release_-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.124-Hon'ble Minister for Public Works and Sports Development-Press Release -Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21841,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.125-Hon_ble_Minister_for_Energy_Resources_and_Law_-_Distribution_of_Appointment_and_Bursar_Orders_-Press_Release-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.125-Hon'ble Minister for Energy Resources and Law - Distribution of Appointment and Bursar Orders -Press Release-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21842,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.126-Hon_ble_RD___WR_Minister_Press_Release-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.126-Hon'ble RD & WR Minister Press Release-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21843,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.127-Hon_ble_Higher_Education_Minister_Press_Release-Admissions-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.127-Hon'ble Higher Education Minister Press Release-Admissions-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21844,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.128-Welfare_of_DifferentlyAbled_Persons_Press_Release-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.128-Welfare of DifferentlyAbled Persons Press Release-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21845,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-129-Hon_ble_Natural_Resources_Minister_Press_Release-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-129-Hon'ble Natural Resources Minister Press Release-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21846,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.130-Hon_ble_Agriculture_Minister_Speech-English_-Delhi-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.130-Hon'ble Agriculture Minister Speech-English -Delhi-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21847,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.130-Hon_ble_Agriculture_Minister_Speech-Tamil-Delhi-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.130-Hon'ble Agriculture Minister Speech-Tamil-Delhi-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21848,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-131_-Tamil_Development_Dept_Press_Release-IITS-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-131 -Tamil Development Dept Press Release-IITS-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21849,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.132_-Hon_ble_Transport_Minister_Press_Release-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.132 -Hon'ble Transport Minister Press Release-Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      },
+      {
+        "id": 21850,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.133-Hon_ble_Transport_Minister_Press_Release-TN_Suraksha_Mitra_Portal_-Date_29.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.133-Hon'ble Transport Minister Press Release-TN Suraksha Mitra Portal -Date 29.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-29",
+        "language": "en"
+      }
+    ]
+  }
+}

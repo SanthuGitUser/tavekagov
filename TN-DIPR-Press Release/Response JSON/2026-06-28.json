@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-28",
+  "fetchedAt": "2026-08-01T00:10:43.612429+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:43.612429+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-28"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22054,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.303_-_Hon_ble_CM_Press_Release_-_Health_Dept_-_National_Pulse_Polio_Special_Camp_-_Date_-_28.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-29",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.303 - Hon'ble CM Press Release - Health Dept - National Pulse Polio Special Camp - Date - 28.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-28",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "date": "2026-07-18",
+  "fetchedAt": "2026-08-01T00:10:48.339991+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:48.339991+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-18"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22188,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.419_-_Hon_ble_CM_Social_Media_Message_-_Tamil_Nadu_Day_-_Date_-_18.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.419 - Hon'ble CM Social Media Message - Tamil Nadu Day - Date - 18.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-18",
+        "language": "en"
+      },
+      {
+        "id": 22189,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.420_-_The_Tamil_Nadu_Dr.Ambedkar_Law_University_-_Press_Release_-_Date_-_18.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.420 - The Tamil Nadu Dr.Ambedkar Law University - Press Release - Date - 18.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-18",
+        "language": "en"
+      },
+      {
+        "id": 22190,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.421_-_Hon_ble_Minister_for_School_Education__Tamil_Development__Information_and_Publicity_-_Press_Release_-_Date_-_18.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.421 - Hon'ble Minister for School Education, Tamil Development, Information and Publicity - Press Release - Date - 18.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-18",
+        "language": "en"
+      },
+      {
+        "id": 22191,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.422_-_Hon_ble_School_Education__Tamil_Development__Information_and_Publicity_Minister-Autism_Children-Movie_Screening_Inaguration_PR_-_Date.18.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.422 - Hon'ble School Education, Tamil Development, Information and Publicity Minister-Autism Children-Movie Screening Inaguration PR - Date.18.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-18",
+        "language": "en"
+      },
+      {
+        "id": 22192,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.423_-_Transport_Department_Press_Release_-_Date.18.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.423 - Transport Department Press Release - Date.18.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-18",
+        "language": "en"
+      }
+    ]
+  }
+}

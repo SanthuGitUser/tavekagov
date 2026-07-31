@@ -1,0 +1,34 @@
+{
+  "date": "2026-06-24",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 3,
+  "orders": [
+    {
+      "go_date": "2026-06-24",
+      "go_number": "G.O.Ms.No.122",
+      "go_name": "MEDICAL AID – New Health Insurance Scheme, 2026 – Provision of Health Care Assistance to the Employees of Government Departments and their eligible family members through the United India Insurance Company Limited, Chennai - Implementation - Orders – Issued",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ==",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_122_2026.pdf"
+    },
+    {
+      "go_date": "2026-06-24",
+      "go_number": "G.O.Ms.No.123",
+      "go_name": "MEDICAL AID – New Health Insurance Scheme, 2026 for Pensioners (including spouse) / Family Pensioners – Provision of Health Care Assistance to the Pensioners (including spouse) / Family Pensioners through the United India Insurance Company Limited, Chennai – Implementation – Orders – Issued",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ==",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_123_2026.pdf"
+    },
+    {
+      "go_date": "2026-06-24",
+      "go_number": "rd_e_ms_113_2026",
+      "go_name": "Schemes - Centrally Sponsored Schemes - PMGSY-III Batch-I (2023 24) Upgradation of 660 roads for a length of 2869.29 km and upgradation of 28 Bridges for a length of 891.10m for a total cost of Rs. 1945.02 Crore Sanctioned - FY 2026-27-2nd Mother Sanction for of Rs.5,00,00,000 as Central Share and State Share of Rs.3,35,00,000 under programme Fund - Sanctioned - Orders - Issued",
+      "department_name": "Rural Development and Panchayat Raj Department",
+      "dep_id_encoded": "Mjc=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/rd_e_ms_113_2026.pdf"
+    }
+  ]
+}

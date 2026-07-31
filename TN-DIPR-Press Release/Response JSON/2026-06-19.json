@@ -1,0 +1,84 @@
+{
+  "date": "2026-06-19",
+  "fetchedAt": "2026-08-01T00:10:41.502130+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:41.502130+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-19"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21999,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-257-Hon_ble_CM_Social_Media_Message_-_Thiru_Rahul_Gandhi_Birthday_wishes-Date_19.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-257-Hon'ble CM Social Media Message - Thiru Rahul Gandhi Birthday wishes-Date 19.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-19",
+        "language": "en"
+      },
+      {
+        "id": 22000,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-258-EDII-Press_Release-Foundation_of_AI_Digital_marketing_training_programme_-English-Date_19.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-258-EDII-Press Release-Foundation of AI Digital marketing training programme -English-Date 19.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-19",
+        "language": "en"
+      },
+      {
+        "id": 22001,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-258-EDII-Press_Release-Foundation_of_AI_Digital_marketing_training_programme_-Tamil-Date_19.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-258-EDII-Press Release-Foundation of AI Digital marketing training programme -Tamil-Date 19.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-19",
+        "language": "en"
+      },
+      {
+        "id": 22002,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-TNLA_No-05-Hon_ble_CM_Assembly_Speech_-_Megathathu_dam_Special_Resolution_in_Assembly-Date_19.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-19",
+        "press_release_no": null,
+        "press_name": "DIPR-TNLA No-05-Hon'ble CM Assembly Speech - Megathathu dam Special Resolution in Assembly-Date 19.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-19",
+        "language": "en"
+      },
+      {
+        "id": 22003,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.259-Hon_ble_EB_Minister_Press_Release-TNEB-Date_19.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-19",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.259-Hon'ble EB Minister Press Release-TNEB-Date 19.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-19",
+        "language": "en"
+      },
+      {
+        "id": 22004,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.260-Health_Dept_Press_Release-Tele_Counselling_-Date_19.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-19",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.260-Health Dept Press Release-Tele Counselling -Date 19.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-19",
+        "language": "en"
+      }
+    ]
+  }
+}

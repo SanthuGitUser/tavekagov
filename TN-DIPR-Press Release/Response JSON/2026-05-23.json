@@ -1,0 +1,95 @@
+{
+  "date": "2026-05-23",
+  "fetchedAt": "2026-08-01T00:10:35.082550+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:35.082550+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-23"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21783,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.068_-_SDAT_Press_Release_-_Date.23.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.068 - SDAT Press Release - Date.23.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-23",
+        "language": "en"
+      },
+      {
+        "id": 21784,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.069_-_Hon_ble_Minister_for_School_Education__Tamil_Development__Information_and_Publicity_Inspection_Press_Release_-_Date.23.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.069 - Hon'ble Minister for School Education, Tamil Development, Information and Publicity Inspection Press Release - Date.23.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-23",
+        "language": "en"
+      },
+      {
+        "id": 21785,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.070_-_Hon_ble_CM_Social_Media_Message_-_Coimbatore_Girl_Incident_-_Date.23.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.070 - Hon'ble CM Social Media Message - Coimbatore Girl Incident - Date.23.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-23",
+        "language": "en"
+      },
+      {
+        "id": 21786,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.071_-_Hon_ble_Phohibition_and_Excise_Minister_Press_Release_-_Date.23.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.071 - Hon'ble Phohibition and Excise Minister Press Release - Date.23.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-23",
+        "language": "en"
+      },
+      {
+        "id": 21787,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.072_-_Hon_ble_Prohibition__and_Excise_Minister_Press_Release_-_Date.23.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.072 - Hon'ble Prohibition  and Excise Minister Press Release - Date.23.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-23",
+        "language": "en"
+      },
+      {
+        "id": 21788,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_NO.-073-Hon_ble_Transport_Minister_Press_Release-Date_23.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR NO.-073-Hon'ble Transport Minister Press Release-Date 23.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-23",
+        "language": "en"
+      },
+      {
+        "id": 21789,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.074-Honble_HRCE_Minister_inspection__Press_Release_-_Srirangam_-Date__23.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.074-Honble HRCE Minister inspection  Press Release - Srirangam -Date  23.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-23",
+        "language": "en"
+      }
+    ]
+  }
+}

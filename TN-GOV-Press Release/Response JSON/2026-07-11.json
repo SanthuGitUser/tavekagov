@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-11",
+  "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 2,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr110726_hfw2.jpg",
+      "release_date": "2026-07-11",
+      "title": "Honble Speaker of Tamil Nadu Legislative Assembly and Honble Minister for Health, Medical Education and Family Welfare flagged off the World Population Day awareness rally and presented prizes to competition winners",
+      "file_name": "pr110726_hfw2.jpg",
+      "minister_name": "Hon'ble Minister for Health, Medical Education and Family Welfare flagged off the World Population Day awareness rally and presented prizes to competition winners",
+      "department_name": "Legislative Assembly Department",
+      "minister_id": 5,
+      "department_id": 20,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr110726_sedu.jpg",
+      "release_date": "2026-07-11",
+      "title": "Honble Ministers paid floral tributes to the statue of Freedom Fighter Veeran Alagu Muthukon on his birth anniversary",
+      "file_name": "pr110726_sedu.jpg",
+      "minister_name": null,
+      "department_name": null,
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "low",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": true,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [
+    {
+      "id": 5,
+      "name": "Thiru K A. Sengottaiyan",
+      "designation": "Minister for Revenue and Disaster Management",
+      "portfolio": "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan and Legislative Assembly",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/106_Sengottaiyan.png",
+      "display_order": 5,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 20,
+      "name": "Legislative Assembly Department",
+      "dep_id_encoded": "MjA=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjA=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru K A. Sengottaiyan",
+      "display_order": 20
+    }
+  ]
+}

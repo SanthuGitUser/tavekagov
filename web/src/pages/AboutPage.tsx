@@ -1,5 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { isSupabaseConfigured } from "@/lib/supabase";
 
 export function AboutPage() {
   return (
@@ -30,20 +29,14 @@ export function AboutPage() {
             >
               tn.gov.in
             </a>{" "}
-            into Supabase using Python sync scripts in this repository.
+            into JSON files in this repository using Python sync scripts. GitHub
+            Actions refresh the datasets daily at 11:00 PM IST.
           </p>
           <p>
             This frontend is built with Vite, React, TypeScript, Tailwind CSS,
-            shadcn-style components, TanStack Table, and Recharts. It is
-            designed for static hosting on GitHub Pages.
-          </p>
-          <p>
-            Status:{" "}
-            <strong className="text-foreground">
-              {isSupabaseConfigured
-                ? "Connected to Supabase (anon key + RLS)."
-                : "Demo mode — add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY."}
-            </strong>
+            shadcn-style components, TanStack Table, and Recharts. It loads
+            bundled JSON manifests at build time and is designed for static
+            hosting on GitHub Pages.
           </p>
         </CardContent>
       </Card>
@@ -53,9 +46,13 @@ export function AboutPage() {
           <CardTitle>Data sources</CardTitle>
         </CardHeader>
         <CardContent className="space-y-2 text-sm text-muted-foreground">
-          <p>Press releases — DIPR press release API</p>
-          <p>Government orders — tn.gov.in department G.O. listings</p>
-          <p>Departments, ministers, districts — tn.gov.in HTML pages</p>
+          <p>Press releases — DIPR press release API (daily JSON)</p>
+          <p>PR images — tn.gov.in press release archives (daily JSON)</p>
+          <p>Government orders — tn.gov.in department G.O. listings (daily JSON)</p>
+          <p>Transfers and postings — tnsectdemo.tn.gov.in IAS G.O.s (daily JSON)</p>
+          <p>Magazine — Tamil Virtual Academy Digital Library (JSON manifest)</p>
+          <p>Departments, ministers, districts — tn.gov.in HTML pages (JSON manifests)</p>
+          <p>News — NewsData.io API (daily JSON)</p>
         </CardContent>
       </Card>
     </div>

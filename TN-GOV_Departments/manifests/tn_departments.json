@@ -1,5 +1,6 @@
 {
   "source_url": "https://www.tn.gov.in/department_list.php",
+  "fetchedAt": "2026-08-01T00:40:52.746595+05:30",
   "count": 41,
   "departments": [
     {
@@ -8,7 +9,7 @@
       "dep_id_encoded": "Mg==",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mg==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru Vinoth",
+      "minister_name": "Thiru R. Vinoth",
       "display_order": 1
     },
     {
@@ -71,7 +72,7 @@
       "dep_id_encoded": "OQ==",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OQ==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru N. Marie Wilson",
+      "minister_name": "Dr N. Marie Wilson",
       "display_order": 8
     },
     {
@@ -152,7 +153,7 @@
       "dep_id_encoded": "MTc=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTc=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru R. Kumar",
+      "minister_name": "Dr Kumar. R",
       "display_order": 17
     },
     {
@@ -220,7 +221,7 @@
     },
     {
       "id": 23,
-      "name": "Planning, Development and Special Initiatives Department",
+      "name": "Planning and Development Department",
       "dep_id_encoded": "MjM=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjM=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
@@ -305,7 +306,7 @@
       "dep_id_encoded": "MzA=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzA=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Tmt K. Jegadeshwari",
+      "minister_name": "Tmt Jagadeshwari. K",
       "display_order": 34
     },
     {

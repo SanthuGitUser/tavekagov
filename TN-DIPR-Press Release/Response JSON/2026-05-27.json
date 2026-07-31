@@ -1,0 +1,227 @@
+{
+  "date": "2026-05-27",
+  "fetchedAt": "2026-08-01T00:10:36.064521+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:36.064521+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-27"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21819,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.105_-Hon_ble_Minister_for_Natural_Resources-Press_Release_-_inspection_of_quarries_at_Puliyuran_village_Virudhunagar_-Date_27.05.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.105 -Hon'ble Minister for Natural Resources-Press Release - inspection of quarries at Puliyuran village Virudhunagar -Date 27.05.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21820,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.106-Hon_ble_Sports_Minister_Press_Release_-_Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.106-Hon'ble Sports Minister Press Release - Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21821,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.107-Hon_ble_CM_Message_-_Bakrid_Wishes_2026-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.107-Hon'ble CM Message - Bakrid Wishes 2026-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21822,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.108-Hon_ble_Milk_and_Dairy_Development_Minister-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.108-Hon'ble Milk and Dairy Development Minister-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21823,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.109-Hon_ble_School_Edu_TD_I__PR_Minister_Press_Release-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.109-Hon'ble School Edu,TD,I &PR Minister Press Release-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21824,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.110-Hon_ble_Tourism_Minister_Press_Release-Review__Meeting-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.110-Hon'ble Tourism Minister Press Release-Review  Meeting-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21825,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.111-Hon_ble_Energy_Resources_and_Law_Minister_Press_Release_-Law_Department_Meeting_-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.111-Hon'ble Energy Resources and Law Minister Press Release -Law Department Meeting -Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21826,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-112-_Hon_ble_RD___WR_Minister_Meeting_Press_Release-Date__27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-112- Hon'ble RD & WR Minister Meeting Press Release-Date  27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21827,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-113-Hon_ble_Minister_for_Industries_Press_Release-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-113-Hon'ble Minister for Industries Press Release-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21828,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No-114-Hon_ble_Sports___Education_Ministers_Press_Release-_Review_Meeting_-_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No-114-Hon'ble Sports & Education Ministers Press Release- Review Meeting - 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21829,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-115-Hon_ble_CM_Press_Release-_HCM_Met_Hon_ble_Prime_Minister_at_New_Delhi_-Date__27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-115-Hon'ble CM Press Release- HCM Met Hon'ble Prime Minister at New Delhi -Date  27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21830,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-116-Hon_ble_CM_Press_Release_-_HCM_Met_Hon_ble_Union_Finance_Minister_at_New_Delhi-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-116-Hon'ble CM Press Release - HCM Met Hon'ble Union Finance Minister at New Delhi-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21831,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-117-Hon_ble_Minister_for_Energy_Resources_and_Law__Press_Release-_Madurai_Dist_Thunder_Accident__Relief_-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-117-Hon'ble Minister for Energy Resources and Law  Press Release- Madurai Dist Thunder Accident  Relief -Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21832,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-118-Hon_ble_Housing_Minister_Press_Release-Inspection_of_Arumbakkam_Housing___Commercial_Complex-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-118-Hon'ble Housing Minister Press Release-Inspection of Arumbakkam Housing & Commercial Complex-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21833,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-119-Hon_ble_CM_DO_Letter_to_Hon_ble_PM_Reg_Tamil_Thai_Vazhthu_Press_release_-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-119-Hon'ble CM DO Letter to Hon'ble PM Reg Tamil Thai Vazhthu Press release -Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21834,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_NO-120-Hon_ble_Transport_Minister_Press_Release-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR NO-120-Hon'ble Transport Minister Press Release-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21835,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-121-Hon_ble_Forest_Minister_Press_Release-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-121-Hon'ble Forest Minister Press Release-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21836,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-122-Finance_Ways_and_Means-II__Department-Press_Release-_English-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-122-Finance(Ways and Means-II) Department-Press Release- English-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      },
+      {
+        "id": 21837,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-122-Finance_Ways_and_Means-II__Department-Press_Release-_Tamil-Date_27.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-122-Finance(Ways and Means-II) Department-Press Release- Tamil-Date 27.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-27",
+        "language": "en"
+      }
+    ]
+  }
+}

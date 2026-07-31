@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-25",
+  "fetchedAt": "2026-08-01T00:10:49.999632+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:49.999632+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-25"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22218,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-PR_No.442-Hon_ble_CM_Social_Media_Message_-_PMK_Founder_Dr_Ramadoss_Birthday-Date_25.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-25",
+        "press_release_no": null,
+        "press_name": "DIPR -PR No.442-Hon'ble CM Social Media Message - PMK Founder Dr Ramadoss Birthday-Date 25.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-25",
+        "language": "en"
+      },
+      {
+        "id": 22220,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-443-I___PR_Dept_Press_release_-Dr._M.G.R_Flim_Institute_Admissions-Date_25.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-443-I & PR Dept Press release -Dr. M.G.R Flim Institute Admissions-Date 25.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-25",
+        "language": "en"
+      },
+      {
+        "id": 22221,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.444-Hon_ble_RD___WRD_Minister_Press_Release-Date_25.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.444-Hon'ble RD & WRD Minister Press Release-Date 25.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-25",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-09",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 2,
+  "orders": [
+    {
+      "go_date": "2026-06-09",
+      "go_number": "G.O.(D)No.678",
+      "go_name": "Medical Education – Indian Medicine and Homoeopathy – Prospectus for UG – BSMS, BAMS, BHMS courses for Management Quota seats in Self Financing Indian Medicine and Homoeopathy Medical Colleges for the Academic Year 2026-2027 – Approved – Orders – Issued.",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_678_D_2026.pdf"
+    },
+    {
+      "go_date": "2026-06-09",
+      "go_number": "G.O.(Ms) No.108",
+      "go_name": "Schemes – Centrally Sponsored Schemes – Pradhan Mantri Janjati Adivasi Nyaya Maha Abhiyan (PM-JANMAN) - PM-JANMAN (2025-26) Batch-I – Construction of 4 roads to a length of 10.96 Km at a cost of Rs.9.07 crore - 1st instalment of Mother Sanction of Rs.2.50 Crore as Central Share and Corresponding State Share of Rs.1.67 Crore totally Rs.4.17 Crore as Programme Fund - Sanctioned – Orders – Issued",
+      "department_name": "Rural Development and Panchayat Raj Department",
+      "dep_id_encoded": "Mjc=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/rd_e_ms_108_2026.pdf"
+    }
+  ]
+}

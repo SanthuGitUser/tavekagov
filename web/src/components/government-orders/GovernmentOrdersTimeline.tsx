@@ -11,7 +11,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useGovernmentOrdersSearch } from "@/context/GovernmentOrdersSearchContext";
 import { useGovernmentOrdersView } from "@/context/GovernmentOrdersViewContext";
 import { cn } from "@/lib/utils";
-import type { TnDept, TnGoDept, TnMinister } from "@/types/database";
+import type { TnDept, TnGoDept, TnMinister } from "@/types/models";
 
 type GovernmentOrdersTimelineProps = {
   orders: TnGoDept[];

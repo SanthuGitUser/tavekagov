@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-16",
+  "fetchedAt": "2026-08-01T00:10:47.874460+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:47.874460+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-16"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22178,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.410_-_Fisheries_Department_Press_Release_-Date_-_16.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-16",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.410 - Fisheries Department Press Release -Date - 16.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-16",
+        "language": "en"
+      },
+      {
+        "id": 22179,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.411_-_Finance_Dept_Press_Release_-_English_-_Date.16.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-16",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.411 - Finance Dept Press Release - English - Date.16.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-16",
+        "language": "en"
+      },
+      {
+        "id": 22180,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.411_-_Finance_Dept_Press_Release_-_Tamil_-_Date.16.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-16",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.411 - Finance Dept Press Release - Tamil - Date.16.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-16",
+        "language": "en"
+      },
+      {
+        "id": 22181,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.412_-_Hon_ble_Public_Works_and_Sports_Development_Minister_Monsoon_Preparedness_Meeting_Press_Release_-_Date.16.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.412 - Hon'ble Public Works and Sports Development Minister Monsoon Preparedness Meeting Press Release - Date.16.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-16",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-28",
+  "fetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-07-28",
+      "go_number": "G.O.Ms.No. 152",
+      "go_name": "Finance Department – Interim Monthly Payout – Sanctioned – Amendment – Orders - Issued",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ==",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_152_2026.pdf"
+    }
+  ]
+}

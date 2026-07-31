@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-13",
+  "fetchedAt": "2026-08-01T00:10:40.123962+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:40.123962+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-13"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21960,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.225-Aavin-_Press_release_-Date_13.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.225-Aavin- Press release -Date 13.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-13",
+        "language": "en"
+      }
+    ]
+  }
+}

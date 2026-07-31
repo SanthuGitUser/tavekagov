@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-27",
+  "fetchedAt": "2026-08-01T00:10:43.373890+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:43.373890+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-27"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22053,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-302-Hon_ble_CM_Social_Media_Message_-_Condolence_for_the_death_of_Director_and_Actor_Thiru_Bhagyaraj-Date_27.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-302-Hon'ble CM Social Media Message - Condolence for the death of Director and Actor Thiru Bhagyaraj-Date 27.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-27",
+        "language": "en"
+      }
+    ]
+  }
+}

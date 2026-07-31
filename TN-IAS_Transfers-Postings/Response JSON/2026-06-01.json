@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-01",
+  "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
+  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
+  "fetchCount": 3,
+  "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
+  "count": 2,
+  "postings": [
+    {
+      "serial_number": 14,
+      "go_date": "2026-06-01",
+      "go_number": "G.O. RT.1917, dt 01.6.2026.pdf",
+      "subject": "IAS TRANSFER AND POSTING",
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1917, dt 01.6.2026.pdf"
+    },
+    {
+      "serial_number": 15,
+      "go_date": "2026-06-01",
+      "go_number": "G.O. RT.1920, dt 01.6.2026.pdf",
+      "subject": "IAS TRANSFER AND POSTING",
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1920, dt 01.6.2026.pdf"
+    }
+  ]
+}

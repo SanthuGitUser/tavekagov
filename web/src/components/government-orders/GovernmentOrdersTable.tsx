@@ -10,7 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { formatDate } from "@/lib/utils";
-import type { TnGoDept } from "@/types/database";
+import type { TnGoDept } from "@/types/models";
 
 const columns: ColumnDef<TnGoDept>[] = [
   {

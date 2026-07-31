@@ -1,0 +1,73 @@
+{
+  "date": "2026-07-23",
+  "fetchedAt": "2026-08-01T00:10:49.530453+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:49.530453+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-23"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22210,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.437-Finance_Dept-Repayment_of_7.58__TNSDL_2026-Press_Release-English-Date_23.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.437-Finance Dept-Repayment of 7.58% TNSDL 2026-Press Release-English-Date 23.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-23",
+        "language": "en"
+      },
+      {
+        "id": 22211,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.437-Finance_Dept-Repayment_of_7.58__TNSDL_2026-Press_Release-Tamil-Date_23.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.437-Finance Dept-Repayment of 7.58% TNSDL 2026-Press Release-Tamil-Date 23.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-23",
+        "language": "en"
+      },
+      {
+        "id": 22212,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.438_-_Finance_Dept_Press_Release_-_English_-_Date.23.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.438 - Finance Dept Press Release - English - Date.23.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-23",
+        "language": "en"
+      },
+      {
+        "id": 22213,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.438_-_Finance_Dept_Press_Release_-_Tamil_-_Date.23.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.438 - Finance Dept Press Release - Tamil - Date.23.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-23",
+        "language": "en"
+      },
+      {
+        "id": 22214,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.439_-_Hon_ble_Public_Works_and_Sports_Development_Minister_-_Anna_Swimming_Pool_Press_Release_-_Date.23.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.439 - Hon'ble Public Works and Sports Development Minister - Anna Swimming Pool Press Release - Date.23.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-23",
+        "language": "en"
+      }
+    ]
+  }
+}

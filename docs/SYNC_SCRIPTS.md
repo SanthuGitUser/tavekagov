@@ -1,0 +1,128 @@
+# Sync scripts reference
+
+Each data module lives under `TN-*/` with its own `requirements.txt` and sync script. All scripts read shared settings from [Sync-Config](../Sync-Config/) (`config.py`, optional `.env`).
+
+## Quick start
+
+```powershell
+# One-time shared config
+copy "Sync-Config\.env.example" "Sync-Config\.env"
+
+# Example: sync departments
+cd TN-GOV_Departments
+python -m pip install -r requirements.txt
+python tn_dept_sync.py
+```
+
+## Script table
+
+| Script | Folder | Output | GitHub Action |
+|--------|--------|--------|---------------|
+| `tn_press_release_sync.py` | [TN-DIPR-Press Release](../TN-DIPR-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-dipr-press-releases.yml` |
+| `tn_gov_press_release_sync.py` | [TN-GOV-Press Release](../TN-GOV-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-scraped-data.yml` |
+| `tn_go_dept_sync.py` | [TN-GOV_GO-Departments](../TN-GOV_GO-Departments/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-scraped-data.yml` |
+| `tn_transfers_postings_sync.py` | [TN-IAS_Transfers-Postings](../TN-IAS_Transfers-Postings/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-scraped-data.yml` |
+| `tn_magazine_sync.py` | [TN-TVA-Magazine](../TN-TVA-Magazine/) | `manifests/magazine.json`, `Response JSON/` | `fetch-tn-scraped-data.yml` |
+| `tn_dept_sync.py` | [TN-GOV_Departments](../TN-GOV_Departments/) | `manifests/tn_departments.json` | `fetch-tn-gov-manifests.yml` |
+| `tn_ministers_sync.py` | [TN-GOV_Council Of Ministers](../TN-GOV_Council%20Of%20Ministers/) | `manifests/tn_ministers.json` | `fetch-tn-gov-manifests.yml` |
+| `tn_districts_sync.py` | [TN-GOV_Districts](../TN-GOV_Districts/) | `manifests/tn_districts.json` | `fetch-tn-gov-manifests.yml` |
+| `fetch_tamil_nadu_news.py` | [TN-News/Code](../TN-News/Code/) | `TN-News/Response JSON/YYYY-MM-DD.json` | `fetch-tamil-nadu-news.yml` |
+
+## CLI flags
+
+### Date-range scrapers
+
+Used by DIPR press releases, gov PR images, G.O.s, and transfers.
+
+```powershell
+python tn_go_dept_sync.py --start-date 10-05-2026 --end-date 31-07-2026
+```
+
+| Flag | Format | Default |
+|------|--------|---------|
+| `--start-date` | `DD-MM-YYYY` | From `Sync-Config/.env` (`TN_*_START_DATE`) |
+| `--end-date` | `DD-MM-YYYY` | Yesterday (Asia/Kolkata) for DIPR; varies by script |
+| `--output-dir` | path | `Response JSON/` in module folder |
+
+### DIPR press releases (`tn_press_release_sync.py`)
+
+- API: `https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release?date=YYYY-MM-DD`
+- Merges by DIPR `id` on re-run
+- See [TN-DIPR-Press Release/README.md](../TN-DIPR-Press%20Release/README.md)
+
+### Gov PR images (`tn_gov_press_release_sync.py`)
+
+- Scrapes `tn.gov.in` press release archive pages by month
+- Enriches titles with minister/department IDs from manifests
+- Optional backfill: `--start-date` / `--end-date`
+
+### Government orders (`tn_go_dept_sync.py`)
+
+- Scrapes `godept_list.php` by date range
+- Output key: `orders[]`
+
+### Transfers & postings (`tn_transfers_postings_sync.py`)
+
+- Scrapes IAS transfer G.O.s from `tnsectdemo.tn.gov.in`
+- Output key: `postings[]`
+
+### Magazine (`tn_magazine_sync.py`)
+
+```powershell
+python tn_magazine_sync.py
+python tn_magazine_sync.py --since-date 10-05-2026
+python tn_magazine_sync.py --month 6 --year 2026
+```
+
+| Flag | Purpose |
+|------|---------|
+| `--since-date` | Include issues from this month onward (`DD-MM-YYYY`) |
+| `--month` / `--year` | Fetch a single issue month (both required) |
+| `--max-pages` | Max library list pages to scan (default 25) |
+
+Writes rolling `manifests/magazine.json` and merges into daily JSON.
+
+### Manifest syncs (departments, ministers, districts)
+
+No date arguments — full refresh each run:
+
+```powershell
+python tn_dept_sync.py
+python tn_ministers_sync.py
+python tn_districts_sync.py
+```
+
+### News (`fetch_tamil_nadu_news.py`)
+
+Requires `NEWSDATA_API_KEY` in `Sync-Config/.env`:
+
+```powershell
+cd TN-News\Code
+python fetch_tamil_nadu_news.py
+python fetch_tamil_nadu_news.py --max-pages 2
+```
+
+## Utility scripts
+
+| Script | Purpose |
+|--------|---------|
+| `TN-DIPR-Press Release/dipr_press_release_download.py` | Download PDFs locally (Windows helper) |
+| `TN-GOV-Press Release/tn_gov_press_release_parse_titles.py` | Title parsing audit CLI |
+| `TN-*/migrate_manifests_to_daily_json.py` | One-off manifest → daily JSON migration (where present) |
+
+## Environment variables
+
+See [Sync-Config/.env.example](../Sync-Config/.env.example). Key variables:
+
+| Variable | Used by |
+|----------|---------|
+| `TN_GOV_BASE_URL` | tn.gov.in scrapers |
+| `TN_PRESS_RELEASE_START_DATE` | DIPR sync default start |
+| `TN_GO_START_DATE` | G.O.s, gov PR images |
+| `NEWSDATA_API_KEY` | News fetch only |
+
+## Related docs
+
+- [DATA.md](DATA.md) — JSON file formats
+- [GITHUB_ACTIONS.md](GITHUB_ACTIONS.md) — scheduled automation
+- [CONTRIBUTING.md](../CONTRIBUTING.md) — how to submit changes

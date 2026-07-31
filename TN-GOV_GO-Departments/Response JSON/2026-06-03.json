@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-03",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-06-03",
+      "go_number": "G.O.(Ms) No.162",
+      "go_name": "Public Services -Equivalence of Degrees - 35thMeeting of the Equivalence of Degrees - Non-equivalence of Degrees offered by various Universities /Educational Institutions to the similar Degrees - Recommendation of Equivalence Committee - Approved - Orders- Issued.",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_162_ms_2026.pdf"
+    }
+  ]
+}

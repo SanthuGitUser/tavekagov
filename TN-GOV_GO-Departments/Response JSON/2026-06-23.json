@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-23",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-06-23",
+      "go_number": "G.O.(Ms) No.166",
+      "go_name": "Public Health - Thaimaaman Thanga Mothiram Thittam (தாய்மாமன் தங்க மோதிரம் திட்டம்) for newborns delivered in the Government institutions - Administrative and financial sanction - Accorded - Orders - Issued",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_166_ms_2026.pdf"
+    }
+  ]
+}

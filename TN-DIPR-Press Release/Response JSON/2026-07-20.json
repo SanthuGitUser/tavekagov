@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-20",
+  "fetchedAt": "2026-08-01T00:10:48.819095+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:48.819095+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-20"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22194,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.425-Hon_ble_CM_Social_Media_Message_-_World_Chess_Day_2026_-_Date_20.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.425-Hon'ble CM Social Media Message - World Chess Day 2026 - Date 20.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-20",
+        "language": "en"
+      },
+      {
+        "id": 22195,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.426-Hon_ble_CM_Press_Release_-_Industries_Dept_-_Ford_Company_officials_met_HCM_-Date_20.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.426-Hon'ble CM Press Release - Industries Dept - Ford Company officials met HCM -Date 20.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-20",
+        "language": "en"
+      },
+      {
+        "id": 22196,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.427_-_Hon_ble_CM_Press_Release_-_HCM_Inspection_at_BIo-CNG_Plant_at_Chetpet_-_Date.20.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.427 - Hon'ble CM Press Release - HCM Inspection at BIo-CNG Plant at Chetpet - Date.20.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-20",
+        "language": "en"
+      },
+      {
+        "id": 22198,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.428_-_Water_Resources_Dept_Amaravathi_Dam_Press_Release_-_Date.20.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.428 - Water Resources Dept Amaravathi Dam Press Release - Date.20.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-20",
+        "language": "en"
+      },
+      {
+        "id": 22199,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.429_-_Water_Resources_Dept_Dam_of__Amaravathi_Press_Release_-_Date.20.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.429 - Water Resources Dept Dam of  Amaravathi Press Release - Date.20.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-20",
+        "language": "en"
+      },
+      {
+        "id": 22200,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.430_-_Water_Resources_Dept_Water_Release_Press_Release_-_Date.20.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.430 - Water Resources Dept Water Release Press Release - Date.20.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-20",
+        "language": "en"
+      }
+    ]
+  }
+}

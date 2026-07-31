@@ -1,0 +1,73 @@
+{
+  "date": "2026-05-21",
+  "fetchedAt": "2026-08-01T00:10:34.556298+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:34.556298+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-21"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21771,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.056_-_Hon_ble_Minister_for_Energy_Resources_and_Law_Press_Release_-_Date.21.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.056 - Hon'ble Minister for Energy Resources and Law Press Release - Date.21.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-21",
+        "language": "en"
+      },
+      {
+        "id": 21772,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.057_-_Hon_ble_Minister_for_School_Education__Tamil_Development__Information_and_Publicity_Press_Release_-_Date.21.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.057 - Hon'ble Minister for School Education, Tamil Development, Information and Publicity Press Release - Date.21.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-21",
+        "language": "en"
+      },
+      {
+        "id": 21773,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.058_-_Hon_ble_Housing_and_Urban_Development_Minister_Inspection_Press_Release_-_Date.21.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.058 - Hon'ble Housing and Urban Development Minister Inspection Press Release - Date.21.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-21",
+        "language": "en"
+      },
+      {
+        "id": 21774,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.059_-_Hon_ble_Minister_for_Health__Medical_Education_and_Family_Welfare_Meeting_Press_Release_-_Date.21.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.059 - Hon'ble Minister for Health, Medical Education and Family Welfare Meeting Press Release - Date.21.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-21",
+        "language": "en"
+      },
+      {
+        "id": 21775,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.060_-_Adi_Dravidar_and_Tribal_Welfare_Dept_Press_Release_-_Date.21.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.060 - Adi Dravidar and Tribal Welfare Dept Press Release - Date.21.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-21",
+        "language": "en"
+      }
+    ]
+  }
+}

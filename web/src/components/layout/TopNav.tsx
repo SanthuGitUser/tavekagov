@@ -17,7 +17,6 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/context/ThemeContext";
-import { isSupabaseConfigured } from "@/lib/supabase";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -58,9 +57,7 @@ export function TopNav() {
           >
             {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
           </Button>
-          <Badge variant={isSupabaseConfigured ? "success" : "outline"}>
-            {isSupabaseConfigured ? "Live data" : "Demo mode"}
-          </Badge>
+          <Badge variant="success">Open data</Badge>
         </div>
       </div>
 

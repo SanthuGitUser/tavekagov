@@ -1,0 +1,150 @@
+{
+  "date": "2026-05-15",
+  "fetchedAt": "2026-08-01T00:10:33.141052+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:33.141052+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-15"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21730,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.023-EDII_Press_Release-_Youtube_Channel_Creation__-English_-Date_15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.023-EDII Press Release- Youtube Channel Creation  -English -Date 15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21731,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.023-EDII_Press_Release-_Youtube_Channel_Creation__-Tamil-Date_15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.023-EDII Press Release- Youtube Channel Creation  -Tamil-Date 15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21732,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.024-EDII_Press_Release-Gold_Appraisar_-_English_l-Date_15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.024-EDII Press Release-Gold Appraisar - English l-Date 15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21733,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.024-EDII_Press_Release-Gold_Appraisar_-_Tamil-Date_15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.024-EDII Press Release-Gold Appraisar - Tamil-Date 15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21734,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.025_-_EDII_-_CPEI_Press_Release_-_English_-_Date.15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.025 - EDII - CPEI Press Release - English - Date.15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21735,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.025_-_EDII_-_CPEI_Press_Release_-_Tamil_-_Date.15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.025 - EDII - CPEI Press Release - Tamil - Date.15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21736,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.026_-_SDAT_MRB_Press_Release_-_English_-Date.15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.026 - SDAT MRB Press Release - English -Date.15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21737,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.026_-_SDAT_MRB_Press_Release_-_Tamil_-Date.15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.026 - SDAT MRB Press Release - Tamil -Date.15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21738,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.027_-_Finanace_Dept_Press_Release_-_English_-_Date.15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.027 - Finanace Dept Press Release - English - Date.15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21739,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.027_-_Finanace_Dept_Press_Release_-_Tamil_-_Date.15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.027 - Finanace Dept Press Release - Tamil - Date.15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21740,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-CEO_TN_PR_No.033-TN_CEO_Press_Release-English-Date.15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-CEO TN PR No.033-TN CEO Press Release-English-Date.15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      },
+      {
+        "id": 21741,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-CEO_TN_PR_No.033-TN_CEO_Press_Release-Tamil-Date.15.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-CEO TN PR No.033-TN CEO Press Release-Tamil-Date.15.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-15",
+        "language": "en"
+      }
+    ]
+  }
+}

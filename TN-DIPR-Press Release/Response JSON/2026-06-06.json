@@ -1,0 +1,84 @@
+{
+  "date": "2026-06-06",
+  "fetchedAt": "2026-08-01T00:10:38.494181+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:38.494181+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-06"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21912,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.184_-_Hon_ble_CM_Social_Media_Message__-_HCM_Wishes_to_Norway_Chess_2026_Winner_Praggnanandhaa_-_Date.06.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.184 - Hon'ble CM Social Media Message  - HCM Wishes to Norway Chess 2026 Winner Praggnanandhaa - Date.06.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-06",
+        "language": "en"
+      },
+      {
+        "id": 21913,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.185_-_Hon_ble_Natural_Resources_Minister_Press_Release_-_Date.06.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.185 - Hon'ble Natural Resources Minister Press Release - Date.06.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-06",
+        "language": "en"
+      },
+      {
+        "id": 21914,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.186_-_Hon_ble_Agriculture_-_Farmers_Welfare_Minister_Kumbakonam_Inspection_Press_Release_-_Date.06.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.186 - Hon'ble Agriculture - Farmers Welfare Minister Kumbakonam Inspection Press Release - Date.06.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-06",
+        "language": "en"
+      },
+      {
+        "id": 21915,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR.No.187_-_Hon_ble_Energy_Resources_and_Law_Minister_Meeting_Press_Release_-_Date.06.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-06",
+        "press_release_no": null,
+        "press_name": "DIPR-PR.No.187 - Hon'ble Energy Resources and Law Minister Meeting Press Release - Date.06.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-06",
+        "language": "en"
+      },
+      {
+        "id": 21916,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-188-Hon_ble_CM_Social_Media_Message_-_HCM_wishes_to_Savitha_Sree_Baskar_for_winning_Gold_Medal_in_Asian_Individual_Women_s_Chess-Date_06.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-188-Hon'ble CM Social Media Message - HCM wishes to Savitha Sree Baskar for winning Gold Medal in Asian Individual Women's Chess-Date 06.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-06",
+        "language": "en"
+      },
+      {
+        "id": 21917,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-189-_TNPDCL_Press_Release-_Executive_Engineer_Promotion-Date_06.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-189- TNPDCL Press Release- Executive Engineer Promotion-Date 06.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-06",
+        "language": "en"
+      }
+    ]
+  }
+}

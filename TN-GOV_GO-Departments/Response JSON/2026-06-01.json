@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-01",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 2,
+  "orders": [
+    {
+      "go_date": "2026-06-01",
+      "go_number": "G.O.(MS)No.156",
+      "go_name": "Planning and Development – Construction of building to Centre of Excellence for Cancer Disease at Government Arignar Anna Memorial Cancer Hospital, Karapettai, Kancheepuram District – Revised administrative sanction – Accorded – Orders Issued.",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_156_ms_2026.pdf"
+    },
+    {
+      "go_date": "2026-06-01",
+      "go_number": "G.O.(D)No.614",
+      "go_name": "Ambulance – One Basic Life Support Ambulance at Kalvarayan Hills to include in the existing fleet strength of 108 services under Tamil Nadu Health Systems Project – Accepted – Orders – Issued.",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_614_D_2026.pdf"
+    }
+  ]
+}

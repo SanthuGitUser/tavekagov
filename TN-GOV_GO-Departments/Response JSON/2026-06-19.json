@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-19",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-06-19",
+      "go_number": "G.O.(Ms). No. 44",
+      "go_name": "Cooperation Based on the press release of the Honble Chief Minister of Tamil Nadu, waiving the proposed crop loan outstanding amount of Rs.5,932.23 crore pertaining to farmers who availed crop loans from Cooperative Banks from 01.05.2025 to 28.02.2026 - Orders - Issued",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
+      "dep_id_encoded": "NQ==",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/cfcp_e_44_2026_ms.pdf"
+    }
+  ]
+}

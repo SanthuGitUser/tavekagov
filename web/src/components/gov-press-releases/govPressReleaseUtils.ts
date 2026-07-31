@@ -1,5 +1,5 @@
 import type { LightboxImage } from "@/components/shared/ImageLightbox";
-import type { GovPressRelease } from "@/types/database";
+import type { GovPressRelease } from "@/types/models";
 
 export type GovPressReleaseView = "all" | "department" | "minister";
 
@@ -47,9 +47,6 @@ export const CATEGORY_SIDE_FILTER_ORDER: GovPressReleaseFlagFilter[] = [
   "postings",
   "others",
 ];
-
-/** @deprecated use CATEGORY_SIDE_FILTER_ORDER or ALL_VIEW_SIDE_FILTER_ORDER */
-export const FLAG_FILTER_ORDER: GovPressReleaseFlagFilter[] = CATEGORY_SIDE_FILTER_ORDER;
 
 export function getFlagFilterLabel(filter: GovPressReleaseFlagFilter): string {
   return FLAG_FILTER_LABELS[filter];
@@ -148,9 +145,16 @@ export function buildDepartmentSideOptions(
   departments: { id: number; name: string }[],
 ): { id: string; label: string; count: number }[] {
   const counts = new Map<number, number>();
+  const latestDates = new Map<number, string>();
+
   for (const release of releases) {
-    if (release.department_id == null) continue;
-    counts.set(release.department_id, (counts.get(release.department_id) ?? 0) + 1);
+    if (release.department_id == null || !release.release_date) continue;
+    const id = release.department_id;
+    counts.set(id, (counts.get(id) ?? 0) + 1);
+    const currentLatest = latestDates.get(id);
+    if (!currentLatest || release.release_date > currentLatest) {
+      latestDates.set(id, release.release_date);
+    }
   }
 
   const deptNames = new Map(departments.map((dept) => [dept.id, dept.name]));
@@ -160,8 +164,15 @@ export function buildDepartmentSideOptions(
       id: String(id),
       label: deptNames.get(id) ?? releaseDepartmentName(releases, id) ?? `Department #${id}`,
       count,
+      latestDate: latestDates.get(id) ?? "",
     }))
-    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
+    .sort(
+      (a, b) =>
+        b.latestDate.localeCompare(a.latestDate) ||
+        b.count - a.count ||
+        a.label.localeCompare(b.label),
+    )
+    .map(({ id, label, count }) => ({ id, label, count }));
 }
 
 export function buildMinisterSideOptions(

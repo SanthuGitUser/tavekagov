@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-21",
+  "fetchedAt": "2026-08-01T00:10:41.974461+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:41.974461+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-21"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22006,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.262_-_Hon_ble_CM_Press_Release_-_ammonia_gas_leak_-_Date_-_21.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.262 - Hon'ble CM Press Release - ammonia gas leak - Date - 21.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-21",
+        "language": "en"
+      }
+    ]
+  }
+}

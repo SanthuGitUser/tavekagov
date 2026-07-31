@@ -1,0 +1,62 @@
+{
+  "date": "2026-05-24",
+  "fetchedAt": "2026-08-01T00:10:35.334718+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:35.334718+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-24"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21790,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.075_-_Hon_ble_Public_Works_and_Sports_Development_Minister_Press_Release_-_Date.24.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.075 - Hon'ble Public Works and Sports Development Minister Press Release - Date.24.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-24",
+        "language": "en"
+      },
+      {
+        "id": 21791,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.076-Honble_HR_CE_Minister_Inspection-Press_Release_-_Trichy_-_24.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.076-Honble HR&CE Minister Inspection-Press Release - Trichy - 24.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-24",
+        "language": "en"
+      },
+      {
+        "id": 21792,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.077-Hon_ble_Minister_for_Energy_Resources_and_Law_-Puzhal_Central_Prison_Inspection-Press_Release-Date_24.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.077-Hon'ble Minister for Energy Resources and Law -Puzhal Central Prison Inspection-Press Release-Date 24.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-24",
+        "language": "en"
+      },
+      {
+        "id": 21793,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO.078_-_Hon_ble_Health__Medical_Education_and_Family_Welfare_Minister_Meeting_Press_Release_-_Date.24.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO.078 - Hon'ble Health, Medical Education and Family Welfare Minister Meeting Press Release - Date.24.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-24",
+        "language": "en"
+      }
+    ]
+  }
+}

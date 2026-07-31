@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-07",
+  "fetchedAt": "2026-08-01T00:10:38.720800+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:38.720800+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-07"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21918,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_.P.R.NO.190_-_Registration_DEPT_-_Press_Release_-_Anywhere_Registration_-_Date_-_07.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-08",
+        "press_release_no": null,
+        "press_name": "DIPR - .P.R.NO.190 - Registration DEPT - Press Release - Anywhere Registration - Date - 07.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-07",
+        "language": "en"
+      }
+    ]
+  }
+}

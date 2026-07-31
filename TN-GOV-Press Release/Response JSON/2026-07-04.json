@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-04",
+  "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 2,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr040726_hrce.jpeg",
+      "release_date": "2026-07-04",
+      "title": "Honble Minister for Hindu Religious and Charitable Endowments reviewed departmental schemes, temple renovation works and preparations for the Honble Chief Minister’s review meeting",
+      "file_name": "pr040726_hrce.jpeg",
+      "minister_name": "Hon'ble Minister for Hindu Religious and Charitable Endowments reviewed departmental schemes, temple renovation works and preparations for the Hon'ble Chief Minister's review meeting",
+      "department_name": "Hindu Religious and Charitable Endowments reviewed departmental schemes, temple renovation works and preparations for the Hon'ble Chief Minister's review meeting Department",
+      "minister_id": null,
+      "department_id": 46,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": null,
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": true,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr040726_sedu.jpg",
+      "release_date": "2026-07-04",
+      "title": "Additional Chief Secretary to Government, School Education Department inspected the special TET Examination Centre for In-Service Teachers",
+      "file_name": "pr040726_sedu.jpg",
+      "minister_name": "Thiru Rajmohan",
+      "department_name": "School Education Department",
+      "minister_id": 8,
+      "department_id": 28,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "medium",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 8,
+      "name": "Thiru Rajmohan",
+      "designation": "Minister for School Education, Tamil Development, Information and Publicity",
+      "portfolio": "School Education, Archaeology, Tamil Official Language and Tamil Culture, Information &amp; Publicity, Film Technology and Cinematograph Act, Newsprint Control, Stationery and Printing, Government Press.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/016_Rajmohan.png",
+      "display_order": 8,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 28,
+      "name": "School Education Department",
+      "dep_id_encoded": "Mjg=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Rajmohan",
+      "display_order": 31
+    }
+  ]
+}

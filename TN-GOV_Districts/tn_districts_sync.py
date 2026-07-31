@@ -1,11 +1,10 @@
 """
-Fetch Tamil Nadu districts from tn.gov.in and upsert into Supabase.
+Fetch Tamil Nadu districts from tn.gov.in and save to manifests/tn_districts.json.
 
 Usage:
-  1. Ensure Public DB/.env has Supabase keys (see Public DB/.env.example).
-  2. pip install -r requirements.txt
-  3. python tn_districts_sync.py
-  4. Optional: python tn_districts_sync.py --dry-run
+  1. pip install -r requirements.txt
+  2. python tn_districts_sync.py
+  3. Optional: python tn_districts_sync.py --output-dir path/to/manifests
 """
 
 from __future__ import annotations
@@ -17,14 +16,17 @@ import re
 import sys
 import time
 from dataclasses import asdict, dataclass
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
+_SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
+_KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _CARD_RE = re.compile(
     r"<a\s+href=district1\.php\?dt_cd=([^>\s]+)>\s*"
@@ -56,9 +58,9 @@ _DEFAULT_HEADERS = {
 }
 
 
-def _load_config():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
+def _load_config() -> tuple[str, str]:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
     from config import get_tn_districts_source_url, get_tn_gov_base_url
 
     return get_tn_districts_source_url(), get_tn_gov_base_url()
@@ -73,6 +75,7 @@ class District:
     id: int
     name: str
     dt_cd_encoded: str
+    profile_url: str
     area_size: str | None
     population: str | None
     website_url: str | None
@@ -116,11 +119,11 @@ def fetch_district_details(
             if not response.text.strip():
                 response.raise_for_status()
 
-            html = response.text
-            name = _extract_first(_NAME_RE, html) or fallback_name
-            area_size = _extract_first(_AREA_RE, html)
-            population = _extract_first(_POPULATION_RE, html)
-            website_match = _WEBSITE_RE.search(html)
+            page_html = response.text
+            name = _extract_first(_NAME_RE, page_html) or fallback_name
+            area_size = _extract_first(_AREA_RE, page_html)
+            population = _extract_first(_POPULATION_RE, page_html)
+            website_match = _WEBSITE_RE.search(page_html)
             website_url = website_match.group(1).strip() if website_match else None
             return name, area_size, population, website_url
 
@@ -139,10 +142,10 @@ def fetch_districts(session: requests.Session | None = None) -> list[District]:
     sess.headers.update(_DEFAULT_HEADERS)
     response = sess.get(source_url, timeout=(20, 60))
     response.raise_for_status()
-    html = response.text
+    page_html = response.text
 
     entries: list[tuple[int, str, str, int]] = []
-    for order, match in enumerate(_CARD_RE.finditer(html), start=1):
+    for order, match in enumerate(_CARD_RE.finditer(page_html), start=1):
         dt_cd_encoded, raw_name = match.groups()
         dt_cd_encoded = dt_cd_encoded.strip()
         list_name = _clean_text(raw_name)
@@ -165,6 +168,7 @@ def fetch_districts(session: requests.Session | None = None) -> list[District]:
                 id=district_id,
                 name=name,
                 dt_cd_encoded=dt_cd_encoded,
+                profile_url=profile_url,
                 area_size=area_size,
                 population=population,
                 website_url=website_url,
@@ -181,66 +185,45 @@ def fetch_districts(session: requests.Session | None = None) -> list[District]:
     return districts
 
 
-def _load_supabase_client():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
-    from client import get_supabase_client
-
-    return get_supabase_client(use_service_role=True)
-
-
-def upsert_districts(districts: list[District]) -> int:
-    client = _load_supabase_client()
-    rows = [
-        {
-            "id": district.id,
-            "name": district.name,
-            "dt_cd_encoded": district.dt_cd_encoded,
-            "area_size": district.area_size,
-            "population": district.population,
-            "website_url": district.website_url,
-            "display_order": district.display_order,
-        }
-        for district in districts
-    ]
-    client.table("tn_districts").upsert(rows, on_conflict="id").execute()
-    return len(rows)
-
-
-def write_manifest(districts: list[District]) -> Path:
-    _MANIFESTS_DIR.mkdir(parents=True, exist_ok=True)
-    path = _MANIFESTS_DIR / "tn_districts.json"
+def write_manifest(districts: list[District], *, output_dir: Path) -> Path:
+    source_url, _ = _load_config()
+    output_dir.mkdir(parents=True, exist_ok=True)
+    path = output_dir / "tn_districts.json"
     payload = {
-        "source_url": _load_config()[0],
+        "source_url": source_url,
+        "fetchedAt": datetime.now(_KOLKATA).isoformat(),
         "count": len(districts),
         "districts": [asdict(district) for district in districts],
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Sync TN districts to Supabase.")
+    parser = argparse.ArgumentParser(
+        description="Fetch TN districts and save tn_districts.json.",
+    )
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Fetch and write manifest only; do not upsert to Supabase.",
+        "--output-dir",
+        default=str(_MANIFESTS_DIR),
+        help="Folder for tn_districts.json (default: manifests/).",
     )
     args = parser.parse_args()
 
-    print(f"Fetching districts from {_load_config()[0]} ...")
-    districts = fetch_districts()
+    source_url, _ = _load_config()
+    print(f"Fetching districts from {source_url} ...")
+    try:
+        districts = fetch_districts()
+    except requests.RequestException as exc:
+        print(f"Request failed: {exc}", file=sys.stderr)
+        return 1
+    except RuntimeError as exc:
+        print(exc, file=sys.stderr)
+        return 1
+
+    manifest_path = write_manifest(districts, output_dir=Path(args.output_dir))
     print(f"Parsed {len(districts)} districts.")
-
-    manifest_path = write_manifest(districts)
     print(f"Wrote manifest: {manifest_path}")
-
-    if args.dry_run:
-        print("Dry run complete (no database changes).")
-        return 0
-
-    count = upsert_districts(districts)
-    print(f"Upserted {count} rows into public.tn_districts.")
     return 0
 
 

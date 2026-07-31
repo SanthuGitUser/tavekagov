@@ -1,0 +1,117 @@
+{
+  "date": "2026-06-23",
+  "fetchedAt": "2026-08-01T00:10:42.439674+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:42.439674+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-23"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22012,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.267-Directorate_of_Adi_Dravidar_Welfare-Press_Release-Date_23.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.267-Directorate of Adi Dravidar Welfare-Press Release-Date 23.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      },
+      {
+        "id": 22013,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.268-Hon_ble_CM_Press_Release_-_Qatar_Fire_Accident_-_Condolence_and_Relief_CMPRF_-Date_23.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.268-Hon'ble CM Press Release - Qatar Fire Accident - Condolence and Relief CMPRF -Date 23.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      },
+      {
+        "id": 22014,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-269-_Health_Dept_Press_Release-______________________________________________________________________________-Date_23.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-269- Health Dept Press Release-தாய்மாமன் தங்க மோதிர திட்டம்-Date 23.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      },
+      {
+        "id": 22015,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-270-BC__MBC___Minorities_Welfare_Department_Press_Release-English-Date_23.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-270-BC, MBC & Minorities Welfare Department Press Release-English-Date 23.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      },
+      {
+        "id": 22016,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-270-BC__MBC___Minorities_Welfare_Department_Press_Release-Tamil-Date_23.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-270-BC, MBC & Minorities Welfare Department Press Release-Tamil-Date 23.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      },
+      {
+        "id": 22017,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-271-Hon_ble_Higher_Education_Minister_Press_Release-TNEA_-Date_23.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-271-Hon'ble Higher Education Minister Press Release-TNEA -Date 23.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      },
+      {
+        "id": 22018,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.272_-_Tamil_Development_Dept_Press_Release_-_English_-_Date.23.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.272 - Tamil Development Dept Press Release - English - Date.23.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      },
+      {
+        "id": 22019,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.272_-_Tamil_Development_Dept_Press_Release_-_Tamil_-_Date.23.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.272 - Tamil Development Dept Press Release - Tamil - Date.23.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      },
+      {
+        "id": 22020,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-273-Hon_ble_PWD_and_Sports_Minister_Speech_PR-Date_23.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-273-Hon'ble PWD and Sports Minister Speech PR-Date 23.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-23",
+        "language": "en"
+      }
+    ]
+  }
+}

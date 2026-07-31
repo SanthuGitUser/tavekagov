@@ -1,0 +1,128 @@
+{
+  "date": "2026-06-22",
+  "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 3,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr220626a.jpg",
+      "release_date": "2026-06-22",
+      "title": "US Ambassador to India, Special Envoy to South and Central Asia called on the Honble Chief Minister",
+      "file_name": "pr220626a.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr220626_enrgy1.jpg",
+      "release_date": "2026-06-22",
+      "title": "Honble Minister for Energy Resources and Law issued admission allotment orders to top-ranking law aspirants",
+      "file_name": "pr220626_enrgy1.jpg",
+      "minister_name": "Hon'ble Minister for Energy Resources and Law issued admission allotment orders to top-ranking law aspirants",
+      "department_name": "Energy Resources and Law issued admission allotment orders to top-ranking law aspirants Department",
+      "minister_id": 7,
+      "department_id": 7,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr220626_hrm.jpg",
+      "release_date": "2026-06-22",
+      "title": "Honble Minister for Human Resources Management interacted with aspirants at the inaugural programme of the Civil Services Main Examination Coaching Programme",
+      "file_name": "pr220626_hrm.jpg",
+      "minister_name": "Hon'ble Minister for Human Resources Management interacted with aspirants at the inaugural programme of the Civil Services Main Examination Coaching Programme",
+      "department_name": "Human Resources Management Department",
+      "minister_id": 26,
+      "department_id": 22,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolio": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers, Police, Home, Special Programme Implementation, Special Initiatives, Poverty Alleviation and Rural Indebtedness, Youth Welfare, Welfare of Children, Aged, Differently Abled Persons, Municipal Administration, Urban and Water Supply.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    },
+    {
+      "id": 7,
+      "name": "Thiru R. Nirmalkumar",
+      "designation": "Minister for Energy Resources and Law",
+      "portfolio": "Electricity &amp; Non-Conventional Energy Development, Law, Courts, Prisons and Prevention of Corruption, Governor, Elections and Passports.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/195_Nirmalkumar.png",
+      "display_order": 7,
+      "is_chief_minister": false
+    },
+    {
+      "id": 26,
+      "name": "Thiru D. Sarathkumar",
+      "designation": "Minister for Human Resources Management",
+      "portfolio": "Human Resources Management &amp; Ex-Servicemen Welfare",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/031_Sarathkumar.png",
+      "display_order": 26,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 7,
+      "name": "Energy Department",
+      "dep_id_encoded": "Nw==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Nw==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru R. Nirmalkumar",
+      "display_order": 6
+    },
+    {
+      "id": 22,
+      "name": "Human Resources Management Department",
+      "dep_id_encoded": "MjI=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjI=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru D. Sarathkumar",
+      "display_order": 15
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-29",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 4,
+  "orders": [
+    {
+      "go_date": "2026-06-29",
+      "go_number": "G.O.(D)No.734",
+      "go_name": "Medical Education - Indian Medicine and Homoeopathy - Prospectus Diploma Courses for Integrated Pharmacy and Nursing Therapy in Indian System of Medicine for the Academic Year 2026 2027 - Approved - Orders - Issued.",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_734_D_2026.pdf"
+    },
+    {
+      "go_date": "2026-06-29",
+      "go_number": "G.O.(MS)No.170",
+      "go_name": "Medical Institutions – Identification and initiating action against Unauthorised Institutions / Institutions conducting unapproved courses in Health Sector, including Medicine, Dentistry, Nursing, Pharmacy, Allied and Healthcare, Rehabilitation Sciences, Indian Systems of Medicine (Ayurveda, Siddha, Unani), Homeopathy, Yoga and Naturopathy and Public Health – Standard Operating Procedure – Orders –Issued",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_170_ms_2026.pdf"
+    },
+    {
+      "go_date": "2026-06-29",
+      "go_number": "G.O Ms. No. 129",
+      "go_name": "Urban Development - Amendment to Tamil Nadu Combined Development and Building Rules, 2019 – Industrial layout/Industrial estate developed by Government Department/Agencies – Reservation and transfer of OSR Land – Notification – Orders – Issued.",
+      "department_name": "Housing and Urban Development Department",
+      "dep_id_encoded": "MTU=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hud_e_129_2026.pdf"
+    },
+    {
+      "go_date": "2026-06-29",
+      "go_number": "rd_e_ms_114_2026",
+      "go_name": "Rural Development and Panchayat Raj Department - Viksit Bharat-Guarantee for Rozgar and Ajeevika Mission – Gramin: (VB-G RAM G) Act, 2025 – Implementation of Viksit Bharat - Guarantee for Rozgar and Ajeevika Mission(Gramin) Scheme, Tamil Nadu - வளர்ச்சியடைந்த பாரதம் – கிராம வேலை உறுதி மற்றும் வாழ்வாதார திட்டம், தமிழ்நாடு with effect from 01.07.2026 – Scheme Notification - Orders – Issued",
+      "department_name": "Rural Development and Panchayat Raj Department",
+      "dep_id_encoded": "Mjc=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/rd_e_ms_114_2026.pdf"
+    }
+  ]
+}

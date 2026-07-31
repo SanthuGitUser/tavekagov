@@ -26,7 +26,7 @@ import {
 } from "@/lib/queries";
 import { tamilNaduNewsFeed } from "@/lib/tamilNaduNewsFeed";
 import { formatDate } from "@/lib/utils";
-import type { PressRelease } from "@/types/database";
+import type { PressRelease } from "@/types/models";
 
 const recentColumns: ColumnDef<PressRelease>[] = [
   {

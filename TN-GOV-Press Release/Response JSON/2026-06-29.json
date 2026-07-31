@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-29",
+  "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 3,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr290626c.jpg",
+      "release_date": "2026-06-29",
+      "title": "Honble Chief Minister chaired the conference of District Collectors",
+      "file_name": "pr290626c.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr290626a.jpg",
+      "release_date": "2026-06-29",
+      "title": "Honble Chief Minister inaugurated the conference of District Collectors, Police Officers and delivered the inaugural address",
+      "file_name": "pr290626a.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr290626_cop1.jpeg",
+      "release_date": "2026-06-29",
+      "title": "Honble Minister for Co-operation inaugurated Co-operative Week – 2026",
+      "file_name": "pr290626_cop1.jpeg",
+      "minister_name": "Hon'ble Minister for Co-operation",
+      "department_name": "Co-operation Department",
+      "minister_id": 22,
+      "department_id": 28,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "medium",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolio": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers, Police, Home, Special Programme Implementation, Special Initiatives, Poverty Alleviation and Rural Indebtedness, Youth Welfare, Welfare of Children, Aged, Differently Abled Persons, Municipal Administration, Urban and Water Supply.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    },
+    {
+      "id": 22,
+      "name": "Thiru V. Gandhiraj",
+      "designation": "Minister for Co-operation",
+      "portfolio": "Co-operation",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/038_Gandhiraj.png",
+      "display_order": 22,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 28,
+      "name": "School Education Department",
+      "dep_id_encoded": "Mjg=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Rajmohan",
+      "display_order": 31
+    }
+  ]
+}

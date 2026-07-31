@@ -1,12 +1,15 @@
 """
-Fetch Tamil Nadu DIPR press releases and upsert into Supabase.
+Fetch Tamil Nadu DIPR press releases and save one JSON file per API date.
+
+Each day writes to Response JSON/YYYY-MM-DD.json (the `date` query param).
+Re-runs merge items in `response.data` by DIPR `id` (incoming entries win).
 
 Usage:
-  1. Ensure Public DB/.env has Supabase keys and TN_PRESS_RELEASE_* settings.
+  1. Ensure Sync-Config/.env has TN_PRESS_RELEASE_* settings.
   2. pip install -r requirements.txt
   3. python tn_press_release_sync.py
-  4. Optional: python tn_press_release_sync.py --dry-run
-  5. Optional: python tn_press_release_sync.py --start-date 10-05-2026 --end-date 21-07-2026
+  4. Optional: python tn_press_release_sync.py --start-date 10-05-2026 --end-date 31-07-2026
+     (defaults: start from TN_PRESS_RELEASE_START_DATE in .env, end = yesterday Asia/Kolkata)
 """
 
 from __future__ import annotations
@@ -16,25 +19,22 @@ import json
 import re
 import sys
 import time
-from dataclasses import asdict, dataclass
 from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote, unquote, urlsplit, urlunsplit
+from zoneinfo import ZoneInfo
 
 import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
-_MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
+_SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
 
 _BASE_API_URL = "https://dipr.tn.gov.in/dipr_api/v1"
-_API_ENDPOINT = "press_release"
-_PDF_SUFFIX_RE = re.compile(r"\.pdf\s*$", re.I)
-_PR_NO_RE = re.compile(
-    r"DIPR[-\s]*(?:P\.?\s*R\.?|PR)[_\s\.-]*No\.?\s*[_\s\.-]*(\d+)",
-    re.IGNORECASE,
-)
+_API_PATH = "general/pressReleases/press_release"
+_API_URL = f"{_BASE_API_URL}/{_API_PATH}"
+_KOLKATA = ZoneInfo("Asia/Kolkata")
 _DEFAULT_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -45,18 +45,9 @@ _DEFAULT_HEADERS = {
 }
 
 
-@dataclass(frozen=True)
-class PressRelease:
-    id: int
-    name: str
-    pr_date: str
-    dipr_pr_no: str | None
-    pdf_url: str
-
-
 def _load_config() -> tuple[str, str]:
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
     from config import get_tn_press_release_source_url, get_tn_press_release_start_date
 
     return get_tn_press_release_source_url(), get_tn_press_release_start_date()
@@ -75,207 +66,160 @@ def _format_display_date(value: date) -> str:
     return value.strftime("%d-%m-%Y")
 
 
-def _safe_url(url: str) -> str:
-    parts = urlsplit(url)
-    path = quote(unquote(parts.path), safe="/-_.~()")
-    query = quote(unquote(parts.query), safe="=&-_.~%")
-    return urlunsplit((parts.scheme, parts.netloc, path, query, parts.fragment))
-
-
-def _join_base_api(file_path_or_url: str) -> str:
-    raw = (file_path_or_url or "").strip()
-    if not raw:
-        return ""
-    if raw.lower().startswith("http://") or raw.lower().startswith("https://"):
-        return _safe_url(raw)
-    if not raw.startswith("/"):
-        raw = "/" + raw
-    return _safe_url(_BASE_API_URL.rstrip("/") + raw)
-
-
-def _item_title(item: dict[str, Any]) -> str:
-    return (
-        item.get("press_name")
-        or item.get("press_note_name")
-        or item.get("title")
-        or item.get("name")
-        or "Untitled"
-    )
-
-
-def _item_file_field(item: dict[str, Any]) -> str:
-    for key in ("press_file_name", "press_note_file_name"):
-        value = item.get(key)
-        if isinstance(value, str) and value.strip():
-            return value.strip()
-    for key, value in item.items():
-        if not isinstance(key, str) or not key.endswith("_file_name"):
-            continue
-        if isinstance(value, str) and value.strip().lower().endswith(".pdf"):
-            return value.strip()
-    return ""
-
-
-def _extract_pr_no(item: dict[str, Any], name: str) -> str | None:
-    raw = item.get("press_release_no")
-    if isinstance(raw, str) and raw.strip():
-        return raw.strip()
-    for source in (name, _item_file_field(item)):
-        match = _PR_NO_RE.search(source)
-        if match:
-            return match.group(1)
-    return None
-
-
-def _parse_item(item: dict[str, Any]) -> PressRelease | None:
-    item_id = item.get("id")
-    if item_id is None:
-        return None
-
-    file_ref = _item_file_field(item)
-    pdf_url = _join_base_api(file_ref)
-    if not pdf_url:
-        return None
-
-    raw_name = _PDF_SUFFIX_RE.sub("", _item_title(item)).strip()
-    pr_date_raw = item.get("pr_date") or item.get("uploaded_date")
-    if not isinstance(pr_date_raw, str) or not pr_date_raw.strip():
-        return None
-
-    return PressRelease(
-        id=int(item_id),
-        name=raw_name,
-        pr_date=pr_date_raw.strip(),
-        dipr_pr_no=_extract_pr_no(item, raw_name),
-        pdf_url=pdf_url,
-    )
-
-
-def _fetch_day(
+def _fetch_day_payload(
     session: requests.Session,
     *,
     source_url: str,
     selected_date: date,
-) -> list[PressRelease]:
+) -> dict[str, Any]:
     response = session.get(
-        f"{_BASE_API_URL}/general/pressReleases/{_API_ENDPOINT}",
+        _API_URL,
         params={"date": selected_date.isoformat()},
         timeout=(20, 120),
         headers={"Referer": source_url},
     )
     response.raise_for_status()
     payload = response.json()
-    if not isinstance(payload, dict) or payload.get("success") != 1:
-        return []
-
-    data = payload.get("data")
-    if not isinstance(data, list):
-        return []
-
-    releases: list[PressRelease] = []
-    for item in data:
-        if not isinstance(item, dict):
-            continue
-        parsed = _parse_item(item)
-        if parsed is not None:
-            releases.append(parsed)
-    return releases
+    if not isinstance(payload, dict):
+        return {"success": 0, "data": []}
+    return payload
 
 
-def fetch_press_releases(
+def merge_data_items(
+    existing: list[dict[str, Any]],
+    incoming: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    merged: dict[int, dict[str, Any]] = {}
+
+    for item in existing:
+        item_id = item.get("id")
+        if item_id is not None:
+            merged[int(item_id)] = item
+
+    for item in incoming:
+        item_id = item.get("id")
+        if item_id is not None:
+            merged[int(item_id)] = item
+
+    results = list(merged.values())
+    results.sort(key=lambda row: int(row.get("id") or 0))
+    return results
+
+
+def load_existing_record(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def save_day_response(
+    output_dir: Path,
+    *,
+    selected_date: date,
+    source_url: str,
+    payload: dict[str, Any],
+    fetched_at: datetime,
+) -> Path:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    out_path = output_dir / f"{selected_date.isoformat()}.json"
+
+    incoming_data = payload.get("data")
+    if not isinstance(incoming_data, list):
+        incoming_data = []
+
+    existing_record = load_existing_record(out_path)
+    existing_data: list[dict[str, Any]] = []
+    fetch_count = 1
+    first_fetched_at = fetched_at.isoformat()
+
+    if existing_record:
+        existing_response = existing_record.get("response") or {}
+        raw_existing = existing_response.get("data")
+        if isinstance(raw_existing, list):
+            existing_data = raw_existing
+        fetch_count = int(existing_record.get("fetchCount") or 0) + 1
+        first_fetched_at = str(existing_record.get("fetchedAt") or first_fetched_at)
+
+    merged_data = merge_data_items(existing_data, incoming_data)
+
+    record = {
+        "date": selected_date.isoformat(),
+        "fetchedAt": first_fetched_at,
+        "lastFetchedAt": fetched_at.isoformat(),
+        "fetchCount": fetch_count,
+        "request": {
+            "method": "GET",
+            "url": _API_URL,
+            "params": {"date": selected_date.isoformat()},
+        },
+        "response": {
+            "success": payload.get("success", 1 if merged_data else 0),
+            "data": merged_data,
+        },
+    }
+    out_path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return out_path
+
+
+def sync_press_releases(
     session: requests.Session,
     *,
     source_url: str,
+    output_dir: Path,
     start_date: date,
     end_date: date,
-) -> list[PressRelease]:
-    releases: list[PressRelease] = []
-    seen_ids: set[int] = set()
+) -> list[Path]:
+    saved_paths: list[Path] = []
     current = start_date
     total_days = (end_date - start_date).days + 1
     day_index = 0
+    total_items = 0
 
     print(
         f"Fetching press releases from {_format_display_date(start_date)} "
         f"to {_format_display_date(end_date)} ..."
     )
+
     while current <= end_date:
         day_index += 1
-        day_items = _fetch_day(session, source_url=source_url, selected_date=current)
-        new_count = 0
-        for item in day_items:
-            if item.id in seen_ids:
-                continue
-            seen_ids.add(item.id)
-            releases.append(item)
-            new_count += 1
+        fetched_at = datetime.now(_KOLKATA)
+        payload = _fetch_day_payload(session, source_url=source_url, selected_date=current)
+        out_path = save_day_response(
+            output_dir,
+            selected_date=current,
+            source_url=source_url,
+            payload=payload,
+            fetched_at=fetched_at,
+        )
+        saved_paths.append(out_path)
 
-        if new_count:
+        day_count = len((payload.get("data") or []) if isinstance(payload.get("data"), list) else [])
+        merged_count = len(
+            load_existing_record(out_path).get("response", {}).get("data") or [],
+        )
+        total_items += day_count
+
+        if day_count:
             print(
                 f"  [{day_index}/{total_days}] {_format_display_date(current)}: "
-                f"{new_count} release(s)"
+                f"{day_count} fetched, {merged_count} saved"
             )
+
         time.sleep(0.15)
         current += timedelta(days=1)
 
-    return releases
-
-
-def _load_supabase_client():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
-    from client import get_supabase_client
-
-    return get_supabase_client(use_service_role=True)
-
-
-def upsert_press_releases(releases: list[PressRelease]) -> int:
-    if not releases:
-        return 0
-
-    client = _load_supabase_client()
-    rows = [
-        {
-            "id": release.id,
-            "name": release.name,
-            "pr_date": release.pr_date,
-            "dipr_pr_no": release.dipr_pr_no,
-            "pdf_url": release.pdf_url,
-        }
-        for release in releases
-    ]
-    client.table("tn_press_release").upsert(rows, on_conflict="id").execute()
-    return len(rows)
-
-
-def write_manifest(
-    releases: list[PressRelease],
-    *,
-    source_url: str,
-    start_date: date,
-    end_date: date,
-) -> Path:
-    _MANIFESTS_DIR.mkdir(parents=True, exist_ok=True)
-    safe_start = _format_display_date(start_date).replace("-", "")
-    safe_end = _format_display_date(end_date).replace("-", "")
-    path = _MANIFESTS_DIR / f"tn_press_release_{safe_start}_to_{safe_end}.json"
-    payload = {
-        "source_url": source_url,
-        "start_date": _format_display_date(start_date),
-        "end_date": _format_display_date(end_date),
-        "count": len(releases),
-        "releases": [asdict(release) for release in releases],
-    }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    return path
+    print(f"Saved {len(saved_paths)} day file(s); {total_items} item(s) fetched this run.")
+    return saved_paths
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Sync TN DIPR press releases to Supabase.")
+    parser = argparse.ArgumentParser(
+        description="Fetch TN DIPR press releases and save daily JSON responses.",
+    )
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Fetch and write manifest only; do not upsert to Supabase.",
+        "--output-dir",
+        default=str(_OUTPUT_DIR),
+        help="Folder for daily JSON responses (YYYY-MM-DD.json).",
     )
     parser.add_argument(
         "--start-date",
@@ -283,13 +227,18 @@ def main() -> int:
     )
     parser.add_argument(
         "--end-date",
-        help="Include releases up to this date (DD-MM-YYYY). Defaults to today.",
+        help="Include releases up to this date (DD-MM-YYYY). Defaults to yesterday (Asia/Kolkata).",
     )
     args = parser.parse_args()
 
     source_url, default_start_date = _load_config()
     start_date = _parse_display_date(_normalize_date(args.start_date or default_start_date))
-    end_date = _parse_display_date(_normalize_date(args.end_date)) if args.end_date else date.today()
+    default_end_date = datetime.now(_KOLKATA).date() - timedelta(days=1)
+    end_date = (
+        _parse_display_date(_normalize_date(args.end_date))
+        if args.end_date
+        else default_end_date
+    )
     if start_date > end_date:
         raise SystemExit("start-date must be on or before end-date.")
 
@@ -297,31 +246,15 @@ def main() -> int:
     session.headers.update(_DEFAULT_HEADERS)
 
     print(f"Source page: {source_url}")
-    releases = fetch_press_releases(
+    saved_paths = sync_press_releases(
         session,
         source_url=source_url,
+        output_dir=Path(args.output_dir),
         start_date=start_date,
         end_date=end_date,
     )
-    print(
-        f"Found {len(releases)} press release(s) from {_format_display_date(start_date)} "
-        f"to {_format_display_date(end_date)}."
-    )
-
-    manifest_path = write_manifest(
-        releases,
-        source_url=source_url,
-        start_date=start_date,
-        end_date=end_date,
-    )
-    print(f"Wrote manifest: {manifest_path}")
-
-    if args.dry_run:
-        print("Dry run complete (no database changes).")
-        return 0
-
-    count = upsert_press_releases(releases)
-    print(f"Upserted {count} rows into public.tn_press_release.")
+    if saved_paths:
+        print(f"Latest file: {saved_paths[-1]}")
     return 0
 
 

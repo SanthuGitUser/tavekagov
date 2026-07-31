@@ -1,0 +1,18 @@
+{
+  "date": "2026-06-02",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-06-02",
+      "go_number": "G.O.(Ms)No.61",
+      "go_name": "Water Resources Department – Revised Administrative Sanction proposals due to various reasons – Instructions to curtail the Revised Administrative Sanction proposals – Issued.",
+      "department_name": "Water Resources Department",
+      "dep_id_encoded": "NDQ=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/wrd_e_61_Ms_2026.pdf"
+    }
+  ]
+}

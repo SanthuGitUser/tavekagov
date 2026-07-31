@@ -1,0 +1,18 @@
+{
+  "date": "2026-05-11",
+  "fetchedAt": "2026-08-01T01:18:57.495248+05:30",
+  "lastFetchedAt": "2026-08-01T01:19:26.667768+05:30",
+  "fetchCount": 2,
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-05-11",
+      "go_number": "G.O.(D)No.558",
+      "go_name": "Ambulance - Donation Advanced Life Support Ambulance through CSR initiative L and T Valves Limited in Partnership with Hand in Hand India, Little Kancheepuram - Added to existing 108 fleet strength - Accepted - Orders - Issued.",
+      "department_name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hfw_e_558_D_2026.pdf"
+    }
+  ]
+}

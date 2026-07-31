@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-17",
+  "fetchedAt": "2026-08-01T00:10:33.620589+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:33.620589+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-17"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21744,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.030-Hon_ble_Speaker_Press_Release_Thousand_Lights_Assembly_Inspection_-Date_17.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-18",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.030-Hon'ble Speaker Press Release Thousand Lights Assembly Inspection -Date 17.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-17",
+        "language": "en"
+      }
+    ]
+  }
+}

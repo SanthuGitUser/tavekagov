@@ -1,0 +1,128 @@
+{
+  "date": "2026-05-12",
+  "fetchedAt": "2026-08-01T00:10:32.431069+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:32.431069+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-12"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21708,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.005-Hon_ble_CM_Press_Release_-_Leaders_thanked_HCM__-Date__12.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.005-Hon'ble CM Press Release - Leaders thanked HCM  -Date  12.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21709,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.006-Hon_ble_CM_Press_Release-Farmers_Association-Met_and_conveyed_their_greetings-Date_12.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.006-Hon'ble CM Press Release-Farmers Association-Met and conveyed their greetings-Date 12.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21710,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.007-Honble_CM_Press_Release_-_Closure_of_TASMAC_shops.PDF",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.007-Honble CM Press Release - Closure of TASMAC shops.PDF",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21711,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.008_-_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_CMPRF_-_Coimbatore_Road_Accident_-_Date_-_12.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.008 - Hon'ble CM Press Release - Condolence and Relief CMPRF - Coimbatore Road Accident - Date - 12.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21712,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.009_-_Hon_ble_CM_Press_Release_-_MAWS_Dept_and_RD_Dept_Review_Meeting_-_Date_-_12.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.009 - Hon'ble CM Press Release - MAWS Dept and RD Dept Review Meeting - Date - 12.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21713,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.010-Hon_ble_CM_DO_Letter_to_Hon_ble_Union_External_Affairs_Minister_reg_Fishermen_Arrest_-_Date_12.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.010-Hon'ble CM DO Letter to Hon'ble Union External Affairs Minister reg Fishermen Arrest - Date 12.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21714,
+        "press_file_name": "/uploads/tn_govt_press_release/TNLA-_001_-_Hon_ble_CM_Assembly_Speech_-_Praising_Elected_Hon_ble_Speaker__-_Date_-_12.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "TNLA- 001 - Hon'ble CM Assembly Speech - Praising Elected Hon'ble Speaker  - Date - 12.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21715,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.011_-_Art_and_Culture_Dept_-_Press_Release_-_Date.12.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.011 - Art and Culture Dept - Press Release - Date.12.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21716,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.012_-_Competitive_Examinations_Coaching_Centre_Press_Release_-_Date.12.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.012 - Competitive Examinations Coaching Centre Press Release - Date.12.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      },
+      {
+        "id": 21717,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-P.R.No.013_-International_Institute_of_Tamil_Studies-IITS_Press_Release_-_Date.12.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-12",
+        "press_release_no": null,
+        "press_name": "DIPR -P.R.No.013 -International Institute of Tamil Studies-IITS Press Release - Date.12.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-12",
+        "language": "en"
+      }
+    ]
+  }
+}

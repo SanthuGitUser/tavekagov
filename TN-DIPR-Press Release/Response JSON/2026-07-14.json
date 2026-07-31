@@ -1,0 +1,128 @@
+{
+  "date": "2026-07-14",
+  "fetchedAt": "2026-08-01T00:10:47.386098+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:47.386098+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-14"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22156,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.389_-_Hon_ble_CM_Press_Release_-_Health_Dept_-_Appt_orders_for_Asst._Surgeons_and_others__Nalam_TamilNadu_website__Building_Inaugurations_-_Date.14.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.389 - Hon'ble CM Press Release - Health Dept - Appt orders for Asst. Surgeons and others, Nalam TamilNadu website, Building Inaugurations - Date.14.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22157,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.390_-_Hon_ble_Minister_for_Higher_Education_Press_Release_-_Date_-_14.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.390 - Hon'ble Minister for Higher Education Press Release - Date - 14.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22158,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.391_-_Hon_ble_Minister_for_Handlooms__Textiles_and_Khadi_-_Press_Release_-_Date_-_14.07.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.391 - Hon'ble Minister for Handlooms, Textiles and Khadi - Press Release - Date - 14.07.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22159,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.NO.392_-_Hon_ble_Ministers_Press_Release_Delhi_-_Date_-_14.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.NO.392 - Hon'ble Ministers Press Release Delhi - Date - 14.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22160,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.393_-_Tamil_Development_Department_Press_Release_-_Date_-_14.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.393 - Tamil Development Department Press Release - Date - 14.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22161,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.394_-_Regiration_Department_Press_Release_-_Date_-_14.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.394 - Regiration Department Press Release - Date - 14.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22162,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.395_-_Regiration_Department_Press_Release_-_Date_-_14.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.395 - Regiration Department Press Release - Date - 14.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22163,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.396_-_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Gummidipoondi_SIPCOT_Boiler_Accident_-_Date_-_14.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.396 - Hon'ble CM Press Release - Condolence and Relief - Gummidipoondi SIPCOT Boiler Accident - Date - 14.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22164,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.397_-_WRD_Department_Water_Release_-_Tiruppur_Dist_-_Date_-_14.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.397 - WRD Department Water Release - Tiruppur Dist - Date - 14.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      },
+      {
+        "id": 22165,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.398_-_Hon_ble_Minister_for_Food_and_Civil_Supplies_-_Press_Release_-_Date_-_14.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.398 - Hon'ble Minister for Food and Civil Supplies - Press Release - Date - 14.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-14",
+        "language": "en"
+      }
+    ]
+  }
+}

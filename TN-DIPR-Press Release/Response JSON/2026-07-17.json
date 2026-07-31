@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-17",
+  "fetchedAt": "2026-08-01T00:10:48.102662+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:48.102662+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-17"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22182,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.413-Hon_ble_CM_Social_Media_message_-_Thyagigal_Naal_-Date__17.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-17",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.413-Hon'ble CM Social Media message - Thyagigal Naal -Date  17.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-17",
+        "language": "en"
+      },
+      {
+        "id": 22183,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.414-Hon_ble_Ministers_Press_Release-Thiyagigal_Dhinam_-Date_17.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-17",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.414-Hon'ble Ministers Press Release-Thiyagigal Dhinam -Date 17.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-17",
+        "language": "en"
+      },
+      {
+        "id": 22184,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.415_-_Hon_ble_CM_Social_Media_Message_-_Population_Census_Online_details_filling_-_Date_-_17.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-17",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.415 - Hon'ble CM Social Media Message - Population Census Online details filling - Date - 17.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-17",
+        "language": "en"
+      },
+      {
+        "id": 22185,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.416_-_Hon_ble_Higher_Education_Minister_Press_Release_-_Date.17.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.416 - Hon'ble Higher Education Minister Press Release - Date.17.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-17",
+        "language": "en"
+      },
+      {
+        "id": 22186,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.417_-_TN_Skil_Development_Corporation-UPSC_Prelims_Scholarship_Press_Release_-_Date.17.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.417 - TN Skil Development Corporation-UPSC Prelims Scholarship Press Release - Date.17.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-17",
+        "language": "en"
+      },
+      {
+        "id": 22187,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.418_-_Finance_Dept_-_CAMS_Public_Grievance_Portal_Press_Release_-_Date.17.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.418 - Finance Dept - CAMS Public Grievance Portal Press Release - Date.17.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-17",
+        "language": "en"
+      }
+    ]
+  }
+}

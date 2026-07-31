@@ -1,0 +1,73 @@
+{
+  "date": "2026-05-19",
+  "fetchedAt": "2026-08-01T00:10:34.089955+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:34.089955+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-19"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21759,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.044-Hon_ble_Public_Works_and_Sports_Development_Minister_Inspection_Press_Release_-_Date.19.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-19",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.044-Hon'ble Public Works and Sports Development Minister Inspection Press Release - Date.19.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-19",
+        "language": "en"
+      },
+      {
+        "id": 21760,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.045-Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Thanjavur_Air_Conditioner_Fire_Accident_-Date_19.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.045-Hon'ble CM Press Release - Condolence and Relief - Thanjavur Air Conditioner Fire Accident -Date 19.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-19",
+        "language": "en"
+      },
+      {
+        "id": 21761,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.046-Health_and_Family_Welfare_Department-10th_Result-Tele_Counselling-Press_Release-Date_19.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.046-Health and Family Welfare Department-10th Result-Tele Counselling-Press Release-Date 19.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-19",
+        "language": "en"
+      },
+      {
+        "id": 21762,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.047-Hon_ble_CM_D.O._Letter_to_Hon_ble_PM_-_Agriculture_Fertilizers_-_Date_19.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.047-Hon'ble CM D.O. Letter to Hon'ble PM - Agriculture Fertilizers - Date 19.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-19",
+        "language": "en"
+      },
+      {
+        "id": 21763,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.048-Hon_ble_Minister_for_School_Education__Tamil_Development__Information_and_Publicity-Press_Release-Date_19.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.048-Hon'ble Minister for School Education, Tamil Development, Information and Publicity-Press Release-Date 19.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-19",
+        "language": "en"
+      }
+    ]
+  }
+}

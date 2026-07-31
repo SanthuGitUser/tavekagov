@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-21",
+  "fetchedAt": "2026-08-01T00:10:49.050639+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:49.050639+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-21"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22201,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.431-Hon_ble_CM_Social_Media_Message_-_AICC_President_Thiru._Malligarjun_Kharge_Birthday_-Date_21.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.431-Hon'ble CM Social Media Message - AICC President Thiru. Malligarjun Kharge Birthday -Date 21.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-21",
+        "language": "en"
+      },
+      {
+        "id": 22202,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.432_-_EDII-TN_-_Media_Drone_Operations_Training__Press_Release_-_English_-_Date.21.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.432 - EDII-TN - Media Drone Operations Training  Press Release - English - Date.21.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-21",
+        "language": "en"
+      },
+      {
+        "id": 22203,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.432_-_EDII-TN_-_Media_Drone_Operations_Training_Press_Release_-_Tamil_-_Date.21.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.432 - EDII-TN - Media Drone Operations Training Press Release - Tamil - Date.21.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-21",
+        "language": "en"
+      },
+      {
+        "id": 22204,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.433_-BC__MBC___Minorities_Welfare_Dept_-__HAJ_Press_Release_-_Date.21.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.433 -BC, MBC & Minorities Welfare Dept -  HAJ Press Release - Date.21.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-21",
+        "language": "en"
+      },
+      {
+        "id": 22205,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.434_-_Registration_Dept_Press_Release_-_English_-_Date.21.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.434 - Registration Dept Press Release - English - Date.21.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-21",
+        "language": "en"
+      },
+      {
+        "id": 22206,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.434_-_Registration_Dept_Press_Release_-_Tamil_-_Date.21.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.434 - Registration Dept Press Release - Tamil - Date.21.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-21",
+        "language": "en"
+      }
+    ]
+  }
+}

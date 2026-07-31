@@ -1,0 +1,62 @@
+{
+  "date": "2026-06-08",
+  "fetchedAt": "2026-08-01T00:10:38.957201+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:38.957201+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-08"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21919,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-191-Hon_ble_CM_Press_Release_-_Sports_Dept_-_High_Cash_Incentive_to_Chess_Champion_Thiru_Praggnanadhaa_-Date_08.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-08",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-191-Hon'ble CM Press Release - Sports Dept - High Cash Incentive to Chess Champion Thiru Praggnanadhaa -Date 08.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-08",
+        "language": "en"
+      },
+      {
+        "id": 21920,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.192_-_Hon_ble_Transport_Minister_Press_Release_-_Date_08.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-08",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.192 - Hon'ble Transport Minister Press Release - Date 08.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-08",
+        "language": "en"
+      },
+      {
+        "id": 21921,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.193_-_Hon_ble_CM_Press_Release_-_MAWS_Dept_Review_Meeting_-_Date.08.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-08",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.193 - Hon'ble CM Press Release - MAWS Dept Review Meeting - Date.08.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-08",
+        "language": "en"
+      },
+      {
+        "id": 21922,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.194_-_Water_Resources_Dept_-_Water_Release_Thirumoorthy_Dam_Press_Release_-_Date.08.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.194 - Water Resources Dept - Water Release Thirumoorthy Dam Press Release - Date.08.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-08",
+        "language": "en"
+      }
+    ]
+  }
+}

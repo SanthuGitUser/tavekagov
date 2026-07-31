@@ -1,0 +1,73 @@
+{
+  "date": "2026-06-26",
+  "fetchedAt": "2026-08-01T00:10:43.145423+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:43.145423+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-26"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22048,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.298-Home_Department-TN_Chief_Minister_s_Police_Medals-_Press_Release-English-Date_26.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.298-Home Department-TN Chief Minister's Police Medals- Press Release-English-Date 26.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-26",
+        "language": "en"
+      },
+      {
+        "id": 22049,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.298-Home_Department-TN_Chief_Minister_s_Police_Medals-_Press_Release-Tamil-Date_26.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.298-Home Department-TN Chief Minister's Police Medals- Press Release-Tamil-Date 26.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-26",
+        "language": "en"
+      },
+      {
+        "id": 22050,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.299-Hon_ble_CM_Social_Media_Message_-_Anti_Drug_Day_2026_-Date_26.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.299-Hon'ble CM Social Media Message - Anti Drug Day 2026 -Date 26.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-26",
+        "language": "en"
+      },
+      {
+        "id": 22051,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.300-Hon_ble_CM_Press_Release_-_Sports_Dept_-_Anti_Drug_Day_Run_-Date_26.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.300-Hon'ble CM Press Release - Sports Dept - Anti Drug Day Run -Date 26.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-26",
+        "language": "en"
+      },
+      {
+        "id": 22052,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.301-_Silambu_Selvar_Ma.Po.Si._Birthday_Function-Press_Release-Date_26.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.301- Silambu Selvar Ma.Po.Si. Birthday Function-Press Release-Date 26.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-26",
+        "language": "en"
+      }
+    ]
+  }
+}

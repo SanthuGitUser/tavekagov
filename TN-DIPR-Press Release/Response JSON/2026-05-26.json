@@ -1,0 +1,161 @@
+{
+  "date": "2026-05-26",
+  "fetchedAt": "2026-08-01T00:10:35.815943+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:35.815943+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-26"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21806,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.092-Hon_ble_CM_D.O._Letter_to_Hon_ble_PM_Regarding_Meketadu_Dam_-_Date_26.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.092-Hon'ble CM D.O. Letter to Hon'ble PM Regarding Meketadu Dam - Date 26.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21807,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.093-Hon_ble_HR___CE_Minister_Press_Release-Review_Meeting-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.093-Hon'ble HR & CE Minister Press Release-Review Meeting-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21808,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.094-Hon_ble_Minister_for_Rural_Development_and_Water_Resources-Press_Release-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.094-Hon'ble Minister for Rural Development and Water Resources-Press Release-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21809,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-095_-Hon_ble_CM_Press_Release__-_Reservation_Review_Meeting_-Date__26.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-095 -Hon'ble CM Press Release  - Reservation Review Meeting -Date  26.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21810,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.096-Hon_ble_School_Education_Minister_Press_Release-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.096-Hon'ble School Education Minister Press Release-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21811,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.097_-Hon_ble_Minister_for_Animal_Husbandry-Review_Meeting-Press_Release-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.097 -Hon'ble Minister for Animal Husbandry-Review Meeting-Press Release-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21812,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.098-WRD_Department-_Cauvery_Water_Management_Authority-Press_Release-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.098-WRD Department- Cauvery Water Management Authority-Press Release-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21813,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.099-Hon_ble_Minister_for_Industries-Press_Release-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.099-Hon'ble Minister for Industries-Press Release-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21814,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.100-Hon_ble_Minister_for_Natural_Resources-Virudhunagar_DMFT-Press_Release-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.100-Hon'ble Minister for Natural Resources-Virudhunagar DMFT-Press Release-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21815,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.101-Hon_ble_Minister_for_Natural_Resources-Press_Release_-Virudhunagar_District_-_Suspension_of_23_Stone_Quarries-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.101-Hon'ble Minister for Natural Resources-Press Release -Virudhunagar District - Suspension of 23 Stone Quarries-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21816,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.102-Hon_ble_Minister_for_Minorities_Welfare-Press_Release-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.102-Hon'ble Minister for Minorities Welfare-Press Release-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21817,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.103-Hon_ble_Minister_for_Prohibition_and_Excise-Press_Release-TASMAC-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.103-Hon'ble Minister for Prohibition and Excise-Press Release-TASMAC-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      },
+      {
+        "id": 21818,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.104-WRD-Krishnagiri_District-KRP-Flood_Warning-Date_26.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.104-WRD-Krishnagiri District-KRP-Flood Warning-Date 26.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-26",
+        "language": "en"
+      }
+    ]
+  }
+}

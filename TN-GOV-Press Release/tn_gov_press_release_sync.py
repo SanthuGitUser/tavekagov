@@ -1,15 +1,13 @@
 """
-Fetch Tamil Nadu government press release images from tn.gov.in and upsert into Supabase.
+Fetch Tamil Nadu government press release images from tn.gov.in and save daily JSON files.
 
-The portal lists recent releases on press_release.php and older items in monthly archives
-at press_release_archieves.php.
+Each release date writes to Response JSON/YYYY-MM-DD.json. Re-runs merge by image_url.
 
 Usage:
-  1. Ensure Public DB/.env has Supabase keys and TN_GOV_PRESS_RELEASE_* settings.
-  2. pip install -r requirements.txt
-  3. python tn_gov_press_release_sync.py
-  4. Optional: python tn_gov_press_release_sync.py --dry-run
-  5. Optional: python tn_gov_press_release_sync.py --start-date 10-05-2026 --end-date 29-07-2026
+  1. pip install -r requirements.txt
+  2. python tn_gov_press_release_sync.py
+  3. Optional: python tn_gov_press_release_sync.py --start-date 10-05-2026 --end-date 31-07-2026
+     (defaults: start from TN_GOV_PRESS_RELEASE_START_DATE in .env, end = today Asia/Kolkata)
 """
 
 from __future__ import annotations
@@ -21,16 +19,18 @@ import re
 import sys
 import time
 from dataclasses import asdict, dataclass
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from html import unescape
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit
+from zoneinfo import ZoneInfo
 
 import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
-_MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
+_SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _ITEM_RE = re.compile(
     r"<li class='list-group-item pr-list-group-item clearfix'>(.*?)</li>",
@@ -57,8 +57,8 @@ class GovPressReleaseImage:
 
 
 def _load_config() -> tuple[str, str, str]:
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
     from config import (
         get_tn_gov_base_url,
         get_tn_gov_press_release_source_url,
@@ -224,54 +224,128 @@ def fetch_press_release_images(
     return all_releases
 
 
-def _load_supabase_client():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
-    from client import get_supabase_client
+def _load_enrichment():
+    script_dir = Path(__file__).resolve().parent
+    if str(script_dir) not in sys.path:
+        sys.path.insert(0, str(script_dir))
+    from tn_gov_press_release_parse_titles import (
+        enrich_gov_press_release,
+        load_departments_from_manifest,
+        load_ministers_from_manifest,
+    )
 
-    return get_supabase_client(use_service_role=True)
-
-
-def upsert_press_release_images(releases: list[GovPressReleaseImage]) -> int:
-    if not releases:
-        return 0
-
-    client = _load_supabase_client()
-    rows = [asdict(release) for release in releases]
-    client.table("tn_gov_press_releases").upsert(rows, on_conflict="image_url").execute()
-    return len(rows)
+    ministers = load_ministers_from_manifest()
+    departments = load_departments_from_manifest()
+    return enrich_gov_press_release, ministers, departments
 
 
-def write_manifest(
-    releases: list[GovPressReleaseImage],
+def _build_json_records(releases: list[GovPressReleaseImage]) -> list[dict[str, object]]:
+    enrich_fn, ministers, departments = _load_enrichment()
+    records: list[dict[str, object]] = []
+
+    for release in releases:
+        base = asdict(release)
+        enrichment = enrich_fn(release.title, ministers=ministers, departments=departments)
+        records.append({**base, **enrichment})
+
+    return records
+
+
+def _load_reference_manifests() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    ministers_path = _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json"
+    departments_path = _REPO_ROOT / "TN-GOV_Departments" / "manifests" / "tn_departments.json"
+    ministers_payload = json.loads(ministers_path.read_text(encoding="utf-8"))
+    departments_payload = json.loads(departments_path.read_text(encoding="utf-8"))
+    ministers = ministers_payload.get("ministers", [])
+    departments = departments_payload.get("departments", [])
+    if not isinstance(ministers, list) or not isinstance(departments, list):
+        raise RuntimeError("Invalid ministers or departments manifest shape.")
+    return ministers, departments
+
+
+def _reference_snapshots(
+    records: list[dict[str, object]],
     *,
-    source_url: str,
-    start_date: date,
-    end_date: date,
-) -> Path:
-    _MANIFESTS_DIR.mkdir(parents=True, exist_ok=True)
-    safe_start = _format_display_date(start_date).replace("-", "")
-    safe_end = _format_display_date(end_date).replace("-", "")
-    path = _MANIFESTS_DIR / f"tn_gov_press_releases_{safe_start}_to_{safe_end}.json"
-    payload = {
-        "source_url": source_url,
-        "start_date": _format_display_date(start_date),
-        "end_date": _format_display_date(end_date),
-        "count": len(releases),
-        "releases": [asdict(release) for release in releases],
+    ministers: list[dict[str, object]],
+    departments: list[dict[str, object]],
+) -> dict[str, list[dict[str, object]]]:
+    minister_ids = {
+        int(record["minister_id"])
+        for record in records
+        if record.get("minister_id") is not None
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    return path
+    department_ids = {
+        int(record["department_id"])
+        for record in records
+        if record.get("department_id") is not None
+    }
+
+    referenced_ministers = [
+        minister
+        for minister in ministers
+        if isinstance(minister.get("id"), int) and minister["id"] in minister_ids
+    ]
+    referenced_departments = [
+        department
+        for department in departments
+        if isinstance(department.get("id"), int) and department["id"] in department_ids
+    ]
+
+    return {
+        "ministers": referenced_ministers,
+        "departments": referenced_departments,
+    }
+
+
+def save_daily_responses(
+    output_dir: Path,
+    *,
+    releases: list[GovPressReleaseImage],
+    source_url: str,
+) -> list[Path]:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from daily_json import save_daily_json
+
+    fetched_at = datetime.now(_KOLKATA)
+    records = _build_json_records(releases)
+    manifest_ministers, manifest_departments = _load_reference_manifests()
+
+    by_day: dict[date, list[dict[str, object]]] = {}
+    for record in records:
+        day = date.fromisoformat(str(record["release_date"]))
+        by_day.setdefault(day, []).append(record)
+
+    saved_paths: list[Path] = []
+    for day in sorted(by_day):
+        day_records = by_day[day]
+        saved_paths.append(
+            save_daily_json(
+                output_dir,
+                day=day,
+                items_key="releases",
+                items=day_records,
+                source_url=source_url,
+                fetched_at=fetched_at,
+                merge_key_fn=lambda item: str(item.get("image_url") or ""),
+                extra=_reference_snapshots(
+                    day_records,
+                    ministers=manifest_ministers,
+                    departments=manifest_departments,
+                ),
+            )
+        )
+    return saved_paths
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Sync TN government press release images to Supabase.",
+        description="Fetch TN government press release images and save daily JSON responses.",
     )
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Fetch and write manifest only; do not upsert to Supabase.",
+        "--output-dir",
+        default=str(_OUTPUT_DIR),
+        help="Folder for daily JSON responses (YYYY-MM-DD.json).",
     )
     parser.add_argument(
         "--start-date",
@@ -279,13 +353,17 @@ def main() -> int:
     )
     parser.add_argument(
         "--end-date",
-        help="Include releases up to this date (DD-MM-YYYY). Defaults to today.",
+        help="Include releases up to this date (DD-MM-YYYY). Defaults to today (Asia/Kolkata).",
     )
     args = parser.parse_args()
 
     source_url, base_url, default_start_date = _load_config()
     start_date = _parse_display_date(_normalize_date(args.start_date or default_start_date))
-    end_date = _parse_display_date(_normalize_date(args.end_date)) if args.end_date else date.today()
+    end_date = (
+        _parse_display_date(_normalize_date(args.end_date))
+        if args.end_date
+        else datetime.now(_KOLKATA).date()
+    )
     if start_date > end_date:
         raise SystemExit("start-date must be on or before end-date.")
 
@@ -302,20 +380,14 @@ def main() -> int:
     )
     print(f"Found {len(releases)} unique image press release(s).")
 
-    manifest_path = write_manifest(
-        releases,
+    saved_paths = save_daily_responses(
+        Path(args.output_dir),
+        releases=releases,
         source_url=source_url,
-        start_date=start_date,
-        end_date=end_date,
     )
-    print(f"Wrote manifest: {manifest_path}")
-
-    if args.dry_run:
-        print("Dry run complete (no database changes).")
-        return 0
-
-    count = upsert_press_release_images(releases)
-    print(f"Upserted {count} row(s) into public.tn_gov_press_releases.")
+    print(f"Saved {len(saved_paths)} daily JSON file(s).")
+    if saved_paths:
+        print(f"Latest file: {saved_paths[-1]}")
     return 0
 
 

@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-03",
+  "fetchedAt": "2026-08-01T00:10:44.794171+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:44.794171+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-03"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22088,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.333_-_Teachers_Recruitment_Board_-_Press_Release_-_English_-_Date_-_03.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.333 - Teachers Recruitment Board - Press Release - English - Date - 03.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-03",
+        "language": "en"
+      },
+      {
+        "id": 22089,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.334_-_Hon_ble_Food_Minister_Press_Release_-__TNCSC_Building_inspection_-_Date_-_03.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.334 - Hon'ble Food Minister Press Release -  TNCSC Building inspection - Date - 03.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-03",
+        "language": "en"
+      },
+      {
+        "id": 22090,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.335_-_Hon_ble_Food_Minister_SCDRC_visit_-_Date_-_03.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.335 - Hon'ble Food Minister SCDRC visit - Date - 03.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-03",
+        "language": "en"
+      },
+      {
+        "id": 22091,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.336_-_Hon_ble_Hon___ble_Minister_for_Revenue_and_Disaster_Management_on____Simplification_of_online_Patta_Transfer_not_Involving_Subdivisions_____Auto-mutation____-_English_-.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.336 - Hon'ble Hon’ble Minister for Revenue and Disaster Management on “Simplification of online Patta Transfer not Involving Subdivisions – Auto-mutation” - English -.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-03",
+        "language": "en"
+      },
+      {
+        "id": 22092,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.336_-_Hon_ble_Hon___ble_Minister_for_Revenue_and_Disaster_Management_on____Simplification_of_online_Patta_Transfer_not_Involving_Subdivisions_____Auto-mutation___-Tamil-Date_03.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.336 - Hon'ble Hon’ble Minister for Revenue and Disaster Management on “Simplification of online Patta Transfer not Involving Subdivisions – Auto-mutation”-Tamil-Date 03.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-03",
+        "language": "en"
+      },
+      {
+        "id": 22093,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.337_-_Hon_ble_Ministers_Press_Release_-_Date_-_03.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.337 - Hon'ble Ministers Press Release - Date - 03.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-03",
+        "language": "en"
+      },
+      {
+        "id": 22094,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.333_-_Teachers_Recruitment_Board_-_Press_Release_-_Tamil_-_Date_-_03.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-04",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.333 - Teachers Recruitment Board - Press Release - Tamil - Date - 03.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-03",
+        "language": "en"
+      }
+    ]
+  }
+}

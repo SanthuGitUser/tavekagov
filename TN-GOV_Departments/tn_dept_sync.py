@@ -1,11 +1,13 @@
 """
-Fetch Tamil Nadu government departments from tn.gov.in and upsert into Supabase.
+Fetch Tamil Nadu government departments from tn.gov.in and save to manifests/tn_departments.json.
 
 Usage:
-  1. Ensure Public DB/.env has Supabase keys (see Public DB/.env.example).
-  2. pip install -r requirements.txt
-  3. python tn_dept_sync.py
-  4. Optional: python tn_dept_sync.py --dry-run
+  1. pip install -r requirements.txt
+  2. python tn_dept_sync.py
+  3. Optional: python tn_dept_sync.py --output-dir path/to/manifests
+
+Minister portfolio fallback uses TN-GOV_Council Of Ministers/manifests/tn_ministers.json when
+department profile pages do not expose a minister name.
 """
 
 from __future__ import annotations
@@ -18,15 +20,18 @@ import re
 import sys
 import time
 from dataclasses import asdict, dataclass
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
+_SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
 _MINISTERS_MANIFEST = _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json"
+_KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _CARD_RE = re.compile(
     r"<a\s+class=['\"]go2-card1['\"]\s+href=['\"]([^'\"]+)['\"][^>]*>"
@@ -48,12 +53,21 @@ _DEFAULT_HEADERS = {
 }
 
 
-def _load_config():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
+def _load_config() -> tuple[str, str]:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
     from config import get_tn_dept_source_url, get_tn_gov_base_url
 
     return get_tn_dept_source_url(), get_tn_gov_base_url()
+
+
+def _absolute_url(base_url: str, value: str) -> str:
+    raw = (value or "").strip()
+    if not raw:
+        return ""
+    if raw.lower().startswith("http://") or raw.lower().startswith("https://"):
+        return raw
+    return urljoin(base_url, raw)
 
 
 def _dept_profile_url(base_url: str, dep_id_encoded: str) -> str:
@@ -129,6 +143,8 @@ class Department:
     id: int
     name: str
     dep_id_encoded: str
+    profile_url: str
+    icon_url: str | None
     minister_name: str | None
     display_order: int
 
@@ -189,21 +205,27 @@ def fetch_departments(session: requests.Session | None = None) -> list[Departmen
     sess.headers.update(_DEFAULT_HEADERS)
     response = sess.get(source_url, timeout=(20, 60))
     response.raise_for_status()
-    html = response.text
+    page_html = response.text
 
     departments: list[Department] = []
-    for order, match in enumerate(_CARD_RE.finditer(html), start=1):
-        href, _icon_src, raw_name = match.groups()
+    for order, match in enumerate(_CARD_RE.finditer(page_html), start=1):
+        href, icon_src, raw_name = match.groups()
         dep_match = _DEP_ID_RE.search(href)
         if not dep_match:
             continue
 
         dep_id_encoded = dep_match.group(1)
+        profile_url = _absolute_url(base_url, href)
+        if "dep_id=" not in profile_url:
+            profile_url = _dept_profile_url(base_url, dep_id_encoded)
+
         departments.append(
             Department(
                 id=_decode_dep_id(dep_id_encoded),
                 name=_clean_name(raw_name),
                 dep_id_encoded=dep_id_encoded,
+                profile_url=profile_url,
+                icon_url=_absolute_url(base_url, icon_src) or None,
                 minister_name=None,
                 display_order=order,
             )
@@ -216,8 +238,7 @@ def fetch_departments(session: requests.Session | None = None) -> list[Departmen
     ministers = _load_ministers()
     enriched: list[Department] = []
     for index, dept in enumerate(departments, start=1):
-        profile_url = _dept_profile_url(base_url, dept.dep_id_encoded)
-        minister_name = fetch_minister_name(profile_url, sess, source_url=source_url)
+        minister_name = fetch_minister_name(dept.profile_url, sess, source_url=source_url)
         if not minister_name and ministers:
             minister_name = match_minister_from_portfolio(dept.name, ministers)
             if minister_name:
@@ -227,6 +248,8 @@ def fetch_departments(session: requests.Session | None = None) -> list[Departmen
                 id=dept.id,
                 name=dept.name,
                 dep_id_encoded=dept.dep_id_encoded,
+                profile_url=dept.profile_url,
+                icon_url=dept.icon_url,
                 minister_name=minister_name,
                 display_order=dept.display_order,
             )
@@ -238,65 +261,45 @@ def fetch_departments(session: requests.Session | None = None) -> list[Departmen
     return enriched
 
 
-def _load_supabase_client():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
-    from client import get_supabase_client
-
-    return get_supabase_client(use_service_role=True)
-
-
-def upsert_departments(departments: list[Department]) -> int:
-    client = _load_supabase_client()
-    rows = [
-        {
-            "id": dept.id,
-            "name": dept.name,
-            "dep_id_encoded": dept.dep_id_encoded,
-            "minister_name": dept.minister_name,
-            "display_order": dept.display_order,
-        }
-        for dept in departments
-    ]
-    client.table("tn_dept").upsert(rows, on_conflict="id").execute()
-    return len(rows)
-
-
-def write_manifest(departments: list[Department]) -> Path:
+def write_manifest(departments: list[Department], *, output_dir: Path) -> Path:
     source_url, _ = _load_config()
-    _MANIFESTS_DIR.mkdir(parents=True, exist_ok=True)
-    path = _MANIFESTS_DIR / "tn_departments.json"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    path = output_dir / "tn_departments.json"
     payload = {
         "source_url": source_url,
+        "fetchedAt": datetime.now(_KOLKATA).isoformat(),
         "count": len(departments),
         "departments": [asdict(dept) for dept in departments],
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Sync TN government departments to Supabase.")
+    parser = argparse.ArgumentParser(
+        description="Fetch TN government departments and save tn_departments.json.",
+    )
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Fetch and write manifest only; do not upsert to Supabase.",
+        "--output-dir",
+        default=str(_MANIFESTS_DIR),
+        help="Folder for tn_departments.json (default: manifests/).",
     )
     args = parser.parse_args()
 
-    print(f"Fetching departments from {_load_config()[0]} ...")
-    departments = fetch_departments()
+    source_url, _ = _load_config()
+    print(f"Fetching departments from {source_url} ...")
+    try:
+        departments = fetch_departments()
+    except requests.RequestException as exc:
+        print(f"Request failed: {exc}", file=sys.stderr)
+        return 1
+    except RuntimeError as exc:
+        print(exc, file=sys.stderr)
+        return 1
+
+    manifest_path = write_manifest(departments, output_dir=Path(args.output_dir))
     print(f"Parsed {len(departments)} departments.")
-
-    manifest_path = write_manifest(departments)
     print(f"Wrote manifest: {manifest_path}")
-
-    if args.dry_run:
-        print("Dry run complete (no database changes).")
-        return 0
-
-    count = upsert_departments(departments)
-    print(f"Upserted {count} rows into public.tn_dept.")
     return 0
 
 

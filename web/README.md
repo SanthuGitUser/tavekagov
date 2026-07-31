@@ -1,6 +1,8 @@
 # TavekaGov Web Dashboard
 
-Modern static dashboard for Tamil Nadu government open data (Path A stack).
+Static dashboard for Tamil Nadu government open data. All datasets are bundled as JSON from the repo at build time and served from GitHub Pages.
+
+See also the root [README](../README.md) and [docs/DATA.md](../docs/DATA.md).
 
 ## Stack
 
@@ -10,33 +12,29 @@ Modern static dashboard for Tamil Nadu government open data (Path A stack).
 - TanStack Table
 - Recharts
 - React Router
-- Supabase JS client (public anon key)
 
 ## Pages
 
 - Dashboard (KPI cards, activity chart, recent press releases)
-- Press releases (searchable table)
-- Press release images
+- Press releases
+- PR images
 - Government orders
+- Transfers and postings
 - Departments, ministers, districts
+- Magazine
+- News
 - About
 
 ## Local development
 
-The web app reads Supabase credentials from **either**:
-
-1. `web/.env.local` (recommended), or
-2. `Public DB/.env` (`SUPABASE_URL` / `SUPABASE_ANON_KEY` or `VITE_*` variants — loaded automatically)
-
 ```powershell
 cd web
 copy .env.example .env.local
-# Edit .env.local, or ensure Public DB/.env has SUPABASE_URL + SUPABASE_ANON_KEY
 npm install
 npm run dev
 ```
 
-Restart `npm run dev` after changing env files. The header badge should say **Live data**, not **Demo mode**.
+`VITE_BASE_PATH` is optional. Use `/tavekagov/` when previewing the GitHub Pages project-site layout.
 
 ## Build
 
@@ -54,15 +52,8 @@ npm run build
 
 ## GitHub Pages deploy
 
-A workflow at `.github/workflows/deploy-web.yml` builds and deploys `web/dist` on push to `main`.
+`.github/workflows/deploy-web.yml` builds and deploys `web/dist` on push to `main`.
 
-Add these GitHub repository secrets:
+The workflow sets `VITE_BASE_PATH=/tavekagov/` for project pages. Use `/` for a user site at `username.github.io`.
 
-- `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY`
-
-Set `VITE_BASE_PATH` in the workflow to `/tavekagov/` for project pages, or `/` for `username.github.io`.
-
-## Security
-
-Only the Supabase **anon** key belongs in this frontend. Never expose the service role key in client code.
+No database or API secrets are required for the web build.

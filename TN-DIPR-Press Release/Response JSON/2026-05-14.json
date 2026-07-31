@@ -1,0 +1,84 @@
+{
+  "date": "2026-05-14",
+  "fetchedAt": "2026-08-01T00:10:32.908759+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:32.908759+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-14"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21724,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.018-Hon_ble_CM_Press_Release_-_Magalir_Urimai_Thogai_Thittam_-_Date.14.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-14",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.018-Hon'ble CM Press Release - Magalir Urimai Thogai Thittam - Date.14.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-14",
+        "language": "en"
+      },
+      {
+        "id": 21725,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.019_-_Hon_ble_CM_Press_Release_-_Govt._Staff_2_Percent_DA_Hike_-_Date.14.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.019 - Hon'ble CM Press Release - Govt. Staff 2 Percent DA Hike - Date.14.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-14",
+        "language": "en"
+      },
+      {
+        "id": 21726,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.020-Hon_ble_CM_DO_Letter_to_Hon_ble_PM_-_Reg_removal_of_Import_duty_on_Cotton_-_Date_14.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-14",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.020-Hon'ble CM DO Letter to Hon'ble PM - Reg removal of Import duty on Cotton - Date 14.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-14",
+        "language": "en"
+      },
+      {
+        "id": 21727,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_NO.021-OML_Press_Release-English_-Date_14.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR NO.021-OML Press Release-English -Date 14.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-14",
+        "language": "en"
+      },
+      {
+        "id": 21728,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_NO.021-OML_Press_Release-Tamil-Date_14.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR NO.021-OML Press Release-Tamil-Date 14.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-14",
+        "language": "en"
+      },
+      {
+        "id": 21729,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.022-Hon_ble_Minister_Meeting_With_All_Dept_Official_-__Press_Release-Date_14.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.022-Hon'ble Minister Meeting With All Dept Official -  Press Release-Date 14.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-14",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "date": "2026-06-18",
+  "fetchedAt": "2026-08-01T00:10:41.271384+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:41.271384+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-18"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21990,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.249-Higher_Education_Department-Press_Release-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.249-Higher Education Department-Press Release-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      },
+      {
+        "id": 21991,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.250-Directorate_of_Public_Health_and_Preventive_Medicine-Press_Release-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.250-Directorate of Public Health and Preventive Medicine-Press Release-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      },
+      {
+        "id": 21992,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.251-Hon_ble_Minister_for_Social_Justice-Press_Release-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.251-Hon'ble Minister for Social Justice-Press Release-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      },
+      {
+        "id": 21993,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.252-Finance_Department-Press_Release-English-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.252-Finance Department-Press Release-English-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      },
+      {
+        "id": 21994,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.252-Finance_Department-Press_Release-Tamil-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.252-Finance Department-Press Release-Tamil-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      },
+      {
+        "id": 21995,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.253-WRD_Department-Tiruppur_District-Amaravathi-Water_Release-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.253-WRD Department-Tiruppur District-Amaravathi-Water Release-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      },
+      {
+        "id": 21996,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.254-TN_Skill_Development-UPSC-Press_Release-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.254-TN Skill Development-UPSC-Press Release-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      },
+      {
+        "id": 21997,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.255-Hon_ble_Minister_for_Agriculture____Farmers_Welfare-Press_Release-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.255-Hon'ble Minister for Agriculture &  Farmers Welfare-Press Release-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      },
+      {
+        "id": 21998,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.256-Hon_ble_Minister_for_Handlooms__Textiles_and_Khadi-Press_Release-Date_18.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-19",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.256-Hon'ble Minister for Handlooms, Textiles and Khadi-Press Release-Date 18.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-18",
+        "language": "en"
+      }
+    ]
+  }
+}

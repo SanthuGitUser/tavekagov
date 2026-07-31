@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-22",
+  "fetchedAt": "2026-08-01T00:10:49.297480+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:49.297480+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-22"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22207,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.435_-_TN_Skill_Development_Corporation_-_India_Skills_Competition_Press_Release_-_English_-_Date.22.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.435 - TN Skill Development Corporation - India Skills Competition Press Release - English - Date.22.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-22",
+        "language": "en"
+      },
+      {
+        "id": 22208,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.435_-_TN_Skill_Development_Corporation_-_India_Skills_Competition_Press_Release_-_Tamil_-_Date.22.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.435 - TN Skill Development Corporation - India Skills Competition Press Release - Tamil - Date.22.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-22",
+        "language": "en"
+      },
+      {
+        "id": 22209,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.436_-_Hon_ble_Labour_Welfare_and_Skill_Development_Minister_Review_Meeting_Press_Release_-_Date.22.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.436 - Hon'ble Labour Welfare and Skill Development Minister Review Meeting Press Release - Date.22.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-22",
+        "language": "en"
+      }
+    ]
+  }
+}

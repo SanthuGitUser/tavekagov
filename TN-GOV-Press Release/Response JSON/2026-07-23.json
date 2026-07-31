@@ -1,0 +1,96 @@
+{
+  "date": "2026-07-23",
+  "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 2,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr230726c_ctax.jpeg",
+      "release_date": "2026-07-23",
+      "title": "Honble Minister for Commercial Taxes and Registration chaired meeting and demo session on presenceless registration",
+      "file_name": "pr230726c_ctax.jpeg",
+      "minister_name": "Hon'ble Minister for Commercial Taxes and Registration",
+      "department_name": "Commercial Taxes and Registration Department",
+      "minister_id": 34,
+      "department_id": 6,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr230726_pwsd1.jpg",
+      "release_date": "2026-07-23",
+      "title": "Honble Minister for Public Works and Sports Development inaugurated the renovated Arignar Anna Swimming Pool",
+      "file_name": "pr230726_pwsd1.jpg",
+      "minister_name": "Hon'ble Minister for Public Works and Sports Development",
+      "department_name": "Public Works and Sports Development Department",
+      "minister_id": 3,
+      "department_id": 34,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "medium",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 3,
+      "name": "Thiru Aadhav Arjuna",
+      "designation": "Minister for Public Works and Sports Development",
+      "portfolio": "Public Works (Buildings, Highways and Minor Ports), Sports Development.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/014_Aadhav_Arjuna.png",
+      "display_order": 3,
+      "is_chief_minister": false
+    },
+    {
+      "id": 34,
+      "name": "Thiru D. Logesh Tamilselvan",
+      "designation": "Minister for Commercial Taxes and Registration",
+      "portfolio": "Commercial Taxes, Registration and Stamp Act, Debt Relief including legislation on Money lending, Chits and Registration of Companies",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/092_Logesh_Tamilselvan.png",
+      "display_order": 34,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 6,
+      "name": "Commercial Taxes and Registration Department",
+      "dep_id_encoded": "Ng==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Ng==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru D. Logesh Tamilselvan",
+      "display_order": 4
+    },
+    {
+      "id": 34,
+      "name": "Youth Welfare and Sports Development Department",
+      "dep_id_encoded": "MzQ=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "display_order": 41
+    }
+  ]
+}

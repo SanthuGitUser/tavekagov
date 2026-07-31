@@ -1,0 +1,139 @@
+{
+  "date": "2026-06-09",
+  "fetchedAt": "2026-08-01T00:10:39.191791+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:39.191791+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-09"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21923,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.195-Hon_ble_Minister_for_Public_Works_and_Sports_Development-Press_Release-Date_09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.195-Hon'ble Minister for Public Works and Sports Development-Press Release-Date 09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21924,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.196-Hon_ble_Minister_for_Commercial_Taxes_and_Registration-Press_Release-Date_09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.196-Hon'ble Minister for Commercial Taxes and Registration-Press Release-Date 09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21925,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.197_-_Hon_ble_Labour_Welfare_and_Skill_Development_Minister_Press_release_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.197 - Hon'ble Labour Welfare and Skill Development Minister Press release - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21926,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.198_-_EDII_E-Commerece_Training_Press_Release_-_English_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.198 - EDII E-Commerece Training Press Release - English - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21927,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.198_-_EDII_E-Commerece_Training_Press_Release_-_Tamil_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.198 - EDII E-Commerece Training Press Release - Tamil - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21928,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.199_-_EDII-Laptop_Training_Press_Release_-_English_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.199 - EDII-Laptop Training Press Release - English - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21929,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.199_-_EDII-Laptop_Training_Press_Release_-_Tamil_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.199 - EDII-Laptop Training Press Release - Tamil - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21930,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.200_-_Hon_ble_MS___ME_Minister_Review_Meeting_Press_Release_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.200 - Hon'ble MS & ME Minister Review Meeting Press Release - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21931,
+        "press_file_name": "/uploads/tn_govt_press_release/TNLA_-_P.R.NO.03_-_TN_Assembly_Press_Release_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "TNLA - P.R.NO.03 - TN Assembly Press Release - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21932,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.201_-_Hon_ble_Revenue_and_Disaster_Management_Minister_Review_Meeting_Press_Release_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.201 - Hon'ble Revenue and Disaster Management Minister Review Meeting Press Release - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      },
+      {
+        "id": 21933,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.202_-_Hon_ble_CM_Press_Release_-_Singapen_Sirapu_Athiradi_Padai_Inauguration_-_Date.09.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.202 - Hon'ble CM Press Release - Singapen Sirapu Athiradi Padai Inauguration - Date.09.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-09",
+        "language": "en"
+      }
+    ]
+  }
+}

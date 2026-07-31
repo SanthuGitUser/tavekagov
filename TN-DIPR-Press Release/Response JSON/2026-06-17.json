@@ -1,0 +1,172 @@
+{
+  "date": "2026-06-17",
+  "fetchedAt": "2026-08-01T00:10:41.042609+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:41.042609+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-17"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21976,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.240-EDII-AI_and_Digital_Marketting_Training_Press_Release-English-Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.240-EDII-AI and Digital Marketting Training Press Release-English-Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21977,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.240-EDII-AI_and_Digital_Marketting_Training_Press_Release-Tamil-Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.240-EDII-AI and Digital Marketting Training Press Release-Tamil-Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21978,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.241-EDII-Mobile_Phone_Repair_Training_Press_Release-English-Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.241-EDII-Mobile Phone Repair Training Press Release-English-Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21979,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.241-EDII-Mobile_Phone_Repair_Training_Press_Release-Tamil-Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.241-EDII-Mobile Phone Repair Training Press Release-Tamil-Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21980,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.242_-_Adi_Dravidar_and_Tribal_Welfare_Dept._Teachers_Councilling_Press_Release_-_Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.242 - Adi Dravidar and Tribal Welfare Dept. Teachers Councilling Press Release - Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21981,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.243_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-_HD_Korea_Shipbuilding_Company_Officials_met_HCM_-_Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.243 - Hon'ble CM Press Release - Industries Dept - HD Korea Shipbuilding Company Officials met HCM - Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21982,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.244_-_Hon_ble_CM_Press_Release_-Industries_Dept_-__IN-SPACe_Agreement_-Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.244 - Hon'ble CM Press Release -Industries Dept -  IN-SPACe Agreement -Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21983,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.243_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-_HD_Korea_Shipbuilding_Company_Officials_met_HCM_-English-Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.243 - Hon'ble CM Press Release - Industries Dept - HD Korea Shipbuilding Company Officials met HCM -English-Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21984,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.244_-_Hon_ble_CM_Press_Release_-Industries_Dept_-__IN-SPACe_Agreement_-English-Date.17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.244 - Hon'ble CM Press Release -Industries Dept -  IN-SPACe Agreement -English-Date.17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21985,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-245-Hon_ble_CM_Press_Release_-_Transport_Dept_Review_Meeting_-_Date_17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-245-Hon'ble CM Press Release - Transport Dept Review Meeting - Date 17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21986,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-246-PWD_Dept_Press_Release-English-Date_17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-246-PWD Dept Press Release-English-Date 17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21987,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-246-PWD_Dept_Press_Release-Tamil-Date_17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-246-PWD Dept Press Release-Tamil-Date 17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21988,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-247-Hon_ble_Minister_for_Environment_and_Climate_Change_Press_Release_-_CMGFP-Date_17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-247-Hon'ble Minister for Environment and Climate Change Press Release - CMGFP-Date 17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      },
+      {
+        "id": 21989,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-248-Hon_ble_Minister_for_Non-Resident_Tamils_Welfare_Press_release-_meeting-Date_17.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-248-Hon'ble Minister for Non-Resident Tamils Welfare Press release- meeting-Date 17.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-17",
+        "language": "en"
+      }
+    ]
+  }
+}

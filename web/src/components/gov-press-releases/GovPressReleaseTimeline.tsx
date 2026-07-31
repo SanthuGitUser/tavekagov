@@ -8,7 +8,7 @@ import {
 } from "@/components/shared/VerticalDatePicker";
 import { Badge } from "@/components/ui/badge";
 import { useGovPressReleaseSearch } from "@/context/GovPressReleaseSearchContext";
-import type { GovPressRelease, TnDept, TnMinister } from "@/types/database";
+import type { GovPressRelease, TnDept, TnMinister } from "@/types/models";
 
 import { CrossDateReleaseBrowse } from "./CrossDateReleaseBrowse";
 import { GovPressReleaseSideFilters } from "./GovPressReleaseSideFilters";

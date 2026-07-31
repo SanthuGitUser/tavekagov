@@ -1,0 +1,194 @@
+{
+  "date": "2026-06-05",
+  "fetchedAt": "2026-08-01T00:10:38.263714+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:38.263714+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-05"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21896,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.173_-_Hon_ble_CM_Press_Release_-_QUAID_E_MILLETH_BIRTHDAY_-Date.05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.173 - Hon'ble CM Press Release - QUAID E MILLETH BIRTHDAY -Date.05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21897,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.174_-_Hon_ble_CM_Social_Media_Message_-_World_Environment_Day_2026_-_Date.05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.174 - Hon'ble CM Social Media Message - World Environment Day 2026 - Date.05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21898,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO.175_-_Fire_and_Rescue_Services_Dept_Come_and_Learn_Press_Release-English-Date.05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO.175 - Fire and Rescue Services Dept Come and Learn Press Release-English-Date.05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21899,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO.175_-_Fire_and_Rescue_Services_Dept_Come_and_Learn_Press_Release-Tamil-Date.05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO.175 - Fire and Rescue Services Dept Come and Learn Press Release-Tamil-Date.05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21900,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.176_-_Hon_ble_CM_Press_Release_-_Tamil_Nadu_State_Disaster_Mgnt_Meeting_for_Monsson_preparedness_-_Date.05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.176 - Hon'ble CM Press Release - Tamil Nadu State Disaster Mgnt Meeting for Monsson preparedness - Date.05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21901,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.177_-_Dept_for_Tamil_Development_Press_Release_-_Date_-_05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.177 - Dept for Tamil Development Press Release - Date - 05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21902,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.178_-_Hon_ble_Minister_for_Agriculture_-_Farmers_Welfare_-_Press_Release_-_Coldelence_Message_-_Date_-_05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.178 - Hon'ble Minister for Agriculture - Farmers Welfare - Press Release - Coldelence Message - Date - 05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21903,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.179_-_Forest_DEPT_-__Tamil_Nadu_Synchronised_Bird_Census_2025___26_-_Date_-_05.06.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.179 - Forest DEPT -  Tamil Nadu Synchronised Bird Census 2025–26 - Date - 05.06.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21904,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.179_-_Forest_DEPT_-__Tamil_Nadu_Synchronised_Bird_Census_2025___26_-_Tamil_-_Date_-_05.06.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.179 - Forest DEPT -  Tamil Nadu Synchronised Bird Census 2025–26 - Tamil - Date - 05.06.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21905,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.180_-_Forest_DEPT_Press_Release_-__comprehensive_state-wide_raptor_assessment_-_Date_-_05.06.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.180 - Forest DEPT Press Release -  comprehensive state-wide raptor assessment - Date - 05.06.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21906,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.180_-_Forest_DEPT_Press_Release_-__comprehensive_state-wide_raptor_assessment_-_TAMIL_-_Date_-_05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.180 - Forest DEPT Press Release -  comprehensive state-wide raptor assessment - TAMIL - Date - 05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21907,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.181_-_Forest_DEPT_Press_Release_-_comprehensive_state-wide_raptor_assessment_-_Date_-_05.06.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.181 - Forest DEPT Press Release - comprehensive state-wide raptor assessment - Date - 05.06.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21908,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.181_-_Forest_DEPT_Press_Release_-_comprehensive_state-wide_raptor_assessment_-_Tamil_-_Date_-_05.06.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.181 - Forest DEPT Press Release - comprehensive state-wide raptor assessment - Tamil - Date - 05.06.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21909,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.182_-_Hon_ble_Minister_for_Agriculture_-_Farmers_Welfare_Review_Meeting_Press_Release_-_Date_-_05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.182 - Hon'ble Minister for Agriculture - Farmers Welfare Review Meeting Press Release - Date - 05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21910,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.183_-_Press_release_World_Environment_Day_Press_Release_English_-_Date_-_05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.183 - Press release World Environment Day Press Release English - Date - 05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      },
+      {
+        "id": 21911,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.183_-_Press_release_World_Environment_Day_Press_Release_Tamil_-_Date_-_05.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.183 - Press release World Environment Day Press Release Tamil - Date - 05.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-05",
+        "language": "en"
+      }
+    ]
+  }
+}

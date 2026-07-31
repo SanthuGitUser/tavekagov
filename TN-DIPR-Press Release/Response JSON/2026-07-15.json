@@ -1,0 +1,150 @@
+{
+  "date": "2026-07-15",
+  "fetchedAt": "2026-08-01T00:10:47.632201+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:47.632201+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-15"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22166,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.399-Hon_ble_CM_Social_Media_Message_-_Perunthalaivar_Kamarajar_Birthday_Celebration_-Date_15.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.399-Hon'ble CM Social Media Message - Perunthalaivar Kamarajar Birthday Celebration -Date 15.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22167,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.400-Hon_ble_CM_Press_Release_-_Perunthalaivar_Kamarajar_Birthday_Function_-Date_15.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.400-Hon'ble CM Press Release - Perunthalaivar Kamarajar Birthday Function -Date 15.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22168,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.401-Hon_ble_CM_Social_Media_Message_-_Maraimalai_Adigal_Birthday_-Date_15.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.401-Hon'ble CM Social Media Message - Maraimalai Adigal Birthday -Date 15.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22169,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No._402-OMCL_Press_Release-Date_15.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No. 402-OMCL Press Release-Date 15.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22170,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.403-Hon_ble_Ministers_Press_Release-_Bharat_Tex_Delhi-Date_15.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.403-Hon'ble Ministers Press Release- Bharat Tex Delhi-Date 15.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22171,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-404_-Hon_ble_Animal_Husbandry_Minister_Press_Release-Tamil_-Date_15.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-404 -Hon'ble Animal Husbandry Minister Press Release-Tamil -Date 15.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22172,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.405-WRD_Dept_Press_Release-_kodumidiyaru_Dam_-Date_15.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.405-WRD Dept Press Release- kodumidiyaru Dam -Date 15.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22173,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-406-WRD_Dept_Press_Release-_Krishnagiri__water_release-Date_15.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-406-WRD Dept Press Release- Krishnagiri  water release-Date 15.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22174,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-PR_No.-407_-WRD_Dept_Press_Relewase-_Parur__water_release-Date_15.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR -PR No.-407 -WRD Dept Press Relewase- Parur  water release-Date 15.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22175,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-408_-I___PR_Dept_Press_Release-__________________________________________________________________-_Date__15-07-2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-408 -I & PR Dept Press Release- கல்வியைக் கொண்டாடுவோம் - Date  15-07-2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22176,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-404-Hon_ble_Animal_Husbandry_Minister_Press_Release-English__-Date_15.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-404-Hon'ble Animal Husbandry Minister Press Release-English  -Date 15.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      },
+      {
+        "id": 22177,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-409_-Hon_ble_Food_Minister_Press_release_New_Ration_card_issued_-Date_15.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-15",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-409 -Hon'ble Food Minister Press release New Ration card issued -Date 15.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-15",
+        "language": "en"
+      }
+    ]
+  }
+}

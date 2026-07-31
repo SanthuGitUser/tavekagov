@@ -1,0 +1,139 @@
+{
+  "date": "2026-05-25",
+  "fetchedAt": "2026-08-01T00:10:35.559578+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:35.559578+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-25"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21794,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.079-Hon_ble_CM_Press_Release_-_Review_Meeting_against_Women_and_Children_abuse_-_Date_25.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.079-Hon'ble CM Press Release - Review Meeting against Women and Children abuse - Date 25.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21795,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-080-Hon_ble_Sports_Minister_Press_Release_-Date__25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-080-Hon'ble Sports Minister Press Release -Date  25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21796,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.081-Hon_ble_CM_Press_Release_-_Mekedatu__Dam_construction_Review_Meeting_-Date__25.5.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.081-Hon'ble CM Press Release - Mekedatu  Dam construction Review Meeting -Date  25.5.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21797,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.082_-_Hon_ble_Minister_for_Natural_Resources_-__Tenkasi_Inspection_Press_Release_-_Date_-_25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.082 - Hon'ble Minister for Natural Resources -  Tenkasi Inspection Press Release - Date - 25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21798,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.083_-_Hon_ble_CM_Press_Release_-_Loan_Waiver_to_Farmers_through_Cooperative_Bank_-_Date_-__25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.083 - Hon'ble CM Press Release - Loan Waiver to Farmers through Cooperative Bank - Date -  25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21800,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.085_-_Adi_Welfare_Department_Press_Release_-__DISCONTINUATION_OF_JEE_NEET_TRAINING_CLASSES_FOR_THE_PAST_TWO_YEARS-_Date_-_25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.085 - Adi Welfare Department Press Release -  DISCONTINUATION OF JEE NEET TRAINING CLASSES FOR THE PAST TWO YEARS- Date - 25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21801,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.086_-_Hon_ble_Minister_for_Energy_Resources_and_Law_Press_Release_-_Date_-_25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.086 - Hon'ble Minister for Energy Resources and Law Press Release - Date - 25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21802,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.087_-_Hon_ble_CM_Social_Media_Message_-_Judgement_on_Vilathikulam_Incident_-_Date_-_25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.087 - Hon'ble CM Social Media Message - Judgement on Vilathikulam Incident - Date - 25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21803,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.NO.088_-_Hon_ble_Minister_for_Environment_and_Urban_Development_Press_Release_-_Date_-_25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.NO.088 - Hon'ble Minister for Environment and Urban Development Press Release - Date - 25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21804,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.NO.089_-_Hon_ble_Transport_Minister_Press_Release_tanjavur_bag_issue_-_Date_-_25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-25",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.NO.089 - Hon'ble Transport Minister Press Release tanjavur bag issue - Date - 25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      },
+      {
+        "id": 21805,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.NO.084_-_Hon_ble_CM_Press_Release_-_More_shows__in_Cinema_Theatres_-_Date_-_25.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-26",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.NO.084 - Hon'ble CM Press Release - More shows  in Cinema Theatres - Date - 25.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-25",
+        "language": "en"
+      }
+    ]
+  }
+}

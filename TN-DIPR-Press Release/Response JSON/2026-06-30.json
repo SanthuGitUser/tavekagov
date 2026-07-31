@@ -1,0 +1,73 @@
+{
+  "date": "2026-06-30",
+  "fetchedAt": "2026-08-01T00:10:44.079383+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:44.079383+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-30"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22063,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-311-Hon_ble_Food_and_Civil_Supplies_Minister_Press_release_-Mylapore_Amma_unavagam-Date_30.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-311-Hon'ble Food and Civil Supplies Minister Press release -Mylapore Amma unavagam-Date 30.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-30",
+        "language": "en"
+      },
+      {
+        "id": 22064,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-312-Hon_ble_Energy_Resources_and_Law_Minister_Press_Release-renewable_energy_power_plants_Sharing_real_time_data_with_TNEB_is_now_mandatory-Date_30.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-312-Hon'ble Energy Resources and Law Minister Press Release-renewable energy power plants Sharing real time data with TNEB is now mandatory-Date 30.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-30",
+        "language": "en"
+      },
+      {
+        "id": 22065,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.313-Treasuries___Accounts_Dept-CPS_Account_Slips_-Press_Release-English-Date_30.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.313-Treasuries & Accounts Dept-CPS Account Slips -Press Release-English-Date 30.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-30",
+        "language": "en"
+      },
+      {
+        "id": 22066,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.313-Treasuries___Accounts_Dept-CPS_Account_Slips_-Press_Release-Tamil-Date_30.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.313-Treasuries & Accounts Dept-CPS Account Slips -Press Release-Tamil-Date 30.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-30",
+        "language": "en"
+      },
+      {
+        "id": 22067,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.314-Hon_ble_CM_Press_Release_-_Collectors_and_Police_Officers_Conference_Awards_-_Date_30.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.314-Hon'ble CM Press Release - Collectors and Police Officers Conference Awards - Date 30.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-30",
+        "language": "en"
+      }
+    ]
+  }
+}

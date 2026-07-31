@@ -1,0 +1,95 @@
+{
+  "date": "2026-06-12",
+  "fetchedAt": "2026-08-01T00:10:39.891474+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:39.891474+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-12"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21953,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.218_-_Hon_ble_CM_Press_Release_-_Agri_Dept_-_Kuruvai_Special_Package_Scheme_-_Date_-_12.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.218 - Hon'ble CM Press Release - Agri Dept - Kuruvai Special Package Scheme - Date - 12.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-12",
+        "language": "en"
+      },
+      {
+        "id": 21954,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.219_-_Adi_Dravidar_Welfare_Department_Press_Release_-_Date_-_12.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.219 - Adi Dravidar Welfare Department Press Release - Date - 12.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-12",
+        "language": "en"
+      },
+      {
+        "id": 21955,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.220-Employment___Training_Dept_Press_Release-Date_12.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.220-Employment & Training Dept Press Release-Date 12.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-12",
+        "language": "en"
+      },
+      {
+        "id": 21956,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.222-Hon_ble_HRM_Minister_Press_Release-_Anna_Administrative_Staff_College_Inspection_-Date_12.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.222-Hon'ble HRM Minister Press Release- Anna Administrative Staff College Inspection -Date 12.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-12",
+        "language": "en"
+      },
+      {
+        "id": 21957,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No._221-Hon_ble_Labour_Welfare_and_Skill_Development_Minister_Press_Release-_Child_labour_day_-Date__12.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No. 221-Hon'ble Labour Welfare and Skill Development Minister Press Release- Child labour day -Date  12.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-12",
+        "language": "en"
+      },
+      {
+        "id": 21958,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-223-WRD_Dept_Press_Release-Papanasam_Dam_-Date_12.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-12",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-223-WRD Dept Press Release-Papanasam Dam -Date 12.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-12",
+        "language": "en"
+      },
+      {
+        "id": 21959,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_NO.224-Hon_ble_Natural_Resources_Minister_Press_Release-Review_Meeting_-Date_12.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-13",
+        "press_release_no": null,
+        "press_name": "DIPR-PR NO.224-Hon'ble Natural Resources Minister Press Release-Review Meeting -Date 12.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-12",
+        "language": "en"
+      }
+    ]
+  }
+}

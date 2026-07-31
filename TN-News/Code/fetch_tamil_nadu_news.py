@@ -8,7 +8,7 @@ API:
   https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=Tamil+Nadu,Tamil,TVK,Tamilaga+Vettri+Kazhagam&country=in&language=en
 
 Usage:
-  1. Add NEWSDATA_API_KEY=your-key to Public DB/.env
+  1. Add NEWSDATA_API_KEY=your-key to Sync-Config/.env
   2. pip install -r requirements.txt
   3. python fetch_tamil_nadu_news.py
   4. python fetch_tamil_nadu_news.py --max-pages 3
@@ -28,7 +28,7 @@ from zoneinfo import ZoneInfo
 import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
+_SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _OUTPUT_DIR = Path(__file__).resolve().parent.parent / "Response JSON"
 
 NEWSDATA_NEWS_URL = "https://newsdata.io/api/1/news"
@@ -39,8 +39,8 @@ KOLKATA = ZoneInfo("Asia/Kolkata")
 
 
 def _load_api_key() -> str:
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
     from config import get_newsdata_api_key
 
     return get_newsdata_api_key()

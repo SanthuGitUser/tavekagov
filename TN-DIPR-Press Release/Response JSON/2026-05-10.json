@@ -1,0 +1,51 @@
+{
+  "date": "2026-05-10",
+  "fetchedAt": "2026-08-01T00:10:31.727828+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:31.727828+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-05-10"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21703,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.001_-_Hon_ble_CM_Speech_-_Cabinet_Swearing-in_Ceremony_-_Date.10.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.001 - Hon'ble CM Speech - Cabinet Swearing-in Ceremony - Date.10.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-10",
+        "language": "en"
+      },
+      {
+        "id": 21704,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.002_-_Hon_ble_CM_Press_Release_-_Hon_ble_CM_signed_3_New_Announcements_-_Date.10.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.002 - Hon'ble CM Press Release - Hon'ble CM signed 3 New Announcements - Date.10.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-10",
+        "language": "en"
+      },
+      {
+        "id": 21705,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No..003_-_Hon_ble_CM_Press_Release_-_Law_and_Order_Review_Meeting_-_Date.10.05.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-05-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No..003 - Hon'ble CM Press Release - Law and Order Review Meeting - Date.10.05.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-05-10",
+        "language": "en"
+      }
+    ]
+  }
+}

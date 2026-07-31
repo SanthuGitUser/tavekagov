@@ -18,7 +18,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { formatDate } from "@/lib/utils";
-import type { TnTransfersPosting } from "@/types/database";
+import type { TnTransfersPosting } from "@/types/models";
 
 const PAGE_SIZE = 7;
 

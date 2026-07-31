@@ -1,19 +1,19 @@
 """
-Fetch Tamil Nadu department Government Orders (G.O.s) from tn.gov.in and upsert into Supabase.
+Fetch Tamil Nadu department Government Orders (G.O.s) from tn.gov.in and save daily JSON files.
+
+Each G.O. date writes to Response JSON/YYYY-MM-DD.json. Re-runs merge by composite key.
 
 Usage:
-  1. Ensure Public DB/.env has Supabase keys and TN_GO_* source settings.
-  2. pip install -r requirements.txt
-  3. python tn_go_dept_sync.py
-  4. Optional: python tn_go_dept_sync.py --dry-run
-  5. Optional: python tn_go_dept_sync.py --start-date 10-05-2026 --end-date 21-07-2026
+  1. pip install -r requirements.txt
+  2. python tn_go_dept_sync.py
+  3. Optional: python tn_go_dept_sync.py --start-date 10-05-2026 --end-date 31-07-2026
+     (defaults: start from TN_GO_START_DATE in .env, end = today Asia/Kolkata)
 """
 
 from __future__ import annotations
 
 import argparse
 import base64
-import json
 import re
 import sys
 import time
@@ -21,12 +21,14 @@ from dataclasses import asdict, dataclass
 from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_PUBLIC_DB = _REPO_ROOT / "Public DB"
-_MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
+_SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _DEPT_LINK_RE = re.compile(
     r"href=go\.php\?dep_id=([^&>\s]+)&year=([^&>\s]+)\s*>([^<]+)",
@@ -61,8 +63,8 @@ class GovernmentOrder:
 
 
 def _load_config() -> tuple[str, str, str]:
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
     from config import get_tn_go_dept_source_url, get_tn_go_start_date, get_tn_gov_base_url
 
     return get_tn_go_dept_source_url(), get_tn_gov_base_url(), get_tn_go_start_date()
@@ -179,65 +181,55 @@ def fetch_matching_orders(
     return matches
 
 
-def _load_supabase_client():
-    if str(_PUBLIC_DB) not in sys.path:
-        sys.path.insert(0, str(_PUBLIC_DB))
-    from client import get_supabase_client
-
-    return get_supabase_client(use_service_role=True)
-
-
-def upsert_government_orders(orders: list[GovernmentOrder]) -> int:
-    if not orders:
-        return 0
-
-    client = _load_supabase_client()
-    rows = [
-        {
-            "go_date": _parse_display_date(order.go_date).isoformat(),
-            "go_number": order.go_number,
-            "go_name": order.go_name,
-            "department_name": order.department_name,
-            "dep_id_encoded": order.dep_id_encoded,
-            "pdf_url": order.pdf_url,
-        }
-        for order in orders
-    ]
-    client.table("tn_go_dept").upsert(
-        rows,
-        on_conflict="go_number,dep_id_encoded,go_date,pdf_url",
-    ).execute()
-    return len(rows)
+def _order_merge_key(item: dict[str, object]) -> str:
+    return "|".join(
+        [
+            str(item.get("go_number") or ""),
+            str(item.get("dep_id_encoded") or ""),
+            str(item.get("go_date") or ""),
+            str(item.get("pdf_url") or ""),
+        ]
+    )
 
 
-def write_manifest(
-    orders: list[GovernmentOrder],
+def _order_to_json_record(order: GovernmentOrder) -> dict[str, object]:
+    record = asdict(order)
+    record["go_date"] = _parse_display_date(order.go_date).isoformat()
+    return record
+
+
+def save_daily_responses(
+    output_dir: Path,
     *,
+    orders: list[GovernmentOrder],
     source_url: str,
-    start_date: date,
-    end_date: date,
-) -> Path:
-    _MANIFESTS_DIR.mkdir(parents=True, exist_ok=True)
-    safe_start = _format_display_date(start_date).replace("-", "")
-    safe_end = _format_display_date(end_date).replace("-", "")
-    path = _MANIFESTS_DIR / f"tn_go_dept_{safe_start}_to_{safe_end}.json"
-    payload = {
-        "source_url": source_url,
-        "start_date": _format_display_date(start_date),
-        "end_date": _format_display_date(end_date),
-        "count": len(orders),
-        "orders": [asdict(order) for order in orders],
-    }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    return path
+) -> list[Path]:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from daily_json import write_items_by_day
+
+    fetched_at = datetime.now(_KOLKATA)
+    records = [_order_to_json_record(order) for order in orders]
+
+    return write_items_by_day(
+        output_dir,
+        items_key="orders",
+        items=records,
+        date_fn=lambda item: date.fromisoformat(str(item["go_date"])),
+        source_url=source_url,
+        fetched_at=fetched_at,
+        merge_key_fn=_order_merge_key,
+    )
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Sync TN department G.O.s to Supabase.")
+    parser = argparse.ArgumentParser(
+        description="Fetch TN department G.O.s and save daily JSON responses.",
+    )
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Fetch and write manifest only; do not upsert to Supabase.",
+        "--output-dir",
+        default=str(_OUTPUT_DIR),
+        help="Folder for daily JSON responses (YYYY-MM-DD.json).",
     )
     parser.add_argument(
         "--start-date",
@@ -245,13 +237,17 @@ def main() -> int:
     )
     parser.add_argument(
         "--end-date",
-        help="Include G.O.s up to this date (DD-MM-YYYY). Defaults to today.",
+        help="Include G.O.s up to this date (DD-MM-YYYY). Defaults to today (Asia/Kolkata).",
     )
     args = parser.parse_args()
 
     source_url, base_url, default_start_date = _load_config()
     start_date = _parse_display_date(_normalize_date(args.start_date or default_start_date))
-    end_date = _parse_display_date(_normalize_date(args.end_date)) if args.end_date else date.today()
+    end_date = (
+        _parse_display_date(_normalize_date(args.end_date))
+        if args.end_date
+        else datetime.now(_KOLKATA).date()
+    )
     if start_date > end_date:
         raise SystemExit("start-date must be on or before end-date.")
 
@@ -271,20 +267,14 @@ def main() -> int:
         f"to {_format_display_date(end_date)}."
     )
 
-    manifest_path = write_manifest(
-        orders,
+    saved_paths = save_daily_responses(
+        Path(args.output_dir),
+        orders=orders,
         source_url=source_url,
-        start_date=start_date,
-        end_date=end_date,
     )
-    print(f"Wrote manifest: {manifest_path}")
-
-    if args.dry_run:
-        print("Dry run complete (no database changes).")
-        return 0
-
-    count = upsert_government_orders(orders)
-    print(f"Upserted {count} rows into public.tn_go_dept.")
+    print(f"Saved {len(saved_paths)} daily JSON file(s).")
+    if saved_paths:
+        print(f"Latest file: {saved_paths[-1]}")
     return 0
 
 

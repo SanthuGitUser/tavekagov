@@ -1,0 +1,183 @@
+{
+  "date": "2026-07-07",
+  "fetchedAt": "2026-08-01T00:10:45.749027+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:45.749027+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-07"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22101,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.343_-_Hon_ble_CM_Social_Media_Message_-_Dravidamani_Erataimalai_Srinivasan_Birthday_-_Date.07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.343 - Hon'ble CM Social Media Message - Dravidamani Erataimalai Srinivasan Birthday - Date.07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22102,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.344_-_Hon_ble_CM_Press_Release_-_Cuddalore_Road_Accident_Condolence_and_Relief_CMPRF_-_Date.07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.344 - Hon'ble CM Press Release - Cuddalore Road Accident Condolence and Relief CMPRF - Date.07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22103,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.345_-_I_PR_Dept_Press_Release_-_Rettamalai_Srinivasan_Birthday_Function_-_Date.07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.345 - I&PR Dept Press Release - Rettamalai Srinivasan Birthday Function - Date.07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22104,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.346_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-_MoU_with_Hitachi_Company_-__Date.07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.346 - Hon'ble CM Press Release - Industries Dept - MoU with Hitachi Company -  Date.07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22105,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_PR_No.347-Hon_ble__CM_Social_Media_Message_-_Indian_Cricket_Ex_Captain_MS_Dhoni_Birthday_greetings_-_Date.07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR PR No.347-Hon'ble  CM Social Media Message - Indian Cricket Ex Captain MS Dhoni Birthday greetings - Date.07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22106,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-348-Hon_ble_Commercial_Tax_Minister_Press_Release-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-348-Hon'ble Commercial Tax Minister Press Release-Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22107,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-349-EDII_Press_Release-_Cell_Phone_Repair_-_English-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-349-EDII Press Release- Cell Phone Repair - English-Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22108,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-349-EDII_Press_Release-_Cell_Phone_Repair_-_Tamil_-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-349-EDII Press Release- Cell Phone Repair - Tamil -Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22109,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-350-EDII_Press_Release-English__Laptop-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-350-EDII Press Release-English  Laptop-Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22110,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-350-EDII_Press_Release-Tamil___-_Laptop-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-350-EDII Press Release-Tamil   - Laptop-Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22111,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-351-WRD_Dept_Press_Release-Water_Release-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-351-WRD Dept Press Release-Water Release-Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22112,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-352-Hon_ble_Higher_Education_Minister_Press_Release-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-352-Hon'ble Higher Education Minister Press Release-Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22113,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.353-Hon_ble__Tourism_Minister_Press_Release-_Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.353-Hon'ble  Tourism Minister Press Release- Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22114,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.354-Hon_ble_Food_Minister_Press_Release-Review_Meeting-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.354-Hon'ble Food Minister Press Release-Review Meeting-Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      },
+      {
+        "id": 22115,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.355-Hon_ble_Transport_Minister_Press_Release-Date_07.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.355-Hon'ble Transport Minister Press Release-Date 07.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-07",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-06-02",
+  "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
+  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
+  "fetchCount": 3,
+  "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
+  "count": 5,
+  "postings": [
+    {
+      "serial_number": 9,
+      "go_date": "2026-06-02",
+      "go_number": "G.O.Rt.No.1952 PUBLIC(SPL.A) DATED-02.06.2026.pdf",
+      "subject": "IAS Transfer and Posting",
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O.Rt.No.1952 PUBLIC(SPL.A) DATED-02.06.2026.pdf"
+    },
+    {
+      "serial_number": 10,
+      "go_date": "2026-06-02",
+      "go_number": "G.O. RT.1948, dt 02.6.2026.pdf",
+      "subject": "IAS TRANSFER AND POSTING",
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1948, dt 02.6.2026.pdf"
+    },
+    {
+      "serial_number": 11,
+      "go_date": "2026-06-02",
+      "go_number": "G.O.Rt.No.1949 PUBLIC(SPL.A) DATED-02.06.2026.pdf",
+      "subject": "IAS Transfer and Posting",
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O.Rt.No.1949 PUBLIC(SPL.A) DATED-02.06.2026.pdf"
+    },
+    {
+      "serial_number": 12,
+      "go_date": "2026-06-02",
+      "go_number": "G.O.Rt.No.1950 PUBLIC(SPL.A) DATED-02.06.2026.pdf",
+      "subject": "IAS Transfer and Posting",
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O.Rt.No.1950 PUBLIC(SPL.A) DATED-02.06.2026.pdf"
+    },
+    {
+      "serial_number": 13,
+      "go_date": "2026-06-02",
+      "go_number": "G.O.Rt.No.1951 PUBLIC(SPL.A) DATED-02.06.2026.pdf",
+      "subject": "IAS Transfer and Posting",
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O.Rt.No.1951 PUBLIC(SPL.A) DATED-02.06.2026.pdf"
+    }
+  ]
+}

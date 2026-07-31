@@ -1,0 +1,45 @@
+name: Fetch TN DIPR Press Releases
+
+on:
+  schedule:
+    # 11:00 PM IST (Asia/Kolkata) = 17:30 UTC
+    - cron: "30 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-dipr-press-releases:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r "TN-DIPR-Press Release/requirements.txt"
+
+      - name: Fetch today's DIPR press releases
+        run: |
+          TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
+          python "TN-DIPR-Press Release/tn_press_release_sync.py" \
+            --start-date "$TODAY" \
+            --end-date "$TODAY"
+
+      - name: Commit and push updated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "TN-DIPR-Press Release/Response JSON/"
+          if git diff --staged --quiet; then
+            echo "No DIPR press release JSON changes to commit."
+          else
+            git commit -m "chore: update TN DIPR press releases $(date -u +%Y-%m-%d)"
+            git push
+          fi

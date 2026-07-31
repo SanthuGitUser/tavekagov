@@ -1,0 +1,128 @@
+{
+  "date": "2026-05-14",
+  "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 3,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr140526b.jpg",
+      "release_date": "2026-05-14",
+      "title": "Honble Chief Minister chaired review meeting on the functioning of the Industries, Investment Promotion and Commerce Department in Secretariat",
+      "file_name": "pr140526b.jpg",
+      "minister_name": "Hon'ble Chief Minister",
+      "department_name": "Industries, Investment Promotion & Commerce Department",
+      "minister_id": 1,
+      "department_id": 16,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": true,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr140526a.jpg",
+      "release_date": "2026-05-14",
+      "title": "Honble Chief Minister chaired a review meeting on the financial position of the State and functioning of Finance Department in Secretariat",
+      "file_name": "pr140526a.jpg",
+      "minister_name": "Hon'ble Chief Minister",
+      "department_name": "Finance Department",
+      "minister_id": 1,
+      "department_id": 9,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": true,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr140526_01.jpg",
+      "release_date": "2026-05-14",
+      "title": "Hon’ble Minister Thiru Aadhav Arjuna chaired a review meeting with officials of all departments regarding development works in Villivakkam Assembly Constituency",
+      "file_name": "pr140526_01.jpg",
+      "minister_name": "Thiru Aadhav Arjuna",
+      "department_name": "Public Works Department",
+      "minister_id": 3,
+      "department_id": 42,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "medium",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": true,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolio": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers, Police, Home, Special Programme Implementation, Special Initiatives, Poverty Alleviation and Rural Indebtedness, Youth Welfare, Welfare of Children, Aged, Differently Abled Persons, Municipal Administration, Urban and Water Supply.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    },
+    {
+      "id": 3,
+      "name": "Thiru Aadhav Arjuna",
+      "designation": "Minister for Public Works and Sports Development",
+      "portfolio": "Public Works (Buildings, Highways and Minor Ports), Sports Development.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/014_Aadhav_Arjuna.png",
+      "display_order": 3,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 9,
+      "name": "Finance Department",
+      "dep_id_encoded": "OQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Dr N. Marie Wilson",
+      "display_order": 8
+    },
+    {
+      "id": 16,
+      "name": "Industries, Investment Promotion & Commerce Department",
+      "dep_id_encoded": "MTY=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTY=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Selvi S. Keerthana",
+      "display_order": 16
+    },
+    {
+      "id": 42,
+      "name": "Public Works Department",
+      "dep_id_encoded": "NDI=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDI=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Aadhav Arjuna",
+      "display_order": 28
+    }
+  ]
+}

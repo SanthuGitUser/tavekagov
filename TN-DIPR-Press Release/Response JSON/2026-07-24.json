@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-24",
+  "fetchedAt": "2026-08-01T00:10:49.767413+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:49.767413+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-24"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22215,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.440-WRD_Dept_Press_Release-_Kelavarappalli_Water_Release-Date_24.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-24",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.440-WRD Dept Press Release- Kelavarappalli Water Release-Date 24.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-24",
+        "language": "en"
+      },
+      {
+        "id": 22216,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-441_Indian_Medicine_and_Homoeopathy_Press_Release-Admissions-English_-Date_24.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-24",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-441 Indian Medicine and Homoeopathy Press Release-Admissions-English -Date 24.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-24",
+        "language": "en"
+      },
+      {
+        "id": 22217,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-441-_Indian_Medicine_and_Homoeopathy_Press_Release-Admissions-Tamil-Date_24.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-24",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-441- Indian Medicine and Homoeopathy Press Release-Admissions-Tamil-Date 24.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-24",
+        "language": "en"
+      }
+    ]
+  }
+}

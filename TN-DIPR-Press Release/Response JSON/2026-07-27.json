@@ -1,0 +1,117 @@
+{
+  "date": "2026-07-27",
+  "fetchedAt": "2026-08-01T00:10:50.477777+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:50.477777+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-27"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22222,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.445-Hon_ble_CM_Social_Media_Message_-_Weightlifter_Thiru_Raja_Muthupandi_won_Silver_Medal_in_Common_Wealth_Games_-Date_27.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.445-Hon'ble CM Social Media Message - Weightlifter Thiru Raja Muthupandi won Silver Medal in Common Wealth Games -Date 27.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      },
+      {
+        "id": 22223,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.446-Hon_ble_RD___WRD_Minister-Press_Release-Date_27.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.446-Hon'ble RD & WRD Minister-Press Release-Date 27.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      },
+      {
+        "id": 22224,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.447-Hon_ble_Labour_Minister_Press_Release-Date_27.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.447-Hon'ble Labour Minister Press Release-Date 27.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      },
+      {
+        "id": 22225,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-448-TNEA_Press_Release-Admissions-Date_27.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-448-TNEA Press Release-Admissions-Date 27.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      },
+      {
+        "id": 22226,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.449-Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Fire_Cracker_Accident_at_Sivakasi_-_CMPRF_-Date__27.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.449-Hon'ble CM Press Release - Condolence and Relief - Fire Cracker Accident at Sivakasi - CMPRF -Date  27.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      },
+      {
+        "id": 22227,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-450_-Hon_ble_Ministers_Press_Release-_Agriculture_Budget_Meeting_-Date_27.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-450 -Hon'ble Ministers Press Release- Agriculture Budget Meeting -Date 27.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      },
+      {
+        "id": 22228,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.451_-Election_Dept_Press_Release-English_-Date_27.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.451 -Election Dept Press Release-English -Date 27.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      },
+      {
+        "id": 22229,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.451_-Election_Dept_Press_Release-Tamil-Date_27.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.451 -Election Dept Press Release-Tamil-Date 27.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      },
+      {
+        "id": 22230,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.452-Hon_ble_CM_Press_Release_-_HCM_Inspection_at_Koyambedu_TTRO_Plant_-Date__27.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-28",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.452-Hon'ble CM Press Release - HCM Inspection at Koyambedu TTRO Plant -Date  27.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-27",
+        "language": "en"
+      }
+    ]
+  }
+}

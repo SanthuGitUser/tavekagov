@@ -1,0 +1,194 @@
+{
+  "date": "2026-06-02",
+  "fetchedAt": "2026-08-01T00:10:37.488480+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:37.488480+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-02"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21862,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.NO.144_-_Hon_ble_CM_Press_Release_-_HCM_birthday_wishes_to_Isai_Gnani__ilayaraja_-_Date_-_2.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.NO.144 - Hon'ble CM Press Release - HCM birthday wishes to Isai Gnani  ilayaraja - Date - 2.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21863,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO_-_145_-_Hon_ble_Minister_for_Handlooms_Textiles_and_Khadi_Press_Release_-_Date_-_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO - 145 - Hon'ble Minister for Handlooms,Textiles and Khadi Press Release - Date - 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21864,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.146-EDII_Press_Release-One_Year_Program_-English_-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.146-EDII Press Release-One Year Program -English -Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21865,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.146-EDII_Press_Release-One_Year_Program_-Tamil_-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.146-EDII Press Release-One Year Program -Tamil -Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21866,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.147-EDII_Press_Release-_Gold_Appraisar_-_English_-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.147-EDII Press Release- Gold Appraisar - English -Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21867,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.147-EDII_Press_Release-_Gold_Appraisar_-_Tamil-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.147-EDII Press Release- Gold Appraisar - Tamil-Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21868,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.148-EDII_Press_Release-_E-Commerce__-_English_-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.148-EDII Press Release- E-Commerce  - English -Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21869,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.149-Hon_ble_CM_Press_Release_-_MoU_for_implementing_Jal_Jeevan_Mission_2.0_-_Date_2.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.149-Hon'ble CM Press Release - MoU for implementing Jal Jeevan Mission 2.0 - Date 2.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21870,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.150-Hon_ble_Natural_Resources_Minister_Press_Release-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.150-Hon'ble Natural Resources Minister Press Release-Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21871,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.151-Hon_ble_Labour_Minister_Press_Release-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.151-Hon'ble Labour Minister Press Release-Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21872,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-152_-Hon_ble__Industries_Minister___Hon_ble_NRT_Minister__Press_Release-Hyundai_-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-152 -Hon'ble  Industries Minister & Hon'ble NRT Minister  Press Release-Hyundai -Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21873,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.153-MGR_Film_Institute__Press_Release-_Admission_Extension_-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.153-MGR Film Institute  Press Release- Admission Extension -Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21874,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.154-Hon_ble_Food_Minister_Press_Release-_Civil_Supplies_Crime_Investigation-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.154-Hon'ble Food Minister Press Release- Civil Supplies Crime Investigation-Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21875,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.155_-Hon_ble_Food_Minister_Press_Release-_Tamil_Nadu_Food_Authority_Chepauk_Inspection__-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.155 -Hon'ble Food Minister Press Release- Tamil Nadu Food Authority Chepauk Inspection ,-Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21876,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.156-Hon_ble_PWD_Minister_Press_Release-_Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.156-Hon'ble PWD Minister Press Release- Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      },
+      {
+        "id": 21877,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-157-Hon_ble_School_Edu_TD__I__PR_Minister_Press_Release-Date_02.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-157-Hon'ble School Edu,TD, I& PR Minister Press Release-Date 02.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-02",
+        "language": "en"
+      }
+    ]
+  }
+}

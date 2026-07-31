@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-28",
+  "fetchedAt": "2026-08-01T00:10:50.716149+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:50.716149+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-28"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22231,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.453-Hon_ble_RD___WRD_Minister-Press_Release_-Date_28.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-28",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.453-Hon'ble RD & WRD Minister-Press Release -Date 28.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-28",
+        "language": "en"
+      },
+      {
+        "id": 22232,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.454_-Hon_ble_Revenue___Disaster__Mgnt_Minister__Press_Release-Date_28.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-28",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.454 -Hon'ble Revenue & Disaster  Mgnt Minister  Press Release-Date 28.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-28",
+        "language": "en"
+      },
+      {
+        "id": 22233,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-455-WRD_Dept_Press_Release-Tenkasi_-Date_28.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-28",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-455-WRD Dept Press Release-Tenkasi -Date 28.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-28",
+        "language": "en"
+      },
+      {
+        "id": 22234,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.456-Hon_ble_CM_DO_letter_to_Hon_ble__PM_Regarding_Mekedatu_Dam_-_Date_28.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-28",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.456-Hon'ble CM DO letter to Hon'ble  PM Regarding Mekedatu Dam - Date 28.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-28",
+        "language": "en"
+      }
+    ]
+  }
+}

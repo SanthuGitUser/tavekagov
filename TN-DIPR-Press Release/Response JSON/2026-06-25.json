@@ -1,0 +1,172 @@
+{
+  "date": "2026-06-25",
+  "fetchedAt": "2026-08-01T00:10:42.919643+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:42.919643+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-25"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22034,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.285_-_Hon_ble_Minister_for_Industries_SIPCOT_Review_Meeting_Press_Release_-_Date_-_24.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.285 - Hon'ble Minister for Industries SIPCOT Review Meeting Press Release - Date - 24.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22035,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.286-Hon_ble_CM_Social_Media_Message-Former_PM_V.P_Singh_Birthday-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.286-Hon'ble CM Social Media Message-Former PM V.P Singh Birthday-Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22036,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.287-Hon_ble_CM_Press_Release_-_Transport_Dept_-_Inauguration_of_New_300_Buses_-_Date_25.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.287-Hon'ble CM Press Release - Transport Dept - Inauguration of New 300 Buses - Date 25.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22037,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.288-Former_PM_V.P_Singh_Birthday-Press_Release_-_Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.288-Former PM V.P Singh Birthday-Press Release - Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22038,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.289-AD___TW_Department-DADW-Press_Release-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.289-AD & TW Department-DADW-Press Release-Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22039,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.290-Hon_ble_Food_Minister_Press_Release-__Medical_camp_at_mylapore_-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.290-Hon'ble Food Minister Press Release-  Medical camp at mylapore -Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22040,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-291-Hon_ble_CM_DO_Letter_to_Hon_ble_PM_-_Reg_NLC_Disinvestment_-_Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-291-Hon'ble CM DO Letter to Hon'ble PM - Reg NLC Disinvestment - Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22041,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-292_-EDII_Press_Release-One_Day_Workshop_on_ChatGPT_-English_-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-292 -EDII Press Release-One Day Workshop on ChatGPT -English -Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22042,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-292-EDII_Press_Release-One_Day_Workshop_on_ChatGPT_-Tamil-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-292-EDII Press Release-One Day Workshop on ChatGPT -Tamil-Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22043,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.293-OMCL_Press_Release-Oman_Recruitment-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.293-OMCL Press Release-Oman Recruitment-Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22044,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_PR_No.294_-Health_Dept_-_National_Pulse_Polio_Special_Camp_-Date__25.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR PR No.294 -Health Dept - National Pulse Polio Special Camp -Date  25.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22045,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-295_-Hon_ble_Agriculture___Farmers_Welfare_Minister_Press_Release-KURUVAI_ENROLMENT-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-295 -Hon'ble Agriculture & Farmers Welfare Minister Press Release-KURUVAI ENROLMENT-Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22046,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.296-Hon_ble_Food_Minister_Press_Release--Kauvery_Hospital_-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.296-Hon'ble Food Minister Press Release--Kauvery Hospital -Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      },
+      {
+        "id": 22047,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-297_-Hon_ble__Food_Minister__Hon_ble__SW_WE_Minister_-joint_meeting_press_Release-Date_25.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-297 -Hon'ble  Food Minister &Hon'ble  SW&WE Minister -joint meeting press Release-Date 25.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-25",
+        "language": "en"
+      }
+    ]
+  }
+}

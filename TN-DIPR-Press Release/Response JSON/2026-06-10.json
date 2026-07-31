@@ -1,0 +1,106 @@
+{
+  "date": "2026-06-10",
+  "fetchedAt": "2026-08-01T00:10:39.436904+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:39.436904+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-10"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21934,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-203-Hon_ble_CM_Condolence_Message_-_Death_of_Film_Director_Thiru_Bharathiraja_-Date_10.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-203-Hon'ble CM Condolence Message - Death of Film Director Thiru Bharathiraja -Date 10.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-10",
+        "language": "en"
+      },
+      {
+        "id": 21935,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-204-Hon_ble_Housing_Minister_Review_Meeting_Press_Release_-Town_and_Country_Planning_at_DTCP_Office-Date_10.06.2026__1_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-204-Hon'ble Housing Minister Review Meeting Press Release -Town and Country Planning at DTCP Office-Date 10.06.2026 (1).pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-10",
+        "language": "en"
+      },
+      {
+        "id": 21936,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-205-Hon_ble_MSME_Minister_Press_Release-Date_10.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-205-Hon'ble MSME Minister Press Release-Date 10.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-10",
+        "language": "en"
+      },
+      {
+        "id": 21937,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.206-Food___Civil_Supplies_Dept_Press_Release-GDP-Date_10.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.206-Food & Civil Supplies Dept Press Release-GDP-Date 10.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-10",
+        "language": "en"
+      },
+      {
+        "id": 21938,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-207-Prohibition___Excise_Dept_Press_Release-English_-Date_10.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-207-Prohibition & Excise Dept Press Release-English -Date 10.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-10",
+        "language": "en"
+      },
+      {
+        "id": 21939,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-207-Prohibition___Excise_Dept_Press_Release-Tamil-Date_10.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-207-Prohibition & Excise Dept Press Release-Tamil-Date 10.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-10",
+        "language": "en"
+      },
+      {
+        "id": 21940,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.208-Hon_ble_EB_Minister_Press_Release-Date_10.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.208-Hon'ble EB Minister Press Release-Date 10.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-10",
+        "language": "en"
+      },
+      {
+        "id": 21941,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No._209-Hon_ble_School_Edu_TD__I__PR_Minister_Press_Release-Date_10.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-10",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No. 209-Hon'ble School Edu,TD ,I& PR Minister Press Release-Date 10.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-10",
+        "language": "en"
+      }
+    ]
+  }
+}

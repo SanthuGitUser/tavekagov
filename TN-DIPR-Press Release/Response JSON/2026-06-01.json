@@ -1,0 +1,84 @@
+{
+  "date": "2026-06-01",
+  "fetchedAt": "2026-08-01T00:10:37.254522+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:37.254522+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-01"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 21856,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.139_-_Hon_ble_CM_Press_Release_-_HCM_wishes_to_Supremecourt_Judge_Tmt_Mohana_-_Date_-_1.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-01",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.139 - Hon'ble CM Press Release - HCM wishes to Supremecourt Judge Tmt Mohana - Date - 1.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-01",
+        "language": "en"
+      },
+      {
+        "id": 21857,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.140_-_Cooperative_Department_Press_Release__-_Date_-_01.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-01",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.140 - Cooperative Department Press Release  - Date - 01.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-01",
+        "language": "en"
+      },
+      {
+        "id": 21858,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO_-_141_-_Hon_ble_CM_Press_release_-_Anjalai_ammal_Birthday_-_Date_-_1.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-01",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO - 141 - Hon'ble CM Press release - Anjalai ammal Birthday - Date - 1.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-01",
+        "language": "en"
+      },
+      {
+        "id": 21859,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.142-EDII-Press_Release-English-Date_01.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.142-EDII-Press Release-English-Date 01.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-01",
+        "language": "en"
+      },
+      {
+        "id": 21860,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.142-EDII-Press_Release-Tamil-Date_01.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.142-EDII-Press Release-Tamil-Date 01.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-01",
+        "language": "en"
+      },
+      {
+        "id": 21861,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.143-Hon_ble_Minister_for_Higher_Education-Press_Release-Date_01.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.143-Hon'ble Minister for Higher Education-Press Release-Date 01.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-01",
+        "language": "en"
+      }
+    ]
+  }
+}

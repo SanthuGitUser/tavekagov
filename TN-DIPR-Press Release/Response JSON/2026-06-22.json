@@ -1,0 +1,73 @@
+{
+  "date": "2026-06-22",
+  "fetchedAt": "2026-08-01T00:10:42.210327+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:42.210327+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-22"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22007,
+        "press_file_name": "/uploads/tn_govt_press_release/TNLA__No.06-Hon_ble_Labour_Welfare_and_Skill_Development_Minister_Assembly_110_Speech_-Ammonia_gas_accident_at_st_peter_paul-Date_22.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-22",
+        "press_release_no": null,
+        "press_name": "TNLA  No.06-Hon'ble Labour Welfare and Skill Development Minister Assembly 110 Speech -Ammonia gas accident at st peter paul-Date 22.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-22",
+        "language": "en"
+      },
+      {
+        "id": 22008,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.263_-_Hon_ble_Public_Works_and_Sports_Development_Minister_Press_Release_-_Date.22.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.263 - Hon'ble Public Works and Sports Development Minister Press Release - Date.22.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-22",
+        "language": "en"
+      },
+      {
+        "id": 22009,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.264_-_Hon_ble_CM_Press_Release_-_HCM_Birthday_Greetings_by_Dignitaries_-_Date.22.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.264 - Hon'ble CM Press Release - HCM Birthday Greetings by Dignitaries - Date.22.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-22",
+        "language": "en"
+      },
+      {
+        "id": 22010,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.265_-_Hon_ble_Human_Resources_Management_Minister_Press_Release_-_Date.22.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.265 - Hon'ble Human Resources Management Minister Press Release - Date.22.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-22",
+        "language": "en"
+      },
+      {
+        "id": 22011,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.266_-_Hon_ble_Energy_Resources_and_Law_Minister_Press_Release_-_Date.22.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.266 - Hon'ble Energy Resources and Law Minister Press Release - Date.22.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-22",
+        "language": "en"
+      }
+    ]
+  }
+}

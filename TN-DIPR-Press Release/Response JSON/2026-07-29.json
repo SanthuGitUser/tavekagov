@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-29",
+  "fetchedAt": "2026-08-01T00:10:50.943191+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:50.943191+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-29"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22235,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.457_-_Hon_ble_CM_Press_Release_-_HRM_Dept_-_TNPSC_Group-I_and_TNPCB_officers_Appt_order_-_Date_-_29.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-29",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.457 - Hon'ble CM Press Release - HRM Dept - TNPSC Group-I and TNPCB officers Appt order - Date - 29.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-29",
+        "language": "en"
+      },
+      {
+        "id": 22236,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.459_-_Housing_and_Urban_Development_Dept_Press_Release_-_English_-_Date.29.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-29",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.459 - Housing and Urban Development Dept Press Release - English - Date.29.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-29",
+        "language": "en"
+      },
+      {
+        "id": 22237,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.459_-_Housing_and_Urban_Development_Dept_Press_Release_-_Tamil_-_Date.29.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-29",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.459 - Housing and Urban Development Dept Press Release - Tamil - Date.29.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-29",
+        "language": "en"
+      },
+      {
+        "id": 22238,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.460_-_Transport_Dept_Press_Release_-_Date.29.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-29",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.460 - Transport Dept Press Release - Date.29.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-29",
+        "language": "en"
+      },
+      {
+        "id": 22239,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.461-_OMCL_Press_Release_-_Date_29.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-29",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.461- OMCL Press Release - Date 29.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-29",
+        "language": "en"
+      },
+      {
+        "id": 22240,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.462_-_Hon_ble_CM_Press_Release_-_HCM_Inspection_at_Chennai_Metro_Railway_Stations_-_Date.29.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.462 - Hon'ble CM Press Release - HCM Inspection at Chennai Metro Railway Stations - Date.29.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-29",
+        "language": "en"
+      },
+      {
+        "id": 22241,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.463_-_Hon_ble_Rural_Development_and_Water_Resources_Minister_Press_Release_-_Date.29.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.463 - Hon'ble Rural Development and Water Resources Minister Press Release - Date.29.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-29",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -2,22 +2,9 @@ import { format, parseISO } from "date-fns";
 import { FileText } from "lucide-react";
 import { useMemo } from "react";
 
-import { ErrorState } from "@/components/shared/ErrorState";
-import { Skeleton } from "@/components/ui/skeleton";
+import { getMagazines } from "@/lib/tamilNaduMagazineFeed";
 import { useMagazineSearch } from "@/context/MagazineSearchContext";
-import { useAsyncData } from "@/hooks/useAsyncData";
-import { getSupabase, isSupabaseConfigured } from "@/lib/supabase";
-import type { Magazine } from "@/types/database";
-
-async function fetchMagazines(): Promise<Magazine[]> {
-  if (!isSupabaseConfigured) return [];
-  const { data, error } = await getSupabase()
-    .from("magazine")
-    .select("*")
-    .order("issue_date", { ascending: false });
-  if (error) throw error;
-  return (data ?? []) as Magazine[];
-}
+import type { Magazine } from "@/types/models";
 
 function formatIssueDate(value: string): string {
   return format(parseISO(value.includes("T") ? value : `${value}T00:00:00`), "MMMM yyyy");
@@ -60,28 +47,15 @@ function MagazineTile({ magazine }: { magazine: Magazine }) {
 }
 
 export function MagazinePage() {
-  const { data, loading, error } = useAsyncData(fetchMagazines, []);
   const magazineSearch = useMagazineSearch();
   const search = magazineSearch?.search ?? "";
+  const magazines = useMemo(() => getMagazines(), []);
 
-  const magazines = data ?? [];
   const filtered = useMemo(() => {
     const query = search.trim().toLowerCase();
     if (!query) return magazines;
     return magazines.filter((magazine) => matchesSearch(magazine, query));
   }, [magazines, search]);
-
-  if (loading) {
-    return (
-      <div className="grid gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-        {Array.from({ length: 6 }).map((_, index) => (
-          <Skeleton key={index} className="h-32 w-full rounded-md" />
-        ))}
-      </div>
-    );
-  }
-
-  if (error) return <ErrorState message={error} />;
 
   if (magazines.length === 0) {
     return (

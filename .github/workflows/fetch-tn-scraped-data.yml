@@ -1,0 +1,73 @@
+name: Fetch TN Gov Scraped Data
+
+on:
+  schedule:
+    # 11:00 PM IST (Asia/Kolkata) = 17:30 UTC
+    - cron: "30 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-scraped-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r "TN-GOV-Press Release/requirements.txt"
+          pip install -r TN-GOV_GO-Departments/requirements.txt
+          pip install -r TN-IAS_Transfers-Postings/requirements.txt
+          pip install -r TN-TVA-Magazine/requirements.txt
+
+      - name: Fetch today's gov press release images
+        run: |
+          TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
+          python "TN-GOV-Press Release/tn_gov_press_release_sync.py" \
+            --start-date "$TODAY" \
+            --end-date "$TODAY"
+
+      - name: Fetch today's government orders
+        run: |
+          TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
+          python TN-GOV_GO-Departments/tn_go_dept_sync.py \
+            --start-date "$TODAY" \
+            --end-date "$TODAY"
+
+      - name: Fetch today's transfers and postings
+        run: |
+          TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
+          python TN-IAS_Transfers-Postings/tn_transfers_postings_sync.py \
+            --start-date "$TODAY" \
+            --end-date "$TODAY"
+
+      - name: Fetch today's Tamil Arasu magazines
+        run: |
+          TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
+          python TN-TVA-Magazine/tn_magazine_sync.py \
+            --since-date "$TODAY"
+
+      - name: Commit and push updated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "TN-GOV-Press Release/Response JSON/"
+          git add "TN-GOV_GO-Departments/Response JSON/"
+          git add "TN-IAS_Transfers-Postings/Response JSON/"
+          git add "TN-TVA-Magazine/manifests/magazine.json"
+          git add "TN-TVA-Magazine/Response JSON/"
+          if git diff --staged --quiet; then
+            echo "No scraped data JSON changes to commit."
+          else
+            git commit -m "chore: update TN gov scraped data $(date -u +%Y-%m-%d)"
+            git push
+          fi

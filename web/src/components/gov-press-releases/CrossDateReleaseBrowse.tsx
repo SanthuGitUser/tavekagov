@@ -1,7 +1,7 @@
 import { format, parseISO } from "date-fns";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
-import type { GovPressRelease } from "@/types/database";
+import type { GovPressRelease } from "@/types/models";
 
 import { formatReleaseCount } from "./govPressReleaseUtils";
 

@@ -1,0 +1,106 @@
+{
+  "date": "2026-06-29",
+  "fetchedAt": "2026-08-01T00:10:43.840076+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:43.840076+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-06-29"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22055,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-_304-Honble_Minister_for_Co-operation__Minister_Press_Release-_-_COOPERATIVE_WEEK-2026_-_Date_29.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.- 304-Honble Minister for Co-operation  Minister Press Release- - COOPERATIVE WEEK-2026 - Date 29.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-29",
+        "language": "en"
+      },
+      {
+        "id": 22056,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.305_-Hon_ble_Higher_Education_Minister_Press_Release-_2026-27_Transfer_Counselling_Date_29.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.305 -Hon'ble Higher Education Minister Press Release- 2026-27 Transfer Counselling Date 29.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-29",
+        "language": "en"
+      },
+      {
+        "id": 22057,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.306_-_Sports_Department_-_Chief_Minister___s_State_Youth_Award_-_Press_Release_-_Date_-_29.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-29",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.306 - Sports Department - Chief Minister’s State Youth Award - Press Release - Date - 29.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-29",
+        "language": "en"
+      },
+      {
+        "id": 22058,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.307_-_EDII_Press_Release-Bakery_Products-Tamil-Date_-_29.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.307 - EDII Press Release-Bakery Products-Tamil-Date - 29.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-29",
+        "language": "en"
+      },
+      {
+        "id": 22059,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.307_-EDII_Press_Release-Bakery_Products-English_-Date_29.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.307 -EDII Press Release-Bakery Products-English -Date 29.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-29",
+        "language": "en"
+      },
+      {
+        "id": 22060,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.308_-_Department_of_Technical_Education_Press_Release_-_Date_-_29.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-29",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.308 - Department of Technical Education Press Release - Date - 29.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-29",
+        "language": "en"
+      },
+      {
+        "id": 22061,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.309_-_Hon_ble_CM_Speech_-Collectors_and_Dist_SPs_Conference__at_Secretariat_-_Date_-_29.6.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-29",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.309 - Hon'ble CM Speech -Collectors and Dist SPs Conference  at Secretariat - Date - 29.6.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-29",
+        "language": "en"
+      },
+      {
+        "id": 22062,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.310_Aavin_Press_Release_English_-_Date_-_29.06.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-06-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.310 Aavin Press Release English - Date - 29.06.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-06-29",
+        "language": "en"
+      }
+    ]
+  }
+}

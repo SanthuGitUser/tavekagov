@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-02",
+  "fetchedAt": "2026-08-01T00:10:44.549934+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:44.549934+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-02"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22081,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.327-Hon_ble_Minister_for_Housing_and_Urban_Development-Press_Release-Date_02.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-02",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.327-Hon'ble Minister for Housing and Urban Development-Press Release-Date 02.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-02",
+        "language": "en"
+      },
+      {
+        "id": 22082,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.328-Hon_ble_Minister_for_Energy_Resources_and_Law_Press_Release_-_Date_02.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-02",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.328-Hon'ble Minister for Energy Resources and Law Press Release - Date 02.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-02",
+        "language": "en"
+      },
+      {
+        "id": 22083,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-329_-EDII_Press_Release-_English_-Date_02.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-329 -EDII Press Release- English -Date 02.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-02",
+        "language": "en"
+      },
+      {
+        "id": 22084,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.329_-EDII_Press_Release-_Tamil-Date_02.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.329 -EDII Press Release- Tamil-Date 02.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-02",
+        "language": "en"
+      },
+      {
+        "id": 22085,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-330_-Disabled_Persons_Welfare_Dept_Press_Release-National_Award_-Date_02.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-330 -Disabled Persons Welfare Dept Press Release-National Award -Date 02.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-02",
+        "language": "en"
+      },
+      {
+        "id": 22086,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No-331-Cooperative_Societies_Press_Release-Thayumanavar_Scheme-Date_02.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No-331-Cooperative Societies Press Release-Thayumanavar Scheme-Date 02.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-02",
+        "language": "en"
+      },
+      {
+        "id": 22087,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-332-Tribal_Welfare_Dept_Press_Release-Date_02.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-332-Tribal Welfare Dept Press Release-Date 02.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-02",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "date": "2026-07-09",
+  "fetchedAt": "2026-08-01T00:10:46.209564+05:30",
+  "lastFetchedAt": "2026-08-01T00:10:46.209564+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-07-09"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22123,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.364_-_Hon_ble_CM_Social_Media_Message_-_Panagal_Arasar_Birthday_-_Date.09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.364 - Hon'ble CM Social Media Message - Panagal Arasar Birthday - Date.09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22124,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.365_-_Hon_ble_Energy_Resources_and_Law_Minister_MoU_Press_Release_-_Date.09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.365 - Hon'ble Energy Resources and Law Minister MoU Press Release - Date.09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22125,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.366_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-_MoU_-_Vikram_Solar_-_Date.09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.366 - Hon'ble CM Press Release - Industries Dept - MoU - Vikram Solar - Date.09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22126,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-367_-EDII_Press_Release-Tamil-Wedding_Photography_-Date_09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-367 -EDII Press Release-Tamil-Wedding Photography -Date 09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22127,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-367-EDII_Press_Release-English_-Wedding_Photograph_-Date_09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-367-EDII Press Release-English -Wedding Photograph -Date 09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22128,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-368-EDII_Press_Release-English_-Food_Products_Preparation__-Date_09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-368-EDII Press Release-English -Food Products Preparation  -Date 09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22129,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.368-EDII_Press_Release-Tamil-Food_Products_Preparation__-Date_09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.368-EDII Press Release-Tamil-Food Products Preparation  -Date 09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22130,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-369_EDII_Press_Release-_Gold_Appraisar_-English_-Date_9.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-369 EDII Press Release- Gold Appraisar -English -Date 9.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22131,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-369-EDII_Press_Release-_Gold_Appraisar_-_Tamil-Date_9.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-369-EDII Press Release- Gold Appraisar - Tamil-Date 9.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22132,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-370_-EDII_Press_Release-_APP_Dev_-_English_-Date_9.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-370 -EDII Press Release- APP Dev - English -Date 9.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22133,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-370_-EDII_Press_Release-_APP_Dev_-_Tamil-Date_9.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-370 -EDII Press Release- APP Dev - Tamil-Date 9.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22134,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.371-Hon_ble_CM_Press_Release_-_Condolence_and_Relief_for_the_death_of_women_at_Thanjavur_Paddy_procurement_centre_-Date__9.7.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.371-Hon'ble CM Press Release - Condolence and Relief for the death of women at Thanjavur Paddy procurement centre -Date  9.7.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22135,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-372_-Finance__Dept_Press_Release-English_-Date_09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-372 -Finance  Dept Press Release-English -Date 09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      },
+      {
+        "id": 22136,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-372_-Finance__Dept_Press_Release-Tamil-Date_09.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-07-09",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-372 -Finance  Dept Press Release-Tamil-Date 09.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-09",
+        "language": "en"
+      }
+    ]
+  }
+}
