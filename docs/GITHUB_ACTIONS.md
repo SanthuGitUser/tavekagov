@@ -1,6 +1,8 @@
 # GitHub Actions
 
-All scheduled fetch workflows run daily at **11:00 PM IST** (17:30 UTC). Each can also be triggered manually from the **Actions** tab (`workflow_dispatch`).
+All scheduled fetch workflows can also be triggered manually from the **Actions** tab (`workflow_dispatch`).
+
+Most fetch workflows run daily at **11:00 PM IST** (17:30 UTC). **Tamil Nadu news** runs at **1:00 AM IST** (19:30 UTC) because NewsData.io pagination takes ~50–60 minutes (30 API calls, 15-minute pause, repeat).
 
 ## Workflows overview
 
@@ -28,7 +30,7 @@ TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
 | Transfers & postings | `--start-date "$TODAY" --end-date "$TODAY"` |
 | Tamil Arasu magazine | `--since-date "$TODAY"` (current month issues) |
 | Ministers / departments / districts | No date filter (full manifest refresh) |
-| News | Implicit — output file named with run date |
+| News | Implicit — articles bucketed by publication date (IST); batched API pagination |
 
 ## Commit behavior
 

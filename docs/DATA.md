@@ -181,7 +181,7 @@ Frontend: `tamilNaduMagazineFeed.ts` (reads manifest and daily JSON).
 
 ### Tamil Nadu news
 
-Path: `TN-News/Response JSON/YYYY-MM-DD.json`
+Path: `TN-News/Response JSON/YYYY-MM-DD.json` (one file per **publication day** in IST)
 
 Wraps the NewsData.io API response. The `request.params.apikey` field should be redacted in committed files.
 

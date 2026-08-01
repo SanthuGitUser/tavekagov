@@ -20,11 +20,16 @@ type NewsResponseFile = {
   results?: NewsArticle[];
 };
 
-// One JSON file per fetch day: TN-News/Response JSON/YYYY-MM-DD.json
+// One JSON file per publication day (IST): TN-News/Response JSON/YYYY-MM-DD.json
 const responseJsonFiles = import.meta.glob(
   "../../../TN-News/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { eager: true, import: "default" },
 ) as Record<string, NewsResponseFile>;
+
+function extractPublicationDateFromPath(path: string): string | null {
+  const match = path.match(/(\d{4}-\d{2}-\d{2})\.json$/);
+  return match?.[1] ?? null;
+}
 
 function extractResults(file: NewsResponseFile): NewsArticle[] {
   if (file.response?.results) return file.response.results;
@@ -38,14 +43,13 @@ function extractRequestMeta(file: NewsResponseFile): NewsResponseFile["request"]
 
 function buildFeed(): NewsFeedResponse {
   const files = Object.entries(responseJsonFiles)
-    .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath))
-    .map(([, file]) => file);
+    .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath));
 
   const seen = new Set<string>();
   const results: NewsArticle[] = [];
   let latestRequest: NewsResponseFile["request"];
 
-  for (const file of files) {
+  for (const [, file] of files) {
     latestRequest = extractRequestMeta(file) ?? latestRequest;
 
     for (const article of extractResults(file)) {
@@ -58,8 +62,12 @@ function buildFeed(): NewsFeedResponse {
 
   results.sort((a, b) => b.pubDate.localeCompare(a.pubDate));
 
-  const dates = results.map(getArticleDateInIst).sort();
-  const filterDate = dates.at(-1) ?? "";
+  const articleDates = results.map(getArticleDateInIst).sort();
+  const fileDates = files
+    .map(([path]) => extractPublicationDateFromPath(path))
+    .filter((value): value is string => Boolean(value))
+    .sort();
+  const filterDate = articleDates.at(-1) ?? fileDates.at(-1) ?? "";
   const params = latestRequest?.params ?? {};
 
   return {
@@ -79,6 +87,16 @@ function buildFeed(): NewsFeedResponse {
 export const tamilNaduNewsFeed = buildFeed();
 
 export function getAvailableNewsDates(): string[] {
-  const dates = new Set(tamilNaduNewsFeed.results.map(getArticleDateInIst));
+  const dates = new Set<string>();
+
+  for (const path of Object.keys(responseJsonFiles)) {
+    const fileDate = extractPublicationDateFromPath(path);
+    if (fileDate) dates.add(fileDate);
+  }
+
+  for (const article of tamilNaduNewsFeed.results) {
+    dates.add(getArticleDateInIst(article));
+  }
+
   return [...dates].sort().reverse();
 }

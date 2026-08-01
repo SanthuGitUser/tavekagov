@@ -2,8 +2,8 @@ name: Fetch Tamil Nadu News
 
 on:
   schedule:
-    # 11:00 PM IST (Asia/Kolkata) = 17:30 UTC
-    - cron: "30 17 * * *"
+    # 1:00 AM IST (Asia/Kolkata) = 19:30 UTC
+    - cron: "30 19 * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,6 +12,9 @@ permissions:
 jobs:
   fetch-news:
     runs-on: ubuntu-latest
+    # Runtime scales with API totalResults (~10 articles/page, 30 calls then 15 min pause).
+    # 964 articles ≈ 55 min; 3000 articles ≈ 2.5 h. Cap at GitHub's 360 min job limit.
+    timeout-minutes: 360
 
     steps:
       - name: Checkout repository
