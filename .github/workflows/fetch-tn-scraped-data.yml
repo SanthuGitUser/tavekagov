@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   fetch-scraped-data:
-    # GitHub-hosted runners are often blocked by tn.gov.in. Set repository variable
+    # GitHub-hosted runners are often blocked by TN gov sites. Set repository variable
     # TN_GOV_RUNNER to a self-hosted runner label (e.g. self-hosted) with India egress.
     runs-on: ${{ vars.TN_GOV_RUNNER || 'ubuntu-latest' }}
     env:
@@ -40,6 +40,16 @@ jobs:
         run: python Sync-Config/check_tn_gov_reachable.py
         continue-on-error: true
 
+      - name: Check tnsectdemo.tn.gov.in reachability
+        id: tn_ias
+        run: python Sync-Config/check_tn_ias_reachable.py
+        continue-on-error: true
+
+      - name: Check tamildigitallibrary.in reachability
+        id: tva
+        run: python Sync-Config/check_tva_magazine_reachable.py
+        continue-on-error: true
+
       - name: Fetch today's gov press release images
         if: steps.tn_gov.outcome == 'success'
         run: |
@@ -57,7 +67,7 @@ jobs:
             --end-date "$TODAY"
 
       - name: Fetch today's transfers and postings
-        if: steps.tn_gov.outcome == 'success'
+        if: steps.tn_ias.outcome == 'success'
         run: |
           TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
           python TN-IAS_Transfers-Postings/tn_transfers_postings_sync.py \
@@ -65,15 +75,24 @@ jobs:
             --end-date "$TODAY"
 
       - name: Fetch today's Tamil Arasu magazines
+        if: steps.tva.outcome == 'success'
         run: |
           TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
           python TN-TVA-Magazine/tn_magazine_sync.py \
             --since-date "$TODAY"
 
-      - name: Report skipped tn.gov.in scrapers
-        if: steps.tn_gov.outcome != 'success'
+      - name: Report skipped scrapers
+        if: steps.tn_gov.outcome != 'success' || steps.tn_ias.outcome != 'success' || steps.tva.outcome != 'success'
         run: |
-          echo "::warning::Skipped tn.gov.in scrapers — portal unreachable from this runner."
+          if [ "${{ steps.tn_gov.outcome }}" != "success" ]; then
+            echo "::warning::Skipped tn.gov.in scrapers — www.tn.gov.in unreachable from this runner."
+          fi
+          if [ "${{ steps.tn_ias.outcome }}" != "success" ]; then
+            echo "::warning::Skipped IAS transfers sync — tnsectdemo.tn.gov.in unreachable from this runner."
+          fi
+          if [ "${{ steps.tva.outcome }}" != "success" ]; then
+            echo "::warning::Skipped Tamil Arasu magazine sync — tamildigitallibrary.in unreachable from this runner."
+          fi
           echo "Set repository variable TN_GOV_RUNNER to a self-hosted runner in India,"
           echo "or secret TN_GOV_HTTPS_PROXY to an Indian HTTPS proxy."
           echo "See docs/GITHUB_ACTIONS.md for setup."

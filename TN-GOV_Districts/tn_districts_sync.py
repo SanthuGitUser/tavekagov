@@ -107,13 +107,14 @@ def fetch_district_details(
     session: requests.Session,
     *,
     source_url: str,
+    timeout: tuple[float, float],
 ) -> tuple[str, str | None, str | None, str | None]:
     last_error: Exception | None = None
     for attempt in range(1, 4):
         try:
             response = session.get(
                 profile_url,
-                timeout=(20, 60),
+                timeout=timeout,
                 headers={"Referer": source_url},
             )
             if not response.text.strip():
@@ -136,11 +137,13 @@ def fetch_district_details(
     return fallback_name, None, None, None
 
 
-def fetch_districts(session: requests.Session | None = None) -> list[District]:
+def fetch_districts(
+    session: requests.Session,
+    *,
+    timeout: tuple[float, float],
+) -> list[District]:
     source_url, base_url = _load_config()
-    sess = session or requests.Session()
-    sess.headers.update(_DEFAULT_HEADERS)
-    response = sess.get(source_url, timeout=(20, 60))
+    response = session.get(source_url, timeout=timeout)
     response.raise_for_status()
     page_html = response.text
 
@@ -161,7 +164,11 @@ def fetch_districts(session: requests.Session | None = None) -> list[District]:
     ):
         profile_url = _district_profile_url(base_url, dt_cd_encoded)
         name, area_size, population, website_url = fetch_district_details(
-            profile_url, list_name, sess, source_url=source_url
+            profile_url,
+            list_name,
+            session,
+            source_url=source_url,
+            timeout=timeout,
         )
         districts.append(
             District(
@@ -212,8 +219,13 @@ def main() -> int:
 
     source_url, _ = _load_config()
     print(f"Fetching districts from {source_url} ...")
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+
+    session = build_retry_session(headers=_DEFAULT_HEADERS)
     try:
-        districts = fetch_districts()
+        districts = fetch_districts(session, timeout=DEFAULT_CONNECT_READ_TIMEOUT)
     except requests.RequestException as exc:
         print(f"Request failed: {exc}", file=sys.stderr)
         return 1

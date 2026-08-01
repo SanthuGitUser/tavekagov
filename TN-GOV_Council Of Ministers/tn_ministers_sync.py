@@ -66,11 +66,13 @@ def _clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def fetch_ministers(session: requests.Session | None = None) -> list[Minister]:
+def fetch_ministers(
+    session: requests.Session,
+    *,
+    timeout: tuple[float, float],
+) -> list[Minister]:
     source_url = _load_source_url()
-    sess = session or requests.Session()
-    sess.headers.update(_DEFAULT_HEADERS)
-    response = sess.get(source_url, timeout=(20, 60))
+    response = session.get(source_url, timeout=timeout)
     response.raise_for_status()
     page_html = response.text
 
@@ -122,8 +124,13 @@ def main() -> int:
 
     source_url = _load_source_url()
     print(f"Fetching ministers from {source_url} ...")
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+
+    session = build_retry_session(headers=_DEFAULT_HEADERS)
     try:
-        ministers = fetch_ministers()
+        ministers = fetch_ministers(session, timeout=DEFAULT_CONNECT_READ_TIMEOUT)
     except requests.RequestException as exc:
         print(f"Request failed: {exc}", file=sys.stderr)
         return 1

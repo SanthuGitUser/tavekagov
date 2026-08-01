@@ -170,13 +170,14 @@ def fetch_minister_name(
     session: requests.Session,
     *,
     source_url: str,
+    timeout: tuple[float, float],
 ) -> str | None:
     last_error: Exception | None = None
     for attempt in range(1, 4):
         try:
             response = session.get(
                 profile_url,
-                timeout=(20, 60),
+                timeout=timeout,
                 headers={"Referer": source_url},
             )
             if not response.text.strip():
@@ -199,11 +200,13 @@ def fetch_minister_name(
     return None
 
 
-def fetch_departments(session: requests.Session | None = None) -> list[Department]:
+def fetch_departments(
+    session: requests.Session,
+    *,
+    timeout: tuple[float, float],
+) -> list[Department]:
     source_url, base_url = _load_config()
-    sess = session or requests.Session()
-    sess.headers.update(_DEFAULT_HEADERS)
-    response = sess.get(source_url, timeout=(20, 60))
+    response = session.get(source_url, timeout=timeout)
     response.raise_for_status()
     page_html = response.text
 
@@ -238,7 +241,12 @@ def fetch_departments(session: requests.Session | None = None) -> list[Departmen
     ministers = _load_ministers()
     enriched: list[Department] = []
     for index, dept in enumerate(departments, start=1):
-        minister_name = fetch_minister_name(dept.profile_url, sess, source_url=source_url)
+        minister_name = fetch_minister_name(
+            dept.profile_url,
+            session,
+            source_url=source_url,
+            timeout=timeout,
+        )
         if not minister_name and ministers:
             minister_name = match_minister_from_portfolio(dept.name, ministers)
             if minister_name:
@@ -288,8 +296,13 @@ def main() -> int:
 
     source_url, _ = _load_config()
     print(f"Fetching departments from {source_url} ...")
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+
+    session = build_retry_session(headers=_DEFAULT_HEADERS)
     try:
-        departments = fetch_departments()
+        departments = fetch_departments(session, timeout=DEFAULT_CONNECT_READ_TIMEOUT)
     except requests.RequestException as exc:
         print(f"Request failed: {exc}", file=sys.stderr)
         return 1

@@ -155,6 +155,7 @@ def _fetch_list_page(
     csrf: str,
     page: int,
     sorting: str,
+    timeout: tuple[float, float],
 ) -> tuple[list[tuple[str, str]], str]:
     payload = {
         "process": "36",
@@ -187,7 +188,7 @@ def _fetch_list_page(
         _LIST_ENDPOINT,
         data=payload,
         headers={**_DEFAULT_HEADERS, "Referer": source_url},
-        timeout=60,
+        timeout=timeout,
     )
     response.raise_for_status()
     data = response.json()
@@ -205,8 +206,13 @@ def _fetch_list_page(
     return items, next_csrf
 
 
-def _fetch_pdf_url(session: requests.Session, detail_url: str) -> str:
-    response = session.get(detail_url, headers=_DEFAULT_HEADERS, timeout=60)
+def _fetch_pdf_url(
+    session: requests.Session,
+    detail_url: str,
+    *,
+    timeout: tuple[float, float],
+) -> str:
+    response = session.get(detail_url, headers=_DEFAULT_HEADERS, timeout=timeout)
     response.raise_for_status()
     match = _PDF_RE.search(response.text)
     if not match:
@@ -221,9 +227,13 @@ def fetch_magazines(
     since_date: date = _DEFAULT_SINCE_DATE,
     max_pages: int = 25,
 ) -> list[Magazine]:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+
     source_url = _load_config()
-    session = requests.Session()
-    page = session.get(source_url, headers=_DEFAULT_HEADERS, timeout=60)
+    session = build_retry_session(headers=_DEFAULT_HEADERS)
+    page = session.get(source_url, headers=_DEFAULT_HEADERS, timeout=DEFAULT_CONNECT_READ_TIMEOUT)
     page.raise_for_status()
     csrf_match = re.search(r'name="csrf_test_name"\s+value="([^"]+)"', page.text)
     if not csrf_match:
@@ -240,6 +250,7 @@ def fetch_magazines(
             csrf=csrf,
             page=page_num,
             sorting="pub_year DESC",
+            timeout=DEFAULT_CONNECT_READ_TIMEOUT,
         )
         if not items:
             break
@@ -262,7 +273,7 @@ def fetch_magazines(
             if issue_date < since_date:
                 continue
 
-            pdf_url = _fetch_pdf_url(session, detail_url)
+            pdf_url = _fetch_pdf_url(session, detail_url, timeout=DEFAULT_CONNECT_READ_TIMEOUT)
             magazine = Magazine(
                 id=article_id,
                 name=title,

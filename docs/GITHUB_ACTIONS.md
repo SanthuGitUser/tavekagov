@@ -63,17 +63,17 @@ Commits are pushed to `main` by `github-actions[bot]`.
 
 ## TN government sites from GitHub-hosted runners
 
-`www.tn.gov.in` and `dipr.tn.gov.in` often **block or ignore** connections from GitHub-hosted runners (Azure US/EU). Retries do not help. Symptoms: `ConnectTimeout` after 15–45s, job step running several minutes.
+`www.tn.gov.in`, `dipr.tn.gov.in`, `tnsectdemo.tn.gov.in`, and `tamildigitallibrary.in` often **block or ignore** connections from GitHub-hosted runners (Azure US/EU). Retries do not help. Symptoms: `ConnectTimeout` after 15–45s, job step running several minutes.
 
 Affected workflows:
 
-| Workflow | Host | Preflight script |
-|----------|------|------------------|
+| Workflow | Host(s) | Preflight script(s) |
+|----------|---------|------------------------|
 | **Fetch TN DIPR Press Releases** | `dipr.tn.gov.in` | `Sync-Config/check_dipr_reachable.py` |
-| **Fetch TN Gov Scraped Data** | `www.tn.gov.in` | `Sync-Config/check_tn_gov_reachable.py` |
+| **Fetch TN Gov Scraped Data** | `www.tn.gov.in`, `tnsectdemo.tn.gov.in`, `tamildigitallibrary.in` | `check_tn_gov_reachable.py`, `check_tn_ias_reachable.py`, `check_tva_magazine_reachable.py` |
 | **Fetch TN Gov Manifests** | `www.tn.gov.in` | `Sync-Config/check_tn_gov_reachable.py` |
 
-These workflows run a **15-second preflight** before scraping. If the host is unreachable, scrapers are skipped with a workflow warning instead of failing the whole job for minutes.
+These workflows run a **15-second preflight** before scraping. If a host is unreachable, its scrapers are skipped with a workflow warning instead of failing the whole job for minutes.
 
 ### Option A — Self-hosted runner in India (recommended)
 
