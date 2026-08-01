@@ -1,8 +1,8 @@
 {
   "date": "2026-08-01",
   "fetchedAt": "2026-08-01T02:21:10.538858+05:30",
-  "lastFetchedAt": "2026-08-01T02:21:10.538858+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-01T17:21:12.652175+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -15,8 +15,126 @@
   },
   "response": {
     "status": "success",
-    "totalResults": 20,
+    "totalResults": 23,
     "results": [
+      {
+        "article_id": "8af52ced11ed67d226bdccd589e87bc6",
+        "link": "https://www.dtnext.in/news/tamilnadu/tnstc-app-sports-tvk-colours-sparks-social-media-criticism",
+        "title": "TNSTC app sports TVK colours, sparks social media criticism",
+        "description": "The change comes as the TVK government led by Chief Minister C Joseph Vijay continues to introduce changes across departments after assuming office",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "cm vijay",
+          "tnstc app",
+          "tvk"
+        ],
+        "creator": [
+          "dt next bureau"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-31 17:35:47",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-07-31 18:10:33",
+        "image_url": "https://media.assettype.com/dt-next/2026-07-31/luvpojqn/1-22.jpg",
+        "video_url": null,
+        "source_id": "dtnext",
+        "source_name": "Dt Next",
+        "source_priority": 113678,
+        "source_url": "https://www.dtnext.in",
+        "source_icon": "https://n.bytvi.com/dtnext.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1f62159413ce4af27a1b63eea2566767",
+        "link": "https://starofmysore.com/siege-bid-to-krs-dam-bjp-workers-arrested-let-off/",
+        "title": "Siege bid to KRS dam...: BJP workers arrested, let off",
+        "description": "CWRC order to release Cauvery water to TN triggers protest; former CM B.S. Yediyurappa, State BJP President B.Y. Vijayendra, Oppn. Leaders R. Ashoka and Chalavadi Narayan Swamy lead the protest in front of KRS dam KRS: Tension prevailed for some time, as hundreds of BJP workers from Mysuru and Mandya districts including Srirangapatna taluk unit,... The post Siege bid to KRS dam...: BJP workers arrested, let off appeared first on Star of Mysore .",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": null,
+        "creator": [
+          "insideout consult"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-31 14:00:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-07-31 14:15:08",
+        "image_url": "https://starofmysore.com/wp-content/uploads/2026/07/news1-6.png",
+        "video_url": null,
+        "source_id": "starofmysore",
+        "source_name": "Star Of Mysore",
+        "source_priority": 243034,
+        "source_url": "https://starofmysore.com",
+        "source_icon": "https://n.bytvi.com/starofmysore.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "68e889992006a80fd44e3e3451157554",
+        "link": "https://www.thehindubusinessline.com/news/national/tn-industries-minister-keerthana-turns-to-linkedin-for-feedback-on-industrial-policy-20/article71290062.ece",
+        "title": "TN Industries Minister Keerthana turns to LinkedIn for feedback on Industrial Policy 2.0",
+        "description": "Industries Minister S Keerthana has turned to LinkedIn, inviting entrepreneurs, investors, founders, academics, students and professionals to help shape Tamil Nadu’s next Industrial Policy",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "keerthana",
+          "india"
+        ],
+        "creator": [
+          "t e raja simhan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-07-31 12:53:21",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-07-31 13:06:57",
+        "image_url": "https://bl-i.thgim.com/public/incoming/ngibxy/article71290546.ece/alternates/LANDSCAPE_1200/keerthana_31.jpg",
+        "video_url": null,
+        "source_id": "thehindubusinessline",
+        "source_name": "The Hindu - Business Line",
+        "source_priority": 33540,
+        "source_url": "https://www.thehindubusinessline.com",
+        "source_icon": "https://n.bytvi.com/thehindubusinessline.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
       {
         "article_id": "70ff135c37b7b5224b5ec3d20e93f41b",
         "link": "https://newsable.asianetnews.com/india/karur-stampede-caveat-filed-in-sc-against-madras-hc-s-jobs-order-articleshow-ag94wss",
