@@ -1,0 +1,197 @@
+{
+  "date": "2026-08-01",
+  "fetchedAt": "2026-08-02T04:17:25.509059+05:30",
+  "lastFetchedAt": "2026-08-02T04:17:25.509059+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment",
+      "apikey": "<redacted>"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 4,
+    "apiReportedTotalResults": 16,
+    "results": [
+      {
+        "article_id": "cd08a17ca6b900722f619f7f13499696",
+        "link": "https://www.timesnownews.com/business-economy/economy/8th-pay-commission-to-hold-chandigarh-consultations-from-september-1618-appointment-window-opens-article-155226964",
+        "title": "8th Pay Commission To Hold Chandigarh Consultations From September 16–18; Appointment Window Opens",
+        "description": "The 8th Pay Commission will visit Chandigarh from September 16-18 to meet stakeholders from Punjab, Haryana, Himachal Pradesh and the UT.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "8th pay commission",
+          "8th cpc chandigarh visit",
+          "fitment factor",
+          "8th pay commission meeting september 2026",
+          "8th pay commission update"
+        ],
+        "creator": [
+          "priya raghuvanshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 08:11:52",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 08:33:06",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155227001,thumbsize-118212,width-1280,height-720,resizemode-75/155227001.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "755960127d2780bcd08107dcc43fac3d",
+        "link": "https://www.timesnownews.com/spiritual/can-you-skip-monday-fasts-and-still-observe-sawan-article-155226959",
+        "title": "Can You Skip Monday Fasts And Still Observe Sawan?",
+        "description": "Missing a Monday fast doesn't mean missing Sawan's blessings - true devotion lies in sincerity and intention, not rigid rules or perfect fasting streaks.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "sawan 2026 date",
+          "can you skip monday fasts in sawan",
+          "sawan 2026",
+          "lifestyle",
+          "spirituality news",
+          "spirituality"
+        ],
+        "creator": [
+          "akanksha arora"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics",
+          "lifestyle"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 07:35:31",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 08:03:28",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155226956,thumbsize-69084,width-1280,height-720,resizemode-75/155226956.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "b263719a540aff7fbc8bba3768d60602",
+        "link": "https://www.thenewsminute.com/tamil-nadu/sc-stays-senthil-balajis-arrest-questions-need-for-custodial-interrogation",
+        "title": "SC stays Senthil Balaji's arrest, questions need for custodial interrogation",
+        "description": "The case stems from an FIR registered by the DVAC on July 28, alleging large-scale irregularities in the functioning of TASMAC between 2021 and 2025, when Balaji held the portfolios of Electricity and Prohibition and Excise.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "sentjil balaji",
+          "supreme court on senthil balaji",
+          "supreme court bail senthil balaji",
+          "senthil balaji bail"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 06:52:11",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 07:07:04",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2024-05/ea93aa5a-bf2b-4b09-812e-895ac8c1b697/DMK_leader.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "85f68bc07cbc16d80befe82270efcddb",
+        "link": "https://www.timesnownews.com/business-economy/economy/gst-collections-jump-15-4-to-rs-2-11-lakh-crore-in-july-import-tax-revenues-surge-28-8-article-155226662",
+        "title": "GST Collections Jump 15.4% To Rs 2.11 Lakh Crore In July; Import Tax Revenues Surge 28.8%",
+        "description": "India's GST collections climbed 15.4% to Rs 2.11 lakh crore in July, aided by strong domestic tax receipts and a sharp rise in import revenues.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india gst collections july 2026",
+          "gst",
+          "gross gst collections",
+          "gst revenue july 2026",
+          "net gst revenue"
+        ],
+        "creator": [
+          "priya raghuvanshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 06:10:40",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 06:33:14",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155226699,thumbsize-926267,width-1280,height-720,resizemode-75/155226699.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}
