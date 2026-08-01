@@ -11,7 +11,12 @@ permissions:
 
 jobs:
   fetch-dipr-press-releases:
-    runs-on: ubuntu-latest
+    # GitHub-hosted runners are often blocked by dipr.tn.gov.in. Set repository variable
+    # TN_GOV_RUNNER to a self-hosted runner label (e.g. self-hosted) with India egress.
+    runs-on: ${{ vars.TN_GOV_RUNNER || 'ubuntu-latest' }}
+    env:
+      HTTP_PROXY: ${{ secrets.TN_GOV_HTTPS_PROXY }}
+      HTTPS_PROXY: ${{ secrets.TN_GOV_HTTPS_PROXY }}
 
     steps:
       - name: Checkout repository
@@ -23,14 +28,30 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r "TN-DIPR-Press Release/requirements.txt"
+        run: |
+          pip install -r "TN-DIPR-Press Release/requirements.txt"
+          pip install -r Sync-Config/requirements.txt
+
+      - name: Check dipr.tn.gov.in reachability
+        id: dipr
+        run: python Sync-Config/check_dipr_reachable.py
+        continue-on-error: true
 
       - name: Fetch today's DIPR press releases
+        if: steps.dipr.outcome == 'success'
         run: |
           TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
           python "TN-DIPR-Press Release/tn_press_release_sync.py" \
             --start-date "$TODAY" \
             --end-date "$TODAY"
+
+      - name: Report skipped DIPR scraper
+        if: steps.dipr.outcome != 'success'
+        run: |
+          echo "::warning::Skipped DIPR press release sync — dipr.tn.gov.in unreachable from this runner."
+          echo "Set repository variable TN_GOV_RUNNER to a self-hosted runner in India,"
+          echo "or secret TN_GOV_HTTPS_PROXY to an Indian HTTPS proxy."
+          echo "See docs/GITHUB_ACTIONS.md for setup."
 
       - name: Commit and push updated JSON
         run: |

@@ -11,7 +11,12 @@ permissions:
 
 jobs:
   fetch-scraped-data:
-    runs-on: ubuntu-latest
+    # GitHub-hosted runners are often blocked by tn.gov.in. Set repository variable
+    # TN_GOV_RUNNER to a self-hosted runner label (e.g. self-hosted) with India egress.
+    runs-on: ${{ vars.TN_GOV_RUNNER || 'ubuntu-latest' }}
+    env:
+      HTTP_PROXY: ${{ secrets.TN_GOV_HTTPS_PROXY }}
+      HTTPS_PROXY: ${{ secrets.TN_GOV_HTTPS_PROXY }}
 
     steps:
       - name: Checkout repository
@@ -28,8 +33,15 @@ jobs:
           pip install -r TN-GOV_GO-Departments/requirements.txt
           pip install -r TN-IAS_Transfers-Postings/requirements.txt
           pip install -r TN-TVA-Magazine/requirements.txt
+          pip install -r Sync-Config/requirements.txt
+
+      - name: Check tn.gov.in reachability
+        id: tn_gov
+        run: python Sync-Config/check_tn_gov_reachable.py
+        continue-on-error: true
 
       - name: Fetch today's gov press release images
+        if: steps.tn_gov.outcome == 'success'
         run: |
           TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
           python "TN-GOV-Press Release/tn_gov_press_release_sync.py" \
@@ -37,6 +49,7 @@ jobs:
             --end-date "$TODAY"
 
       - name: Fetch today's government orders
+        if: steps.tn_gov.outcome == 'success'
         run: |
           TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
           python TN-GOV_GO-Departments/tn_go_dept_sync.py \
@@ -44,6 +57,7 @@ jobs:
             --end-date "$TODAY"
 
       - name: Fetch today's transfers and postings
+        if: steps.tn_gov.outcome == 'success'
         run: |
           TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
           python TN-IAS_Transfers-Postings/tn_transfers_postings_sync.py \
@@ -55,6 +69,14 @@ jobs:
           TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
           python TN-TVA-Magazine/tn_magazine_sync.py \
             --since-date "$TODAY"
+
+      - name: Report skipped tn.gov.in scrapers
+        if: steps.tn_gov.outcome != 'success'
+        run: |
+          echo "::warning::Skipped tn.gov.in scrapers — portal unreachable from this runner."
+          echo "Set repository variable TN_GOV_RUNNER to a self-hosted runner in India,"
+          echo "or secret TN_GOV_HTTPS_PROXY to an Indian HTTPS proxy."
+          echo "See docs/GITHUB_ACTIONS.md for setup."
 
       - name: Commit and push updated JSON
         run: |

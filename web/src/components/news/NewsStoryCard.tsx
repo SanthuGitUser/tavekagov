@@ -1,4 +1,3 @@
-import { format, parseISO } from "date-fns";
 import {
   Calendar,
   ChevronRight,
@@ -20,13 +19,9 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { formatArticlePubDateInIst } from "@/lib/newsDateUtils";
 import type { NewsStoryGroup } from "@/types/news";
 import { cn } from "@/lib/utils";
-
-function formatPubDate(value: string): string {
-  const normalized = value.includes("T") ? value : value.replace(" ", "T");
-  return format(parseISO(normalized), "MMM d, yyyy · h:mm a");
-}
 
 type NewsStoryCardProps = {
   group: NewsStoryGroup;
@@ -122,7 +117,7 @@ export function NewsStoryCard({ group }: NewsStoryCardProps) {
                 <span className="text-muted-foreground/50">·</span>
                 <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
                   <Calendar className="h-3 w-3" />
-                  {formatPubDate(primary.pubDate)}
+                  {formatArticlePubDateInIst(primary)}
                 </span>
               </div>
 
@@ -233,7 +228,7 @@ export function NewsStoryCard({ group }: NewsStoryCardProps) {
                       {source.source_name}
                     </span>
                     <span className="mt-1 block text-xs text-muted-foreground">
-                      {formatPubDate(source.pubDate)}
+                      {formatArticlePubDateInIst(source)}
                     </span>
                     <span className="mt-1 line-clamp-2 text-xs text-muted-foreground">
                       {source.title}

@@ -11,18 +11,12 @@ import {
 } from "@/components/news/newsGroupUtils";
 import { getLatestValidDate } from "@/components/shared/VerticalDatePicker";
 import { useNewsSearch } from "@/context/NewsSearchContext";
+import { getArticleDateInIst } from "@/lib/newsDateUtils";
 import { getAvailableNewsDates, tamilNaduNewsFeed as feed } from "@/lib/tamilNaduNewsFeed";
 import type { NewsArticle } from "@/types/news";
 
-function getArticleDate(article: NewsArticle): string {
-  const normalized = article.pubDate.includes("T")
-    ? article.pubDate
-    : article.pubDate.replace(" ", "T");
-  return normalized.slice(0, 10);
-}
-
 function isArticleInDateRange(article: NewsArticle, from: string, to: string): boolean {
-  return isDateInNewsRange(getArticleDate(article), { from, to });
+  return isDateInNewsRange(getArticleDateInIst(article), { from, to });
 }
 
 export function NewsPage() {

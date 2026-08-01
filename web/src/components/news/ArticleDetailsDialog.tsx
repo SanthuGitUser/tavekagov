@@ -18,6 +18,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { formatArticlePubDateInIst } from "@/lib/newsDateUtils";
 import type { NewsArticle } from "@/types/news";
 import { cn } from "@/lib/utils";
 
@@ -26,7 +27,7 @@ function isPaidOnly(value: string | null | undefined): boolean {
   return value.startsWith("ONLY AVAILABLE IN");
 }
 
-function formatPubDate(value: string): string {
+function formatFetchedAt(value: string): string {
   const normalized = value.includes("T") ? value : value.replace(" ", "T");
   return format(parseISO(normalized), "MMM d, yyyy · h:mm a");
 }
@@ -183,9 +184,14 @@ export function ArticleDetailsDialog({
           <DetailRow
             label="Published"
             value={
-              <span className="inline-flex items-center gap-1.5">
-                <Calendar className="h-3.5 w-3.5" />
-                {formatPubDate(article.pubDate)} ({article.pubDateTZ})
+              <span className="inline-flex flex-col gap-0.5">
+                <span className="inline-flex items-center gap-1.5">
+                  <Calendar className="h-3.5 w-3.5" />
+                  {formatArticlePubDateInIst(article)}
+                </span>
+                <span className="text-xs text-muted-foreground">
+                  {article.pubDate} {article.pubDateTZ}
+                </span>
               </span>
             }
           />
@@ -194,7 +200,7 @@ export function ArticleDetailsDialog({
             value={
               <span className="inline-flex items-center gap-1.5">
                 <Clock className="h-3.5 w-3.5" />
-                {formatPubDate(article.fetched_at)}
+                {formatFetchedAt(article.fetched_at)}
               </span>
             }
           />

@@ -1,4 +1,5 @@
 import type { NewsArticle, NewsStoryGroup } from "@/types/news";
+import { getArticleDateInIst } from "@/lib/newsDateUtils";
 
 const STOP_WORDS = new Set([
   "a",
@@ -32,11 +33,13 @@ const STOP_WORDS = new Set([
 const SIMILARITY_THRESHOLD = 0.45;
 const TITLE_OVERLAP_THRESHOLD = 0.55;
 
-function getArticleDate(article: NewsArticle): string {
-  const normalized = article.pubDate.includes("T")
-    ? article.pubDate
-    : article.pubDate.replace(" ", "T");
-  return normalized.slice(0, 10);
+function areSameStory(left: NewsArticle, right: NewsArticle): boolean {
+  if (getArticleDateInIst(left) !== getArticleDateInIst(right)) return false;
+
+  const titleOverlap = overlapCoefficient(tokenize(left.title), tokenize(right.title));
+  if (titleOverlap >= TITLE_OVERLAP_THRESHOLD) return true;
+
+  return storySimilarity(left, right) >= SIMILARITY_THRESHOLD;
 }
 
 function tokenize(text: string): Set<string> {
@@ -72,15 +75,6 @@ function storySimilarity(left: NewsArticle, right: NewsArticle): number {
   const titleOverlap = overlapCoefficient(tokenize(left.title), tokenize(right.title));
   const keywordOverlap = overlapCoefficient(keywordTokens(left), keywordTokens(right));
   return titleOverlap * 0.7 + keywordOverlap * 0.3;
-}
-
-function areSameStory(left: NewsArticle, right: NewsArticle): boolean {
-  if (getArticleDate(left) !== getArticleDate(right)) return false;
-
-  const titleOverlap = overlapCoefficient(tokenize(left.title), tokenize(right.title));
-  if (titleOverlap >= TITLE_OVERLAP_THRESHOLD) return true;
-
-  return storySimilarity(left, right) >= SIMILARITY_THRESHOLD;
 }
 
 function sortSources(sources: NewsArticle[]): NewsArticle[] {

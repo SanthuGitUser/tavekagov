@@ -1,5 +1,6 @@
 import { format, parseISO, subDays } from "date-fns";
 
+import { getArticleDateInIst } from "@/lib/newsDateUtils";
 import type { NewsArticle } from "@/types/news";
 
 export type DailyCategoryRow = {
@@ -49,21 +50,14 @@ const FALLBACK_COLORS = [
   "#f59e0b",
 ];
 
-function getArticleDate(article: NewsArticle): string {
-  const normalized = article.pubDate.includes("T")
-    ? article.pubDate
-    : article.pubDate.replace(" ", "T");
-  return normalized.slice(0, 10);
+function getLatestArticleDate(articles: NewsArticle[]): string | null {
+  const dates = articles.map(getArticleDateInIst).sort();
+  return dates.at(-1) ?? null;
 }
 
 function getPrimaryCategory(article: NewsArticle): string {
   const normalized = article.category.map((value) => value.toLowerCase());
   return normalized.find((category) => category !== "top") ?? normalized[0] ?? "other";
-}
-
-function getLatestArticleDate(articles: NewsArticle[]): string | null {
-  const dates = articles.map(getArticleDate).sort();
-  return dates.at(-1) ?? null;
 }
 
 function getDatesInRange(endDate: string, dayCount: number): string[] {
@@ -93,7 +87,7 @@ export function getDailyCategoryCounts(
   const rangeDates = getDatesInRange(latestDate, rangeDays);
   const rangeStart = rangeDates[0]!;
   const filteredArticles = articles.filter((article) => {
-    const date = getArticleDate(article);
+    const date = getArticleDateInIst(article);
     return date >= rangeStart && date <= latestDate;
   });
 
@@ -101,7 +95,7 @@ export function getDailyCategoryCounts(
   const categoryTotals = new Map<string, number>();
 
   for (const article of filteredArticles) {
-    const date = getArticleDate(article);
+    const date = getArticleDateInIst(article);
     const category = getPrimaryCategory(article);
 
     if (!dailyCounts.has(date)) {

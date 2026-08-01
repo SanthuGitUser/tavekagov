@@ -1,4 +1,5 @@
 import type { NewsArticle, NewsFeedResponse } from "@/types/news";
+import { getArticleDateInIst } from "@/lib/newsDateUtils";
 
 type NewsResponseFile = {
   date?: string;
@@ -24,13 +25,6 @@ const responseJsonFiles = import.meta.glob(
   "../../../TN-News/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { eager: true, import: "default" },
 ) as Record<string, NewsResponseFile>;
-
-function getArticleDate(article: NewsArticle): string {
-  const normalized = article.pubDate.includes("T")
-    ? article.pubDate
-    : article.pubDate.replace(" ", "T");
-  return normalized.slice(0, 10);
-}
 
 function extractResults(file: NewsResponseFile): NewsArticle[] {
   if (file.response?.results) return file.response.results;
@@ -64,7 +58,7 @@ function buildFeed(): NewsFeedResponse {
 
   results.sort((a, b) => b.pubDate.localeCompare(a.pubDate));
 
-  const dates = results.map(getArticleDate).sort();
+  const dates = results.map(getArticleDateInIst).sort();
   const filterDate = dates.at(-1) ?? "";
   const params = latestRequest?.params ?? {};
 
@@ -85,6 +79,6 @@ function buildFeed(): NewsFeedResponse {
 export const tamilNaduNewsFeed = buildFeed();
 
 export function getAvailableNewsDates(): string[] {
-  const dates = new Set(tamilNaduNewsFeed.results.map(getArticleDate));
+  const dates = new Set(tamilNaduNewsFeed.results.map(getArticleDateInIst));
   return [...dates].sort().reverse();
 }

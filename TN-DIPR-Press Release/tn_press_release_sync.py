@@ -71,11 +71,12 @@ def _fetch_day_payload(
     *,
     source_url: str,
     selected_date: date,
+    timeout: tuple[float, float],
 ) -> dict[str, Any]:
     response = session.get(
         _API_URL,
         params={"date": selected_date.isoformat()},
-        timeout=(20, 120),
+        timeout=timeout,
         headers={"Referer": source_url},
     )
     response.raise_for_status()
@@ -168,6 +169,7 @@ def sync_press_releases(
     output_dir: Path,
     start_date: date,
     end_date: date,
+    timeout: tuple[float, float],
 ) -> list[Path]:
     saved_paths: list[Path] = []
     current = start_date
@@ -183,7 +185,12 @@ def sync_press_releases(
     while current <= end_date:
         day_index += 1
         fetched_at = datetime.now(_KOLKATA)
-        payload = _fetch_day_payload(session, source_url=source_url, selected_date=current)
+        payload = _fetch_day_payload(
+            session,
+            source_url=source_url,
+            selected_date=current,
+            timeout=timeout,
+        )
         out_path = save_day_response(
             output_dir,
             selected_date=current,
@@ -242,8 +249,11 @@ def main() -> int:
     if start_date > end_date:
         raise SystemExit("start-date must be on or before end-date.")
 
-    session = requests.Session()
-    session.headers.update(_DEFAULT_HEADERS)
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+
+    session = build_retry_session(headers=_DEFAULT_HEADERS)
 
     print(f"Source page: {source_url}")
     saved_paths = sync_press_releases(
@@ -252,6 +262,7 @@ def main() -> int:
         output_dir=Path(args.output_dir),
         start_date=start_date,
         end_date=end_date,
+        timeout=DEFAULT_CONNECT_READ_TIMEOUT,
     )
     if saved_paths:
         print(f"Latest file: {saved_paths[-1]}")
