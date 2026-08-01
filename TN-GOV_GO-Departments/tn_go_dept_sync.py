@@ -97,7 +97,11 @@ def _department_go_url(base_url: str, dep_id_encoded: str, year_b64: str) -> str
 
 
 def fetch_departments(session: requests.Session, source_url: str) -> list[tuple[str, str]]:
-    response = session.get(source_url, timeout=(20, 60))
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT
+
+    response = session.get(source_url, timeout=DEFAULT_CONNECT_READ_TIMEOUT)
     response.raise_for_status()
     departments: list[tuple[str, str]] = []
     seen: set[str] = set()
@@ -147,6 +151,10 @@ def fetch_matching_orders(
     start_date: date,
     end_date: date,
 ) -> list[GovernmentOrder]:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT
+
     departments = fetch_departments(session, source_url)
     years = range(start_date.year, end_date.year + 1)
     matches: list[GovernmentOrder] = []
@@ -160,7 +168,11 @@ def fetch_matching_orders(
         dept_matches = 0
         for year in years:
             go_url = _department_go_url(base_url, dep_id_encoded, _encode_year(year))
-            response = session.get(go_url, timeout=(20, 60), headers={"Referer": source_url})
+            response = session.get(
+                go_url,
+                timeout=DEFAULT_CONNECT_READ_TIMEOUT,
+                headers={"Referer": source_url},
+            )
             if not response.text.strip():
                 continue
 
@@ -251,8 +263,11 @@ def main() -> int:
     if start_date > end_date:
         raise SystemExit("start-date must be on or before end-date.")
 
-    session = requests.Session()
-    session.headers.update(_DEFAULT_HEADERS)
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+
+    session = build_retry_session(headers=_DEFAULT_HEADERS)
 
     print(f"Source list: {source_url}")
     orders = fetch_matching_orders(

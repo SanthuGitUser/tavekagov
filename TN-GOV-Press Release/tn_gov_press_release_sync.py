@@ -189,6 +189,10 @@ def fetch_press_release_images(
     start_date: date,
     end_date: date,
 ) -> list[GovPressReleaseImage]:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT
+
     all_releases: list[GovPressReleaseImage] = []
     seen_urls: set[str] = set()
     months = _iter_months(start_date, end_date)
@@ -200,7 +204,11 @@ def fetch_press_release_images(
 
     for index, (year, month) in enumerate(months, start=1):
         archive_url = _archive_url(base_url, year, month)
-        response = session.get(archive_url, timeout=(20, 120), headers={"Referer": source_url})
+        response = session.get(
+            archive_url,
+            timeout=DEFAULT_CONNECT_READ_TIMEOUT,
+            headers={"Referer": source_url},
+        )
         response.raise_for_status()
         month_releases = parse_press_release_images(response.text)
 
@@ -367,8 +375,11 @@ def main() -> int:
     if start_date > end_date:
         raise SystemExit("start-date must be on or before end-date.")
 
-    session = requests.Session()
-    session.headers.update(_DEFAULT_HEADERS)
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+
+    session = build_retry_session(headers=_DEFAULT_HEADERS)
 
     print(f"Source page: {source_url}")
     releases = fetch_press_release_images(

@@ -122,7 +122,11 @@ def fetch_transfer_postings(
     start_date: date,
     end_date: date,
 ) -> list[TransferPosting]:
-    response = session.get(source_url, timeout=(20, 120))
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT
+
+    response = session.get(source_url, timeout=DEFAULT_CONNECT_READ_TIMEOUT)
     response.raise_for_status()
 
     all_postings = parse_transfer_postings(response.text, base_url=source_url)
@@ -192,9 +196,12 @@ def main() -> int:
     if start_date > end_date:
         raise SystemExit("start-date must be on or before end-date.")
 
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    session = requests.Session()
-    session.headers.update(_DEFAULT_HEADERS)
+    session = build_retry_session(headers=_DEFAULT_HEADERS)
     session.verify = False
 
     print(f"Source page: {source_url}")
