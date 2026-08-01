@@ -1,6 +1,9 @@
 {
+  "date": "2026-08-02",
+  "fetchedAt": "2026-08-02T02:02:44.261703+05:30",
+  "lastFetchedAt": "2026-08-02T02:02:44.261703+05:30",
+  "fetchCount": 1,
   "source_url": "https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21&sub_cat_name=%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AE%B0%E0%AE%9A%E0%AF%81",
-  "fetchedAt": "2026-08-02T02:02:44.259849+05:30",
   "count": 3,
   "magazines": [
     {
