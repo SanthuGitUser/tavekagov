@@ -1,8 +1,8 @@
 {
   "date": "2026-08-01",
   "fetchedAt": "2026-08-02T04:17:25.509059+05:30",
-  "lastFetchedAt": "2026-08-02T04:17:25.509059+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-03T04:10:43.671268+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -17,9 +17,385 @@
   },
   "response": {
     "status": "success",
-    "totalResults": 4,
-    "apiReportedTotalResults": 16,
+    "totalResults": 13,
+    "apiReportedTotalResults": 22,
     "results": [
+      {
+        "article_id": "f5a03683405754c5f875e422f8f22757",
+        "link": "https://www.timesnownews.com/india/dmk-moves-sc-seeking-immediate-release-of-cauvery-water-to-tamil-nadu-article-155229039",
+        "title": "DMK Moves SC Seeking Immediate Release of Cauvery Water To Tamil Nadu",
+        "description": "The DMK has approached the Supreme Court requesting the Karnataka government to promptly release Cauvery water to Tamil Nadu, emphasizing compliance with the Supreme Court’s 2018 ruling and directives from the Cauvery Water Management Authority (CWMA).",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "supreme court",
+          "dmk",
+          "tamil nadu",
+          "karnataka",
+          "cauvery water",
+          "cauvery water dispute"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 17:31:28",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 17:33:08",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155229047,thumbsize-136680,width-1280,height-720,resizemode-75/155229047.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": true
+      },
+      {
+        "article_id": "bf9ad53f1e5a6ab049bfdab63adf4959",
+        "link": "https://www.timesnownews.com/india/cauvery-boils-over-again-and-this-time-star-cm-vijay-is-right-at-the-centre-article-155228821",
+        "title": "Cauvery Boils Over Again - And This Time 'Star CM' Vijay Is Right At The Centre",
+        "description": "Two states, one river, and a fight that has run for decades. What's different in 2026 is the man leading Tamil Nadu's side: Chief Minister Vijay — for years one of Tamil cinema's biggest draws, now the head of the state — who is pushing Karnataka for water even as his farewell film is torn off theatre walls across the border.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "cm vijay",
+          "dk shivakumar",
+          "cauvery water issue",
+          "cauvery",
+          "karnataka",
+          "cauvery water dispute",
+          "tamil nadu"
+        ],
+        "creator": [
+          "shuchi shukla"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 16:53:17",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 17:02:32",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155228826,thumbsize-139274,width-1280,height-720,resizemode-75/155228826.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e98c19b64163ef4f0c4244ce23856c40",
+        "link": "https://www.timesnownews.com/videos/times-now/india/political-tensions-rise-over-kaveri-water-dispute-between-karnataka-and-tamil-nadu-video-155228707",
+        "title": "Kaveri Row Escalates: DMK Hits Back As Pro-Kannada Groups Protest Water Release To Tamil Nadu",
+        "description": "The Kaveri water dispute has intensified as pro-Kannada groups staged protests in Karnataka against the release of 3,500 cusecs of water to Tamil Nadu for 15 days. Meanwhile, DMK MP TKS Elangovan questioned Karnataka's stand on withholding Kaveri water, while protests also erupted over FIRs filed against pro-Kannada activists in the Jan Nayagan poster controversy. #kaveri #karnataka #tamilnadu #dmk #mkstalin #water #protest #politics #timesnow #englishnews",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": null,
+        "creator": null,
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-01 15:52:34",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 16:04:02",
+        "image_url": null,
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "6952228121008cdf2e916e71fca6f723",
+        "link": "https://www.timesnownews.com/videos/times-now/india/rahul-gandhi-warns-congress-against-infighting-calls-delimitation-a-bjp-039conspiracy039-sources-video-155228449",
+        "title": "Rahul Gandhi Warns Congress Against Infighting, Calls Delimitation A BJP 'Conspiracy': Sources",
+        "description": "Congress leader and Leader of the Opposition Rahul Gandhi addressed party functionaries at an internal Congress meeting in Mahabalipuram, Tamil Nadu, where he reportedly acknowledged that factionalism and internal conflicts have hindered the party's growth in the state. According to sources, Rahul urged party leaders and cadres to remain united and work together to strengthen the Congress in Tamil Nadu. #rahulgandhi #congress #tamilnadu #delimitation #bjp #dmk #politics #timesnow",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": null,
+        "creator": null,
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-01 14:24:51",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 14:33:11",
+        "image_url": null,
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "8a102e731b2cd95b9fe3e63802fca7df",
+        "link": "https://www.thenewsminute.com/tamil-nadu/ahead-of-tabling-agri-budget-tn-minister-takes-documents-to-tirupati-temple",
+        "title": "Ahead of tabling Agri budget, TN minister takes documents to Tirupati temple",
+        "description": "The controversy linked to the ongoing Cauvery river water dispute between Tamil Nadu and Karnataka, accusing the State government of failing to address concerns affecting farmers.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tvk minister vinoth",
+          "minister vinoth tirupati visit",
+          "tvk vinoth tirupati",
+          "minister vinoth"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 12:43:38",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 13:07:43",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-01/zpfih2iy/WhatsApp-Image-2026-08-01-at-4.29.21-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "2fcdee1597ce2d1839ee948136802b51",
+        "link": "https://www.timesnownews.com/india/karnataka-cm-dk-shivakumar-appeals-against-cauvery-protests-says-cannot-hold-back-water-if-kabini-reservoir-reaches-full-capacity-article-155227614",
+        "title": "'Kabini Waters Can't Be Held Back If Reservoir Full': CM Shivakumar Appeals Against Cauvery Protests",
+        "description": "Karnataka's Chief Minister D K Shivakumar urged organizations protesting the release of Cauvery water to Tamil Nadu to cease their planned agitation, emphasizing that once the Kabini reservoir is full, water must be released.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "cauvery protests",
+          "kabini water",
+          "dk shivakumar",
+          "cauvery water row",
+          "karnataka",
+          "cauvery"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 12:13:45",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 12:32:13",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155227771,thumbsize-74038,width-1280,height-720,resizemode-75/155227771.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "47c373a619141468335dbb6297ad22af",
+        "link": "https://www.timesnownews.com/viral/watch-sniffer-dog-rocky-greets-tamil-nadu-chief-minister-joseph-vijay-at-police-medal-ceremony-gets-a-salute-in-return-viral-video-article-155227645",
+        "title": "WATCH: Sniffer Dog ‘Rocky’ Greets CM Vijay At Police Medal Ceremony– Gets A Salute In Return",
+        "description": "An adorable video of sniffer dog ‘Rocky’ greeting Tamil Nadu CM C Joseph Vijay at a police medal ceremony– and getting a salute from the CM in return– was shared online, which went viral and left everyone amused.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "cm vijay",
+          "tamil nadu chief minister",
+          "sniffer dog rocky",
+          "police medal ceremony",
+          "viral video",
+          "joseph vijay",
+          "watch"
+        ],
+        "creator": [
+          "poorva karki"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 11:33:07",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 12:03:49",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155227642,thumbsize-746108,width-1280,height-720,resizemode-75/155227642.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1016ffe01752bfa28fa71a49586ba2c3",
+        "link": "https://www.timesnownews.com/education/tancet-mca-2026-provisional-allotment-out-over-3900-seats-still-vacant-article-155227528",
+        "title": "TANCET MCA 2026 Provisional Allotment Out; Over 3,900 Seats Still Vacant",
+        "description": "DTE Tamil Nadu has released the TANCET MCA 2026 provisional allotment for candidates who confirmed their tentative seats on July 26. The allotment is based on rank, category, preferences, and seat availability, with 3,909 seats still unfilled across the state.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "dte",
+          "tancet",
+          "mba",
+          "tamil nadu",
+          "mca",
+          "directorate of technical education",
+          "the tamil nadu common entrance test"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 10:55:46",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 11:02:49",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155227599,thumbsize-102670,width-1280,height-720,resizemode-75/155227599.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f62c52af209910d5470f3a345018372f",
+        "link": "https://www.timesnownews.com/business-economy/industry/august-2026-bank-holiday-list-banks-to-remain-closed-on-these-days-across-states-article-155227352",
+        "title": "August 2026 Bank Holiday List: Banks To Remain Closed On These Days Across States",
+        "description": "Bank branches will remain shut on multiple days in August 2026 due to festivals and national holidays. Check the complete state-wise holiday list.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "august 2026 bank holidays",
+          "independence day bank holiday",
+          "state wise bank holidays",
+          "rbi bank holiday list",
+          "bank holidays august 2026"
+        ],
+        "creator": [
+          "priya raghuvanshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-01 10:55:37",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-01 11:02:47",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155227412,thumbsize-67804,width-1280,height-720,resizemode-75/155227412.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
       {
         "article_id": "cd08a17ca6b900722f619f7f13499696",
         "link": "https://www.timesnownews.com/business-economy/economy/8th-pay-commission-to-hold-chandigarh-consultations-from-september-1618-appointment-window-opens-article-155226964",
@@ -192,6 +568,6 @@
         "duplicate": false
       }
     ],
-    "pagesFetched": 2
+    "pagesFetched": 3
   }
 }
