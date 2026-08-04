@@ -11,6 +11,7 @@ type CrossDateReleaseBrowseProps = {
   emptyMessage: string;
   groups: [string, GovPressRelease[]][];
   renderGrid: (releases: GovPressRelease[]) => ReactNode;
+  headerActions?: ReactNode;
 };
 
 const DATE_BATCH = 4;
@@ -25,6 +26,7 @@ export function CrossDateReleaseBrowse({
   emptyMessage,
   groups,
   renderGrid,
+  headerActions,
 }: CrossDateReleaseBrowseProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const loadMoreRef = useRef<HTMLDivElement>(null);
@@ -57,9 +59,14 @@ export function CrossDateReleaseBrowse({
 
   return (
     <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
-      <div className="mb-3 shrink-0 space-y-1">
-        <h2 className="text-lg font-bold tracking-tight">{title}</h2>
-        <p className="text-xs text-muted-foreground">{subtitle}</p>
+      <div className="mb-3 shrink-0">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+          <div className="min-w-0 space-y-1">
+            <h2 className="text-lg font-bold tracking-tight">{title}</h2>
+            <p className="text-xs text-muted-foreground">{subtitle}</p>
+          </div>
+          {headerActions ? <div className="shrink-0 sm:pt-0.5">{headerActions}</div> : null}
+        </div>
       </div>
 
       <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto pr-1">

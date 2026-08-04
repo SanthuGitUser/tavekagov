@@ -5,11 +5,13 @@ import { DepartmentSearchProvider } from "@/context/DepartmentSearchContext";
 import { DistrictSearchProvider } from "@/context/DistrictSearchContext";
 import { MinisterSearchProvider } from "@/context/MinisterSearchContext";
 import { GovPressReleaseSearchProvider } from "@/context/GovPressReleaseSearchContext";
+import { GovPressReleaseViewProvider } from "@/context/GovPressReleaseViewContext";
 import { GovernmentOrdersSearchProvider } from "@/context/GovernmentOrdersSearchContext";
 import { GovernmentOrdersViewProvider } from "@/context/GovernmentOrdersViewContext";
 import { MagazineSearchProvider } from "@/context/MagazineSearchContext";
 import { NewsSearchProvider } from "@/context/NewsSearchContext";
 import { PressReleaseSearchProvider } from "@/context/PressReleaseSearchContext";
+import { PressReleaseViewProvider } from "@/context/PressReleaseViewContext";
 import { TransfersPostingsSearchProvider } from "@/context/TransfersPostingsSearchContext";
 import { AboutPage } from "@/pages/AboutPage";
 import { DashboardPage } from "@/pages/DashboardPage";
@@ -42,11 +44,13 @@ export default function App() {
           path="/press-releases"
           element={
             <PressReleaseSearchProvider>
-              <AppLayout
-                fillViewport
-                title="Press Releases"
-                description="DIPR press releases with department and type filters, searchable titles, and PDF links."
-              />
+              <PressReleaseViewProvider>
+                <AppLayout
+                  fillViewport
+                  title="Press Releases"
+                  description="DIPR press releases with department from dipr.tn.gov.in."
+                />
+              </PressReleaseViewProvider>
             </PressReleaseSearchProvider>
           }
         >
@@ -56,11 +60,13 @@ export default function App() {
           path="/gov-press-releases"
           element={
             <GovPressReleaseSearchProvider>
-              <AppLayout
-                fillViewport
-                title="PR Images"
-                description="Tamil Nadu government press release images from tn.gov.in, browsable by date with CM visit, review meeting, and posting filters."
-              />
+              <GovPressReleaseViewProvider>
+                <AppLayout
+                  fillViewport
+                  title="PR Images"
+                  description="Tamil Nadu government press release images from tn.gov.in."
+                />
+              </GovPressReleaseViewProvider>
             </GovPressReleaseSearchProvider>
           }
         >
@@ -89,7 +95,7 @@ export default function App() {
               <AppLayout
                 fillViewport
                 title="Transfers and Postings"
-                description="IAS transfer and posting G.O.s from tn.gov.in with PDF links."
+                description="IAS transfers and postings with name, old post, new post parsed from G.O. PDFs."
               />
             </TransfersPostingsSearchProvider>
           }
@@ -101,6 +107,7 @@ export default function App() {
           element={
             <DepartmentSearchProvider>
               <AppLayout
+                fillViewport
                 title="Departments"
                 description="Tamil Nadu government departments and ministers."
               />
@@ -114,6 +121,7 @@ export default function App() {
           element={
             <MinisterSearchProvider>
               <AppLayout
+                fillViewport
                 title="Council of Ministers"
                 description="Ministers, designations, and portfolios."
               />
@@ -127,6 +135,7 @@ export default function App() {
           element={
             <DistrictSearchProvider>
               <AppLayout
+                fillViewport
                 title="Districts"
                 description="District directory with population and website links."
               />

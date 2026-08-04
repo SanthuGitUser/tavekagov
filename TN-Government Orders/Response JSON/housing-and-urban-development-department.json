@@ -1,0 +1,40 @@
+{
+  "department_name": "Housing and Urban Development Department",
+  "dep_id_encoded": "MTU=",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=MTU=&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:34.654005+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:13.721449+05:30",
+  "fetchCount": 2,
+  "count": 3,
+  "orders": [
+    {
+      "go_date": "2026-07-03",
+      "go_number": "G.O Ms. No. 137",
+      "go_name": "Urban Development – Extension of time for submitting applications through online for regularization of buildings of Educational Institutions functioning prior to 01.01.2011 in non-plan areas – Orders issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hud_e_137_2026.pdf",
+      "department_name": "Housing and Urban Development Department",
+      "dep_id_encoded": "MTU="
+    },
+    {
+      "go_date": "2026-06-29",
+      "go_number": "G.O Ms. No. 129",
+      "go_name": "Urban Development - Amendment to Tamil Nadu Combined Development and Building Rules, 2019 – Industrial layout/Industrial estate developed by Government Department/Agencies – Reservation and transfer of OSR Land – Notification – Orders – Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hud_e_129_2026.pdf",
+      "department_name": "Housing and Urban Development Department",
+      "dep_id_encoded": "MTU="
+    },
+    {
+      "go_date": "2026-06-15",
+      "go_number": "G.O Ms. No. 126",
+      "go_name": "Urban Development - Scrutiny of HRB application in Chennai Metropolitan Area - Amendment to the Tamil Nadu Combined Development and Building Rules, 2019 - Orders Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/hud_e_126_2026.pdf",
+      "department_name": "Housing and Urban Development Department",
+      "dep_id_encoded": "MTU="
+    }
+  ]
+}

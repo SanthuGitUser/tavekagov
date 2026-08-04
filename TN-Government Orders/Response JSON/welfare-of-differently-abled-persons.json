@@ -1,0 +1,15 @@
+{
+  "department_name": "Welfare of Differently Abled Persons",
+  "dep_id_encoded": "MzU=",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=MzU=&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:42.477518+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:21.643017+05:30",
+  "fetchCount": 2,
+  "count": 0,
+  "orders": []
+}

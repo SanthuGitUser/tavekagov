@@ -1,4 +1,4 @@
-import { MapPin } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 import { useMemo, useState } from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -22,12 +22,29 @@ function getInitials(value: string): string {
 
 function DistrictTile({ district }: { district: TnDistrict }) {
   const [imageFailed, setImageFailed] = useState(false);
-  const href = district.website_url ?? undefined;
-  const isLink = Boolean(href);
+  const websiteHref = district.website_url ?? null;
+
+  function openWebsite(event: React.MouseEvent<HTMLButtonElement>) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (!websiteHref) return;
+    window.open(websiteHref, "_blank", "noopener,noreferrer");
+  }
 
   const content = (
     <>
       <div className="relative aspect-[5/4] overflow-hidden bg-muted">
+        {websiteHref ? (
+          <button
+            type="button"
+            onClick={openWebsite}
+            className="absolute right-1.5 top-1.5 z-10 inline-flex h-7 w-7 items-center justify-center rounded-md bg-background/85 text-muted-foreground shadow-sm backdrop-blur transition hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            aria-label={`Visit ${district.name} website`}
+            title="Visit website"
+          >
+            <ExternalLink className="h-3.5 w-3.5" />
+          </button>
+        ) : null}
         {!imageFailed ? (
           <img
             src={getDistrictImageUrl(district.name)}
@@ -60,24 +77,10 @@ function DistrictTile({ district }: { district: TnDistrict }) {
     </>
   );
 
-  if (!isLink) {
-    return (
-      <Card className="overflow-hidden opacity-90">
-        <CardContent className="p-0">{content}</CardContent>
-      </Card>
-    );
-  }
-
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      className="group block overflow-hidden rounded-lg border border-border bg-card shadow-sm transition hover:border-primary/25 hover:shadow-md"
-      title={`Visit ${district.name} website`}
-    >
-      {content}
-    </a>
+    <Card className="group overflow-hidden">
+      <CardContent className="p-0">{content}</CardContent>
+    </Card>
   );
 }
 
@@ -114,10 +117,14 @@ export function DistrictsPage() {
   }
 
   return (
-    <div className="grid gap-2 grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8">
-      {filtered.map((district) => (
-        <DistrictTile key={district.id} district={district} />
-      ))}
+    <div className="flex min-h-0 flex-1 flex-col">
+      <div className="min-h-0 flex-1 overflow-y-auto pr-1">
+        <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8">
+          {filtered.map((district) => (
+            <DistrictTile key={district.id} district={district} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

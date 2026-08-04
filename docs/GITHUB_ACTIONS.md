@@ -10,7 +10,8 @@ Most fetch workflows run daily at **11:00 PM IST** (17:30 UTC). **Tamil Nadu new
 |----------|-----------|--------------|--------|
 | [fetch-tn-dipr-press-releases.yml](../.github/workflows/fetch-tn-dipr-press-releases.yml) | `tn_press_release_sync.py` | `TN-DIPR-Press Release/Response JSON/` | — |
 | [fetch-tn-gov-manifests.yml](../.github/workflows/fetch-tn-gov-manifests.yml) | `tn_ministers_sync.py`, `tn_dept_sync.py`, `tn_districts_sync.py` | `TN-GOV_*/manifests/*.json` | — |
-| [fetch-tn-scraped-data.yml](../.github/workflows/fetch-tn-scraped-data.yml) | `tn_gov_press_release_sync.py`, `tn_go_dept_sync.py`, `tn_transfers_postings_sync.py`, `tn_magazine_sync.py` | `TN-GOV-Press Release/`, `TN-GOV_GO-Departments/`, `TN-IAS_Transfers-Postings/`, `TN-TVA-Magazine/` | — |
+| [fetch-tn-scraped-data.yml](../.github/workflows/fetch-tn-scraped-data.yml) | `tn_gov_press_release_sync.py`, `tn_transfers_postings_sync.py`, `tn_magazine_sync.py` | `TN-GOV-Press Release/`, `TN-IAS_Transfers-Postings/`, `TN-TVA-Magazine/` | — |
+| [fetch-tn-government-orders.yml](../.github/workflows/fetch-tn-government-orders.yml) | `tn_government_orders_sync.py` | `TN-Government Orders/Response JSON/` | — |
 | [fetch-tamil-nadu-news.yml](../.github/workflows/fetch-tamil-nadu-news.yml) | `fetch_tamil_nadu_news.py` | `TN-News/Response JSON/` | `NEWSDATA_API_KEY` |
 | [deploy-web.yml](../.github/workflows/deploy-web.yml) | `npm run build` in `web/` | GitHub Pages (`web/dist`) | — |
 
@@ -26,7 +27,7 @@ TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
 |------|----------------|
 | DIPR press releases | `--start-date "$TODAY" --end-date "$TODAY"` |
 | Gov PR images | `--start-date "$TODAY" --end-date "$TODAY"` |
-| Government orders | `--start-date "$TODAY" --end-date "$TODAY"` |
+| Government orders | `--from-existing --replace-orders` (full refresh per department) |
 | Transfers & postings | `--start-date "$TODAY" --end-date "$TODAY"` |
 | Tamil Arasu magazine | `--since-date "$TODAY"` (current month issues) |
 | Ministers / departments / districts | No date filter (full manifest refresh) |
@@ -40,6 +41,7 @@ Fetch workflows commit only when JSON changes:
 chore: update TN DIPR press releases YYYY-MM-DD
 chore: update TN ministers, departments, and districts YYYY-MM-DD
 chore: update TN gov scraped data YYYY-MM-DD
+chore: update TN government orders YYYY-MM-DD
 chore: update Tamil Nadu news YYYY-MM-DD
 ```
 
@@ -54,6 +56,7 @@ Commits are pushed to `main` by `github-actions[bot]`.
 - `web/**`
 - `TN-News/**`
 - `TN-DIPR-Press Release/**`
+- `TN-Government Orders/**`
 - `.github/workflows/deploy-web.yml`
 
 **Build settings:**
@@ -61,7 +64,7 @@ Commits are pushed to `main` by `github-actions[bot]`.
 - Node.js 22
 - `VITE_BASE_PATH=/tavekagov/` (project site URL)
 
-**Note:** JSON updates under other folders (G.O.s, PR images, transfers, magazine, manifests) are committed by Actions but **do not** currently trigger redeploy. To refresh the live site after those updates, either push a change under a watched path or run **Deploy Web Dashboard** manually.
+**Note:** JSON updates under other folders (PR images, transfers, magazine, manifests) are committed by Actions but **do not** currently trigger redeploy unless they fall under a watched path above. To refresh the live site after those updates, either push a change under a watched path or run **Deploy Web Dashboard** manually.
 
 ## TN government sites from GitHub-hosted runners
 
@@ -73,6 +76,7 @@ Affected workflows:
 |----------|---------|------------------------|
 | **Fetch TN DIPR Press Releases** | `dipr.tn.gov.in` | `Sync-Config/check_dipr_reachable.py` |
 | **Fetch TN Gov Scraped Data** | `www.tn.gov.in`, `tnsectdemo.tn.gov.in`, `tamildigitallibrary.in` | `check_tn_gov_reachable.py`, `check_tn_ias_reachable.py`, `check_tva_magazine_reachable.py` |
+| **Fetch TN Government Orders** | `www.tn.gov.in` | `Sync-Config/check_tn_gov_reachable.py` |
 | **Fetch TN Gov Manifests** | `www.tn.gov.in` | `Sync-Config/check_tn_gov_reachable.py` |
 
 These workflows run a **15-second preflight** before scraping. If a host is unreachable, its scrapers are skipped with a workflow warning instead of failing the whole job for minutes.

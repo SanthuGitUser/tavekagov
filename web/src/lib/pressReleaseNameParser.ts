@@ -21,7 +21,7 @@ const DATE_SUFFIX_RE =
 const LANG_SUFFIX_RE = /\s*[-.\s]*(English|Tamil)\s*$/i;
 const DEPT_SEGMENT_RE = /^(.+?\s+Dept)\s+(.+)$/i;
 const DEPT_TOKEN_RE =
-  /\bDept\b|\bDepartment\b|Minister for\s+.+|MAWS\s+Dept|EB\s+Dept|RD\s+Dept/i;
+  /\bDept\b|\bDepartment\b|MAWS\s+Dept|EB\s+Dept|RD\s+Dept/i;
 const GENERIC_PRESS_RELEASE = /^Press Release$/i;
 const MINISTER_FOR_RE = /minister\s+for\s+(.+)$/i;
 const MINISTER_TITLE_RE =
@@ -436,7 +436,7 @@ export function enrichPressRelease(
   return {
     ...release,
     release_type: parsed.release_type,
-    department_name: parsed.department_name,
+    department_name: department?.name ?? parsed.department_name,
     topic: parsed.topic,
     department_id: resolvedDepartmentId,
     minister_id: ministerMatch.id,

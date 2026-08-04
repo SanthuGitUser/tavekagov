@@ -1,8 +1,8 @@
 {
   "date": "2026-05-30",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 1,
   "postings": [
@@ -11,7 +11,66 @@
       "go_date": "2026-05-30",
       "go_number": "G.O. RT.1889, dt 30.5.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1889, dt 30.5.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1889, dt 30.5.2026.pdf",
+      "officers": [
+        {
+          "name": "Thiru R. Kirlosh Kumar",
+          "details": "Thiru R. Kirlosh Kumar, IAS, Principal Secretary to Lok Bhavan, is transferred and posted as Principal Secretary to Government, Housing and Urban Development Department vice Dr. R Selvaraj, holding additional charge; IAS",
+          "old_post": "Principal Secretary to Lok Bhavan",
+          "new_post": "Principal Secretary to Government, Housing and Urban Development Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt Sharanya Ari",
+          "details": "Tmt Sharanya Ari, IAS, Additional Director, Social Welfare, is transferred and posted as District Collector, Perambalur District",
+          "old_post": "Additional Director, Social Welfare",
+          "new_post": "District Collector, Perambalur District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt N. Mirunalini",
+          "details": "Tmt N. Mirunalini, IAS, District Collector, Perambalur District is transferred and posted as District Collector, Ariyalur District",
+          "old_post": "District Collector, Perambalur District",
+          "new_post": "District Collector, Ariyalur District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt S. Malathi Helen",
+          "details": "Tmt S. Malathi Helen, IAS, formerly District Collector Chengalpattu District is posted as District Collector, Chennai District",
+          "old_post": "",
+          "new_post": "District Collector, Chennai District",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru M. Prabakaran",
+          "details": "Thiru M. Prabakaran, IAS, Commissioner posted Collector, Corporation of Coimbatore is transferred and as District Ramanathapuram District in the place of Thiru Simranjeet Singh Kahlon IAS, already transferred; and Kavitha, Managing Director, Tamil Nadu (vi) Tmt S. IAS, Joint Co-operative Milk Producers’ Federation Limited is transferred and posted as District Collector, Tiruvallur District in the place of",
+          "old_post": "Commissioner posted Collector, Corporation of Coimbatore",
+          "new_post": "District Collector, Tiruvallur District",
+          "confidence": 0.9
+        },
+        {
+          "name": "Tmt Chitra Vijayan",
+          "details": "Tmt Chitra Vijayan, IAS, Commissioner Corporation of Madurai, are placed at the disposal of Greater Chennai Corporation for appointment as its Regional Deputy Commissioner (North)",
+          "old_post": "Commissioner Corporation of Madurai",
+          "new_post": "Greater Chennai Corporation for appointment as Regional Deputy Commissioner (North)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru Veer Pratap Singh",
+          "details": "Thiru Veer Pratap Singh, IAS, Deputy Secretary to Government (Protocol), Public Department are placed at the disposal of Corporation of Tiruchirappalli for appointment its Commissioner vice as Madhubalan, already transferred; Thiru L. IAS",
+          "old_post": "Deputy Secretary to Government (Protocol), Public Department",
+          "new_post": "Corporation of Tiruchirappalli for appointment its Commissioner",
+          "confidence": 0.9
+        },
+        {
+          "name": "Thiru Gaurav Kumar",
+          "details": "Thiru Gaurav Kumar, IAS, Executive Director Chennai Metropolitan Water Supply and Sewerage Board, are placed at the disposal of Corporation of Madurai for appointment its Commissioner vice as",
+          "old_post": "Executive Director Chennai Metropolitan Water Supply and Sewerage Board",
+          "new_post": "Corporation of Madurai for appointment its Commissioner",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     }
   ]
 }

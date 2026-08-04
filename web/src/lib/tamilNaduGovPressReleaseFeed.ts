@@ -1,4 +1,6 @@
 import { normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
+import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
+import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
 import type { GovPressRelease, TnDept, TnMinister } from "@/types/models";
 
 type DailyReference = {
@@ -18,6 +20,13 @@ const dailyJsonFiles = import.meta.glob(
   "../../../TN-GOV-Press Release/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { eager: true, import: "default" },
 ) as Record<string, DailyResponseFile>;
+
+const officialDepartmentsById = new Map(
+  tamilNaduDepartmentsFeed.departments.map((department) => [department.id, department.name]),
+);
+const officialMinistersById = new Map(
+  tamilNaduMinistersFeed.ministers.map((minister) => [minister.id, minister.name]),
+);
 
 function enrichmentScore(release: GovPressRelease): number {
   return (
@@ -184,11 +193,15 @@ function mergeDailyFiles(): {
         existing ? preferEnrichedRelease(existing, parsed) : parsed,
       );
 
-      if (parsed.minister_id != null && parsed.minister_name) {
+      if (parsed.minister_id != null) {
+        const officialName = officialMinistersById.get(parsed.minister_id);
+        const ministerName = officialName ?? parsed.minister_name;
+        if (!ministerName) continue;
+
         const current = ministersById.get(parsed.minister_id);
         ministersById.set(parsed.minister_id, {
           id: parsed.minister_id,
-          name: parsed.minister_name,
+          name: ministerName,
           designation: current?.designation ?? "",
           portfolio: current?.portfolio ?? null,
           photo_url: current?.photo_url ?? null,
@@ -197,14 +210,22 @@ function mergeDailyFiles(): {
         });
       }
 
-      if (parsed.department_id != null && parsed.department_name) {
+      if (parsed.department_id != null) {
+        const officialName = officialDepartmentsById.get(parsed.department_id);
+        const departmentName = officialName ?? parsed.department_name;
+        if (!departmentName) continue;
+
         const current = departmentsById.get(parsed.department_id);
+        const officialDepartment = tamilNaduDepartmentsFeed.departments.find(
+          (department) => department.id === parsed.department_id,
+        );
         departmentsById.set(parsed.department_id, {
           id: parsed.department_id,
-          name: parsed.department_name,
-          dep_id_encoded: current?.dep_id_encoded ?? "",
-          minister_name: current?.minister_name ?? null,
-          display_order: current?.display_order ?? parsed.department_id,
+          name: departmentName,
+          dep_id_encoded: officialDepartment?.dep_id_encoded ?? current?.dep_id_encoded ?? "",
+          minister_name: officialDepartment?.minister_name ?? current?.minister_name ?? null,
+          display_order:
+            officialDepartment?.display_order ?? current?.display_order ?? parsed.department_id,
         });
       }
     }

@@ -1,0 +1,24 @@
+{
+  "department_name": "Social Welfare and Women Empowerment Department",
+  "dep_id_encoded": "MzA=",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=MzA=&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:40.444682+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:19.578742+05:30",
+  "fetchCount": 2,
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-07-15",
+      "go_number": "G.O(Ms)No.20",
+      "go_name": "Social Welfare and Women Empowerment Department - Chief Ministers Breakfast Scheme named as Perunthalaivar Kamarajar Breakfast Scheme - Expansion of the Perunthalaivar Kamarajar Breakfast Scheme to Class Vi to VIII students in all Government and Government aided schools in Tamil Nadu - Orders issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/swwe_t_20_2026.pdf",
+      "department_name": "Social Welfare and Women Empowerment Department",
+      "dep_id_encoded": "MzA="
+    }
+  ]
+}

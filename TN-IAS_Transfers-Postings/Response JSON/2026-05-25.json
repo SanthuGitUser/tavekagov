@@ -1,8 +1,8 @@
 {
   "date": "2026-05-25",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 2,
   "postings": [
@@ -11,14 +11,18 @@
       "go_date": "2026-05-25",
       "go_number": "G.O. RT.1829, dt 25.5.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1829, dt 25.5.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1829, dt 25.5.2026.pdf",
+      "officers": [],
+      "parse_status": "no_officers"
     },
     {
       "serial_number": 21,
       "go_date": "2026-05-25",
       "go_number": "G.O. RT.1830, dt 25.5.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1830, dt 25.5.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1830, dt 25.5.2026.pdf",
+      "officers": [],
+      "parse_status": "no_officers"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "date": "2026-05-15",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 3,
   "postings": [
@@ -11,21 +11,212 @@
       "go_date": "2026-05-15",
       "go_number": "GO RT NO-1745, dt 15.5.2026.pdf",
       "subject": "IAS Transfer and Posting",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/GO RT NO-1745, dt 15.5.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/GO RT NO-1745, dt 15.5.2026.pdf",
+      "officers": [
+        {
+          "name": "Thiru Gagandeep Singh Bedi",
+          "details": "Thiru Gagandeep Singh Bedi, IAS, Additional Chief Secretary Panchayat Department, is to Government, Rural Development and Raj transferred and posted as Additional Chief Secretary to Government Municipal Administration and Water Supply Department in the post created in 1 above",
+          "old_post": "",
+          "new_post": "Additional Chief Secretary to Government Municipal Administration and Water Supply Department in the post created in 1 above",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt. P. Amudha",
+          "details": "Tmt. P. Amudha, IAS, Additional Chief Secretary to Government, Revenue and Disaster Management Department, is transferred and posted Additional Chief Secretary to Government, as and Protection Department in the post created Cooperation, Food Consumer in para 1 above",
+          "old_post": "Additional Chief Secretary to Government, Revenue and Disaster Management Department",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Satyabrata Sahoo",
+          "details": "Thiru Satyabrata Sahoo, IAS, Principal Secretary to Government, Youth Welfare and Sports Development Department, is Government, Water transferred and posted as Principal Secretary to Resources Department in the post created in para 2 above",
+          "old_post": "",
+          "new_post": "Principal Secretary to Resources Department in the post created in para 2 above",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru J. Jayakanthan",
+          "details": "Thiru J. Jayakanthan, IAS Shunchonngam Jatak Chiru, IAS, Principal Secretary to (iv) Thiru Government, Transport Department is transferred and posted as Principal Secretary to Government, Public Works Department in the post created in 2 above",
+          "old_post": "",
+          "new_post": "Principal Secretary to Government, Public Works Department in the post created in 2 above",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Mangat Ram Sharma",
+          "details": "Thiru Mangat Ram Sharma, IAS; para Natural He shall hold the post of Principal Secretary to Government Resources Department in the post created in para 2 above in full additional charge until further orders Meshram, IAS, Principal Secretary / Managing (v) Thiru Anil Director, Tamil Nadu Minerals Limited, is transferred and posted as Principal Secretary to Government, Energy Department, in the post created in para 2 above",
+          "old_post": "",
+          "new_post": "Principal Secretary to Government, Energy Department, in the post created in para 2 above",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. M. Vailalar",
+          "details": "Dr. M. Vailalar, IAS, Commissioner, Rehabilitation of Non-Resident Tamils, is transferred and posted as Secretary to Government, Transport Department in the post created in para 3 above",
+          "old_post": "Commissioner, Rehabilitation of Non-Resident Tamils",
+          "new_post": "Secretary to Government, Transport Department in the post created in para 3 above",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. K.S. Palanisamy",
+          "details": "Dr. K.S. Palanisamy, IAS, Secretary to Government Cooperation, Food and Consumer Protection Department, is transferred and posted Secretary to Government, Revenue and Disaster Management as the created in 3 above",
+          "old_post": "Secretary to Government Cooperation, Food and Consumer Protection Department",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Dakshinamoorthy",
+          "details": "Thiru Dakshinamoorthy, IAS, formerly Agricultural V Production Commissioner and Secretary to Government, Agriculture Farmers Welfare Department, is posted as Secretary to Government Backward Classes, Most Backward Classes and Minorities Welfare above Thiru E.Saravanavelraj, Department in the post created in para 3 vice IAS",
+          "old_post": "",
+          "new_post": "Secretary to Government Backward Classes, Most Backward Classes and Minorities Welfare above Thiru E.Saravanavelraj, Department in the post created in para 3",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Sajjansingh R Chavan",
+          "details": "Thiru Sajjansingh R Chavan, IAS, Secretary to Government transferred and posted Planning and Development Department, is as Secretary to Government, Youth Welfare and Sports Development Department in the cadre post",
+          "old_post": "",
+          "new_post": "",
+          "confidence": 0.30000000000000004
+        },
+        {
+          "name": "Thiru Prashant M Wadnere",
+          "details": "Thiru Prashant M Wadnere, IAS, Secretary to Government (Expenditure), Finance Department, is transferred and posted as Secretary to Government, Rural Development and Panchayat Raj Department in the cadre post",
+          "old_post": "Secretary to Government (Expenditure), Finance Department",
+          "new_post": "Secretary to Government, Rural Development and Panchayat Raj Department in the cadre post",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru G.K. Arun Sundar Thayalan",
+          "details": "Thiru G.K. Arun Sundar Thayalan, IAS, Special Secretary to Government, Finance Department, is transferred and posted as Inspector General of Registration in the cadre post vice Thiru Dinesh Ponraj Oliver IAS",
+          "old_post": "Special Secretary to Government, Finance Department",
+          "new_post": "Inspector General of Registration in the cadre post",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru G. Lakshmipathy",
+          "details": "Thiru G. Lakshmipathy, IAS, formerly Joint Secretary to then Chief Minister is posted Joint Secretary to Government, Finance as cadre Department, in the post",
+          "old_post": "",
+          "new_post": "",
+          "confidence": 0.30000000000000004
+        },
+        {
+          "name": "Thiru T. Anand",
+          "details": "Thiru T. Anand, IAS, Commissioner, Adi Dravidar Welfare, placed at the disposal of Chennai Metropolitan Water are and Board for appointment its Managing Director vice Supply Sewerage as",
+          "old_post": "",
+          "new_post": "Chennai Metropolitan Water are and Board for appointment its Managing Director",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru A.R. Rahul Nadh",
+          "details": "Thiru A.R. Rahul Nadh, IAS, Director and Climate Change, placed at the disposal of Chennai Environment are Metropolitan Development Authority for appointment as its Member Secretary",
+          "old_post": "",
+          "new_post": "Chennai Environment are Metropolitan Development Authority for appointment as Member Secretary",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. G.S. Sameeran",
+          "details": "Dr. G.S. Sameeran, IAS, Managing Director Tamil Nadu Water Supply and Drainage Board are placed at the disposal of Greater Chennai Corporation for appointment as its Commissioner",
+          "old_post": "Managing Director Tamil Nadu Water Supply and Drainage Board",
+          "new_post": "Greater Chennai Corporation for appointment as Commissioner",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. M. Aarthi",
+          "details": "Dr. M. Aarthi, IAS Secretary to then Deputy Chief Minister, are placed at the disposal of Tamil Nadu Corporation for Development of Women Limited for appointment as its Managing Director",
+          "old_post": "",
+          "new_post": "Tamil Nadu Corporation for Development of Women Limited for appointment as Managing Director",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Dinesh Ponraj Oliver",
+          "details": "Thiru Dinesh Ponraj Oliver, IAS, Inspector General of Registration, are placed at the disposal of Tamil Nadu Water Supply and Drainage Board for appointment its Managing Director_vice as",
+          "old_post": "Inspector General of Registration",
+          "new_post": "Tamil Nadu Water Supply and Drainage Board for appointment its Managing Director_vice as",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     },
     {
       "serial_number": 27,
       "go_date": "2026-05-15",
       "go_number": "G O Rt No 1739.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G O Rt No 1739.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G O Rt No 1739.pdf",
+      "officers": [
+        {
+          "name": "Thiru B. Murugesh",
+          "details": "Thiru B. Murugesh, IAS, Director, Agriculture, is and posted as Secretary, State Human Rights Commission in the post created in para 1 above",
+          "old_post": "",
+          "new_post": "Secretary, State Human Rights Commission in the post created in para 1 above",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. K.V. Muralidharan",
+          "details": "Dr. K.V. Muralidharan, IAS, Director, Fisheries; and Managing Director, Tamil Nadu Fisheries Development Corporation is transferred and posted Director, Agriculture in the post created in 1 above vice as para",
+          "old_post": "Director, Fisheries; and Managing Director, Tamil Nadu Fisheries Development Corporation",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru C. Muthukumaran",
+          "details": "Thiru C. Muthukumaran, IAS, Director (Disaster Management), Tamil Nadu State Disaster Risk Reduction Agency, Chennai Collector, District vice is transferred and posted as District Karur",
+          "old_post": "Director (Disaster Management), Tamil Nadu State Disaster Risk Reduction Agency, Chennai Collector, District vice",
+          "new_post": "District Karur",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru V. Nallasivan",
+          "details": "Thiru V. Nallasivan, IAS, Sub Collector (Training) Chengalpattu, completion of his executive training is posted as on Thiru S. Balaji, Sub Collector, Sriperumbudur, Kancheepuram District vice Revenue Divisional Officer Under Rule 12(1) of the IAS (Pay) Rules, 2016, the 3 Human Rights Government declare that the posts of Secretary, State Commission; and Director, Agriculture created in para 1 above be equivalent in status and responsibilities to the cadre post of “Director of Social Welfare” specified in Schedule II-B of the IAS (Pay) Rules, 2016. as",
+          "old_post": "",
+          "new_post": "on Thiru S. Balaji, Sub Collector, Sriperumbudur, Kancheepuram District",
+          "confidence": 0.65
+        }
+      ],
+      "parse_status": "ok"
     },
     {
       "serial_number": 28,
       "go_date": "2026-05-15",
       "go_number": "G O Rt No 1738.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G O Rt No 1738.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G O Rt No 1738.pdf",
+      "officers": [
+        {
+          "name": "Thiru Pradeep Yadav",
+          "details": "Thiru Pradeep Yadav, IAS Additional formerly Secretary to then Deputy Chief Minister, is posted as Chief Government, Information Technology and Digital Secretary to created in 1 above vice Services Department in the post para of India",
+          "old_post": "",
+          "new_post": "Chief Government, Information Technology and Digital Secretary to created in 1 above",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru T.N. Venkatesh",
+          "details": "Thiru T.N. Venkatesh, IAS, Principal Secretary / Vice Chairman (ii) Nadu Maritime Board is transferred and and Chief Executive Officer, Tamil Handiooms, Handicrafts, posted as Principal Secretary to Government vice Textiles and Khadi Department in the post created in para 2 above Amuthavalli, IAS; Tmt V Government, (ili)",
+          "old_post": "Principal Secretary / Vice Chairman (ii) Nadu Maritime Board",
+          "new_post": "Principal Secretary to Government",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. P. Shankar",
+          "details": "Dr. P. Shankar, IAS, formerly Secretary to Higher Education Department, is posted as Agricultural Production and Secretary to Government, Agriculture Farmers Welfare Commissioner created in 3 above vice Department in the post para",
+          "old_post": "",
+          "new_post": "Agricultural Production and Secretary to Government, Agriculture Farmers Welfare Commissioner created in 3 above",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt G. Latha",
+          "details": "Tmt G. Latha, IAS, Commissioner, Entrepreneurship Institute, is transferred and posted as Development and Innovation Nanthakumar, IAS, already Registrar of Cooperative Societies vice Thiru K transferred; and Krishnan, IAS, return from leave, is posted (v) Tmt B. Gayathri on Office of the Commissioner of as Director (Social Security Schemes) created in Revenue Administration and Disaster Management in the post 4 above",
+          "old_post": "Commissioner, Entrepreneurship Institute",
+          "new_post": "Development and Innovation Nanthakumar, IAS, already Registrar of Cooperative Societies",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru Kiran Gurrala",
+          "details": "Thiru Kiran Gurrala, IAS, holding additional charge. para Deepak Jacob, IAS, Director, Survey and 6. The services of Thiru appointment its Settlement, are placed at the disposal of GUIDANCE for as Managing Director / Chief Executive Officer",
+          "old_post": "holding additional charge. para Deepak Jacob, IAS, Director, Survey and 6. The services of Thiru appointment its Settlement",
+          "new_post": "GUIDANCE for as Managing Director / Chief Executive Officer",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     }
   ]
 }

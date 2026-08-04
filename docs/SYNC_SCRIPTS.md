@@ -20,7 +20,7 @@ python tn_dept_sync.py
 |--------|--------|--------|---------------|
 | `tn_press_release_sync.py` | [TN-DIPR-Press Release](../TN-DIPR-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-dipr-press-releases.yml` |
 | `tn_gov_press_release_sync.py` | [TN-GOV-Press Release](../TN-GOV-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-scraped-data.yml` |
-| `tn_go_dept_sync.py` | [TN-GOV_GO-Departments](../TN-GOV_GO-Departments/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-scraped-data.yml` |
+| `tn_government_orders_sync.py` | [TN-Government Orders](../TN-Government%20Orders/) | `Response JSON/<department>.json` | `fetch-tn-government-orders.yml` |
 | `tn_transfers_postings_sync.py` | [TN-IAS_Transfers-Postings](../TN-IAS_Transfers-Postings/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-scraped-data.yml` |
 | `tn_magazine_sync.py` | [TN-TVA-Magazine](../TN-TVA-Magazine/) | `manifests/magazine.json`, `Response JSON/` | `fetch-tn-scraped-data.yml` |
 | `tn_dept_sync.py` | [TN-GOV_Departments](../TN-GOV_Departments/) | `manifests/tn_departments.json` | `fetch-tn-gov-manifests.yml` |
@@ -32,10 +32,10 @@ python tn_dept_sync.py
 
 ### Date-range scrapers
 
-Used by DIPR press releases, gov PR images, G.O.s, and transfers.
+Used by DIPR press releases, gov PR images, and transfers.
 
 ```powershell
-python tn_go_dept_sync.py --start-date 10-05-2026 --end-date 31-07-2026
+python tn_transfers_postings_sync.py --start-date 10-05-2026 --end-date 31-07-2026
 ```
 
 | Flag | Format | Default |
@@ -56,15 +56,37 @@ python tn_go_dept_sync.py --start-date 10-05-2026 --end-date 31-07-2026
 - Enriches titles with minister/department IDs from manifests
 - Optional backfill: `--start-date` / `--end-date`
 
-### Government orders (`tn_go_dept_sync.py`)
+### Government orders (`tn_government_orders_sync.py`)
 
-- Scrapes `godept_list.php` by date range
-- Output key: `orders[]`
+- Scrapes `godept_list.php` and fetches each department's G.O. page
+- One JSON file per department under `Response JSON/`
+- Only includes G.O.s from **10 May 2026** onward (configurable via `--start-date`)
+- Refresh existing files: `python tn_government_orders_sync.py --from-existing --replace-orders`
+
+```powershell
+python tn_government_orders_sync.py
+python tn_government_orders_sync.py --from-existing --replace-orders
+python tn_government_orders_sync.py --start-date 10-05-2026 --end-date 31-07-2026
+```
+
+| Flag | Purpose |
+|------|---------|
+| `--from-existing` | Refresh JSON files already in `Response JSON/` |
+| `--replace-orders` | Replace the `orders` array instead of merging |
+| `--start-date` / `--end-date` | Filter G.O.s by date (`DD-MM-YYYY`) |
+| `--output-dir` | Output folder (default: `Response JSON/`) |
 
 ### Transfers & postings (`tn_transfers_postings_sync.py`)
 
 - Scrapes IAS transfer G.O.s from `tnsectdemo.tn.gov.in`
-- Output key: `postings[]`
+- Downloads each G.O. PDF during sync and extracts **name**, **old post**, and **new post** via Tesseract OCR (PDFs are scanned images)
+- Output key: `postings[]` with nested `officers[]` and `parse_status`
+- Requires [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) on the machine running the sync
+
+| Flag | Purpose |
+|------|---------|
+| `--skip-pdf-parse` | Listing only; skip PDF download and officer parsing |
+| `--start-date` / `--end-date` | Filter G.O.s by date (`DD-MM-YYYY`) |
 
 ### Magazine (`tn_magazine_sync.py`)
 

@@ -26,6 +26,8 @@ from zoneinfo import ZoneInfo
 import requests
 import urllib3
 
+from tn_ias_transfer_pdf_parse import TransferOfficer, parse_transfer_pdf
+
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
@@ -53,6 +55,8 @@ class TransferPosting:
     go_number: str
     subject: str
     pdf_url: str
+    officers: tuple[TransferOfficer, ...] = ()
+    parse_status: str = "pending"
 
 
 def _load_config() -> tuple[str, str]:
@@ -121,6 +125,7 @@ def fetch_transfer_postings(
     source_url: str,
     start_date: date,
     end_date: date,
+    parse_pdfs: bool = True,
 ) -> list[TransferPosting]:
     if str(_SYNC_CONFIG) not in sys.path:
         sys.path.insert(0, str(_SYNC_CONFIG))
@@ -130,16 +135,66 @@ def fetch_transfer_postings(
     response.raise_for_status()
 
     all_postings = parse_transfer_postings(response.text, base_url=source_url)
-    return [
+    filtered = [
         posting
         for posting in all_postings
         if start_date <= _parse_display_date(posting.go_date) <= end_date
     ]
+    if not parse_pdfs:
+        return filtered
+
+    enriched: list[TransferPosting] = []
+    for index, posting in enumerate(filtered, start=1):
+        officers, parse_status = _parse_posting_pdf(session, posting.pdf_url)
+        enriched.append(
+            TransferPosting(
+                serial_number=posting.serial_number,
+                go_date=posting.go_date,
+                go_number=posting.go_number,
+                subject=posting.subject,
+                pdf_url=posting.pdf_url,
+                officers=tuple(officers),
+                parse_status=parse_status,
+            )
+        )
+        print(
+            f"  [{index}/{len(filtered)}] {posting.go_number}: "
+            f"{len(officers)} officer(s), parse_status={parse_status}"
+        )
+    return enriched
+
+
+def _parse_posting_pdf(
+    session: requests.Session,
+    pdf_url: str,
+) -> tuple[list[TransferOfficer], str]:
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from http_client import DEFAULT_CONNECT_READ_TIMEOUT
+
+    try:
+        response = session.get(pdf_url, timeout=DEFAULT_CONNECT_READ_TIMEOUT)
+        response.raise_for_status()
+    except requests.RequestException as error:
+        print(f"    PDF download failed: {error}")
+        return [], "download_error"
+
+    return parse_transfer_pdf(response.content)
 
 
 def _posting_to_json_record(posting: TransferPosting) -> dict[str, object]:
     record = asdict(posting)
     record["go_date"] = _parse_display_date(posting.go_date).isoformat()
+    record["officers"] = [
+        {
+            "name": officer.name,
+            "details": officer.details,
+            "old_post": officer.old_post,
+            "new_post": officer.new_post,
+            "confidence": officer.confidence,
+        }
+        for officer in posting.officers
+    ]
     return record
 
 
@@ -184,6 +239,11 @@ def main() -> int:
         "--end-date",
         help="Include G.O.s up to this date (DD-MM-YYYY). Defaults to today (Asia/Kolkata).",
     )
+    parser.add_argument(
+        "--skip-pdf-parse",
+        action="store_true",
+        help="Fetch listing only; do not download or parse PDFs.",
+    )
     args = parser.parse_args()
 
     source_url, default_start_date = _load_config()
@@ -205,11 +265,14 @@ def main() -> int:
     session.verify = False
 
     print(f"Source page: {source_url}")
+    if not args.skip_pdf_parse:
+        print("Parsing PDFs for officer details (name, old post, new post)...")
     postings = fetch_transfer_postings(
         session,
         source_url=source_url,
         start_date=start_date,
         end_date=end_date,
+        parse_pdfs=not args.skip_pdf_parse,
     )
     print(
         f"Found {len(postings)} transfer/posting G.O.(s) from "

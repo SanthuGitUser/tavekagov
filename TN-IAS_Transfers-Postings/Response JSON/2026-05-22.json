@@ -1,8 +1,8 @@
 {
   "date": "2026-05-22",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 1,
   "postings": [
@@ -11,7 +11,129 @@
       "go_date": "2026-05-22",
       "go_number": "G O Rt No 1809.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G O Rt No 1809.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G O Rt No 1809.pdf",
+      "officers": [
+        {
+          "name": "Tmt Sandhya Venugopal Sharma",
+          "details": "Tmt Sandhya Venugopal Sharma, IAS, Additional Chief Secretary / Chairperson, Tamil Nadu Industrial Development Corporation, is transferred and posted Additional Chief Secretary to Government, Planning and as Development Department in the place of",
+          "old_post": "Additional Chief Secretary / Chairperson, Tamil Nadu Industrial Development Corporation",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Sandeep Nanduri",
+          "details": "Thiru Sandeep Nanduri, IAS, Managing Director, Tamil Nadu Industrial Development Corporation, is transferred and posted Special as Secretary to Government, Industries, Investment Promotion and Commerce Department in the place of Tmt, Mariam Pallavi Baldev, IAS, already transferred",
+          "old_post": "Managing Director, Tamil Nadu Industrial Development Corporation",
+          "new_post": "",
+          "confidence": 0.55
+        },
+        {
+          "name": "Thiru G. Prakash",
+          "details": "Thiru G. Prakash, IAS, Principal Secretary / formerly Member Secretary, Chennai Metropolitan Development Authority, is transferred and posted as Principal Secretary / Additional Commissioner of Revenue Administration, Commissionerate of Revenue Administration and Disaster Management, in the post created in para 1 above",
+          "old_post": "Principal Secretary / formerly Member Secretary, Chennai Metropolitan Development Authority",
+          "new_post": "Principal Secretary / Additional Commissioner of Revenue Administration, Commissionerate of Revenue Administration and Disaster Management, in the post created in para 1 above",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt. V. Shobana",
+          "details": "Tmt. V. Shobana, IAS, Commissioner, Stationery and Printing, is transferred and posted Commissioner, Textiles",
+          "old_post": "Commissioner, Stationery and Printing",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Kiran Gurrala",
+          "details": "Thiru Kiran Gurrala, IAS, Commissioner, Transport and Road Safety is transferred and posted Commissioner, Town and Country Planning, as",
+          "old_post": "Commissioner, Transport and Road Safety",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt. Mageswari Ravikumar",
+          "details": "Tmt. Mageswari Ravikumar, IAS, Director, Handiooms, is transferred and posted Director, Social Welfare vice Tmt. M.S. Sangeetha, as IAS, leave; on",
+          "old_post": "Director, Handiooms",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. K. Senthil Raj",
+          "details": "Dr. K. Senthil Raj, IAS, Managing Director, State Industries Promotion Corporation of Tamil Nadu is transferred and posted as Director Adi Dravidar Welfare, in the place of",
+          "old_post": "Managing Director, State Industries Promotion Corporation of Tamil Nadu",
+          "new_post": "Director Adi Dravidar Welfare",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru D. Baskara Pandian",
+          "details": "Thiru D. Baskara Pandian, IAS, Project Director, Tamil Nadu Road Sector Project-II / Chennai Kanniyakumari Industrial Corridor Project, is transferred and posted Director, Transport and Road Safety in the post as created in 3 above",
+          "old_post": "Project Director, Tamil Nadu Road Sector Project-II / Chennai Kanniyakumari Industrial Corridor Project",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru G. Ravikumar",
+          "details": "Thiru G. Ravikumar, IAS, formerly District Collector, Karur District, is posted as District Collector, Tirupathur District",
+          "old_post": "",
+          "new_post": "District Collector, Tirupathur District",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt Asha Ajith",
+          "details": "Tmt Asha Ajith, IAS, Chief Operating Officer, Tamil Nadu Rural Transformation Project and Project Director (FAC), Tamil Nadu Women Employment and Safety is transferred and posted Director, Project, as above, Environment and Climate Change, in the post created in para 3 in the place of",
+          "old_post": "Chief Operating Officer, Tamil Nadu Rural Transformation Project and Project Director (FAC), Tamil Nadu Women Employment and Safety",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru T. Christuraj",
+          "details": "Thiru T. Christuraj, IAS, formerly Managing Director, Tamil Nadu State Marketing Corporation Limited is posted as Director, Survey and Settlement, in the post created in para 3 above, in the place of",
+          "old_post": "",
+          "new_post": "Director, Survey and Settlement, in the post created in para 3 above",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. D. Karthikeyan",
+          "details": "Dr. D. Karthikeyan, IAS, formerly Principal Secretary Government, Municipal Administration and Water Supply to disposal of Tamil Nadu Industrial Development Department are placed at the Chairman and Corporation for appointment as its Principal Secretary / Managing Director p.t.o...4) 4",
+          "old_post": "formerly Principal Secretary Government, Municipal Administration and Water Supply to disposal of Tamil Nadu Industrial Development Department",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. T.G. Vinay",
+          "details": "Dr. T.G. Vinay, IAS, formerly Managing Director Chennai Metropolitan Water Supply and Drainage Board, are placed at the disposal of Tamil Nadu Green Energy Corporation for appointment as its Managing Director",
+          "old_post": "formerly Managing Director Chennai Metropolitan Water Supply and Drainage Board",
+          "new_post": "Tamil Nadu Green Energy Corporation for appointment as Managing Director",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. S. Aneesh Sekhar",
+          "details": "Dr. S. Aneesh Sekhar, IAS, Managing Director Tamil Nadu Energy Corporation, placed at the disposal of National Green are Health Mission as its Mission Director",
+          "old_post": "",
+          "new_post": "National Green are Health Mission as its Mission Director",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt. R.V. Shajeevana",
+          "details": "Tmt. R.V. Shajeevana, IAS, formerly Managing Director, Tamil Nadu Corporation for Development of Women Limited, are placed at the disposal of Tamil Nadu Rural Transformation Project for appointment as its Chief Operating Officer",
+          "old_post": "formerly Managing Director, Tamil Nadu Corporation for Development of Women Limited",
+          "new_post": "Tamil Nadu Rural Transformation Project for appointment as Chief Operating Officer",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru S.A. Raman",
+          "details": "Thiru S.A. Raman, IAS, Commissioner, Labour disposal of State Industries Promotion Corporation of Tamil are placed at the Senthil Raj, IAS. Nadu for appointment as its Managing Director vice Dr. K",
+          "old_post": "Commissioner, Labour disposal of State Industries Promotion Corporation of Tamil",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Lalitaditya Neelam",
+          "details": "Thiru Lalitaditya Neelam, IAS, Additional Commissioner (G), Directorate of Rural Development and Panchayat Raj, are placed at the disposal of Salem Municipal Corporation for appointment as its Commissioner",
+          "old_post": "Additional Commissioner (G), Directorate of Rural Development and Panchayat Raj",
+          "new_post": "Salem Municipal Corporation for appointment as Commissioner",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     }
   ]
 }

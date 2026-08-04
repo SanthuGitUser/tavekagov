@@ -1,0 +1,15 @@
+{
+  "department_name": "Information Technology and Digital Services Department",
+  "dep_id_encoded": "MTc=",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=MTc=&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:35.652388+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:14.723188+05:30",
+  "fetchCount": 2,
+  "count": 0,
+  "orders": []
+}

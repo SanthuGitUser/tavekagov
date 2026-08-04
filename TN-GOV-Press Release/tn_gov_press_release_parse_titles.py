@@ -26,7 +26,7 @@ _HONBLE_RE = re.compile(r"hon'?ble", flags=re.IGNORECASE)
 
 _MINISTER_FOR_RE = re.compile(
     r"hon'?ble\s+minister(?:s)?\s+for\s+(.+?)"
-    r"(?=\s+(?:inspected|chaired|inaugurated|participated|conducted|distributed|visited|informed|called|provided|held|joined|extended|was extended|and held|and addressed)\b"
+    r"(?=\s+(?:inspected|issued|chaired|inaugurated|participated|conducted|distributed|visited|informed|called|provided|held|joined|extended|was extended|and held|and addressed)\b"
     r"|\s+and\s+hon'?ble\s+|$)",
     flags=re.IGNORECASE,
 )
@@ -665,7 +665,7 @@ def enrich_gov_press_release(
             department_id = dept_from_minister
             department_confidence = dept_from_minister_conf or "medium"
 
-    if parsed.department_name is None and department_id is not None:
+    if department_id is not None:
         matched_department = next(
             (dept.name for dept in departments if dept.id == department_id),
             None,
@@ -678,7 +678,7 @@ def enrich_gov_press_release(
                 confidence=parsed.confidence,
             )
 
-    if parsed.minister_name is None and minister_id is not None:
+    if minister_id is not None:
         matched_minister = next(
             (minister.name for minister in ministers if minister.id == minister_id),
             None,

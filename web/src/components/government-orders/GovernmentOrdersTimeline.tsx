@@ -1,13 +1,12 @@
 import { format, parseISO } from "date-fns";
+import { Search } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
 import { GovernmentOrdersTable } from "@/components/government-orders/GovernmentOrdersTable";
-import {
-  getLatestValidDate,
-  VerticalDatePicker,
-} from "@/components/shared/VerticalDatePicker";
+import { getLatestValidDate } from "@/components/shared/VerticalDatePicker";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import { useGovernmentOrdersSearch } from "@/context/GovernmentOrdersSearchContext";
 import { useGovernmentOrdersView } from "@/context/GovernmentOrdersViewContext";
 import { cn } from "@/lib/utils";
@@ -89,6 +88,10 @@ export function GovernmentOrdersTimeline({
   const governmentOrdersView = useGovernmentOrdersView();
   const search = governmentOrdersSearch?.search ?? "";
   const viewMode = governmentOrdersView?.viewMode ?? "calendar";
+  const selectedDate = governmentOrdersView?.selectedDate ?? "";
+  const setSelectedDate = governmentOrdersView?.setSelectedDate;
+  const setAvailableDates = governmentOrdersView?.setAvailableDates;
+  const setSelectedDateOrderCount = governmentOrdersView?.setSelectedDateOrderCount;
 
   const query = search.trim().toLowerCase();
   const isSearching = query.length > 0;
@@ -104,6 +107,7 @@ export function GovernmentOrdersTimeline({
   );
 
   const [selectedDepartment, setSelectedDepartment] = useState<string>("");
+  const [departmentSearch, setDepartmentSearch] = useState("");
 
   const searchMatches = useMemo(() => {
     if (!isSearching) return [];
@@ -138,23 +142,31 @@ export function GovernmentOrdersTimeline({
     [datesForPicker],
   );
 
-  const [selectedDate, setSelectedDate] = useState<string>(latestDate ?? "");
+  useEffect(() => {
+    setAvailableDates?.(datesForPicker);
+  }, [datesForPicker, setAvailableDates]);
 
   useEffect(() => {
-    if (latestDate) setSelectedDate(latestDate);
-  }, [latestDate]);
+    if (latestDate) setSelectedDate?.(latestDate);
+  }, [latestDate, setSelectedDate]);
 
   useEffect(() => {
     if (selectedDate && !datesForPicker.includes(selectedDate) && latestDate) {
-      setSelectedDate(latestDate);
+      setSelectedDate?.(latestDate);
     }
-  }, [datesForPicker, latestDate, selectedDate]);
+  }, [datesForPicker, latestDate, selectedDate, setSelectedDate]);
 
   const ordersForDate = useMemo(() => {
     return viewOrders
       .filter((order) => order.go_date === selectedDate)
       .sort(compareByGoNumber);
   }, [viewOrders, selectedDate]);
+
+  useEffect(() => {
+    if (viewMode === "calendar") {
+      setSelectedDateOrderCount?.(ordersForDate.length);
+    }
+  }, [ordersForDate.length, setSelectedDateOrderCount, viewMode]);
 
   const ordersByDepartment = useMemo(() => {
     const map = new Map<string, TnGoDept[]>();
@@ -209,20 +221,33 @@ export function GovernmentOrdersTimeline({
     return tiles;
   }, [ordersByDepartment, deptByEncoded, ministersByKey]);
 
+  const departmentQuery = departmentSearch.trim().toLowerCase();
+
+  const filteredDepartmentTiles = useMemo(() => {
+    if (!departmentQuery) return departmentTiles;
+    return departmentTiles.filter(({ dept, ministerName, minister }) => {
+      const ministerDisplay = minister?.name ?? ministerName ?? "";
+      return (
+        dept.toLowerCase().includes(departmentQuery) ||
+        ministerDisplay.toLowerCase().includes(departmentQuery)
+      );
+    });
+  }, [departmentTiles, departmentQuery]);
+
   useEffect(() => {
-    if (!selectedDepartment && departmentTiles.length > 0) {
-      setSelectedDepartment(departmentTiles[0].dept);
+    if (!selectedDepartment && filteredDepartmentTiles.length > 0) {
+      setSelectedDepartment(filteredDepartmentTiles[0].dept);
       return;
     }
 
     if (
       selectedDepartment &&
-      departmentTiles.length > 0 &&
-      !departmentTiles.some((tile) => tile.dept === selectedDepartment)
+      filteredDepartmentTiles.length > 0 &&
+      !filteredDepartmentTiles.some((tile) => tile.dept === selectedDepartment)
     ) {
-      setSelectedDepartment(departmentTiles[0].dept);
+      setSelectedDepartment(filteredDepartmentTiles[0].dept);
     }
-  }, [departmentTiles, selectedDepartment]);
+  }, [filteredDepartmentTiles, selectedDepartment]);
 
   const selectedDepartmentTile = useMemo(() => {
     if (!selectedDepartment) return null;
@@ -233,7 +258,7 @@ export function GovernmentOrdersTimeline({
     return selectedDepartmentTile?.orders ?? [];
   }, [selectedDepartmentTile]);
 
-  if (!latestDate) {
+  if (!latestDate || !selectedDate) {
     return (
       <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
         {isSearching ? "No government orders match your search." : "No government orders found."}
@@ -279,14 +304,25 @@ export function GovernmentOrdersTimeline({
     return (
       <div className="flex min-h-0 flex-1 flex-col gap-3 lg:flex-row lg:overflow-hidden">
         <aside className="flex w-full shrink-0 flex-col lg:w-[340px]">
+          <div className="relative mb-3 shrink-0">
+            <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <Input
+              type="search"
+              placeholder="Search departments…"
+              value={departmentSearch}
+              onChange={(event) => setDepartmentSearch(event.target.value)}
+              className="h-9 pl-8"
+              aria-label="Search departments"
+            />
+          </div>
           <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-            {departmentTiles.length === 0 ? (
+            {filteredDepartmentTiles.length === 0 ? (
               <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-                No departments found.
+                {departmentQuery ? "No departments match your search." : "No departments found."}
               </p>
             ) : (
               <div className="space-y-3">
-                {departmentTiles.map(({ dept, count }) => {
+                {filteredDepartmentTiles.map(({ dept, count }) => {
                   const isSelected = dept === selectedDepartment;
                   return (
                     <Card
@@ -385,38 +421,21 @@ export function GovernmentOrdersTimeline({
   }
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col gap-3 lg:flex-row lg:overflow-hidden">
-      <aside className="flex shrink-0 flex-col items-center">
-        <p className="mb-1.5 w-[128px] text-center text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-          Select date
-        </p>
-        <VerticalDatePicker
-          availableDates={datesForPicker}
-          value={selectedDate}
-          onChange={setSelectedDate}
-        />
-      </aside>
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+      <div className="mb-3 shrink-0">
+        <h2 className="text-lg font-bold tracking-tight">
+          {format(parseGoDate(selectedDate), "EEEE, d MMMM yyyy")}
+        </h2>
+      </div>
 
-      <div className="flex min-h-0 min-w-0 flex-1 flex-col">
-        <div className="mb-3 shrink-0">
-          <h2 className="text-lg font-bold tracking-tight">
-            {format(parseGoDate(selectedDate), "EEEE, d MMMM yyyy")}
-          </h2>
-          <p className="text-xs text-muted-foreground">
-            {ordersForDate.length} order
-            {ordersForDate.length === 1 ? "" : "s"}
+      <div className="min-h-0 flex-1 overflow-y-auto pr-1">
+        {ordersForDate.length === 0 ? (
+          <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+            No government orders on this date.
           </p>
-        </div>
-
-        <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-          {ordersForDate.length === 0 ? (
-            <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-              No government orders on this date.
-            </p>
-          ) : (
-            <GovernmentOrdersTable orders={ordersForDate} />
-          )}
-        </div>
+        ) : (
+          <GovernmentOrdersTable orders={ordersForDate} />
+        )}
       </div>
     </div>
   );

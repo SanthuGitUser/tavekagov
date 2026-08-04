@@ -6,21 +6,19 @@ import { GovPressReleaseSideFilters } from "@/components/gov-press-releases/GovP
 import {
   formatPrNumber,
   getLatestValidDate,
-  VerticalDatePicker,
 } from "@/components/shared/VerticalDatePicker";
 import { Badge } from "@/components/ui/badge";
 import { usePressReleaseSearch } from "@/context/PressReleaseSearchContext";
+import { usePressReleaseView } from "@/context/PressReleaseViewContext";
 import type { PressRelease, TnDept, TnMinister } from "@/types/models";
 
 import { CrossDatePressReleaseBrowse } from "./CrossDatePressReleaseBrowse";
-import { PressReleaseViewTabs } from "./PressReleaseViewTabs";
 import {
   buildDepartmentSideOptions,
   buildMinisterSideOptions,
   formatReleaseCount,
   groupReleasesByDate,
   matchesSearch,
-  type PressReleaseView,
 } from "./pressReleaseUtils";
 
 type PressReleaseTimelineProps = {
@@ -51,52 +49,14 @@ function compareByPrNumber(a: PressRelease, b: PressRelease): number {
   return a.name.localeCompare(b.name);
 }
 
-function ReleaseCard({
-  release,
-  departmentsById,
-  ministersById,
-}: {
-  release: PressRelease;
-  departmentsById: Map<number, TnDept>;
-  ministersById: Map<number, TnMinister>;
-}) {
+function ReleaseCard({ release }: { release: PressRelease }) {
   const prNumber = formatPrNumber(release.dipr_pr_no);
-  const department =
-    release.department_id != null ? departmentsById.get(release.department_id) : undefined;
-  const minister =
-    release.minister_id != null ? ministersById.get(release.minister_id) : undefined;
 
   return (
     <article className="rounded-lg border border-border bg-card px-3 py-2.5 transition-colors hover:border-primary/25 hover:bg-accent/60">
       <div className="flex items-start gap-3">
-        <div className="min-w-0 flex-1 space-y-2">
+        <div className="min-w-0 flex-1">
           <h3 className="text-sm font-medium leading-snug text-foreground">{release.name}</h3>
-          {release.topic || release.release_type || department || minister ? (
-            <div className="flex flex-wrap gap-1.5">
-              {release.release_type ? (
-                <Badge variant="secondary" className="text-[11px] font-normal">
-                  {release.release_type}
-                </Badge>
-              ) : null}
-              {department ? (
-                <Badge variant="outline" className="text-[11px] font-normal">
-                  {department.name}
-                </Badge>
-              ) : release.department_name ? (
-                <Badge variant="outline" className="text-[11px] font-normal">
-                  {release.department_name}
-                </Badge>
-              ) : null}
-              {minister ? (
-                <Badge variant="outline" className="text-[11px] font-normal">
-                  {minister.name}
-                </Badge>
-              ) : null}
-              {release.topic ? (
-                <span className="text-xs text-muted-foreground line-clamp-1">{release.topic}</span>
-              ) : null}
-            </div>
-          ) : null}
         </div>
         <div className="flex shrink-0 items-center gap-2">
           {prNumber ? (
@@ -124,9 +84,14 @@ export function PressReleaseTimeline({
   ministers,
 }: PressReleaseTimelineProps) {
   const pressReleaseSearch = usePressReleaseSearch();
+  const pressReleaseView = usePressReleaseView();
   const search = pressReleaseSearch?.search ?? "";
-
-  const [view, setView] = useState<PressReleaseView>("all");
+  const view = pressReleaseView?.viewMode ?? "all";
+  const selectedDate = pressReleaseView?.selectedDate ?? "";
+  const setSelectedDate = pressReleaseView?.setSelectedDate;
+  const setAvailableDates = pressReleaseView?.setAvailableDates;
+  const setSelectedDateReleaseCount = pressReleaseView?.setSelectedDateReleaseCount;
+  const setTotalReleaseCount = pressReleaseView?.setTotalReleaseCount;
   const [departmentId, setDepartmentId] = useState<number | null>(null);
   const [ministerId, setMinisterId] = useState<number | null>(null);
   const [departmentListSearch, setDepartmentListSearch] = useState("");
@@ -140,16 +105,6 @@ export function PressReleaseTimeline({
   const departmentSideOptions = useMemo(
     () => buildDepartmentSideOptions(releases, departments),
     [releases, departments],
-  );
-
-  const ministersById = useMemo(
-    () => new Map(ministers.map((minister) => [minister.id, minister])),
-    [ministers],
-  );
-
-  const departmentsById = useMemo(
-    () => new Map(departments.map((department) => [department.id, department])),
-    [departments],
   );
 
   const ministerSideOptions = useMemo(
@@ -220,17 +175,25 @@ export function PressReleaseTimeline({
   );
 
   const latestDate = useMemo(() => getLatestValidDate(allDates), [allDates]);
-  const [selectedDate, setSelectedDate] = useState<string>(latestDate ?? "");
+
+  const datesForPicker = useMemo(() => {
+    if (view !== "all" || !isSearching) return allDates;
+    return [...new Set(filteredReleases.map((release) => release.pr_date))];
+  }, [allDates, filteredReleases, isSearching, view]);
 
   useEffect(() => {
-    if (latestDate) setSelectedDate(latestDate);
-  }, [latestDate]);
+    setAvailableDates?.(datesForPicker);
+  }, [datesForPicker, setAvailableDates]);
 
   useEffect(() => {
-    if (selectedDate && !allDates.includes(selectedDate) && latestDate) {
-      setSelectedDate(latestDate);
+    if (latestDate) setSelectedDate?.(latestDate);
+  }, [latestDate, setSelectedDate]);
+
+  useEffect(() => {
+    if (selectedDate && !datesForPicker.includes(selectedDate) && latestDate) {
+      setSelectedDate?.(latestDate);
     }
-  }, [allDates, latestDate, selectedDate]);
+  }, [datesForPicker, latestDate, selectedDate, setSelectedDate]);
 
   const releasesForDate = useMemo(() => {
     return releases
@@ -238,6 +201,13 @@ export function PressReleaseTimeline({
       .filter((release) => matchesSearch(release, query))
       .sort(compareByPrNumber);
   }, [releases, selectedDate, query]);
+
+  useEffect(() => {
+    if (view === "all") {
+      setSelectedDateReleaseCount?.(releasesForDate.length);
+      setTotalReleaseCount?.(releases.length);
+    }
+  }, [releases.length, releasesForDate.length, setSelectedDateReleaseCount, setTotalReleaseCount, view]);
 
   const browseTitle = useMemo(() => {
     if (isSearching) return "Search results";
@@ -262,12 +232,16 @@ export function PressReleaseTimeline({
     );
   }
 
-  return (
-    <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden">
-      <div className="shrink-0">
-        <PressReleaseViewTabs view={view} onViewChange={setView} />
-      </div>
+  if (isDateBrowse && !selectedDate) {
+    return (
+      <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+        Loading releases…
+      </p>
+    );
+  }
 
+  return (
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
       <div className="flex min-h-0 flex-1 flex-col gap-3 lg:flex-row lg:overflow-hidden">
         {view === "department" || view === "minister" ? (
           <aside className="flex w-full shrink-0 flex-col gap-3 lg:w-[220px] xl:w-[240px]">
@@ -302,49 +276,27 @@ export function PressReleaseTimeline({
         ) : null}
 
         {isDateBrowse ? (
-          <>
-            <aside className="flex shrink-0 flex-col items-center">
-              <p className="mb-1.5 w-[128px] text-center text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                Select date
-              </p>
-              <VerticalDatePicker
-                availableDates={allDates}
-                value={selectedDate}
-                onChange={setSelectedDate}
-              />
-            </aside>
-
-            <div className="flex min-h-0 min-w-0 flex-1 flex-col">
-              <div className="mb-3 shrink-0">
-                <h2 className="text-lg font-bold tracking-tight">
-                  {format(parseReleaseDate(selectedDate), "EEEE, d MMMM yyyy")}
-                </h2>
-                <p className="text-xs text-muted-foreground">
-                  {formatReleaseCount(releasesForDate.length)} on this date ·{" "}
-                  {formatReleaseCount(releases.length)} total
-                </p>
-              </div>
-
-              <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-                {releasesForDate.length === 0 ? (
-                  <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-                    No press releases on this date.
-                  </p>
-                ) : (
-                  <div className="space-y-2">
-                    {releasesForDate.map((release) => (
-                      <ReleaseCard
-                        key={release.id}
-                        release={release}
-                        departmentsById={departmentsById}
-                        ministersById={ministersById}
-                      />
-                    ))}
-                  </div>
-                )}
-              </div>
+          <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
+            <div className="mb-3 shrink-0">
+              <h2 className="text-lg font-bold tracking-tight">
+                {format(parseReleaseDate(selectedDate), "EEEE, d MMMM yyyy")}
+              </h2>
             </div>
-          </>
+
+            <div className="min-h-0 flex-1 overflow-y-auto pr-1">
+              {releasesForDate.length === 0 ? (
+                <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+                  No press releases on this date.
+                </p>
+              ) : (
+                <div className="space-y-2">
+                  {releasesForDate.map((release) => (
+                    <ReleaseCard key={release.id} release={release} />
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
         ) : (
           <CrossDatePressReleaseBrowse
             title={browseTitle}
@@ -359,14 +311,7 @@ export function PressReleaseTimeline({
                     : "No press releases found."
             }
             groups={filteredReleasesByDate}
-            renderRelease={(release) => (
-              <ReleaseCard
-                key={release.id}
-                release={release}
-                departmentsById={departmentsById}
-                ministersById={ministersById}
-              />
-            )}
+            renderRelease={(release) => <ReleaseCard key={release.id} release={release} />}
           />
         )}
       </div>

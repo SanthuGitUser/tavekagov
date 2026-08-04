@@ -1,0 +1,15 @@
+{
+  "department_name": "Environment, Climate Change and Forests Department",
+  "dep_id_encoded": "OA==",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=OA==&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:32.092213+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:11.137003+05:30",
+  "fetchCount": 2,
+  "count": 0,
+  "orders": []
+}

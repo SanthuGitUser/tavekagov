@@ -25,7 +25,6 @@ One file per calendar day. Used by scrapers that fetch date-range data.
 |--------|-----------|-----------|
 | `TN-DIPR-Press Release/` | `response.data` (DIPR API shape) | DIPR `id` |
 | `TN-GOV-Press Release/` | `releases` | `image_url` |
-| `TN-GOV_GO-Departments/` | `orders` | `pdf_url` |
 | `TN-IAS_Transfers-Postings/` | `postings` | `pdf_url` |
 | `TN-TVA-Magazine/` | `magazines` | `id` |
 | `TN-News/` | `response.results` | `article_id` |
@@ -122,11 +121,17 @@ Daily files may also include `ministers[]` and `departments[]` reference snapsho
 
 ### Government orders (G.O.s)
 
-Path: `TN-GOV_GO-Departments/Response JSON/YYYY-MM-DD.json`
+Path: `TN-Government Orders/Response JSON/<department-slug>.json`
+
+One file per department. Re-runs replace the `orders` array when using `--replace-orders`.
 
 ```json
 {
-  "date": "2026-07-28",
+  "department_name": "Finance Department",
+  "dep_id_encoded": "OQ==",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=OQ==&year=MjAyNw==",
+  "start_date": "10-05-2026",
+  "count": 8,
   "orders": [
     {
       "go_date": "2026-07-28",
@@ -140,7 +145,7 @@ Path: `TN-GOV_GO-Departments/Response JSON/YYYY-MM-DD.json`
 }
 ```
 
-Frontend: `tamilNaduGovernmentOrdersFeed.ts`.
+Only G.O.s on or after **10 May 2026** are included. Frontend: `tamilNaduGovernmentOrdersFeed.ts`.
 
 ### IAS transfers and postings
 

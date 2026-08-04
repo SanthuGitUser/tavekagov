@@ -19,6 +19,8 @@ export type TnDept = {
   id: number;
   name: string;
   dep_id_encoded: string;
+  profile_url?: string;
+  icon_url?: string;
   minister_name: string | null;
   display_order: number;
 };
@@ -37,6 +39,7 @@ export type TnDistrict = {
   id: number;
   name: string;
   dt_cd_encoded: string;
+  profile_url?: string;
   area_size: string | null;
   population: string | null;
   website_url: string | null;
@@ -90,6 +93,14 @@ export type GovPressRelease = {
   updated_at?: string;
 };
 
+export type TnTransferOfficer = {
+  name: string;
+  details: string;
+  old_post: string;
+  new_post: string;
+  confidence?: number;
+};
+
 export type TnTransfersPosting = {
   id: number;
   serial_number: number;
@@ -97,8 +108,19 @@ export type TnTransfersPosting = {
   go_number: string;
   subject: string;
   pdf_url: string;
+  officers: TnTransferOfficer[];
+  parse_status?: string;
   created_at?: string;
   updated_at?: string;
+};
+
+export type TnTransfersPostingRow = TnTransfersPosting & {
+  row_id: string;
+  officer_name: string;
+  details: string;
+  old_post: string;
+  new_post: string;
+  confidence?: number;
 };
 
 export type DashboardStats = {

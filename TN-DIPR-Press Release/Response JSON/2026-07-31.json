@@ -1,8 +1,8 @@
 {
   "date": "2026-07-31",
   "fetchedAt": "2026-08-01T00:10:51.433034+05:30",
-  "lastFetchedAt": "2026-08-01T00:10:51.433034+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-01T20:59:52.833529+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
@@ -11,7 +11,74 @@
     }
   },
   "response": {
-    "success": 2,
-    "data": []
+    "success": 1,
+    "data": [
+      {
+        "id": 22258,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.475_-_Hon_ble_CM_Press_Release_-_State_Water_Distribution_and_Cultivation_of_Agricultural_Crops_Review_Meeting_-_Date.31.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.475 - Hon'ble CM Press Release - State Water Distribution and Cultivation of Agricultural Crops Review Meeting - Date.31.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-31",
+        "language": "en"
+      },
+      {
+        "id": 22259,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.476_-_Hon_ble_CM_Press_Release_-_Home_Dept_-_Police_Medal_function_-_Date.31.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.476 - Hon'ble CM Press Release - Home Dept - Police Medal function - Date.31.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-31",
+        "language": "en"
+      },
+      {
+        "id": 22260,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.477_-_Hon_ble_Food_and_Civil_Supplies_Minister_Press_Release_-_Date.31.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.477 - Hon'ble Food and Civil Supplies Minister Press Release - Date.31.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-31",
+        "language": "en"
+      },
+      {
+        "id": 22261,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.478_-_Employment_and_Training_Dept_Press_Release_-_Date.31.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.478 - Employment and Training Dept Press Release - Date.31.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-31",
+        "language": "en"
+      },
+      {
+        "id": 22262,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.479_-_Finance_Dept_Rev_Augmentation_Committee_Preliminary_Meeting_Press_Release_-_English_-_Date.31.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.479 - Finance Dept Rev Augmentation Committee Preliminary Meeting Press Release - English - Date.31.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-31",
+        "language": "en"
+      },
+      {
+        "id": 22263,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.479_-_Finance_Dept_Rev_Augmentation_Committee_Preliminary_Meeting_Press_Release_-_Tamil_-_Date.31.07.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.479 - Finance Dept Rev Augmentation Committee Preliminary Meeting Press Release - Tamil - Date.31.07.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-07-31",
+        "language": "en"
+      }
+    ]
   }
 }

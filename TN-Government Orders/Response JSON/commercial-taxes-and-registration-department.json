@@ -1,0 +1,24 @@
+{
+  "department_name": "Commercial Taxes and Registration Department",
+  "dep_id_encoded": "Ng==",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=Ng==&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:31.096302+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:10.490615+05:30",
+  "fetchCount": 2,
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-07-07",
+      "go_number": "G.O.MS.NO.69",
+      "go_name": "Registration Department - Project STAR 3.0 - Anywhere Registration - Phase-I Mandating two deeds only through Presenceless Registration - Administrative Sanction - Accorded - Orders - Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/ctax_e_69_2026.pdf",
+      "department_name": "Commercial Taxes and Registration Department",
+      "dep_id_encoded": "Ng=="
+    }
+  ]
+}

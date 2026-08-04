@@ -1,0 +1,32 @@
+{
+  "department_name": "Water Resources Department",
+  "dep_id_encoded": "NDQ=",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=NDQ=&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:42.145342+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:21.319394+05:30",
+  "fetchCount": 2,
+  "count": 2,
+  "orders": [
+    {
+      "go_date": "2026-07-12",
+      "go_number": "G.O.(Ms)No.63",
+      "go_name": "Water Resources Department - State Dam Safety Organisation - Approval for constitution of Independent Panel of Experts for Comprehensive Dam Safety Evaluation for 86 Dams of Water Resources Department at an estimated cost of Rs 1,20,40,000 - Accorded - Orders - Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/wrd_e_63_Ms_2026.pdf",
+      "department_name": "Water Resources Department",
+      "dep_id_encoded": "NDQ="
+    },
+    {
+      "go_date": "2026-06-02",
+      "go_number": "G.O.(Ms)No.61",
+      "go_name": "Water Resources Department – Revised Administrative Sanction proposals due to various reasons – Instructions to curtail the Revised Administrative Sanction proposals – Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/wrd_e_61_Ms_2026.pdf",
+      "department_name": "Water Resources Department",
+      "dep_id_encoded": "NDQ="
+    }
+  ]
+}

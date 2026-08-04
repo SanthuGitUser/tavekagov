@@ -1,15 +1,17 @@
 import { mergeUniqueByKey, normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
 import type { TnGoDept } from "@/types/models";
 
-type DailyResponseFile = {
+type DepartmentResponseFile = {
   source_url?: string;
+  department_name?: string;
+  dep_id_encoded?: string;
   orders?: Record<string, unknown>[];
 };
 
-const dailyJsonFiles = import.meta.glob(
-  "../../../TN-GOV_GO-Departments/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
+const departmentJsonFiles = import.meta.glob(
+  "../../../TN-Government Orders/Response JSON/*.json",
   { eager: true, import: "default" },
-) as Record<string, DailyResponseFile>;
+) as Record<string, DepartmentResponseFile>;
 
 function orderKey(order: TnGoDept): string {
   return `${order.go_number}|${order.dep_id_encoded}|${order.go_date}|${order.pdf_url}`;
@@ -36,12 +38,29 @@ function parseOrder(raw: Record<string, unknown>): TnGoDept | null {
 function collectRawOrders(): Record<string, unknown>[] {
   const byKey = new Map<string, Record<string, unknown>>();
 
-  for (const file of Object.values(dailyJsonFiles)) {
+  for (const file of Object.values(departmentJsonFiles)) {
     if (!Array.isArray(file.orders)) continue;
+
+    const departmentName =
+      typeof file.department_name === "string" ? file.department_name.trim() : "";
+    const depIdEncoded =
+      typeof file.dep_id_encoded === "string" ? file.dep_id_encoded.trim() : "";
+
     for (const raw of file.orders) {
-      const parsed = parseOrder(raw);
+      const enriched: Record<string, unknown> = {
+        ...raw,
+        department_name:
+          typeof raw.department_name === "string" && raw.department_name.trim()
+            ? raw.department_name
+            : departmentName,
+        dep_id_encoded:
+          typeof raw.dep_id_encoded === "string" && raw.dep_id_encoded.trim()
+            ? raw.dep_id_encoded
+            : depIdEncoded,
+      };
+      const parsed = parseOrder(enriched);
       if (!parsed) continue;
-      byKey.set(orderKey(parsed), raw);
+      byKey.set(orderKey(parsed), enriched);
     }
   }
 
@@ -63,7 +82,7 @@ function buildFeed() {
   });
 
   const sourceUrl =
-    Object.values(dailyJsonFiles)[0]?.source_url ??
+    Object.values(departmentJsonFiles)[0]?.source_url ??
     "https://www.tn.gov.in/godept_list.php";
 
   return {

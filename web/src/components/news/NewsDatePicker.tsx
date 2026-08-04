@@ -39,6 +39,8 @@ type NewsDatePickerProps = {
   value: NewsDateRange;
   onChange: (range: NewsDateRange) => void;
   availableDates?: string[];
+  /** When true, arrow buttons jump to the previous/next date in `availableDates`. */
+  navigateAvailableDatesOnly?: boolean;
 };
 
 const WEEKDAYS = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"] as const;
@@ -81,6 +83,29 @@ function shiftRangeByDays(range: NewsDateRange, deltaDays: number, today: Date):
 function canShiftRangeForward(range: NewsDateRange, today: Date): boolean {
   const to = parseIsoDate(range.to || range.from);
   return isBefore(startOfDay(to), startOfDay(today));
+}
+
+function findAdjacentAvailableDate(
+  availableDates: string[],
+  current: string,
+  direction: -1 | 1,
+): string | null {
+  const sorted = [...availableDates].sort((a, b) => a.localeCompare(b));
+  if (sorted.length === 0 || !current) return null;
+
+  const index = sorted.indexOf(current);
+  if (index === -1) {
+    if (direction === -1) {
+      const older = sorted.filter((date) => date < current);
+      return older.length > 0 ? older[older.length - 1] : null;
+    }
+    const newer = sorted.filter((date) => date > current);
+    return newer.length > 0 ? newer[0] : null;
+  }
+
+  const nextIndex = index + direction;
+  if (nextIndex < 0 || nextIndex >= sorted.length) return null;
+  return sorted[nextIndex];
 }
 
 function formatRangeLabel(range: NewsDateRange): string {
@@ -146,7 +171,12 @@ function DayNavButton({
   );
 }
 
-export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDatePickerProps) {
+export function NewsDatePicker({
+  value,
+  onChange,
+  availableDates = [],
+  navigateAvailableDatesOnly = false,
+}: NewsDatePickerProps) {
   const [open, setOpen] = useState(false);
   const [viewDate, setViewDate] = useState(() => parseIsoDate(value.from || value.to));
   const [draftStart, setDraftStart] = useState<Date | null>(null);
@@ -158,7 +188,19 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
 
   const today = useMemo(() => startOfDay(new Date()), []);
   const availableDateSet = useMemo(() => new Set(availableDates), [availableDates]);
-  const canGoForward = useMemo(() => canShiftRangeForward(value, today), [value, today]);
+  const canGoForward = useMemo(() => {
+    if (navigateAvailableDatesOnly) {
+      const current = value.from || value.to;
+      return findAdjacentAvailableDate(availableDates, current, 1) !== null;
+    }
+    return canShiftRangeForward(value, today);
+  }, [navigateAvailableDatesOnly, availableDates, value, today]);
+
+  const canGoBack = useMemo(() => {
+    if (!navigateAvailableDatesOnly) return true;
+    const current = value.from || value.to;
+    return findAdjacentAvailableDate(availableDates, current, -1) !== null;
+  }, [navigateAvailableDatesOnly, availableDates, value]);
 
   const selectedFrom = value.from ? parseIsoDate(value.from) : null;
   const selectedTo = value.to ? parseIsoDate(value.to) : null;
@@ -242,6 +284,15 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
   function shiftDay(deltaDays: number) {
     if (!value.from && !value.to) return;
     setDraftStart(null);
+
+    if (navigateAvailableDatesOnly) {
+      const current = value.from || value.to;
+      const nextDate = findAdjacentAvailableDate(availableDates, current, deltaDays < 0 ? -1 : 1);
+      if (!nextDate) return;
+      onChange({ from: nextDate, to: nextDate });
+      return;
+    }
+
     onChange(shiftRangeByDays(value, deltaDays, today));
   }
 
@@ -393,7 +444,11 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
         ref={containerRef}
         className="inline-flex h-9 shrink-0 items-stretch overflow-hidden rounded-md border border-border bg-card shadow-sm"
       >
-        <DayNavButton label="Previous day" onClick={() => shiftDay(-1)}>
+        <DayNavButton
+          label={navigateAvailableDatesOnly ? "Previous date with orders" : "Previous day"}
+          disabled={!canGoBack}
+          onClick={() => shiftDay(-1)}
+        >
           <ChevronLeft className="h-4 w-4" />
         </DayNavButton>
 
@@ -418,7 +473,7 @@ export function NewsDatePicker({ value, onChange, availableDates = [] }: NewsDat
         </button>
 
         <DayNavButton
-          label="Next day"
+          label={navigateAvailableDatesOnly ? "Next date with orders" : "Next day"}
           disabled={!canGoForward}
           onClick={() => shiftDay(1)}
         >

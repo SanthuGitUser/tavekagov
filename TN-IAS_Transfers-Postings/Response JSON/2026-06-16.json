@@ -1,8 +1,8 @@
 {
   "date": "2026-06-16",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 1,
   "postings": [
@@ -11,7 +11,24 @@
       "go_date": "2026-06-16",
       "go_number": "G.O. Rt No.2127, dt 16.6.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. Rt No.2127, dt 16.6.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. Rt No.2127, dt 16.6.2026.pdf",
+      "officers": [
+        {
+          "name": "Thiru. Nishant Krishna",
+          "details": "Thiru. Nishant Krishna, IAS, Commissioner, Corporation of Nagercoil, is transferred and posted as District Collector, Sivagangai District",
+          "old_post": "Commissioner, Corporation of Nagercoil",
+          "new_post": "District Collector, Sivagangai District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt. R. Ishwarya",
+          "details": "Tmt. R. Ishwarya, IAS, Additional Collector (Development) / Project Officer, District Rural Development Agency Thoothukudi District, are placed at the disposal of Corporation of Nagercoil for appointment its Commissioner",
+          "old_post": "Additional Collector (Development) / Project Officer, District Rural Development Agency Thoothukudi District",
+          "new_post": "Corporation of Nagercoil for appointment its Commissioner",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     }
   ]
 }

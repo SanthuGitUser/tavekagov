@@ -1,14 +1,6 @@
-import {
-  flexRender,
-  getCoreRowModel,
-  getPaginationRowModel,
-  useReactTable,
-  type ColumnDef,
-} from "@tanstack/react-table";
+import { type ColumnDef, flexRender, getCoreRowModel, useReactTable } from "@tanstack/react-table";
 import { ExternalLink } from "lucide-react";
-import { useEffect, useState } from "react";
 
-import { Button } from "@/components/ui/button";
 import {
   Table,
   TableBody,
@@ -18,15 +10,17 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { formatDate } from "@/lib/utils";
-import type { TnTransfersPosting } from "@/types/models";
+import type { TnTransfersPostingRow } from "@/types/models";
 
-const PAGE_SIZE = 7;
+const emptyCell = "—";
 
-const columns: ColumnDef<TnTransfersPosting>[] = [
+const columns: ColumnDef<TnTransfersPostingRow>[] = [
   {
     accessorKey: "go_date",
     header: "G.O. Date",
-    cell: ({ row }) => formatDate(row.original.go_date),
+    cell: ({ row }) => (
+      <span className="whitespace-nowrap">{formatDate(row.original.go_date)}</span>
+    ),
   },
   {
     accessorKey: "go_number",
@@ -36,11 +30,46 @@ const columns: ColumnDef<TnTransfersPosting>[] = [
     ),
   },
   {
-    accessorKey: "subject",
-    header: "Subject",
+    accessorKey: "officer_name",
+    header: "Name",
     cell: ({ row }) => (
-      <span className="whitespace-normal break-words">{row.original.subject}</span>
+      <span className="whitespace-normal break-words">
+        {row.original.officer_name || emptyCell}
+      </span>
     ),
+  },
+  {
+    accessorKey: "old_post",
+    header: "Old Post",
+    cell: ({ row }) => (
+      <span className="whitespace-normal break-words">{row.original.old_post || emptyCell}</span>
+    ),
+  },
+  {
+    accessorKey: "new_post",
+    header: "New Post",
+    cell: ({ row }) => (
+      <span className="whitespace-normal break-words">{row.original.new_post || emptyCell}</span>
+    ),
+  },
+  {
+    accessorKey: "details",
+    header: "Details",
+    cell: ({ row }) => (
+      <span className="whitespace-normal break-words text-muted-foreground">
+        {row.original.details || emptyCell}
+      </span>
+    ),
+  },
+  {
+    accessorKey: "confidence",
+    header: "Confidence",
+    cell: ({ row }) => {
+      const value = row.original.confidence;
+      if (typeof value !== "number") return <span>{emptyCell}</span>;
+      const pct = Math.round(value * 100);
+      return <span className="tabular-nums">{pct}%</span>;
+    },
   },
   {
     id: "pdf",
@@ -59,38 +88,24 @@ const columns: ColumnDef<TnTransfersPosting>[] = [
 ];
 
 type TransfersPostingsTableProps = {
-  postings: TnTransfersPosting[];
+  rows: TnTransfersPostingRow[];
 };
 
-export function TransfersPostingsTable({ postings }: TransfersPostingsTableProps) {
-  const [pagination, setPagination] = useState({ pageIndex: 0, pageSize: PAGE_SIZE });
-
-  useEffect(() => {
-    setPagination((current) => ({ ...current, pageIndex: 0 }));
-  }, [postings]);
-
+export function TransfersPostingsTable({ rows }: TransfersPostingsTableProps) {
   const table = useReactTable({
-    data: postings,
+    data: rows,
     columns,
-    state: { pagination },
-    onPaginationChange: setPagination,
     getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
+    getRowId: (row) => row.row_id,
   });
 
-  if (postings.length === 0) {
+  if (rows.length === 0) {
     return (
       <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
         No transfers and postings found.
       </p>
     );
   }
-
-  const total = postings.length;
-  const pageIndex = table.getState().pagination.pageIndex;
-  const pageCount = table.getPageCount();
-  const start = pageIndex * PAGE_SIZE + 1;
-  const end = Math.min((pageIndex + 1) * PAGE_SIZE, total);
 
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-xl border border-border bg-card">
@@ -121,33 +136,6 @@ export function TransfersPostingsTable({ postings }: TransfersPostingsTableProps
             ))}
           </TableBody>
         </Table>
-      </div>
-
-      <div className="flex shrink-0 items-center justify-between border-t border-border px-4 py-3">
-        <p className="text-sm text-muted-foreground">
-          Showing {start}–{end} of {total}
-        </p>
-        <div className="flex items-center gap-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.previousPage()}
-            disabled={!table.getCanPreviousPage()}
-          >
-            Previous
-          </Button>
-          <span className="text-sm text-muted-foreground">
-            Page {pageIndex + 1} of {pageCount}
-          </span>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.nextPage()}
-            disabled={!table.getCanNextPage()}
-          >
-            Next
-          </Button>
-        </div>
       </div>
     </div>
   );

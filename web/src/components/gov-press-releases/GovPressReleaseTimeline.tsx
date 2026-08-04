@@ -2,31 +2,27 @@ import { format, parseISO } from "date-fns";
 import { useEffect, useMemo, useState } from "react";
 
 import { ImageLightbox } from "@/components/shared/ImageLightbox";
-import {
-  getLatestValidDate,
-  VerticalDatePicker,
-} from "@/components/shared/VerticalDatePicker";
+import { getLatestValidDate } from "@/components/shared/VerticalDatePicker";
 import { Badge } from "@/components/ui/badge";
 import { useGovPressReleaseSearch } from "@/context/GovPressReleaseSearchContext";
+import { useGovPressReleaseView } from "@/context/GovPressReleaseViewContext";
 import type { GovPressRelease, TnDept, TnMinister } from "@/types/models";
 
 import { CrossDateReleaseBrowse } from "./CrossDateReleaseBrowse";
 import { GovPressReleaseSideFilters } from "./GovPressReleaseSideFilters";
-import { GovPressReleaseViewTabs } from "./GovPressReleaseViewTabs";
+import { GovPressReleaseCategoryFilterButton } from "./GovPressReleaseCategoryFilterButton";
 import {
   buildCategorySideOptions,
   buildDepartmentSideOptions,
   buildMinisterSideOptions,
   compareReleases,
   formatReleaseCount,
-  getFlagFilterLabel,
   getReleaseName,
   groupReleasesByDate,
   matchesFlagFilter,
   matchesSearch,
   toLightboxImage,
   type GovPressReleaseFlagFilter,
-  type GovPressReleaseView,
 } from "./govPressReleaseUtils";
 
 type GovPressReleaseTimelineProps = {
@@ -138,12 +134,18 @@ export function GovPressReleaseTimeline({
   ministers,
 }: GovPressReleaseTimelineProps) {
   const govPressReleaseSearch = useGovPressReleaseSearch();
+  const govPressReleaseView = useGovPressReleaseView();
   const search = govPressReleaseSearch?.search ?? "";
+  const view = govPressReleaseView?.viewMode ?? "all";
+  const selectedDate = govPressReleaseView?.selectedDate ?? "";
+  const setSelectedDate = govPressReleaseView?.setSelectedDate;
+  const setAvailableDates = govPressReleaseView?.setAvailableDates;
+  const setSelectedDateReleaseCount = govPressReleaseView?.setSelectedDateReleaseCount;
+  const categoryFilter = govPressReleaseView?.categoryFilter ?? "all";
+  const setCategoryFilter = govPressReleaseView?.setCategoryFilter;
 
-  const [view, setView] = useState<GovPressReleaseView>("all");
   const [departmentId, setDepartmentId] = useState<number | null>(null);
   const [ministerId, setMinisterId] = useState<number | null>(null);
-  const [categoryFilter, setCategoryFilter] = useState<GovPressReleaseFlagFilter>("all");
   const [departmentListSearch, setDepartmentListSearch] = useState("");
   const [ministerListSearch, setMinisterListSearch] = useState("");
 
@@ -161,13 +163,13 @@ export function GovPressReleaseTimeline({
   );
 
   const departmentSideOptions = useMemo(
-    () => buildDepartmentSideOptions(datedReleases, departments),
-    [datedReleases, departments],
+    () => buildDepartmentSideOptions(releases, departments),
+    [releases, departments],
   );
 
   const ministerSideOptions = useMemo(
-    () => buildMinisterSideOptions(datedReleases, ministers),
-    [datedReleases, ministers],
+    () => buildMinisterSideOptions(releases, ministers),
+    [releases, ministers],
   );
 
   const filteredDepartmentSideOptions = useMemo(() => {
@@ -228,24 +230,24 @@ export function GovPressReleaseTimeline({
   }, [view, ministerId, ministerSideOptions]);
 
   useEffect(() => {
-    setCategoryFilter("all");
-  }, [departmentId, ministerId, view]);
+    setCategoryFilter?.("all");
+  }, [departmentId, ministerId, setCategoryFilter, view]);
 
   useEffect(() => {
     if (view !== "department") return;
     if (departmentCategoryOptions.some((option) => option.id === categoryFilter)) return;
-    setCategoryFilter(
+    setCategoryFilter?.(
       (departmentCategoryOptions[0]?.id as GovPressReleaseFlagFilter | undefined) ?? "all",
     );
-  }, [view, departmentCategoryOptions, categoryFilter]);
+  }, [view, departmentCategoryOptions, categoryFilter, setCategoryFilter]);
 
   useEffect(() => {
     if (view !== "minister") return;
     if (ministerCategoryOptions.some((option) => option.id === categoryFilter)) return;
-    setCategoryFilter(
+    setCategoryFilter?.(
       (ministerCategoryOptions[0]?.id as GovPressReleaseFlagFilter | undefined) ?? "all",
     );
-  }, [view, ministerCategoryOptions, categoryFilter]);
+  }, [view, ministerCategoryOptions, categoryFilter, setCategoryFilter]);
 
   const query = search.trim().toLowerCase();
   const isSearching = query.length > 0;
@@ -280,17 +282,25 @@ export function GovPressReleaseTimeline({
   );
 
   const latestDate = useMemo(() => getLatestValidDate(allDates), [allDates]);
-  const [selectedDate, setSelectedDate] = useState<string>(latestDate ?? "");
+
+  const datesForPicker = useMemo(() => {
+    if (view !== "all" || !isSearching) return allDates;
+    return [...new Set(filteredReleases.map((release) => release.release_date))];
+  }, [allDates, filteredReleases, isSearching, view]);
 
   useEffect(() => {
-    if (latestDate) setSelectedDate(latestDate);
-  }, [latestDate]);
+    setAvailableDates?.(datesForPicker);
+  }, [datesForPicker, setAvailableDates]);
 
   useEffect(() => {
-    if (selectedDate && !allDates.includes(selectedDate) && latestDate) {
-      setSelectedDate(latestDate);
+    if (latestDate) setSelectedDate?.(latestDate);
+  }, [latestDate, setSelectedDate]);
+
+  useEffect(() => {
+    if (selectedDate && !datesForPicker.includes(selectedDate) && latestDate) {
+      setSelectedDate?.(latestDate);
     }
-  }, [allDates, latestDate, selectedDate]);
+  }, [datesForPicker, latestDate, selectedDate, setSelectedDate]);
 
   const releasesForDate = useMemo(() => {
     return datedReleases
@@ -298,6 +308,12 @@ export function GovPressReleaseTimeline({
       .filter((release) => matchesSearch(release, query))
       .sort(compareReleases);
   }, [datedReleases, selectedDate, query]);
+
+  useEffect(() => {
+    if (view === "all") {
+      setSelectedDateReleaseCount?.(releasesForDate.length);
+    }
+  }, [releasesForDate.length, setSelectedDateReleaseCount, view]);
 
   const lightboxReleases = isCrossDateBrowse ? filteredReleases : releasesForDate;
   const lightboxPhotos = useMemo(
@@ -339,29 +355,22 @@ export function GovPressReleaseTimeline({
   const browseTitle = useMemo(() => {
     if (isSearching) return "Search results";
     if (view === "department") {
-      const dept = departmentSideOptions.find((o) => o.id === String(departmentId));
-      if (categoryFilter !== "all") {
-        return `${dept?.label ?? "Department"} · ${getFlagFilterLabel(categoryFilter)}`;
-      }
-      return dept?.label ?? "Department";
+      return (
+        departmentSideOptions.find((o) => o.id === String(departmentId))?.label ?? "Department"
+      );
     }
     if (view === "minister") {
-      const minister = ministerSideOptions.find((o) => o.id === String(ministerId));
-      if (categoryFilter !== "all") {
-        return `${minister?.label ?? "Minister"} · ${getFlagFilterLabel(categoryFilter)}`;
-      }
-      return minister?.label ?? "Minister";
+      return ministerSideOptions.find((o) => o.id === String(ministerId))?.label ?? "Minister";
     }
     return "All releases";
-  }, [
-    isSearching,
-    view,
-    categoryFilter,
-    departmentId,
-    ministerId,
-    departmentSideOptions,
-    ministerSideOptions,
-  ]);
+  }, [isSearching, view, departmentId, ministerId, departmentSideOptions, ministerSideOptions]);
+
+  const activeCategoryOptions =
+    view === "department"
+      ? departmentCategoryOptions
+      : view === "minister"
+        ? ministerCategoryOptions
+        : [];
 
   const browseSubtitle = `${formatReleaseCount(filteredReleases.length)} total · ${filteredReleasesByDate.length} ${filteredReleasesByDate.length === 1 ? "date" : "dates"}`;
 
@@ -373,104 +382,82 @@ export function GovPressReleaseTimeline({
     );
   }
 
+  if (isDateBrowse && !selectedDate) {
+    return (
+      <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+        Loading releases…
+      </p>
+    );
+  }
+
   return (
     <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-hidden">
       {lightbox}
-
-      <div className="shrink-0">
-        <GovPressReleaseViewTabs view={view} onViewChange={setView} />
-      </div>
 
       <div className="flex min-h-0 flex-1 flex-col gap-3 lg:flex-row lg:overflow-hidden">
         {view === "department" || view === "minister" ? (
           <aside className="flex w-full shrink-0 flex-col gap-3 lg:w-[220px] xl:w-[240px]">
           {view === "department" ? (
-            <>
-              <GovPressReleaseSideFilters
-                title="Departments"
-                options={filteredDepartmentSideOptions}
-                selectedId={departmentId != null ? String(departmentId) : null}
-                onSelect={(id) => setDepartmentId(Number.parseInt(id, 10))}
-                listClassName="max-h-[min(28vh,240px)]"
-                search={departmentListSearch}
-                onSearchChange={setDepartmentListSearch}
-                searchPlaceholder="Search departments…"
-                emptyMessage="No departments match your search."
-              />
-              <GovPressReleaseSideFilters
-                title="Category"
-                options={departmentCategoryOptions}
-                selectedId={categoryFilter}
-                onSelect={(id) => setCategoryFilter(id as GovPressReleaseFlagFilter)}
-                listClassName="max-h-[min(40vh,360px)]"
-              />
-            </>
+            <GovPressReleaseSideFilters
+              title="Departments"
+              options={filteredDepartmentSideOptions}
+              selectedId={departmentId != null ? String(departmentId) : null}
+              onSelect={(id) => setDepartmentId(Number.parseInt(id, 10))}
+              listClassName="max-h-[min(50vh,420px)]"
+              search={departmentListSearch}
+              onSearchChange={setDepartmentListSearch}
+              searchPlaceholder="Search departments…"
+              emptyMessage="No departments match your search."
+            />
           ) : null}
 
           {view === "minister" ? (
-            <>
-              <GovPressReleaseSideFilters
-                title="Ministers"
-                options={filteredMinisterSideOptions}
-                selectedId={ministerId != null ? String(ministerId) : null}
-                onSelect={(id) => setMinisterId(Number.parseInt(id, 10))}
-                listClassName="max-h-[min(28vh,240px)]"
-                search={ministerListSearch}
-                onSearchChange={setMinisterListSearch}
-                searchPlaceholder="Search ministers…"
-                emptyMessage="No ministers match your search."
-              />
-              <GovPressReleaseSideFilters
-                title="Category"
-                options={ministerCategoryOptions}
-                selectedId={categoryFilter}
-                onSelect={(id) => setCategoryFilter(id as GovPressReleaseFlagFilter)}
-                listClassName="max-h-[min(40vh,360px)]"
-              />
-            </>
+            <GovPressReleaseSideFilters
+              title="Ministers"
+              options={filteredMinisterSideOptions}
+              selectedId={ministerId != null ? String(ministerId) : null}
+              onSelect={(id) => setMinisterId(Number.parseInt(id, 10))}
+              listClassName="max-h-[min(50vh,420px)]"
+              search={ministerListSearch}
+              onSearchChange={setMinisterListSearch}
+              searchPlaceholder="Search ministers…"
+              emptyMessage="No ministers match your search."
+            />
           ) : null}
           </aside>
         ) : null}
 
         {isDateBrowse ? (
-          <>
-            <aside className="flex shrink-0 flex-col items-center">
-              <p className="mb-1.5 w-[128px] text-center text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-                Select date
-              </p>
-              <VerticalDatePicker
-                availableDates={allDates}
-                value={selectedDate}
-                onChange={setSelectedDate}
-              />
-            </aside>
-
-            <div className="flex min-h-0 min-w-0 flex-1 flex-col">
-              <div className="mb-3 shrink-0">
-                <h2 className="text-lg font-bold tracking-tight">
-                  {format(parseReleaseDate(selectedDate), "EEEE, d MMMM yyyy")}
-                </h2>
-                <p className="text-xs text-muted-foreground">
-                  {formatReleaseCount(releasesForDate.length)} on this date ·{" "}
-                  {formatReleaseCount(datedReleases.length)} total
-                </p>
-              </div>
-
-              <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-                {releasesForDate.length === 0 ? (
-                  <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-                    No releases on this date.
-                  </p>
-                ) : (
-                  <ReleaseReaderGrid releases={releasesForDate} onReleaseOpen={openLightbox} />
-                )}
-              </div>
+          <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
+            <div className="mb-3 shrink-0">
+              <h2 className="text-lg font-bold tracking-tight">
+                {format(parseReleaseDate(selectedDate), "EEEE, d MMMM yyyy")}
+              </h2>
             </div>
-          </>
+
+            <div className="min-h-0 flex-1 overflow-y-auto pr-1">
+              {releasesForDate.length === 0 ? (
+                <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+                  No releases on this date.
+                </p>
+              ) : (
+                <ReleaseReaderGrid releases={releasesForDate} onReleaseOpen={openLightbox} />
+              )}
+            </div>
+          </div>
         ) : (
           <CrossDateReleaseBrowse
             title={browseTitle}
             subtitle={browseSubtitle}
+            headerActions={
+              (view === "department" || view === "minister") && !isSearching ? (
+                <GovPressReleaseCategoryFilterButton
+                  options={activeCategoryOptions}
+                  value={categoryFilter}
+                  onChange={(value) => setCategoryFilter?.(value)}
+                />
+              ) : undefined
+            }
             emptyMessage={
               isSearching
                 ? "No releases match your search."

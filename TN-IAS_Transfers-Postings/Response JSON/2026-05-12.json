@@ -1,8 +1,8 @@
 {
   "date": "2026-05-12",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 3,
   "postings": [
@@ -11,21 +11,79 @@
       "go_date": "2026-05-12",
       "go_number": "G.O. RT.1678, dt 12.5.2026.pdf",
       "subject": "IAS Transfer and Posting",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1678, dt 12.5.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1678, dt 12.5.2026.pdf",
+      "officers": [
+        {
+          "name": "Thiru M.A. Siddique",
+          "details": "Thiru M.A. Siddique, IAS, who has been posted as Additional Chief Secretary to Government, Finance Department in the Government Order read above, shall continue to hold the post of Additional Secretary/ Chennai Metro Rail Limited in full Chief Managing Director additional charge, until further orders",
+          "old_post": "",
+          "new_post": "Additional Chief Secretary to Government, Finance Department in the Government Order read above, shall continue to hold the post of Additional Secretary/ Chennai Metro Rail Limited in full Chief Managing Director additional charge, until further orders",
+          "confidence": 0.45
+        }
+      ],
+      "parse_status": "ok"
     },
     {
       "serial_number": 33,
       "go_date": "2026-05-12",
       "go_number": "G.O. Rt. No.1670.pdf",
       "subject": "IAS TRANSFER AND POSTINGS NOTIFIED",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. Rt. No.1670.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. Rt. No.1670.pdf",
+      "officers": [
+        {
+          "name": "Thiru N. Muruganandam",
+          "details": "Thiru N. Muruganandam, IAS, return from leave, is posted on Additional Chief Secretary / Commissioner of Revenue Administration and as P.Amudha, holding additional charge; Disaster Management vice Tmt. IAS",
+          "old_post": "",
+          "new_post": "",
+          "confidence": 0.30000000000000004
+        },
+        {
+          "name": "Thiru M.A. Siddique",
+          "details": "Thiru M.A. Siddique, IAS, Additional Chief Secretary / Managing Director, Chennai Metro Rail Limited, is transferred and posted as Additional Chief Secretary to Government, Finance Department",
+          "old_post": "Additional Chief Secretary / Managing Director, Chennai Metro Rail Limited",
+          "new_post": "Additional Chief Secretary to Government, Finance Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. S. Swarna",
+          "details": "Dr. S. Swarna, IAS, Principal Secretary / State Project Director Rashtriya Uchchatar Shiksha Abhiyan (RUSA), is transferred and posted as Principal Secretary to Government, Tourism, Culture and Religious Endowments Department",
+          "old_post": "Principal Secretary / State Project Director Rashtriya Uchchatar Shiksha Abhiyan (RUSA)",
+          "new_post": "Principal Secretary to Government, Tourism, Culture and Religious Endowments Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru K. Nanthakumar",
+          "details": "Thiru K. Nanthakumar, IAS, Registrar of Cooperative Societies, are placed at the disposal of Tamil Nadu State Marketing Corporation (TASMAC), for appointment its Managing Director as",
+          "old_post": "Registrar of Cooperative Societies",
+          "new_post": "Tamil Nadu State Marketing Corporation (TASMAC), for appointment its Managing Director as",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     },
     {
       "serial_number": 34,
       "go_date": "2026-05-12",
       "go_number": "G.O. Rt. No.1671.pdf",
       "subject": "IAS TRANSFER AND POSTINGS NOTIFIED",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. Rt. No.1671.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. Rt. No.1671.pdf",
+      "officers": [
+        {
+          "name": "Dr. A. Annadurai",
+          "details": "Dr. A. Annadurai, IAS, Managing Director Supplies Corporation, is transferred and posted as Secretary-III to Chief Minister in the post created in para 1 above",
+          "old_post": "Managing Director Supplies Corporation",
+          "new_post": "Secretary-III to Chief Minister in the post created in para 1 above",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru V. Vishnu",
+          "details": "Thiru V. Vishnu, IAS, Additional Secretary to Government Special Programme Implementation Department, is transferred and posted as Additional Secretary to Chief Minister in the cadre post",
+          "old_post": "Additional Secretary to Government Special Programme Implementation Department",
+          "new_post": "Additional Secretary to Chief Minister in the cadre post",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     }
   ]
 }

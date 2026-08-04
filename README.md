@@ -24,7 +24,7 @@ Open the URL shown in the terminal (usually `http://localhost:5173`). JSON data 
 |------|--------|---------|--------|
 | DIPR press releases | [dipr.tn.gov.in](https://dipr.tn.gov.in/press-release1.html) | `TN-DIPR-Press Release/Response JSON/` | Press Releases |
 | Government press release images | [tn.gov.in](https://www.tn.gov.in/press_release.php) | `TN-GOV-Press Release/Response JSON/` | PR Images |
-| Government orders (G.O.s) | [tn.gov.in](https://www.tn.gov.in/godept_list.php) | `TN-GOV_GO-Departments/Response JSON/` | Government Orders |
+| Government orders (G.O.s) | [tn.gov.in](https://www.tn.gov.in/godept_list.php) | `TN-Government Orders/Response JSON/` | Government Orders |
 | IAS transfers & postings | [tn.gov.in](https://tnsectdemo.tn.gov.in/ias/transferandpostings.php) | `TN-IAS_Transfers-Postings/Response JSON/` | Transfers and Postings |
 | Departments (directory) | [tn.gov.in](https://www.tn.gov.in/department_list.php) | `TN-GOV_Departments/manifests/tn_departments.json` | Departments |
 | Council of ministers | [tn.gov.in](https://www.tn.gov.in/minister_list.php) | `TN-GOV_Council Of Ministers/manifests/tn_ministers.json` | Ministers |
@@ -32,16 +32,16 @@ Open the URL shown in the terminal (usually `http://localhost:5173`). JSON data 
 | Tamil Arasu magazine | [Tamil Digital Library](https://tamildigitallibrary.in/) | `TN-TVA-Magazine/manifests/magazine.json` (+ optional `Response JSON/`) | Magazine |
 | Tamil Nadu news | [NewsData.io](https://newsdata.io/) | `TN-News/Response JSON/` | News |
 
-Daily scrapers write one JSON file per date under each folder's `Response JSON/`. Directory syncs (departments, ministers, districts) and the magazine manifest are single snapshot files refreshed by scheduled jobs.
+Daily scrapers write one JSON file per date under each folder's `Response JSON/`. Government orders use one JSON file per department. Directory syncs (departments, ministers, districts) and the magazine manifest are single snapshot files refreshed by scheduled jobs.
 
-### `TN-GOV_Departments` vs `TN-GOV_GO-Departments`
+### `TN-GOV_Departments` vs `TN-Government Orders`
 
 These names look similar but serve different purposes:
 
 | Folder | What it stores | tn.gov.in page |
 |--------|----------------|----------------|
 | `TN-GOV_Departments` | **Department directory** — names, IDs, minister assignments | [department_list.php](https://www.tn.gov.in/department_list.php) |
-| `TN-GOV_GO-Departments` | **Government Orders (G.O.s)** — order number, subject, PDF link by date | [godept_list.php](https://www.tn.gov.in/godept_list.php) |
+| `TN-Government Orders` | **Government Orders (G.O.s)** — order number, subject, PDF link by department | [godept_list.php](https://www.tn.gov.in/godept_list.php) |
 
 **GO** here means **Government Order**, not "go to departments."
 
@@ -68,7 +68,7 @@ tavekagov/
 ├── docs/                         # Project documentation (see below)
 ├── TN-DIPR-Press Release/        # DIPR press release sync + PDF downloader
 ├── TN-GOV-Press Release/         # tn.gov.in press release image sync
-├── TN-GOV_GO-Departments/        # Government orders (G.O.s) sync
+├── TN-Government Orders/         # Government orders (G.O.s) sync
 ├── TN-GOV_Departments/           # Department directory sync (not G.O.s)
 ├── TN-IAS_Transfers-Postings/    # IAS transfers & postings sync
 ├── TN-GOV_Council Of Ministers/  # Ministers sync
@@ -126,7 +126,7 @@ python tn_dept_sync.py
 | `tn_dept_sync.py` | `TN-GOV_Departments/` | `manifests/tn_departments.json` |
 | `tn_ministers_sync.py` | `TN-GOV_Council Of Ministers/` | `manifests/tn_ministers.json` |
 | `tn_districts_sync.py` | `TN-GOV_Districts/` | `manifests/tn_districts.json` |
-| `tn_go_dept_sync.py` | `TN-GOV_GO-Departments/` | `Response JSON/YYYY-MM-DD.json` |
+| `tn_government_orders_sync.py` | `TN-Government Orders/` | `Response JSON/<department>.json` |
 | `tn_press_release_sync.py` | `TN-DIPR-Press Release/` | `Response JSON/YYYY-MM-DD.json` |
 | `tn_gov_press_release_sync.py` | `TN-GOV-Press Release/` | `Response JSON/YYYY-MM-DD.json` |
 | `tn_transfers_postings_sync.py` | `TN-IAS_Transfers-Postings/` | `Response JSON/YYYY-MM-DD.json` |
@@ -164,7 +164,8 @@ All fetch workflows run at **11:00 PM IST** (17:30 UTC). Details: [docs/GITHUB_A
 |----------|-----------------|
 | `fetch-tn-dipr-press-releases.yml` | DIPR press releases |
 | `fetch-tn-gov-manifests.yml` | Ministers, departments, districts manifests |
-| `fetch-tn-scraped-data.yml` | PR images, G.O.s, transfers/postings, magazine |
+| `fetch-tn-scraped-data.yml` | PR images, transfers/postings, magazine |
+| `fetch-tn-government-orders.yml` | Government orders (per department) |
 | `fetch-tamil-nadu-news.yml` | News JSON |
 | `deploy-web.yml` | GitHub Pages site from `web/dist` (on push to `main`) |
 

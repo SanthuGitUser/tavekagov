@@ -1,8 +1,8 @@
 {
   "date": "2026-06-09",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 2,
   "postings": [
@@ -11,14 +11,83 @@
       "go_date": "2026-06-09",
       "go_number": "GO RT NO 2047 DATED 09.06.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/GO RT NO 2047 DATED 09.06.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/GO RT NO 2047 DATED 09.06.2026.pdf",
+      "officers": [
+        {
+          "name": "Thiru Shunchonngam Jatak Chiru",
+          "details": "Thiru Shunchonngam Jatak Chiru, IAS, Principal Secretary to Government, Public Works Department, is transferred and posted as Principal Secretary to Government, Highways and Minor Ports Department",
+          "old_post": "Principal Secretary to Government, Public Works Department",
+          "new_post": "Principal Secretary to Government, Highways and Minor Ports Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. R. Selvaraj",
+          "details": "Dr. R. Selvaraj, IAS, Secretary to Government, Highways and Minor Ports Department, is transferred and posted as Secretary to Government, Public Works Department",
+          "old_post": "Secretary to Government, Highways and Minor Ports Department",
+          "new_post": "Secretary to Government, Public Works Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru Sandeep Nanduri",
+          "details": "Thiru Sandeep Nanduri, IAS, Special Secretary to Government, Industries, Investment Promotion and Commerce Department, is transferred and posted as Secretary to Government, Youth Welfare and Sports Development Department in the place of Thiru transferred; Sajjansingh R Chavan, IAS, already",
+          "old_post": "Special Secretary to Government, Industries, Investment Promotion and Commerce Department",
+          "new_post": "Secretary to Government, Youth Welfare and Sports Development Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt. P. Uma Maheswari",
+          "details": "Tmt. P. Uma Maheswari, IAS, Chairperson, Medical Services Recruitment Board, is transferred and posted Director, Handlooms in the as above the place of Tmt. Mageswari Ravikumar, post created in para 1 in IAS, already transferred p.t.o 2",
+          "old_post": "Chairperson, Medical Services Recruitment Board",
+          "new_post": "",
+          "confidence": 0.55
+        },
+        {
+          "name": "Thiru M. Pradeep Kumar",
+          "details": "Thiru M. Pradeep Kumar, IAS, formerly Director, Town Panchayats, is posted Director, Backward Classes Welfare vice as",
+          "old_post": "",
+          "new_post": "",
+          "confidence": 0.30000000000000004
+        },
+        {
+          "name": "Tmt. R. Alagumeena",
+          "details": "Tmt. R. Alagumeena, IAS, Deputy Secretary to Government Health and Family Welfare Department is transferred and posted as created Chairperson, Medical Services Recruitment Board in the post in para 1 above",
+          "old_post": "Deputy Secretary to Government Health and Family Welfare Department",
+          "new_post": "created Chairperson, Medical Services Recruitment Board in the post in para 1 above",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. R. Suresh Kumar",
+          "details": "Dr. R. Suresh Kumar, IAS, Commissioner the disposal of Tamil Nadu Khadi Backward Classes Welfare, are placed at and Village Industries Board for appointment as its Chief Executive Officer in the place of",
+          "old_post": "Commissioner the disposal of Tamil Nadu Khadi Backward Classes Welfare",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru V.Sampath",
+          "details": "Thiru V.Sampath, IAS, retired of Chitra IAS, Regional Deputy 4, The services Tmt Vijayan Commissioner (North), Greater Chennai Corporation, are placed at the disposal of Greater Chennai Corporation for appointment as its Deputy Commissioner (Revenue and Finance)",
+          "old_post": "retired of Chitra IAS, Regional Deputy 4, The services Tmt Vijayan Commissioner (North), Greater Chennai Corporation",
+          "new_post": "Greater Chennai Corporation for appointment as Deputy Commissioner (Revenue and Finance)",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     },
     {
       "serial_number": 7,
       "go_date": "2026-06-09",
       "go_number": "GO RT NO 2048 DATED 09.06.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/GO RT NO 2048 DATED 09.06.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/GO RT NO 2048 DATED 09.06.2026.pdf",
+      "officers": [
+        {
+          "name": "Thiru Dheeraj Kumar",
+          "details": "Thiru Dheeraj Kumar, IAS, formerly Secretary to Government, Home, Prohibition and Excise Department are placed at the disposal of Entrepreneurship Development and Innovation for appointment its Additional Chief Secretary / Commissioner Institute, as transferred. in the place of",
+          "old_post": "formerly Secretary to Government, Home, Prohibition and Excise Department",
+          "new_post": "Entrepreneurship Development and Innovation for appointment its Additional Chief Secretary / Commissioner Institute, as transferred. in the place of",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     }
   ]
 }

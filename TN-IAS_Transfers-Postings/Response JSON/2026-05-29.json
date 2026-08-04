@@ -1,8 +1,8 @@
 {
   "date": "2026-05-29",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 3,
   "postings": [
@@ -11,21 +11,287 @@
       "go_date": "2026-05-29",
       "go_number": "G.O. RT.1883, dt 29.5.2026_compressed.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1883, dt 29.5.2026_compressed.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1883, dt 29.5.2026_compressed.pdf",
+      "officers": [
+        {
+          "name": "Tmt E. Sundaravalli",
+          "details": "Tmt E. Sundaravalli, IAS, Commissioner, Collegiate Education, is transferred and posted Special Secretary to Government, Public and as Rehabilitation Department",
+          "old_post": "Commissioner, Collegiate Education",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt R. Lalitha",
+          "details": "Tmt R. Lalitha, IAS, Managing Director, New Tiruppur Area Development Corporation Limited, is transferred and posted as Secretary to Government (Expenditure), Finance Department, in the place of",
+          "old_post": "Managing Director, New Tiruppur Area Development Corporation Limited",
+          "new_post": "Secretary to Government (Expenditure), Finance Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru A.K. Kamal Kishore",
+          "details": "Thiru A.K. Kamal Kishore, IAS, District is transferred and posted as Joint Secretary to Government, Finance Department",
+          "old_post": "District",
+          "new_post": "Joint Secretary to Government, Finance Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru Prasanth",
+          "details": "Thiru Prasanth, IAS, District Collector, Kallakurichi District, M.S Finance is transferred and posted as Joint Secretary to Government Department",
+          "old_post": "District Collector, Kallakurichi District, M.S Finance",
+          "new_post": "Joint Secretary to Government Department",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt R. Alagumeena",
+          "details": "Tmt R. Alagumeena, IAS, District Collector, Kanniyakumari transferred and posted Deputy Secretary to Government, Health District, is as and Family Welfare Department",
+          "old_post": "",
+          "new_post": "",
+          "confidence": 0.30000000000000004
+        },
+        {
+          "name": "Tmt Pooja Kulkarni",
+          "details": "Tmt Pooja Kulkarni, IAS, Chief Executive Officer, Tamil Nadu Infrastructure Development Board, is transferred and posted as Commissioner Prohibition and the post created in 1 above vice Excise, in para",
+          "old_post": "Chief Executive Officer, Tamil Nadu Infrastructure Development Board",
+          "new_post": "Commissioner Prohibition and the post created in 1 above",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt V. Amuthavalli",
+          "details": "Tmt V. Amuthavalli, IAS, formerly Secretary to Government Handlooms, Handicrafts, Textiles and Khadi Department, is posted as Rural Development",
+          "old_post": "",
+          "new_post": "Rural Development",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru P. Ponniah",
+          "details": "Thiru P. Ponniah, IAS, Commissioner, Rural Development, is transferred and posted as Commissioner, Collegiate Education",
+          "old_post": "Commissioner, Rural Development",
+          "new_post": "Commissioner, Collegiate Education",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. T.G. Vinay",
+          "details": "Dr. T.G. Vinay, IAS, Managing Religious and Corporation, is transferred and posted as Commissioner, Hindu Charitable Endowments",
+          "old_post": "Managing Religious and Corporation",
+          "new_post": "Commissioner, Hindu Charitable Endowments",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru R. Kannan",
+          "details": "Thiru R. Kannan, IAS, Vice Chairman / Managing Director, Tamil Development is transferred and posted Nadu Watershed Agency, as Commissioner, Sugar",
+          "old_post": "Vice Chairman / Managing Director, Tamil Development",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Chandra Sekhar Sakhamuri",
+          "details": "Thiru Chandra Sekhar Sakhamuri, IAS, Chief Executive Officer Chennai Metropolitan Development Authority, is transferred and posted as Director, Agricultural Marketing and Agri Business in the place of",
+          "old_post": "Chief Executive Officer Chennai Metropolitan Development Authority",
+          "new_post": "Director, Agricultural Marketing and Agri Business",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. S. Uma",
+          "details": "Dr. S. Uma, IAS, Additional Secretary to Government Family Welfare Department, is transferred and posted as Project Director Tamil Nadu Health Systems Project p.t.o...4) Mee =",
+          "old_post": "Additional Secretary to Government Family Welfare Department",
+          "new_post": "Project Director Tamil Nadu Health Systems Project p.t.o...4) Mee =",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt. B. Priyanka",
+          "details": "Tmt. B. Priyanka, IAS, District Collector, Thanjavur District, is posted Panchayats, the post created at transferred and as Director, Town in para 2 above",
+          "old_post": "",
+          "new_post": "",
+          "confidence": 0.30000000000000004
+        },
+        {
+          "name": "Thiru P. Akash",
+          "details": "Thiru P. Akash, IAS, District Collector, Nagapattinam District, is transferred and posted District Collector, Madurai District vice as IAS; Thiru K.J.Praveen Kumar",
+          "old_post": "District Collector, Nagapattinam District",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru K.J. Praveen Kumar",
+          "details": "Thiru K.J. Praveen Kumar, IAS, District Collector, Madurai District, is transferred and posted as District Collector, Nagapattinam District",
+          "old_post": "District Collector, Madurai District",
+          "new_post": "District Collector, Nagapattinam District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. R. Vaithinathan",
+          "details": "Dr. R. Vaithinathan, IAS, formerly Director Public Relations / ex-officio Joint Secretary to Government, Tamil Development and Information Department; and Managing Director (FAC), Tamil Nadu Arasu Cable TV Corporation, is posted as District Collector, Theni District",
+          "old_post": "",
+          "new_post": "District Collector, Theni District",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru V. Saravanan",
+          "details": "Thiru V. Saravanan, IAS, District Collector, District is transferred and posted as District Collector, Dharmapuri District",
+          "old_post": "District Collector, District",
+          "new_post": "District Collector, Dharmapuri District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru M. Prathap",
+          "details": "Thiru M. Prathap, IAS, District Collector, Tiruvallur District, is posted Collector, Kanniyakumari District vice transferred and as District",
+          "old_post": "",
+          "new_post": "",
+          "confidence": 0.30000000000000004
+        },
+        {
+          "name": "Thiru Pratik Tayal",
+          "details": "Thiru Pratik Tayal, IAS, Joint Secretary to Government, Finance Department, is transferred and posted as District Collector, Tiruchirappalli District",
+          "old_post": "Joint Secretary to Government, Finance Department",
+          "new_post": "District Collector, Tiruchirappalli District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt Vandana Garg",
+          "details": "Tmt Vandana Garg, IAS, on return from leave, is posted as District Collector, Tiruvannamalai District",
+          "old_post": "",
+          "new_post": "District Collector, Tiruvannamalai District",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt J.E. Padmaja",
+          "details": "Tmt J.E. Padmaja, IAS, Additional Collector (Development) / Project Officer, District Rural Development Agency, Viluppuram District, is Collector, Kallakurichi District vice transferred and posted as District",
+          "old_post": "",
+          "new_post": "District",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt N. Priya",
+          "details": "Tmt N. Priya, IAS, Joint Managing Director / Project Director (WB & ADB Projects), Tamil Nadu Urban Habitat Development Board, is transferred and posted District Collector,. Ranipet District vice Dr. J.U. Chandrakala, as TAS",
+          "old_post": "Joint Managing Director / Project Director (WB & ADB Projects), Tamil Nadu Urban Habitat Development Board",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru L. Madhubalan",
+          "details": "Thiru L. Madhubalan, IAS, Commissioner, Corporation of Tiruchirappalli, is transferred and posted as District Collector, Namakkal District",
+          "old_post": "Commissioner, Corporation of Tiruchirappalli",
+          "new_post": "District Collector, Namakkal District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru Anand Mohan",
+          "details": "Thiru Anand Mohan, IAS, Joint Managing Director, Tamil Nadu Water Supply and Drainage Board, is transferred and posted as District Collector, Tirunelveli District",
+          "old_post": "Joint Managing Director, Tamil Nadu Water Supply and Drainage Board",
+          "new_post": "District Collector, Tirunelveli District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt P.S. Leela Alex",
+          "details": "Tmt P.S. Leela Alex, IAS, Member Secretary, Chennai Rivers Restoration Trust and Managing Director, Chennai Rivers Transformation Company Limited, is transferred and posted as District Collector, Vellore",
+          "old_post": "Member Secretary, Chennai Rivers Restoration Trust and Managing Director, Chennai Rivers Transformation Company Limited",
+          "new_post": "District Collector, Vellore",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt R. Revathi",
+          "details": "Tmt R. Revathi, IAS, Deputy Secretary to Government, Higher Education Department, is transferred and posed as District Collector Thanjavur District",
+          "old_post": "Deputy Secretary to Government, Higher Education Department",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. M. Veerappan",
+          "details": "Dr. M. Veerappan, IAS, Registrar Societies, is transferred and posted as District Collector, Chengalpattu District",
+          "old_post": "Registrar Societies",
+          "new_post": "District Collector, Chengalpattu District",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru K.Balasubramaniam",
+          "details": "Thiru K.Balasubramaniam, IAS, Additional Secretary to Department is transferred and posted Government, Public and Rehabilitation created 2 as Director, Indian Medicine and Homeopathy in the post in para above",
+          "old_post": "Additional Secretary to Department",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru Mangat Ram Sharma",
+          "details": "Thiru Mangat Ram Sharma, IAS, formerly Additional Chief Secretary to Government, Public Works Department, are Fin and Infrastructure Development placed at the disposal of Tamil Nadu Power Chairman and Corporation Limited (POWERFIN) for appointment as its Managing Director",
+          "old_post": "",
+          "new_post": "Tamil Nadu Power Chairman and Corporation Limited (POWERFIN) for appointment as Managing Director",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru J. Jayakanthan",
+          "details": "Thiru J. Jayakanthan, IAS, formerly Secretary to Department, placed at the disposal of Government, Water Resources are its Chairman and Poompuhar Shipping Corporation Limited for appointment as Managing Director",
+          "old_post": "",
+          "new_post": "Government, Water Resources are its Chairman and Poompuhar Shipping Corporation Limited for appointment as Managing Director",
+          "confidence": 0.65
+        },
+        {
+          "name": "Thiru E. Saravanavelraj",
+          "details": "Thiru E. Saravanavelraj, IAS, formerly Secretary Backward Classes, Most Backward Classes and Minorities to Government disposal of Tamil Nadu Minerals Limited Welfare Department, are placed at the Anil Meshram, for appointment as its Managing Director in the place of Thiru IAS, already transferred p.t.o...6) ae He shall also hold the full additional charge of the post of Managing Director, Tamil Nadu Magnesite Limited, Salem, until further orders Te The services of",
+          "old_post": "formerly Secretary Backward Classes, Most Backward Classes and Minorities to Government disposal of Tamil Nadu Minerals Limited Welfare Department",
+          "new_post": "",
+          "confidence": 0.55
+        },
+        {
+          "name": "Thiru P.N. Sridhar",
+          "details": "Thiru P.N. Sridhar, IAS, Commissioner, Hindu Religious and Charitable Endowments, are placed at the disposal of Tamil Nadu Green Energy Corporation for appointment its Managing Director vice as",
+          "old_post": "Commissioner, Hindu Religious and Charitable Endowments",
+          "new_post": "Tamil Nadu Green Energy Corporation for appointment its Managing Director",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt S.P. Karthikaa",
+          "details": "Tmt S.P. Karthikaa, IAS, Commissioner Prohibition and Excise, are placed at the disposal of Chennai Metropolitan Development Authority for appointment its Chief Executive Officer vice as Sakhamuri, Thiru Chandra Sekhar IAS",
+          "old_post": "Commissioner Prohibition and Excise",
+          "new_post": "Chennai Metropolitan Development Authority for appointment its Chief Executive Officer",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt R.V. Shajeevana",
+          "details": "Tmt R.V. Shajeevana, IAS, Chief Operating Officer, Tamil Nadu Rural Transformation Project, and Project Director (FAC) Tamil Nadu Women Employment and Safety Project, placed at the disposal are of Tamil Nadu Textbook and Educational Services Corporation for appointment Director vice Aarthi, IAS, holding additional charge. as its Managing Dr. M",
+          "old_post": "",
+          "new_post": "",
+          "confidence": 0.30000000000000004
+        },
+        {
+          "name": "Thiru Simranjeet Singh Kahlon",
+          "details": "Thiru Simranjeet Singh Kahlon, IAS, District Collector, Ramanathapuram District, are placed at the disposal of Chennai Rivers Restoration Trust for appointment its Member Secretary vice as",
+          "old_post": "District Collector, Ramanathapuram District",
+          "new_post": "Chennai Rivers Restoration Trust for appointment its Member Secretary",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru B. Ganesan",
+          "details": "Thiru B. Ganesan, IAS, formerly Director, Town 11 and Country Planning, are placed at the disposal of New Tiruppur Area Development Corporation Limited for appointment as its Managing Director",
+          "old_post": "formerly Director, Town 11 and Country Planning",
+          "new_post": "New Tiruppur Area Development Corporation Limited for appointment as Managing Director",
+          "confidence": 1.0
+        },
+        {
+          "name": "Tmt V.R. Subbulaxmi",
+          "details": "Tmt V.R. Subbulaxmi, IAS, District Collector Vellore District, placed at the disposal of Tamil Nadu Rural Transformation are Project for appointment _ its Chief Operating Officer vice as",
+          "old_post": "",
+          "new_post": "Tamil Nadu Rural Transformation are Project for appointment _ its Chief Operating Officer",
+          "confidence": 0.65
+        }
+      ],
+      "parse_status": "ok"
     },
     {
       "serial_number": 18,
       "go_date": "2026-05-29",
       "go_number": "G.O. RT.1884, dt 29.5.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1884, dt 29.5.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1884, dt 29.5.2026.pdf",
+      "officers": [],
+      "parse_status": "no_officers"
     },
     {
       "serial_number": 19,
       "go_date": "2026-05-29",
       "go_number": "G.O. RT.1876, dt 29.5.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1876, dt 29.5.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1876, dt 29.5.2026.pdf",
+      "officers": [],
+      "parse_status": "no_officers"
     }
   ]
 }

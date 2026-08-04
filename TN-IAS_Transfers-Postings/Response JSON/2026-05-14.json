@@ -1,8 +1,8 @@
 {
   "date": "2026-05-14",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 2,
   "postings": [
@@ -11,14 +11,83 @@
       "go_date": "2026-05-14",
       "go_number": "G.O. RT.1712, dt 14.5.2026.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1712, dt 14.5.2026.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. RT.1712, dt 14.5.2026.pdf",
+      "officers": [
+        {
+          "name": "Thiru Brajendra Navnit",
+          "details": "Thiru Brajendra Navnit, IAS, Principal Secretary to Government, Information Technology and Digital Services Department are placed at the disposal of the Government of India for appointment as Additional Secretary, Eighth Central Pay Commission under the Department of Expenditure, Ministry of Finance",
+          "old_post": "Principal Secretary to Government, Information Technology and Digital Services Department",
+          "new_post": "the Government of India for appointment as Additional Secretary, Eighth Central Pay Commission under the Department of Expenditure, Ministry of Finance",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     },
     {
       "serial_number": 30,
       "go_date": "2026-05-14",
       "go_number": "1710.pdf",
       "subject": "IAS TRANSFER AND POSTING",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/1710.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/1710.pdf",
+      "officers": [
+        {
+          "name": "Dr. S. Vijayakumar",
+          "details": "Dr. S. Vijayakumar, IAS, Additional Chief Secretary Commissioner Land Reforms, is transferred and posted as Additional Chief Secretary to Government, Industries, Investment Promotion and Commerce Department in the post created in 1 above",
+          "old_post": "Additional Chief Secretary Commissioner Land Reforms",
+          "new_post": "Additional Chief Secretary to Government, Industries, Investment Promotion and Commerce Department in the post created in 1 above",
+          "confidence": 1.0
+        },
+        {
+          "name": "Thiru V. Arun Roy",
+          "details": "Thiru V. Arun Roy, IAS, Secretary to Government, Industries Investment Promotion and Commerce Department, is transferred and posted as Secretary to Government, Higher Education Department in the post created in 2 above",
+          "old_post": "Secretary to Government, Industries Investment Promotion and Commerce Department",
+          "new_post": "Secretary to Government, Higher Education Department in the post created in 2 above",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dr. N. Subbaiyan",
+          "details": "Dr. N. Subbaiyan, IAS, formerly Secretary to Government Husbandry, Dairying, Fisheries and Fishermen Welfare Department, is posted as Secretary to Government, Adi Dravidar and Tribal Welfare Department in the cadre post",
+          "old_post": "",
+          "new_post": "Secretary to Government, Adi Dravidar and Tribal Welfare Department in the cadre post",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt R. Jaya",
+          "details": "Tmt R. Jaya, IAS Special Initiatives Department is transferred and posted as Additional Chief Secretary / Chief Resident Commissioner, Tamil Nadu House, New Delhi in the post created in para 1 above v)",
+          "old_post": "",
+          "new_post": "Additional Chief Secretary / Chief Resident Commissioner, Tamil Nadu House, New Delhi in the post created in para 1 above v)",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. M.S. Shanmugam",
+          "details": "Dr. M.S. Shanmugam, IAS, formerly Secretary-II to then of in the cadre post vice Chief Minister, is posted as Commissioner Tourism",
+          "old_post": "",
+          "new_post": "Commissioner Tourism",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. A. Arun Thamburaj",
+          "details": "Dr. A. Arun Thamburaj, IAS, District Collector, Salem District, is and Public Relations and transferred and posted as Director, Information ex-officio Additional Secretary to Government, Tamil Development and Information Department",
+          "old_post": "",
+          "new_post": "Director, Information ex-officio Additional Secretary to Government, Tamil Development and Information Department",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. R. Brindha Devi",
+          "details": "Dr. R. Brindha Devi, IAS, formerly District Collector, Salem District created in 3 above vice is posted as Director of Art and Culture in the post para",
+          "old_post": "",
+          "new_post": "Director of Art and Culture in the post para",
+          "confidence": 0.65
+        },
+        {
+          "name": "Dr. P. Umanath",
+          "details": "Dr. P. Umanath, IAS, Principal Secretary / formerly Chief placed at the disposal of Tamil Nadu Civil Secretary-I to then Minister are / Chairman and Supplies Corporation for appointment as its Principal Secretary Managing Director 3",
+          "old_post": "",
+          "new_post": "Tamil Nadu Civil Secretary-I to then Minister are / Chairman and Supplies Corporation for appointment as Principal Secretary Managing Director 3",
+          "confidence": 0.65
+        }
+      ],
+      "parse_status": "ok"
     }
   ]
 }

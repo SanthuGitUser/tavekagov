@@ -1,8 +1,8 @@
 {
   "date": "2026-05-10",
   "fetchedAt": "2026-08-01T01:24:06.340375+05:30",
-  "lastFetchedAt": "2026-08-01T01:26:27.973022+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-03T23:38:26.689513+05:30",
+  "fetchCount": 6,
   "source_url": "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
   "count": 1,
   "postings": [
@@ -11,7 +11,24 @@
       "go_date": "2026-05-10",
       "go_number": "G.O. Rt. No.1654.pdf",
       "subject": "IAS TRANSFER AND POSTINGS NOTIFIED",
-      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. Rt. No.1654.pdf"
+      "pdf_url": "https://tnsectdemo.tn.gov.in/ias/Files/xfer/G.O. Rt. No.1654.pdf",
+      "officers": [
+        {
+          "name": "Dr. P. Senthilkumar",
+          "details": "Dr. P. Senthilkumar, IAS, Additional Chief Secretary to Government, Health and Family Welfare Department is transferred and posted Additional Chief Secretary/ Secretary-I to Chief Minister in the as post created in para 1 above fi)",
+          "old_post": "Additional Chief Secretary to Government, Health and Family Welfare Department",
+          "new_post": "",
+          "confidence": 0.65
+        },
+        {
+          "name": "Tmt G.Laxmi Priya",
+          "details": "Tmt G.Laxmi Priya, IAS, Secretary to Government Adi Dravidar and Tribal Welfare Department is transferred and posted as Secretary-II Chief Minister in the post created in 2 above; to para",
+          "old_post": "Secretary to Government Adi Dravidar and Tribal Welfare Department",
+          "new_post": "Secretary-II Chief Minister in the post created in 2 above",
+          "confidence": 1.0
+        }
+      ],
+      "parse_status": "ok"
     }
   ]
 }

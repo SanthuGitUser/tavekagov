@@ -29,8 +29,9 @@ jobs:
 
       - name: Install dependencies
         run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
           pip install -r "TN-GOV-Press Release/requirements.txt"
-          pip install -r TN-GOV_GO-Departments/requirements.txt
           pip install -r TN-IAS_Transfers-Postings/requirements.txt
           pip install -r TN-TVA-Magazine/requirements.txt
           pip install -r Sync-Config/requirements.txt
@@ -55,14 +56,6 @@ jobs:
         run: |
           TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
           python "TN-GOV-Press Release/tn_gov_press_release_sync.py" \
-            --start-date "$TODAY" \
-            --end-date "$TODAY"
-
-      - name: Fetch today's government orders
-        if: steps.tn_gov.outcome == 'success'
-        run: |
-          TODAY=$(TZ=Asia/Kolkata date +%d-%m-%Y)
-          python TN-GOV_GO-Departments/tn_go_dept_sync.py \
             --start-date "$TODAY" \
             --end-date "$TODAY"
 
@@ -102,7 +95,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "TN-GOV-Press Release/Response JSON/"
-          git add "TN-GOV_GO-Departments/Response JSON/"
           git add "TN-IAS_Transfers-Postings/Response JSON/"
           git add "TN-TVA-Magazine/manifests/magazine.json"
           git add "TN-TVA-Magazine/Response JSON/"

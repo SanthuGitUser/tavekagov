@@ -1,0 +1,80 @@
+{
+  "department_name": "Finance Department",
+  "dep_id_encoded": "OQ==",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=OQ==&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:32.497505+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:11.524912+05:30",
+  "fetchCount": 2,
+  "count": 8,
+  "orders": [
+    {
+      "go_date": "2026-07-28",
+      "go_number": "G.O.Ms.No. 152",
+      "go_name": "Finance Department – Interim Monthly Payout – Sanctioned – Amendment – Orders - Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_152_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
+    {
+      "go_date": "2026-07-24",
+      "go_number": "G.O.Ms.No.145",
+      "go_name": "Provident Fund - General Provident Fund (Tamil Nadu) – Rate of interest for the financial year 2026-2027 with effect from 01.07.2026 to 30.09.2026 - Orders – Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_145_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
+    {
+      "go_date": "2026-07-10",
+      "go_number": "G.O.Ms.No. 133",
+      "go_name": "RULES – Tamil Nadu Transparency in Tenders Rules, 2000 – Amendment – Orders – Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_133_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
+    {
+      "go_date": "2026-07-02",
+      "go_number": "Letter No. 14190711/Finance (TAPS)/ 2026-3",
+      "go_name": "Pension - Sustenance support to eligible Government servants retiring under the CPS on or after 01.01.2026 till the notification of regular TAPS rules - Interim Payout- Clarification sought for - Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_14190711_2026_lr.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
+    {
+      "go_date": "2026-06-24",
+      "go_number": "G.O.Ms.No.123",
+      "go_name": "MEDICAL AID – New Health Insurance Scheme, 2026 for Pensioners (including spouse) / Family Pensioners – Provision of Health Care Assistance to the Pensioners (including spouse) / Family Pensioners through the United India Insurance Company Limited, Chennai – Implementation – Orders – Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_123_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
+    {
+      "go_date": "2026-06-24",
+      "go_number": "G.O.Ms.No.122",
+      "go_name": "MEDICAL AID – New Health Insurance Scheme, 2026 – Provision of Health Care Assistance to the Employees of Government Departments and their eligible family members through the United India Insurance Company Limited, Chennai - Implementation - Orders – Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_122_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
+    {
+      "go_date": "2026-06-16",
+      "go_number": "G.O.(Ms).No.111",
+      "go_name": "Pension –Tamil Nadu Assured Pension Scheme (TAPS) –Framing of rules and procedures– Sustenance support to eligible Government servants retiring on or after 01.01.2026 in the intervening period till the notification of TAPS rules – InterimPayout- Orders - Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_111_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
+    {
+      "go_date": "2026-05-14",
+      "go_number": "G.O.Ms.No.98",
+      "go_name": "PENSION – Dearness Allowance to the Pensioners and Family Pensioners – Enhanced Rate admissible from 1st January 2026 – Orders – Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_98_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    }
+  ]
+}

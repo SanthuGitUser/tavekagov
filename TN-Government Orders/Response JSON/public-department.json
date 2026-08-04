@@ -1,0 +1,72 @@
+{
+  "department_name": "Public Department",
+  "dep_id_encoded": "MjQ=",
+  "department_url": "https://www.tn.gov.in/go.php?dep_id=MjQ=&year=MjAyNw==",
+  "years_fetched": [
+    2026
+  ],
+  "start_date": "10-05-2026",
+  "source_url": "https://www.tn.gov.in/godept_list.php",
+  "fetchedAt": "2026-08-02T00:34:38.071420+05:30",
+  "lastFetchedAt": "2026-08-02T00:49:17.165600+05:30",
+  "fetchCount": 2,
+  "count": 7,
+  "orders": [
+    {
+      "go_date": "2026-05-30",
+      "go_number": "G.O Ms. No. 366",
+      "go_name": "MINISTERS - Inter-se-Seniority of Ministers and Subjects- Orders - Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_366_2026.pdf",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ="
+    },
+    {
+      "go_date": "2026-05-22",
+      "go_number": "G.O Ms. No. 344",
+      "go_name": "MINISTERS - Appointment - Notified.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_344_2026.pdf",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ="
+    },
+    {
+      "go_date": "2026-05-22",
+      "go_number": "G.O Ms. No. 345",
+      "go_name": "MINISTERS - Allocation of Subjects among Ministers - Orders - Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_345_2026.pdf",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ="
+    },
+    {
+      "go_date": "2026-05-21",
+      "go_number": "G.O Ms. No. 343",
+      "go_name": "MINISTERS - Appointment - Notified.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_343_2026.pdf",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ="
+    },
+    {
+      "go_date": "2026-05-16",
+      "go_number": "G.O Ms. No. 338",
+      "go_name": "MINISTERS - Allocation of Business - Notified.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_338_2026.pdf",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ="
+    },
+    {
+      "go_date": "2026-05-10",
+      "go_number": "G.O Ms. No. 328",
+      "go_name": "MINISTERS-Resignation-Notified.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_328_2026.pdf",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ="
+    },
+    {
+      "go_date": "2026-05-10",
+      "go_number": "G.O Ms.No. 329",
+      "go_name": "MINISTERS-Appointment-Notified.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_329_2026.pdf",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ="
+    }
+  ]
+}

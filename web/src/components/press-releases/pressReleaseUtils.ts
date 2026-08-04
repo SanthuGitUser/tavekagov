@@ -1,9 +1,14 @@
 import type { PressRelease } from "@/types/models";
 
+export {
+  buildDepartmentSideOptions,
+  buildMinisterSideOptions,
+} from "@/lib/releaseSideFilterUtils";
+
 export type PressReleaseView = "all" | "department" | "minister";
 
 export const PRESS_RELEASE_VIEW_LABELS: Record<PressReleaseView, string> = {
-  all: "All",
+  all: "Calendar",
   department: "Department",
   minister: "Minister",
 };
@@ -40,51 +45,4 @@ export function matchesSearch(release: PressRelease, query: string): boolean {
     .join(" ")
     .toLowerCase();
   return haystack.includes(query);
-}
-
-export function buildDepartmentSideOptions(
-  releases: PressRelease[],
-  departments: { id: number; name: string }[],
-): { id: string; label: string; count: number }[] {
-  const counts = new Map<number, number>();
-  for (const release of releases) {
-    if (release.department_id == null) continue;
-    counts.set(release.department_id, (counts.get(release.department_id) ?? 0) + 1);
-  }
-
-  const deptNames = new Map(departments.map((dept) => [dept.id, dept.name]));
-
-  return [...counts.entries()]
-    .map(([id, count]) => ({
-      id: String(id),
-      label:
-        deptNames.get(id) ??
-        releases.find((r) => r.department_id === id)?.department_name ??
-        `Department #${id}`,
-      count,
-    }))
-    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
-}
-
-export function buildMinisterSideOptions(
-  releases: PressRelease[],
-  ministers: { id: number; name: string }[],
-): { id: string; label: string; count: number }[] {
-  const counts = new Map<number, number>();
-  for (const release of releases) {
-    if (release.minister_id == null) continue;
-    counts.set(release.minister_id, (counts.get(release.minister_id) ?? 0) + 1);
-  }
-
-  const ministerNames = new Map(ministers.map((minister) => [minister.id, minister.name]));
-
-  return [...counts.entries()]
-    .map(([id, count]) => ({
-      id: String(id),
-      label:
-        ministerNames.get(id) ??
-        `Minister #${id}`,
-      count,
-    }))
-    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
