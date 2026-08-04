@@ -15,6 +15,14 @@ on:
       - "TN-GOV_Council Of Ministers/**"
       - "TN-GOV_Districts/**"
       - ".github/workflows/deploy-web.yml"
+  workflow_run:
+    workflows:
+      - Fetch TN Gov Scraped Data
+      - Fetch TN DIPR Press Releases
+      - Fetch TN Government Orders
+      - Fetch TN Gov Manifests
+      - Fetch Tamil Nadu News
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -28,6 +36,7 @@ concurrency:
 
 jobs:
   build:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     defaults:
       run:

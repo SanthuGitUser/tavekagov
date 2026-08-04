@@ -16,17 +16,39 @@ python tn_dept_sync.py
 
 ## Script table
 
-| Script | Folder | Output | GitHub Action |
-|--------|--------|--------|---------------|
-| `tn_press_release_sync.py` | [TN-DIPR-Press Release](../TN-DIPR-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-dipr-press-releases.yml` |
-| `tn_gov_press_release_sync.py` | [TN-GOV-Press Release](../TN-GOV-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-scraped-data.yml` |
-| `tn_government_orders_sync.py` | [TN-Government Orders](../TN-Government%20Orders/) | `Response JSON/<department>.json` | `fetch-tn-government-orders.yml` |
-| `tn_transfers_postings_sync.py` | [TN-IAS_Transfers-Postings](../TN-IAS_Transfers-Postings/) | `Response JSON/YYYY-MM-DD.json` | `fetch-tn-scraped-data.yml` |
-| `tn_magazine_sync.py` | [TN-TVA-Magazine](../TN-TVA-Magazine/) | `manifests/magazine.json`, `Response JSON/` | `fetch-tn-scraped-data.yml` |
-| `tn_dept_sync.py` | [TN-GOV_Departments](../TN-GOV_Departments/) | `manifests/tn_departments.json` | `fetch-tn-gov-manifests.yml` |
-| `tn_ministers_sync.py` | [TN-GOV_Council Of Ministers](../TN-GOV_Council%20Of%20Ministers/) | `manifests/tn_ministers.json` | `fetch-tn-gov-manifests.yml` |
-| `tn_districts_sync.py` | [TN-GOV_Districts](../TN-GOV_Districts/) | `manifests/tn_districts.json` | `fetch-tn-gov-manifests.yml` |
-| `fetch_tamil_nadu_news.py` | [TN-News/Code](../TN-News/Code/) | `TN-News/Response JSON/YYYY-MM-DD.json` | `fetch-tamil-nadu-news.yml` |
+| Script | Folder | Output |
+|--------|--------|--------|
+| `scripts/sync-all.ps1` | `scripts/` | Runs all sync jobs (recommended) |
+| `tn_press_release_sync.py` | [TN-DIPR-Press Release](../TN-DIPR-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` |
+| `tn_gov_press_release_sync.py` | [TN-GOV-Press Release](../TN-GOV-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` |
+| `tn_government_orders_sync.py` | [TN-Government Orders](../TN-Government%20Orders/) | `Response JSON/<department>.json` |
+| `tn_transfers_postings_sync.py` | [TN-IAS_Transfers-Postings](../TN-IAS_Transfers-Postings/) | `Response JSON/YYYY-MM-DD.json` |
+| `tn_magazine_sync.py` | [TN-TVA-Magazine](../TN-TVA-Magazine/) | `manifests/magazine.json`, `Response JSON/` |
+| `tn_dept_sync.py` | [TN-GOV_Departments](../TN-GOV_Departments/) | `manifests/tn_departments.json` |
+| `tn_ministers_sync.py` | [TN-GOV_Council Of Ministers](../TN-GOV_Council%20Of%20Ministers/) | `manifests/tn_ministers.json` |
+| `tn_districts_sync.py` | [TN-GOV_Districts](../TN-GOV_Districts/) | `manifests/tn_districts.json` |
+| `fetch_tamil_nadu_news.py` | [TN-News/Code](../TN-News/Code/) | `TN-News/Response JSON/YYYY-MM-DD.json` |
+
+## Run everything (recommended)
+
+`scripts/sync-all.ps1` runs all sync jobs in a single command. It infers the next
+date range for date-based sources from the latest `Response JSON/YYYY-MM-DD.json`
+already present, and uses **today (IST)** as the end date.
+
+```powershell
+.\scripts\sync-all.ps1 -DryRun
+.\scripts\sync-all.ps1
+```
+
+Optional flags:
+
+```powershell
+.\scripts\sync-all.ps1 -SkipInstall
+.\scripts\sync-all.ps1 -SkipTransfersPdfParse
+.\scripts\sync-all.ps1 -Stage
+.\scripts\sync-all.ps1 -Commit -CommitMessage "chore: sync data"
+.\scripts\sync-all.ps1 -Push
+```
 
 ## CLI flags
 
@@ -146,5 +168,5 @@ See [Sync-Config/.env.example](../Sync-Config/.env.example). Key variables:
 ## Related docs
 
 - [DATA.md](DATA.md) — JSON file formats
-- [GITHUB_ACTIONS.md](GITHUB_ACTIONS.md) — scheduled automation
+- [GITHUB_ACTIONS.md](GITHUB_ACTIONS.md) — deploy workflow
 - [CONTRIBUTING.md](../CONTRIBUTING.md) — how to submit changes

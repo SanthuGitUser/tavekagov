@@ -75,7 +75,10 @@ Re-runs merge items in `response.data` by DIPR `id` (incoming wins).
 
 ### GitHub Actions
 
-The workflow [fetch-tn-dipr-press-releases.yml](../.github/workflows/fetch-tn-dipr-press-releases.yml) runs daily at **11:00 PM IST** with `--start-date` and `--end-date` set to the current date.
+This repository can be updated by running the sync scripts locally and committing the JSON outputs. See:
+
+- [docs/SYNC_SCRIPTS.md](../docs/SYNC_SCRIPTS.md) (recommended: `scripts/sync-all.ps1`)
+- [docs/GITHUB_ACTIONS.md](../docs/GITHUB_ACTIONS.md) (deploy workflow)
 
 ### Dashboard
 

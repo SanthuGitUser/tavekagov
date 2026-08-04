@@ -76,7 +76,7 @@ tavekagov/
 ├── TN-TVA-Magazine/              # Tamil Arasu magazine sync
 ├── TN-News/                      # Daily news fetch (NewsData.io)
 ├── scripts/                      # Utility scripts (e.g. GitHub Pages setup)
-└── .github/workflows/            # CI: fetch data, deploy web
+└── .github/workflows/            # CI: deploy web
 ```
 
 ## Documentation
@@ -114,6 +114,13 @@ For news fetch only, add `NEWSDATA_API_KEY` to `Sync-Config/.env`.
 ### 2. Sync data
 
 Each data module has its own folder with a `requirements.txt` and a `*_sync.py` script. See [docs/SYNC_SCRIPTS.md](docs/SYNC_SCRIPTS.md) for the full reference.
+
+Recommended: run all sync jobs in one command:
+
+```powershell
+.\scripts\sync-all.ps1 -DryRun
+.\scripts\sync-all.ps1
+```
 
 ```powershell
 cd "TN-GOV_Departments"
@@ -154,20 +161,11 @@ python -m pip install -r requirements.txt
 python fetch_tamil_nadu_news.py
 ```
 
-Requires `NEWSDATA_API_KEY` in `Sync-Config/.env` or as a GitHub Actions secret.
+Requires `NEWSDATA_API_KEY` in `Sync-Config/.env`.
 
-### 5. Automated daily updates
+### 5. Deploy updates to GitHub Pages
 
-All fetch workflows run at **11:00 PM IST** (17:30 UTC). Details: [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md).
-
-| Workflow | What it updates |
-|----------|-----------------|
-| `fetch-tn-dipr-press-releases.yml` | DIPR press releases |
-| `fetch-tn-gov-manifests.yml` | Ministers, departments, districts manifests |
-| `fetch-tn-scraped-data.yml` | PR images, transfers/postings, magazine |
-| `fetch-tn-government-orders.yml` | Government orders (per department) |
-| `fetch-tamil-nadu-news.yml` | News JSON |
-| `deploy-web.yml` | GitHub Pages site from `web/dist` (on push to `main`) |
+Pushing changes to `main` triggers `.github/workflows/deploy-web.yml`, which builds `web/dist` and deploys the dashboard to GitHub Pages. This includes JSON updates under the `TN-*` folders used by the web app.
 
 ## Fork and deploy your own
 
@@ -177,7 +175,7 @@ All fetch workflows run at **11:00 PM IST** (17:30 UTC). Details: [docs/GITHUB_A
 4. **Update base path** if your repo name differs from `tavekagov`:
    - `.github/workflows/deploy-web.yml` → `VITE_BASE_PATH`
    - For a user site at `username.github.io`, use `/` instead of `/tavekagov/`.
-5. Push to `main` — Actions will fetch data nightly and deploy the dashboard.
+5. Push to `main` — Actions will deploy the dashboard.
 
 See [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) for permissions, deploy triggers, and manual workflow runs.
 
