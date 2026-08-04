@@ -2,6 +2,7 @@ import { format, parseISO } from "date-fns";
 import { Search } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
+import { isDateInNewsRange } from "@/components/news/NewsDatePicker";
 import { GovernmentOrdersTable } from "@/components/government-orders/GovernmentOrdersTable";
 import { getLatestValidDate } from "@/components/shared/VerticalDatePicker";
 import { Badge } from "@/components/ui/badge";
@@ -87,86 +88,59 @@ export function GovernmentOrdersTimeline({
   const governmentOrdersSearch = useGovernmentOrdersSearch();
   const governmentOrdersView = useGovernmentOrdersView();
   const search = governmentOrdersSearch?.search ?? "";
+  const filterDateRange = governmentOrdersSearch?.filterDateRange ?? { from: "", to: "" };
+  const setFilterDateRange = governmentOrdersSearch?.setFilterDateRange;
+  const setAvailableDates = governmentOrdersSearch?.setAvailableDates;
+  const setFilteredCount = governmentOrdersSearch?.setFilteredCount;
+  const setTotalCount = governmentOrdersSearch?.setTotalCount;
   const viewMode = governmentOrdersView?.viewMode ?? "calendar";
-  const selectedDate = governmentOrdersView?.selectedDate ?? "";
-  const setSelectedDate = governmentOrdersView?.setSelectedDate;
-  const setAvailableDates = governmentOrdersView?.setAvailableDates;
-  const setSelectedDateOrderCount = governmentOrdersView?.setSelectedDateOrderCount;
 
   const query = search.trim().toLowerCase();
   const isSearching = query.length > 0;
 
-  const viewOrders = useMemo(() => {
-    if (!isSearching) return orders;
-    return orders.filter((order) => matchesSearch(order, query));
-  }, [orders, isSearching, query]);
-
-  const availableDates = useMemo(
-    () => [...new Set(viewOrders.map((order) => order.go_date))],
-    [viewOrders],
-  );
+  const availableDates = useMemo(() => {
+    const dates = [...new Set(orders.map((order) => order.go_date))];
+    dates.sort((a, b) => b.localeCompare(a));
+    return dates;
+  }, [orders]);
 
   const [selectedDepartment, setSelectedDepartment] = useState<string>("");
   const [departmentSearch, setDepartmentSearch] = useState("");
 
-  const searchMatches = useMemo(() => {
-    if (!isSearching) return [];
-    return viewOrders
-      .sort((a, b) => {
-        const dateCompare = b.go_date.localeCompare(a.go_date);
-        if (dateCompare !== 0) return dateCompare;
-        return compareByGoNumber(a, b);
-      });
-  }, [viewOrders, isSearching]);
-
-  const searchMatchesByDate = useMemo(() => {
-    const grouped = new Map<string, TnGoDept[]>();
-    for (const order of searchMatches) {
-      const existing = grouped.get(order.go_date);
-      if (existing) {
-        existing.push(order);
-      } else {
-        grouped.set(order.go_date, [order]);
-      }
-    }
-    return [...grouped.entries()].sort(([a], [b]) => b.localeCompare(a));
-  }, [searchMatches]);
-
-  const datesForPicker = useMemo(() => {
-    if (!isSearching) return availableDates;
-    return [...new Set(searchMatches.map((order) => order.go_date))];
-  }, [availableDates, isSearching, searchMatches]);
-
   const latestDate = useMemo(
-    () => getLatestValidDate(datesForPicker),
-    [datesForPicker],
+    () => getLatestValidDate(availableDates),
+    [availableDates],
   );
 
   useEffect(() => {
-    setAvailableDates?.(datesForPicker);
-  }, [datesForPicker, setAvailableDates]);
+    setAvailableDates?.(availableDates);
+  }, [availableDates, setAvailableDates]);
 
   useEffect(() => {
-    if (latestDate) setSelectedDate?.(latestDate);
-  }, [latestDate, setSelectedDate]);
-
-  useEffect(() => {
-    if (selectedDate && !datesForPicker.includes(selectedDate) && latestDate) {
-      setSelectedDate?.(latestDate);
+    if (!latestDate || !setFilterDateRange) return;
+    if (!filterDateRange.from || !filterDateRange.to) {
+      setFilterDateRange({ from: latestDate, to: latestDate });
     }
-  }, [datesForPicker, latestDate, selectedDate, setSelectedDate]);
+  }, [filterDateRange.from, filterDateRange.to, latestDate, setFilterDateRange]);
 
-  const ordersForDate = useMemo(() => {
-    return viewOrders
-      .filter((order) => order.go_date === selectedDate)
-      .sort(compareByGoNumber);
-  }, [viewOrders, selectedDate]);
+  const ordersInRange = useMemo(() => {
+    if (viewMode === "department") return orders;
+    if (!filterDateRange.from && !filterDateRange.to) return orders;
+    return orders.filter((order) => isDateInNewsRange(order.go_date, filterDateRange));
+  }, [orders, filterDateRange, viewMode]);
+
+  const viewOrders = useMemo(() => {
+    if (!isSearching) return ordersInRange;
+    return ordersInRange.filter((order) => matchesSearch(order, query));
+  }, [ordersInRange, isSearching, query]);
 
   useEffect(() => {
-    if (viewMode === "calendar") {
-      setSelectedDateOrderCount?.(ordersForDate.length);
-    }
-  }, [ordersForDate.length, setSelectedDateOrderCount, viewMode]);
+    setTotalCount?.(ordersInRange.length);
+  }, [ordersInRange.length, setTotalCount]);
+
+  useEffect(() => {
+    setFilteredCount?.(viewOrders.length);
+  }, [setFilteredCount, viewOrders.length]);
 
   const ordersByDepartment = useMemo(() => {
     const map = new Map<string, TnGoDept[]>();
@@ -258,7 +232,7 @@ export function GovernmentOrdersTimeline({
     return selectedDepartmentTile?.orders ?? [];
   }, [selectedDepartmentTile]);
 
-  if (!latestDate || !selectedDate) {
+  if (!latestDate) {
     return (
       <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
         {isSearching ? "No government orders match your search." : "No government orders found."}
@@ -266,39 +240,18 @@ export function GovernmentOrdersTimeline({
     );
   }
 
-  if (isSearching && viewMode !== "department") {
-    return (
-      <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
-        <div className="mb-3 shrink-0">
-          <h2 className="text-lg font-bold tracking-tight">Search results</h2>
-          <p className="text-xs text-muted-foreground">
-            {searchMatches.length} order
-            {searchMatches.length === 1 ? "" : "s"} across {searchMatchesByDate.length}{" "}
-            {searchMatchesByDate.length === 1 ? "date" : "dates"}
-          </p>
-        </div>
-
-        <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-          {searchMatchesByDate.length === 0 ? (
-            <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-              No government orders match your search.
-            </p>
-          ) : (
-            <div className="space-y-5">
-              {searchMatchesByDate.map(([date, dayOrders]) => (
-                <section key={date}>
-                  <h3 className="mb-2 text-sm font-semibold text-foreground">
-                    {format(parseGoDate(date), "EEEE, d MMMM yyyy")}
-                  </h3>
-                  <GovernmentOrdersTable orders={dayOrders} />
-                </section>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  }
+  const ordersByDate = useMemo(() => {
+    const grouped = new Map<string, TnGoDept[]>();
+    for (const order of viewOrders) {
+      const existing = grouped.get(order.go_date);
+      if (existing) existing.push(order);
+      else grouped.set(order.go_date, [order]);
+    }
+    const entries = [...grouped.entries()];
+    entries.sort(([a], [b]) => b.localeCompare(a));
+    entries.forEach(([, dayOrders]) => dayOrders.sort(compareByGoNumber));
+    return entries;
+  }, [viewOrders]);
 
   if (viewMode === "department") {
     return (
@@ -424,17 +377,32 @@ export function GovernmentOrdersTimeline({
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
       <div className="mb-3 shrink-0">
         <h2 className="text-lg font-bold tracking-tight">
-          {format(parseGoDate(selectedDate), "EEEE, d MMMM yyyy")}
+          {isSearching ? "Search results" : "Government orders"}
         </h2>
+        <p className="text-xs text-muted-foreground">
+          {viewOrders.length} order{viewOrders.length === 1 ? "" : "s"} across {ordersByDate.length}{" "}
+          {ordersByDate.length === 1 ? "date" : "dates"}
+        </p>
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-        {ordersForDate.length === 0 ? (
+        {ordersByDate.length === 0 ? (
           <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-            No government orders on this date.
+            {isSearching
+              ? "No government orders match your search."
+              : "No government orders in this date range."}
           </p>
         ) : (
-          <GovernmentOrdersTable orders={ordersForDate} />
+          <div className="space-y-5">
+            {ordersByDate.map(([date, dayOrders]) => (
+              <section key={date}>
+                <h3 className="mb-2 text-sm font-semibold text-foreground">
+                  {format(parseGoDate(date), "EEEE, d MMMM yyyy")}
+                </h3>
+                <GovernmentOrdersTable orders={dayOrders} />
+              </section>
+            ))}
+          </div>
         )}
       </div>
     </div>

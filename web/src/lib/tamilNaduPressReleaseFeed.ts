@@ -92,10 +92,19 @@ export function getMonthlyPressReleaseCounts(): { month: string; press: number }
   since.setDate(1);
   const sinceIso = since.toISOString().slice(0, 10);
 
+  return getMonthlyPressReleaseCountsForRange({ from: sinceIso, to: "9999-12-31" });
+}
+
+export function getMonthlyPressReleaseCountsForRange(
+  dateRange: { from: string; to: string } | null,
+): { month: string; press: number }[] {
+  const from = dateRange?.from ?? "0000-01-01";
+  const to = dateRange?.to ?? "9999-12-31";
+
   const bucket = new Map<string, number>();
 
   for (const release of tamilNaduPressReleaseFeed.results) {
-    if (release.pr_date < sinceIso) continue;
+    if (release.pr_date < from || release.pr_date > to) continue;
     const month = release.pr_date.slice(0, 7);
     bucket.set(month, (bucket.get(month) ?? 0) + 1);
   }
@@ -106,5 +115,16 @@ export function getMonthlyPressReleaseCounts(): { month: string; press: number }
 }
 
 export function getRecentPressReleases(limit = 8): PressRelease[] {
-  return tamilNaduPressReleaseFeed.results.slice(0, limit);
+  return getRecentPressReleasesForRange(limit, null);
+}
+
+export function getRecentPressReleasesForRange(
+  limit: number,
+  dateRange: { from: string; to: string } | null,
+): PressRelease[] {
+  const from = dateRange?.from ?? "0000-01-01";
+  const to = dateRange?.to ?? "9999-12-31";
+  return tamilNaduPressReleaseFeed.results
+    .filter((release) => release.pr_date >= from && release.pr_date <= to)
+    .slice(0, limit);
 }

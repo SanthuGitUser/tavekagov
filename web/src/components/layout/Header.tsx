@@ -21,6 +21,7 @@ import { usePressReleaseView } from "@/context/PressReleaseViewContext";
 import { useTransfersPostingsSearch } from "@/context/TransfersPostingsSearchContext";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
+import { useDashboardDateRange, type DashboardDateRangePreset } from "@/context/DashboardDateRangeContext";
 
 type HeaderProps = {
   title: string;
@@ -88,6 +89,7 @@ export function Header({ title, description }: HeaderProps) {
   const ministerSearch = useMinisterSearch();
   const governmentOrdersView = useGovernmentOrdersView();
   const transfersPostingsSearch = useTransfersPostingsSearch();
+  const dashboardDateRange = useDashboardDateRange();
   const pageSearch =
     pressReleaseSearch
     ?? govPressReleaseSearch
@@ -148,6 +150,32 @@ export function Header({ title, description }: HeaderProps) {
       />
     </div>
   ) : null;
+
+  const dashboardRangeControl =
+    title === "Dashboard" && dashboardDateRange ? (
+      <div className="flex w-full flex-wrap items-center justify-start gap-2 sm:w-auto sm:justify-end">
+        <select
+          value={dashboardDateRange.preset}
+          onChange={(event) => dashboardDateRange.setPreset(event.target.value as DashboardDateRangePreset)}
+          className="h-9 rounded-md border border-input bg-background px-2.5 text-xs font-medium text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50"
+          aria-label="Dashboard date range"
+        >
+          <option value="all">All</option>
+          <option value="today">Today</option>
+          <option value="7d">Last 7 Days</option>
+          <option value="30d">Last 30 Days</option>
+          <option value="3m">Last 3 Months</option>
+          <option value="6m">Last 6 Months</option>
+          <option value="custom">Custom range</option>
+        </select>
+        {dashboardDateRange.preset === "custom" ? (
+          <NewsDatePicker
+            value={dashboardDateRange.customRange}
+            onChange={dashboardDateRange.setCustomRange}
+          />
+        ) : null}
+      </div>
+    ) : null;
 
   if (transfersPostingsSearch) {
     return (
@@ -353,8 +381,14 @@ export function Header({ title, description }: HeaderProps) {
   }
 
   if (governmentOrdersSearch && governmentOrdersView) {
-    const showCalendarControls =
-      governmentOrdersView.viewMode === "calendar" && governmentOrdersView.selectedDate;
+    const showCalendarControls = governmentOrdersView.viewMode === "calendar";
+    const pickerValue =
+      governmentOrdersSearch.filterDateRange.from && governmentOrdersSearch.filterDateRange.to
+        ? governmentOrdersSearch.filterDateRange
+        : {
+            from: governmentOrdersSearch.availableDates[0] ?? "",
+            to: governmentOrdersSearch.availableDates[0] ?? "",
+          };
 
     return (
       <HeaderShell>
@@ -373,35 +407,29 @@ export function Header({ title, description }: HeaderProps) {
 
           <div className="flex w-full min-w-0 flex-wrap items-center gap-2 sm:w-auto sm:min-w-[20rem] sm:flex-1 sm:justify-end">
             {showCalendarControls ? (
-              <>
-                <NewsDatePicker
-                  value={{
-                    from: governmentOrdersView.selectedDate,
-                    to: governmentOrdersView.selectedDate,
-                  }}
-                  onChange={(range) => governmentOrdersView.setSelectedDate(range.from)}
-                  availableDates={governmentOrdersView.availableDates}
-                  navigateAvailableDatesOnly
-                />
-                <div className="relative min-w-0 flex-1">
-                  <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                  <Input
-                    type="search"
-                    placeholder="Search all government orders…"
-                    value={governmentOrdersSearch.search}
-                    onChange={(event) => governmentOrdersSearch.setSearch(event.target.value)}
-                    className="h-9 w-full pl-8"
-                    aria-label="Search government orders"
-                  />
-                </div>
-                <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
-                  {governmentOrdersView.selectedDateOrderCount} order
-                  {governmentOrdersView.selectedDateOrderCount === 1 ? "" : "s"} shown
-                </p>
-              </>
-            ) : (
-              searchField
-            )}
+              <NewsDatePicker
+                value={pickerValue}
+                onChange={governmentOrdersSearch.setFilterDateRange}
+                availableDates={governmentOrdersSearch.availableDates}
+                navigateAvailableDatesOnly
+              />
+            ) : null}
+            <div className="relative min-w-0 flex-1">
+              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="search"
+                placeholder="Search all government orders…"
+                value={governmentOrdersSearch.search}
+                onChange={(event) => governmentOrdersSearch.setSearch(event.target.value)}
+                className="h-9 w-full pl-8"
+                aria-label="Search government orders"
+              />
+            </div>
+            <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
+              {governmentOrdersSearch.filteredCount} order
+              {governmentOrdersSearch.filteredCount === 1 ? "" : "s"} shown ·{" "}
+              {governmentOrdersSearch.totalCount} total
+            </p>
           </div>
         </div>
       </HeaderShell>
@@ -412,7 +440,7 @@ export function Header({ title, description }: HeaderProps) {
     <HeaderShell>
       <div className={headerInnerClassName}>
         <HeaderTitleBlock title={title} description={description} />
-        {searchField}
+        {dashboardRangeControl ?? searchField}
       </div>
     </HeaderShell>
   );

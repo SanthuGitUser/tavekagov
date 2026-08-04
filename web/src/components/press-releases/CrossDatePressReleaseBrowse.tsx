@@ -8,6 +8,7 @@ import { formatReleaseCount } from "./pressReleaseUtils";
 type CrossDatePressReleaseBrowseProps = {
   title: string;
   subtitle: string;
+  headerRight?: ReactNode;
   emptyMessage: string;
   groups: [string, PressRelease[]][];
   renderRelease: (release: PressRelease) => ReactNode;
@@ -22,6 +23,7 @@ function parseReleaseDate(value: string): Date {
 export function CrossDatePressReleaseBrowse({
   title,
   subtitle,
+  headerRight,
   emptyMessage,
   groups,
   renderRelease,
@@ -57,9 +59,14 @@ export function CrossDatePressReleaseBrowse({
 
   return (
     <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
-      <div className="mb-3 shrink-0 space-y-1">
-        <h2 className="text-lg font-bold tracking-tight">{title}</h2>
-        <p className="text-xs text-muted-foreground">{subtitle}</p>
+      <div className="mb-3 shrink-0">
+        <div className="flex items-start justify-between gap-4">
+          <div className="min-w-0 space-y-1">
+            <h2 className="truncate text-lg font-bold tracking-tight">{title}</h2>
+            <p className="text-xs text-muted-foreground">{subtitle}</p>
+          </div>
+          {headerRight ? <div className="shrink-0">{headerRight}</div> : null}
+        </div>
       </div>
 
       <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto pr-1">

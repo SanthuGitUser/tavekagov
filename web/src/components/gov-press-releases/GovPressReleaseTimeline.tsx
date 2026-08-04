@@ -163,7 +163,27 @@ export function GovPressReleaseTimeline({
   );
 
   const departmentSideOptions = useMemo(
-    () => buildDepartmentSideOptions(releases, departments),
+    () => {
+      const latestByDepartmentId = new Map<number, string>();
+      for (const release of releases) {
+        if (release.department_id == null) continue;
+        if (!release.release_date) continue;
+        const existing = latestByDepartmentId.get(release.department_id);
+        if (!existing || release.release_date > existing) {
+          latestByDepartmentId.set(release.department_id, release.release_date);
+        }
+      }
+
+      return buildDepartmentSideOptions(releases, departments).sort((a, b) => {
+        const leftDate = latestByDepartmentId.get(Number(a.id)) ?? "";
+        const rightDate = latestByDepartmentId.get(Number(b.id)) ?? "";
+        return (
+          rightDate.localeCompare(leftDate) ||
+          b.count - a.count ||
+          a.label.localeCompare(b.label)
+        );
+      });
+    },
     [releases, departments],
   );
 

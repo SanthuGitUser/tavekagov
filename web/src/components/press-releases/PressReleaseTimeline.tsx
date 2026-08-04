@@ -31,6 +31,31 @@ function parseReleaseDate(value: string): Date {
   return parseISO(value.includes("T") ? value : `${value}T00:00:00`);
 }
 
+function normalizeKey(value: string): string {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function resolveMinisterFromName(
+  ministerName: string | null | undefined,
+  ministersByKey: Record<string, TnMinister>,
+): TnMinister | null {
+  if (!ministerName) return null;
+  const target = normalizeKey(ministerName);
+  const exact = ministersByKey[target];
+  if (exact) return exact;
+
+  const keys = Object.keys(ministersByKey);
+  const partial = keys.find((key) => key.includes(target) || target.includes(key));
+  return partial ? ministersByKey[partial] : null;
+}
+
+function getInitials(value: string): string {
+  const parts = value.trim().split(/\s+/).filter(Boolean);
+  const first = parts[0]?.[0] ?? "";
+  const last = parts.length > 1 ? parts[parts.length - 1]?.[0] ?? "" : "";
+  return (first + last).toUpperCase() || value.trim().charAt(0).toUpperCase();
+}
+
 function parsePrNumber(value: string | null): number | null {
   const formatted = formatPrNumber(value);
   if (!formatted) return null;
@@ -169,17 +194,16 @@ export function PressReleaseTimeline({
     });
   }, [releases, query, view, departmentId, ministerId]);
 
-  const filteredReleasesByDate = useMemo(
-    () => groupReleasesByDate(filteredReleases),
-    [filteredReleases],
-  );
-
-  const latestDate = useMemo(() => getLatestValidDate(allDates), [allDates]);
-
   const datesForPicker = useMemo(() => {
-    if (view !== "all" || !isSearching) return allDates;
-    return [...new Set(filteredReleases.map((release) => release.pr_date))];
+    if (view === "all") {
+      if (!isSearching) return allDates;
+      return [...new Set(filteredReleases.map((release) => release.pr_date))];
+    }
+
+    return allDates;
   }, [allDates, filteredReleases, isSearching, view]);
+
+  const latestDate = useMemo(() => getLatestValidDate(datesForPicker), [datesForPicker]);
 
   useEffect(() => {
     setAvailableDates?.(datesForPicker);
@@ -194,6 +218,11 @@ export function PressReleaseTimeline({
       setSelectedDate?.(latestDate);
     }
   }, [datesForPicker, latestDate, selectedDate, setSelectedDate]);
+
+  const filteredReleasesByDate = useMemo(
+    () => groupReleasesByDate(filteredReleases),
+    [filteredReleases],
+  );
 
   const releasesForDate = useMemo(() => {
     return releases
@@ -223,6 +252,76 @@ export function PressReleaseTimeline({
   }, [isSearching, view, departmentId, ministerId, departmentSideOptions, ministerSideOptions]);
 
   const browseSubtitle = `${formatReleaseCount(filteredReleases.length)} total · ${filteredReleasesByDate.length} ${filteredReleasesByDate.length === 1 ? "date" : "dates"}`;
+
+  const ministersByKey = useMemo(
+    () => Object.fromEntries(ministers.map((m) => [normalizeKey(m.name), m])),
+    [ministers],
+  );
+
+  const headerRight = useMemo(() => {
+    if (view === "minister" && ministerId != null) {
+      const minister = ministers.find((m) => m.id === ministerId) ?? null;
+      if (!minister) return null;
+      const displayName = minister.name;
+      const photoUrl = minister.photo_url ?? null;
+      const designation = minister.designation ?? null;
+      return (
+        <div className="flex items-center gap-2">
+          <div className="h-10 w-10 overflow-hidden rounded-full bg-muted">
+            {photoUrl ? (
+              <img
+                src={photoUrl}
+                alt={displayName}
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center text-sm font-semibold text-muted-foreground">
+                {getInitials(displayName)}
+              </div>
+            )}
+          </div>
+          <div className="max-w-[260px] text-right">
+            <p className="truncate text-sm font-semibold">{displayName}</p>
+            {designation ? <p className="truncate text-xs text-muted-foreground">{designation}</p> : null}
+          </div>
+        </div>
+      );
+    }
+
+    if (view === "department" && departmentId != null) {
+      const dept = departments.find((d) => d.id === departmentId) ?? null;
+      const minister = resolveMinisterFromName(dept?.minister_name, ministersByKey);
+      const displayName = minister?.name ?? dept?.minister_name ?? null;
+      if (!displayName) return null;
+      const photoUrl = minister?.photo_url ?? null;
+      const designation = minister?.designation ?? null;
+      return (
+        <div className="flex items-center gap-2">
+          <div className="h-10 w-10 overflow-hidden rounded-full bg-muted">
+            {photoUrl ? (
+              <img
+                src={photoUrl}
+                alt={displayName}
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center text-sm font-semibold text-muted-foreground">
+                {getInitials(displayName)}
+              </div>
+            )}
+          </div>
+          <div className="max-w-[260px] text-right">
+            <p className="truncate text-sm font-semibold">{displayName}</p>
+            {designation ? <p className="truncate text-xs text-muted-foreground">{designation}</p> : null}
+          </div>
+        </div>
+      );
+    }
+
+    return null;
+  }, [view, ministerId, departmentId, ministers, departments, ministersByKey]);
 
   if (!latestDate && releases.length === 0) {
     return (
@@ -301,6 +400,7 @@ export function PressReleaseTimeline({
           <CrossDatePressReleaseBrowse
             title={browseTitle}
             subtitle={browseSubtitle}
+            headerRight={headerRight ?? undefined}
             emptyMessage={
               isSearching
                 ? "No press releases match your search."

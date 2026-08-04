@@ -13,8 +13,6 @@ import {
 import {
   getCategoryColor,
   getDailyCategoryCounts,
-  NEWS_CHART_RANGE_OPTIONS,
-  type NewsChartRange,
 } from "@/components/news/newsChartUtils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -23,6 +21,7 @@ import type { NewsArticle } from "@/types/news";
 
 type NewsCategoryChartProps = {
   articles: NewsArticle[];
+  dateRange?: { from: string; to: string } | null;
 };
 
 function formatDate(value: string): string {
@@ -97,13 +96,15 @@ function CategoryTooltip({
   );
 }
 
-export function NewsCategoryChart({ articles }: NewsCategoryChartProps) {
-  const [range, setRange] = useState<NewsChartRange>("7d");
+export function NewsCategoryChart({ articles, dateRange }: NewsCategoryChartProps) {
   const [focusedCategory, setFocusedCategory] = useState<string | null>(null);
 
   const { chartData, categories } = useMemo(
-    () => getDailyCategoryCounts(articles, { range }),
-    [articles, range],
+    () =>
+      typeof dateRange === "undefined"
+        ? getDailyCategoryCounts(articles, { range: "7d" })
+        : getDailyCategoryCounts(articles, { dateRange }),
+    [articles, dateRange],
   );
 
   const categoryColors = useMemo(
@@ -121,23 +122,8 @@ export function NewsCategoryChart({ articles }: NewsCategoryChartProps) {
   return (
     <Card>
       <CardHeader className="flex flex-row items-center justify-between gap-4">
-        <CardTitle>News articles by category (daily)</CardTitle>
+        <CardTitle>News Articles by Category</CardTitle>
         <div className="flex items-center gap-2">
-          <select
-            value={range}
-            onChange={(event) => {
-              setRange(event.target.value as NewsChartRange);
-              setFocusedCategory(null);
-            }}
-            className="h-8 rounded-md border border-input bg-background px-2.5 text-xs font-medium text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50"
-            aria-label="News chart date range"
-          >
-            {NEWS_CHART_RANGE_OPTIONS.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
           <Button asChild variant="ghost" size="sm">
             <Link to="/news">View news</Link>
           </Button>

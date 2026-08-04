@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { AppLayout } from "@/components/layout/AppLayout";
+import { DashboardDateRangeProvider } from "@/context/DashboardDateRangeContext";
 import { DepartmentSearchProvider } from "@/context/DepartmentSearchContext";
 import { DistrictSearchProvider } from "@/context/DistrictSearchContext";
 import { MinisterSearchProvider } from "@/context/MinisterSearchContext";
@@ -32,10 +33,13 @@ export default function App() {
         <Route
           path="/"
           element={
-            <AppLayout
-              title="Dashboard"
-              description="Overview of Tamil Nadu government open data from bundled JSON feeds."
-            />
+            <DashboardDateRangeProvider>
+              <AppLayout
+                fillViewport
+                title="Dashboard"
+                description="Overview of Tamil Nadu government open data from bundled JSON feeds."
+              />
+            </DashboardDateRangeProvider>
           }
         >
           <Route index element={<DashboardPage />} />
@@ -187,6 +191,7 @@ export default function App() {
           path="/about"
           element={
             <AppLayout
+              fillViewport
               title="About"
               description="Project information and data sources."
             />

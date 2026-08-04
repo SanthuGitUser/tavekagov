@@ -11,13 +11,6 @@ export type DailyCategoryRow = {
 
 export type NewsChartRange = "7d" | "30d" | "3m" | "6m";
 
-export const NEWS_CHART_RANGE_OPTIONS: { value: NewsChartRange; label: string }[] = [
-  { value: "7d", label: "Last 7 days" },
-  { value: "30d", label: "Last 30 days" },
-  { value: "3m", label: "Last 3 months" },
-  { value: "6m", label: "Last 6 months" },
-];
-
 export const NEWS_CHART_RANGE_DAYS: Record<NewsChartRange, number> = {
   "7d": 7,
   "30d": 30,
@@ -55,6 +48,11 @@ function getLatestArticleDate(articles: NewsArticle[]): string | null {
   return dates.at(-1) ?? null;
 }
 
+function getEarliestArticleDate(articles: NewsArticle[]): string | null {
+  const dates = articles.map(getArticleDateInIst).sort();
+  return dates[0] ?? null;
+}
+
 function getPrimaryCategory(article: NewsArticle): string {
   const normalized = article.category.map((value) => value.toLowerCase());
   return normalized.find((category) => category !== "top") ?? normalized[0] ?? "other";
@@ -74,21 +72,58 @@ export function getCategoryColor(category: string, index: number): string {
 
 export function getDailyCategoryCounts(
   articles: NewsArticle[],
-  options?: { range?: NewsChartRange },
+  options?: { range?: NewsChartRange; dateRange?: { from: string; to: string } | null },
 ): { chartData: DailyCategoryRow[]; categories: string[] } {
-  const range = options?.range ?? "7d";
-  const rangeDays = NEWS_CHART_RANGE_DAYS[range];
   const latestDate = getLatestArticleDate(articles);
 
   if (!latestDate) {
     return { chartData: [], categories: [] };
   }
 
-  const rangeDates = getDatesInRange(latestDate, rangeDays);
-  const rangeStart = rangeDates[0]!;
+  let rangeStart: string;
+  let rangeEnd: string;
+  let rangeDates: string[];
+
+  const hasDateRangeKey =
+    options != null && Object.prototype.hasOwnProperty.call(options, "dateRange");
+  const configuredDateRange = options?.dateRange ?? null;
+
+  if (hasDateRangeKey) {
+    if (configuredDateRange === null) {
+      const earliestDate = getEarliestArticleDate(articles);
+      if (!earliestDate) return { chartData: [], categories: [] };
+      rangeStart = earliestDate;
+      rangeEnd = latestDate;
+    } else {
+      rangeStart =
+        configuredDateRange.from <= configuredDateRange.to
+          ? configuredDateRange.from
+          : configuredDateRange.to;
+      rangeEnd =
+        configuredDateRange.from <= configuredDateRange.to
+          ? configuredDateRange.to
+          : configuredDateRange.from;
+      if (rangeEnd > latestDate) rangeEnd = latestDate;
+    }
+
+    const dayCount =
+      Math.floor(
+        (parseISO(rangeEnd).getTime() - parseISO(rangeStart).getTime()) / (24 * 60 * 60 * 1000),
+      ) + 1;
+    rangeDates = Array.from({ length: Math.max(0, dayCount) }, (_, index) =>
+      format(subDays(parseISO(rangeEnd), dayCount - 1 - index), "yyyy-MM-dd"),
+    );
+  } else {
+    const range = options?.range ?? "7d";
+    const rangeDays = NEWS_CHART_RANGE_DAYS[range];
+    rangeDates = getDatesInRange(latestDate, rangeDays);
+    rangeStart = rangeDates[0]!;
+    rangeEnd = latestDate;
+  }
+
   const filteredArticles = articles.filter((article) => {
     const date = getArticleDateInIst(article);
-    return date >= rangeStart && date <= latestDate;
+    return date >= rangeStart && date <= rangeEnd;
   });
 
   const dailyCounts = new Map<string, Map<string, number>>();
