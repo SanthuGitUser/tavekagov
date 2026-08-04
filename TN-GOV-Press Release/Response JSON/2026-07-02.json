@@ -1,8 +1,8 @@
 {
   "date": "2026-07-02",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 9,
   "releases": [
@@ -11,7 +11,7 @@
       "release_date": "2026-07-02",
       "title": "Honble Chief Minister chaired review meeting on the schemes and activities of the Revenue and Disaster Management department",
       "file_name": "pr020726f.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Revenue and Disaster Management Department",
       "minister_id": 1,
       "department_id": 26,
@@ -57,7 +57,7 @@
       "release_date": "2026-07-02",
       "title": "Honble Chief Minister chaired review meeting on the schemes and activities of the Cooperation, Food and Consumer Protection Department",
       "file_name": "pr020726d.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Home, Prohibition and Excise Department",
       "minister_id": 1,
       "department_id": 14,
@@ -80,7 +80,7 @@
       "release_date": "2026-07-02",
       "title": "Honble Minister for Social Justice chaired the State-Level Meeting of Adi Dravidar and Tribal Representatives",
       "file_name": "pr020726_sj.jpg",
-      "minister_name": "Hon'ble Minister for Social Justice",
+      "minister_name": "Thiru Vanni Arasu",
       "department_name": "Social Justice Department",
       "minister_id": 14,
       "department_id": 1,
@@ -172,8 +172,8 @@
       "release_date": "2026-07-02",
       "title": "Honble Minister for Energy Resources and Law laid the foundation stone for a new students’ hostel at the Tamil Nadu Dr. Ambedkar Law University and delivered a speech",
       "file_name": "pr020726_enrgy1.jpg",
-      "minister_name": "Hon'ble Minister for Energy Resources and Law laid the foundation stone for a new students' hostel at the Tamil Nadu Dr. Ambedkar Law University and delivered a speech",
-      "department_name": "Energy Resources and Law laid the foundation stone for a new students' hostel at the Tamil Nadu Dr. Ambedkar Law University and delivered a speech Department",
+      "minister_name": "Thiru R. Nirmalkumar",
+      "department_name": "Energy Department",
       "minister_id": 7,
       "department_id": 7,
       "district_id": null,
@@ -195,7 +195,7 @@
       "release_date": "2026-07-02",
       "title": "Honble Minister for Housing and Urban Development inspected ongoing redevelopment works at Kannagi nagar and Ezhil nagar and directed early completion",
       "file_name": "pr020726_hud1.jpeg",
-      "minister_name": "Hon'ble Minister for Housing and Urban Development",
+      "minister_name": "Thiru B. Rajkumar",
       "department_name": "Housing and Urban Development Department",
       "minister_id": 16,
       "department_id": 15,
@@ -254,15 +254,6 @@
   ],
   "departments": [
     {
-      "id": 1,
-      "name": "Social Justice Department",
-      "dep_id_encoded": "MQ==",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru Vanni Arasu",
-      "display_order": 32
-    },
-    {
       "id": 7,
       "name": "Energy Department",
       "dep_id_encoded": "Nw==",
@@ -297,6 +288,15 @@
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru K A. Sengottaiyan",
       "display_order": 29
+    },
+    {
+      "id": 1,
+      "name": "Social Justice Department",
+      "dep_id_encoded": "MQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Vanni Arasu",
+      "display_order": 32
     }
   ]
 }

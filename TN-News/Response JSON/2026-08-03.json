@@ -1,8 +1,8 @@
 {
   "date": "2026-08-03",
   "fetchedAt": "2026-08-04T04:14:13.326933+05:30",
-  "lastFetchedAt": "2026-08-04T04:14:13.326933+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:22:22.141669+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -17,9 +17,141 @@
   },
   "response": {
     "status": "success",
-    "totalResults": 5,
-    "apiReportedTotalResults": 16,
+    "totalResults": 8,
+    "apiReportedTotalResults": 8,
     "results": [
+      {
+        "article_id": "9e9bf08b916477f1ccad8648b76c2143",
+        "link": "https://www.timesnownews.com/education/tn-class-10-supplementary-result-2026-released-at-tnresults-nic-in-heres-how-to-download-marks-memo-article-155237585",
+        "title": "TN Class 10 Supplementary Result 2026 Released at tnresults.nic.in; Here's How to Download Marks Memo",
+        "description": "The Directorate of Government Examinations, Tamil Nadu, has declared the TN SSLC Supplementary Result 2026. Students can download their provisional marks memo from tnresults.nic.in.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu class 10 result",
+          "tamil nadu sslc result 2026",
+          "tn sslc marks memo 2026",
+          "tamil nadu",
+          "tn sslc supplementary result 2026",
+          "tn class 10 supplementary result"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-03 14:00:37",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-03 14:04:33",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155237584,thumbsize-1101866,width-1280,height-720,resizemode-75/155237584.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "17e169a1a1f3f2bd8406b9caed34bb8f",
+        "link": "https://www.timesnownews.com/education/342-aicte-approved-technical-institutions-closed-across-india-in-three-years-despite-rising-enrolment-centre-tells-lok-sabha-article-155237049",
+        "title": "342 AICTE-Approved Technical Institutions Closed Across India in Three Years Despite Rising Enrolment, Centre Tells Lok Sabha",
+        "description": "Centre tells Lok Sabha enrolment in technical education continues to rise despite closures; AICTE cites reforms to improve quality and sustainability.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "aicte act",
+          "aicte",
+          "lok sabha",
+          "ministry of education",
+          "technical institutions",
+          "technical colleges closed"
+        ],
+        "creator": [
+          "lakshima sareen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-03 12:08:23",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-03 12:33:25",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155237134,thumbsize-1200709,width-1280,height-720,resizemode-75/155237134.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c44b0afcf0de00d808681ac9d5d888d7",
+        "link": "https://www.timesnownews.com/india/30-year-bastion-gone-in-30-days-prashant-kishor-fires-warning-shot-at-bjp-article-155236849",
+        "title": "'30-Year Bastion Gone In 30-Days: Prashant Kishor Fires Warning Shot at BJP",
+        "description": "Prashant Kishor, leading in the Bankipur Assembly bypoll, emphasised the election's significance in shaping Bihar's leadership, urging the BJP to appoint a capable chief minister.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "bihar",
+          "narendra modi",
+          "karnataka",
+          "bjp",
+          "bankipur",
+          "prashant kishor in bankipur",
+          "jan suraaj party founder",
+          "prashant kishor"
+        ],
+        "creator": [
+          "megha rawat"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-03 11:33:04",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-03 12:03:12",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155236990,thumbsize-1100060,width-1280,height-720,resizemode-75/155236990.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
       {
         "article_id": "54b55f21cabf996de8f6c94f17e89404",
         "link": "https://www.timesnownews.com/india/tamil-nadu-supreme-court-cauvery-water-karnataka-dams-77-tmc-mekedatu-article-155236125",
@@ -261,6 +393,6 @@
         "duplicate": false
       }
     ],
-    "pagesFetched": 2
+    "pagesFetched": 1
   }
 }

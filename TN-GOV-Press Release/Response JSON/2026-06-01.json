@@ -1,8 +1,8 @@
 {
   "date": "2026-06-01",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 5,
   "releases": [
@@ -11,8 +11,8 @@
       "release_date": "2026-06-01",
       "title": "Honble Minister for Artificial Intelligence, Information Technology and Digital Services inspected IIT Madras Research Park and reviewed its role in innovation and startup development",
       "file_name": "pr010626_it1.jpg",
-      "minister_name": "Hon'ble Minister for Artificial Intelligence, Information Technology and Digital Services",
-      "department_name": "Artificial Intelligence, Information Technology and Digital Services Department",
+      "minister_name": "Dr Kumar. R",
+      "department_name": "Information Technology and Digital Services Department",
       "minister_id": 32,
       "department_id": 17,
       "district_id": null,
@@ -34,7 +34,7 @@
       "release_date": "2026-06-01",
       "title": "Honble Minister for Social Justice chaired review meeting on Adi Dravidar Welfare Department schemes and projects",
       "file_name": "pr010626_sj.jpg",
-      "minister_name": "Hon'ble Minister for Social Justice",
+      "minister_name": "Thiru Vanni Arasu",
       "department_name": "Social Justice Department",
       "minister_id": 14,
       "department_id": 1,
@@ -57,8 +57,8 @@
       "release_date": "2026-06-01",
       "title": "Newly appointed Senior Officials called on the Honble Minister for Energy Resources and Law",
       "file_name": "pr010626_enrgy1.jpg",
-      "minister_name": "Hon'ble Minister for Energy Resources and Law",
-      "department_name": "Energy Resources and Law Department",
+      "minister_name": "Thiru R. Nirmalkumar",
+      "department_name": "Energy Department",
       "minister_id": 7,
       "department_id": 7,
       "district_id": null,
@@ -80,7 +80,7 @@
       "release_date": "2026-06-01",
       "title": "Honble Minister for Higher Education announced three new courses and 3,570 additional seats in Polytechnic Colleges",
       "file_name": "pr010626_hedu.jpg",
-      "minister_name": "Hon'ble Minister for Higher Education announced three new courses and 3,570 additional seats in Polytechnic Colleges",
+      "minister_name": "Thiru P. Viswanathan",
       "department_name": "Higher Education Department",
       "minister_id": 11,
       "department_id": 12,
@@ -171,15 +171,6 @@
   ],
   "departments": [
     {
-      "id": 1,
-      "name": "Social Justice Department",
-      "dep_id_encoded": "MQ==",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru Vanni Arasu",
-      "display_order": 32
-    },
-    {
       "id": 7,
       "name": "Energy Department",
       "dep_id_encoded": "Nw==",
@@ -205,6 +196,15 @@
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Dr Kumar. R",
       "display_order": 17
+    },
+    {
+      "id": 1,
+      "name": "Social Justice Department",
+      "dep_id_encoded": "MQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Vanni Arasu",
+      "display_order": 32
     }
   ]
 }

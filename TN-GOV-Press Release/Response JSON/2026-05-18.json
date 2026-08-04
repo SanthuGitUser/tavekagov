@@ -1,8 +1,8 @@
 {
   "date": "2026-05-18",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 14,
   "releases": [
@@ -11,7 +11,7 @@
       "release_date": "2026-05-18",
       "title": "Officials presented Central Government Appreciation Certificate to the Honble Minister for Rural Development and Water Resources for Tamil Nadu’s achievement in rural road development",
       "file_name": "pr180526_wrd2.jpeg",
-      "minister_name": "Hon'ble Minister for Rural Development and Water Resources for Tamil Nadu's achievement in rural road development",
+      "minister_name": "Thiru N. Anand",
       "department_name": "Water Resources Department",
       "minister_id": 2,
       "department_id": 44,
@@ -57,8 +57,8 @@
       "release_date": "2026-05-18",
       "title": "Honble Minister for Public Works and Sports Development inspected Jawaharlal Nehru Indoor Stadium and interacted with hostel students",
       "file_name": "pr180526_pwsd5.jpg",
-      "minister_name": "Hon'ble Minister for Public Works and Sports Development",
-      "department_name": "Public Works and Sports Development Department",
+      "minister_name": "Thiru Aadhav Arjuna",
+      "department_name": "Youth Welfare and Sports Development Department",
       "minister_id": 3,
       "department_id": 34,
       "district_id": null,
@@ -80,8 +80,8 @@
       "release_date": "2026-05-18",
       "title": "Honble Minister for Food and Civil Supplies held discussions with Officials and conducted review meeting on the functioning of the Department",
       "file_name": "pr180526_fcs1.jpg",
-      "minister_name": "Hon'ble Minister for Food and Civil Supplies",
-      "department_name": "Food and Civil Supplies Department",
+      "minister_name": "Thiru P. Venkataramanan",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
       "minister_id": 6,
       "department_id": 5,
       "district_id": null,
@@ -126,8 +126,8 @@
       "release_date": "2026-05-18",
       "title": "Honble Minister for Industries, Investment Promotion and Commerce chaired review meeting on Industrial Development Activities",
       "file_name": "pr180526_indu.jpg",
-      "minister_name": "Hon'ble Minister for Industries, Investment Promotion and Commerce",
-      "department_name": "Industries, Investment Promotion and Commerce Department",
+      "minister_name": "Selvi S. Keerthana",
+      "department_name": "Industries, Investment Promotion & Commerce Department",
       "minister_id": 10,
       "department_id": 16,
       "district_id": null,
@@ -149,8 +149,8 @@
       "release_date": "2026-05-18",
       "title": "Honble Minister for Rural Development and Water Resources conducted review meeting on schemes of the Rural Development and Panchayat Raj Department",
       "file_name": "pr180526_wrd1.jpg",
-      "minister_name": "Hon'ble Minister for Rural Development and Water Resources",
-      "department_name": "Rural Development and Water Resources Department",
+      "minister_name": "Thiru N. Anand",
+      "department_name": "Rural Development and Panchayat Raj Department",
       "minister_id": 2,
       "department_id": 27,
       "district_id": null,
@@ -172,8 +172,8 @@
       "release_date": "2026-05-18",
       "title": "Honble Minister for Rural Development and Water Resources chaired review meeting with Engineers of the Water Resources Department",
       "file_name": "pr180526_wrd.jpg",
-      "minister_name": "Hon'ble Minister for Rural Development and Water Resources",
-      "department_name": "Rural Development and Water Resources Department",
+      "minister_name": "Thiru N. Anand",
+      "department_name": "Rural Development and Panchayat Raj Department",
       "minister_id": 2,
       "department_id": 27,
       "district_id": null,
@@ -195,7 +195,7 @@
       "release_date": "2026-05-18",
       "title": "Honble Chief Minister chaired a review meeting of Energy Department",
       "file_name": "pr180526h.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Energy Department",
       "minister_id": 1,
       "department_id": 7,
@@ -218,7 +218,7 @@
       "release_date": "2026-05-18",
       "title": "Honble Minister for Public Works and Sports Development stated that initiatives would be taken to prepare olympic medal winners from Tamil Nadu and promote a healthy society through sports",
       "file_name": "pr180526_pwsd1.jpg",
-      "minister_name": "Hon'ble Minister for Public Works and Sports Development stated that initiatives would be taken to prepare olympic medal winners from Tamil Nadu and promote a healthy society through sports",
+      "minister_name": "Thiru Aadhav Arjuna",
       "department_name": "Public Works Department",
       "minister_id": 3,
       "department_id": 42,
@@ -405,24 +405,6 @@
       "display_order": 16
     },
     {
-      "id": 27,
-      "name": "Rural Development and Panchayat Raj Department",
-      "dep_id_encoded": "Mjc=",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc=",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru N. Anand",
-      "display_order": 30
-    },
-    {
-      "id": 34,
-      "name": "Youth Welfare and Sports Development Department",
-      "dep_id_encoded": "MzQ=",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ=",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 41
-    },
-    {
       "id": 42,
       "name": "Public Works Department",
       "dep_id_encoded": "NDI=",
@@ -432,6 +414,15 @@
       "display_order": 28
     },
     {
+      "id": 27,
+      "name": "Rural Development and Panchayat Raj Department",
+      "dep_id_encoded": "Mjc=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru N. Anand",
+      "display_order": 30
+    },
+    {
       "id": 44,
       "name": "Water Resources Department",
       "dep_id_encoded": "NDQ=",
@@ -439,6 +430,15 @@
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru N. Anand",
       "display_order": 39
+    },
+    {
+      "id": 34,
+      "name": "Youth Welfare and Sports Development Department",
+      "dep_id_encoded": "MzQ=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "display_order": 41
     }
   ]
 }

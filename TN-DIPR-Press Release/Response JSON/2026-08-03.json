@@ -1,0 +1,73 @@
+{
+  "date": "2026-08-03",
+  "fetchedAt": "2026-08-04T18:20:47.426453+05:30",
+  "lastFetchedAt": "2026-08-04T18:20:47.426453+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-03"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22268,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.484-Hon_ble_CM_Social_Media_Message-Dheeran_Chinnamalai_Memorial_Day_-Date_03.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.484-Hon'ble CM Social Media Message-Dheeran Chinnamalai Memorial Day -Date 03.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-03",
+        "language": "en"
+      },
+      {
+        "id": 22269,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-485_-Hon_ble_Ministers_Press_Release-_Dheeran_Chinnamalai_Memorial_Day-Date_03.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-485 -Hon'ble Ministers Press Release- Dheeran Chinnamalai Memorial Day-Date 03.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-03",
+        "language": "en"
+      },
+      {
+        "id": 22270,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_PR_No.486_-_Hon_ble_CM_Press_Release_-_Cauvery_Water_Distribution_-Date-03.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR PR No.486 - Hon'ble CM Press Release - Cauvery Water Distribution -Date-03.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-03",
+        "language": "en"
+      },
+      {
+        "id": 22271,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.487_-_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_LPG_Cylinder_Burst_Accident_at_Thanjavur_-_CMPRF_-_Date.03.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.487 - Hon'ble CM Press Release - Condolence and Relief - LPG Cylinder Burst Accident at Thanjavur - CMPRF - Date.03.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-03",
+        "language": "en"
+      },
+      {
+        "id": 22272,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.488_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-_Inspection_at_Sriperumbudur_Sipcot_Areas_Companies_-_Date.03.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.488 - Hon'ble CM Press Release - Industries Dept - Inspection at Sriperumbudur Sipcot Areas Companies - Date.03.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-03",
+        "language": "en"
+      }
+    ]
+  }
+}

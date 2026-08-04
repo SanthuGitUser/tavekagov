@@ -1,8 +1,8 @@
 {
   "date": "2026-07-27",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 10,
   "releases": [
@@ -11,8 +11,8 @@
       "release_date": "2026-07-27",
       "title": "Honble Minister for Micro, Small and Medium Enterprises chaired departmental review meeting",
       "file_name": "pr270726_msme.jpg",
-      "minister_name": "Hon'ble Minister for Micro, Small and Medium Enterprises",
-      "department_name": "Micro, Small and Medium Enterprises Department",
+      "minister_name": "Thiru P. Mathan Raja",
+      "department_name": "Micro , Small and Medium Enterprises Department",
       "minister_id": 28,
       "department_id": 29,
       "district_id": null,
@@ -34,7 +34,7 @@
       "release_date": "2026-07-27",
       "title": "A review meeting on the schemes and activities of the Home, Prohibition and Excise Department was held at the Secretariat under the chairmanship of the Honble Chief Minister",
       "file_name": "pr270726f.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Home, Prohibition and Excise Department",
       "minister_id": 1,
       "department_id": 14,
@@ -57,7 +57,7 @@
       "release_date": "2026-07-27",
       "title": "A review meeting on the schemes and activities of the Department of Natural Resources was held at the Secretariat under the chairmanship of the Honble Chief Minister",
       "file_name": "pr270726_e.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Natural Resources Department",
       "minister_id": 1,
       "department_id": 45,
@@ -195,7 +195,7 @@
       "release_date": "2026-07-27",
       "title": "Honble Minister for Labour Welfare and Skill Development inaugurated the one-day training workshop on social dialogue, workplace cooperation and grievance handling procedures",
       "file_name": "pr270726_lwsd.jpg",
-      "minister_name": "Hon'ble Minister for Labour Welfare and Skill Development",
+      "minister_name": "Thiru J. Mohamed Farvas",
       "department_name": "Labour Welfare and Skill Development Department",
       "minister_id": 21,
       "department_id": 18,
@@ -218,8 +218,8 @@
       "release_date": "2026-07-27",
       "title": "As per the instructions of the Honble Chief Minister, the Honble Minister for Rural Development and Water Resources inaugurated and inspected the desilting and restoration works of the Cooum River near Padikuppam in Aminjikarai and Okkiyam Maduvu at Okkiyam Thoraipakkam, Chennai",
       "file_name": "pr270726_rd.jpg",
-      "minister_name": "Hon'ble Minister for Rural Development and Water Resources",
-      "department_name": "Rural Development and Water Resources Department",
+      "minister_name": "Thiru N. Anand",
+      "department_name": "Rural Development and Panchayat Raj Department",
       "minister_id": 2,
       "department_id": 27,
       "district_id": null,
@@ -313,15 +313,6 @@
       "display_order": 18
     },
     {
-      "id": 27,
-      "name": "Rural Development and Panchayat Raj Department",
-      "dep_id_encoded": "Mjc=",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc=",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru N. Anand",
-      "display_order": 30
-    },
-    {
       "id": 29,
       "name": "Micro , Small and Medium Enterprises Department",
       "dep_id_encoded": "Mjk=",
@@ -338,6 +329,15 @@
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Dr. TK. Prabhu",
       "display_order": 24
+    },
+    {
+      "id": 27,
+      "name": "Rural Development and Panchayat Raj Department",
+      "dep_id_encoded": "Mjc=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru N. Anand",
+      "display_order": 30
     }
   ]
 }

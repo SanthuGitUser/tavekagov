@@ -8,8 +8,17 @@
   "start_date": "10-05-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:30.436120+05:30",
-  "lastFetchedAt": "2026-08-02T00:49:09.433806+05:30",
-  "fetchCount": 2,
-  "count": 0,
-  "orders": []
+  "lastFetchedAt": "2026-08-04T18:20:55.068904+05:30",
+  "fetchCount": 3,
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-07-22",
+      "go_number": "G.O.(Ms.)No.97",
+      "go_name": "Fisheries Fishermen Welfare Constitution of Inter-State District Level Joint Committee to resolve the issues of fishermen of Tamil Nadu Kerala while fishing in Bay of Bengal, Gulf of Mannar, Indian Ocean Arabian Sea Orders Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/ahf_e_97_ms_2026.pdf",
+      "department_name": "Animal Husbandry, Dairying, Fisheries and Fishermen Welfare Department",
+      "dep_id_encoded": "Mw=="
+    }
+  ]
 }

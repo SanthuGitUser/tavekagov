@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-01",
+  "fetchedAt": "2026-08-04T18:20:46.938114+05:30",
+  "lastFetchedAt": "2026-08-04T18:20:46.938114+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-01"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22264,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.480-Co_op_PDS_e-KYC-Press_Release-Date_01.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.480-Co op PDS e-KYC-Press Release-Date 01.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-01",
+        "language": "en"
+      },
+      {
+        "id": 22265,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.-481-Hon_ble_CM_Social_Media_Message_-_Common_wealth_games_-_Triple_Jump_winers_from_TN_-Date_01.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.-481-Hon'ble CM Social Media Message - Common wealth games - Triple Jump winers from TN -Date 01.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-01",
+        "language": "en"
+      }
+    ]
+  }
+}

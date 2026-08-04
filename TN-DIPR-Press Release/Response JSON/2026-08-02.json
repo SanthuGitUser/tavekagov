@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-02",
+  "fetchedAt": "2026-08-04T18:20:47.175508+05:30",
+  "lastFetchedAt": "2026-08-04T18:20:47.175508+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-02"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22266,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-482-Hon_ble_CM_social_media_message_-_condolence_for_the_death_-Son_of_IUML_president__-Date__2.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-482-Hon'ble CM social media message - condolence for the death -Son of IUML president  -Date  2.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-02",
+        "language": "en"
+      },
+      {
+        "id": 22267,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-483-_Cooperative_Dept_Press_Release-Date_02.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-483- Cooperative Dept Press Release-Date 02.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-02",
+        "language": "en"
+      }
+    ]
+  }
+}

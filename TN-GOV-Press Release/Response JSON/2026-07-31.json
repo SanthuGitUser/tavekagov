@@ -1,8 +1,8 @@
 {
   "date": "2026-07-31",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T21:04:02.489768+05:30",
-  "fetchCount": 2,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 3,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 5,
   "releases": [
@@ -57,9 +57,9 @@
       "release_date": "2026-07-31",
       "title": "Honble Minister for Food and Civil Supplies issued appointment orders to computer managers in the Food and Consumer Protection Department",
       "file_name": "pr310726_fcs.jpg",
-      "minister_name": "Hon'ble Minister for Food and Civil Supplies issued appointment orders to computer managers in the Food and Consumer Protection Department",
-      "department_name": "Food and Civil Supplies issued appointment orders to computer managers in the Food and Consumer Protection Department",
-      "minister_id": 22,
+      "minister_name": "Thiru P. Venkataramanan",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
+      "minister_id": 6,
       "department_id": 5,
       "district_id": null,
       "title_parsed": true,
@@ -133,12 +133,12 @@
       "is_chief_minister": true
     },
     {
-      "id": 22,
-      "name": "Thiru V. Gandhiraj",
-      "designation": "Minister for Co-operation",
-      "portfolio": "Co-operation",
-      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/038_Gandhiraj.png",
-      "display_order": 22,
+      "id": 6,
+      "name": "Thiru P. Venkataramanan",
+      "designation": "Minister for Food and Civil Supplies",
+      "portfolio": "Food and Civil Supplies, Consumer Protection and Price Control.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/025_Venkataramanan.png",
+      "display_order": 6,
       "is_chief_minister": false
     }
   ],

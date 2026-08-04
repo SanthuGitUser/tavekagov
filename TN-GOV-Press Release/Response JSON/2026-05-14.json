@@ -1,8 +1,8 @@
 {
   "date": "2026-05-14",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 3,
   "releases": [
@@ -11,7 +11,7 @@
       "release_date": "2026-05-14",
       "title": "Honble Chief Minister chaired review meeting on the functioning of the Industries, Investment Promotion and Commerce Department in Secretariat",
       "file_name": "pr140526b.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Industries, Investment Promotion & Commerce Department",
       "minister_id": 1,
       "department_id": 16,
@@ -34,7 +34,7 @@
       "release_date": "2026-05-14",
       "title": "Honble Chief Minister chaired a review meeting on the financial position of the State and functioning of Finance Department in Secretariat",
       "file_name": "pr140526a.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Finance Department",
       "minister_id": 1,
       "department_id": 9,

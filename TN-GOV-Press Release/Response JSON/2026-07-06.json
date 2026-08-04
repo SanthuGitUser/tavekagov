@@ -1,8 +1,8 @@
 {
   "date": "2026-07-06",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 9,
   "releases": [
@@ -57,7 +57,7 @@
       "release_date": "2026-07-06",
       "title": "Honble Chief Minister chaired review meeting on the schemes and activities of the Commercial Taxes and Registration Department",
       "file_name": "pr060726f.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Commercial Taxes and Registration Department",
       "minister_id": 1,
       "department_id": 6,
@@ -126,7 +126,7 @@
       "release_date": "2026-07-06",
       "title": "Honble Minister for Commercial Taxes and Registration chaired the second-level guiding committee meeting on revision of guideline market values",
       "file_name": "pr060726_tax.jpg",
-      "minister_name": "Hon'ble Minister for Commercial Taxes and Registration",
+      "minister_name": "Thiru D. Logesh Tamilselvan",
       "department_name": "Commercial Taxes and Registration Department",
       "minister_id": 34,
       "department_id": 6,
@@ -149,7 +149,7 @@
       "release_date": "2026-07-06",
       "title": "Honble Chief Minister chaired review meeting on the schemes and activities of the Higher Education Department",
       "file_name": "pr060726e.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Higher Education Department",
       "minister_id": 1,
       "department_id": 12,
@@ -172,8 +172,8 @@
       "release_date": "2026-07-06",
       "title": "Honble Minister for Food and Civil Supplies chaired the review meeting of the price monitoring cell of the food and consumer protection department",
       "file_name": "pr060726_fcs.JPG",
-      "minister_name": "Hon'ble Minister for Food and Civil Supplies",
-      "department_name": "Food and Civil Supplies Department",
+      "minister_name": "Thiru P. Venkataramanan",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
       "minister_id": 6,
       "department_id": 5,
       "district_id": null,
@@ -245,15 +245,6 @@
   ],
   "departments": [
     {
-      "id": 5,
-      "name": "Co-operation, Food and Consumer Protection Department",
-      "dep_id_encoded": "NQ==",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ==",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru V. Gandhiraj",
-      "display_order": 5
-    },
-    {
       "id": 6,
       "name": "Commercial Taxes and Registration Department",
       "dep_id_encoded": "Ng==",
@@ -261,6 +252,15 @@
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru D. Logesh Tamilselvan",
       "display_order": 4
+    },
+    {
+      "id": 5,
+      "name": "Co-operation, Food and Consumer Protection Department",
+      "dep_id_encoded": "NQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru V. Gandhiraj",
+      "display_order": 5
     },
     {
       "id": 12,

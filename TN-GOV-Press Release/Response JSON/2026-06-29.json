@@ -1,8 +1,8 @@
 {
   "date": "2026-06-29",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 3,
   "releases": [
@@ -57,8 +57,8 @@
       "release_date": "2026-06-29",
       "title": "Honble Minister for Co-operation inaugurated Co-operative Week – 2026",
       "file_name": "pr290626_cop1.jpeg",
-      "minister_name": "Hon'ble Minister for Co-operation",
-      "department_name": "Co-operation Department",
+      "minister_name": "Thiru V. Gandhiraj",
+      "department_name": "School Education Department",
       "minister_id": 22,
       "department_id": 28,
       "district_id": null,

@@ -1,8 +1,8 @@
 {
   "date": "2026-07-03",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 12,
   "releases": [
@@ -11,8 +11,8 @@
       "release_date": "2026-07-03",
       "title": "Honble Minister for Artificial Intelligence, Information Technology and Digital Services chaired review meeting on enhancing the Namma Arasu WhatsApp Platform",
       "file_name": "pr030726_it.jpg",
-      "minister_name": "Hon'ble Minister for Artificial Intelligence, Information Technology and Digital Services",
-      "department_name": "Artificial Intelligence, Information Technology and Digital Services Department",
+      "minister_name": "Dr Kumar. R",
+      "department_name": "Information Technology and Digital Services Department",
       "minister_id": 32,
       "department_id": 17,
       "district_id": null,
@@ -34,7 +34,7 @@
       "release_date": "2026-07-03",
       "title": "Honble Chief Minister chaired review meeting on the schemes and activities of the Highways and Minor Ports Department",
       "file_name": "pr030726f.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Highways and Minor Ports Department",
       "minister_id": 1,
       "department_id": 13,
@@ -57,8 +57,8 @@
       "release_date": "2026-07-03",
       "title": "Honble Minister for Food and Civil Supplies inspected Amma Unavagam in Mandaiveli Market, Chennai",
       "file_name": "pr030726_fcs.jpg",
-      "minister_name": "Hon'ble Minister for Food and Civil Supplies",
-      "department_name": "Food and Civil Supplies Department",
+      "minister_name": "Thiru P. Venkataramanan",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
       "minister_id": 6,
       "department_id": 5,
       "district_id": null,
@@ -195,7 +195,7 @@
       "release_date": "2026-07-03",
       "title": "Honble Chief Minister chaired review meeting on the schemes and activities of the Rural Development and Panchayat Raj Department",
       "file_name": "pr030726a.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Rural Development and Panchayat Raj Department",
       "minister_id": 1,
       "department_id": 27,
@@ -218,7 +218,7 @@
       "release_date": "2026-07-03",
       "title": "Honble Minister for Social Justice chaired state-level meeting of Tribal Representatives",
       "file_name": "pr030726_sj.jpg",
-      "minister_name": "Hon'ble Minister for Social Justice",
+      "minister_name": "Thiru Vanni Arasu",
       "department_name": "Social Justice Department",
       "minister_id": 14,
       "department_id": 1,
@@ -264,8 +264,8 @@
       "release_date": "2026-07-03",
       "title": "Honble Minister for Food and Civil Supplies inspected renovation works at the Tamil Nadu Civil Supplies Corporation Head Office building in Kilpauk, Chennai",
       "file_name": "pr030726_fcs1.jpg",
-      "minister_name": "Hon'ble Minister for Food and Civil Supplies",
-      "department_name": "Food and Civil Supplies Department",
+      "minister_name": "Thiru P. Venkataramanan",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
       "minister_id": 6,
       "department_id": 5,
       "district_id": null,
@@ -323,15 +323,6 @@
   ],
   "departments": [
     {
-      "id": 1,
-      "name": "Social Justice Department",
-      "dep_id_encoded": "MQ==",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru Vanni Arasu",
-      "display_order": 32
-    },
-    {
       "id": 5,
       "name": "Co-operation, Food and Consumer Protection Department",
       "dep_id_encoded": "NQ==",
@@ -366,6 +357,15 @@
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru N. Anand",
       "display_order": 30
+    },
+    {
+      "id": 1,
+      "name": "Social Justice Department",
+      "dep_id_encoded": "MQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Vanni Arasu",
+      "display_order": 32
     }
   ]
 }

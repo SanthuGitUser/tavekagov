@@ -8,9 +8,9 @@
   "start_date": "10-05-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:32.497505+05:30",
-  "lastFetchedAt": "2026-08-02T00:49:11.524912+05:30",
-  "fetchCount": 2,
-  "count": 8,
+  "lastFetchedAt": "2026-08-04T18:20:57.049907+05:30",
+  "fetchCount": 3,
+  "count": 9,
   "orders": [
     {
       "go_date": "2026-07-28",
@@ -25,6 +25,14 @@
       "go_number": "G.O.Ms.No.145",
       "go_name": "Provident Fund - General Provident Fund (Tamil Nadu) – Rate of interest for the financial year 2026-2027 with effect from 01.07.2026 to 30.09.2026 - Orders – Issued",
       "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_145_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
+    {
+      "go_date": "2026-07-24",
+      "go_number": "G.O.Ms.No.148",
+      "go_name": "Finance Department – Revenue Augmentation Committee – To suggest measures for sustainable augmentation of States Tax and Non-Tax revenues – Constituted – Orders – Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_148_2026.pdf",
       "department_name": "Finance Department",
       "dep_id_encoded": "OQ=="
     },

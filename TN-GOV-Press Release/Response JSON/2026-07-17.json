@@ -1,8 +1,8 @@
 {
   "date": "2026-07-17",
   "fetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "lastFetchedAt": "2026-08-01T01:06:16.954667+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 11,
   "releases": [
@@ -11,8 +11,8 @@
       "release_date": "2026-07-17",
       "title": "Honble Minister for Food and Civil Supplies distributed new electronic family cards to beneficiaries in Teynampet and Velachery, Chennai",
       "file_name": "pr170726_fcs1.jpg",
-      "minister_name": "Hon'ble Minister for Food and Civil Supplies",
-      "department_name": "Food and Civil Supplies Department",
+      "minister_name": "Thiru P. Venkataramanan",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
       "minister_id": 6,
       "department_id": 5,
       "district_id": null,
@@ -57,7 +57,7 @@
       "release_date": "2026-07-17",
       "title": "Honble Minister for School Education, Tamil Development, Information and Publicity presented a book to the Honble Chief Minister",
       "file_name": "pr170726_sedu.jpg",
-      "minister_name": "Hon'ble Minister for School Education, Tamil Development, Information and Publicity presented a book to the Hon'ble Chief Minister",
+      "minister_name": "Thiru Rajmohan",
       "department_name": "School Education Department",
       "minister_id": 8,
       "department_id": 28,
@@ -80,7 +80,7 @@
       "release_date": "2026-07-17",
       "title": "Honble Minister for Public Works and Sports Development received CSR contribution from Larsen and Toubro for Tamil Nadu Champions Foundation",
       "file_name": "pr170726_pwsd.jpg",
-      "minister_name": "Hon'ble Minister for Public Works and Sports Development received CSR contribution from Larsen and Toubro for Tamil Nadu Champions Foundation",
+      "minister_name": "Thiru Aadhav Arjuna",
       "department_name": "Public Works Department",
       "minister_id": 3,
       "department_id": 42,
@@ -126,7 +126,7 @@
       "release_date": "2026-07-17",
       "title": "Honble Chief Minister chaired review meeting of the Tamil Development and Information Department",
       "file_name": "pr170726d.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Home, Prohibition and Excise Department",
       "minister_id": 1,
       "department_id": 14,
@@ -172,7 +172,7 @@
       "release_date": "2026-07-17",
       "title": "Honble Chief Minister chaired review meeting of the Housing and Urban Development Department",
       "file_name": "pr170726bc.jpg",
-      "minister_name": "Hon'ble Chief Minister",
+      "minister_name": "Thiru C. Joseph Vijay",
       "department_name": "Housing and Urban Development Department",
       "minister_id": 1,
       "department_id": 15,
@@ -327,15 +327,6 @@
       "display_order": 14
     },
     {
-      "id": 28,
-      "name": "School Education Department",
-      "dep_id_encoded": "Mjg=",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg=",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru Rajmohan",
-      "display_order": 31
-    },
-    {
       "id": 42,
       "name": "Public Works Department",
       "dep_id_encoded": "NDI=",
@@ -343,6 +334,15 @@
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru Aadhav Arjuna",
       "display_order": 28
+    },
+    {
+      "id": 28,
+      "name": "School Education Department",
+      "dep_id_encoded": "Mjg=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Rajmohan",
+      "display_order": 31
     }
   ]
 }
