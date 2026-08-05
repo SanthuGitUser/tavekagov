@@ -1,0 +1,150 @@
+{
+  "date": "2026-08-04",
+  "fetchedAt": "2026-08-05T22:42:23.885891+05:30",
+  "lastFetchedAt": "2026-08-05T22:42:23.885891+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-04"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22273,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.489-Hon_ble_CM_Press_Release_-_Health_dept_-_Buildings_Inauguration_-Date_04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.489-Hon'ble CM Press Release - Health dept - Buildings Inauguration -Date 04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22274,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.490-Hon_ble_CM_Press_Release-__Housing_Dept_-_TNUHDB__Building_Inauguration_-Date_04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.490-Hon'ble CM Press Release-  Housing Dept - TNUHDB  Building Inauguration -Date 04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22275,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.491-Hon_ble_CM_Press_Release_-_MAWS_Dept_-_Inauguration_and_laying_foundation_-Date-04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.491-Hon'ble CM Press Release - MAWS Dept - Inauguration and laying foundation -Date-04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22276,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.492-Hon_ble_CM_Press_Release_-Higher_Educ_Dept__-_Buildings_Inauguration__-Date_04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.492-Hon'ble CM Press Release -Higher Educ Dept  - Buildings Inauguration  -Date 04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22277,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.493-Hon_ble_CM_Press_Release_-_Birthday_greetings_to_Hon_ble_Pudhuchery_CM__-_Date-04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.493-Hon'ble CM Press Release - Birthday greetings to Hon'ble Pudhuchery CM  - Date-04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22278,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.494-Hon_ble_CM_Press_Release_-_Sports_Dept_-_Chennai_Open_International_Tennis_Championship_WTA_-Date-04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.494-Hon'ble CM Press Release - Sports Dept - Chennai Open International Tennis Championship WTA -Date-04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22279,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.495-Hon_ble_CM_Press_Release_-_ADTW__State_Council_Meeting_-Date__4.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.495-Hon'ble CM Press Release - ADTW  State Council Meeting -Date  4.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22280,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-496_-EDII_Press_Release-_Youtube_Channel_Creation_English-Date_04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-496 -EDII Press Release- Youtube Channel Creation English-Date 04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22281,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-496_-EDII_Press_Release-_Youtube_Channel_Creation__-Tamil-Date_04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-496 -EDII Press Release- Youtube Channel Creation  -Tamil-Date 04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22282,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-497-Hon_ble_Revenue__Disaster_Minister__Press_Release_-_El-Nino_-_EAC_-Date_04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-497-Hon'ble Revenue &Disaster Minister  Press Release - El-Nino - EAC -Date 04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22283,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-498-Food____Civil_Supplies_Dept_Press_Release-eKYC_Special_camp-Date_04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-04",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-498-Food  & Civil Supplies Dept Press Release-eKYC Special camp-Date 04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      },
+      {
+        "id": 22284,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-499-Transport_Dept_Press_Release-Date_04.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-05",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-499-Transport Dept Press Release-Date 04.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-04",
+        "language": "en"
+      }
+    ]
+  }
+}

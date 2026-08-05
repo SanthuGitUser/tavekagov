@@ -1,10 +1,10 @@
 {
   "date": "2026-08-04",
   "fetchedAt": "2026-08-04T18:20:50.425012+05:30",
-  "lastFetchedAt": "2026-08-04T18:20:50.425012+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-05T22:42:26.690708+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
-  "count": 6,
+  "count": 8,
   "releases": [
     {
       "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr040826f.jpg",
@@ -143,6 +143,52 @@
       "others": false,
       "inspection": false,
       "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr040826_trpt.jpg",
+      "release_date": "2026-08-04",
+      "title": "Secretary to Government, Transport Department chaired a meeting with bus manufacturers at the Metropolitan Transport Corporation Headquarters",
+      "file_name": "pr040826_trpt.jpg",
+      "minister_name": "Thiru A. Vijay Tamilan Parthiban",
+      "department_name": "Transport Department",
+      "minister_id": 15,
+      "department_id": 33,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "medium",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr040826_rev.jpg",
+      "release_date": "2026-08-04",
+      "title": "Honble Minister for Revenue and Disaster Management chaired the first meeting of the expert committee on El Nino preparedness",
+      "file_name": "pr040826_rev.jpg",
+      "minister_name": "Thiru K A. Sengottaiyan",
+      "department_name": "Revenue and Disaster Management Department",
+      "minister_id": 5,
+      "department_id": 26,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
     }
   ],
   "ministers": [
@@ -154,7 +200,44 @@
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
       "display_order": 1,
       "is_chief_minister": true
+    },
+    {
+      "id": 5,
+      "name": "Thiru K A. Sengottaiyan",
+      "designation": "Minister for Revenue and Disaster Management",
+      "portfolio": "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan and Legislative Assembly",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/106_Sengottaiyan.png",
+      "display_order": 5,
+      "is_chief_minister": false
+    },
+    {
+      "id": 15,
+      "name": "Thiru A. Vijay Tamilan Parthiban",
+      "designation": "Minister for Transport",
+      "portfolio": "Motor Vehicle Acts – Administration, Transport, Nationalised Transport and Motor Vehicles Act",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/090_Vijay_Tamilan_ Parthiban.png",
+      "display_order": 15,
+      "is_chief_minister": false
     }
   ],
-  "departments": []
+  "departments": [
+    {
+      "id": 26,
+      "name": "Revenue and Disaster Management Department",
+      "dep_id_encoded": "MjY=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjY=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru K A. Sengottaiyan",
+      "display_order": 29
+    },
+    {
+      "id": 33,
+      "name": "Transport Department",
+      "dep_id_encoded": "MzM=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzM=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru A. Vijay Tamilan Parthiban",
+      "display_order": 38
+    }
+  ]
 }

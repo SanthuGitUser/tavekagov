@@ -1,8 +1,8 @@
 {
   "date": "2026-06-20",
   "fetchedAt": "2026-08-01T00:10:41.732251+05:30",
-  "lastFetchedAt": "2026-08-04T18:20:33.730192+05:30",
-  "fetchCount": 2,
+  "lastFetchedAt": "2026-08-05T22:42:14.055145+05:30",
+  "fetchCount": 3,
   "request": {
     "method": "GET",
     "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
