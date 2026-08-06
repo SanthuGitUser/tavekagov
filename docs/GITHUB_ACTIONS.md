@@ -15,6 +15,7 @@ This repository uses GitHub Actions to **build and deploy** the static web dashb
 **Triggers on push to `main` when these paths change:**
 
 - `web/**`
+- `TN-Map/**`
 - `TN-News/**`
 - `TN-DIPR-Press Release/**`
 - `TN-GOV-Press Release/**`
