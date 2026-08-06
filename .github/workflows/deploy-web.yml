@@ -3,19 +3,6 @@ name: Deploy Web Dashboard
 on:
   push:
     branches: [main]
-    paths:
-      - "web/**"
-      - "TN-Map/**"
-      - "TN-News/**"
-      - "TN-DIPR-Press Release/**"
-      - "TN-GOV-Press Release/**"
-      - "TN-Government Orders/**"
-      - "TN-IAS_Transfers-Postings/**"
-      - "TN-TVA-Magazine/**"
-      - "TN-GOV_Departments/**"
-      - "TN-GOV_Council Of Ministers/**"
-      - "TN-GOV_Districts/**"
-      - ".github/workflows/deploy-web.yml"
   workflow_dispatch:
 
 permissions:
@@ -29,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     timeout-minutes: 20
     defaults:
       run:
@@ -61,7 +48,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     timeout-minutes: 10
     permissions:
       pages: write

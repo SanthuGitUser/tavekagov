@@ -12,20 +12,12 @@ This repository uses GitHub Actions to **build and deploy** the static web dashb
 
 [deploy-web.yml](../.github/workflows/deploy-web.yml) builds and deploys the dashboard to GitHub Pages.
 
-**Triggers on push to `main` when these paths change:**
+**Triggers:**
 
-- `web/**`
-- `TN-Map/**`
-- `TN-News/**`
-- `TN-DIPR-Press Release/**`
-- `TN-GOV-Press Release/**`
-- `TN-Government Orders/**`
-- `TN-IAS_Transfers-Postings/**`
-- `TN-TVA-Magazine/**`
-- `TN-GOV_Departments/**`
-- `TN-GOV_Council Of Ministers/**`
-- `TN-GOV_Districts/**`
-- `.github/workflows/deploy-web.yml`
+- **Push to `main`** — rebuilds and deploys (any file change)
+- **Manual** — Actions → Deploy Web Dashboard → Run workflow
+
+> **Note:** Pushes made by another GitHub Action using the default `GITHUB_TOKEN` do **not** trigger this workflow (GitHub prevents recursive runs). After an automated data sync commit, run the deploy workflow manually, or push from your local machine with your own Git credentials.
 
 **Build settings:**
 
