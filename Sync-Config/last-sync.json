@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "jobs": {
+    "dipr_press_releases": {
+      "last_sync_at": "2026-08-07T01:11:28+05:30",
+      "synced_through": "2026-08-07"
+    },
+    "government_orders": {
+      "last_sync_at": "2026-08-07T01:11:43+05:30",
+      "synced_through": "2026-08-07"
+    },
+    "tva_magazine": {
+      "last_sync_at": "2026-08-07T01:12:05+05:30",
+      "synced_through": "2026-06-01"
+    },
+    "departments": {
+      "last_sync_at": "2026-08-07T01:12:24+05:30"
+    },
+    "ministers": {
+      "last_sync_at": "2026-08-07T01:12:25+05:30"
+    },
+    "districts": {
+      "last_sync_at": "2026-08-07T01:12:42+05:30"
+    },
+    "news": {
+      "last_sync_at": "2026-08-07T01:12:45+05:30",
+      "synced_through": "2026-08-06"
+    }
+  }
+}

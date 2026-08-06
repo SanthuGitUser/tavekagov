@@ -10,12 +10,14 @@ type AppLayoutProps = {
   title: string;
   description?: ReactNode;
   fillViewport?: boolean;
+  hidePageHeader?: boolean;
 };
 
 export function AppLayout({
   title,
   description,
   fillViewport = false,
+  hidePageHeader = false,
 }: AppLayoutProps) {
   return (
     <div
@@ -25,11 +27,13 @@ export function AppLayout({
       )}
     >
       <TopNav />
-      <Header title={title} description={description} />
+      {hidePageHeader ? null : <Header title={title} description={description} />}
       <main
         className={cn(
-          "flex-1 p-3 sm:p-4",
-          fillViewport && "flex min-h-0 flex-col overflow-hidden",
+          "flex-1",
+          fillViewport
+            ? "flex min-h-0 flex-col overflow-hidden p-2 sm:p-3"
+            : "p-3 sm:p-4",
         )}
       >
         <Outlet />

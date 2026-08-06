@@ -23,12 +23,13 @@ Open the URL shown in the terminal (usually `http://localhost:5173`). JSON data 
 | Area | Source | Storage | UI tab |
 |------|--------|---------|--------|
 | DIPR press releases | [dipr.tn.gov.in](https://dipr.tn.gov.in/press-release1.html) | `TN-DIPR-Press Release/Response JSON/` | Press Releases |
-| Government press release images | [tn.gov.in](https://www.tn.gov.in/press_release.php) | `TN-GOV-Press Release/Response JSON/` | PR Images |
+| Government press release images | [tn.gov.in](https://www.tn.gov.in/press_release.php) | `TN-GOV-Press Release/Response JSON/` | Press Releases Images |
 | Government orders (G.O.s) | [tn.gov.in](https://www.tn.gov.in/godept_list.php) | `TN-Government Orders/Response JSON/` | Government Orders |
 | IAS transfers & postings | [tn.gov.in](https://tnsectdemo.tn.gov.in/ias/transferandpostings.php) | `TN-IAS_Transfers-Postings/Response JSON/` | Transfers and Postings |
 | Departments (directory) | [tn.gov.in](https://www.tn.gov.in/department_list.php) | `TN-GOV_Departments/manifests/tn_departments.json` | Departments |
 | Council of ministers | [tn.gov.in](https://www.tn.gov.in/minister_list.php) | `TN-GOV_Council Of Ministers/manifests/tn_ministers.json` | Ministers |
 | Districts | [tn.gov.in](https://www.tn.gov.in/district_list.php) | `TN-GOV_Districts/manifests/tn_districts.json` | Districts |
+| District map boundaries | [india-maps-data](https://github.com/udit-001/india-maps-data) | `TN-Map/tamil-nadu-districts.geojson` | Districts (map) |
 | Tamil Arasu magazine | [Tamil Digital Library](https://tamildigitallibrary.in/) | `TN-TVA-Magazine/manifests/magazine.json` (+ optional `Response JSON/`) | Magazine |
 | Tamil Nadu news | [NewsData.io](https://newsdata.io/) | `TN-News/Response JSON/` | News |
 
@@ -183,12 +184,14 @@ See [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) for permissions, deploy tri
 
 Built with Vite, React 19, TypeScript, Tailwind CSS v4, TanStack Table, and Recharts. Pages include:
 
+- **Home** — Welcome links to Dashboard and Districts
 - **Dashboard** — KPIs, activity chart, recent press releases, news category chart
 - **Press Releases** — DIPR releases with search, PDF links, and department/minister browse tabs
-- **PR Images** — Government press release photos from tn.gov.in with category filters
+- **Press Releases Images** — Government press release photos from tn.gov.in with category filters
 - **Government Orders** — Department G.O.s with timeline and table views
 - **Transfers & Postings** — IAS G.O.s
-- **Departments, Ministers, Districts** — Directory listings
+- **Departments, Ministers** — Directory listings
+- **Districts** — Interactive 2D map (38 districts, 234 constituencies), live weather, searchable district tiles with population, area, and constituency counts
 - **Magazine** — Tamil Arasu issues from the Tamil Digital Library
 - **News** — Curated Tamil Nadu news headlines
 - **About** — Project overview and data sources

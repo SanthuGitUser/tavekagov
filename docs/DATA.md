@@ -213,7 +213,7 @@ Default project start date for backfills: **10 May 2026** (`10-05-2026`), config
 | UI page | Feed module |
 |---------|-------------|
 | Dashboard, Press Releases | `tamilNaduPressReleaseFeed.ts` |
-| PR Images | `tamilNaduGovPressReleaseFeed.ts` |
+| Press Releases Images | `tamilNaduGovPressReleaseFeed.ts` |
 | Government Orders | `tamilNaduGovernmentOrdersFeed.ts` |
 | Transfers & Postings | `tamilNaduTransfersPostingsFeed.ts` |
 | Departments | `tamilNaduDepartmentsFeed.ts` |

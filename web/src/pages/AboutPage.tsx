@@ -47,11 +47,11 @@ export function AboutPage() {
             </CardHeader>
             <CardContent className="space-y-2 text-sm text-muted-foreground">
               <p>Press releases — DIPR press release API (daily JSON)</p>
-              <p>PR images — tn.gov.in press release archives (daily JSON)</p>
+              <p>Press release images — tn.gov.in press release archives (daily JSON)</p>
               <p>Government orders — tn.gov.in department G.O. listings (per-department JSON)</p>
               <p>Transfers and postings — tnsectdemo.tn.gov.in IAS G.O.s (daily JSON)</p>
               <p>Magazine — Tamil Virtual Academy Digital Library (JSON manifest)</p>
-              <p>Departments, ministers, districts — tn.gov.in HTML pages (JSON manifests)</p>
+              <p>Departments, ministers, districts — tn.gov.in HTML pages (JSON manifests); district map boundaries in `TN-Map/`; tile photos from tn.gov.in</p>
               <p>News — NewsData.io API (daily JSON)</p>
             </CardContent>
           </Card>

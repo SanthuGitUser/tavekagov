@@ -8,7 +8,7 @@ labels: data
 ## Dataset
 
 - [ ] DIPR press releases
-- [ ] Gov PR images
+- [ ] Gov press release images
 - [ ] Government orders
 - [ ] Transfers & postings
 - [ ] Departments / ministers / districts

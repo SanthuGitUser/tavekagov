@@ -15,12 +15,14 @@ See also the root [README](../README.md) and [docs/DATA.md](../docs/DATA.md).
 
 ## Pages
 
+- Home (welcome links to Dashboard and Districts)
 - Dashboard (KPI cards, activity chart, recent press releases)
 - Press releases
-- PR images
+- Press Releases Images
 - Government orders
 - Transfers and postings
-- Departments, ministers, districts
+- Departments, ministers
+- Districts (interactive map, district tiles, live weather)
 - Magazine
 - News
 - About
@@ -57,3 +59,13 @@ npm run build
 The workflow sets `VITE_BASE_PATH=/tavekagov/` for project pages. Use `/` for a user site at `username.github.io`.
 
 No database or API secrets are required for the web build.
+
+## Districts page
+
+The Districts view combines:
+
+- **Map** — 2D SVG map from `TN-Map/tamil-nadu-districts.geojson` with zoom/pan, district labels, constituency counts on hover, and live weather badges (Open-Meteo)
+- **Tiles** — District cards with tn.gov.in photos, weather summary, population, area, and constituency count
+- **Search** — Filters both the map highlight and tile grid
+
+District tile images load from tn.gov.in using manifest names, with filename overrides in `src/lib/districtImageUtils.ts` when the remote file name differs (for example `The Nilgiris` → `TheNilgiris.png`).

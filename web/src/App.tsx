@@ -20,6 +20,7 @@ import { DepartmentsPage } from "@/pages/DepartmentsPage";
 import { DistrictsPage } from "@/pages/DistrictsPage";
 import { GovPressReleasesPage } from "@/pages/GovPressReleasesPage";
 import { GovernmentOrdersPage } from "@/pages/GovernmentOrdersPage";
+import { HomePage } from "@/pages/HomePage";
 import { MagazinePage } from "@/pages/MagazinePage";
 import { MinistersPage } from "@/pages/MinistersPage";
 import { NewsPage } from "@/pages/NewsPage";
@@ -32,6 +33,12 @@ export default function App() {
       <Routes>
         <Route
           path="/"
+          element={<AppLayout hidePageHeader title="Home" />}
+        >
+          <Route index element={<HomePage />} />
+        </Route>
+        <Route
+          path="/dashboard"
           element={
             <DashboardDateRangeProvider>
               <AppLayout
@@ -67,7 +74,7 @@ export default function App() {
               <GovPressReleaseViewProvider>
                 <AppLayout
                   fillViewport
-                  title="PR Images"
+                  title="Press Releases Images"
                   description="Tamil Nadu government press release images from tn.gov.in."
                 />
               </GovPressReleaseViewProvider>
@@ -138,11 +145,7 @@ export default function App() {
           path="/districts"
           element={
             <DistrictSearchProvider>
-              <AppLayout
-                fillViewport
-                title="Districts"
-                description="District directory with population and website links."
-              />
+              <AppLayout fillViewport hidePageHeader title="Districts" />
             </DistrictSearchProvider>
           }
         >

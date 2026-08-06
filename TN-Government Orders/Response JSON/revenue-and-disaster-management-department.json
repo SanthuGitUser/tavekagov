@@ -5,11 +5,11 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "10-05-2026",
+  "start_date": "01-08-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:39.068742+05:30",
-  "lastFetchedAt": "2026-08-06T10:52:22.366070+05:30",
-  "fetchCount": 5,
+  "lastFetchedAt": "2026-08-07T01:11:39.253820+05:30",
+  "fetchCount": 6,
   "count": 0,
   "orders": []
 }

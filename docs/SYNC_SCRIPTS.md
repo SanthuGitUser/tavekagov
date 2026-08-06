@@ -79,7 +79,7 @@ python tn_transfers_postings_sync.py --start-date 10-05-2026 --end-date 31-07-20
 - Merges by DIPR `id` on re-run
 - See [TN-DIPR-Press Release/README.md](../TN-DIPR-Press%20Release/README.md)
 
-### Gov PR images (`tn_gov_press_release_sync.py`)
+### Gov press release images (`tn_gov_press_release_sync.py`)
 
 - Scrapes `tn.gov.in` press release archive pages by month
 - Enriches titles with minister/department IDs from manifests
