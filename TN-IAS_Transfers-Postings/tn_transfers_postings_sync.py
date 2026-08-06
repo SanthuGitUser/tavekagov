@@ -247,18 +247,26 @@ def main() -> int:
     args = parser.parse_args()
 
     source_url, default_start_date = _load_config()
-    start_date = _parse_display_date(_normalize_date(args.start_date or default_start_date))
-    end_date = (
-        _parse_display_date(_normalize_date(args.end_date))
-        if args.end_date
-        else datetime.now(_KOLKATA).date()
-    )
-    if start_date > end_date:
-        raise SystemExit("start-date must be on or before end-date.")
+    output_dir = Path(args.output_dir)
 
     if str(_SYNC_CONFIG) not in sys.path:
         sys.path.insert(0, str(_SYNC_CONFIG))
     from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+    from sync_state import JOB_IAS_TRANSFERS_POSTINGS, record_date_range_sync, resolve_date_range
+
+    start_date, end_date = resolve_date_range(
+        JOB_IAS_TRANSFERS_POSTINGS,
+        output_dir=output_dir,
+        default_start_display=default_start_date,
+        explicit_start=args.start_date,
+        explicit_end=args.end_date,
+    )
+    if start_date > end_date:
+        print(
+            f"IAS transfers already up to date "
+            f"(through {_format_display_date(end_date)})."
+        )
+        return 0
 
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     session = build_retry_session(headers=_DEFAULT_HEADERS)
@@ -280,13 +288,14 @@ def main() -> int:
     )
 
     saved_paths = save_daily_responses(
-        Path(args.output_dir),
+        output_dir,
         postings=postings,
         source_url=source_url,
     )
     print(f"Saved {len(saved_paths)} daily JSON file(s).")
     if saved_paths:
         print(f"Latest file: {saved_paths[-1]}")
+        record_date_range_sync(JOB_IAS_TRANSFERS_POSTINGS, synced_through=end_date)
     return 0
 
 

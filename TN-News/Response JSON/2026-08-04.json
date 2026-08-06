@@ -1,8 +1,8 @@
 {
   "date": "2026-08-04",
   "fetchedAt": "2026-08-05T22:43:38.540334+05:30",
-  "lastFetchedAt": "2026-08-05T22:43:38.540334+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-06T10:53:49.421608+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -18,7 +18,7 @@
   "response": {
     "status": "success",
     "totalResults": 33,
-    "apiReportedTotalResults": 35,
+    "apiReportedTotalResults": 42,
     "results": [
       {
         "article_id": "0ad2882dc5c04c9f2ea6191892b23fa2",
@@ -1558,6 +1558,6 @@
         "duplicate": false
       }
     ],
-    "pagesFetched": 4
+    "pagesFetched": 5
   }
 }

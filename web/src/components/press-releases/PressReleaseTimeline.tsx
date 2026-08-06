@@ -401,6 +401,8 @@ export function PressReleaseTimeline({
             title={browseTitle}
             subtitle={browseSubtitle}
             headerRight={headerRight ?? undefined}
+            layout={view === "department" || view === "minister" ? "table" : "grouped"}
+            releases={filteredReleases}
             emptyMessage={
               isSearching
                 ? "No press releases match your search."

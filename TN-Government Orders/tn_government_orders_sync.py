@@ -374,21 +374,28 @@ def main() -> int:
     args = parser.parse_args()
 
     source_url, base_url, default_start_date = _load_config()
-    start_date = _parse_display_date(_normalize_date(args.start_date or default_start_date))
-    end_date = (
-        _parse_display_date(_normalize_date(args.end_date))
-        if args.end_date
-        else datetime.now(_KOLKATA).date()
-    )
-    if start_date > end_date:
-        raise SystemExit("start-date must be on or before end-date.")
-
-    years = range(start_date.year, end_date.year + 1)
     output_dir = Path(args.output_dir)
 
     if str(_SYNC_CONFIG) not in sys.path:
         sys.path.insert(0, str(_SYNC_CONFIG))
     from http_client import build_retry_session
+    from sync_state import JOB_GOVERNMENT_ORDERS, record_date_range_sync, resolve_date_range
+
+    start_date, end_date = resolve_date_range(
+        JOB_GOVERNMENT_ORDERS,
+        output_dir=output_dir,
+        default_start_display=default_start_date,
+        explicit_start=args.start_date,
+        explicit_end=args.end_date,
+    )
+    if start_date > end_date:
+        print(
+            f"Government orders already up to date "
+            f"(through {_format_display_date(end_date)})."
+        )
+        return 0
+
+    years = range(start_date.year, end_date.year + 1)
 
     session = build_retry_session(headers=_DEFAULT_HEADERS)
     print(f"Source list: {source_url}")
@@ -435,6 +442,7 @@ def main() -> int:
         time.sleep(0.2)
 
     print(f"Saved {len(saved_paths)} department JSON file(s).")
+    record_date_range_sync(JOB_GOVERNMENT_ORDERS, synced_through=end_date)
     return 0
 
 

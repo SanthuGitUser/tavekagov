@@ -9,7 +9,7 @@ Usage:
   2. pip install -r requirements.txt
   3. python tn_press_release_sync.py
   4. Optional: python tn_press_release_sync.py --start-date 10-05-2026 --end-date 31-07-2026
-     (defaults: start from TN_PRESS_RELEASE_START_DATE in .env, end = yesterday Asia/Kolkata)
+     (defaults: resume from Sync-Config/last-sync.json, end = today Asia/Kolkata)
 """
 
 from __future__ import annotations
@@ -239,19 +239,26 @@ def main() -> int:
     args = parser.parse_args()
 
     source_url, default_start_date = _load_config()
-    start_date = _parse_display_date(_normalize_date(args.start_date or default_start_date))
-    default_end_date = datetime.now(_KOLKATA).date() - timedelta(days=1)
-    end_date = (
-        _parse_display_date(_normalize_date(args.end_date))
-        if args.end_date
-        else default_end_date
-    )
-    if start_date > end_date:
-        raise SystemExit("start-date must be on or before end-date.")
+    output_dir = Path(args.output_dir)
 
     if str(_SYNC_CONFIG) not in sys.path:
         sys.path.insert(0, str(_SYNC_CONFIG))
     from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+    from sync_state import JOB_DIPR_PRESS_RELEASES, record_date_range_sync, resolve_date_range
+
+    start_date, end_date = resolve_date_range(
+        JOB_DIPR_PRESS_RELEASES,
+        output_dir=output_dir,
+        default_start_display=default_start_date,
+        explicit_start=args.start_date,
+        explicit_end=args.end_date,
+    )
+    if start_date > end_date:
+        print(
+            f"DIPR press releases already up to date "
+            f"(through {_format_display_date(end_date)})."
+        )
+        return 0
 
     session = build_retry_session(headers=_DEFAULT_HEADERS)
 
@@ -259,13 +266,14 @@ def main() -> int:
     saved_paths = sync_press_releases(
         session,
         source_url=source_url,
-        output_dir=Path(args.output_dir),
+        output_dir=output_dir,
         start_date=start_date,
         end_date=end_date,
         timeout=DEFAULT_CONNECT_READ_TIMEOUT,
     )
     if saved_paths:
         print(f"Latest file: {saved_paths[-1]}")
+        record_date_range_sync(JOB_DIPR_PRESS_RELEASES, synced_through=end_date)
     return 0
 
 

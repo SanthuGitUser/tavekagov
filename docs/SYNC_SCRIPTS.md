@@ -31,13 +31,20 @@ python tn_dept_sync.py
 
 ## Run everything (recommended)
 
-`scripts/sync-all.ps1` runs all sync jobs in a single command. It infers the next
-date range for date-based sources from the latest `Response JSON/YYYY-MM-DD.json`
-already present, and uses **today (IST)** as the end date.
+`scripts/sync-all.ps1` runs all sync jobs in a single command. Each script resumes
+from the last successful run using `Sync-Config/last-sync.json` (and existing
+`Response JSON/YYYY-MM-DD.json` files as a fallback). The end date defaults to
+**today (IST)** for date-range sources.
 
 ```powershell
 .\scripts\sync-all.ps1 -DryRun
 .\scripts\sync-all.ps1
+```
+
+Inspect planned ranges without fetching:
+
+```powershell
+python Sync-Config/sync_state.py --plan
 ```
 
 Optional flags:
@@ -62,8 +69,8 @@ python tn_transfers_postings_sync.py --start-date 10-05-2026 --end-date 31-07-20
 
 | Flag | Format | Default |
 |------|--------|---------|
-| `--start-date` | `DD-MM-YYYY` | From `Sync-Config/.env` (`TN_*_START_DATE`) |
-| `--end-date` | `DD-MM-YYYY` | Yesterday (Asia/Kolkata) for DIPR; varies by script |
+| `--start-date` | `DD-MM-YYYY` | Day after last sync (`Sync-Config/last-sync.json`), else `TN_*_START_DATE` in `.env` |
+| `--end-date` | `DD-MM-YYYY` | Today (Asia/Kolkata) |
 | `--output-dir` | path | `Response JSON/` in module folder |
 
 ### DIPR press releases (`tn_press_release_sync.py`)
@@ -161,9 +168,11 @@ See [Sync-Config/.env.example](../Sync-Config/.env.example). Key variables:
 | Variable | Used by |
 |----------|---------|
 | `TN_GOV_BASE_URL` | tn.gov.in scrapers |
-| `TN_PRESS_RELEASE_START_DATE` | DIPR sync default start |
-| `TN_GO_START_DATE` | G.O.s, gov PR images |
+| `TN_PRESS_RELEASE_START_DATE` | DIPR sync first-run default |
+| `TN_GO_START_DATE` | G.O.s, gov PR images, magazine first-run default |
 | `NEWSDATA_API_KEY` | News fetch only |
+
+Checkpoint file: `Sync-Config/last-sync.json` (see `last-sync.json.example`).
 
 ## Related docs
 

@@ -570,6 +570,16 @@ def main() -> int:
             f"Note: fetched {incoming_count} unique articles; API reported totalResults="
             f"{total_results}. The API index can exceed deliverable unique pages.",
         )
+
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from sync_state import JOB_NEWS, find_latest_iso_json_date, record_date_range_sync, record_sync
+
+    latest_pub_date = find_latest_iso_json_date(output_dir)
+    if latest_pub_date:
+        record_date_range_sync(JOB_NEWS, synced_through=latest_pub_date)
+    else:
+        record_sync(JOB_NEWS)
     return 0
 
 

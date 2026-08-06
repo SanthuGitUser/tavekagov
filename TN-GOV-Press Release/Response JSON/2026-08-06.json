@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-06",
+  "fetchedAt": "2026-08-06T10:52:08.183743+05:30",
+  "lastFetchedAt": "2026-08-06T10:52:08.183743+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr060826a.jpg",
+      "release_date": "2026-08-06",
+      "title": "Honble Minister for Agriculture and Farmers’ Welfare called on the Honble Chief Minister before presenting the Agriculture Budget for the year 2026–2027",
+      "file_name": "pr060826a.jpg",
+      "minister_name": "Thiru R. Vinoth",
+      "department_name": "Agriculture - Farmers Welfare Department",
+      "minister_id": 24,
+      "department_id": 2,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 24,
+      "name": "Thiru R. Vinoth",
+      "designation": "Minister for Agriculture - Farmers Welfare",
+      "portfolio": "Agriculture, Agricultural Engineering, Agro Service Co-operatives, Horticulture, Sugar, Sugarcane Excise, Sugarcane Development and Waste Land Development",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/171_Vinoth.png",
+      "display_order": 24,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 2,
+      "name": "Agriculture - Farmers Welfare Department",
+      "dep_id_encoded": "Mg==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mg==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru R. Vinoth",
+      "display_order": 1
+    }
+  ]
+}

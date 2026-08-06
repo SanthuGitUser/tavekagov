@@ -366,18 +366,26 @@ def main() -> int:
     args = parser.parse_args()
 
     source_url, base_url, default_start_date = _load_config()
-    start_date = _parse_display_date(_normalize_date(args.start_date or default_start_date))
-    end_date = (
-        _parse_display_date(_normalize_date(args.end_date))
-        if args.end_date
-        else datetime.now(_KOLKATA).date()
-    )
-    if start_date > end_date:
-        raise SystemExit("start-date must be on or before end-date.")
+    output_dir = Path(args.output_dir)
 
     if str(_SYNC_CONFIG) not in sys.path:
         sys.path.insert(0, str(_SYNC_CONFIG))
     from http_client import DEFAULT_CONNECT_READ_TIMEOUT, build_retry_session
+    from sync_state import JOB_GOV_PRESS_RELEASE_IMAGES, record_date_range_sync, resolve_date_range
+
+    start_date, end_date = resolve_date_range(
+        JOB_GOV_PRESS_RELEASE_IMAGES,
+        output_dir=output_dir,
+        default_start_display=default_start_date,
+        explicit_start=args.start_date,
+        explicit_end=args.end_date,
+    )
+    if start_date > end_date:
+        print(
+            f"Gov press release images already up to date "
+            f"(through {_format_display_date(end_date)})."
+        )
+        return 0
 
     session = build_retry_session(headers=_DEFAULT_HEADERS)
 
@@ -392,13 +400,14 @@ def main() -> int:
     print(f"Found {len(releases)} unique image press release(s).")
 
     saved_paths = save_daily_responses(
-        Path(args.output_dir),
+        output_dir,
         releases=releases,
         source_url=source_url,
     )
     print(f"Saved {len(saved_paths)} daily JSON file(s).")
     if saved_paths:
         print(f"Latest file: {saved_paths[-1]}")
+        record_date_range_sync(JOB_GOV_PRESS_RELEASE_IMAGES, synced_through=end_date)
     return 0
 
 

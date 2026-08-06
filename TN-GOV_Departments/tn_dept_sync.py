@@ -313,6 +313,9 @@ def main() -> int:
     manifest_path = write_manifest(departments, output_dir=Path(args.output_dir))
     print(f"Parsed {len(departments)} departments.")
     print(f"Wrote manifest: {manifest_path}")
+    from sync_state import JOB_DEPARTMENTS, record_sync
+
+    record_sync(JOB_DEPARTMENTS)
     return 0
 
 

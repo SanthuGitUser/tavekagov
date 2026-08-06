@@ -428,12 +428,21 @@ def main() -> int:
         parser.error("Pass both --month and --year to filter to a single issue month.")
 
     source_url = _load_config()
-    since_date = (
-        _since_date_from_display(args.since_date)
-        if args.since_date
-        else _DEFAULT_SINCE_DATE
-    )
+    output_dir = Path(args.output_dir)
     manifest_path = _MANIFESTS_DIR / "magazine.json"
+
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from config import get_tn_go_start_date
+    from sync_state import JOB_TVA_MAGAZINE, record_date_range_sync, resolve_since_date
+
+    since_date = resolve_since_date(
+        JOB_TVA_MAGAZINE,
+        output_dir=output_dir,
+        manifest_path=manifest_path,
+        default_start_display=get_tn_go_start_date(),
+        explicit_since=args.since_date,
+    )
     existing = _load_existing_magazines(manifest_path)
 
     print(f"Fetching Tamil Arasu magazines from {source_url} ...")
@@ -460,6 +469,9 @@ def main() -> int:
     )
     print(f"Wrote manifest: {manifest_path}")
     print(f"Wrote daily JSON: {daily_path}")
+    if magazines:
+        latest_issue = max(date.fromisoformat(m.issue_date) for m in magazines)
+        record_date_range_sync(JOB_TVA_MAGAZINE, synced_through=latest_issue)
     return 0
 
 

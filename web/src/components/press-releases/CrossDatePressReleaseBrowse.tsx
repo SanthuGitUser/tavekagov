@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 import type { PressRelease } from "@/types/models";
 
+import { PressReleasesTable } from "./PressReleasesTable";
 import { formatReleaseCount } from "./pressReleaseUtils";
 
 type CrossDatePressReleaseBrowseProps = {
@@ -11,7 +12,9 @@ type CrossDatePressReleaseBrowseProps = {
   headerRight?: ReactNode;
   emptyMessage: string;
   groups: [string, PressRelease[]][];
+  releases?: PressRelease[];
   renderRelease: (release: PressRelease) => ReactNode;
+  layout?: "grouped" | "table";
 };
 
 const DATE_BATCH = 4;
@@ -26,7 +29,9 @@ export function CrossDatePressReleaseBrowse({
   headerRight,
   emptyMessage,
   groups,
+  releases = [],
   renderRelease,
+  layout = "grouped",
 }: CrossDatePressReleaseBrowseProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const loadMoreRef = useRef<HTMLDivElement>(null);
@@ -70,7 +75,9 @@ export function CrossDatePressReleaseBrowse({
       </div>
 
       <div ref={scrollRef} className="min-h-0 flex-1 overflow-y-auto pr-1">
-        {groups.length === 0 ? (
+        {layout === "table" ? (
+          <PressReleasesTable releases={releases} emptyMessage={emptyMessage} />
+        ) : groups.length === 0 ? (
           <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
             {emptyMessage}
           </p>

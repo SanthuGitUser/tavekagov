@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-05",
+  "fetchedAt": "2026-08-06T10:52:03.499878+05:30",
+  "lastFetchedAt": "2026-08-06T10:52:03.499878+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-05"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22285,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.500_-_Hon_ble_CM_Press_Release_-_Sports_Dept_-_High_Cash_Incentive_to_Commonwealth_Games_Medal_winners_-_Date_-_5.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.500 - Hon'ble CM Press Release - Sports Dept - High Cash Incentive to Commonwealth Games Medal winners - Date - 5.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-05",
+        "language": "en"
+      },
+      {
+        "id": 22286,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.501_-_Food_and_Consumer_Protection_Department_Press_Release_-_Date_-_05.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.501 - Food and Consumer Protection Department Press Release - Date - 05.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-05",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 {
   "date": "2026-08-05",
   "fetchedAt": "2026-08-05T22:43:38.540334+05:30",
-  "lastFetchedAt": "2026-08-05T22:43:38.540334+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-06T10:53:49.421608+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -17,9 +17,515 @@
   },
   "response": {
     "status": "success",
-    "totalResults": 2,
-    "apiReportedTotalResults": 35,
+    "totalResults": 14,
+    "apiReportedTotalResults": 42,
     "results": [
+      {
+        "article_id": "8cf515b36ee922a846cafe915c08708a",
+        "link": "https://www.timesnownews.com/entertainment-news/south/dhanush-says-not-knowing-tamil-is-matter-of-shame-raayan-actor-urges-students-to-value-native-language-article-155313375",
+        "title": "Dhanush Says ‘Not Knowing Tamil Is Matter Of Shame’; Raayan Actor Urges Students To Value Native Language",
+        "description": "Dhanush has recently urged the students of Tamil Nadu to learn the native language. He feels not knowing Tamil is a matter of shame for every person who belongs to the Tamil-speaking region.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "south news",
+          "south",
+          "dhanush news",
+          "tamil",
+          "raayan",
+          "dhanush"
+        ],
+        "creator": [
+          "sumit rajguru"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 17:15:22",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 17:33:10",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155313410,thumbsize-47862,width-1280,height-720,resizemode-75/155313410.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "18b5919aba68e58bfed3b60ba84e3392",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tamil-nadu-budget-tvk-govt-extends-breakfast-scheme-up-to-class-8",
+        "title": "Tamil Nadu Budget: TVK govt extends breakfast scheme up to Class 8",
+        "description": "The rollout of the scheme is scheduled for September 17, the birth anniversary of social reformer Periyar EV Ramasamy.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 12:53:04",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 13:07:42",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-05/im04aknk/thenewsminute2023-092092094c-6446-4f80-aa02-df93a5a79eefBreakfastSchemeChennaiCUPGSSchool080923.avif?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "ce0f4ab7153a676fba14779fb249943a",
+        "link": "https://www.thenewsminute.com/tamil-nadu/dmk-mp-questions-e20-policy-flags-glaring-regional-imbalance-in-ethanol-production",
+        "title": "DMK MP questions E20 policy, flags ‘glaring regional imbalance’ in ethanol production",
+        "description": "Questioning the Union government’s ethanol-blending programme, DMK Rajya Sabha MP P Wilson said its reply leaves key concerns over consumer expenditure and regional disparities unanswered despite defending the nationwide rollout of E20 petrol.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "news",
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 12:43:18",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 13:07:42",
+        "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/DMK_MP_PWilson_290322_1200-2.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "b9123a28a3b2bcdb19677232d3808b9d",
+        "link": "https://www.news9live.com/state/tamil-nadu/tamil-nadu-budget-rs-44527-crore-for-schools-as-state-eyes-usd-1-5-trillion-economy-2996781",
+        "title": "Tamil Nadu Budget: Rs 44,527 crore for schools as state eyes USD 1.5 trillion economy",
+        "description": "Tamil Nadu Finance Minister Marie Wilson presented the 2026-27 state Budget with a goal of building a USD 1.5 trillion economy by 2031. The Budget allocates Rs 44,527 crore to school education and announces major schemes for campus maintenance, laptops, residential schools and professional education.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "adan khan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 11:24:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 11:43:08",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/08/marie-wilson.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://n.bytvi.com/news9live.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f3405d6c83c0de220767f304dce49bfe",
+        "link": "https://frontline.thehindu.com/politics/prashant-kishor-bankipur-bypoll-win-bihar/article71308874.ece",
+        "title": "Prashant Kishor’s Bankipur win shakes BJP’s Bihar gameplan",
+        "description": "Jan Suraaj’s founder ended the BJP’s three-decade hold on the Patna seat, but whether this marks a durable shift or a one-off protest vote will only become clear over time.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "politics"
+        ],
+        "creator": [
+          "anand mishra"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 10:15:36",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 10:19:45",
+        "image_url": "https://fl-i.thgim.com/public/incoming/rcnmbc/article71308965.ece/alternates/LANDSCAPE_1200/prashant%20kishor%20bankipur%20win.jpg",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://n.bytvi.com/frontline_thehindu.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "dd67a906836390505998e1dd5b132afe",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tn-budget-tvk-govt-scraps-unnecessary-tender-certificates-promises-transparency",
+        "title": "TN Budget: TVK govt scraps 'unnecessary' tender certificates, promises transparency",
+        "description": "The TVK government has proposed to improve transparency in public tenders by removing the need for \"unnecessary certificates” and introducing other measures.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 09:49:49",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 10:08:16",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-08-05%2Fxeh3pznk%2FTNbudget.jpeg?rect=0%2C109%2C1080%2C608&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "91c14cbd12080777b33831059062c7d0",
+        "link": "https://www.timesnownews.com/education/yuva-sangam-phase-vii-registrations-open-till-august-18-on-ebsb-portal-article-155300724",
+        "title": "Yuva Sangam Phase VII Registrations Open Till August 18 on EBSB Portal",
+        "description": "The Ministry of Education has opened registrations for Yuva Sangam Phase VII under the EBSB initiative. Youth aged between 18 and 30 years can apply through the official portal until August 18, 2026.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "ebsb",
+          "central universities",
+          "iit",
+          "higher education institutions",
+          "nit",
+          "yuva sangam",
+          "iim",
+          "nss"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 09:37:36",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 10:02:29",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155301162,thumbsize-53394,width-1280,height-720,resizemode-75/155301162.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "2aef5589b95afd603d1a52befb4e8fd2",
+        "link": "https://www.timesnownews.com/education/tn-sslc-supplementary-result-2026-declared-for-private-candidates-dge-tn-gov-in-download-pdf-article-155300401",
+        "title": "TN SSLC Supplementary Result 2026 Declared for Private Candidates",
+        "description": "TN SSLC Supplementary Result 2026 for private candidates is out now. Read on to learn how to download the marks memo and related information.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "board result 2026",
+          "tamil nadu 10th board results 2025 declared",
+          "trending news",
+          "board exams"
+        ],
+        "creator": [
+          "deepali samaniya"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 09:21:15",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 09:33:56",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155300408,thumbsize-23864,width-1280,height-720,resizemode-75/155300408.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "23670fb8723c86deec787d25e09ee881",
+        "link": "https://www.thenewsminute.com/telangana/telangana-tops-indias-heatstroke-cases-heatwaves-explained",
+        "title": "Telangana tops India's heatstroke cases: Heatwaves explained",
+        "description": "A total of 4,853 heatstroke cases and 20 confirmed deaths have been reported across the country between March 1 and July 26.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "telangana"
+        ],
+        "creator": [
+          "azeefa fathima"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 07:24:18",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 07:37:10",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-05/bpkanotl/LME.jpg.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "098e04b332fb9b7e26811586091747d9",
+        "link": "https://www.timesnownews.com/chennai/tamil-nadu-budget-2026-sees-cm-vijay-welfare-blitz-gold-rings-for-newborns-silk-sarees-for-brides-under-annan-seer-scheme-free-laptop-new-bicycles-article-155293972",
+        "title": "Gold Rings For Newborns, Silk Sarees For Brides: CM Vijay Unveils Welfare Blitz In First Tamil Nadu Budget",
+        "description": "Tamil Nadu's first TVK budget under CM C Joseph Vijay unveiled flagship welfare schemes, including gold rings for newborns, silk sarees for brides, free laptops and bicycles for students, and large-scale AI training for youth.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "cm vijay budget",
+          "thaai maman thanga mothiram thittam",
+          "tamil nadu welfare schemes",
+          "vetri tamizhagam vision",
+          "annan seer scheme",
+          "vettri laptop scheme",
+          "tvk government budget",
+          "silk saree scheme tamil nadu",
+          "gold ring for newborns",
+          "tamil nadu budget 2026"
+        ],
+        "creator": [
+          "sudhanshu mishra"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 06:28:10",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 06:32:54",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155294282,thumbsize-35830,width-1280,height-720,resizemode-75/155294282.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "83932e87ab76797b9e83a2a769e0aa9a",
+        "link": "https://www.timesnownews.com/chennai/chennai-power-cut-today-august-5-tneb-announces-scheduled-outage-check-areas-affected-and-timing-article-155291849",
+        "title": "Chennai Power Cut Today, August 5: TNEB Announces Scheduled Outage - Check Areas Affected And Timing",
+        "description": "TNEB has announced a scheduled power cut in parts of Chennai and Coimbatore on August 5 from 9 am for routine maintenance, with supply to be restored after the work is completed.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "perambur power cut",
+          "chennai power outage august 5",
+          "neelampur sub station",
+          "chennai electricity shutdown",
+          "tamil nadu power outage",
+          "coimbatore power cut today",
+          "tneb power cut",
+          "tneb maintenance work",
+          "chennai power cut today"
+        ],
+        "creator": [
+          "sudhanshu mishra"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 05:31:44",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 06:03:45",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155294705,thumbsize-19018,width-1280,height-720,resizemode-75/155294705.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "0140421a723d2ede8609d88854985b62",
+        "link": "https://www.timesnownews.com/education/tn-finance-minister-marie-wilson-pushes-for-neet-ban-announces-major-student-schemes-in-budget-article-155293973",
+        "title": "TN Finance Minister Marie Wilson Pushes for NEET Ban, Announces Major Student Schemes in Budget",
+        "description": "Tamil Nadu Budget 2026 outlines major education measures, including laptop distribution, AI skills training, school safety initiatives and increased funding for school and higher education.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu student reforms",
+          "tn finance minister",
+          "neet reforms",
+          "medical admissions",
+          "neet ban",
+          "tamil nadu budget",
+          "cm vijay",
+          "marie wilson"
+        ],
+        "creator": [
+          "lakshima sareen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-05 05:30:53",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-05 06:03:26",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155294807,thumbsize-992303,width-1280,height-720,resizemode-75/155294807.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
       {
         "article_id": "33f814d7e5e887ea46272672ca3d2703",
         "link": "https://www.timesnownews.com/chennai/tamil-nadu-first-tvk-budget-today-all-eyes-on-cm-vijay-vetri-tamizhagam-vision-from-mothly-assistance-to-woman-to-easy-loans-article-155293162",
@@ -107,6 +613,6 @@
         "duplicate": false
       }
     ],
-    "pagesFetched": 4
+    "pagesFetched": 5
   }
 }

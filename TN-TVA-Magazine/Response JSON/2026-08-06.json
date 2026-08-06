@@ -1,0 +1,28 @@
+{
+  "date": "2026-08-06",
+  "fetchedAt": "2026-08-06T10:53:01.458398+05:30",
+  "lastFetchedAt": "2026-08-06T10:53:01.458398+05:30",
+  "fetchCount": 1,
+  "source_url": "https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21&sub_cat_name=%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AE%B0%E0%AE%9A%E0%AF%81",
+  "count": 3,
+  "magazines": [
+    {
+      "id": 42718,
+      "name": "Tamil Arasu - Vol. 56, no. 12 (June, 2026)",
+      "issue_date": "2026-06-01",
+      "url": "https://tamildigitallibrary.in/assets/docs/uploads/catalogue_article_file/PER/upload/2026/07/TVA_TVA_PER_042718/upload_primary_20260721111534981_21260721111147.pdf"
+    },
+    {
+      "id": 42715,
+      "name": "தமிழரசு - Vol. 56, no. 11 (மே, 2026)",
+      "issue_date": "2026-05-01",
+      "url": "https://tamildigitallibrary.in/assets/docs/uploads/catalogue_article_file/PER/upload/2026/07/TVA_TVA_PER_042715/upload_primary_20260721110126617_21260721105515.pdf"
+    },
+    {
+      "id": 42717,
+      "name": "Tamil Arasu - Vol. 56, no. 11 (May, 2026)",
+      "issue_date": "2026-05-01",
+      "url": "https://tamildigitallibrary.in/assets/docs/uploads/catalogue_article_file/PER/upload/2026/07/TVA_TVA_PER_042717/upload_primary_20260721111117835_21260721110603.pdf"
+    }
+  ]
+}
