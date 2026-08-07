@@ -218,6 +218,21 @@ if ($Commit -or $Push) {
 if ($Push) {
   Write-Host "Pushing..."
   git push
+
+  if (Get-Command gh -ErrorAction SilentlyContinue) {
+    Write-Host "Triggering Deploy Web Dashboard (push from this environment may not auto-start Actions)..."
+    gh workflow run deploy-web.yml --ref main 2>$null
+    if ($LASTEXITCODE -eq 0) {
+      Start-Sleep -Seconds 2
+      gh run list --workflow=deploy-web.yml --limit 1
+    } else {
+      Write-Host "Could not trigger deploy via gh. Run: pwsh scripts/trigger-deploy.ps1"
+    }
+  } else {
+    Write-Host "After push, start deploy manually:"
+    Write-Host "  pwsh scripts/trigger-deploy.ps1"
+    Write-Host "  or Actions -> Deploy Web Dashboard -> Run workflow"
+  }
 }
 
 Write-Host "Done."

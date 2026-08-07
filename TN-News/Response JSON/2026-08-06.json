@@ -1,8 +1,8 @@
 {
   "date": "2026-08-06",
   "fetchedAt": "2026-08-07T01:12:42.874397+05:30",
-  "lastFetchedAt": "2026-08-07T01:12:42.874397+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-07T08:21:45.423208+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -17,9 +17,152 @@
   },
   "response": {
     "status": "success",
-    "totalResults": 1,
-    "apiReportedTotalResults": 15,
+    "totalResults": 4,
+    "apiReportedTotalResults": 17,
     "results": [
+      {
+        "article_id": "8ece67a5d2d01bce1dc8df5079390f22",
+        "link": "https://www.timesnownews.com/videos/times-now/india/udhayanidhi-slams-vijay-govt-calls-agriculture-budget-039absolutely-nothing039-targets-poll-promises-video-155323338",
+        "title": "Udhayanidhi Slams Vijay Govt, Calls Agriculture Budget 'Absolutely Nothing', Targets Poll Promises",
+        "description": "Tamil Nadu Leader of the Opposition Udhayanidhi Stalin launched a scathing attack on Chief Minister C. Joseph Vijay's government, calling the Agriculture Budget \"absolutely nothing\" and accusing it of betraying farmers. Wearing black shirts, DMK MLAs protested inside the Assembly over pending farm loan waivers, the Mekedatu dam issue, and the government's failure to convene an all-party meeting on the Cauvery dispute. #udhayanidhistalin #vijay #tamilnadu #agriculturebudget #farmers #dmk #tamilnaduassembly #cauvery #timesnow",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "crop loan waiver",
+          "udhayanidhi stalin",
+          "agriculture budget 2026",
+          "farm loan waiver",
+          "tvk government",
+          "dmk protest",
+          "tamil nadu assembly",
+          "cauvery issue",
+          "times now",
+          "tamil nadu budget session",
+          "c joseph vijay",
+          "dmk vs tvk",
+          "tamil nadu agriculture budget",
+          "cauvery dispute",
+          "tamil nadu politics",
+          "udhayanidhi attacks vijay",
+          "black shirt protest",
+          "farmers protest tamil nadu",
+          "agriculture minister r vinoth",
+          "udhayanidhi latest"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-06 12:13:10",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-06 12:33:01",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155323338,thumbsize-986860,width-1280,height-720,resizemode-75/155323338.jpg",
+        "video_url": "https://sw-a.akamaized.net/amd/n1yoozgguo_w/1x/b1/4j/1xb14jjcwz_w/999f957c_F40_360p_800.mp4",
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f294311b74ccea3abd9604d27d865c71",
+        "link": "https://www.timesnownews.com/india/govt-urges-rahul-gandhi-to-let-parliament-function-seeks-cooperation-on-women-reservation-bill-sources-article-155322580",
+        "title": "Govt Urges Rahul Gandhi To Let Parliament Function, Seeks Cooperation On Women Reservation Bill: Sources",
+        "description": "Union Minister Kiren Rijiju called Rahul Gandhi to discuss the ongoing deadlock in Parliament, particularly regarding the Women's Reservation Bill.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "dmk",
+          "rahul gandhi",
+          "lok sabha",
+          "congress",
+          "kiren rijiju",
+          "women reservation bill"
+        ],
+        "creator": [
+          "pragya kaushika"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-06 11:25:04",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-06 11:32:20",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155322850,thumbsize-36694,width-1280,height-720,resizemode-75/155322850.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "8cb0f1bf009d0854f4c1f573730a0940",
+        "link": "https://www.timesnownews.com/education/tancet-mba-2026-tentative-seat-allotment-released-at-tn-mbamca-com-confirmation-ends-august-7-article-155321860",
+        "title": "TANCET MBA 2026 Tentative Seat Allotment Released; Confirmation Ends August 7",
+        "description": "Candidates must confirm allotted seats by 5 PM on August 7 to avoid cancellation; provisional allotment to be published on August 9",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tancet mba",
+          "tancet",
+          "tancet mba 2026",
+          "education news india",
+          "education news"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-06 10:15:59",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-06 10:33:51",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155322135,thumbsize-58958,width-1280,height-720,resizemode-75/155322135.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
       {
         "article_id": "31ebf0ff1f1b6cb6fdee2565a314dfc6",
         "link": "https://www.thenewsminute.com/kerala/will-not-allow-water-level-to-be-raised-kerala-responds-to-tn-budget-on-mullaperiyar",

@@ -14,10 +14,23 @@ This repository uses GitHub Actions to **build and deploy** the static web dashb
 
 **Triggers:**
 
-- **Push to `main`** — rebuilds and deploys (any file change)
+- **Push to `main`** — rebuilds and deploys when GitHub accepts the push event
 - **Manual** — Actions → Deploy Web Dashboard → Run workflow
+- **CLI** — `pwsh scripts/trigger-deploy.ps1` (requires [GitHub CLI](https://cli.github.com/) and `gh auth login`)
 
-> **Note:** Pushes made by another GitHub Action using the default `GITHUB_TOKEN` do **not** trigger this workflow (GitHub prevents recursive runs). After an automated data sync commit, run the deploy workflow manually, or push from your local machine with your own Git credentials.
+### Push did not start a deploy?
+
+GitHub **does not run workflows on `push`** when the commit was pushed with certain tokens (including the default `GITHUB_TOKEN` from another Action, and **pushes from Cursor**). Billing is not the issue — your minutes are unused.
+
+After committing from Cursor, deploy with either:
+
+```powershell
+pwsh scripts/trigger-deploy.ps1
+```
+
+or **Actions → Deploy Web Dashboard → Run workflow** on branch `main`.
+
+Pushes from an external terminal with SSH or a personal access token usually auto-trigger deploy on `main`.
 
 **Build settings:**
 
