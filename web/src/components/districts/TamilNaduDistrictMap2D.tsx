@@ -26,6 +26,10 @@ import {
 } from "@/lib/tamilNaduConstituencies";
 import { DistrictWeatherMarker } from "@/components/districts/DistrictWeatherMarker";
 import {
+  DistrictMapModeTabs,
+  type DistrictMapMode,
+} from "@/components/districts/DistrictMapModeTabs";
+import {
   DistrictWeatherOverlay,
   DistrictWeatherOverlayDefs,
   districtWeatherClipPathId,
@@ -43,6 +47,8 @@ type TamilNaduDistrictMap2DProps = {
   onSelectDistrict: (districtName: string | null) => void;
   className?: string;
   variant?: MapVariant;
+  mapMode?: DistrictMapMode;
+  onMapModeChange?: (mode: DistrictMapMode) => void;
   weatherByDistrict?: Map<string, DistrictWeather> | null;
   weatherLoading?: boolean;
   weatherError?: string | null;
@@ -74,10 +80,13 @@ export function TamilNaduDistrictMap2D({
   onSelectDistrict,
   className,
   variant = "default",
+  mapMode = "weather",
+  onMapModeChange,
   weatherByDistrict = null,
   weatherLoading = false,
   weatherError = null,
 }: TamilNaduDistrictMap2DProps) {
+  const showWeather = mapMode === "weather";
   const districtSearch = useDistrictSearch();
   const prefersReducedMotion = usePrefersReducedMotion();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -200,9 +209,21 @@ export function TamilNaduDistrictMap2D({
   }, []);
 
   const focusDistrictName = hoveredDistrictName ?? selectedDistrictName;
-  const focusWeather = focusDistrictName
+  const focusWeather = showWeather && focusDistrictName
     ? weatherByDistrict?.get(focusDistrictName) ?? null
     : null;
+
+  const mapContextSubtitle = showWeather
+    ? focusWeather
+      ? formatDistrictWeatherSummary(focusWeather)
+      : weatherLoading
+        ? "Loading live weather…"
+        : weatherError
+          ? "Weather unavailable"
+          : "Live weather on map"
+    : focusDistrictName
+      ? formatConstituencyCount(getDistrictConstituencyCount(focusDistrictName))
+      : "District boundaries";
 
   const handleSelect = useCallback(
     (manifestName: string) => {
@@ -272,41 +293,64 @@ export function TamilNaduDistrictMap2D({
       )}
     >
       {variant === "default" ? (
-        <div className="mb-2 grid shrink-0 grid-cols-[minmax(0,1fr)_auto] gap-x-3 gap-y-1">
-          <p className="truncate text-sm font-semibold text-foreground">
-            {focusDistrictName ?? "Tamil Nadu"}
-          </p>
-          <p className="shrink-0 whitespace-nowrap text-right text-xs text-muted-foreground">
-            {tamilNaduConstituencyMeta.totalDistricts} districts ·{" "}
-            {tamilNaduConstituencyMeta.totalConstituencies} constituencies
-          </p>
-          <p className="min-w-0 truncate text-xs text-muted-foreground">
-            {focusWeather
-              ? formatDistrictWeatherSummary(focusWeather)
-              : weatherLoading
-                ? "Loading live weather…"
-                : weatherError
-                  ? "Weather unavailable"
-                  : focusDistrictName
-                    ? formatConstituencyCount(
-                        getDistrictConstituencyCount(focusDistrictName),
-                      )
-                    : "Live weather on map"}
-          </p>
-          {districtSearch ? (
-            <div className="relative w-full">
-              <Search className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
-              <Input
-                type="search"
-                placeholder="Search districts…"
-                value={districtSearch.search}
-                onChange={(event) => districtSearch.setSearch(event.target.value)}
-                className="h-8 w-full pl-7 text-xs"
-                aria-label="Search districts"
+        <div className="mb-2 flex shrink-0 flex-col gap-1">
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-3">
+            <p className="truncate text-sm font-semibold text-foreground">
+              {focusDistrictName ?? "Tamil Nadu"}
+            </p>
+            <p className="shrink-0 whitespace-nowrap text-right text-xs text-muted-foreground">
+              {tamilNaduConstituencyMeta.totalDistricts} districts ·{" "}
+              {tamilNaduConstituencyMeta.totalConstituencies} constituencies
+            </p>
+          </div>
+
+          {onMapModeChange ? (
+            <div className="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-x-3">
+              <p className="min-w-0 truncate text-xs text-muted-foreground">
+                {mapContextSubtitle}
+              </p>
+              <DistrictMapModeTabs
+                mode={mapMode}
+                onModeChange={onMapModeChange}
+                className="justify-self-center"
               />
+              {districtSearch ? (
+                <div className="relative w-full justify-self-end">
+                  <Search className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+                  <Input
+                    type="search"
+                    placeholder="Search districts…"
+                    value={districtSearch.search}
+                    onChange={(event) => districtSearch.setSearch(event.target.value)}
+                    className="h-8 w-full pl-7 text-xs"
+                    aria-label="Search districts"
+                  />
+                </div>
+              ) : (
+                <div />
+              )}
             </div>
           ) : (
-            <div />
+            <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-x-3">
+              <p className="min-w-0 truncate text-xs text-muted-foreground">
+                {mapContextSubtitle}
+              </p>
+              {districtSearch ? (
+                <div className="relative w-full">
+                  <Search className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
+                  <Input
+                    type="search"
+                    placeholder="Search districts…"
+                    value={districtSearch.search}
+                    onChange={(event) => districtSearch.setSearch(event.target.value)}
+                    className="h-8 w-full pl-7 text-xs"
+                    aria-label="Search districts"
+                  />
+                </div>
+              ) : (
+                <div />
+              )}
+            </div>
           )}
         </div>
       ) : null}
@@ -320,8 +364,9 @@ export function TamilNaduDistrictMap2D({
           }}
         >
           {(() => {
-            const hoveredWeather =
-              weatherByDistrict?.get(hoveredDistrictName) ?? null;
+            const hoveredWeather = showWeather
+              ? weatherByDistrict?.get(hoveredDistrictName) ?? null
+              : null;
             return (
               <>
                 <p className="font-semibold text-foreground">{hoveredDistrictName}</p>
@@ -344,7 +389,7 @@ export function TamilNaduDistrictMap2D({
                       </p>
                     ) : null}
                   </>
-                ) : weatherLoading ? (
+                ) : showWeather && weatherLoading ? (
                   <p className="mt-1 text-muted-foreground">Loading weather…</p>
                 ) : null}
                 <p className="mt-1 text-muted-foreground">
@@ -449,7 +494,9 @@ export function TamilNaduDistrictMap2D({
                   activeDistrictNames.has(manifestName);
                 const labelFillColor = labelFill(manifestName);
                 const labelWeight = isSelected || isHovered ? 700 : 600;
-                const districtWeather = weatherByDistrict?.get(manifestName) ?? null;
+                const districtWeather = showWeather
+                  ? weatherByDistrict?.get(manifestName) ?? null
+                  : null;
                 const weatherFontSize = Math.max(5.5, label.fontSize * 0.88);
                 const weatherOffsetY = label.fontSize * 1.05;
 

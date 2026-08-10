@@ -77,7 +77,7 @@ export default function App() {
               <GovPressReleaseViewProvider>
                 <AppLayout
                   fillViewport
-                  title="Press Releases Images"
+                  title="Images"
                   description="Tamil Nadu government press release images from tn.gov.in."
                 />
               </GovPressReleaseViewProvider>

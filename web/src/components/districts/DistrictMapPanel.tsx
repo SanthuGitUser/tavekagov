@@ -1,5 +1,5 @@
 import { TamilNaduDistrictMap2D } from "@/components/districts/TamilNaduDistrictMap2D";
-import { Card, CardContent } from "@/components/ui/card";
+import type { DistrictMapMode } from "@/components/districts/DistrictMapModeTabs";import { Card, CardContent } from "@/components/ui/card";
 import type { MapVariant } from "@/lib/districtMapUtils";
 import { tamilNaduMapMeta } from "@/lib/tamilNaduMapMeta";
 import type { DistrictWeather } from "@/lib/districtWeatherUtils";
@@ -9,6 +9,8 @@ type DistrictMapPanelProps = {
   selectedDistrictName: string | null;
   activeDistrictNames?: Set<string> | null;
   onSelectDistrict: (districtName: string | null) => void;
+  mapMode?: DistrictMapMode;
+  onMapModeChange?: (mode: DistrictMapMode) => void;
   showMissingNote?: boolean;
   enableWeather?: boolean;
   weatherByDistrict?: Map<string, DistrictWeather> | null;
@@ -22,6 +24,8 @@ export function DistrictMapPanel({
   selectedDistrictName,
   activeDistrictNames = null,
   onSelectDistrict,
+  mapMode = "weather",
+  onMapModeChange,
   showMissingNote = true,
   enableWeather = true,
   weatherByDistrict = null,
@@ -30,6 +34,7 @@ export function DistrictMapPanel({
   variant = "default",
   className,
 }: DistrictMapPanelProps) {
+  const showWeather = enableWeather && mapMode === "weather";
 
   return (
     <Card
@@ -52,13 +57,15 @@ export function DistrictMapPanel({
           activeDistrictNames={activeDistrictNames}
           onSelectDistrict={onSelectDistrict}
           variant={variant}
-          weatherByDistrict={enableWeather ? weatherByDistrict : null}
-          weatherLoading={enableWeather ? weatherLoading : false}
-          weatherError={enableWeather ? weatherError : null}
+          mapMode={mapMode}
+          onMapModeChange={onMapModeChange}
+          weatherByDistrict={showWeather ? weatherByDistrict : null}
+          weatherLoading={showWeather ? weatherLoading : false}
+          weatherError={showWeather ? weatherError : null}
           className={variant === "default" ? "min-h-0 flex-1" : undefined}
         />
 
-        {enableWeather ? (
+        {showWeather ? (
           <p className="mt-2 shrink-0 text-[10px] leading-snug text-muted-foreground">
             {weatherLoading
               ? "Loading live weather and air quality…"

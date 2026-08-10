@@ -1,6 +1,7 @@
 import { ChevronDown, ExternalLink, Mail, MapPin, Phone } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
+import { ConstituencyMapPanel } from "@/components/constituencies/TamilNaduConstituencyMap2D";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { useConstituencySearch } from "@/context/ConstituencySearchContext";
@@ -22,34 +23,50 @@ function PartyBadge({ party }: { party: string }) {
   const partyFlagUrl = getPartyFlagUrl(party);
 
   return (
-    <Badge variant="outline" className="gap-1.5 rounded-md px-1.5 py-0.5">
+    <Badge variant="outline" className="gap-2 rounded-lg px-2.5 py-1.5">
       {partyFlagUrl ? (
         <img
           src={partyFlagUrl}
           alt=""
-          className="h-3.5 w-5 shrink-0 rounded-sm border border-border/60 object-cover"
+          className="h-8 w-12 shrink-0 rounded-md border border-border/60 object-cover"
           loading="lazy"
         />
       ) : null}
-      <span>{party}</span>
+      <span className="text-sm font-semibold">{party}</span>
     </Badge>
   );
 }
 
-function ConstituencyTile({ constituency }: { constituency: TnConstituency }) {
+function ConstituencyTile({
+  constituency,
+  selected,
+  onSelect,
+}: {
+  constituency: TnConstituency;
+  selected: boolean;
+  onSelect: (acNumber: number) => void;
+}) {
   const [expanded, setExpanded] = useState(false);
   const displayName = toTitleCase(constituency.name);
 
   return (
     <Card
+      id={`constituency-tile-${constituency.ac_number}`}
       className={cn(
         "h-fit self-start overflow-hidden transition-colors",
-        expanded ? "border-primary/30" : "hover:border-primary/25 hover:bg-accent/20",
+        selected
+          ? "border-primary ring-2 ring-primary/20"
+          : expanded
+            ? "border-primary/30"
+            : "hover:border-primary/25 hover:bg-accent/20",
       )}
     >
       <button
         type="button"
-        onClick={() => setExpanded((current) => !current)}
+        onClick={() => {
+          onSelect(constituency.ac_number);
+          setExpanded((current) => !current);
+        }}
         className="flex w-full items-start gap-3 p-4 text-left outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         aria-expanded={expanded}
       >
@@ -154,6 +171,9 @@ function ConstituencyTile({ constituency }: { constituency: TnConstituency }) {
 export function ConstituenciesPage() {
   const constituencySearch = useConstituencySearch();
   const search = constituencySearch?.search ?? "";
+  const selectedAcNumber = constituencySearch?.selectedAcNumber ?? null;
+  const setSelectedAcNumber = constituencySearch?.setSelectedAcNumber;
+  const scrollTargetRef = useRef<number | null>(null);
 
   const constituencies = useMemo(
     () => tamilNaduAssemblyConstituenciesFeed.constituencies,
@@ -172,23 +192,96 @@ export function ConstituenciesPage() {
     [constituencies, constituencySearch?.categoryFilter, constituencySearch?.districtFilter, constituencySearch?.memberFilter, constituencySearch?.partyFilter, search],
   );
 
+  const activeAcNumbers = useMemo(() => {
+    if (selectedAcNumber) return null;
+    const hasFilters =
+      search.trim() ||
+      (constituencySearch?.districtFilter ?? "all") !== "all" ||
+      (constituencySearch?.partyFilter ?? "all") !== "all" ||
+      (constituencySearch?.categoryFilter ?? "all") !== "all" ||
+      (constituencySearch?.memberFilter ?? "all") !== "all";
+    if (hasFilters) {
+      return new Set(filtered.map((row) => row.ac_number));
+    }
+    return null;
+  }, [
+    filtered,
+    search,
+    constituencySearch?.categoryFilter,
+    constituencySearch?.districtFilter,
+    constituencySearch?.memberFilter,
+    constituencySearch?.partyFilter,
+    selectedAcNumber,
+  ]);
+
+  const visibleConstituencies = useMemo(() => {
+    if (selectedAcNumber) {
+      return filtered.filter((row) => row.ac_number === selectedAcNumber);
+    }
+    return filtered;
+  }, [filtered, selectedAcNumber]);
+
+  useEffect(() => {
+    if (selectedAcNumber && !filtered.some((row) => row.ac_number === selectedAcNumber)) {
+      setSelectedAcNumber?.(null);
+    }
+  }, [filtered, selectedAcNumber, setSelectedAcNumber]);
+
+  useEffect(() => {
+    const target = scrollTargetRef.current;
+    if (!target) return;
+    const element = document.getElementById(`constituency-tile-${target}`);
+    if (!element) return;
+    element.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    scrollTargetRef.current = null;
+  }, [selectedAcNumber, visibleConstituencies]);
+
+  function handleSelectAcNumber(acNumber: number | null) {
+    setSelectedAcNumber?.(acNumber);
+    if (acNumber) scrollTargetRef.current = acNumber;
+  }
+
+  function handleTileSelect(acNumber: number) {
+    const next = selectedAcNumber === acNumber ? null : acNumber;
+    setSelectedAcNumber?.(next);
+    if (next) scrollTargetRef.current = next;
+  }
+
+  const mapColumn = (
+    <div className="flex w-full shrink-0 flex-col self-start lg:sticky lg:top-0 lg:max-h-[calc(100vh-5rem)] lg:min-h-0 lg:w-[45%]">
+      <ConstituencyMapPanel
+        selectedAcNumber={selectedAcNumber}
+        activeAcNumbers={activeAcNumbers}
+        onSelectAcNumber={handleSelectAcNumber}
+        className="flex max-h-full min-h-0 flex-1 flex-col"
+      />
+    </div>
+  );
+
   return (
-    <div className="flex min-h-0 flex-1 flex-col">
-      {filtered.length === 0 ? (
-        <Card>
-          <CardContent className="p-8 text-center text-sm text-muted-foreground">
-            No constituencies match your filters.
-          </CardContent>
-        </Card>
-      ) : (
-        <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-          <div className="grid items-start gap-3 sm:grid-cols-2 xl:grid-cols-3">
-            {filtered.map((constituency) => (
-              <ConstituencyTile key={constituency.ac_number} constituency={constituency} />
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden lg:flex-row lg:gap-3">
+      {mapColumn}
+
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain pr-1">
+        {filtered.length === 0 ? (
+          <Card>
+            <CardContent className="p-8 text-center text-sm text-muted-foreground">
+              No constituencies match your filters.
+            </CardContent>
+          </Card>
+        ) : (
+          <div className="grid items-start gap-3 sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3">
+            {visibleConstituencies.map((constituency) => (
+              <ConstituencyTile
+                key={constituency.ac_number}
+                constituency={constituency}
+                selected={selectedAcNumber === constituency.ac_number}
+                onSelect={handleTileSelect}
+              />
             ))}
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

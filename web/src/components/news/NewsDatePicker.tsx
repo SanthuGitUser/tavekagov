@@ -108,6 +108,8 @@ function findAdjacentAvailableDate(
   return sorted[nextIndex];
 }
 
+type PickerMode = "day" | "range";
+
 function formatRangeLabel(range: NewsDateRange): string {
   const from = parseIsoDate(range.from);
   const to = parseIsoDate(range.to);
@@ -121,6 +123,14 @@ function formatRangeLabel(range: NewsDateRange): string {
     return `${format(from, "MMM d")} – ${format(to, "MMM d, yyyy")}`;
   }
   return `${format(from, "MMM d, yyyy")} – ${format(to, "MMM d, yyyy")}`;
+}
+
+export function formatNewsDateRangeLabel(range: NewsDateRange): string {
+  if (!range.from && !range.to) return "Pick dates";
+  return formatRangeLabel({
+    from: range.from || range.to,
+    to: range.to || range.from,
+  });
 }
 
 function NavButton({
@@ -178,6 +188,9 @@ export function NewsDatePicker({
   navigateAvailableDatesOnly = false,
 }: NewsDatePickerProps) {
   const [open, setOpen] = useState(false);
+  const [pickerMode, setPickerMode] = useState<PickerMode>(() =>
+    value.from && value.to && value.from !== value.to ? "range" : "day",
+  );
   const [viewDate, setViewDate] = useState(() => parseIsoDate(value.from || value.to));
   const [draftStart, setDraftStart] = useState<Date | null>(null);
   const [panelPosition, setPanelPosition] = useState<{ top: number; left: number } | null>(null);
@@ -188,19 +201,20 @@ export function NewsDatePicker({
 
   const today = useMemo(() => startOfDay(new Date()), []);
   const availableDateSet = useMemo(() => new Set(availableDates), [availableDates]);
+  const isRangeSelection = value.from !== value.to;
   const canGoForward = useMemo(() => {
-    if (navigateAvailableDatesOnly) {
+    if (navigateAvailableDatesOnly && !isRangeSelection) {
       const current = value.from || value.to;
       return findAdjacentAvailableDate(availableDates, current, 1) !== null;
     }
     return canShiftRangeForward(value, today);
-  }, [navigateAvailableDatesOnly, availableDates, value, today]);
+  }, [navigateAvailableDatesOnly, availableDates, value, today, isRangeSelection]);
 
   const canGoBack = useMemo(() => {
-    if (!navigateAvailableDatesOnly) return true;
+    if (!navigateAvailableDatesOnly || isRangeSelection) return true;
     const current = value.from || value.to;
     return findAdjacentAvailableDate(availableDates, current, -1) !== null;
-  }, [navigateAvailableDatesOnly, availableDates, value]);
+  }, [navigateAvailableDatesOnly, availableDates, value, isRangeSelection]);
 
   const selectedFrom = value.from ? parseIsoDate(value.from) : null;
   const selectedTo = value.to ? parseIsoDate(value.to) : null;
@@ -285,7 +299,7 @@ export function NewsDatePicker({
     if (!value.from && !value.to) return;
     setDraftStart(null);
 
-    if (navigateAvailableDatesOnly) {
+    if (navigateAvailableDatesOnly && value.from === value.to) {
       const current = value.from || value.to;
       const nextDate = findAdjacentAvailableDate(availableDates, current, deltaDays < 0 ? -1 : 1);
       if (!nextDate) return;
@@ -299,6 +313,13 @@ export function NewsDatePicker({
   function handleDayClick(day: Date) {
     if (isAfter(day, today)) return;
     const iso = toIsoDate(day);
+
+    if (pickerMode === "day") {
+      onChange({ from: iso, to: iso });
+      setDraftStart(null);
+      setOpen(false);
+      return;
+    }
 
     if (!draftStart) {
       setDraftStart(day);
@@ -355,6 +376,36 @@ export function NewsDatePicker({
             role="dialog"
             aria-label="Choose date range"
           >
+            <div className="mb-3 flex rounded-lg border border-border bg-muted/30 p-0.5">
+              <button
+                type="button"
+                onClick={() => {
+                  setPickerMode("day");
+                  setDraftStart(null);
+                }}
+                className={cn(
+                  "flex-1 rounded-md px-2 py-1.5 text-xs font-medium transition-colors",
+                  pickerMode === "day"
+                    ? "bg-card text-foreground shadow-sm"
+                    : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                Single day
+              </button>
+              <button
+                type="button"
+                onClick={() => setPickerMode("range")}
+                className={cn(
+                  "flex-1 rounded-md px-2 py-1.5 text-xs font-medium transition-colors",
+                  pickerMode === "range"
+                    ? "bg-card text-foreground shadow-sm"
+                    : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                Date range
+              </button>
+            </div>
+
             <div className="mb-4 flex items-center justify-between gap-2">
               <div className="flex items-center gap-1">
                 <NavButton label="Previous year" onClick={() => setViewDate(subYears(viewDate, 1))}>
@@ -431,7 +482,9 @@ export function NewsDatePicker({
             </div>
 
             <p className="mt-3 text-center text-[11px] text-muted-foreground">
-              Click once for a single day, or pick a start and end date
+              {pickerMode === "day"
+                ? "Click a day to select it"
+                : "Pick a start date, then an end date"}
             </p>
           </div>,
           document.body,
@@ -468,7 +521,7 @@ export function NewsDatePicker({
         >
           <Calendar className="h-4 w-4 shrink-0 text-muted-foreground" />
           <span className="truncate text-left">
-            {value.from ? formatRangeLabel(value) : "Pick dates"}
+            {value.from ? formatNewsDateRangeLabel(value) : "Pick dates"}
           </span>
         </button>
 

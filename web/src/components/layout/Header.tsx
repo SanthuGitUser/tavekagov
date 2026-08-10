@@ -358,7 +358,7 @@ export function Header({ title, description }: HeaderProps) {
 
   if (pressReleaseSearch && pressReleaseView) {
     const showAllViewControls =
-      pressReleaseView.viewMode === "all" && pressReleaseView.selectedDate;
+      pressReleaseView.viewMode === "all" && pressReleaseView.selectedDateRange.from;
 
     return (
       <HeaderShell>
@@ -379,11 +379,8 @@ export function Header({ title, description }: HeaderProps) {
             {showAllViewControls ? (
               <>
                 <NewsDatePicker
-                  value={{
-                    from: pressReleaseView.selectedDate,
-                    to: pressReleaseView.selectedDate,
-                  }}
-                  onChange={(range) => pressReleaseView.setSelectedDate(range.from)}
+                  value={pressReleaseView.selectedDateRange}
+                  onChange={pressReleaseView.setSelectedDateRange}
                   availableDates={pressReleaseView.availableDates}
                   navigateAvailableDatesOnly
                 />
@@ -399,8 +396,11 @@ export function Header({ title, description }: HeaderProps) {
                   />
                 </div>
                 <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
-                  {formatReleaseCount(pressReleaseView.selectedDateReleaseCount)} on this date ·{" "}
-                  {formatReleaseCount(pressReleaseView.totalReleaseCount)} total
+                  {formatReleaseCount(pressReleaseView.selectedDateReleaseCount)}
+                  {pressReleaseView.selectedDateRange.from === pressReleaseView.selectedDateRange.to
+                    ? " on this date"
+                    : " in range"}{" "}
+                  · {formatReleaseCount(pressReleaseView.totalReleaseCount)} total
                 </p>
               </>
             ) : (
@@ -414,7 +414,7 @@ export function Header({ title, description }: HeaderProps) {
 
   if (govPressReleaseSearch && govPressReleaseView) {
     const showAllViewControls =
-      govPressReleaseView.viewMode === "all" && govPressReleaseView.selectedDate;
+      govPressReleaseView.viewMode === "all" && govPressReleaseView.selectedDateRange.from;
     const showBrowseViewControls =
       govPressReleaseView.viewMode === "department" ||
       govPressReleaseView.viewMode === "minister";
@@ -438,11 +438,8 @@ export function Header({ title, description }: HeaderProps) {
             {showAllViewControls ? (
               <>
                 <NewsDatePicker
-                  value={{
-                    from: govPressReleaseView.selectedDate,
-                    to: govPressReleaseView.selectedDate,
-                  }}
-                  onChange={(range) => govPressReleaseView.setSelectedDate(range.from)}
+                  value={govPressReleaseView.selectedDateRange}
+                  onChange={govPressReleaseView.setSelectedDateRange}
                   availableDates={govPressReleaseView.availableDates}
                   navigateAvailableDatesOnly
                 />
@@ -459,7 +456,10 @@ export function Header({ title, description }: HeaderProps) {
                 </div>
                 <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
                   {govPressReleaseView.selectedDateReleaseCount} image
-                  {govPressReleaseView.selectedDateReleaseCount === 1 ? "" : "s"} shown
+                  {govPressReleaseView.selectedDateReleaseCount === 1 ? "" : "s"}
+                  {govPressReleaseView.selectedDateRange.from === govPressReleaseView.selectedDateRange.to
+                    ? " shown"
+                    : " in range"}
                 </p>
               </>
             ) : showBrowseViewControls ? (

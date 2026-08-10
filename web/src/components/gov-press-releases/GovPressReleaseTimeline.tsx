@@ -2,6 +2,10 @@ import { format, parseISO } from "date-fns";
 import { useEffect, useMemo, useState } from "react";
 
 import { ImageLightbox } from "@/components/shared/ImageLightbox";
+import {
+  formatNewsDateRangeLabel,
+  isDateInNewsRange,
+} from "@/components/news/NewsDatePicker";
 import { getLatestValidDate } from "@/components/shared/VerticalDatePicker";
 import { Badge } from "@/components/ui/badge";
 import { useGovPressReleaseSearch } from "@/context/GovPressReleaseSearchContext";
@@ -137,8 +141,8 @@ export function GovPressReleaseTimeline({
   const govPressReleaseView = useGovPressReleaseView();
   const search = govPressReleaseSearch?.search ?? "";
   const view = govPressReleaseView?.viewMode ?? "all";
-  const selectedDate = govPressReleaseView?.selectedDate ?? "";
-  const setSelectedDate = govPressReleaseView?.setSelectedDate;
+  const selectedDateRange = govPressReleaseView?.selectedDateRange ?? { from: "", to: "" };
+  const setSelectedDateRange = govPressReleaseView?.setSelectedDateRange;
   const setAvailableDates = govPressReleaseView?.setAvailableDates;
   const setSelectedDateReleaseCount = govPressReleaseView?.setSelectedDateReleaseCount;
   const categoryFilter = govPressReleaseView?.categoryFilter ?? "all";
@@ -313,29 +317,41 @@ export function GovPressReleaseTimeline({
   }, [datesForPicker, setAvailableDates]);
 
   useEffect(() => {
-    if (latestDate) setSelectedDate?.(latestDate);
-  }, [latestDate, setSelectedDate]);
+    if (latestDate) setSelectedDateRange?.({ from: latestDate, to: latestDate });
+  }, [latestDate, setSelectedDateRange]);
 
   useEffect(() => {
-    if (selectedDate && !datesForPicker.includes(selectedDate) && latestDate) {
-      setSelectedDate?.(latestDate);
+    if (
+      selectedDateRange.from
+      && !datesForPicker.includes(selectedDateRange.from)
+      && latestDate
+    ) {
+      setSelectedDateRange?.({ from: latestDate, to: latestDate });
     }
-  }, [datesForPicker, latestDate, selectedDate, setSelectedDate]);
+  }, [datesForPicker, latestDate, selectedDateRange.from, setSelectedDateRange]);
 
-  const releasesForDate = useMemo(() => {
+  const releasesInRange = useMemo(() => {
     return datedReleases
-      .filter((release) => release.release_date === selectedDate)
+      .filter((release) => isDateInNewsRange(release.release_date, selectedDateRange))
       .filter((release) => matchesSearch(release, query))
       .sort(compareReleases);
-  }, [datedReleases, selectedDate, query]);
+  }, [datedReleases, selectedDateRange, query]);
+
+  const releasesByDateInRange = useMemo(
+    () => groupReleasesByDate(releasesInRange),
+    [releasesInRange],
+  );
+
+  const isSingleDayRange =
+    selectedDateRange.from === selectedDateRange.to && Boolean(selectedDateRange.from);
 
   useEffect(() => {
     if (view === "all") {
-      setSelectedDateReleaseCount?.(releasesForDate.length);
+      setSelectedDateReleaseCount?.(releasesInRange.length);
     }
-  }, [releasesForDate.length, setSelectedDateReleaseCount, view]);
+  }, [releasesInRange.length, setSelectedDateReleaseCount, view]);
 
-  const lightboxReleases = isCrossDateBrowse ? filteredReleases : releasesForDate;
+  const lightboxReleases = isCrossDateBrowse ? filteredReleases : releasesInRange;
   const lightboxPhotos = useMemo(
     () => lightboxReleases.map(toLightboxImage),
     [lightboxReleases],
@@ -356,7 +372,7 @@ export function GovPressReleaseTimeline({
 
   useEffect(() => {
     setLightboxIndex(null);
-  }, [selectedDate, query, view, departmentId, ministerId, categoryFilter]);
+  }, [selectedDateRange, query, view, departmentId, ministerId, categoryFilter]);
 
   const renderGrid = (dayReleases: GovPressRelease[]) => (
     <ReleaseReaderGrid releases={dayReleases} onReleaseOpen={openLightbox} />
@@ -402,7 +418,7 @@ export function GovPressReleaseTimeline({
     );
   }
 
-  if (isDateBrowse && !selectedDate) {
+  if (isDateBrowse && !selectedDateRange.from) {
     return (
       <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
         Loading releases…
@@ -449,17 +465,30 @@ export function GovPressReleaseTimeline({
           <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
             <div className="mb-3 shrink-0">
               <h2 className="text-lg font-bold tracking-tight">
-                {format(parseReleaseDate(selectedDate), "EEEE, d MMMM yyyy")}
+                {isSingleDayRange
+                  ? format(parseReleaseDate(selectedDateRange.from), "EEEE, d MMMM yyyy")
+                  : formatNewsDateRangeLabel(selectedDateRange)}
               </h2>
             </div>
 
             <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-              {releasesForDate.length === 0 ? (
+              {releasesInRange.length === 0 ? (
                 <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-                  No releases on this date.
+                  No releases in this date range.
                 </p>
+              ) : isSingleDayRange ? (
+                <ReleaseReaderGrid releases={releasesInRange} onReleaseOpen={openLightbox} />
               ) : (
-                <ReleaseReaderGrid releases={releasesForDate} onReleaseOpen={openLightbox} />
+                <div className="space-y-6">
+                  {releasesByDateInRange.map(([date, dayReleases]) => (
+                    <section key={date}>
+                      <h3 className="mb-3 text-sm font-semibold text-muted-foreground">
+                        {format(parseReleaseDate(date), "EEEE, d MMMM yyyy")}
+                      </h3>
+                      <ReleaseReaderGrid releases={dayReleases} onReleaseOpen={openLightbox} />
+                    </section>
+                  ))}
+                </div>
               )}
             </div>
           </div>

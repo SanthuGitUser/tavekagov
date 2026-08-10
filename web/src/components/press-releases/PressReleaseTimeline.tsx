@@ -4,6 +4,10 @@ import { useEffect, useMemo, useState } from "react";
 
 import { GovPressReleaseSideFilters } from "@/components/gov-press-releases/GovPressReleaseSideFilters";
 import {
+  formatNewsDateRangeLabel,
+  isDateInNewsRange,
+} from "@/components/news/NewsDatePicker";
+import {
   formatPrNumber,
   getLatestValidDate,
 } from "@/components/shared/VerticalDatePicker";
@@ -95,8 +99,8 @@ export function PressReleaseTimeline({
   const pressReleaseView = usePressReleaseView();
   const search = pressReleaseSearch?.search ?? "";
   const view = pressReleaseView?.viewMode ?? "all";
-  const selectedDate = pressReleaseView?.selectedDate ?? "";
-  const setSelectedDate = pressReleaseView?.setSelectedDate;
+  const selectedDateRange = pressReleaseView?.selectedDateRange ?? { from: "", to: "" };
+  const setSelectedDateRange = pressReleaseView?.setSelectedDateRange;
   const setAvailableDates = pressReleaseView?.setAvailableDates;
   const setSelectedDateReleaseCount = pressReleaseView?.setSelectedDateReleaseCount;
   const setTotalReleaseCount = pressReleaseView?.setTotalReleaseCount;
@@ -205,33 +209,45 @@ export function PressReleaseTimeline({
   }, [datesForPicker, setAvailableDates]);
 
   useEffect(() => {
-    if (latestDate) setSelectedDate?.(latestDate);
-  }, [latestDate, setSelectedDate]);
+    if (latestDate) setSelectedDateRange?.({ from: latestDate, to: latestDate });
+  }, [latestDate, setSelectedDateRange]);
 
   useEffect(() => {
-    if (selectedDate && !datesForPicker.includes(selectedDate) && latestDate) {
-      setSelectedDate?.(latestDate);
+    if (
+      selectedDateRange.from
+      && !datesForPicker.includes(selectedDateRange.from)
+      && latestDate
+    ) {
+      setSelectedDateRange?.({ from: latestDate, to: latestDate });
     }
-  }, [datesForPicker, latestDate, selectedDate, setSelectedDate]);
+  }, [datesForPicker, latestDate, selectedDateRange.from, setSelectedDateRange]);
 
   const filteredReleasesByDate = useMemo(
     () => groupReleasesByDate(filteredReleases),
     [filteredReleases],
   );
 
-  const releasesForDate = useMemo(() => {
+  const releasesInRange = useMemo(() => {
     return releases
-      .filter((release) => release.pr_date === selectedDate)
+      .filter((release) => isDateInNewsRange(release.pr_date, selectedDateRange))
       .filter((release) => matchesSearch(release, query))
       .sort(comparePressReleases);
-  }, [releases, selectedDate, query]);
+  }, [releases, selectedDateRange, query]);
+
+  const releasesByDateInRange = useMemo(
+    () => groupReleasesByDate(releasesInRange),
+    [releasesInRange],
+  );
+
+  const isSingleDayRange =
+    selectedDateRange.from === selectedDateRange.to && Boolean(selectedDateRange.from);
 
   useEffect(() => {
     if (view === "all") {
-      setSelectedDateReleaseCount?.(releasesForDate.length);
+      setSelectedDateReleaseCount?.(releasesInRange.length);
       setTotalReleaseCount?.(releases.length);
     }
-  }, [releases.length, releasesForDate.length, setSelectedDateReleaseCount, setTotalReleaseCount, view]);
+  }, [releases.length, releasesInRange.length, setSelectedDateReleaseCount, setTotalReleaseCount, view]);
 
   const browseTitle = useMemo(() => {
     if (isSearching) return "Search results";
@@ -326,7 +342,7 @@ export function PressReleaseTimeline({
     );
   }
 
-  if (isDateBrowse && !selectedDate) {
+  if (isDateBrowse && !selectedDateRange.from) {
     return (
       <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
         Loading releases…
@@ -371,19 +387,36 @@ export function PressReleaseTimeline({
           <div className="flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden">
             <div className="mb-3 shrink-0">
               <h2 className="text-lg font-bold tracking-tight">
-                {format(parseReleaseDate(selectedDate), "EEEE, d MMMM yyyy")}
+                {isSingleDayRange
+                  ? format(parseReleaseDate(selectedDateRange.from), "EEEE, d MMMM yyyy")
+                  : formatNewsDateRangeLabel(selectedDateRange)}
               </h2>
             </div>
 
             <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-              {releasesForDate.length === 0 ? (
+              {releasesInRange.length === 0 ? (
                 <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-                  No press releases on this date.
+                  No press releases in this date range.
                 </p>
-              ) : (
+              ) : isSingleDayRange ? (
                 <div className="space-y-2">
-                  {releasesForDate.map((release) => (
+                  {releasesInRange.map((release) => (
                     <ReleaseCard key={release.id} release={release} />
+                  ))}
+                </div>
+              ) : (
+                <div className="space-y-5">
+                  {releasesByDateInRange.map(([date, dayReleases]) => (
+                    <section key={date}>
+                      <h3 className="mb-2 text-sm font-semibold text-muted-foreground">
+                        {format(parseReleaseDate(date), "EEEE, d MMMM yyyy")}
+                      </h3>
+                      <div className="space-y-2">
+                        {dayReleases.map((release) => (
+                          <ReleaseCard key={release.id} release={release} />
+                        ))}
+                      </div>
+                    </section>
                   ))}
                 </div>
               )}

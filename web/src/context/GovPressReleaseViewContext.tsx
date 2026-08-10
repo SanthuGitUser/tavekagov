@@ -1,15 +1,13 @@
 import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
 
-import type {
-  GovPressReleaseFlagFilter,
-  GovPressReleaseView,
-} from "@/components/gov-press-releases/govPressReleaseUtils";
+import type { GovPressReleaseFlagFilter, GovPressReleaseView } from "@/components/gov-press-releases/govPressReleaseUtils";
+import type { NewsDateRange } from "@/components/news/NewsDatePicker";
 
 type GovPressReleaseViewContextValue = {
   viewMode: GovPressReleaseView;
   setViewMode: (value: GovPressReleaseView) => void;
-  selectedDate: string;
-  setSelectedDate: (value: string) => void;
+  selectedDateRange: NewsDateRange;
+  setSelectedDateRange: (value: NewsDateRange) => void;
   availableDates: string[];
   setAvailableDates: (value: string[]) => void;
   selectedDateReleaseCount: number;
@@ -22,7 +20,7 @@ const GovPressReleaseViewContext = createContext<GovPressReleaseViewContextValue
 
 export function GovPressReleaseViewProvider({ children }: { children: ReactNode }) {
   const [viewMode, setViewMode] = useState<GovPressReleaseView>("all");
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedDateRange, setSelectedDateRange] = useState<NewsDateRange>({ from: "", to: "" });
   const [availableDates, setAvailableDates] = useState<string[]>([]);
   const [selectedDateReleaseCount, setSelectedDateReleaseCount] = useState(0);
   const [categoryFilter, setCategoryFilter] = useState<GovPressReleaseFlagFilter>("all");
@@ -31,8 +29,8 @@ export function GovPressReleaseViewProvider({ children }: { children: ReactNode 
     () => ({
       viewMode,
       setViewMode,
-      selectedDate,
-      setSelectedDate,
+      selectedDateRange,
+      setSelectedDateRange,
       availableDates,
       setAvailableDates,
       selectedDateReleaseCount,
@@ -40,7 +38,7 @@ export function GovPressReleaseViewProvider({ children }: { children: ReactNode 
       categoryFilter,
       setCategoryFilter,
     }),
-    [viewMode, selectedDate, availableDates, selectedDateReleaseCount, categoryFilter],
+    [viewMode, selectedDateRange, availableDates, selectedDateReleaseCount, categoryFilter],
   );
 
   return (

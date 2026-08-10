@@ -2,6 +2,7 @@ import { ExternalLink, MapPin } from "lucide-react";
 import { useMemo, useState } from "react";
 
 import { DistrictMapPanel } from "@/components/districts/DistrictMapPanel";
+import type { DistrictMapMode } from "@/components/districts/DistrictMapModeTabs";
 import { DistrictWeatherIcon } from "@/components/districts/DistrictWeatherIcon";
 import { Card, CardContent } from "@/components/ui/card";
 import { useDistrictSearch } from "@/context/DistrictSearchContext";
@@ -29,12 +30,14 @@ function DistrictTile({
   onSelect,
   weather,
   weatherLoading,
+  showWeather,
 }: {
   district: TnDistrict;
   isSelected: boolean;
   onSelect: (name: string) => void;
   weather: DistrictWeather | null;
   weatherLoading: boolean;
+  showWeather: boolean;
 }) {
   const [imageFailed, setImageFailed] = useState(false);
   const websiteHref = district.website_url ?? null;
@@ -53,7 +56,7 @@ function DistrictTile({
     <>
       <div className="relative aspect-[5/4] overflow-hidden bg-muted">
         <div className="absolute left-1.5 top-1.5 z-10">
-          {weather ? (
+          {showWeather && weather ? (
             <div
               className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-background/90 shadow-sm backdrop-blur"
               title={`${formatTemperature(weather.temperatureC)} · ${weather.weatherLabel}`}
@@ -64,7 +67,7 @@ function DistrictTile({
                 color={weatherColor}
               />
             </div>
-          ) : weatherLoading ? (
+          ) : showWeather && weatherLoading ? (
             <div className="inline-flex h-8 w-8 animate-pulse items-center justify-center rounded-md bg-background/90 shadow-sm backdrop-blur">
               <DistrictWeatherIcon kind="cloud" size={20} color="#94a3b8" />
             </div>
@@ -101,7 +104,7 @@ function DistrictTile({
         <h3 className="line-clamp-2 text-[11px] font-semibold leading-tight text-foreground group-hover:text-primary sm:text-xs">
           {district.name}
         </h3>
-        {weather ? (
+        {showWeather && weather ? (
           <p
             className="line-clamp-2 text-[9px] sm:text-[10px]"
             style={{ color: europeanAqiToColor(weather.europeanAqi) }}
@@ -109,7 +112,7 @@ function DistrictTile({
             {formatTemperature(weather.temperatureC)} · {weather.weatherLabel}
             {weather.aqiLabel ? ` · AQI ${weather.aqiLabel}` : ""}
           </p>
-        ) : weatherLoading ? (
+        ) : showWeather && weatherLoading ? (
           <p className="text-[9px] text-muted-foreground sm:text-[10px]">
             Loading weather…
           </p>
@@ -156,12 +159,14 @@ function DistrictTilesGrid({
   onSelect,
   weatherByDistrict,
   weatherLoading,
+  showWeather,
 }: {
   districts: TnDistrict[];
   selectedDistrictName: string | null;
   onSelect: (name: string) => void;
   weatherByDistrict: Map<string, DistrictWeather> | null;
   weatherLoading: boolean;
+  showWeather: boolean;
 }) {
   return (
     <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
@@ -173,6 +178,7 @@ function DistrictTilesGrid({
           onSelect={onSelect}
           weather={weatherByDistrict?.get(district.name) ?? null}
           weatherLoading={weatherLoading}
+          showWeather={showWeather}
         />
       ))}
     </div>
@@ -182,11 +188,13 @@ function DistrictTilesGrid({
 export function DistrictsPage() {
   const districtSearch = useDistrictSearch();
   const search = districtSearch?.search ?? "";
+  const [mapMode, setMapMode] = useState<DistrictMapMode>("weather");
   const [selectedDistrictName, setSelectedDistrictName] = useState<string | null>(
     null,
   );
+  const showWeather = mapMode === "weather";
   const { weatherByDistrict, isLoading: weatherLoading, error: weatherError } =
-    useDistrictWeather();
+    useDistrictWeather(showWeather);
   const districts = useMemo(() => tamilNaduDistrictsFeed.districts, []);
 
   const filtered = useMemo(() => {
@@ -237,6 +245,8 @@ export function DistrictsPage() {
         selectedDistrictName={selectedDistrictName}
         activeDistrictNames={activeDistrictNames}
         onSelectDistrict={handleSelectDistrict}
+        mapMode={mapMode}
+        onMapModeChange={setMapMode}
         weatherByDistrict={weatherByDistrict}
         weatherLoading={weatherLoading}
         weatherError={weatherError}
@@ -271,6 +281,7 @@ export function DistrictsPage() {
           onSelect={handleTileSelect}
           weatherByDistrict={weatherByDistrict}
           weatherLoading={weatherLoading}
+          showWeather={showWeather}
         />
       </div>
     </div>

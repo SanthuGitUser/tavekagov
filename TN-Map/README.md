@@ -7,10 +7,13 @@ District boundary GeoJSON for the interactive Tamil Nadu map in the web dashboar
 | File | Purpose |
 |------|---------|
 | `tamil-nadu-districts.geojson` | Polygon boundaries (38 districts) |
+| `tamil-nadu-constituencies.geojson` | Assembly constituency boundaries (234 ACs) |
 | `district-name-aliases.json` | Maps GeoJSON `properties.district` names to tn.gov.in names |
 | `district-constituencies.json` | Assembly constituency count per district (234 total) |
-| `manifest.json` | Source metadata |
+| `constituency-boundaries-manifest.json` | DataMeet boundary source metadata |
+| `manifest.json` | District boundary source metadata |
 | `build_constituency_counts.py` | Regenerate `district-constituencies.json` |
+| `fetch_constituency_boundaries.py` | Download DataMeet AC shapefile and build TN GeoJSON |
 
 ## Source
 
@@ -22,12 +25,13 @@ To refresh:
 
 ```powershell
 python TN-Map/fetch_boundaries.py
+python TN-Map/fetch_constituency_boundaries.py
 python TN-Map/build_constituency_counts.py
 ```
 
 ## Usage in the web app
 
-The React dashboard imports this GeoJSON at build time via `web/src/lib/tamilNaduMapFeed.ts` and renders an interactive 2D SVG map on **`/districts`** (not on the home page).
+The React dashboard imports district GeoJSON via `web/src/lib/tamilNaduMapFeed.ts` on **`/districts`**, and constituency GeoJSON via `web/src/lib/tamilNaduConstituencyMapFeed.ts` on **`/constituencies`**.
 
 Features wired to this data:
 
