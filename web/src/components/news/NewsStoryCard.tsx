@@ -4,7 +4,6 @@ import {
   ExternalLink,
   Globe,
   Hash,
-  Layers,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -32,7 +31,6 @@ export function NewsStoryCard({ group }: NewsStoryCardProps) {
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [sourcePickerOpen, setSourcePickerOpen] = useState(false);
   const [selectedSourceId, setSelectedSourceId] = useState(primary.article_id);
-  const [imageError, setImageError] = useState(false);
 
   const selectedSource =
     sources.find((source) => source.article_id === selectedSourceId) ?? primary;
@@ -45,36 +43,9 @@ export function NewsStoryCard({ group }: NewsStoryCardProps) {
   return (
     <>
       <Card className="overflow-hidden transition-shadow hover:shadow-md">
-        <div className="grid gap-0 md:grid-cols-[180px_1fr]">
-          <div className="relative aspect-[16/10] bg-muted md:aspect-auto md:min-h-[160px]">
-            {primary.image_url && !imageError ? (
-              <img
-                src={primary.image_url}
-                alt=""
-                className="h-full w-full object-cover"
-                loading="lazy"
-                onError={() => setImageError(true)}
-              />
-            ) : (
-              <div className="flex h-full min-h-[140px] items-center justify-center bg-muted/80 text-muted-foreground">
-                <Globe className="h-8 w-8 opacity-40" />
-              </div>
-            )}
-            {hasMultipleSources ? (
-              <Badge className="absolute left-2 top-2 gap-1" variant="secondary">
-                <Layers className="h-3 w-3" />
-                {sources.length} sources
-              </Badge>
-            ) : primary.duplicate ? (
-              <Badge className="absolute left-2 top-2" variant="secondary">
-                Duplicate
-              </Badge>
-            ) : null}
-          </div>
-
-          <div className="flex min-w-0 flex-col">
-            <CardHeader className="space-y-3 p-4 pb-2">
-              <div className="flex flex-wrap items-center gap-2">
+        <div className="flex min-w-0 flex-col">
+            <CardHeader className="space-y-1.5 p-3 pb-1">
+              <div className="flex flex-wrap items-center gap-1.5">
                 {hasMultipleSources ? (
                   <div className="flex items-center gap-1.5">
                     <div className="flex -space-x-1.5">
@@ -115,10 +86,15 @@ export function NewsStoryCard({ group }: NewsStoryCardProps) {
                   </>
                 )}
                 <span className="text-muted-foreground/50">·</span>
-                <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
-                  <Calendar className="h-3 w-3" />
+                <span className="inline-flex items-center gap-1 text-[11px] text-muted-foreground">
+                  <Calendar className="h-2.5 w-2.5" />
                   {formatArticlePubDateInIst(primary)}
                 </span>
+                {primary.duplicate ? (
+                  <Badge className="px-1.5 py-0 text-[10px]" variant="secondary">
+                    Duplicate
+                  </Badge>
+                ) : null}
               </div>
 
               <button
@@ -126,67 +102,77 @@ export function NewsStoryCard({ group }: NewsStoryCardProps) {
                 onClick={() => (hasMultipleSources ? setSourcePickerOpen(true) : openSelectedArticle())}
                 className="group block text-left"
               >
-                <h3 className="text-base font-semibold leading-snug text-foreground group-hover:text-primary">
+                <h3 className="line-clamp-2 text-sm font-semibold leading-snug text-foreground group-hover:text-primary">
                   {primary.title}
-                  <ExternalLink className="ml-1.5 inline h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-60" />
+                  <ExternalLink className="ml-1 inline h-3 w-3 opacity-0 transition-opacity group-hover:opacity-60" />
                 </h3>
               </button>
             </CardHeader>
 
-            <CardContent className="flex flex-1 flex-col gap-3 p-4 pt-0">
+            <CardContent className="flex flex-1 flex-col gap-2 p-3 pt-0">
               {primary.description ? (
-                <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+                <p className="line-clamp-2 text-xs leading-relaxed text-muted-foreground">
                   {primary.description}
                 </p>
               ) : null}
 
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-1">
                 {[...new Set(sources.flatMap((source) => source.category))].map((category) => (
-                  <Badge key={category} variant="default" className="capitalize">
+                  <Badge key={category} variant="default" className="px-1.5 py-0 text-[10px] capitalize">
                     {category}
                   </Badge>
                 ))}
               </div>
 
               {primary.keywords && primary.keywords.length > 0 ? (
-                <div className="flex flex-wrap gap-1">
-                  {primary.keywords.slice(0, 5).map((keyword) => (
+                <div className="flex flex-wrap gap-0.5">
+                  {primary.keywords.slice(0, 3).map((keyword) => (
                     <span
                       key={keyword}
-                      className="inline-flex items-center gap-0.5 rounded-md bg-muted px-1.5 py-0.5 text-[10px] text-muted-foreground"
+                      className="inline-flex items-center gap-0.5 rounded bg-muted px-1 py-0.5 text-[9px] text-muted-foreground"
                     >
-                      <Hash className="h-2.5 w-2.5" />
+                      <Hash className="h-2 w-2" />
                       {keyword}
                     </span>
                   ))}
-                  {primary.keywords.length > 5 ? (
-                    <span className="px-1 text-[10px] text-muted-foreground">
-                      +{primary.keywords.length - 5} more
+                  {primary.keywords.length > 3 ? (
+                    <span className="px-1 text-[9px] text-muted-foreground">
+                      +{primary.keywords.length - 3} more
                     </span>
                   ) : null}
                 </div>
               ) : null}
 
-              <div className="mt-auto flex flex-wrap items-center gap-2 pt-1">
-                <Button type="button" size="sm" variant="outline" onClick={() => setDetailsOpen(true)}>
+              <div className="mt-auto flex flex-wrap items-center gap-1.5">
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="outline"
+                  className="h-7 px-2 text-xs"
+                  onClick={() => setDetailsOpen(true)}
+                >
                   All details
                 </Button>
                 {hasMultipleSources ? (
-                  <Button type="button" size="sm" onClick={() => setSourcePickerOpen(true)}>
+                  <Button
+                    type="button"
+                    size="sm"
+                    className="h-7 px-2 text-xs"
+                    onClick={() => setSourcePickerOpen(true)}
+                  >
                     Choose source
-                    <ChevronRight className="ml-1.5 h-3.5 w-3.5" />
+                    <ChevronRight className="ml-1 h-3 w-3" />
                   </Button>
                 ) : (
-                  <Button type="button" size="sm" asChild>
+                  <Button type="button" size="sm" className="h-7 px-2 text-xs" asChild>
                     <a href={primary.link} target="_blank" rel="noreferrer">
                       Read article
-                      <ExternalLink className="ml-1.5 h-3.5 w-3.5" />
+                      <ExternalLink className="ml-1 h-3 w-3" />
                     </a>
                   </Button>
                 )}
               </div>
             </CardContent>
-          </div>
         </div>
       </Card>
 
@@ -261,7 +247,6 @@ export function NewsStoryCard({ group }: NewsStoryCardProps) {
         article={primary}
         open={detailsOpen}
         onOpenChange={setDetailsOpen}
-        imageError={imageError}
         relatedSources={hasMultipleSources ? sources : undefined}
       />
     </>

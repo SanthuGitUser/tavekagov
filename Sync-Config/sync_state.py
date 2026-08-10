@@ -34,6 +34,7 @@ JOB_TVA_MAGAZINE = "tva_magazine"
 JOB_DEPARTMENTS = "departments"
 JOB_MINISTERS = "ministers"
 JOB_DISTRICTS = "districts"
+JOB_CONSTITUENCIES = "constituencies"
 JOB_NEWS = "news"
 
 _ALL_JOBS = (
@@ -45,6 +46,7 @@ _ALL_JOBS = (
     JOB_DEPARTMENTS,
     JOB_MINISTERS,
     JOB_DISTRICTS,
+    JOB_CONSTITUENCIES,
     JOB_NEWS,
 )
 
@@ -347,6 +349,7 @@ def print_sync_plan(repo_root: Path) -> None:
         (JOB_DEPARTMENTS, "Departments"),
         (JOB_MINISTERS, "Ministers"),
         (JOB_DISTRICTS, "Districts"),
+        (JOB_CONSTITUENCIES, "Constituencies"),
         (JOB_NEWS, "News"),
     ):
         last = get_job_state(job_key).get("last_sync_at") or "never"

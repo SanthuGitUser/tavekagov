@@ -1,6 +1,8 @@
 import { type ColumnDef, flexRender, getCoreRowModel, useReactTable } from "@tanstack/react-table";
 import { ExternalLink } from "lucide-react";
+import { useMemo } from "react";
 
+import { comparePressReleases } from "@/components/press-releases/pressReleaseUtils";
 import { formatPrNumber } from "@/components/shared/VerticalDatePicker";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -59,8 +61,13 @@ export function PressReleasesTable({
   releases,
   emptyMessage = "No press releases found.",
 }: PressReleasesTableProps) {
+  const sortedReleases = useMemo(
+    () => [...releases].sort(comparePressReleases),
+    [releases],
+  );
+
   const table = useReactTable({
-    data: releases,
+    data: sortedReleases,
     columns,
     getCoreRowModel: getCoreRowModel(),
   });

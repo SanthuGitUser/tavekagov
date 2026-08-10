@@ -96,7 +96,7 @@ export function NewsPage() {
           No stories match your search, date, or category filter.
         </p>
       ) : (
-        <div className="grid gap-4 lg:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {filteredGroups.map((group) => (
             <NewsStoryCard key={group.id} group={group} />
           ))}

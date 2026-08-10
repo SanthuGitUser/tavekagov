@@ -46,6 +46,23 @@ export type TnDistrict = {
   display_order: number;
 };
 
+export type TnConstituency = {
+  ac_number: number;
+  name: string;
+  district: string | null;
+  member_name: string;
+  party: string | null;
+  email: string | null;
+  member_display_name: string | null;
+  address: string | null;
+  phone: string | null;
+  photo_url: string | null;
+  is_minister: boolean;
+  reserved_category: string | null;
+  profile_url: string;
+  display_order: number;
+};
+
 export type TnGoDept = {
   id: number;
   go_date: string;

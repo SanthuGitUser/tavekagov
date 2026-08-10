@@ -1,0 +1,216 @@
+{
+  "date": "2026-08-09",
+  "fetchedAt": "2026-08-10T14:59:28.179507+05:30",
+  "lastFetchedAt": "2026-08-10T14:59:28.179507+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment",
+      "apikey": "<redacted>"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 4,
+    "apiReportedTotalResults": 9,
+    "results": [
+      {
+        "article_id": "ac67ad69930bea61efcf5d259aeb0532",
+        "link": "https://www.timesnownews.com/chennai/vijay-govt-to-propose-making-tamil-state-anthem-first-song-at-all-official-events-article-155413074",
+        "title": "Vijay Govt To Propose Making Tamil State Anthem First Song At All Official Events",
+        "description": "The ongoing anthem controversy in India sees Tamil Nadu Chief Minister Joseph Vijay proposing a resolution to mandate the singing of the Tamil Thai Vazhthu before events in public institutions.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "vande mataram",
+          "union government",
+          "joseph vijay",
+          "raj bhavan",
+          "tamil thai vaazhthu",
+          "tamil nadu",
+          "tamil",
+          "parliament",
+          "vijay"
+        ],
+        "creator": [
+          "dharani balasubramaniam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-09 14:58:17",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-09 15:03:51",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155414062,thumbsize-37362,width-1280,height-720,resizemode-75/155414062.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c997fdd12fc87d6a6736f91cc823dd6b",
+        "link": "https://www.timesnownews.com/chennai/revolt-season-returns-to-aiadmk-senior-leaders-releases-statement-blame-eps-for-successive-poll-losses-article-155406871",
+        "title": "Revolt Season Returns To AIADMK? Senior Leaders Release Statement, Blame EPS For Successive Poll Losses",
+        "description": "A potential revolt is brewing within the AIADMK against party leader Edappadi Palaniswami, as senior figures SP Velumani and Natham Vishwanathan have issued a critical statement blaming him for recent election losses.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "eps",
+          "velumani",
+          "tamil nadu",
+          "edappadi palaniswami",
+          "tvk",
+          "vijay",
+          "palaniswami",
+          "aiadmk"
+        ],
+        "creator": [
+          "dharani balasubramaniam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-09 13:07:44",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-09 13:32:54",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155408809,thumbsize-1040795,width-1280,height-720,resizemode-75/155408809.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "9cacf299fcadae31485bca75a513f14e",
+        "link": "https://www.thenewsminute.com/tamil-nadu/delimitation-row-tamil-nadu-mps-demand-lok-sabha-strength-remain-at-543",
+        "title": "Delimitation row: Tamil Nadu MPs demand Lok Sabha strength remain at 543",
+        "description": "The meeting called for the Lok Sabha’s existing strength of 543 seats and the current state-wise allocation to be retained. The DMK and AIADMK had boycotted the meeting.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-09 04:39:45",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-09 05:07:45",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-08-09%2Fthqoud5k%2FTNmeeting.jpg?rect=0%2C0%2C1285%2C723&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "5bd012f0cd77eaa2122163e56ef01df8",
+        "link": "https://www.timesnownews.com/videos/times-now/india/rahul-gandhi-kiran-rijiju-clash-womens-reservation-delimitation-issues-video-155388276",
+        "title": "Women’s Quota, Delimitation Spark Clash As Rahul Gandhi And Rijiju Trade Questions In Tamil Nadu",
+        "description": "A fresh political battle has erupted over the women’s empowerment bill and delimitation. Congress MP and Leader of Opposition Rahul Gandhi said India cannot progress until women are free to speak, question and challenge patriarchy. Union Minister Kiren Rijiju linked Rahul Gandhi’s remarks to the Women’s Reservation Bill and asked whether the Congress would support it. Rahul Gandhi responded by questioning why the Women’s Reservation Bill was being linked to the delimitation bill. #timesnow #englishnews #rahulgandhi #rijiju #delimitation #congress #tamilnadu #women #politics #lokSabha",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "pre 2026 census",
+          "543 seats",
+          "tamil nadu delimitation",
+          "post",
+          "delimitation issue",
+          "leader of opposition",
+          "women empowerment",
+          "patriarchy",
+          "tamil nadu",
+          "815 seats",
+          "kiren rijiju statement",
+          "rahul gandhi statement",
+          "rahul gandhi",
+          "women reservation bill",
+          "census",
+          "lok sabha seats",
+          "kiren rijiju",
+          "women rights",
+          "lok sabha map",
+          "women reservation"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-09 01:23:50",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-09 01:33:09",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155388276,thumbsize-715382,width-1280,height-720,resizemode-75/155388276.jpg",
+        "video_url": "https://sw-a.akamaized.net/amd/n1yoozgguo_w/1x/b1/4m/1xb14mpfcz_w/78e69f34_F40_360p_800.mp4",
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

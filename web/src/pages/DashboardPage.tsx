@@ -4,8 +4,6 @@ import {
   Gavel,
 } from "lucide-react";
 
-import { ActivityChart } from "@/components/dashboard/ActivityChart";
-import { NewsCategoryChart } from "@/components/dashboard/NewsCategoryChart";
 import { StatCard } from "@/components/dashboard/StatCard";
 import { ErrorState } from "@/components/shared/ErrorState";
 import { useAsyncData } from "@/hooks/useAsyncData";
@@ -13,9 +11,6 @@ import { useDashboardDateRange } from "@/context/DashboardDateRangeContext";
 import {
   fetchDashboardStatsForRange,
 } from "@/lib/queries";
-import { tamilNaduNewsFeed } from "@/lib/tamilNaduNewsFeed";
-import { tamilNaduPressReleaseFeed } from "@/lib/tamilNaduPressReleaseFeed";
-
 export function DashboardPage() {
   const dashboardDateRange = useDashboardDateRange();
   const dateRange = dashboardDateRange?.effectiveRange ?? null;
@@ -51,15 +46,6 @@ export function DashboardPage() {
             icon={ArrowRightLeft}
             loading={loading}
           />
-        </div>
-
-        <div className="grid gap-4 lg:grid-cols-2">
-          <ActivityChart
-            className="min-h-[22rem]"
-            releases={tamilNaduPressReleaseFeed.results}
-            dateRange={dateRange}
-          />
-          <NewsCategoryChart articles={tamilNaduNewsFeed.results} dateRange={dateRange} />
         </div>
       </div>
     </div>

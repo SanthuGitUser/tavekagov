@@ -1,5 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
+import { ConstituencySearchProvider } from "@/context/ConstituencySearchContext";
+
 import { AppLayout } from "@/components/layout/AppLayout";
 import { DashboardDateRangeProvider } from "@/context/DashboardDateRangeContext";
 import { DepartmentSearchProvider } from "@/context/DepartmentSearchContext";
@@ -15,6 +17,7 @@ import { PressReleaseSearchProvider } from "@/context/PressReleaseSearchContext"
 import { PressReleaseViewProvider } from "@/context/PressReleaseViewContext";
 import { TransfersPostingsSearchProvider } from "@/context/TransfersPostingsSearchContext";
 import { AboutPage } from "@/pages/AboutPage";
+import { ConstituenciesPage } from "@/pages/ConstituenciesPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { DepartmentsPage } from "@/pages/DepartmentsPage";
 import { DistrictsPage } from "@/pages/DistrictsPage";
@@ -150,6 +153,20 @@ export default function App() {
           }
         >
           <Route index element={<DistrictsPage />} />
+        </Route>
+        <Route
+          path="/constituencies"
+          element={
+            <ConstituencySearchProvider>
+              <AppLayout
+                fillViewport
+                title="Constituencies"
+                description="17th Tamil Nadu Legislative Assembly constituencies from assembly.tn.gov.in."
+              />
+            </ConstituencySearchProvider>
+          }
+        >
+          <Route index element={<ConstituenciesPage />} />
         </Route>
         <Route
           path="/magazine"

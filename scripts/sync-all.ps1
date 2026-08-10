@@ -139,6 +139,7 @@ if (!$SkipInstall) {
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-GOV_Departments/requirements.txt")
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-GOV_Council Of Ministers/requirements.txt")
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-GOV_Districts/requirements.txt")
+  Pip-Install $pythonExe (Join-Path $repoRoot "TN-Constituencies/requirements.txt")
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-News/Code/requirements.txt")
 }
 
@@ -170,6 +171,7 @@ Run-Py $pythonExe (Join-Path $repoRoot "TN-TVA-Magazine/tn_magazine_sync.py") $m
 Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Departments/tn_dept_sync.py") @()
 Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Council Of Ministers/tn_ministers_sync.py") @()
 Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Districts/tn_districts_sync.py") @()
+Run-Py $pythonExe (Join-Path $repoRoot "TN-Constituencies/tn_constituencies_sync.py") @()
 
 try {
   Run-Py $pythonExe (Join-Path $repoRoot "TN-News/Code/fetch_tamil_nadu_news.py") @()
@@ -198,6 +200,7 @@ if ($Stage -or $Commit -or $Push) {
   git add "TN-GOV_Departments/manifests/" | Out-Null
   git add "TN-GOV_Council Of Ministers/manifests/" | Out-Null
   git add "TN-GOV_Districts/manifests/" | Out-Null
+  git add "TN-Constituencies/manifests/" | Out-Null
   git add "TN-News/Response JSON/" | Out-Null
   git add ".github/workflows/deploy-web.yml" | Out-Null
   git add "scripts/sync-all.ps1" | Out-Null

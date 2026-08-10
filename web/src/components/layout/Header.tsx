@@ -3,10 +3,12 @@ import { Search } from "lucide-react";
 
 import { NewsDatePicker } from "@/components/news/NewsDatePicker";
 import { GovernmentOrdersViewTabs } from "@/components/government-orders/GovernmentOrdersViewTabs";
+import { PartyFilterSelect } from "@/components/constituencies/PartyFilterSelect";
 import { GovPressReleaseViewTabs } from "@/components/gov-press-releases/GovPressReleaseViewTabs";
 import { PressReleaseViewTabs } from "@/components/press-releases/PressReleaseViewTabs";
 import { formatReleaseCount } from "@/components/press-releases/pressReleaseUtils";
 import { useDepartmentSearch } from "@/context/DepartmentSearchContext";
+import { useConstituencySearch } from "@/context/ConstituencySearchContext";
 import { useDistrictSearch } from "@/context/DistrictSearchContext";
 import { useGovPressReleaseSearch } from "@/context/GovPressReleaseSearchContext";
 import { useGovPressReleaseView } from "@/context/GovPressReleaseViewContext";
@@ -15,6 +17,8 @@ import { useGovernmentOrdersSearch } from "@/context/GovernmentOrdersSearchConte
 import { useGovernmentOrdersView } from "@/context/GovernmentOrdersViewContext";
 import { useMagazineSearch } from "@/context/MagazineSearchContext";
 import { useNewsSearch } from "@/context/NewsSearchContext";
+import { getConstituencyCategories, getConstituencyDistricts, getConstituencyParties, tamilNaduAssemblyConstituenciesFeed } from "@/lib/tamilNaduAssemblyConstituenciesFeed";
+import { filterConstituencies } from "@/lib/constituencyFilterUtils";
 import { getAvailableNewsDates } from "@/lib/tamilNaduNewsFeed";
 import { usePressReleaseSearch } from "@/context/PressReleaseSearchContext";
 import { usePressReleaseView } from "@/context/PressReleaseViewContext";
@@ -39,7 +43,7 @@ function HeaderShell({
   children: ReactNode;
   className?: string;
 }) {
-  return <div className={cn(headerShellClassName, className)}>{children}</div>;
+  return <div className={cn(headerShellClassName, "relative z-20", className)}>{children}</div>;
 }
 
 function HeaderTitleBlock({
@@ -84,6 +88,7 @@ export function Header({ title, description }: HeaderProps) {
   const governmentOrdersSearch = useGovernmentOrdersSearch();
   const magazineSearch = useMagazineSearch();
   const newsSearch = useNewsSearch();
+  const constituencySearch = useConstituencySearch();
   const districtSearch = useDistrictSearch();
   const departmentSearch = useDepartmentSearch();
   const ministerSearch = useMinisterSearch();
@@ -98,10 +103,13 @@ export function Header({ title, description }: HeaderProps) {
     ?? magazineSearch
     ?? newsSearch
     ?? districtSearch
+    ?? constituencySearch
     ?? departmentSearch
     ?? ministerSearch;
 
-  const searchPlaceholder = districtSearch
+  const searchPlaceholder = constituencySearch
+    ? "Search constituencies…"
+    : districtSearch
     ? "Search districts…"
     : departmentSearch
       ? "Search departments…"
@@ -119,7 +127,9 @@ export function Header({ title, description }: HeaderProps) {
                   ? "Search press release images…"
                   : "Search all press releases…";
 
-  const searchAriaLabel = districtSearch
+  const searchAriaLabel = constituencySearch
+    ? "Search constituencies"
+    : districtSearch
     ? "Search districts"
     : departmentSearch
       ? "Search departments"
@@ -235,6 +245,99 @@ export function Header({ title, description }: HeaderProps) {
             />
             <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
               {newsSearch.filteredCount} stories shown · {newsSearch.totalCount} total
+            </p>
+          </div>
+        </div>
+      </HeaderShell>
+    );
+  }
+
+  if (constituencySearch) {
+    const constituencies = tamilNaduAssemblyConstituenciesFeed.constituencies;
+    const districts = getConstituencyDistricts();
+    const parties = getConstituencyParties();
+    const categories = getConstituencyCategories();
+    const filteredCount = filterConstituencies(constituencies, {
+      search: constituencySearch.search,
+      districtFilter: constituencySearch.districtFilter,
+      partyFilter: constituencySearch.partyFilter,
+      categoryFilter: constituencySearch.categoryFilter,
+      memberFilter: constituencySearch.memberFilter,
+    }).length;
+    const filterSelectClassName =
+      "h-9 max-w-[11rem] shrink-0 rounded-md border border-input bg-background px-2.5 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50";
+
+    return (
+      <HeaderShell>
+        <div className={headerInnerClassName}>
+          <HeaderTitleBlock title={title} description={description} />
+          <div className="flex w-full min-w-0 flex-wrap items-center gap-2 sm:w-auto sm:flex-1 sm:justify-end">
+            <div className="relative z-20 flex flex-wrap items-center gap-2">
+              <PartyFilterSelect
+                value={constituencySearch.partyFilter}
+                parties={parties}
+                onChange={constituencySearch.setPartyFilter}
+                className={filterSelectClassName}
+              />
+              <label className="sr-only" htmlFor="constituency-member-filter">
+                Filter by member type
+              </label>
+              <select
+                id="constituency-member-filter"
+                value={constituencySearch.memberFilter}
+                onChange={(event) => constituencySearch.setMemberFilter(event.target.value)}
+                className={filterSelectClassName}
+              >
+                <option value="all">All members</option>
+                <option value="minister">Minister</option>
+                <option value="mla">MLA</option>
+              </select>
+              <label className="sr-only" htmlFor="constituency-category-filter">
+                Filter by category
+              </label>
+              <select
+                id="constituency-category-filter"
+                value={constituencySearch.categoryFilter}
+                onChange={(event) => constituencySearch.setCategoryFilter(event.target.value)}
+                className={filterSelectClassName}
+              >
+                <option value="all">All category</option>
+                {categories.map((category) => (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+              <label className="sr-only" htmlFor="constituency-district-filter">
+                Filter by district
+              </label>
+              <select
+                id="constituency-district-filter"
+                value={constituencySearch.districtFilter}
+                onChange={(event) => constituencySearch.setDistrictFilter(event.target.value)}
+                className={filterSelectClassName}
+              >
+                <option value="all">All districts ({constituencies.length})</option>
+                {districts.map((district) => (
+                  <option key={district} value={district}>
+                    {district}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="relative w-full min-w-0 sm:w-48 md:w-56">
+              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="search"
+                placeholder="Search constituencies…"
+                value={constituencySearch.search}
+                onChange={(event) => constituencySearch.setSearch(event.target.value)}
+                className="h-9 w-full pl-8"
+                aria-label="Search constituencies"
+              />
+            </div>
+            <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
+              {filteredCount} of {constituencies.length} constituencies
             </p>
           </div>
         </div>

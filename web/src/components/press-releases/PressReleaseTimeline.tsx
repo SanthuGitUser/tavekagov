@@ -16,6 +16,7 @@ import { CrossDatePressReleaseBrowse } from "./CrossDatePressReleaseBrowse";
 import {
   buildDepartmentSideOptions,
   buildMinisterSideOptions,
+  comparePressReleases,
   formatReleaseCount,
   groupReleasesByDate,
   matchesSearch,
@@ -54,24 +55,6 @@ function getInitials(value: string): string {
   const first = parts[0]?.[0] ?? "";
   const last = parts.length > 1 ? parts[parts.length - 1]?.[0] ?? "" : "";
   return (first + last).toUpperCase() || value.trim().charAt(0).toUpperCase();
-}
-
-function parsePrNumber(value: string | null): number | null {
-  const formatted = formatPrNumber(value);
-  if (!formatted) return null;
-  const parsed = Number.parseInt(formatted, 10);
-  return Number.isNaN(parsed) ? null : parsed;
-}
-
-function compareByPrNumber(a: PressRelease, b: PressRelease): number {
-  const aNo = parsePrNumber(a.dipr_pr_no);
-  const bNo = parsePrNumber(b.dipr_pr_no);
-
-  if (aNo === null && bNo === null) return a.name.localeCompare(b.name);
-  if (aNo === null) return 1;
-  if (bNo === null) return -1;
-  if (aNo !== bNo) return aNo - bNo;
-  return a.name.localeCompare(b.name);
 }
 
 function ReleaseCard({ release }: { release: PressRelease }) {
@@ -127,10 +110,26 @@ export function PressReleaseTimeline({
     [releases],
   );
 
-  const departmentSideOptions = useMemo(
-    () => buildDepartmentSideOptions(releases, departments),
-    [releases, departments],
-  );
+  const departmentSideOptions = useMemo(() => {
+    const latestByDepartmentId = new Map<number, string>();
+    for (const release of releases) {
+      if (release.department_id == null) continue;
+      const existing = latestByDepartmentId.get(release.department_id);
+      if (!existing || release.pr_date > existing) {
+        latestByDepartmentId.set(release.department_id, release.pr_date);
+      }
+    }
+
+    return buildDepartmentSideOptions(releases, departments).sort((a, b) => {
+      const leftDate = latestByDepartmentId.get(Number(a.id)) ?? "";
+      const rightDate = latestByDepartmentId.get(Number(b.id)) ?? "";
+      return (
+        rightDate.localeCompare(leftDate) ||
+        b.count - a.count ||
+        a.label.localeCompare(b.label)
+      );
+    });
+  }, [releases, departments]);
 
   const ministerSideOptions = useMemo(
     () => buildMinisterSideOptions(releases, ministers),
@@ -187,11 +186,7 @@ export function PressReleaseTimeline({
       rows = rows.filter((release) => release.minister_id === ministerId);
     }
 
-    return rows.sort((a, b) => {
-      const dateCompare = b.pr_date.localeCompare(a.pr_date);
-      if (dateCompare !== 0) return dateCompare;
-      return compareByPrNumber(a, b);
-    });
+    return rows.sort(comparePressReleases);
   }, [releases, query, view, departmentId, ministerId]);
 
   const datesForPicker = useMemo(() => {
@@ -228,7 +223,7 @@ export function PressReleaseTimeline({
     return releases
       .filter((release) => release.pr_date === selectedDate)
       .filter((release) => matchesSearch(release, query))
-      .sort(compareByPrNumber);
+      .sort(comparePressReleases);
   }, [releases, selectedDate, query]);
 
   useEffect(() => {
@@ -343,14 +338,13 @@ export function PressReleaseTimeline({
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
       <div className="flex min-h-0 flex-1 flex-col gap-3 lg:flex-row lg:overflow-hidden">
         {view === "department" || view === "minister" ? (
-          <aside className="flex w-full shrink-0 flex-col gap-3 lg:w-[220px] xl:w-[240px]">
+          <aside className="flex min-h-0 w-full shrink-0 flex-col lg:w-[220px] xl:w-[240px]">
             {view === "department" ? (
               <GovPressReleaseSideFilters
                 title="Departments"
                 options={filteredDepartmentSideOptions}
                 selectedId={departmentId != null ? String(departmentId) : null}
                 onSelect={(id) => setDepartmentId(Number.parseInt(id, 10))}
-                listClassName="max-h-[min(50vh,420px)]"
                 search={departmentListSearch}
                 onSearchChange={setDepartmentListSearch}
                 searchPlaceholder="Search departments…"
@@ -364,7 +358,6 @@ export function PressReleaseTimeline({
                 options={filteredMinisterSideOptions}
                 selectedId={ministerId != null ? String(ministerId) : null}
                 onSelect={(id) => setMinisterId(Number.parseInt(id, 10))}
-                listClassName="max-h-[min(50vh,420px)]"
                 search={ministerListSearch}
                 onSearchChange={setMinisterListSearch}
                 searchPlaceholder="Search ministers…"

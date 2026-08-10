@@ -416,14 +416,13 @@ export function GovPressReleaseTimeline({
 
       <div className="flex min-h-0 flex-1 flex-col gap-3 lg:flex-row lg:overflow-hidden">
         {view === "department" || view === "minister" ? (
-          <aside className="flex w-full shrink-0 flex-col gap-3 lg:w-[220px] xl:w-[240px]">
+          <aside className="flex min-h-0 w-full shrink-0 flex-col lg:w-[220px] xl:w-[240px]">
           {view === "department" ? (
             <GovPressReleaseSideFilters
               title="Departments"
               options={filteredDepartmentSideOptions}
               selectedId={departmentId != null ? String(departmentId) : null}
               onSelect={(id) => setDepartmentId(Number.parseInt(id, 10))}
-              listClassName="max-h-[min(50vh,420px)]"
               search={departmentListSearch}
               onSearchChange={setDepartmentListSearch}
               searchPlaceholder="Search departments…"
@@ -437,7 +436,6 @@ export function GovPressReleaseTimeline({
               options={filteredMinisterSideOptions}
               selectedId={ministerId != null ? String(ministerId) : null}
               onSelect={(id) => setMinisterId(Number.parseInt(id, 10))}
-              listClassName="max-h-[min(50vh,420px)]"
               search={ministerListSearch}
               onSearchChange={setMinisterListSearch}
               searchPlaceholder="Search ministers…"

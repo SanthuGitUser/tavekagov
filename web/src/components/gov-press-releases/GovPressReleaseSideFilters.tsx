@@ -42,13 +42,13 @@ export function GovPressReleaseSideFilters({
   }
 
   return (
-    <div className={cn("flex shrink-0 flex-col", className)}>
-      <p className="mb-2 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+    <div className={cn("flex min-h-0 flex-1 flex-col", className)}>
+      <p className="mb-2 shrink-0 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
         {title}
       </p>
 
       {isSearchable ? (
-        <div className="relative mb-2">
+        <div className="relative mb-2 shrink-0">
           <Search className="pointer-events-none absolute left-2 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-muted-foreground" />
           <Input
             type="search"
@@ -63,8 +63,8 @@ export function GovPressReleaseSideFilters({
 
       <div
         className={cn(
-          "overflow-y-auto rounded-lg border border-border bg-card pr-1",
-          listClassName ?? "max-h-[min(50vh,420px)]",
+          "min-h-0 flex-1 overflow-y-auto rounded-lg border border-border bg-card pr-1",
+          listClassName,
         )}
       >
         {options.length === 0 ? (

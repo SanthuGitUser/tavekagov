@@ -5,11 +5,20 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "01-08-2026",
+  "start_date": "08-08-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:34.320016+05:30",
-  "lastFetchedAt": "2026-08-07T01:11:34.565186+05:30",
-  "fetchCount": 6,
-  "count": 0,
-  "orders": []
+  "lastFetchedAt": "2026-08-10T14:57:20.557970+05:30",
+  "fetchCount": 7,
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-08-08",
+      "go_number": "G.O.(Ms) No. 49",
+      "go_name": "Home, Prohibition and Excise Department – Establishment of Anti-Narcotics Task Force Units in all districts and cities with a Headquarters Unit – Administrative and Financial sanction for a total sum of Rs.264,14,28,116 / - towards recurring and non-recurring expenditure – Orders issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/home_e_49_ms_2026.pdf",
+      "department_name": "Home, Prohibition and Excise Department",
+      "dep_id_encoded": "MTQ="
+    }
+  ]
 }

@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-10",
+  "fetchedAt": "2026-08-10T14:57:07.481780+05:30",
+  "lastFetchedAt": "2026-08-10T14:57:07.481780+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-10"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22307,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_TNLA.NO.007_-_Hon_ble_CM_Assembly_Speech_-_110_Statement_-_Increase_in_incentive_for_paddy_and_sugarcane__-_Date_-_10.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-10",
+        "press_release_no": null,
+        "press_name": "DIPR - TNLA.NO.007 - Hon'ble CM Assembly Speech - 110 Statement - Increase in incentive for paddy and sugarcane  - Date - 10.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-10",
+        "language": "en"
+      }
+    ]
+  }
+}

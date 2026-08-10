@@ -182,10 +182,10 @@ See [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) for permissions, deploy tri
 
 ## Web dashboard
 
-Built with Vite, React 19, TypeScript, Tailwind CSS v4, TanStack Table, and Recharts. Pages include:
+Built with Vite, React 19, TypeScript, Tailwind CSS v4, and TanStack Table. Pages include:
 
 - **Home** — Welcome links to Dashboard and Districts
-- **Dashboard** — KPIs, activity chart, recent press releases, news category chart
+- **Dashboard** — KPI stat cards
 - **Press Releases** — DIPR releases with search, PDF links, and department/minister browse tabs
 - **Press Releases Images** — Government press release photos from tn.gov.in with category filters
 - **Government Orders** — Department G.O.s with timeline and table views

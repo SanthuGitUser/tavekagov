@@ -10,13 +10,12 @@ See also the root [README](../README.md) and [docs/DATA.md](../docs/DATA.md).
 - Tailwind CSS v4
 - shadcn-style UI components
 - TanStack Table
-- Recharts
 - React Router
 
 ## Pages
 
 - Home (welcome links to Dashboard and Districts)
-- Dashboard (KPI cards, activity chart, recent press releases)
+- Dashboard (KPI cards)
 - Press releases
 - Press Releases Images
 - Government orders

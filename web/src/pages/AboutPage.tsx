@@ -35,7 +35,7 @@ export function AboutPage() {
               </p>
               <p>
                 This frontend is built with Vite, React, TypeScript, Tailwind CSS, shadcn-style
-                components, TanStack Table, and Recharts. It loads bundled JSON manifests at build
+                components, and TanStack Table. It loads bundled JSON manifests at build
                 time and is designed for static hosting on GitHub Pages.
               </p>
             </CardContent>
