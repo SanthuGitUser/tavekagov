@@ -18,3 +18,7 @@ dist-ssr/
 .idea/
 .vscode/
 *.sw?
+
+# Local scratch / scrape debug artifacts (repo root)
+/_tmp_*
+/_go_list_snippet.html

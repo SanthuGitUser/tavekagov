@@ -300,7 +300,9 @@ function matchMinisterByPortfolio(
 
   let best: { id: number; score: number } | null = null;
   for (const minister of ministers) {
-    const portfolioKey = normalizeMatchText(minister.portfolio ?? minister.designation);
+    const portfolioKey = normalizeMatchText(
+      minister.portfolios.length > 0 ? minister.portfolios.join(" ") : minister.designation,
+    );
     if (deptKey && portfolioKey.includes(deptKey)) {
       const score = deptKey.length;
       if (!best || score > best.score) {

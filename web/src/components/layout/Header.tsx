@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { Search } from "lucide-react";
+import { FilterX, Search } from "lucide-react";
+import { useLocation, useSearchParams } from "react-router-dom";
 
 import { NewsDatePicker } from "@/components/news/NewsDatePicker";
 import { GovernmentOrdersViewTabs } from "@/components/government-orders/GovernmentOrdersViewTabs";
@@ -7,12 +8,18 @@ import { PartyFilterSelect } from "@/components/constituencies/PartyFilterSelect
 import { GovPressReleaseViewTabs } from "@/components/gov-press-releases/GovPressReleaseViewTabs";
 import { PressReleaseViewTabs } from "@/components/press-releases/PressReleaseViewTabs";
 import { formatReleaseCount } from "@/components/press-releases/pressReleaseUtils";
-import { useDepartmentSearch } from "@/context/DepartmentSearchContext";
+import { useGovernmentSearch } from "@/context/GovernmentSearchContext";
 import { useConstituencySearch } from "@/context/ConstituencySearchContext";
 import { useDistrictSearch } from "@/context/DistrictSearchContext";
 import { useGovPressReleaseSearch } from "@/context/GovPressReleaseSearchContext";
 import { useGovPressReleaseView } from "@/context/GovPressReleaseViewContext";
-import { useMinisterSearch } from "@/context/MinisterSearchContext";
+import { useGovtSchemesSearch } from "@/context/GovtSchemesSearchContext";
+import { filterGovtSchemes, getGovtSchemesForSection } from "@/lib/govtSchemeFilterUtils";
+import {
+  getGovtSchemeCategories,
+  getGovtSchemes,
+  tamilNaduGovtSchemesFeed,
+} from "@/lib/tamilNaduGovtSchemesFeed";
 import { useGovernmentOrdersSearch } from "@/context/GovernmentOrdersSearchContext";
 import { useGovernmentOrdersView } from "@/context/GovernmentOrdersViewContext";
 import { useMagazineSearch } from "@/context/MagazineSearchContext";
@@ -24,8 +31,19 @@ import { usePressReleaseSearch } from "@/context/PressReleaseSearchContext";
 import { usePressReleaseView } from "@/context/PressReleaseViewContext";
 import { useTransfersPostingsSearch } from "@/context/TransfersPostingsSearchContext";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useDashboardDateRange, type DashboardDateRangePreset } from "@/context/DashboardDateRangeContext";
+import { useTVKManifestoSearch } from "@/context/TVKManifestoSearchContext";
+import {
+  countTVKManifestoChildSections,
+  filterTVKManifestoGroups,
+} from "@/lib/tvkManifestoFilterUtils";
+import {
+  getTVKManifestoCategories,
+  getTVKManifestoGroups,
+  tvkManifestoFeed,
+} from "@/lib/tvkManifestoFeed";
 
 type HeaderProps = {
   title: string;
@@ -80,6 +98,97 @@ function HeaderTitleWithTabs({
   );
 }
 
+function TVKManifestoHeader({
+  title,
+  description,
+  search,
+  onSearchChange,
+}: {
+  title: string;
+  description?: ReactNode;
+  search: string;
+  onSearchChange: (value: string) => void;
+}) {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categories = getTVKManifestoCategories();
+  const rawSelectedCategory = searchParams.get("category") ?? "all";
+  const selectedCategory =
+    rawSelectedCategory === "all" || categories.includes(rawSelectedCategory)
+      ? rawSelectedCategory
+      : "all";
+  const categoryGroups = getTVKManifestoGroups(selectedCategory === "all" ? null : selectedCategory);
+  const filteredGroups = filterTVKManifestoGroups(categoryGroups, search);
+  const filteredSectionCount = countTVKManifestoChildSections(filteredGroups);
+
+  function setCategory(category: string) {
+    const next = new URLSearchParams(searchParams);
+    if (category === "all") next.set("category", "all");
+    else next.set("category", category);
+    next.delete("section");
+    setSearchParams(next, { replace: true });
+  }
+
+  return (
+    <HeaderShell>
+      <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-4">
+        <div className="min-w-0 shrink-0">
+          <HeaderTitleBlock title={title} description={description} />
+        </div>
+
+        <div className="flex min-w-0 flex-1 flex-wrap items-center justify-center gap-2">
+          <div className="inline-flex max-w-full flex-wrap gap-1 rounded-full bg-muted/80 p-1 shadow-inner">
+            <button
+              type="button"
+              onClick={() => setCategory("all")}
+              className={cn(
+                "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
+                selectedCategory === "all"
+                  ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
+                  : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
+              )}
+            >
+              All
+            </button>
+            {categories.map((category) => (
+              <button
+                key={category}
+                type="button"
+                onClick={() => setCategory(category)}
+                className={cn(
+                  "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
+                  selectedCategory === category
+                    ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
+                    : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
+                )}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex w-full shrink-0 flex-wrap items-center gap-2 sm:w-auto lg:justify-end">
+          <div className="relative w-full sm:w-56">
+            <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <Input
+              type="search"
+              placeholder="Search manifesto…"
+              value={search}
+              onChange={(event) => onSearchChange(event.target.value)}
+              className="h-9 w-full pl-8"
+              aria-label="Search manifesto"
+            />
+          </div>
+          <p className="shrink-0 whitespace-nowrap text-xs tabular-nums text-muted-foreground">
+            {filteredGroups.length} group{filteredGroups.length === 1 ? "" : "s"} · {filteredSectionCount} of{" "}
+            {tvkManifestoFeed.sectionCount} sections
+          </p>
+        </div>
+      </div>
+    </HeaderShell>
+  );
+}
+
 export function Header({ title, description }: HeaderProps) {
   const pressReleaseSearch = usePressReleaseSearch();
   const pressReleaseView = usePressReleaseView();
@@ -90,11 +199,14 @@ export function Header({ title, description }: HeaderProps) {
   const newsSearch = useNewsSearch();
   const constituencySearch = useConstituencySearch();
   const districtSearch = useDistrictSearch();
-  const departmentSearch = useDepartmentSearch();
-  const ministerSearch = useMinisterSearch();
+  const governmentSearch = useGovernmentSearch();
+  const govtSchemesSearch = useGovtSchemesSearch();
   const governmentOrdersView = useGovernmentOrdersView();
   const transfersPostingsSearch = useTransfersPostingsSearch();
+  const tvkManifestoSearch = useTVKManifestoSearch();
   const dashboardDateRange = useDashboardDateRange();
+  const location = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
   const pageSearch =
     pressReleaseSearch
     ?? govPressReleaseSearch
@@ -104,18 +216,29 @@ export function Header({ title, description }: HeaderProps) {
     ?? newsSearch
     ?? districtSearch
     ?? constituencySearch
-    ?? departmentSearch
-    ?? ministerSearch;
+    ?? governmentSearch
+    ?? govtSchemesSearch;
 
-  const searchPlaceholder = constituencySearch
+  const isGovernmentPage = location.pathname === "/departments";
+  const governmentViewMode =
+    isGovernmentPage && searchParams.get("view") === "departments" ? "departments" : "ministers";
+
+  function setGovernmentViewMode(nextMode: "ministers" | "departments") {
+    const next = new URLSearchParams(searchParams);
+    if (nextMode === "ministers") next.delete("view");
+    else next.set("view", "departments");
+    setSearchParams(next, { replace: true });
+  }
+
+  let searchPlaceholder = constituencySearch
     ? "Search constituencies…"
     : districtSearch
     ? "Search districts…"
-    : departmentSearch
-      ? "Search departments…"
-      : ministerSearch
-        ? "Search ministers…"
-        : magazineSearch
+    : governmentSearch
+      ? "Search ministers or departments…"
+        : govtSchemesSearch
+          ? "Search schemes…"
+          : magazineSearch
           ? "Search magazines…"
           : newsSearch
             ? "Search news…"
@@ -127,15 +250,15 @@ export function Header({ title, description }: HeaderProps) {
                   ? "Search press release images…"
                   : "Search all press releases…";
 
-  const searchAriaLabel = constituencySearch
+  let searchAriaLabel = constituencySearch
     ? "Search constituencies"
     : districtSearch
     ? "Search districts"
-    : departmentSearch
-      ? "Search departments"
-      : ministerSearch
-        ? "Search ministers"
-        : magazineSearch
+    : governmentSearch
+      ? "Search ministers and departments"
+        : govtSchemesSearch
+          ? "Search schemes"
+          : magazineSearch
           ? "Search magazines"
           : newsSearch
             ? "Search news"
@@ -146,6 +269,11 @@ export function Header({ title, description }: HeaderProps) {
                 : govPressReleaseSearch
                   ? "Search press release images"
                   : "Search press releases";
+
+  if (governmentSearch && isGovernmentPage && governmentViewMode === "departments") {
+    searchPlaceholder = "Search departments…";
+    searchAriaLabel = "Search departments";
+  }
 
   const searchField = pageSearch ? (
     <div className="relative w-full max-w-sm">
@@ -186,6 +314,17 @@ export function Header({ title, description }: HeaderProps) {
         ) : null}
       </div>
     ) : null;
+
+  if (tvkManifestoSearch) {
+    return (
+      <TVKManifestoHeader
+        title={title}
+        description={description}
+        search={tvkManifestoSearch.search}
+        onSearchChange={tvkManifestoSearch.setSearch}
+      />
+    );
+  }
 
   if (transfersPostingsSearch) {
     return (
@@ -266,6 +405,13 @@ export function Header({ title, description }: HeaderProps) {
     }).length;
     const filterSelectClassName =
       "h-9 max-w-[11rem] shrink-0 rounded-md border border-input bg-background px-2.5 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50";
+    const hasActiveFilters =
+      constituencySearch.search.trim() !== "" ||
+      constituencySearch.districtFilter !== "all" ||
+      constituencySearch.partyFilter !== "all" ||
+      constituencySearch.categoryFilter !== "all" ||
+      constituencySearch.memberFilter !== "all" ||
+      constituencySearch.selectedAcNumber !== null;
 
     return (
       <HeaderShell>
@@ -324,6 +470,18 @@ export function Header({ title, description }: HeaderProps) {
                   </option>
                 ))}
               </select>
+              <Button
+                type="button"
+                variant="outline"
+                size="icon"
+                className="h-9 w-9 shrink-0"
+                onClick={constituencySearch.resetFilters}
+                disabled={!hasActiveFilters}
+                aria-label="Reset all filters"
+                title="Reset all filters"
+              >
+                <FilterX className="h-4 w-4" />
+              </Button>
             </div>
             <div className="relative w-full min-w-0 sm:w-48 md:w-56">
               <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -345,7 +503,119 @@ export function Header({ title, description }: HeaderProps) {
     );
   }
 
-  if (magazineSearch || districtSearch || departmentSearch || ministerSearch) {
+  if (govtSchemesSearch) {
+    const schemes = getGovtSchemes();
+    const sectionSchemes = getGovtSchemesForSection(schemes, govtSchemesSearch.sectionFilter);
+    const categories = getGovtSchemeCategories(sectionSchemes);
+    const filteredCount = filterGovtSchemes(schemes, {
+      search: govtSchemesSearch.search,
+      sectionFilter: govtSchemesSearch.sectionFilter,
+      categoryFilter: govtSchemesSearch.categoryFilter,
+    }).length;
+    const filterSelectClassName =
+      "h-9 max-w-[11rem] shrink-0 rounded-md border border-input bg-background px-2.5 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50";
+
+    return (
+      <HeaderShell>
+        <div className={headerInnerClassName}>
+          <HeaderTitleBlock title={title} description={description} />
+          <div className="flex w-full min-w-0 flex-wrap items-center gap-2 sm:w-auto sm:flex-1 sm:justify-end">
+            <div className="inline-flex shrink-0 rounded-full bg-muted/80 p-1 shadow-inner">
+              {(
+                [
+                  { value: "state", label: `Schemes (${tamilNaduGovtSchemesFeed.stateCount})` },
+                  { value: "housing", label: `Housing (${tamilNaduGovtSchemesFeed.housingCount})` },
+                  {
+                    value: "scholarships",
+                    label: `Scholarships (${tamilNaduGovtSchemesFeed.scholarshipsCount})`,
+                  },
+                ] as const
+              ).map((option) => (
+                <button
+                  key={option.value}
+                  type="button"
+                  onClick={() => govtSchemesSearch.setSectionFilter(option.value)}
+                  className={cn(
+                    "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
+                    govtSchemesSearch.sectionFilter === option.value
+                      ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
+                      : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
+                  )}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+            <label className="sr-only" htmlFor="govt-scheme-category-filter">
+              Filter by category
+            </label>
+            <select
+              id="govt-scheme-category-filter"
+              value={govtSchemesSearch.categoryFilter}
+              onChange={(event) => govtSchemesSearch.setCategoryFilter(event.target.value)}
+              className={filterSelectClassName}
+            >
+              <option value="all">All categories</option>
+              {categories.map((category) => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+            <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
+              {filteredCount} of {sectionSchemes.length} schemes
+            </p>
+            <div className="relative min-w-0 flex-1 sm:max-w-sm">{searchField}</div>
+          </div>
+        </div>
+      </HeaderShell>
+    );
+  }
+
+  if (magazineSearch || districtSearch || governmentSearch) {
+    if (governmentSearch && isGovernmentPage) {
+      return (
+        <HeaderShell>
+          <div className={headerInnerClassName}>
+            <HeaderTitleBlock title={title} description={description} />
+            <div className="flex w-full min-w-0 flex-wrap items-center justify-end gap-2 sm:w-auto sm:flex-1">
+              <div className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-muted/80 p-1 shadow-inner">
+                <button
+                  type="button"
+                  onClick={() => setGovernmentViewMode("ministers")}
+                  className={cn(
+                    "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
+                    governmentViewMode === "ministers"
+                      ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
+                      : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
+                  )}
+                  aria-pressed={governmentViewMode === "ministers"}
+                >
+                  Ministers
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setGovernmentViewMode("departments")}
+                  className={cn(
+                    "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
+                    governmentViewMode === "departments"
+                      ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
+                      : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
+                  )}
+                  aria-pressed={governmentViewMode === "departments"}
+                >
+                  Departments
+                </button>
+              </div>
+              <div className="flex w-full min-w-0 flex-wrap items-center justify-end gap-2 sm:w-auto sm:shrink-0">
+                <div className="w-full min-w-0 sm:w-72">{searchField}</div>
+              </div>
+            </div>
+          </div>
+        </HeaderShell>
+      );
+    }
+
     return (
       <HeaderShell>
         <div className={headerInnerClassName}>

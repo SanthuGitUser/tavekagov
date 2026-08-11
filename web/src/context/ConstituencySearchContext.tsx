@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
 
 type ConstituencySearchContextValue = {
   search: string;
@@ -13,6 +13,7 @@ type ConstituencySearchContextValue = {
   setMemberFilter: (value: string) => void;
   selectedAcNumber: number | null;
   setSelectedAcNumber: (value: number | null) => void;
+  resetFilters: () => void;
 };
 
 const ConstituencySearchContext = createContext<ConstituencySearchContextValue | null>(null);
@@ -24,6 +25,15 @@ export function ConstituencySearchProvider({ children }: { children: ReactNode }
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [memberFilter, setMemberFilter] = useState("all");
   const [selectedAcNumber, setSelectedAcNumber] = useState<number | null>(null);
+
+  const resetFilters = useCallback(() => {
+    setSearch("");
+    setDistrictFilter("all");
+    setPartyFilter("all");
+    setCategoryFilter("all");
+    setMemberFilter("all");
+    setSelectedAcNumber(null);
+  }, []);
 
   const value = useMemo(
     () => ({
@@ -39,8 +49,9 @@ export function ConstituencySearchProvider({ children }: { children: ReactNode }
       setMemberFilter,
       selectedAcNumber,
       setSelectedAcNumber,
+      resetFilters,
     }),
-    [search, districtFilter, partyFilter, categoryFilter, memberFilter, selectedAcNumber],
+    [search, districtFilter, partyFilter, categoryFilter, memberFilter, selectedAcNumber, resetFilters],
   );
 
   return (

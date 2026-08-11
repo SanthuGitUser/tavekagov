@@ -36,6 +36,7 @@ JOB_MINISTERS = "ministers"
 JOB_DISTRICTS = "districts"
 JOB_CONSTITUENCIES = "constituencies"
 JOB_NEWS = "news"
+JOB_GOVT_SCHEMES = "govt_schemes"
 
 _ALL_JOBS = (
     JOB_DIPR_PRESS_RELEASES,
@@ -48,6 +49,7 @@ _ALL_JOBS = (
     JOB_DISTRICTS,
     JOB_CONSTITUENCIES,
     JOB_NEWS,
+    JOB_GOVT_SCHEMES,
 )
 
 
@@ -351,6 +353,7 @@ def print_sync_plan(repo_root: Path) -> None:
         (JOB_DISTRICTS, "Districts"),
         (JOB_CONSTITUENCIES, "Constituencies"),
         (JOB_NEWS, "News"),
+        (JOB_GOVT_SCHEMES, "Govt schemes"),
     ):
         last = get_job_state(job_key).get("last_sync_at") or "never"
         print(f"  {label}: full refresh (last sync {last})")

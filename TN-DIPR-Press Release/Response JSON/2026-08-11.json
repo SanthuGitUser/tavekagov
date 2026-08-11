@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-11",
+  "fetchedAt": "2026-08-11T18:50:48.812054+05:30",
+  "lastFetchedAt": "2026-08-11T18:50:48.812054+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-11"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22312,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.523_-_Hon_ble_CM_Press_Release_-_Home_Dept_-_Anti_Drug_programme_-_Date_-_11.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-11",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.523 - Hon'ble CM Press Release - Home Dept - Anti Drug programme - Date - 11.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-11",
+        "language": "en"
+      }
+    ]
+  }
+}

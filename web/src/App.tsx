@@ -4,30 +4,32 @@ import { ConstituencySearchProvider } from "@/context/ConstituencySearchContext"
 
 import { AppLayout } from "@/components/layout/AppLayout";
 import { DashboardDateRangeProvider } from "@/context/DashboardDateRangeContext";
-import { DepartmentSearchProvider } from "@/context/DepartmentSearchContext";
+import { GovernmentSearchProvider } from "@/context/GovernmentSearchContext";
 import { DistrictSearchProvider } from "@/context/DistrictSearchContext";
-import { MinisterSearchProvider } from "@/context/MinisterSearchContext";
 import { GovPressReleaseSearchProvider } from "@/context/GovPressReleaseSearchContext";
 import { GovPressReleaseViewProvider } from "@/context/GovPressReleaseViewContext";
+import { GovtSchemesSearchProvider } from "@/context/GovtSchemesSearchContext";
 import { GovernmentOrdersSearchProvider } from "@/context/GovernmentOrdersSearchContext";
 import { GovernmentOrdersViewProvider } from "@/context/GovernmentOrdersViewContext";
 import { MagazineSearchProvider } from "@/context/MagazineSearchContext";
 import { NewsSearchProvider } from "@/context/NewsSearchContext";
 import { PressReleaseSearchProvider } from "@/context/PressReleaseSearchContext";
 import { PressReleaseViewProvider } from "@/context/PressReleaseViewContext";
+import { TVKManifestoSearchProvider } from "@/context/TVKManifestoSearchContext";
 import { TransfersPostingsSearchProvider } from "@/context/TransfersPostingsSearchContext";
 import { AboutPage } from "@/pages/AboutPage";
 import { ConstituenciesPage } from "@/pages/ConstituenciesPage";
 import { DashboardPage } from "@/pages/DashboardPage";
-import { DepartmentsPage } from "@/pages/DepartmentsPage";
+import { GovernmentPage } from "@/pages/GovernmentPage";
 import { DistrictsPage } from "@/pages/DistrictsPage";
 import { GovPressReleasesPage } from "@/pages/GovPressReleasesPage";
+import { GovtSchemesPage } from "@/pages/GovtSchemesPage";
 import { GovernmentOrdersPage } from "@/pages/GovernmentOrdersPage";
 import { HomePage } from "@/pages/HomePage";
 import { MagazinePage } from "@/pages/MagazinePage";
-import { MinistersPage } from "@/pages/MinistersPage";
 import { NewsPage } from "@/pages/NewsPage";
 import { PressReleasesPage } from "@/pages/PressReleasesPage";
+import { TVKManifestoPage } from "@/pages/TVKManifestoPage";
 import { TransfersPostingsPage } from "@/pages/TransfersPostingsPage";
 
 export default function App() {
@@ -119,31 +121,18 @@ export default function App() {
         <Route
           path="/departments"
           element={
-            <DepartmentSearchProvider>
+            <GovernmentSearchProvider>
               <AppLayout
                 fillViewport
-                title="Departments"
-                description="Tamil Nadu government departments and ministers."
+                title="Government"
+                description="Tamil Nadu council of ministers and their departments."
               />
-            </DepartmentSearchProvider>
+            </GovernmentSearchProvider>
           }
         >
-          <Route index element={<DepartmentsPage />} />
+          <Route index element={<GovernmentPage />} />
         </Route>
-        <Route
-          path="/ministers"
-          element={
-            <MinisterSearchProvider>
-              <AppLayout
-                fillViewport
-                title="Council of Ministers"
-                description="Ministers, designations, and portfolios."
-              />
-            </MinisterSearchProvider>
-          }
-        >
-          <Route index element={<MinistersPage />} />
-        </Route>
+        <Route path="/ministers" element={<Navigate to="/departments" replace />} />
         <Route
           path="/districts"
           element={
@@ -193,6 +182,47 @@ export default function App() {
           }
         >
           <Route index element={<MagazinePage />} />
+        </Route>
+        <Route
+          path="/govt-schemes"
+          element={
+            <GovtSchemesSearchProvider>
+              <AppLayout
+                fillViewport
+                title="Govt Schemes"
+                description={
+                  <>
+                    Tamil Nadu state government schemes, housing, and scholarships from{" "}
+                    <a
+                      href="https://schemesinindia.in/schemes/tamil-nadu"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      Schemes in India
+                    </a>
+                    .
+                  </>
+                }
+              />
+            </GovtSchemesSearchProvider>
+          }
+        >
+          <Route index element={<GovtSchemesPage />} />
+        </Route>
+        <Route
+          path="/tvk-manifesto"
+          element={
+            <TVKManifestoSearchProvider>
+              <AppLayout
+                fillViewport
+                title="TVK Manifesto"
+                description="Tamilaga Vetri Kazhagam election manifesto, grouped by category and section."
+              />
+            </TVKManifestoSearchProvider>
+          }
+        >
+          <Route index element={<TVKManifestoPage />} />
         </Route>
         <Route
           path="/news"

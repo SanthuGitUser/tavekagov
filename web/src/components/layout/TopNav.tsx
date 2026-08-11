@@ -24,6 +24,8 @@ export const navGroups: NavGroup[] = [
       { to: "/dashboard", label: "Dashboard" },
       { to: "/news", label: "News" },
       { to: "/magazine", label: "Magazine" },
+      { to: "/govt-schemes", label: "Govt Schemes" },
+      { to: "/tvk-manifesto", label: "TVK Manifesto" },
     ],
   },
   {
@@ -40,13 +42,8 @@ export const navGroups: NavGroup[] = [
     items: [
       { to: "/government-orders", label: "Gov Orders" },
       { to: "/transfers-postings", label: "Transfers" },
-      { to: "/departments", label: "Departments" },
+      { to: "/departments", label: "Government" },
     ],
-  },
-  {
-    id: "political",
-    label: "Political",
-    items: [{ to: "/ministers", label: "Ministers" }],
   },
   {
     id: "regional",

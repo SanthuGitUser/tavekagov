@@ -1,8 +1,8 @@
 {
   "date": "2026-08-09",
   "fetchedAt": "2026-08-10T14:59:28.179507+05:30",
-  "lastFetchedAt": "2026-08-10T14:59:28.179507+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-11T18:52:19.128129+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -18,7 +18,7 @@
   "response": {
     "status": "success",
     "totalResults": 4,
-    "apiReportedTotalResults": 9,
+    "apiReportedTotalResults": 8,
     "results": [
       {
         "article_id": "ac67ad69930bea61efcf5d259aeb0532",

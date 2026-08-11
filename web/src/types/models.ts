@@ -29,7 +29,7 @@ export type TnMinister = {
   id: number;
   name: string;
   designation: string;
-  portfolio: string | null;
+  portfolios: string[];
   photo_url: string | null;
   display_order: number;
   is_chief_minister: boolean;
@@ -80,6 +80,18 @@ export type Magazine = {
   url: string;
   created_at?: string;
   updated_at?: string;
+};
+
+export type TnGovtScheme = {
+  id: string;
+  title: string;
+  category: string;
+  benefit_summary: string;
+  updated_label: string | null;
+  is_popular: boolean;
+  detail_url: string;
+  display_order: number;
+  section: "state" | "housing" | "scholarships";
 };
 
 export type GovPressRelease = {
