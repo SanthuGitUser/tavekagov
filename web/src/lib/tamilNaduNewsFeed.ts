@@ -1,4 +1,4 @@
-import type { NewsArticle, NewsFeedResponse } from "@/types/news";
+import type { NewsArticle, NewsFeedResponse, NewsSourceQuery } from "@/types/news";
 import { getArticleDateInIst } from "@/lib/newsDateUtils";
 
 type NewsResponseFile = {
@@ -21,10 +21,21 @@ type NewsResponseFile = {
 };
 
 // One JSON file per publication day (IST): TN-News/Response JSON/YYYY-MM-DD.json
-const responseJsonFiles = import.meta.glob(
+const responseJsonLoaders = import.meta.glob(
   "../../../TN-News/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
-  { eager: true, import: "default" },
-) as Record<string, NewsResponseFile>;
+  { import: "default" },
+) as Record<string, () => Promise<NewsResponseFile>>;
+
+const dateToLoader = new Map<string, () => Promise<NewsResponseFile>>();
+
+for (const [path, loader] of Object.entries(responseJsonLoaders)) {
+  const date = extractPublicationDateFromPath(path);
+  if (date) dateToLoader.set(date, loader);
+}
+
+const availableNewsDates = [...dateToLoader.keys()].sort().reverse();
+const articlesByDateCache = new Map<string, NewsArticle[]>();
+let latestSourceQuery: NewsSourceQuery | null = null;
 
 function extractPublicationDateFromPath(path: string): string | null {
   const match = path.match(/(\d{4}-\d{2}-\d{2})\.json$/);
@@ -37,22 +48,73 @@ function extractResults(file: NewsResponseFile): NewsArticle[] {
   return [];
 }
 
-function extractRequestMeta(file: NewsResponseFile): NewsResponseFile["request"] | undefined {
-  return file.request;
+function extractSourceQuery(file: NewsResponseFile): NewsSourceQuery | null {
+  const params = file.request?.params ?? {};
+  return {
+    endpoint: file.request?.url ?? "https://newsdata.io/api/1/news",
+    q: params.q ?? "Tamil Nadu",
+    country: params.country ?? "in",
+    language: params.language ?? "en",
+  };
 }
 
-function buildFeed(): NewsFeedResponse {
-  const files = Object.entries(responseJsonFiles)
-    .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath));
+function normalizeDateRange(from: string, to: string): { from: string; to: string } {
+  return from <= to ? { from, to } : { from: to, to: from };
+}
 
+function isDateInRange(date: string, from: string, to: string): boolean {
+  const range = normalizeDateRange(from, to);
+  return date >= range.from && date <= range.to;
+}
+
+function getDatesInRange(from: string, to: string): string[] {
+  const range = normalizeDateRange(from, to);
+  return availableNewsDates.filter(
+    (date) => date >= range.from && date <= range.to,
+  );
+}
+
+async function loadArticlesForDate(date: string): Promise<NewsArticle[]> {
+  const cached = articlesByDateCache.get(date);
+  if (cached) return cached;
+
+  const loader = dateToLoader.get(date);
+  if (!loader) {
+    articlesByDateCache.set(date, []);
+    return [];
+  }
+
+  const file = await loader();
+  latestSourceQuery = extractSourceQuery(file) ?? latestSourceQuery;
+  const articles = extractResults(file);
+  articlesByDateCache.set(date, articles);
+  return articles;
+}
+
+export function getAvailableNewsDates(): string[] {
+  return availableNewsDates;
+}
+
+export function getLatestNewsDate(): string {
+  return availableNewsDates[0] ?? "";
+}
+
+export async function loadNewsArticlesForDateRange(
+  from: string,
+  to: string,
+): Promise<NewsArticle[]> {
+  if (!from || !to) return [];
+
+  const dates = getDatesInRange(from, to);
+  const batches = await Promise.all(dates.map((date) => loadArticlesForDate(date)));
   const seen = new Set<string>();
   const results: NewsArticle[] = [];
-  let latestRequest: NewsResponseFile["request"];
 
-  for (const [, file] of files) {
-    latestRequest = extractRequestMeta(file) ?? latestRequest;
+  for (const articles of batches) {
+    for (const article of articles) {
+      const articleDate = getArticleDateInIst(article);
+      if (!isDateInRange(articleDate, from, to)) continue;
 
-    for (const article of extractResults(file)) {
       const dedupeKey = article.article_id || article.link;
       if (!dedupeKey || seen.has(dedupeKey)) continue;
       seen.add(dedupeKey);
@@ -60,43 +122,22 @@ function buildFeed(): NewsFeedResponse {
     }
   }
 
-  results.sort((a, b) => b.pubDate.localeCompare(a.pubDate));
-
-  const articleDates = results.map(getArticleDateInIst).sort();
-  const fileDates = files
-    .map(([path]) => extractPublicationDateFromPath(path))
-    .filter((value): value is string => Boolean(value))
-    .sort();
-  const filterDate = articleDates.at(-1) ?? fileDates.at(-1) ?? "";
-  const params = latestRequest?.params ?? {};
-
-  return {
-    status: "success",
-    totalResults: results.length,
-    filterDate,
-    sourceQuery: {
-      endpoint: latestRequest?.url ?? "https://newsdata.io/api/1/news",
-      q: params.q ?? "Tamil Nadu",
-      country: params.country ?? "in",
-      language: params.language ?? "en",
-    },
-    results,
-  };
+  results.sort((left, right) => right.pubDate.localeCompare(left.pubDate));
+  return results;
 }
 
-export const tamilNaduNewsFeed = buildFeed();
-
-export function getAvailableNewsDates(): string[] {
-  const dates = new Set<string>();
-
-  for (const path of Object.keys(responseJsonFiles)) {
-    const fileDate = extractPublicationDateFromPath(path);
-    if (fileDate) dates.add(fileDate);
-  }
-
-  for (const article of tamilNaduNewsFeed.results) {
-    dates.add(getArticleDateInIst(article));
-  }
-
-  return [...dates].sort().reverse();
+export function getTamilNaduNewsFeedMeta(): Pick<
+  NewsFeedResponse,
+  "status" | "filterDate" | "sourceQuery"
+> {
+  return {
+    status: "success",
+    filterDate: getLatestNewsDate(),
+    sourceQuery: latestSourceQuery ?? {
+      endpoint: "https://newsdata.io/api/1/news",
+      q: "Tamil Nadu",
+      country: "in",
+      language: "en",
+    },
+  };
 }

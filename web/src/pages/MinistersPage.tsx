@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import { useSearchParams } from "react-router-dom";
 
 import { DepartmentTile } from "@/components/government/DepartmentTile";
 import { MinisterDetailPanel } from "@/components/government/MinisterDetailPanel";
@@ -8,14 +7,11 @@ import { useGovernmentSearch } from "@/context/GovernmentSearchContext";
 import {
   buildMinisterDepartmentGroups,
   filterMinisterDepartmentGroups,
-  resolveMinisterForDepartment,
 } from "@/lib/governmentGroupUtils";
 import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
-import { buildMinistersByKey, tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
+import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
 
-export function GovernmentPage() {
-  const [searchParams] = useSearchParams();
-  const viewMode = searchParams.get("view") === "departments" ? "departments" : "ministers";
+export function MinistersPage() {
   const governmentSearch = useGovernmentSearch();
   const search = governmentSearch?.search ?? "";
 
@@ -27,8 +23,6 @@ export function GovernmentPage() {
       ),
     [],
   );
-
-  const ministersByKey = useMemo(() => buildMinistersByKey(tamilNaduMinistersFeed.ministers), []);
 
   const filteredGroups = useMemo(
     () => filterMinisterDepartmentGroups(groups, search),
@@ -62,59 +56,11 @@ export function GovernmentPage() {
 
   const visibleUnassignedCount = filteredUnassignedDepartments.length;
 
-  const filteredDepartmentGrid = useMemo(() => {
-    if (viewMode !== "departments") return [];
-    const normalizedQuery = search.trim().toLowerCase();
-    if (!normalizedQuery) return tamilNaduDepartmentsFeed.departments;
-    return tamilNaduDepartmentsFeed.departments.filter((department) => {
-      const haystack = [
-        department.name,
-        department.minister_name ?? "",
-        department.dep_id_encoded,
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase();
-      return haystack.includes(normalizedQuery);
-    });
-  }, [search, viewMode]);
-
-  if (viewMode === "departments") {
-    if (filteredDepartmentGrid.length === 0) {
-      return (
-        <Card>
-          <CardContent className="p-8 text-center text-sm text-muted-foreground">
-            No departments match your search.
-          </CardContent>
-        </Card>
-      );
-    }
-
-    return (
-      <div className="flex min-h-0 flex-1 flex-col">
-        <Card className="flex min-h-0 flex-1 flex-col">
-          <CardContent className="min-h-0 space-y-4 overflow-y-auto p-5 sm:p-6">
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {filteredDepartmentGrid.map((department) => (
-                <DepartmentTile
-                  key={department.id}
-                  department={department}
-                  showMinister
-                  minister={resolveMinisterForDepartment(department.minister_name, ministersByKey)}
-                />
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-    );
-  }
-
   if (filteredGroups.length === 0 && visibleUnassignedCount === 0) {
     return (
       <Card>
         <CardContent className="p-8 text-center text-sm text-muted-foreground">
-          No ministers or departments match your search.
+          No ministers match your search.
         </CardContent>
       </Card>
     );
@@ -128,7 +74,8 @@ export function GovernmentPage() {
             <div className="space-y-1">
               <h2 className="text-base font-semibold">Departments</h2>
               <p className="text-sm text-muted-foreground">
-                These departments are present in the directory but aren&apos;t currently mapped to a minister.
+                These departments are present in the directory but aren&apos;t currently mapped to a
+                minister.
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">

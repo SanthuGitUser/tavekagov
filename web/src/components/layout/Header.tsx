@@ -109,9 +109,9 @@ function TVKManifestoHeader({
   search: string;
   onSearchChange: (value: string) => void;
 }) {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const categories = getTVKManifestoCategories();
+  const [searchParams] = useSearchParams();
   const rawSelectedCategory = searchParams.get("category") ?? "all";
+  const categories = getTVKManifestoCategories();
   const selectedCategory =
     rawSelectedCategory === "all" || categories.includes(rawSelectedCategory)
       ? rawSelectedCategory
@@ -120,55 +120,12 @@ function TVKManifestoHeader({
   const filteredGroups = filterTVKManifestoGroups(categoryGroups, search);
   const filteredSectionCount = countTVKManifestoChildSections(filteredGroups);
 
-  function setCategory(category: string) {
-    const next = new URLSearchParams(searchParams);
-    if (category === "all") next.set("category", "all");
-    else next.set("category", category);
-    next.delete("section");
-    setSearchParams(next, { replace: true });
-  }
-
   return (
     <HeaderShell>
-      <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:gap-4">
-        <div className="min-w-0 shrink-0">
-          <HeaderTitleBlock title={title} description={description} />
-        </div>
-
-        <div className="flex min-w-0 flex-1 flex-wrap items-center justify-center gap-2">
-          <div className="inline-flex max-w-full flex-wrap gap-1 rounded-full bg-muted/80 p-1 shadow-inner">
-            <button
-              type="button"
-              onClick={() => setCategory("all")}
-              className={cn(
-                "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
-                selectedCategory === "all"
-                  ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
-                  : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
-              )}
-            >
-              All
-            </button>
-            {categories.map((category) => (
-              <button
-                key={category}
-                type="button"
-                onClick={() => setCategory(category)}
-                className={cn(
-                  "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
-                  selectedCategory === category
-                    ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
-                    : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
-                )}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex w-full shrink-0 flex-wrap items-center gap-2 sm:w-auto lg:justify-end">
-          <div className="relative w-full sm:w-56">
+      <div className={headerInnerClassName}>
+        <HeaderTitleBlock title={title} description={description} />
+        <div className="flex w-full min-w-0 flex-wrap items-center gap-2 sm:w-auto sm:flex-1 sm:justify-end">
+          <div className="relative min-w-0 flex-1 sm:max-w-sm">
             <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               type="search"
@@ -179,7 +136,7 @@ function TVKManifestoHeader({
               aria-label="Search manifesto"
             />
           </div>
-          <p className="shrink-0 whitespace-nowrap text-xs tabular-nums text-muted-foreground">
+          <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
             {filteredGroups.length} group{filteredGroups.length === 1 ? "" : "s"} · {filteredSectionCount} of{" "}
             {tvkManifestoFeed.sectionCount} sections
           </p>
@@ -206,7 +163,6 @@ export function Header({ title, description }: HeaderProps) {
   const tvkManifestoSearch = useTVKManifestoSearch();
   const dashboardDateRange = useDashboardDateRange();
   const location = useLocation();
-  const [searchParams, setSearchParams] = useSearchParams();
   const pageSearch =
     pressReleaseSearch
     ?? govPressReleaseSearch
@@ -219,23 +175,19 @@ export function Header({ title, description }: HeaderProps) {
     ?? governmentSearch
     ?? govtSchemesSearch;
 
-  const isGovernmentPage = location.pathname === "/departments";
-  const governmentViewMode =
-    isGovernmentPage && searchParams.get("view") === "departments" ? "departments" : "ministers";
-
-  function setGovernmentViewMode(nextMode: "ministers" | "departments") {
-    const next = new URLSearchParams(searchParams);
-    if (nextMode === "ministers") next.delete("view");
-    else next.set("view", "departments");
-    setSearchParams(next, { replace: true });
-  }
+  const isMinistersPage = location.pathname === "/ministers";
+  const isDepartmentsPage = location.pathname === "/departments";
 
   let searchPlaceholder = constituencySearch
     ? "Search constituencies…"
     : districtSearch
     ? "Search districts…"
     : governmentSearch
-      ? "Search ministers or departments…"
+      ? isDepartmentsPage
+        ? "Search departments…"
+        : isMinistersPage
+          ? "Search ministers…"
+          : "Search ministers or departments…"
         : govtSchemesSearch
           ? "Search schemes…"
           : magazineSearch
@@ -255,7 +207,11 @@ export function Header({ title, description }: HeaderProps) {
     : districtSearch
     ? "Search districts"
     : governmentSearch
-      ? "Search ministers and departments"
+      ? isDepartmentsPage
+        ? "Search departments"
+        : isMinistersPage
+          ? "Search ministers"
+          : "Search ministers and departments"
         : govtSchemesSearch
           ? "Search schemes"
           : magazineSearch
@@ -269,11 +225,6 @@ export function Header({ title, description }: HeaderProps) {
                 : govPressReleaseSearch
                   ? "Search press release images"
                   : "Search press releases";
-
-  if (governmentSearch && isGovernmentPage && governmentViewMode === "departments") {
-    searchPlaceholder = "Search departments…";
-    searchAriaLabel = "Search departments";
-  }
 
   const searchField = pageSearch ? (
     <div className="relative w-full max-w-sm">
@@ -573,49 +524,6 @@ export function Header({ title, description }: HeaderProps) {
   }
 
   if (magazineSearch || districtSearch || governmentSearch) {
-    if (governmentSearch && isGovernmentPage) {
-      return (
-        <HeaderShell>
-          <div className={headerInnerClassName}>
-            <HeaderTitleBlock title={title} description={description} />
-            <div className="flex w-full min-w-0 flex-wrap items-center justify-end gap-2 sm:w-auto sm:flex-1">
-              <div className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-muted/80 p-1 shadow-inner">
-                <button
-                  type="button"
-                  onClick={() => setGovernmentViewMode("ministers")}
-                  className={cn(
-                    "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
-                    governmentViewMode === "ministers"
-                      ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
-                      : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
-                  )}
-                  aria-pressed={governmentViewMode === "ministers"}
-                >
-                  Ministers
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setGovernmentViewMode("departments")}
-                  className={cn(
-                    "rounded-full px-3 py-1.5 text-xs font-medium transition-all",
-                    governmentViewMode === "departments"
-                      ? "bg-card text-foreground shadow-sm ring-1 ring-border/60"
-                      : "text-muted-foreground hover:bg-card/50 hover:text-foreground",
-                  )}
-                  aria-pressed={governmentViewMode === "departments"}
-                >
-                  Departments
-                </button>
-              </div>
-              <div className="flex w-full min-w-0 flex-wrap items-center justify-end gap-2 sm:w-auto sm:shrink-0">
-                <div className="w-full min-w-0 sm:w-72">{searchField}</div>
-              </div>
-            </div>
-          </div>
-        </HeaderShell>
-      );
-    }
-
     return (
       <HeaderShell>
         <div className={headerInnerClassName}>

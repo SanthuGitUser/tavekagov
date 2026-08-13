@@ -1,4 +1,5 @@
-import { useMemo } from "react";
+import { ChevronDown, ChevronRight } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -25,7 +26,9 @@ export function TVKManifestoPage() {
   const groups = useMemo(() => {
     const categoryGroups = getTVKManifestoGroups(selectedCategory === "all" ? null : selectedCategory);
     return filterTVKManifestoGroups(categoryGroups, search);
-  }, [selectedCategory, search]);  const selectedChildId = searchParams.get("section");
+  }, [selectedCategory, search]);
+  const selectedChildId = searchParams.get("section");
+  const [expandedGroupIds, setExpandedGroupIds] = useState<Set<string>>(() => new Set());
 
   const { activeGroup, activeChild } = useMemo(() => {
     const firstGroup = groups[0] ?? null;
@@ -42,6 +45,25 @@ export function TVKManifestoPage() {
 
     return { activeGroup: firstGroup, activeChild: firstChild };
   }, [groups, selectedChildId]);
+
+  useEffect(() => {
+    if (!activeGroup) return;
+    setExpandedGroupIds((current) => {
+      if (current.has(activeGroup.id)) return current;
+      const next = new Set(current);
+      next.add(activeGroup.id);
+      return next;
+    });
+  }, [activeGroup?.id]);
+
+  function toggleGroup(groupId: string) {
+    setExpandedGroupIds((current) => {
+      const next = new Set(current);
+      if (next.has(groupId)) next.delete(groupId);
+      else next.add(groupId);
+      return next;
+    });
+  }
 
   if (tvkManifestoFeed.sectionCount === 0) {
     return (
@@ -67,47 +89,88 @@ export function TVKManifestoPage() {
         <div className="flex min-h-0 flex-1 flex-col">
           <div className="flex min-h-0 flex-1 flex-col gap-3 lg:flex-row">
             <aside className="flex min-h-0 shrink-0 flex-col lg:w-[26rem]">
-              <Card className="min-h-0 flex-1">
-                <CardContent className="max-h-64 min-h-0 overflow-y-auto p-3 lg:max-h-full">
-                  <div className="space-y-2">
+              <Card className="min-h-0 flex-1 border-border bg-muted/40">
+                <CardContent className="max-h-64 min-h-0 overflow-y-auto p-2.5 lg:max-h-full">
+                  <div className="space-y-2.5">
                     {groups.map((group) => {
                       const isActiveGroup = group.id === activeGroup?.id;
+                      const isExpanded = expandedGroupIds.has(group.id);
+
                       return (
-                        <details key={group.id} open={isActiveGroup} className="group">
-                          <summary className="cursor-pointer list-none rounded-md px-2 py-2 text-sm font-semibold text-foreground hover:bg-accent/20 [&::-webkit-details-marker]:hidden">
-                            {group.title}
-                            <span className="ml-2 text-xs font-medium text-muted-foreground">
-                              ({group.children.length})
+                        <div
+                          key={group.id}
+                          className={cn(
+                            "overflow-hidden rounded-lg border shadow-sm transition-colors",
+                            isActiveGroup
+                              ? "border-primary bg-card ring-1 ring-primary/40"
+                              : "border-border bg-card hover:border-foreground/20",
+                          )}
+                        >
+                          <button
+                            type="button"
+                            onClick={() => toggleGroup(group.id)}
+                            className={cn(
+                              "flex w-full items-start gap-2.5 border-b px-3 py-3 text-left transition-colors",
+                              isExpanded ? "border-border" : "border-transparent",
+                              isActiveGroup
+                                ? "bg-primary/15 text-foreground"
+                                : "bg-muted/70 text-foreground hover:bg-muted",
+                            )}
+                            aria-expanded={isExpanded}
+                          >
+                            {isExpanded ? (
+                              <ChevronDown
+                                className={cn(
+                                  "mt-0.5 h-4 w-4 shrink-0",
+                                  isActiveGroup ? "text-primary" : "text-foreground",
+                                )}
+                              />
+                            ) : (
+                              <ChevronRight
+                                className={cn(
+                                  "mt-0.5 h-4 w-4 shrink-0",
+                                  isActiveGroup ? "text-primary" : "text-foreground",
+                                )}
+                              />
+                            )}
+                            <span className="min-w-0 flex-1 leading-snug">
+                              <span className="text-sm font-semibold">{group.title}</span>
+                              <span className="ml-1.5 text-xs font-semibold text-foreground/70">
+                                ({group.children.length})
+                              </span>
                             </span>
-                          </summary>
-                          <div className="mt-1 space-y-1 pl-2">
-                            {group.children.map((child) => {
-                              const isActiveChild = child.id === activeChild?.id;
-                              return (
-                                <button
-                                  key={child.id}
-                                  type="button"
-                                  onClick={() =>
-                                    setSearchParams(
-                                      selectedCategory === "all"
-                                        ? { category: "all", section: child.id }
-                                        : { category: selectedCategory, section: child.id },
-                                      { replace: true },
-                                    )
-                                  }
-                                  className={cn(
-                                    "w-full rounded-md px-2 py-2 text-left text-xs font-medium transition-colors",
-                                    isActiveChild
-                                      ? "bg-accent/30 text-foreground ring-1 ring-border/60"
-                                      : "text-muted-foreground hover:bg-accent/15 hover:text-foreground",
-                                  )}
-                                >
-                                  {child.title}
-                                </button>
-                              );
-                            })}
-                          </div>
-                        </details>
+                          </button>
+
+                          {isExpanded ? (
+                            <div className="space-y-1 bg-muted/50 px-2 py-2">
+                              {group.children.map((child) => {
+                                const isActiveChild = child.id === activeChild?.id;
+                                return (
+                                  <button
+                                    key={child.id}
+                                    type="button"
+                                    onClick={() =>
+                                      setSearchParams(
+                                        selectedCategory === "all"
+                                          ? { category: "all", section: child.id }
+                                          : { category: selectedCategory, section: child.id },
+                                        { replace: true },
+                                      )
+                                    }
+                                    className={cn(
+                                      "w-full rounded-md border px-2.5 py-2.5 text-left text-xs leading-snug transition-colors sm:text-[13px]",
+                                      isActiveChild
+                                        ? "border-primary bg-primary text-primary-foreground font-semibold shadow-sm"
+                                        : "border-transparent bg-card text-foreground/90 hover:border-border hover:bg-background",
+                                    )}
+                                  >
+                                    {child.title}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          ) : null}
+                        </div>
                       );
                     })}
                   </div>
@@ -124,32 +187,38 @@ export function TVKManifestoPage() {
                 </Card>
               ) : (
                 <Card>
-                  <CardContent className="space-y-3 p-4">
-                    <div className="space-y-1">
-                      <p className="text-[11px] font-medium text-muted-foreground">
+                  <CardContent className="space-y-4 p-5 sm:p-6">
+                    <div className="space-y-1.5">
+                      <p className="text-xs font-medium text-muted-foreground sm:text-sm">
                         {activeGroup.title}
                       </p>
-                      <h3 className="text-sm font-semibold leading-snug text-foreground">
+                      <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
                         {activeChild.title}
                       </h3>
                     </div>
 
-                    <ul className="space-y-2">
-                      {activeChild.points.map((point, index) => (
-                        <li
-                          key={`${point.number ?? ""}||${point.title}`}
-                          className="rounded-md border border-border/60 bg-background/40 px-3 py-2"
-                        >
-                          <p className="text-xs font-semibold leading-snug text-foreground">
-                            {index + 1}. {point.title}
-                          </p>
-                          {point.description ? (
-                            <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground">
-                              {point.description}
-                            </p>
-                          ) : null}
+                    <ul className="space-y-3">
+                      {activeChild.points.length === 0 ? (
+                        <li className="rounded-md border border-border/60 bg-muted/40 px-4 py-4 text-center text-sm text-muted-foreground sm:text-base">
+                          This section has no manifesto points. It is a divider page in the source PDF.
                         </li>
-                      ))}
+                      ) : (
+                        activeChild.points.map((point, index) => (
+                          <li
+                            key={`${point.number ?? ""}||${point.title}`}
+                            className="rounded-md border border-border/60 bg-background/40 px-4 py-3"
+                          >
+                            <p className="text-sm font-semibold leading-snug text-foreground sm:text-base">
+                              {index + 1}. {point.title}
+                            </p>
+                            {point.description ? (
+                              <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+                                {point.description}
+                              </p>
+                            ) : null}
+                          </li>
+                        ))
+                      )}
                     </ul>
                   </CardContent>
                 </Card>

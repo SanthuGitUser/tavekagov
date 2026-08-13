@@ -100,6 +100,14 @@ function asUpperAlphaIndex(value: unknown): number | null {
   return normalized.charCodeAt(0) - "A".charCodeAt(0) + 1;
 }
 
+function isDividerSection(rawSection: RawManifestoRow["section"]): boolean {
+  const title = asTrimmedString(rawSection?.title) ?? "";
+  if (/divider/i.test(title)) return true;
+
+  const rawPoints = Array.isArray(rawSection?.points) ? rawSection.points : [];
+  return rawPoints.length === 0;
+}
+
 function buildGroups(rows: RawManifestoRow[]): TVKManifestoGroup[] {
   const groupMap = new Map<
     string,
@@ -117,7 +125,7 @@ function buildGroups(rows: RawManifestoRow[]): TVKManifestoGroup[] {
 
   for (const row of rows) {
     const rawSection = row.section;
-    if (!rawSection) continue;
+    if (!rawSection || isDividerSection(rawSection)) continue;
 
     const category: TVKManifestoGroup["category"] =
       normalizeCategory(rawSection.category) ?? "Other";
@@ -196,7 +204,10 @@ function buildGroups(rows: RawManifestoRow[]): TVKManifestoGroup[] {
             return left.title.localeCompare(right.title);
           }),
         }))
+        .filter((child) => child.points.length > 0)
         .sort((left, right) => left.title.localeCompare(right.title));
+
+      if (children.length === 0) return null;
 
       return {
         ...group,
@@ -204,6 +215,7 @@ function buildGroups(rows: RawManifestoRow[]): TVKManifestoGroup[] {
         _sortSectionNumber: sortSectionNumber,
       };
     })
+    .filter((group): group is NonNullable<typeof group> => group !== null)
     .sort((left, right) => {
       const leftIndex = categoryOrder.indexOf(left.category);
       const rightIndex = categoryOrder.indexOf(right.category);

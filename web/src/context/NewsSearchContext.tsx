@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
 
 import type { NewsDateRange } from "@/components/news/NewsDatePicker";
-import { tamilNaduNewsFeed as feed } from "@/lib/tamilNaduNewsFeed";
+import { getLatestNewsDate } from "@/lib/tamilNaduNewsFeed";
 
 type NewsSearchContextValue = {
   search: string;
@@ -15,7 +15,7 @@ type NewsSearchContextValue = {
 
 const NewsSearchContext = createContext<NewsSearchContextValue | null>(null);
 
-const initialDate = feed.filterDate;
+const initialDate = getLatestNewsDate();
 
 export function NewsSearchProvider({ children }: { children: ReactNode }) {
   const [search, setSearch] = useState("");
@@ -23,8 +23,8 @@ export function NewsSearchProvider({ children }: { children: ReactNode }) {
     from: initialDate,
     to: initialDate,
   });
-  const [filteredCount, setFilteredCount] = useState(feed.totalResults);
-  const [totalCount, setTotalCount] = useState(feed.totalResults);
+  const [filteredCount, setFilteredCount] = useState(0);
+  const [totalCount, setTotalCount] = useState(0);
 
   const setArticleCounts = useCallback((filtered: number, total: number) => {
     setFilteredCount(filtered);
@@ -41,7 +41,7 @@ export function NewsSearchProvider({ children }: { children: ReactNode }) {
       totalCount,
       setArticleCounts,
     }),
-    [search, filterDateRange, filteredCount, totalCount],
+    [search, filterDateRange, filteredCount, totalCount, setArticleCounts],
   );
 
   return (

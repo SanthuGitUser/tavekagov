@@ -1,8 +1,10 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { ConstituencySearchProvider } from "@/context/ConstituencySearchContext";
 
 import { AppLayout } from "@/components/layout/AppLayout";
+import { PageLoading } from "@/components/shared/PageLoading";
 import { SourceLink } from "@/components/shared/SourceLink";
 import { DashboardDateRangeProvider } from "@/context/DashboardDateRangeContext";
 import { GovernmentSearchProvider } from "@/context/GovernmentSearchContext";
@@ -21,17 +23,21 @@ import { TransfersPostingsSearchProvider } from "@/context/TransfersPostingsSear
 import { AboutPage } from "@/pages/AboutPage";
 import { ConstituenciesPage } from "@/pages/ConstituenciesPage";
 import { DashboardPage } from "@/pages/DashboardPage";
-import { GovernmentPage } from "@/pages/GovernmentPage";
+import { MinistersPage } from "@/pages/MinistersPage";
+import { DepartmentsPage } from "@/pages/DepartmentsPage";
 import { DistrictsPage } from "@/pages/DistrictsPage";
 import { GovPressReleasesPage } from "@/pages/GovPressReleasesPage";
 import { GovtSchemesPage } from "@/pages/GovtSchemesPage";
 import { GovernmentOrdersPage } from "@/pages/GovernmentOrdersPage";
 import { HomePage } from "@/pages/HomePage";
 import { MagazinePage } from "@/pages/MagazinePage";
-import { NewsPage } from "@/pages/NewsPage";
 import { PressReleasesPage } from "@/pages/PressReleasesPage";
 import { TVKManifestoPage } from "@/pages/TVKManifestoPage";
 import { TransfersPostingsPage } from "@/pages/TransfersPostingsPage";
+
+const NewsPage = lazy(() =>
+  import("@/pages/NewsPage").then((module) => ({ default: module.NewsPage })),
+);
 
 export default function App() {
   return (
@@ -157,15 +163,15 @@ export default function App() {
           <Route index element={<TransfersPostingsPage />} />
         </Route>
         <Route
-          path="/departments"
+          path="/ministers"
           element={
             <GovernmentSearchProvider>
               <AppLayout
                 fillViewport
-                title="Government"
+                title="Ministers"
                 description={
                   <>
-                    Tamil Nadu council of ministers and departments from{" "}
+                    Tamil Nadu council of ministers from{" "}
                     <SourceLink href="https://www.tn.gov.in/minister_list.php">
                       tn.gov.in
                     </SourceLink>
@@ -176,9 +182,30 @@ export default function App() {
             </GovernmentSearchProvider>
           }
         >
-          <Route index element={<GovernmentPage />} />
+          <Route index element={<MinistersPage />} />
         </Route>
-        <Route path="/ministers" element={<Navigate to="/departments" replace />} />
+        <Route
+          path="/departments"
+          element={
+            <GovernmentSearchProvider>
+              <AppLayout
+                fillViewport
+                title="Departments"
+                description={
+                  <>
+                    Tamil Nadu government departments from{" "}
+                    <SourceLink href="https://www.tn.gov.in/department_list.php">
+                      tn.gov.in
+                    </SourceLink>
+                    .
+                  </>
+                }
+              />
+            </GovernmentSearchProvider>
+          }
+        >
+          <Route index element={<DepartmentsPage />} />
+        </Route>
         <Route
           path="/districts"
           element={
@@ -285,6 +312,7 @@ export default function App() {
           element={
             <NewsSearchProvider>
               <AppLayout
+                fillViewport
                 title="Tamil Nadu News"
                 description={
                   <>
@@ -296,7 +324,14 @@ export default function App() {
             </NewsSearchProvider>
           }
         >
-          <Route index element={<NewsPage />} />
+          <Route
+            index
+            element={
+              <Suspense fallback={<PageLoading label="Loading news…" />}>
+                <NewsPage />
+              </Suspense>
+            }
+          />
         </Route>
         <Route
           path="/about"
