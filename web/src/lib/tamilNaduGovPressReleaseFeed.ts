@@ -265,14 +265,6 @@ export function getGovPressReleases(): GovPressRelease[] {
   return tamilNaduGovPressReleaseFeed.releases;
 }
 
-export function getGovPressReleaseMinisters(): TnMinister[] {
-  return tamilNaduGovPressReleaseFeed.ministers;
-}
-
-export function getGovPressReleaseDepartments(): TnDept[] {
-  return tamilNaduGovPressReleaseFeed.departments;
-}
-
 export function getGovPressReleasesForDate(date: string): GovPressRelease[] {
   return getGovPressReleases().filter((release) => release.release_date === date);
 }

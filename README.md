@@ -32,6 +32,9 @@ Open the URL shown in the terminal (usually `http://localhost:5173`). JSON data 
 | District map boundaries | [india-maps-data](https://github.com/udit-001/india-maps-data) | `TN-Map/tamil-nadu-districts.geojson` | Districts (map) |
 | Tamil Arasu magazine | [Tamil Digital Library](https://tamildigitallibrary.in/) | `TN-TVA-Magazine/manifests/magazine.json` (+ optional `Response JSON/`) | Magazine |
 | Tamil Nadu news | [NewsData.io](https://newsdata.io/) | `TN-News/Response JSON/` | News |
+| Government schemes | [Schemes in India](https://schemesinindia.in/schemes/tamil-nadu) | `TN-Govt-Schemes/manifests/tn_govt_schemes.json` | Government Schemes |
+| Assembly constituencies | [assembly.tn.gov.in](https://assembly.tn.gov.in/17thassembly_members.php) | `TN-Constituencies/manifests/tn_constituencies.json` | Constituencies |
+| TVK election manifesto | PDF extraction (manual) | `TN-TVK-Manifesto/manifests/tvk_manifesto.json` | TVK Manifesto |
 
 Daily scrapers write one JSON file per date under each folder's `Response JSON/`. Government orders use one JSON file per department. Directory syncs (departments, ministers, districts) and the magazine manifest are single snapshot files refreshed by scheduled jobs.
 
@@ -76,6 +79,9 @@ tavekagov/
 ├── TN-GOV_Districts/             # District directory sync
 ├── TN-TVA-Magazine/              # Tamil Arasu magazine sync
 ├── TN-News/                      # Daily news fetch (NewsData.io)
+├── TN-Constituencies/            # 17th assembly constituency sync
+├── TN-Govt-Schemes/              # Tamil Nadu government schemes sync
+├── TN-TVK-Manifesto/             # TVK manifesto JSON (manual PDF extract)
 ├── scripts/                      # Utility scripts (e.g. GitHub Pages setup)
 └── .github/workflows/            # CI: deploy web
 ```
@@ -140,6 +146,11 @@ python tn_dept_sync.py
 | `tn_transfers_postings_sync.py` | `TN-IAS_Transfers-Postings/` | `Response JSON/YYYY-MM-DD.json` |
 | `tn_magazine_sync.py` | `TN-TVA-Magazine/` | `manifests/magazine.json` (+ daily JSON) |
 | `fetch_tamil_nadu_news.py` | `TN-News/Code/` | `TN-News/Response JSON/YYYY-MM-DD.json` |
+| `tn_constituencies_sync.py` | `TN-Constituencies/` | `manifests/tn_constituencies.json` |
+| `tn_govt_schemes_sync.py` | `TN-Govt-Schemes/` | `manifests/tn_govt_schemes.json` |
+| `tn_ministers_wikipedia_portfolios_sync.py` | `TN-GOV_Council Of Ministers/` | `manifests/tn_ministers_wikipedia_portfolios.json` |
+| `tn_ministers_merge_wiki_portfolios.py` | `TN-GOV_Council Of Ministers/` | merges portfolios into `manifests/tn_ministers.json` |
+| `tn_wiki_departments_ministers_sync.py` | `TN-GOV_Departments/` | `manifests/tn_wiki_departments_ministers.json` |
 
 ### 3. Run the web dashboard locally
 
@@ -185,16 +196,14 @@ See [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) for permissions, deploy tri
 Built with Vite, React 19, TypeScript, Tailwind CSS v4, and TanStack Table. Pages include:
 
 - **Home** — Welcome links to Dashboard and Districts
-- **Dashboard** — KPI stat cards
-- **Press Releases** — DIPR releases with search, PDF links, and department/minister browse tabs
-- **Press Releases Images** — Government press release photos from tn.gov.in with category filters
-- **Government Orders** — Department G.O.s with timeline and table views
-- **Transfers & Postings** — IAS G.O.s
-- **Departments, Ministers** — Directory listings
-- **Districts** — Interactive 2D map (38 districts, 234 constituencies), live weather, searchable district tiles with population, area, and constituency counts
-- **Magazine** — Tamil Arasu issues from the Tamil Digital Library
-- **News** — Curated Tamil Nadu news headlines
+- **Dashboard** — KPI stat cards with optional date range
+- **News** — Curated Tamil Nadu news headlines (one day loaded at a time)
+- **Govt Publications** — Press releases, press release images, government orders, IAS transfers and postings, government schemes, magazines
+- **Govt Administration** — Ministers, departments, constituencies, districts (interactive map with weather)
+- **TVK Manifesto** — Tamilaga Vetri Kazhagam election manifesto grouped by Aram, Inbam, and Porul
 - **About** — Project overview and data sources
+
+Legacy `/government` URLs redirect to `/ministers`. Unknown routes show a 404 page.
 
 ## Deployment
 

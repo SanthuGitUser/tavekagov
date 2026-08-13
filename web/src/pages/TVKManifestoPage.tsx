@@ -2,31 +2,64 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
+import { PageLoading } from "@/components/shared/PageLoading";
 import { Card, CardContent } from "@/components/ui/card";
 import { useTVKManifestoSearch } from "@/context/TVKManifestoSearchContext";
 import { filterTVKManifestoGroups } from "@/lib/tvkManifestoFilterUtils";
-import { cn } from "@/lib/utils";
 import {
-  getTVKManifestoCategories,
-  getTVKManifestoGroups,
-  tvkManifestoFeed,
+  getTVKManifestoCategoriesFrom,
+  getTVKManifestoGroupsFrom,
+  loadTVKManifestoFeed,
+  type TVKManifestoFeedData,
 } from "@/lib/tvkManifestoFeed";
+import { cn } from "@/lib/utils";
 
 export function TVKManifestoPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const manifestoSearch = useTVKManifestoSearch();
   const search = manifestoSearch?.search ?? "";
+  const [feedData, setFeedData] = useState<TVKManifestoFeedData | null>(null);
+  const [isLoadingFeed, setIsLoadingFeed] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
-  const categories = useMemo(() => getTVKManifestoCategories(), []);
+  useEffect(() => {
+    let cancelled = false;
+    setIsLoadingFeed(true);
+    setLoadError(null);
+
+    loadTVKManifestoFeed()
+      .then((data) => {
+        if (!cancelled) setFeedData(data);
+      })
+      .catch(() => {
+        if (!cancelled) setLoadError("Unable to load manifesto data.");
+      })
+      .finally(() => {
+        if (!cancelled) setIsLoadingFeed(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const categories = useMemo(
+    () => (feedData ? getTVKManifestoCategoriesFrom(feedData) : []),
+    [feedData],
+  );
   const rawSelectedCategory = searchParams.get("category") ?? "all";
   const selectedCategory =
     rawSelectedCategory === "all" || categories.includes(rawSelectedCategory)
       ? rawSelectedCategory
       : "all";
   const groups = useMemo(() => {
-    const categoryGroups = getTVKManifestoGroups(selectedCategory === "all" ? null : selectedCategory);
+    if (!feedData) return [];
+    const categoryGroups = getTVKManifestoGroupsFrom(
+      feedData,
+      selectedCategory === "all" ? null : selectedCategory,
+    );
     return filterTVKManifestoGroups(categoryGroups, search);
-  }, [selectedCategory, search]);
+  }, [feedData, selectedCategory, search]);
   const selectedChildId = searchParams.get("section");
   const [expandedGroupIds, setExpandedGroupIds] = useState<Set<string>>(() => new Set());
 
@@ -65,11 +98,16 @@ export function TVKManifestoPage() {
     });
   }
 
-  if (tvkManifestoFeed.sectionCount === 0) {
+  if (isLoadingFeed) {
+    return <PageLoading label="Loading manifesto…" />;
+  }
+
+  if (loadError || !feedData || feedData.sectionCount === 0) {
     return (
       <Card>
         <CardContent className="p-8 text-center text-sm text-muted-foreground">
-          No manifesto content found. Ensure `TN-TVK-Manifesto/manifests/tvk_manifesto.json` is present.
+          {loadError ??
+            "No manifesto content found. Ensure `TN-TVK-Manifesto/manifests/tvk_manifesto.json` is present."}
         </CardContent>
       </Card>
     );
@@ -157,6 +195,7 @@ export function TVKManifestoPage() {
                                         { replace: true },
                                       )
                                     }
+                                    aria-current={isActiveChild ? "true" : undefined}
                                     className={cn(
                                       "w-full rounded-md border px-2.5 py-2.5 text-left text-xs leading-snug transition-colors sm:text-[13px]",
                                       isActiveChild
@@ -198,27 +237,21 @@ export function TVKManifestoPage() {
                     </div>
 
                     <ul className="space-y-3">
-                      {activeChild.points.length === 0 ? (
-                        <li className="rounded-md border border-border/60 bg-muted/40 px-4 py-4 text-center text-sm text-muted-foreground sm:text-base">
-                          This section has no manifesto points. It is a divider page in the source PDF.
-                        </li>
-                      ) : (
-                        activeChild.points.map((point, index) => (
-                          <li
-                            key={`${point.number ?? ""}||${point.title}`}
-                            className="rounded-md border border-border/60 bg-background/40 px-4 py-3"
-                          >
-                            <p className="text-sm font-semibold leading-snug text-foreground sm:text-base">
-                              {index + 1}. {point.title}
+                      {activeChild.points.map((point, index) => (
+                        <li
+                          key={`${point.number ?? ""}||${point.title}`}
+                          className="rounded-md border border-border/60 bg-background/40 px-4 py-3"
+                        >
+                          <p className="text-sm font-semibold leading-snug text-foreground sm:text-base">
+                            {index + 1}. {point.title}
+                          </p>
+                          {point.description ? (
+                            <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+                              {point.description}
                             </p>
-                            {point.description ? (
-                              <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-                                {point.description}
-                              </p>
-                            ) : null}
-                          </li>
-                        ))
-                      )}
+                          ) : null}
+                        </li>
+                      ))}
                     </ul>
                   </CardContent>
                 </Card>
@@ -230,4 +263,3 @@ export function TVKManifestoPage() {
     </div>
   );
 }
-

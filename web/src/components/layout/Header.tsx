@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { FilterX, Search } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 
 import { NewsDatePicker } from "@/components/news/NewsDatePicker";
@@ -40,9 +41,10 @@ import {
   filterTVKManifestoGroups,
 } from "@/lib/tvkManifestoFilterUtils";
 import {
-  getTVKManifestoCategories,
-  getTVKManifestoGroups,
-  tvkManifestoFeed,
+  getTVKManifestoCategoriesFrom,
+  getTVKManifestoGroupsFrom,
+  loadTVKManifestoFeed,
+  type TVKManifestoFeedData,
 } from "@/lib/tvkManifestoFeed";
 
 type HeaderProps = {
@@ -110,15 +112,35 @@ function TVKManifestoHeader({
   onSearchChange: (value: string) => void;
 }) {
   const [searchParams] = useSearchParams();
+  const [feedData, setFeedData] = useState<TVKManifestoFeedData | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadTVKManifestoFeed()
+      .then((data) => {
+        if (!cancelled) setFeedData(data);
+      })
+      .catch(() => {
+        if (!cancelled) setFeedData(null);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const rawSelectedCategory = searchParams.get("category") ?? "all";
-  const categories = getTVKManifestoCategories();
+  const categories = feedData ? getTVKManifestoCategoriesFrom(feedData) : [];
   const selectedCategory =
     rawSelectedCategory === "all" || categories.includes(rawSelectedCategory)
       ? rawSelectedCategory
       : "all";
-  const categoryGroups = getTVKManifestoGroups(selectedCategory === "all" ? null : selectedCategory);
+  const categoryGroups = feedData
+    ? getTVKManifestoGroupsFrom(feedData, selectedCategory === "all" ? null : selectedCategory)
+    : [];
   const filteredGroups = filterTVKManifestoGroups(categoryGroups, search);
   const filteredSectionCount = countTVKManifestoChildSections(filteredGroups);
+  const totalSectionCount = feedData?.sectionCount ?? 0;
 
   return (
     <HeaderShell>
@@ -138,7 +160,7 @@ function TVKManifestoHeader({
           </div>
           <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
             {filteredGroups.length} group{filteredGroups.length === 1 ? "" : "s"} · {filteredSectionCount} of{" "}
-            {tvkManifestoFeed.sectionCount} sections
+            {totalSectionCount} sections
           </p>
         </div>
       </div>

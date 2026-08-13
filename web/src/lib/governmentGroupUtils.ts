@@ -97,7 +97,3 @@ export function filterMinisterDepartmentGroups(
     return [{ minister: group.minister, departments: matchingDepartments }];
   });
 }
-
-export function countVisibleDepartments(groups: MinisterDepartmentGroup[]): number {
-  return groups.reduce((total, group) => total + group.departments.length, 0);
-}

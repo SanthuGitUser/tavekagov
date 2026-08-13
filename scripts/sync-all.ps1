@@ -171,7 +171,10 @@ if ($SkipTransfersPdfParse) {
 Run-Py $pythonExe (Join-Path $repoRoot "TN-TVA-Magazine/tn_magazine_sync.py") $magazineOverrideArgs
 
 Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Departments/tn_dept_sync.py") @()
+Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Departments/tn_wiki_departments_ministers_sync.py") @()
 Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Council Of Ministers/tn_ministers_sync.py") @()
+Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Council Of Ministers/tn_ministers_wikipedia_portfolios_sync.py") @()
+Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Council Of Ministers/tn_ministers_merge_wiki_portfolios.py") @()
 Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV_Districts/tn_districts_sync.py") @()
 Run-Py $pythonExe (Join-Path $repoRoot "TN-Constituencies/tn_constituencies_sync.py") @()
 Run-Py $pythonExe (Join-Path $repoRoot "TN-Govt-Schemes/tn_govt_schemes_sync.py") @()
@@ -206,6 +209,7 @@ if ($Stage -or $Commit -or $Push) {
   git add "TN-GOV_Districts/manifests/" | Out-Null
   git add "TN-Constituencies/manifests/" | Out-Null
   git add "TN-Govt-Schemes/manifests/" | Out-Null
+  git add "TN-TVK-Manifesto/manifests/" | Out-Null
   git add "TN-Map/tamil-nadu-constituencies.geojson" | Out-Null
   git add "TN-Map/constituency-boundaries-manifest.json" | Out-Null
   git add "TN-News/Response JSON/" | Out-Null

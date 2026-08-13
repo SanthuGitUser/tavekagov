@@ -54,17 +54,6 @@ export const tvkManifestoSubNav: NavItem[] = [
   { to: "/tvk-manifesto", label: "Porul(Wealth/Economy)", matchCategory: "Porul(Wealth/Economy)" },
 ];
 
-/** @deprecated Use primaryNav instead */
-export const navGroups = primaryNav.map((item) => ({
-  id: item.id,
-  label: item.label,
-  items: item.items ?? (item.to ? [{ to: item.to, label: item.label }] : []),
-}));
-
-export const navItems: NavItem[] = primaryNav.flatMap((item) =>
-  item.items ?? (item.to ? [{ to: item.to, label: item.label }] : []),
-);
-
 function isActivePath(pathname: string, to: string) {
   return pathname === to || pathname.startsWith(`${to}/`);
 }

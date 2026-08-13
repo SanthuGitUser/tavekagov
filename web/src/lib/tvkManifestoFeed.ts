@@ -1,5 +1,3 @@
-import tvkManifestoRaw from "../../../TN-TVK-Manifesto/manifests/tvk_manifesto.json";
-
 export type TVKManifestoCategory =
   | "Aram(Virtue)"
   | "Inbam(Joy/Well-Being)"
@@ -24,6 +22,14 @@ export type TVKManifestoGroup = {
   children: TVKManifestoChildSection[];
 };
 
+export type TVKManifestoFeedData = {
+  totalRows: number;
+  groupCount: number;
+  sectionCount: number;
+  categories: TVKManifestoCategory[];
+  groups: TVKManifestoGroup[];
+};
+
 type RawManifestoRow = {
   section?: {
     category?: unknown;
@@ -42,6 +48,9 @@ type RawManifestoPoint = {
   title?: unknown;
   description?: unknown;
 };
+
+let cachedFeed: TVKManifestoFeedData | null = null;
+let loadPromise: Promise<TVKManifestoFeedData> | null = null;
 
 function asTrimmedString(value: unknown): string | null {
   if (typeof value !== "string") return null;
@@ -230,32 +239,48 @@ function buildGroups(rows: RawManifestoRow[]): TVKManifestoGroup[] {
     .map(({ _sortSectionNumber: _ignored, ...group }) => group);
 }
 
-const rows = (tvkManifestoRaw as unknown as RawManifestoRow[]) ?? [];
-const groups = buildGroups(rows);
-const childSections = groups.flatMap((group) => group.children);
-const allCategories: TVKManifestoCategory[] = [
-  "Aram(Virtue)",
-  "Inbam(Joy/Well-Being)",
-  "Porul(Wealth/Economy)",
-];
-const categories = allCategories.filter((category) =>
-  groups.some((group) => group.category === category),
-);
+function buildFeedData(rows: RawManifestoRow[]): TVKManifestoFeedData {
+  const groups = buildGroups(rows);
+  const childSections = groups.flatMap((group) => group.children);
+  const allCategories: TVKManifestoCategory[] = [
+    "Aram(Virtue)",
+    "Inbam(Joy/Well-Being)",
+    "Porul(Wealth/Economy)",
+  ];
+  const categories = allCategories.filter((category) =>
+    groups.some((group) => group.category === category),
+  );
 
-export const tvkManifestoFeed = {
-  totalRows: rows.length,
-  groupCount: groups.length,
-  sectionCount: childSections.length,
-  categories,
-  groups,
-};
-
-export function getTVKManifestoCategories(): string[] {
-  return tvkManifestoFeed.categories;
+  return {
+    totalRows: rows.length,
+    groupCount: groups.length,
+    sectionCount: childSections.length,
+    categories,
+    groups,
+  };
 }
 
-export function getTVKManifestoGroups(category?: string | null): TVKManifestoGroup[] {
-  if (!category || category === "all") return tvkManifestoFeed.groups;
-  return tvkManifestoFeed.groups.filter((group) => group.category === category);
+export async function loadTVKManifestoFeed(): Promise<TVKManifestoFeedData> {
+  if (cachedFeed) return cachedFeed;
+  if (loadPromise) return loadPromise;
+
+  loadPromise = import("../../../TN-TVK-Manifesto/manifests/tvk_manifesto.json").then((module) => {
+    const rows = (module.default as unknown as RawManifestoRow[]) ?? [];
+    cachedFeed = buildFeedData(rows);
+    return cachedFeed;
+  });
+
+  return loadPromise;
 }
 
+export function getTVKManifestoCategoriesFrom(data: TVKManifestoFeedData): string[] {
+  return data.categories;
+}
+
+export function getTVKManifestoGroupsFrom(
+  data: TVKManifestoFeedData,
+  category?: string | null,
+): TVKManifestoGroup[] {
+  if (!category || category === "all") return data.groups;
+  return data.groups.filter((group) => group.category === category);
+}

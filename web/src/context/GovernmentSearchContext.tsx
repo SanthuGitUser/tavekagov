@@ -1,4 +1,5 @@
-import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { useLocation } from "react-router-dom";
 
 type GovernmentSearchContextValue = {
   search: string;
@@ -8,7 +9,12 @@ type GovernmentSearchContextValue = {
 const GovernmentSearchContext = createContext<GovernmentSearchContextValue | null>(null);
 
 export function GovernmentSearchProvider({ children }: { children: ReactNode }) {
+  const location = useLocation();
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    setSearch("");
+  }, [location.pathname]);
 
   const value = useMemo(() => ({ search, setSearch }), [search]);
 

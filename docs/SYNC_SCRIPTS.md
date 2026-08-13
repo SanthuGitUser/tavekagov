@@ -27,6 +27,8 @@ python tn_dept_sync.py
 | `tn_dept_sync.py` | [TN-GOV_Departments](../TN-GOV_Departments/) | `manifests/tn_departments.json` |
 | `tn_ministers_sync.py` | [TN-GOV_Council Of Ministers](../TN-GOV_Council%20Of%20Ministers/) | `manifests/tn_ministers.json` |
 | `tn_districts_sync.py` | [TN-GOV_Districts](../TN-GOV_Districts/) | `manifests/tn_districts.json` |
+| `tn_constituencies_sync.py` | [TN-Constituencies](../TN-Constituencies/) | `manifests/tn_constituencies.json` |
+| `tn_govt_schemes_sync.py` | [TN-Govt-Schemes](../TN-Govt-Schemes/) | `manifests/tn_govt_schemes.json` |
 | `fetch_tamil_nadu_news.py` | [TN-News/Code](../TN-News/Code/) | `TN-News/Response JSON/YYYY-MM-DD.json` |
 
 ## Run everything (recommended)
@@ -139,9 +141,20 @@ No date arguments — full refresh each run:
 
 ```powershell
 python tn_dept_sync.py
+python tn_wiki_departments_ministers_sync.py
 python tn_ministers_sync.py
+python tn_ministers_wikipedia_portfolios_sync.py
+python tn_ministers_merge_wiki_portfolios.py
 python tn_districts_sync.py
+python tn_constituencies_sync.py
+python tn_govt_schemes_sync.py
 ```
+
+The Wikipedia scripts enrich minister portfolios and department cross-references. `sync-all.ps1` runs them after the base tn.gov.in syncs.
+
+### TVK manifesto (manual)
+
+There is no automated sync for the TVK manifesto. Update `TN-TVK-Manifesto/manifests/tvk_manifesto.json` manually (PDF extraction script in `TN-TVK-Manifesto/`). `sync-all.ps1 -Stage` includes this manifest when committing data updates.
 
 ### News (`fetch_tamil_nadu_news.py`)
 

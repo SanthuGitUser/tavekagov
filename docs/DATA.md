@@ -10,10 +10,21 @@ Official sources  →  Python *_sync.py  →  JSON in repo  →  web/src/lib/*Fe
 
 1. **Sync scripts** fetch or scrape public TN government sites (and NewsData.io for news).
 2. **JSON files** are committed to git (manually or by GitHub Actions).
-3. **Feed modules** in `web/src/lib/` use `import.meta.glob` to load all matching JSON files at build time.
+3. **Feed modules** in `web/src/lib/` use `import.meta.glob` (eager) or dynamic `import()` (on demand) to load JSON at build or runtime.
 4. **GitHub Pages** serves the static `web/dist` output.
 
 After JSON changes locally, restart `npm run dev` or run `npm run build` to see updates in the dashboard.
+
+### On-demand loading
+
+Some feeds defer loading until their page is opened, reducing the initial bundle size:
+
+| Feed | Module | Pattern |
+|------|--------|---------|
+| News | `tamilNaduNewsFeed.ts` | Lazy `import.meta.glob` + per-day JSON chunks |
+| TVK Manifesto | `tvkManifestoFeed.ts` | Dynamic `import()` of manifest JSON |
+
+Other feeds still load eagerly at build time via `import.meta.glob(..., { eager: true })`.
 
 ## Storage patterns
 
@@ -52,6 +63,11 @@ Single rolling snapshot, replaced or merged on each sync. Used for directory-sty
 | `TN-GOV_Council Of Ministers/manifests/tn_ministers.json` | `ministers` |
 | `TN-GOV_Districts/manifests/tn_districts.json` | `districts` |
 | `TN-TVA-Magazine/manifests/magazine.json` | `magazines` |
+| `TN-Constituencies/manifests/tn_constituencies.json` | `constituencies` |
+| `TN-Govt-Schemes/manifests/tn_govt_schemes.json` | `schemes` |
+| `TN-TVK-Manifesto/manifests/tvk_manifesto.json` | nested `section` rows (manual PDF extract) |
+| `TN-GOV_Council Of Ministers/manifests/tn_ministers_wikipedia_portfolios.json` | Wikipedia portfolio enrichment |
+| `TN-GOV_Departments/manifests/tn_wiki_departments_ministers.json` | Wikipedia department cross-reference |
 
 Typical manifest shape:
 
@@ -188,9 +204,29 @@ Frontend: `tamilNaduMagazineFeed.ts` (reads manifest and daily JSON).
 
 Path: `TN-News/Response JSON/YYYY-MM-DD.json` (one file per **publication day** in IST)
 
-Wraps the NewsData.io API response. The `request.params.apikey` field should be redacted in committed files.
+Wraps the NewsData.io API response. Saved files omit the API key from `request.params`.
 
-Frontend: `tamilNaduNewsFeed.ts`.
+Frontend: `tamilNaduNewsFeed.ts` (lazy per-day loading).
+
+### TVK election manifesto
+
+Path: `TN-TVK-Manifesto/manifests/tvk_manifesto.json`
+
+Extracted from the TVK manifesto PDF (manual refresh; not part of automated daily sync). Each row has a nested `section` with `category`, `title`, `points`, and optional `subsection`. Divider pages with empty points are filtered out in the feed.
+
+Frontend: `tvkManifestoFeed.ts` (dynamic import on page load).
+
+### Government schemes
+
+Path: `TN-Govt-Schemes/manifests/tn_govt_schemes.json`
+
+Frontend: `tamilNaduGovtSchemesFeed.ts`.
+
+### Assembly constituencies
+
+Path: `TN-Constituencies/manifests/tn_constituencies.json`
+
+Frontend: `tamilNaduAssemblyConstituenciesFeed.ts`.
 
 ## Date formats
 
@@ -220,7 +256,10 @@ Default project start date for backfills: **10 May 2026** (`10-05-2026`), config
 | Ministers | `tamilNaduMinistersFeed.ts` |
 | Districts | `tamilNaduDistrictsFeed.ts` |
 | Magazine | `tamilNaduMagazineFeed.ts` |
-| News | `tamilNaduNewsFeed.ts` |
+| News | `tamilNaduNewsFeed.ts` (lazy) |
+| Constituencies | `tamilNaduAssemblyConstituenciesFeed.ts` |
+| Government Schemes | `tamilNaduGovtSchemesFeed.ts` |
+| TVK Manifesto | `tvkManifestoFeed.ts` (lazy) |
 
 ## Related docs
 

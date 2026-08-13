@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, type ReactNode } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { ConstituencySearchProvider } from "@/context/ConstituencySearchContext";
@@ -21,23 +21,56 @@ import { PressReleaseViewProvider } from "@/context/PressReleaseViewContext";
 import { TVKManifestoSearchProvider } from "@/context/TVKManifestoSearchContext";
 import { TransfersPostingsSearchProvider } from "@/context/TransfersPostingsSearchContext";
 import { AboutPage } from "@/pages/AboutPage";
-import { ConstituenciesPage } from "@/pages/ConstituenciesPage";
 import { DashboardPage } from "@/pages/DashboardPage";
-import { MinistersPage } from "@/pages/MinistersPage";
-import { DepartmentsPage } from "@/pages/DepartmentsPage";
-import { DistrictsPage } from "@/pages/DistrictsPage";
-import { GovPressReleasesPage } from "@/pages/GovPressReleasesPage";
-import { GovtSchemesPage } from "@/pages/GovtSchemesPage";
-import { GovernmentOrdersPage } from "@/pages/GovernmentOrdersPage";
 import { HomePage } from "@/pages/HomePage";
-import { MagazinePage } from "@/pages/MagazinePage";
-import { PressReleasesPage } from "@/pages/PressReleasesPage";
-import { TVKManifestoPage } from "@/pages/TVKManifestoPage";
-import { TransfersPostingsPage } from "@/pages/TransfersPostingsPage";
+import { NotFoundPage } from "@/pages/NotFoundPage";
 
 const NewsPage = lazy(() =>
   import("@/pages/NewsPage").then((module) => ({ default: module.NewsPage })),
 );
+const PressReleasesPage = lazy(() =>
+  import("@/pages/PressReleasesPage").then((module) => ({ default: module.PressReleasesPage })),
+);
+const GovPressReleasesPage = lazy(() =>
+  import("@/pages/GovPressReleasesPage").then((module) => ({ default: module.GovPressReleasesPage })),
+);
+const GovernmentOrdersPage = lazy(() =>
+  import("@/pages/GovernmentOrdersPage").then((module) => ({ default: module.GovernmentOrdersPage })),
+);
+const TransfersPostingsPage = lazy(() =>
+  import("@/pages/TransfersPostingsPage").then((module) => ({ default: module.TransfersPostingsPage })),
+);
+const MinistersPage = lazy(() =>
+  import("@/pages/MinistersPage").then((module) => ({ default: module.MinistersPage })),
+);
+const DepartmentsPage = lazy(() =>
+  import("@/pages/DepartmentsPage").then((module) => ({ default: module.DepartmentsPage })),
+);
+const DistrictsPage = lazy(() =>
+  import("@/pages/DistrictsPage").then((module) => ({ default: module.DistrictsPage })),
+);
+const ConstituenciesPage = lazy(() =>
+  import("@/pages/ConstituenciesPage").then((module) => ({ default: module.ConstituenciesPage })),
+);
+const MagazinePage = lazy(() =>
+  import("@/pages/MagazinePage").then((module) => ({ default: module.MagazinePage })),
+);
+const GovtSchemesPage = lazy(() =>
+  import("@/pages/GovtSchemesPage").then((module) => ({ default: module.GovtSchemesPage })),
+);
+const TVKManifestoPage = lazy(() =>
+  import("@/pages/TVKManifestoPage").then((module) => ({ default: module.TVKManifestoPage })),
+);
+
+function LazyRoute({
+  children,
+  label = "Loading…",
+}: {
+  children: ReactNode;
+  label?: string;
+}) {
+  return <Suspense fallback={<PageLoading label={label} />}>{children}</Suspense>;
+}
 
 export default function App() {
   return (
@@ -90,7 +123,14 @@ export default function App() {
             </PressReleaseSearchProvider>
           }
         >
-          <Route index element={<PressReleasesPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading press releases…">
+                <PressReleasesPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/gov-press-releases"
@@ -99,7 +139,7 @@ export default function App() {
               <GovPressReleaseViewProvider>
                 <AppLayout
                   fillViewport
-                  title="Images"
+                  title="Press Release Images"
                   description={
                     <>
                       Tamil Nadu government press release images from{" "}
@@ -114,7 +154,14 @@ export default function App() {
             </GovPressReleaseSearchProvider>
           }
         >
-          <Route index element={<GovPressReleasesPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading press release images…">
+                <GovPressReleasesPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/government-orders"
@@ -138,7 +185,14 @@ export default function App() {
             </GovernmentOrdersSearchProvider>
           }
         >
-          <Route index element={<GovernmentOrdersPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading government orders…">
+                <GovernmentOrdersPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/transfers-postings"
@@ -160,8 +214,16 @@ export default function App() {
             </TransfersPostingsSearchProvider>
           }
         >
-          <Route index element={<TransfersPostingsPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading transfers and postings…">
+                <TransfersPostingsPage />
+              </LazyRoute>
+            }
+          />
         </Route>
+        <Route path="/government" element={<Navigate to="/ministers" replace />} />
         <Route
           path="/ministers"
           element={
@@ -182,7 +244,14 @@ export default function App() {
             </GovernmentSearchProvider>
           }
         >
-          <Route index element={<MinistersPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading ministers…">
+                <MinistersPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/departments"
@@ -204,7 +273,14 @@ export default function App() {
             </GovernmentSearchProvider>
           }
         >
-          <Route index element={<DepartmentsPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading departments…">
+                <DepartmentsPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/districts"
@@ -226,7 +302,14 @@ export default function App() {
             </DistrictSearchProvider>
           }
         >
-          <Route index element={<DistrictsPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading districts…">
+                <DistrictsPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/constituencies"
@@ -248,13 +331,21 @@ export default function App() {
             </ConstituencySearchProvider>
           }
         >
-          <Route index element={<ConstituenciesPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading constituencies…">
+                <ConstituenciesPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/magazine"
           element={
             <MagazineSearchProvider>
               <AppLayout
+                fillViewport
                 title="Magazine"
                 description={
                   <>
@@ -269,7 +360,14 @@ export default function App() {
             </MagazineSearchProvider>
           }
         >
-          <Route index element={<MagazinePage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading magazine…">
+                <MagazinePage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/govt-schemes"
@@ -291,7 +389,14 @@ export default function App() {
             </GovtSchemesSearchProvider>
           }
         >
-          <Route index element={<GovtSchemesPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading government schemes…">
+                <GovtSchemesPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/tvk-manifesto"
@@ -305,7 +410,14 @@ export default function App() {
             </TVKManifestoSearchProvider>
           }
         >
-          <Route index element={<TVKManifestoPage />} />
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading manifesto…">
+                <TVKManifestoPage />
+              </LazyRoute>
+            }
+          />
         </Route>
         <Route
           path="/news"
@@ -327,9 +439,9 @@ export default function App() {
           <Route
             index
             element={
-              <Suspense fallback={<PageLoading label="Loading news…" />}>
+              <LazyRoute label="Loading news…">
                 <NewsPage />
-              </Suspense>
+              </LazyRoute>
             }
           />
         </Route>
@@ -351,7 +463,12 @@ export default function App() {
         >
           <Route index element={<AboutPage />} />
         </Route>
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route
+          path="*"
+          element={<AppLayout fillViewport title="Page not found" hidePageHeader />}
+        >
+          <Route index element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

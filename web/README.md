@@ -1,6 +1,6 @@
 # TavekaGov Web Dashboard
 
-Static dashboard for Tamil Nadu government open data. All datasets are bundled as JSON from the repo at build time and served from GitHub Pages.
+Static dashboard for Tamil Nadu government open data. Most datasets are bundled as JSON from the repo at build time; News and the TVK Manifesto load JSON on demand when their pages open. Served from GitHub Pages.
 
 See also the root [README](../README.md) and [docs/DATA.md](../docs/DATA.md).
 
@@ -14,17 +14,18 @@ See also the root [README](../README.md) and [docs/DATA.md](../docs/DATA.md).
 
 ## Pages
 
-- Home (welcome links to Dashboard and Districts)
-- Dashboard (KPI cards)
-- Press releases
-- Press Releases Images
-- Government orders
-- Transfers and postings
-- Departments, ministers
-- Districts (interactive map, district tiles, live weather)
-- Magazine
-- News
-- About
+Primary navigation:
+
+- **Dashboard** — KPI cards with optional date range
+- **News** — Tamil Nadu headlines (one day at a time)
+- **Govt Publications** — Press releases, press release images, government orders, IAS transfers and postings, government schemes, magazines
+- **Govt Administration** — Ministers, departments, constituencies, districts
+- **TVK Manifesto** — Election manifesto by category (Aram, Inbam, Porul) with search
+- **About** — Project overview and data sources
+
+Also: **Home** (landing). Legacy `/government` redirects to `/ministers`. Unknown URLs show a 404 page.
+
+Heavy pages are code-split with React `lazy()` and show a loading spinner while their chunk loads.
 
 ## Local development
 

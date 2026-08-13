@@ -374,7 +374,7 @@ def save_day_response(
         "request": {
             "method": "GET",
             "url": NEWSDATA_NEWS_URL,
-            "params": {**requested_params, "apikey": "<redacted>"},
+            "params": requested_params,
         },
         "response": {
             "status": "success",
