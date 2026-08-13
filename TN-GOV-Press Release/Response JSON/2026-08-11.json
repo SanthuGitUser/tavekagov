@@ -1,10 +1,10 @@
 {
   "date": "2026-08-11",
   "fetchedAt": "2026-08-11T18:50:50.375486+05:30",
-  "lastFetchedAt": "2026-08-11T18:50:50.375486+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-13T11:41:08.774574+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
-  "count": 2,
+  "count": 3,
   "releases": [
     {
       "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr110826e.jpg",
@@ -51,6 +51,29 @@
       "others": true,
       "inspection": false,
       "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr110826_rd.jpg",
+      "release_date": "2026-08-11",
+      "title": "Honble Minister for Rural Development and Water Resources chaired a review meeting on precautionary and preventive measures for the Northeast Monsoon",
+      "file_name": "pr110826_rd.jpg",
+      "minister_name": "Thiru N. Anand",
+      "department_name": "Rural Development and Panchayat Raj Department",
+      "minister_id": 2,
+      "department_id": 27,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "medium",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": true,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
     }
   ],
   "ministers": [
@@ -58,21 +81,30 @@
       "id": 1,
       "name": "Thiru C. Joseph Vijay",
       "designation": "Honourable Chief Minister",
+      "portfolio": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers, Police, Home, Special Programme Implementation, Special Initiatives, Poverty Alleviation and Rural Indebtedness, Youth Welfare, Welfare of Children, Aged, Differently Abled Persons, Municipal Administration, Urban and Water Supply.",
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
       "display_order": 1,
-      "is_chief_minister": true,
-      "portfolios": [
-        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
-        "Police",
-        "Home",
-        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
-        "Special Initiatives",
-        "Youth Welfare",
-        "Welfare of Children, Aged",
-        "Differently Abled Persons",
-        "Municipal Administration, Urban and Water Supply"
-      ]
+      "is_chief_minister": true
+    },
+    {
+      "id": 2,
+      "name": "Thiru N. Anand",
+      "designation": "Minister for Rural Development and Water Resources",
+      "portfolio": "Rural Development, Panchayats and Panchayat Union, Irrigation, Irrigation Projects including Small Irrigation.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/024_Anand.png",
+      "display_order": 2,
+      "is_chief_minister": false
     }
   ],
-  "departments": []
+  "departments": [
+    {
+      "id": 27,
+      "name": "Rural Development and Panchayat Raj Department",
+      "dep_id_encoded": "Mjc=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru N. Anand",
+      "display_order": 30
+    }
+  ]
 }

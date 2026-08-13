@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { ConstituencySearchProvider } from "@/context/ConstituencySearchContext";
 
 import { AppLayout } from "@/components/layout/AppLayout";
+import { SourceLink } from "@/components/shared/SourceLink";
 import { DashboardDateRangeProvider } from "@/context/DashboardDateRangeContext";
 import { GovernmentSearchProvider } from "@/context/GovernmentSearchContext";
 import { DistrictSearchProvider } from "@/context/DistrictSearchContext";
@@ -49,7 +50,12 @@ export default function App() {
               <AppLayout
                 fillViewport
                 title="Dashboard"
-                description="Overview of Tamil Nadu government open data from bundled JSON feeds."
+                description={
+                  <>
+                    Overview of Tamil Nadu government open data from{" "}
+                    <SourceLink href="https://www.tn.gov.in/">tn.gov.in</SourceLink>.
+                  </>
+                }
               />
             </DashboardDateRangeProvider>
           }
@@ -64,7 +70,15 @@ export default function App() {
                 <AppLayout
                   fillViewport
                   title="Press Releases"
-                  description="DIPR press releases with department from dipr.tn.gov.in."
+                  description={
+                    <>
+                      DIPR press releases with department from{" "}
+                      <SourceLink href="https://dipr.tn.gov.in/press-release1.html">
+                        dipr.tn.gov.in
+                      </SourceLink>
+                      .
+                    </>
+                  }
                 />
               </PressReleaseViewProvider>
             </PressReleaseSearchProvider>
@@ -80,7 +94,15 @@ export default function App() {
                 <AppLayout
                   fillViewport
                   title="Images"
-                  description="Tamil Nadu government press release images from tn.gov.in."
+                  description={
+                    <>
+                      Tamil Nadu government press release images from{" "}
+                      <SourceLink href="https://www.tn.gov.in/press_release.php">
+                        tn.gov.in
+                      </SourceLink>
+                      .
+                    </>
+                  }
                 />
               </GovPressReleaseViewProvider>
             </GovPressReleaseSearchProvider>
@@ -96,7 +118,15 @@ export default function App() {
                 <AppLayout
                   fillViewport
                   title="Government Orders"
-                  description="Department G.O.s with searchable subjects and PDF links."
+                  description={
+                    <>
+                      Department G.O.s with searchable subjects and PDF links from{" "}
+                      <SourceLink href="https://www.tn.gov.in/godept_list.php">
+                        tn.gov.in
+                      </SourceLink>
+                      .
+                    </>
+                  }
                 />
               </GovernmentOrdersViewProvider>
             </GovernmentOrdersSearchProvider>
@@ -111,7 +141,15 @@ export default function App() {
               <AppLayout
                 fillViewport
                 title="Transfers and Postings"
-                description="IAS transfers and postings with name, old post, new post parsed from G.O. PDFs."
+                description={
+                  <>
+                    IAS transfers and postings parsed from G.O. PDFs on{" "}
+                    <SourceLink href="https://tnsectdemo.tn.gov.in/ias/transferandpostings.php">
+                      tn.gov.in
+                    </SourceLink>
+                    .
+                  </>
+                }
               />
             </TransfersPostingsSearchProvider>
           }
@@ -125,7 +163,15 @@ export default function App() {
               <AppLayout
                 fillViewport
                 title="Government"
-                description="Tamil Nadu council of ministers and their departments."
+                description={
+                  <>
+                    Tamil Nadu council of ministers and departments from{" "}
+                    <SourceLink href="https://www.tn.gov.in/minister_list.php">
+                      tn.gov.in
+                    </SourceLink>
+                    .
+                  </>
+                }
               />
             </GovernmentSearchProvider>
           }
@@ -137,7 +183,19 @@ export default function App() {
           path="/districts"
           element={
             <DistrictSearchProvider>
-              <AppLayout fillViewport hidePageHeader title="Districts" />
+              <AppLayout
+                fillViewport
+                title="Districts"
+                description={
+                  <>
+                    Tamil Nadu district profiles from{" "}
+                    <SourceLink href="https://www.tn.gov.in/district_list.php">
+                      tn.gov.in
+                    </SourceLink>
+                    .
+                  </>
+                }
+              />
             </DistrictSearchProvider>
           }
         >
@@ -150,7 +208,15 @@ export default function App() {
               <AppLayout
                 fillViewport
                 title="Constituencies"
-                description="17th Tamil Nadu Legislative Assembly constituencies from assembly.tn.gov.in."
+                description={
+                  <>
+                    17th Tamil Nadu Legislative Assembly constituencies from{" "}
+                    <SourceLink href="https://assembly.tn.gov.in/17thassembly_members.php">
+                      assembly.tn.gov.in
+                    </SourceLink>
+                    .
+                  </>
+                }
               />
             </ConstituencySearchProvider>
           }
@@ -166,14 +232,9 @@ export default function App() {
                 description={
                   <>
                     Tamil Arasu magazine issues from the{" "}
-                    <a
-                      href="https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21&sub_cat_name=%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AE%B0%E0%AE%9A%E0%AF%81"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-primary hover:underline"
-                    >
+                    <SourceLink href="https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21&sub_cat_name=%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AE%B0%E0%AE%9A%E0%AF%81">
                       Tamil Digital Library
-                    </a>
+                    </SourceLink>
                     . Click a tile to open the PDF in a new tab.
                   </>
                 }
@@ -193,14 +254,9 @@ export default function App() {
                 description={
                   <>
                     Tamil Nadu state government schemes, housing, and scholarships from{" "}
-                    <a
-                      href="https://schemesinindia.in/schemes/tamil-nadu"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-primary hover:underline"
-                    >
+                    <SourceLink href="https://schemesinindia.in/schemes/tamil-nadu">
                       Schemes in India
-                    </a>
+                    </SourceLink>
                     .
                   </>
                 }
@@ -230,7 +286,12 @@ export default function App() {
             <NewsSearchProvider>
               <AppLayout
                 title="Tamil Nadu News"
-                description="Tamil Nadu news via NewsData.io"
+                description={
+                  <>
+                    Tamil Nadu news via{" "}
+                    <SourceLink href="https://newsdata.io/">NewsData.io</SourceLink>.
+                  </>
+                }
               />
             </NewsSearchProvider>
           }
@@ -243,7 +304,13 @@ export default function App() {
             <AppLayout
               fillViewport
               title="About"
-              description="Project information and data sources."
+              description={
+                <>
+                  Project information and data sources from{" "}
+                  <SourceLink href="https://www.tn.gov.in/">tn.gov.in</SourceLink> and{" "}
+                  <SourceLink href="https://dipr.tn.gov.in/">DIPR</SourceLink>.
+                </>
+              }
             />
           }
         >

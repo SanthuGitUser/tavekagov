@@ -193,14 +193,7 @@ export function PressReleaseTimeline({
     return rows.sort(comparePressReleases);
   }, [releases, query, view, departmentId, ministerId]);
 
-  const datesForPicker = useMemo(() => {
-    if (view === "all") {
-      if (!isSearching) return allDates;
-      return [...new Set(filteredReleases.map((release) => release.pr_date))];
-    }
-
-    return allDates;
-  }, [allDates, filteredReleases, isSearching, view]);
+  const datesForPicker = allDates;
 
   const latestDate = useMemo(() => getLatestValidDate(datesForPicker), [datesForPicker]);
 
@@ -209,18 +202,21 @@ export function PressReleaseTimeline({
   }, [datesForPicker, setAvailableDates]);
 
   useEffect(() => {
-    if (latestDate) setSelectedDateRange?.({ from: latestDate, to: latestDate });
-  }, [latestDate, setSelectedDateRange]);
+    if (latestDate && !selectedDateRange.from) {
+      setSelectedDateRange?.({ from: latestDate, to: latestDate });
+    }
+  }, [latestDate, selectedDateRange.from, setSelectedDateRange]);
 
   useEffect(() => {
     if (
       selectedDateRange.from
-      && !datesForPicker.includes(selectedDateRange.from)
+      && allDates.length > 0
+      && !allDates.includes(selectedDateRange.from)
       && latestDate
     ) {
       setSelectedDateRange?.({ from: latestDate, to: latestDate });
     }
-  }, [datesForPicker, latestDate, selectedDateRange.from, setSelectedDateRange]);
+  }, [allDates, latestDate, selectedDateRange.from, setSelectedDateRange]);
 
   const filteredReleasesByDate = useMemo(
     () => groupReleasesByDate(filteredReleases),

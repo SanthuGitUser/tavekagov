@@ -40,6 +40,8 @@ _IMAGE_SRC_RE = re.compile(r"src=['\"]([^'\"]+)['\"]", re.IGNORECASE)
 _TITLE_RE = re.compile(r"class='list-group-item-text'>([^<]+)</p>", re.IGNORECASE)
 _DATE_RE = re.compile(r"class='tag-label'>([^<]+)<", re.IGNORECASE)
 _IMAGE_EXT_RE = re.compile(r"\.(?:jpg|jpeg|png|gif)(?:\?|$)", re.IGNORECASE)
+_RECENT_DAYS_LOOKBACK = 7
+
 _DEFAULT_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -379,6 +381,7 @@ def main() -> int:
         default_start_display=default_start_date,
         explicit_start=args.start_date,
         explicit_end=args.end_date,
+        lookback_days=_RECENT_DAYS_LOOKBACK if not args.start_date else 0,
     )
     if start_date > end_date:
         print(

@@ -1,10 +1,10 @@
 {
   "date": "2026-08-12",
   "fetchedAt": "2026-08-13T10:04:46.122249+05:30",
-  "lastFetchedAt": "2026-08-13T10:04:46.122249+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-13T11:41:08.774574+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
-  "count": 1,
+  "count": 5,
   "releases": [
     {
       "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr120826a.jpg",
@@ -28,6 +28,98 @@
       "others": false,
       "inspection": false,
       "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr120826_it.jpg",
+      "release_date": "2026-08-12",
+      "title": "Honble Minister for Artificial Intelligence, Information Technology and Digital Services chaired a meeting on the preparation of the department’s budget demand",
+      "file_name": "pr120826_it.jpg",
+      "minister_name": "Dr Kumar. R",
+      "department_name": "Information Technology and Digital Services Department",
+      "minister_id": 32,
+      "department_id": 17,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr120826_hfw.jpeg",
+      "release_date": "2026-08-12",
+      "title": "Australian Consul-General called on the Honble Minister for Health, Medical Education and Family Welfare",
+      "file_name": "pr120826_hfw.jpeg",
+      "minister_name": "Dr. K.G. Arunraj",
+      "department_name": "Health and Family Welfare Department",
+      "minister_id": 4,
+      "department_id": 11,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "medium",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr120826_fcs.jpeg",
+      "release_date": "2026-08-12",
+      "title": "Honble Speaker of the Tamil Nadu Legislative Assembly distributed allotment orders for houses to beneficiaries of Dr. Thomas road project area in the presence of the Honble Minister for Food and Civil Supplies",
+      "file_name": "pr120826_fcs.jpeg",
+      "minister_name": "Thiru P. Venkataramanan",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
+      "minister_id": 6,
+      "department_id": 5,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr120826_hud.jpg",
+      "release_date": "2026-08-12",
+      "title": "Honble Minister for Housing and Urban Development launched the online allotment portal for the sale of Tamil Nadu housing board houses and plots",
+      "file_name": "pr120826_hud.jpg",
+      "minister_name": "Thiru B. Rajkumar",
+      "department_name": "Housing and Urban Development Department",
+      "minister_id": 16,
+      "department_id": 15,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
     }
   ],
   "ministers": [
@@ -39,7 +131,80 @@
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
       "display_order": 1,
       "is_chief_minister": true
+    },
+    {
+      "id": 4,
+      "name": "Dr. K.G. Arunraj",
+      "designation": "Minister for Health, Medical Education and Family Welfare",
+      "portfolio": "Health, Medical Education and Family Welfare.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/096_Arunraj.png",
+      "display_order": 4,
+      "is_chief_minister": false
+    },
+    {
+      "id": 6,
+      "name": "Thiru P. Venkataramanan",
+      "designation": "Minister for Food and Civil Supplies",
+      "portfolio": "Food and Civil Supplies, Consumer Protection and Price Control.",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/025_Venkataramanan.png",
+      "display_order": 6,
+      "is_chief_minister": false
+    },
+    {
+      "id": 16,
+      "name": "Thiru B. Rajkumar",
+      "designation": "Minister for Housing and Urban Development",
+      "portfolio": "Housing, Rural Housing, Town Planning Projects and Housing Development, Accommodation Control, CMDA, Tamil Nadu Urban Habitat Development Board, Urban Planning and Urban Development",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/155_Rajkumar.png",
+      "display_order": 16,
+      "is_chief_minister": false
+    },
+    {
+      "id": 32,
+      "name": "Dr Kumar. R",
+      "designation": "Minister for Artificial Intelligence, Information Technology and Digital Services",
+      "portfolio": "Artificial Intelligence, Information Technology and Digital Services",
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/026_Kumar.png",
+      "display_order": 32,
+      "is_chief_minister": false
     }
   ],
-  "departments": []
+  "departments": [
+    {
+      "id": 5,
+      "name": "Co-operation, Food and Consumer Protection Department",
+      "dep_id_encoded": "NQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru V. Gandhiraj",
+      "display_order": 5
+    },
+    {
+      "id": 11,
+      "name": "Health and Family Welfare Department",
+      "dep_id_encoded": "MTE=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTE=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Dr. K.G. Arunraj",
+      "display_order": 10
+    },
+    {
+      "id": 15,
+      "name": "Housing and Urban Development Department",
+      "dep_id_encoded": "MTU=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTU=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru B. Rajkumar",
+      "display_order": 14
+    },
+    {
+      "id": 17,
+      "name": "Information Technology and Digital Services Department",
+      "dep_id_encoded": "MTc=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTc=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Dr Kumar. R",
+      "display_order": 17
+    }
+  ]
 }

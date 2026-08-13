@@ -210,6 +210,7 @@ def resolve_date_range(
     default_start_display: str,
     explicit_start: str | None = None,
     explicit_end: str | None = None,
+    lookback_days: int = 0,
 ) -> tuple[date, date]:
     end = parse_display_date(explicit_end) if explicit_end else kolkata_today()
 
@@ -220,6 +221,12 @@ def resolve_date_range(
     default_start = parse_display_date(default_start_display)
     checkpoint = _checkpoint_date(job_key, output_dir)
     start = checkpoint + timedelta(days=1) if checkpoint else default_start
+
+    if lookback_days > 0:
+        lookback_start = end - timedelta(days=lookback_days - 1)
+        start = min(start, lookback_start)
+
+    start = max(start, default_start)
     return start, end
 
 

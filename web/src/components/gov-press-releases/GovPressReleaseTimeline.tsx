@@ -307,28 +307,28 @@ export function GovPressReleaseTimeline({
 
   const latestDate = useMemo(() => getLatestValidDate(allDates), [allDates]);
 
-  const datesForPicker = useMemo(() => {
-    if (view !== "all" || !isSearching) return allDates;
-    return [...new Set(filteredReleases.map((release) => release.release_date))];
-  }, [allDates, filteredReleases, isSearching, view]);
+  const datesForPicker = allDates;
 
   useEffect(() => {
     setAvailableDates?.(datesForPicker);
   }, [datesForPicker, setAvailableDates]);
 
   useEffect(() => {
-    if (latestDate) setSelectedDateRange?.({ from: latestDate, to: latestDate });
-  }, [latestDate, setSelectedDateRange]);
+    if (latestDate && !selectedDateRange.from) {
+      setSelectedDateRange?.({ from: latestDate, to: latestDate });
+    }
+  }, [latestDate, selectedDateRange.from, setSelectedDateRange]);
 
   useEffect(() => {
     if (
       selectedDateRange.from
-      && !datesForPicker.includes(selectedDateRange.from)
+      && allDates.length > 0
+      && !allDates.includes(selectedDateRange.from)
       && latestDate
     ) {
       setSelectedDateRange?.({ from: latestDate, to: latestDate });
     }
-  }, [datesForPicker, latestDate, selectedDateRange.from, setSelectedDateRange]);
+  }, [allDates, latestDate, selectedDateRange.from, setSelectedDateRange]);
 
   const releasesInRange = useMemo(() => {
     return datedReleases
