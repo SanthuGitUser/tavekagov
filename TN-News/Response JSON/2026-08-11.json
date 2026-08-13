@@ -1,0 +1,616 @@
+{
+  "date": "2026-08-11",
+  "fetchedAt": "2026-08-13T10:06:54.566512+05:30",
+  "lastFetchedAt": "2026-08-13T10:06:54.566512+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment",
+      "apikey": "<redacted>"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 14,
+    "apiReportedTotalResults": 23,
+    "results": [
+      {
+        "article_id": "f7a45dbe51306abf3e36c93914b1ba08",
+        "link": "https://www.thenewsminute.com/karnataka/prakash-raj-claims-his-bengaluru-voter-entry-was-deleted-under-asddo-during-sir",
+        "title": "Prakash Raj claims his Bengaluru voter entry was deleted under ASDDO during SIR",
+        "description": "“You can use your powers to deny a few citizens the right to vote, who may not elect you,” he said, adding, “But can you stop us, my dear friend, from our power of bringing you down?” Prakash Raj said in a video.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "karnataka"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 14:46:27",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 15:11:27",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2023-12%2Feb2a95cb-26c9-47bb-b1e8-3e762f1c8352%2FIMG_20231216_153156.jpg?rect=0%2C0%2C986%2C555&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "3568351178f4651d329eac4524b17660",
+        "link": "https://www.thenewsminute.com/powertrip/why-are-karnataka-ministers-suddenly-visible-everywhere-powertrip-160",
+        "title": "Why are Karnataka ministers suddenly visible everywhere? | Powertrip #160",
+        "description": "As talks about the Delimitation Bill resurfaces, the fact remains that after the women’s reservation bill was defeated in the Lok Sabha in April and the Union government withdrew the delimitation bill, they have not yet tabled the latter in the ongoing Monsoon Session.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "powertrip"
+        ],
+        "creator": [
+          "dhanya rajendran"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 14:29:11",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 14:40:49",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-11/s07pbno4/pt.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e1fd3863af8fec47fe7ed80edfce8c15",
+        "link": "https://frontline.thehindu.com/books/indias-industrial-policy-reassessment-padmini-swaminathan-review/article71300628.ece",
+        "title": "Beyond the factory floor",
+        "description": "This timely compilation of essays reveals how historical debates on India’s industrial policy continue to resonate with contemporary questions of structural transformation, state capacity, gender justice, and employment.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "books"
+        ],
+        "creator": [
+          "chinju johny"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 14:22:36",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 14:25:35",
+        "image_url": "https://fl-i.thgim.com/public/incoming/nt4ech/article71300702.ece/alternates/LANDSCAPE_1200/Tiruppur%20knitwear.%20jpg",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://n.bytvi.com/frontline_thehindu.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "680c050a6af866ccf25bdb5b52914693",
+        "link": "https://www.thenewsminute.com/news/the-rise-of-the-teen-wife-when-young-marriage-becomes-social-media-content",
+        "title": "The rise of the ‘teen wife’: When young marriage becomes social media content",
+        "description": "The teenage wife or young wife lifestyle is gaining momentum worldwide. But beneath the apparent domestic bliss lies a more complicated story – of girlhood giving way to marriage, of social media turning private choices into public performance, and of boundaries blurring between consent, vulnerability, and agency.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "features",
+          "news",
+          "premium"
+        ],
+        "creator": [
+          "sukanya shaji"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 12:30:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 12:41:19",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-08-11%2F9arkf5k1%2FWhatsApp-Image-2026-08-11-at-15.52.48.jpeg?rect=0%2C0%2C1600%2C900&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "2bbbe0e08e9737a8454af75aa839aceb",
+        "link": "https://www.timesnownews.com/chennai/trisha-dragged-again-in-tn-political-battle-aiadmk-asks-vijay-when-will-she-become-deputy-cm-article-155593045",
+        "title": "Trisha Dragged Again In TN Political Battle, AIADMK Asks Vijay ‘When Will She Become Deputy CM?’",
+        "description": "AIADMK leader RB Udhayakumar sparked controversy by questioning when actor Trisha would become Deputy Chief Minister of Tamil Nadu, criticizing Chief Minister Vijay's leadership during an event in Thoothukudi.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "udhayanidhi stalin",
+          "tamil nadu",
+          "aiadmk",
+          "tamilaga vettri kazhagam",
+          "trisha",
+          "vijay"
+        ],
+        "creator": [
+          "aditi pandey"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top",
+          "entertainment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 11:54:43",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 12:04:29",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155593156,thumbsize-37076,width-1280,height-720,resizemode-75/155593156.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "02840d60ca734dd844529e3352e2241c",
+        "link": "https://www.timesnownews.com/education/should-india-scrap-the-medical-entrance-exam-or-build-neet-2-0-article-155591499",
+        "title": "Should India Scrap The Medical Entrance Exam Or Build ‘NEET 2.0’?",
+        "description": "Tamil Nadu’s fresh push to abolish NEET reignites debate over exam credibility, coaching culture, state-level tests and the future of medical admissions",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "neet",
+          "neet ug 2026",
+          "reneet",
+          "neet ug",
+          "premium"
+        ],
+        "creator": [
+          "deeksha teri"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 10:47:28",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 11:05:13",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155592281,thumbsize-90722,width-1280,height-720,resizemode-75/155592281.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "a9ffde23cb55f3590eebd32b4c238b1f",
+        "link": "https://www.timesnownews.com/chennai/lost-in-translation-tn-finance-ministers-tamil-pronunciation-snowballs-into-religion-showdown-article-155590530",
+        "title": "Lost In Translation: TN Finance Minister's Tamil Pronunciation Snowballs Into Religion Showdown",
+        "description": "A heated exchange unfolded in the Tamil Nadu assembly involving the DMK, BJP, and Finance Minister Marie Wilson. Initially sparked by Wilson's mispronunciation of Tamil during his Budget speech, the dispute escalated into a communal argument.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "wilson",
+          "vijay",
+          "marie wilson",
+          "tvk",
+          "bjp",
+          "tamil",
+          "tamil nadu",
+          "dmk",
+          "finance minister",
+          "budget"
+        ],
+        "creator": [
+          "dharani balasubramaniam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 08:20:19",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 08:35:51",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155590830,thumbsize-1063392,width-1280,height-720,resizemode-75/155590830.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "983ea86542b51b4368a5a7c04aa32964",
+        "link": "https://www.timesnownews.com/india/life-begins-at-conception-tamil-nadu-speakers-anti-abortion-remarks-draw-criticism-state-minister-clarifies-article-155588684",
+        "title": "'Life Begins At Conception': Tamil Nadu Speaker's Anti-Abortion Remarks Draw Criticism, State Minister Clarifies",
+        "description": "Tamil Nadu Speaker JCD Prabhakar’s anti-abortion remarks at a ‘March for Life’ rally sparked controversy, drawing criticism from BJP, DMK leaders and rights advocates.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "stella maris college",
+          "kg arunraj",
+          "j c d prabhakar",
+          "tamil nadu assembly speaker",
+          "anti abortion rally"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 07:57:13",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 08:07:31",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155590579,thumbsize-31310,width-1280,height-720,resizemode-75/155590579.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "4b4fcfa002c66707a9a7913d46fa37cf",
+        "link": "https://www.timesnownews.com/india/vijay-govt-moves-anti-neet-resolution-in-assembly-bjp-mla-opposes-aiadmk-supports-move-article-155589028",
+        "title": "Vijay Govt's Anti-NEET Resolution Gets Tamil Nadu Green Light, Passes Unanimously In Assembly",
+        "description": "Tamil Nadu's Health Minister KG Arunraj presented a resolution against the NEET exam in the Assembly, urging the Union Government to revert to admissions based on Class-12 marks.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "vijay",
+          "protest",
+          "tamil nadu",
+          "dharmendra pradhan",
+          "jantar mantar",
+          "minister",
+          "neet"
+        ],
+        "creator": [
+          "dharani balasubramaniam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 07:38:57",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 07:40:47",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155590010,thumbsize-1049271,width-1280,height-720,resizemode-75/155590010.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "ded4052a8555863336f3514f4d331782",
+        "link": "https://frontline.thehindu.com/columns/gen-z-youth-protests-bjp-modi-india-politics/article71328045.ece",
+        "title": "Confused by Gandhi in jeans",
+        "description": "The political environment has changed and it is the youth who have changed it, not the established political parties. Only those who respond to these rumblings in society will prevail.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "columns"
+        ],
+        "creator": [
+          "mani shankar aiyar"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "opinion",
+        "pubDate": "2026-08-11 07:19:26",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 07:26:36",
+        "image_url": "https://fl-i.thgim.com/public/incoming/z3id02/article71328074.ece/alternates/LANDSCAPE_1200/cjp-pradhan-resign.jpg",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://n.bytvi.com/frontline_thehindu.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "fc6ef10e48a9dcf4aba4e83977e4527c",
+        "link": "https://www.timesnownews.com/business-economy/markets/milky-mist-ipo-opens-today-check-latest-gmp-price-band-issue-size-and-details-before-applying-article-155583141",
+        "title": "Milky Mist IPO Opens Today: Check Latest GMP, Price Band, Issue Size And Details Before Applying",
+        "description": "Milky Mist IPO opens August 11 at Rs 133-140 per share after raising Rs 465 crore from anchors, with GMP indicating a potential listing premium.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "milky mist ipo price band",
+          "milky mist ipo",
+          "milky mist",
+          "milky mist ipo gmp",
+          "milky mist ipo promoters"
+        ],
+        "creator": [
+          "priya raghuvanshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 06:58:04",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 07:03:13",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155586941,thumbsize-620225,width-1280,height-720,resizemode-75/155586941.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "71d6c9eca6faa543ffeef80a65ecb395",
+        "link": "https://www.timesnownews.com/india/tamil-nadu-minister-moves-anti-neet-resolution-in-assembly-bjp-mla-opposes-threatens-walkout-article-155589028",
+        "title": "Tamil Nadu Minister Moves Anti-NEET Resolution in Assembly: BJP MLA Opposes, Threatens Walkout",
+        "description": "Tamil Nadu Minister Moves Anti-NEET Resolution in Assembly",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "times now",
+          "latest news",
+          "times now news",
+          "today headlines",
+          "today news headlines",
+          "latest news updates",
+          "english news",
+          "english news today"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 06:39:32",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 07:02:42",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155589028,width-1280,height-720,resizemode-75/155589028.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "ae11360fc19406afce97b12834a828ae",
+        "link": "https://www.thenewsminute.com/videos/anti-abortion-rally-in-chennai-by-catholic-groups-lme-shorts",
+        "title": "Anti-abortion rally in Chennai by Catholic groups | LME Shorts",
+        "description": "Tamil Nadu Assembly Speaker JCD Prabhakar says, \"Life begins at conception.\" He is entitled to that belief but not to legislate it onto every woman's body.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "video"
+        ],
+        "creator": [
+          "azeefa fathima"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-11 06:07:32",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 06:08:19",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-11/6nytg5y2/119536.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": "https://www.youtube.com/watch?v=ug8vT2v2Yd0",
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "0d20efb45369a8777b810201c5d471df",
+        "link": "https://www.timesnownews.com/entertainment-news/south/vikrams-video-with-exotic-animal-triggers-tamil-nadu-forest-department-probe-actor-deletes-reel-article-155578844",
+        "title": "Vikram’s Video With Exotic Animal Triggers Tamil Nadu Forest Department Probe; Actor Deletes Reel",
+        "description": "Vikram’s Instagram reel featuring an endangered lar gibbon has got Forest Department inquiry into its ownership and documentation. The actor is yet to release a statement on this.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "vikram",
+          "ck ranganathan",
+          "anand shankar",
+          "tamil cinema",
+          "veera dheera sooran"
+        ],
+        "creator": [
+          "raisa nasreen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "environment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-11 04:44:18",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-11 05:03:57",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155579082,thumbsize-68516,width-1280,height-720,resizemode-75/155579082.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 3
+  }
+}

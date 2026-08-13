@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-12",
+  "fetchedAt": "2026-08-13T10:04:28.204052+05:30",
+  "lastFetchedAt": "2026-08-13T10:04:28.204052+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-12"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22316,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.525-Hon_ble_Minister_for_Forests-WORLD_ELEPHANT_DAY-English-Press_Release-Date_12.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.525-Hon'ble Minister for Forests-WORLD ELEPHANT DAY-English-Press Release-Date 12.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-12",
+        "language": "en"
+      },
+      {
+        "id": 22317,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.525-Hon_ble_Minister_for_Forests-WORLD_ELEPHANT_DAY-Tamil-Press_Release-Date_12.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.525-Hon'ble Minister for Forests-WORLD ELEPHANT DAY-Tamil-Press Release-Date 12.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-12",
+        "language": "en"
+      },
+      {
+        "id": 22318,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.526-Hon_ble_CM_Social_Media_Message_-_International_Youth_Day_2026_-_Date_12.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.526-Hon'ble CM Social Media Message - International Youth Day 2026 - Date 12.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-12",
+        "language": "en"
+      },
+      {
+        "id": 22319,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.527_-_Hon_ble_Housing_and_Urban_Development_Minister-TNHB_Online_Sales_Portal_Press_Release_-_Date.12.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.527 - Hon'ble Housing and Urban Development Minister-TNHB Online Sales Portal Press Release - Date.12.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-12",
+        "language": "en"
+      }
+    ]
+  }
+}
