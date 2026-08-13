@@ -55,7 +55,7 @@ class Minister:
     id: int
     name: str
     designation: str
-    portfolio: str
+    portfolios: list[str]
     photo_url: str
     display_order: int
     is_chief_minister: bool
@@ -64,6 +64,33 @@ class Minister:
 def _clean_text(value: str) -> str:
     text = _TAG_RE.sub(" ", value or "")
     return re.sub(r"\s+", " ", text).strip()
+
+
+def _split_portfolio_text(value: str) -> list[str]:
+    text = _clean_text(value)
+    if not text:
+        return []
+
+    parts: list[str] = []
+    buff: list[str] = []
+    depth = 0
+    for ch in text:
+        if ch == "(":
+            depth += 1
+        elif ch == ")" and depth > 0:
+            depth -= 1
+        if ch == "," and depth == 0:
+            item = "".join(buff).strip().rstrip("., ")
+            if item:
+                parts.append(item)
+            buff = []
+        else:
+            buff.append(ch)
+
+    last = "".join(buff).strip().rstrip("., ")
+    if last:
+        parts.append(last)
+    return parts
 
 
 def fetch_ministers(
@@ -85,7 +112,7 @@ def fetch_ministers(
                 id=int(order_raw),
                 name=_clean_text(raw_name),
                 designation=designation,
-                portfolio=_clean_text(raw_portfolio),
+                portfolios=_split_portfolio_text(raw_portfolio),
                 photo_url=photo_url.strip(),
                 display_order=int(order_raw),
                 is_chief_minister="chief minister" in designation.lower(),
