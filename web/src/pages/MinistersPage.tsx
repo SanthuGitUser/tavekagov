@@ -7,6 +7,7 @@ import { useGovernmentSearch } from "@/context/GovernmentSearchContext";
 import {
   buildMinisterDepartmentGroups,
   filterMinisterDepartmentGroups,
+  sortMinisterDepartmentGroupsByPortfolioCount,
 } from "@/lib/governmentGroupUtils";
 import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
 import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
@@ -25,7 +26,10 @@ export function MinistersPage() {
   );
 
   const filteredGroups = useMemo(
-    () => filterMinisterDepartmentGroups(groups, search),
+    () =>
+      sortMinisterDepartmentGroupsByPortfolioCount(
+        filterMinisterDepartmentGroups(groups, search),
+      ),
     [groups, search],
   );
 

@@ -154,9 +154,18 @@ export type TnTransfersPostingRow = TnTransfersPosting & {
 
 export type DashboardStats = {
   pressReleases: number;
+  govPressReleaseImages: number;
+  governmentOrders: number;
+  transfersPostings: number;
   departments: number;
   ministers: number;
   districts: number;
-  governmentOrders: number;
-  transfersPostings: number;
+  constituencies: number;
+  govtSchemes: number;
+  govtSchemesState: number;
+  govtSchemesHousing: number;
+  govtSchemesScholarships: number;
+  magazineIssues: number;
+  mapDistricts: number;
+  mapConstituencies: number;
 };

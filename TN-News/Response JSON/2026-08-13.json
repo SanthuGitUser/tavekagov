@@ -1,0 +1,396 @@
+{
+  "date": "2026-08-13",
+  "fetchedAt": "2026-08-14T15:38:51.409883+05:30",
+  "lastFetchedAt": "2026-08-14T15:38:51.409883+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 9,
+    "apiReportedTotalResults": 14,
+    "results": [
+      {
+        "article_id": "aecca14b203653ef350bb07f16523c41",
+        "link": "https://www.timesnownews.com/india/amend-constitution-to-freeze-lok-sabha-strength-at-543-vijay-writes-to-pm-modi-article-155608667",
+        "title": "Amend Constitution To Freeze Lok Sabha Strength At 543, Vijay Writes To PM Modi",
+        "description": "Tamil Nadu Chief Minister Vijay has urged Prime Minister Narendra Modi to amend the Constitution to permanently fix the Lok Sabha's strength at 543 members.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "vijay",
+          "delimitation",
+          "narendra modi",
+          "tamil nadu",
+          "women reservation bill"
+        ],
+        "creator": [
+          "mahima joshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-13 16:30:11",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 16:35:23",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155608669,thumbsize-25006,width-1280,height-720,resizemode-75/155608669.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "37d832cf1471b01498af7cc2bc7d69c5",
+        "link": "https://www.thenewsminute.com/videos/why-four-people-went-on-hunger-strike-against-neet-in-chennai-the-news-minute",
+        "title": "Why four people went on hunger strike against NEET in Chennai | The News Minute",
+        "description": "Why four people went on hunger strike against NEET in Chennai | The News Minute",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "video"
+        ],
+        "creator": [
+          "nithesh kumar m"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-13 14:34:03",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 14:41:15",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-13/7t20vota/YT.jpg.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": "https://www.thenewsminute.com/videos/why-four-people-went-on-hunger-strike-against-neet-in-chennai-the-news-minute",
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "fdd6e3ec15bc0dc46475a4a4d424003b",
+        "link": "https://frontline.thehindu.com/interviews/p-chidambaram-gen-z-political-crisis/article71340722.ece",
+        "title": "Gen Z has lost faith in the system: P. Chidambaram",
+        "description": "The senior Congress leader discusses the student protest, anger against the political establishment, and the future of India’s electoral democracy.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "interviews"
+        ],
+        "creator": [
+          "frontline"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-13 11:26:31",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 11:53:12",
+        "image_url": "https://fl-i.thgim.com/public/incoming/qij3ur/article71340679.ece/alternates/LANDSCAPE_1200/SpeakEasy%20thumbnails%202.jpg",
+        "video_url": "https://cdn.jwplayer.com/players/x6Ep4Rsb.html",
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://n.bytvi.com/frontline_thehindu.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "6beb45a277771fbe47dfe45712fa891c",
+        "link": "https://www.thenewsminute.com/tamil-nadu/nearly-a-century-ago-dravidian-magazines-were-advocating-for-womens-reproductive-freedom",
+        "title": "Nearly a century ago, Dravidian magazines were advocating for women’s reproductive freedom",
+        "description": "Nearly a century earlier, the question of controlling pregnancy was being debated in the pages of Kudi Arasu and Pagutharivu, magazines associated with the Self-Respect Movement and founded by Dravidian icon Periyar.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "opinion",
+          "tamil nadu"
+        ],
+        "creator": [
+          "kavitha muralidharan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-13 10:50:06",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 11:09:00",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-13/uqc80xzs/Artboard-2.jpg.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "0989cee3931bc5d2c63b296658c0ced4",
+        "link": "https://www.timesnownews.com/education/neet-ss-counselling-2025-round-2-seat-allotment-result-out-at-mcc-nic-in-article-155606393",
+        "title": "NEET SS Counselling 2025: Round 2 Seat Allotment Result Out at mcc.nic.in",
+        "description": "MCC has released NEET SS 2025 Round 2 seat allotment, with 2,423 seats offered. College reporting begins August 14 following Supreme Court directions.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "neet ss",
+          "neet ss counselling result",
+          "neet ss counselling",
+          "neet ss round 2 counselling",
+          "medical counselling committee",
+          "mcc"
+        ],
+        "creator": [
+          "lakshima sareen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-13 10:11:15",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 10:33:01",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155606516,thumbsize-1177233,width-1280,height-720,resizemode-75/155606516.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "aab094d5f754eab7d1cafaba19182368",
+        "link": "https://www.timesnownews.com/education/tnpsc-group-2-2a-notification-2026-released-check-eligibility-dates-and-how-to-apply-article-155606062",
+        "title": "TNPSC Group 2, 2A Notification 2026 Released: Check Eligibility, Dates and How to Apply",
+        "description": "TNPSC has issued the Group 2 and 2A recruitment notification for 821 posts. Candidates can apply until September 9, with the preliminary exam scheduled for November 1, 2026.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tnpsc group 2a 2026",
+          "tnpsc group 2 2026",
+          "tamil nadu public service commission",
+          "tnpsc recruitment 2026",
+          "tnpsc group 2 and 2a application form"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-13 09:08:04",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 09:32:47",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155606119,thumbsize-119998,width-1280,height-720,resizemode-75/155606119.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "47890eac1c1542bd309e51fd13a2d611",
+        "link": "https://www.thenewsminute.com/news/bjp-mp-calls-cpim-john-brittas-lungiwala-opposition-mps-flaunt-lungis",
+        "title": "BJP MP calls CPI(M) John Brittas ‘lungiwala’; opposition MPs flaunt lungis",
+        "description": "According to John Brittas, the incident occurred during a parliamentary discussion on August 10. The allegation sparked an uproar in the Rajya Sabha on Wednesday, August 12, resulting in an early adjournment before lunch.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "news",
+          "tamil nadu",
+          "kerala"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-13 04:04:32",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 04:08:40",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-13/ul5fxwgi/Screenshot-2026-08-13-9.32.10-AM.png?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "a330a14170994e68b0e08a21fe948f98",
+        "link": "https://www.timesnownews.com/education/karnataka-bandh-2026-today-schools-closed-status-amid-12-hour-statewide-shutdown-article-155604003",
+        "title": "Karnataka Bandh 2026 Today: Schools Closure Status Amid 12-Hour Statewide Shutdown",
+        "description": "Schools in Karnataka shall remain open today amid a state shutdown till 6 pm over the Cauvery water dispute.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "trending news",
+          "school news",
+          "karnataka",
+          "school holiday",
+          "bharat bandh today"
+        ],
+        "creator": [
+          "akshara dm"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-13 03:28:44",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 03:33:31",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155604005,thumbsize-79998,width-1280,height-720,resizemode-75/155604005.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "59d069e137cf50a5ca0d876f79307ada",
+        "link": "https://www.timesnownews.com/education/school-assembly-news-headlines-today-aug-13-top-national-international-sports-updates-thought-of-the-day-article-155603415",
+        "title": "School Assembly News Headlines Today (Aug 13): Top National, International & Sports Updates + Thought of the Day",
+        "description": "Take a look at the major national, international, and sports highlights of the day. You may use it in the school assembly on August 13, 2026.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "trending news",
+          "tamil nadu",
+          "ghar tiranga",
+          "school assembly news headlines",
+          "school assembly"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-13 00:35:35",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-13 01:02:41",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155603419,thumbsize-37532,width-1280,height-720,resizemode-75/155603419.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}

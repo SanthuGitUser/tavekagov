@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-14",
+  "fetchedAt": "2026-08-14T15:35:03.731616+05:30",
+  "lastFetchedAt": "2026-08-14T15:35:03.731616+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-14"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22333,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.539_-_Hon_ble_CM_s_Police_Medal-Home_Dept-English-Press_Release_-_Date.14.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.539 - Hon'ble CM's Police Medal-Home Dept-English-Press Release - Date.14.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-14",
+        "language": "en"
+      },
+      {
+        "id": 22334,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.539_-_Hon_ble_CM_s_Police_Medal-Home_Dept-Tamil-Press_Release_-_Date.14.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.539 - Hon'ble CM's Police Medal-Home Dept-Tamil-Press Release - Date.14.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-14",
+        "language": "en"
+      },
+      {
+        "id": 22335,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.541_-_EDII_-_Gold_Appraiser_Training_Press_Release_-_English_-_Date.14.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.541 - EDII - Gold Appraiser Training Press Release - English - Date.14.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-14",
+        "language": "en"
+      },
+      {
+        "id": 22336,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.541_-_EDII_-_Gold_Appraiser_Training_Press_Release_-_Tamil_-_Date.14.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.541 - EDII - Gold Appraiser Training Press Release - Tamil - Date.14.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-14",
+        "language": "en"
+      },
+      {
+        "id": 22337,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.540_-_EDII_-_Drone_Training_Press_Release_-_English_-_Date.14.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.540 - EDII - Drone Training Press Release - English - Date.14.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-14",
+        "language": "en"
+      },
+      {
+        "id": 22338,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.540_-_EDII_-_Drone_Training_Press_Release_-_Tamil_-_Date.14.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.540 - EDII - Drone Training Press Release - Tamil - Date.14.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-14",
+        "language": "en"
+      }
+    ]
+  }
+}

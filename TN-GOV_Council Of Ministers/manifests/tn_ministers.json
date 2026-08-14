@@ -1,13 +1,23 @@
 {
   "source_url": "https://www.tn.gov.in/minister_list.php",
-  "fetchedAt": "2026-08-13T10:06:05.403657+05:30",
+  "fetchedAt": "2026-08-14T15:36:25.689796+05:30",
   "count": 35,
   "ministers": [
     {
       "id": 1,
       "name": "Thiru C. Joseph Vijay",
       "designation": "Honourable Chief Minister",
-      "portfolio": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers, Police, Home, Special Programme Implementation, Special Initiatives, Poverty Alleviation and Rural Indebtedness, Youth Welfare, Welfare of Children, Aged, Differently Abled Persons, Municipal Administration, Urban and Water Supply.",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
       "display_order": 1,
       "is_chief_minister": true
@@ -16,7 +26,10 @@
       "id": 2,
       "name": "Thiru N. Anand",
       "designation": "Minister for Rural Development and Water Resources",
-      "portfolio": "Rural Development, Panchayats and Panchayat Union, Irrigation, Irrigation Projects including Small Irrigation.",
+      "portfolios": [
+        "Rural Development, Panchayats and Panchayat Union",
+        "Irrigation, Irrigation Projects including Small Irrigation"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/024_Anand.png",
       "display_order": 2,
       "is_chief_minister": false
@@ -25,7 +38,11 @@
       "id": 3,
       "name": "Thiru Aadhav Arjuna",
       "designation": "Minister for Public Works and Sports Development",
-      "portfolio": "Public Works (Buildings, Highways and Minor Ports), Sports Development.",
+      "portfolios": [
+        "Public Works (Buildings)",
+        "Highways and Minor Ports",
+        "Sports Development"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/014_Aadhav_Arjuna.png",
       "display_order": 3,
       "is_chief_minister": false
@@ -34,7 +51,9 @@
       "id": 4,
       "name": "Dr. K.G. Arunraj",
       "designation": "Minister for Health, Medical Education and Family Welfare",
-      "portfolio": "Health, Medical Education and Family Welfare.",
+      "portfolios": [
+        "Health, Medical Education and Family Welfare"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/096_Arunraj.png",
       "display_order": 4,
       "is_chief_minister": false
@@ -43,7 +62,10 @@
       "id": 5,
       "name": "Thiru K A. Sengottaiyan",
       "designation": "Minister for Revenue and Disaster Management",
-      "portfolio": "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan and Legislative Assembly",
+      "portfolios": [
+        "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan",
+        "Legislative Assembly"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/106_Sengottaiyan.png",
       "display_order": 5,
       "is_chief_minister": false
@@ -52,7 +74,9 @@
       "id": 6,
       "name": "Thiru P. Venkataramanan",
       "designation": "Minister for Food and Civil Supplies",
-      "portfolio": "Food and Civil Supplies, Consumer Protection and Price Control.",
+      "portfolios": [
+        "Food and Civil Supplies, Consumer Protection and Price Control"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/025_Venkataramanan.png",
       "display_order": 6,
       "is_chief_minister": false
@@ -61,7 +85,12 @@
       "id": 7,
       "name": "Thiru R. Nirmalkumar",
       "designation": "Minister for Energy Resources and Law",
-      "portfolio": "Electricity &amp; Non-Conventional Energy Development, Law, Courts, Prisons and Prevention of Corruption, Governor, Elections and Passports.",
+      "portfolios": [
+        "Electricity & Non-Conventional Energy Development",
+        "Law, Courts, Prisons, Prevention of Corruption",
+        "Governor",
+        "Elections and Passports"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/195_Nirmalkumar.png",
       "display_order": 7,
       "is_chief_minister": false
@@ -70,7 +99,11 @@
       "id": 8,
       "name": "Thiru Rajmohan",
       "designation": "Minister for School Education, Tamil Development, Information and Publicity",
-      "portfolio": "School Education, Archaeology, Tamil Official Language and Tamil Culture, Information &amp; Publicity, Film Technology and Cinematograph Act, Newsprint Control, Stationery and Printing, Government Press.",
+      "portfolios": [
+        "School Education",
+        "Archaeology",
+        "Tamil Official Language and Tamil Culture, Information & Publicity, Film Technology and Cinematograph Act, Newsprint Control, Stationery and Printing, Government Press"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/016_Rajmohan.png",
       "display_order": 8,
       "is_chief_minister": false
@@ -79,7 +112,9 @@
       "id": 9,
       "name": "Dr. TK. Prabhu",
       "designation": "Minister for Natural Resources",
-      "portfolio": "Minerals and Mines.",
+      "portfolios": [
+        "Minerals and Mines"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/184_tk_prabhu.png",
       "display_order": 9,
       "is_chief_minister": false
@@ -88,7 +123,9 @@
       "id": 10,
       "name": "Selvi S. Keerthana",
       "designation": "Minister for Industries",
-      "portfolio": "Industries, Investment Promotion.",
+      "portfolios": [
+        "Industries, Investment Promotion"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/205_Keerthana.png",
       "display_order": 10,
       "is_chief_minister": false
@@ -97,7 +134,9 @@
       "id": 11,
       "name": "Thiru P. Viswanathan",
       "designation": "Minister for Higher Education",
-      "portfolio": "Higher Education including Technical Education, Electronics, Science and Technology",
+      "portfolios": [
+        "Higher Education including Technical Education, Electronics, Science and Technology"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/188_Viswanathan.png",
       "display_order": 11,
       "is_chief_minister": false
@@ -106,7 +145,9 @@
       "id": 12,
       "name": "Thiru S. Rajesh Kumar",
       "designation": "Minister for Tourism",
-      "portfolio": "Tourism and Tourism Development Corporation",
+      "portfolios": [
+        "Tourism and Tourism Development Corporation"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/234_Rajesh_Kumar.png",
       "display_order": 12,
       "is_chief_minister": false
@@ -115,7 +156,9 @@
       "id": 13,
       "name": "Thiru A.M. Shahjahan",
       "designation": "Minister for Minorities Welfare",
-      "portfolio": "Minorities Welfare and Wakf Board",
+      "portfolios": [
+        "Minorities Welfare and Wakf Board"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/172_Shahjahan.png",
       "display_order": 13,
       "is_chief_minister": false
@@ -124,7 +167,9 @@
       "id": 14,
       "name": "Thiru Vanni Arasu",
       "designation": "Minister for Social Justice",
-      "portfolio": "Adi Dravidar Welfare and Hill Tribes",
+      "portfolios": [
+        "Adi Dravidar Welfare and Hill Tribes"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/072_Vanni_Arasu.png",
       "display_order": 14,
       "is_chief_minister": false
@@ -133,7 +178,9 @@
       "id": 15,
       "name": "Thiru A. Vijay Tamilan Parthiban",
       "designation": "Minister for Transport",
-      "portfolio": "Motor Vehicle Acts – Administration, Transport, Nationalised Transport and Motor Vehicles Act",
+      "portfolios": [
+        "Motor Vehicle Acts – Administration, Transport, Nationalised Transport and Motor Vehicles Act"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/090_Vijay_Tamilan_ Parthiban.png",
       "display_order": 15,
       "is_chief_minister": false
@@ -142,7 +189,10 @@
       "id": 16,
       "name": "Thiru B. Rajkumar",
       "designation": "Minister for Housing and Urban Development",
-      "portfolio": "Housing, Rural Housing, Town Planning Projects and Housing Development, Accommodation Control, CMDA, Tamil Nadu Urban Habitat Development Board, Urban Planning and Urban Development",
+      "portfolios": [
+        "Housing, Rural Housing, Town Planning Projects and Housing Development, Accommodation Control, Tamil Nadu Urban Habitat Development Board, Urban Planning and Urban Development",
+        "CMDA"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/155_Rajkumar.png",
       "display_order": 16,
       "is_chief_minister": false
@@ -151,7 +201,9 @@
       "id": 17,
       "name": "Thiru V. Sampath Kumar",
       "designation": "Minister for Backward Classes Welfare",
-      "portfolio": "Backward Classes Welfare, Most Backward Classes Welfare and De-notified Communities Welfare",
+      "portfolios": [
+        "Backward Classes Welfare, Most Backward Classes Welfare and De-notified Communities Welfare"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/118_Sampath_kumar.png",
       "display_order": 17,
       "is_chief_minister": false
@@ -160,7 +212,9 @@
       "id": 18,
       "name": "Thiru M. Vijay Balaji",
       "designation": "Minister for Handlooms, Textiles and Khadi",
-      "portfolio": "Handlooms and Textiles, Khadi and Village Industries Board",
+      "portfolios": [
+        "Handlooms and Textiles, Khadi and Village Industries Board"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/098_Vijay_Balaji.png",
       "display_order": 18,
       "is_chief_minister": false
@@ -169,7 +223,9 @@
       "id": 19,
       "name": "Thiru K. Vignesh",
       "designation": "Minister for Prohibition and Excise",
-      "portfolio": "Prohibition and Excise",
+      "portfolios": [
+        "Prohibition and Excise"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/122_vignesh.png",
       "display_order": 19,
       "is_chief_minister": false
@@ -178,7 +234,9 @@
       "id": 20,
       "name": "Thiru K. Thennarasu",
       "designation": "Minister for Non-Resident Tamils Welfare",
-      "portfolio": "Non-Resident Tamils Welfare, Refugees &amp; evacuees",
+      "portfolios": [
+        "Non-Resident Tamils Welfare, Refugees & evacuees"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/029_Thennarasu.png",
       "display_order": 20,
       "is_chief_minister": false
@@ -187,7 +245,10 @@
       "id": 21,
       "name": "Thiru J. Mohamed Farvas",
       "designation": "Minister for Labour Welfare and Skill Development",
-      "portfolio": "Labour Welfare, Population, Employment and Training, Census, Weights and Measures, Urban and Rural Employment and Bonded Labour Welfare",
+      "portfolios": [
+        "Labour Welfare, Population, Employment and Training, Urban and Rural Employment and Bonded Labour Welfare",
+        "Census"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/183_Mohamed_Farvas.png",
       "display_order": 21,
       "is_chief_minister": false
@@ -196,7 +257,9 @@
       "id": 22,
       "name": "Thiru V. Gandhiraj",
       "designation": "Minister for Co-operation",
-      "portfolio": "Co-operation",
+      "portfolios": [
+        "Co-operation"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/038_Gandhiraj.png",
       "display_order": 22,
       "is_chief_minister": false
@@ -205,7 +268,10 @@
       "id": 23,
       "name": "Tmt Jagadeshwari. K",
       "designation": "Minister for Social Welfare and Women Empowerment",
-      "portfolio": "Social Welfare including Women Welfare, Orphanages and Correctional Administration and Beggar Homes and Social Reforms &amp; Nutritious Meal Programme.",
+      "portfolios": [
+        "Social Welfare including Women Welfare",
+        "Orphanages and Correctional Administration and Beggar Homes and Social Reforms & Nutritious Meal Programme"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/202_Jegadeshwari.jpeg",
       "display_order": 23,
       "is_chief_minister": false
@@ -214,7 +280,9 @@
       "id": 24,
       "name": "Thiru R. Vinoth",
       "designation": "Minister for Agriculture - Farmers Welfare",
-      "portfolio": "Agriculture, Agricultural Engineering, Agro Service Co-operatives, Horticulture, Sugar, Sugarcane Excise, Sugarcane Development and Waste Land Development",
+      "portfolios": [
+        "Agriculture, Agricultural Engineering, Agro Service Co-operatives, Horticulture, Sugar, Sugarcane Excise, Sugarcane Development and Waste Land Development"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/171_Vinoth.png",
       "display_order": 24,
       "is_chief_minister": false
@@ -223,7 +291,9 @@
       "id": 25,
       "name": "Tmt C. Vijayalakshmi",
       "designation": "Minister for Milk and Dairy Development",
-      "portfolio": "Milk and Dairy Development",
+      "portfolios": [
+        "Milk and Dairy Development"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/097_Vijayalakshmi.png",
       "display_order": 25,
       "is_chief_minister": false
@@ -232,7 +302,9 @@
       "id": 26,
       "name": "Thiru D. Sarathkumar",
       "designation": "Minister for Human Resources Management",
-      "portfolio": "Human Resources Management &amp; Ex-Servicemen Welfare",
+      "portfolios": [
+        "Human Resources Management & Ex-Servicemen Welfare"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/031_Sarathkumar.png",
       "display_order": 26,
       "is_chief_minister": false
@@ -241,7 +313,9 @@
       "id": 27,
       "name": "Thiru Ramesh",
       "designation": "Minister for Hindu Religious and Charitable Endowments",
-      "portfolio": "Hindu Religious and Charitable Endowments",
+      "portfolios": [
+        "Hindu Religious and Charitable Endowments"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/139_Ramesh.png",
       "display_order": 27,
       "is_chief_minister": false
@@ -250,7 +324,9 @@
       "id": 28,
       "name": "Thiru P. Mathan Raja",
       "designation": "Minister for Micro, Small and Medium Enterprises",
-      "portfolio": "Rural Industries including Cottage Industries, Small Industries.",
+      "portfolios": [
+        "Rural Industries including Cottage Industries, Small Industries"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/217_Mathan_Raja.png",
       "display_order": 28,
       "is_chief_minister": false
@@ -259,7 +335,10 @@
       "id": 29,
       "name": "Dr N. Marie Wilson",
       "designation": "Minister for Finance, Planning and Development",
-      "portfolio": "Finance, Pensions and Pensionary Benefits, Planning &amp; Development",
+      "portfolios": [
+        "Finance, Pensions and Pensionary Benefits",
+        "Planning & Development"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/011_Marie_Wilson.png",
       "display_order": 29,
       "is_chief_minister": false
@@ -268,7 +347,9 @@
       "id": 30,
       "name": "Thiru A. Srinath",
       "designation": "Minister for Fisheries - Fishermen Welfare",
-      "portfolio": "Fisheries, Fisheries Development Corporation",
+      "portfolios": [
+        "Fisheries, Fisheries Development Corporation"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/214_Srinath.png",
       "display_order": 30,
       "is_chief_minister": false
@@ -277,7 +358,9 @@
       "id": 31,
       "name": "Tmt S. Kamali",
       "designation": "Minister for Animal Husbandry",
-      "portfolio": "Animal Husbandry",
+      "portfolios": [
+        "Animal Husbandry"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/112_Kamali.png",
       "display_order": 31,
       "is_chief_minister": false
@@ -286,7 +369,9 @@
       "id": 32,
       "name": "Dr Kumar. R",
       "designation": "Minister for Artificial Intelligence, Information Technology and Digital Services",
-      "portfolio": "Artificial Intelligence, Information Technology and Digital Services",
+      "portfolios": [
+        "Artificial Intelligence, Information Technology and Digital Services"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/026_Kumar.png",
       "display_order": 32,
       "is_chief_minister": false
@@ -295,7 +380,9 @@
       "id": 33,
       "name": "Thiru R.V. Ranjithkumar",
       "designation": "Minister for Forests",
-      "portfolio": "Forests",
+      "portfolios": [
+        "Forests"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/037_Ranjithkumar.png",
       "display_order": 33,
       "is_chief_minister": false
@@ -304,7 +391,9 @@
       "id": 34,
       "name": "Thiru D. Logesh Tamilselvan",
       "designation": "Minister for Commercial Taxes and Registration",
-      "portfolio": "Commercial Taxes, Registration and Stamp Act, Debt Relief including legislation on Money lending, Chits and Registration of Companies",
+      "portfolios": [
+        "Commercial Taxes, Registration and Stamp Act, Debt Relief including legislation on Money lending, Chits and Registration of Companies"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/092_Logesh_Tamilselvan.png",
       "display_order": 34,
       "is_chief_minister": false
@@ -313,7 +402,9 @@
       "id": 35,
       "name": "Dr V.K. Rajeev",
       "designation": "Minister for Environment and Climate Change",
-      "portfolio": "Environment, Pollution Control Board, Climate Change&nbsp;",
+      "portfolios": [
+        "Environment, Pollution Control Board, Climate Change"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/210_Rajeev.png",
       "display_order": 35,
       "is_chief_minister": false

@@ -57,6 +57,16 @@ function normalizePortfolios(portfolios: string[]): string {
   return portfolios.map((value) => stripHtml(value)).filter(Boolean).join(" ");
 }
 
+export function sortMinisterDepartmentGroupsByPortfolioCount(
+  groups: MinisterDepartmentGroup[],
+): MinisterDepartmentGroup[] {
+  return [...groups].sort((left, right) => {
+    const portfolioDiff = right.minister.portfolios.length - left.minister.portfolios.length;
+    if (portfolioDiff !== 0) return portfolioDiff;
+    return left.minister.display_order - right.minister.display_order;
+  });
+}
+
 export function filterMinisterDepartmentGroups(
   groups: MinisterDepartmentGroup[],
   query: string,

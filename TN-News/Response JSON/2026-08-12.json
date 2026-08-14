@@ -1,8 +1,8 @@
 {
   "date": "2026-08-12",
   "fetchedAt": "2026-08-13T10:06:54.566512+05:30",
-  "lastFetchedAt": "2026-08-13T10:06:54.566512+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-14T15:38:51.409883+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -11,14 +11,13 @@
       "country": "in",
       "language": "en",
       "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
-      "category": "crime,business,politics,education,environment",
-      "apikey": "<redacted>"
+      "category": "crime,business,politics,education,environment"
     }
   },
   "response": {
     "status": "success",
     "totalResults": 9,
-    "apiReportedTotalResults": 23,
+    "apiReportedTotalResults": 14,
     "results": [
       {
         "article_id": "99fddae33aacb771a9b36b0b016380e9",
@@ -422,6 +421,6 @@
         "duplicate": false
       }
     ],
-    "pagesFetched": 3
+    "pagesFetched": 2
   }
 }

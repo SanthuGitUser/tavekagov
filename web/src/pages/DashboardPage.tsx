@@ -1,16 +1,39 @@
+import { DashboardKpiGrid } from "@/components/dashboard/DashboardKpiGrid";
+import { DashboardSection } from "@/components/dashboard/DashboardWidgetCard";
 import {
-  ArrowRightLeft,
-  FileText,
-  Gavel,
-} from "lucide-react";
-
-import { StatCard } from "@/components/dashboard/StatCard";
+  ConstituenciesPartyBreakdownWidget,
+  DepartmentsTilesWidget,
+  DistrictsFeaturedWidget,
+  DistrictsMiniMapWidget,
+  MapsMetaWidget,
+  MinistersChiefMinisterWidget,
+} from "@/components/dashboard/widgets/AdministrationDashboardWidgets";
+import {
+  GovtSchemesPopularWidget,
+  GovtSchemesRecentWidget,
+  MagazineLatestWidget,
+  NewsFullPagePreviewWidget,
+  NewsHeadlinesWidget,
+  TvkManifestoPreviewWidget,
+  TvkManifestoSummaryWidget,
+  useDashboardAsyncCounts,
+} from "@/components/dashboard/widgets/ContentDashboardWidgets";
+import {
+  GovPressReleasesImageGridWidget,
+  GovPressReleasesRecentWidget,
+  GovernmentOrdersRecentWidget,
+  GovernmentOrdersTableWidget,
+  PressReleasesRecentWidget,
+  PressReleasesTimelineWidget,
+  PressReleasesTrendWidget,
+  TransfersRecentWidget,
+  TransfersTableWidget,
+} from "@/components/dashboard/widgets/PublicationsDashboardWidgets";
 import { ErrorState } from "@/components/shared/ErrorState";
 import { useAsyncData } from "@/hooks/useAsyncData";
 import { useDashboardDateRange } from "@/context/DashboardDateRangeContext";
-import {
-  fetchDashboardStatsForRange,
-} from "@/lib/queries";
+import { fetchDashboardStatsForRange } from "@/lib/queries";
+
 export function DashboardPage() {
   const dashboardDateRange = useDashboardDateRange();
   const dateRange = dashboardDateRange?.effectiveRange ?? null;
@@ -19,34 +42,81 @@ export function DashboardPage() {
     () => fetchDashboardStatsForRange(dateRange),
     [dateRange?.from, dateRange?.to],
   );
+  const asyncCounts = useDashboardAsyncCounts(dateRange);
 
   const loading = statsQuery.loading;
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
-      <div className="min-h-0 flex-1 space-y-6 overflow-y-auto pb-6">
+      <div className="min-h-0 flex-1 space-y-8 overflow-y-auto pb-6">
         {statsQuery.error ? <ErrorState message={statsQuery.error} /> : null}
 
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          <StatCard
-            title="Press releases"
-            value={statsQuery.data?.pressReleases ?? 0}
-            icon={FileText}
+        <DashboardSection
+          title="Overview"
+          description="KPI stats for every dataset. Counts respect the dashboard date range where applicable."
+        >
+          <DashboardKpiGrid
+            stats={statsQuery.data ?? undefined}
+            newsCount={asyncCounts.newsCount}
+            tvkSectionCount={asyncCounts.tvkSectionCount}
             loading={loading}
+            asyncLoading={asyncCounts.loading}
           />
-          <StatCard
-            title="Government orders"
-            value={statsQuery.data?.governmentOrders ?? 0}
-            icon={Gavel}
-            loading={loading}
-          />
-          <StatCard
-            title="Transfers and postings"
-            value={statsQuery.data?.transfersPostings ?? 0}
-            icon={ArrowRightLeft}
-            loading={loading}
-          />
-        </div>
+        </DashboardSection>
+
+        <DashboardSection
+          title="Govt Publications"
+          description="Press releases, press release images, government orders, and IAS transfers."
+        >
+          <div className="grid gap-4 xl:grid-cols-2">
+            <PressReleasesRecentWidget dateRange={dateRange} />
+            <PressReleasesTrendWidget dateRange={dateRange} />
+            <PressReleasesTimelineWidget dateRange={dateRange} />
+            <GovPressReleasesRecentWidget dateRange={dateRange} />
+            <GovPressReleasesImageGridWidget dateRange={dateRange} />
+            <GovernmentOrdersRecentWidget dateRange={dateRange} />
+            <GovernmentOrdersTableWidget dateRange={dateRange} />
+            <TransfersRecentWidget dateRange={dateRange} />
+            <TransfersTableWidget dateRange={dateRange} />
+          </div>
+        </DashboardSection>
+
+        <DashboardSection
+          title="Govt Administration"
+          description="Departments, ministers, districts, constituencies, and map previews."
+        >
+          <div className="grid gap-4 xl:grid-cols-2">
+            <DepartmentsTilesWidget />
+            <MinistersChiefMinisterWidget />
+            <DistrictsFeaturedWidget />
+            <DistrictsMiniMapWidget />
+            <ConstituenciesPartyBreakdownWidget />
+            <MapsMetaWidget />
+          </div>
+        </DashboardSection>
+
+        <DashboardSection
+          title="Schemes, Magazine & News"
+          description="Government schemes, Tamil Arasu magazine, and Tamil Nadu news previews."
+        >
+          <div className="grid gap-4 xl:grid-cols-2">
+            <GovtSchemesPopularWidget />
+            <GovtSchemesRecentWidget />
+            <MagazineLatestWidget />
+            <NewsHeadlinesWidget dateRange={dateRange} />
+            <NewsFullPagePreviewWidget dateRange={dateRange} />
+          </div>
+        </DashboardSection>
+
+        <DashboardSection
+          title="TVK Manifesto"
+          description="Lazy-loaded manifesto summary and content preview."
+        >
+          <div className="grid gap-4 xl:grid-cols-2">
+            <TvkManifestoSummaryWidget />
+            <TvkManifestoPreviewWidget />
+          </div>
+        </DashboardSection>
       </div>
     </div>
   );

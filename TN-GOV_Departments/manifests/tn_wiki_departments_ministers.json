@@ -1,0 +1,265 @@
+{
+  "source_url": "https://en.wikipedia.org/wiki/List_of_departments_of_the_government_of_Tamil_Nadu",
+  "fetchedAt": "2026-08-14T15:36:24.859258+05:30",
+  "count": 43,
+  "departments": [
+    {
+      "department": "Department of Agriculture",
+      "minister": "Thiru R. Vinoth",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mg=="
+    },
+    {
+      "department": "Department of Animal Husbandry, Dairying and Fisheries",
+      "minister": "Tmt C. Vijayalakshmi",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mw=="
+    },
+    {
+      "department": "Department of Backward Classes, Most Backward Classes and Minorities Welfare",
+      "minister": "Thiru A.M. Shahjahan",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NA=="
+    },
+    {
+      "department": "Department of Commercial Taxes and Registration",
+      "minister": "Thiru D. Logesh Tamilselvan",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Ng=="
+    },
+    {
+      "department": "Department of Co-operation, Food and Consumer Protection",
+      "minister": "Thiru V. Gandhiraj",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ=="
+    },
+    {
+      "department": "Department of Energy",
+      "minister": "Thiru R. Nirmalkumar",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Nw=="
+    },
+    {
+      "department": "Department of Environment and Forests",
+      "minister": "Thiru R.V. Ranjithkumar",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OA=="
+    },
+    {
+      "department": "Department of Finance",
+      "minister": "Dr N. Marie Wilson",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OQ=="
+    },
+    {
+      "department": "Department of Handlooms, Handicrafts, Textiles and Khadi",
+      "minister": "Thiru M. Vijay Balaji",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTA="
+    },
+    {
+      "department": "Department of Health and Family Welfare",
+      "minister": "Dr. K.G. Arunraj",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTE="
+    },
+    {
+      "department": "Department of Higher Education",
+      "minister": "Thiru P. Viswanathan",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTI="
+    },
+    {
+      "department": "Department of Highways and Minor Ports",
+      "minister": "Thiru Aadhav Arjuna",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTM="
+    },
+    {
+      "department": "Department of Home, Prohibition and Excise",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ="
+    },
+    {
+      "department": "Department of Housing and Urban Development",
+      "minister": "Thiru B. Rajkumar",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTU="
+    },
+    {
+      "department": "Department of Human Resources Management",
+      "minister": "Thiru D. Sarathkumar",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjI="
+    },
+    {
+      "department": "Department of Industries",
+      "minister": "Selvi S. Keerthana",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTY="
+    },
+    {
+      "department": "Department of Information Technology and Digital Services",
+      "minister": "Dr Kumar. R",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTc="
+    },
+    {
+      "department": "Department of Labour and Employment",
+      "minister": "Thiru J. Mohamed Farvas",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTg="
+    },
+    {
+      "department": "Department of Law",
+      "minister": "Thiru R. Nirmalkumar",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTk="
+    },
+    {
+      "department": "Department of Legislative Assembly",
+      "minister": "Thiru K A. Sengottaiyan",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjA="
+    },
+    {
+      "department": "Department of Micro, Small and Medium Enterprises",
+      "minister": "Thiru P. Mathan Raja",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjk="
+    },
+    {
+      "department": "Department of Miscellaneous Officers, Secretariat",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in minister_list chief minister (assumed)",
+      "department_profile_url": null
+    },
+    {
+      "department": "Department of Mudalvarin Mugavari",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDM="
+    },
+    {
+      "department": "Department of Municipal Administration and Water Supply",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjE="
+    },
+    {
+      "department": "Department of Natural Resources",
+      "minister": "Dr. TK. Prabhu",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDU="
+    },
+    {
+      "department": "Department of Other States Government",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in minister_list chief minister (assumed)",
+      "department_profile_url": null
+    },
+    {
+      "department": "Department of Planning, Development and Special Initiatives",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjM="
+    },
+    {
+      "department": "Department of Public",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjQ="
+    },
+    {
+      "department": "Department of Public (Elections)",
+      "minister": "Thiru R. Nirmalkumar",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzg="
+    },
+    {
+      "department": "Department of Public Works",
+      "minister": "Thiru Aadhav Arjuna",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDI="
+    },
+    {
+      "department": "Department of Revenue and Disaster Management",
+      "minister": "Thiru K A. Sengottaiyan",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjY="
+    },
+    {
+      "department": "Department of Rural Development and Panchayat Raj",
+      "minister": "Thiru N. Anand",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc="
+    },
+    {
+      "department": "Department of School Education",
+      "minister": "Thiru Rajmohan",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg="
+    },
+    {
+      "department": "Department of Social Justice",
+      "minister": "Thiru Vanni Arasu",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ=="
+    },
+    {
+      "department": "Department of Social Reforms",
+      "minister": "Tmt Jagadeshwari. K",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzk="
+    },
+    {
+      "department": "Department of Social Welfare and Women Empowerment",
+      "minister": "Tmt Jagadeshwari. K",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzA="
+    },
+    {
+      "department": "Department of Special Programme Implementation",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDE="
+    },
+    {
+      "department": "Department of Tamil Development and Information",
+      "minister": "Thiru Rajmohan",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzE="
+    },
+    {
+      "department": "Department of Tourism, Culture and Religious Endowments",
+      "minister": "Thiru S. Rajesh Kumar",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzI="
+    },
+    {
+      "department": "Department of Transport",
+      "minister": "Thiru A. Vijay Tamilan Parthiban",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzM="
+    },
+    {
+      "department": "Department of Water Resources",
+      "minister": "Thiru N. Anand",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDQ="
+    },
+    {
+      "department": "Department of Welfare of Differently Abled Persons",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzU="
+    },
+    {
+      "department": "Department of Youth Welfare and Sports Development",
+      "minister": "Thiru C. Joseph Vijay",
+      "minister_source": "tn.gov.in dept_profile",
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ="
+    }
+  ]
+}

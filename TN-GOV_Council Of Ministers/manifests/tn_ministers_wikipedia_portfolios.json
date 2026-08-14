@@ -1,0 +1,476 @@
+{
+  "source_url": "https://en.wikipedia.org/wiki/17th_Tamil_Nadu_Assembly",
+  "fetchedAt": "2026-08-14T15:36:26.612249+05:30",
+  "count": 35,
+  "ministers": [
+    {
+      "sr_no": 1,
+      "minister_name": "C. Joseph Vijay",
+      "minister_url": "https://en.wikipedia.org/wiki/C._Joseph_Vijay",
+      "portfolios": [
+        {
+          "name": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Public_(Tamil_Nadu)"
+        },
+        {
+          "name": "Police",
+          "url": "https://en.wikipedia.org/wiki/Tamil_Nadu_Police"
+        },
+        {
+          "name": "Home",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Home,_Prohibition_and_Excise"
+        },
+        {
+          "name": "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Special_Programme_Implementation_(Tamil_Nadu)"
+        },
+        {
+          "name": "Special Initiatives",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Planning,_Development_and_Special_Initiatives_(Tamil_Nadu)"
+        },
+        {
+          "name": "Youth Welfare",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Youth_Welfare_and_Sports_Development_(Tamil_Nadu)"
+        },
+        {
+          "name": "Welfare of Children, Aged",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Social_Welfare_and_Women_Empowerment_(Tamil_Nadu)"
+        },
+        {
+          "name": "Differently Abled Persons",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Welfare_of_Differently_Abled_Persons_(Tamil_Nadu)"
+        },
+        {
+          "name": "Municipal Administration, Urban and Water Supply",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Municipal_Administration_and_Water_Supply_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 2,
+      "minister_name": "N. Anand",
+      "minister_url": "https://en.wikipedia.org/wiki/N._Anand",
+      "portfolios": [
+        {
+          "name": "Rural Development, Panchayats and Panchayat Union",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Rural_Development_and_Panchayat_Raj_(Tamil_Nadu)"
+        },
+        {
+          "name": "Irrigation, Irrigation Projects including Small Irrigation",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Water_Resources_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 3,
+      "minister_name": "Aadhav Arjuna",
+      "minister_url": "https://en.wikipedia.org/wiki/Aadhav_Arjuna",
+      "portfolios": [
+        {
+          "name": "Public Works (Buildings)",
+          "url": "https://en.wikipedia.org/wiki/Tamil_Nadu_Public_Works_Department"
+        },
+        {
+          "name": "Highways and Minor Ports",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Highways_and_Minor_Ports_(Tamil_Nadu)"
+        },
+        {
+          "name": "Sports Development",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Youth_Welfare_and_Sports_Development_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 4,
+      "minister_name": "K. G. Arunraj",
+      "minister_url": "https://en.wikipedia.org/wiki/K._G._Arunraj",
+      "portfolios": [
+        {
+          "name": "Health, Medical Education and Family Welfare",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Health_and_Family_Welfare_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 5,
+      "minister_name": "K. A. Sengottaiyan",
+      "minister_url": "https://en.wikipedia.org/wiki/K._A._Sengottaiyan",
+      "portfolios": [
+        {
+          "name": "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Revenue_and_Disaster_Management_(Tamil_Nadu)"
+        },
+        {
+          "name": "Legislative Assembly",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Legislative_Assembly_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 6,
+      "minister_name": "P. Venkataramanan",
+      "minister_url": "https://en.wikipedia.org/wiki/P._Venkataramanan",
+      "portfolios": [
+        {
+          "name": "Food and Civil Supplies, Consumer Protection and Price Control",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Co-operation,_Food_and_Consumer_Protection_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 7,
+      "minister_name": "C. T. R. Nirmal Kumar",
+      "minister_url": "https://en.wikipedia.org/wiki/C._T._R._Nirmal_Kumar",
+      "portfolios": [
+        {
+          "name": "Electricity & Non-Conventional Energy Development",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Energy_(Tamil_Nadu)"
+        },
+        {
+          "name": "Law, Courts, Prisons, Prevention of Corruption",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Law_(Tamil_Nadu)"
+        },
+        {
+          "name": "Governor",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Legislative_Assembly_(Tamil_Nadu)"
+        },
+        {
+          "name": "Elections and Passports",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Public_Elections_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 8,
+      "minister_name": "Rajmohan Arumugam",
+      "minister_url": "https://en.wikipedia.org/wiki/Rajmohan_Arumugam",
+      "portfolios": [
+        {
+          "name": "School Education",
+          "url": "https://en.wikipedia.org/wiki/Department_of_School_Education_(Tamil_Nadu)"
+        },
+        {
+          "name": "Archaeology",
+          "url": "https://en.wikipedia.org/wiki/Tamil_Nadu_State_Department_of_Archaeology"
+        },
+        {
+          "name": "Tamil Official Language and Tamil Culture, Information & Publicity, Film Technology and Cinematograph Act, Newsprint Control, Stationery and Printing, Government Press",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Tamil_Development_and_Information"
+        }
+      ]
+    },
+    {
+      "sr_no": 9,
+      "minister_name": "T. K. Prabhu",
+      "minister_url": "https://en.wikipedia.org/wiki/T._K._Prabhu",
+      "portfolios": [
+        {
+          "name": "Minerals and Mines",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Natural_Resources_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 10,
+      "minister_name": "S. Keerthana",
+      "minister_url": "https://en.wikipedia.org/wiki/S._Keerthana",
+      "portfolios": [
+        {
+          "name": "Industries, Investment Promotion",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Industries_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 11,
+      "minister_name": "P. Viswanathan",
+      "minister_url": "https://en.wikipedia.org/wiki/P._Viswanathan",
+      "portfolios": [
+        {
+          "name": "Higher Education including Technical Education, Electronics, Science and Technology",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Higher_Education_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 12,
+      "minister_name": "S. Rajeshkumar",
+      "minister_url": "https://en.wikipedia.org/wiki/S._Rajeshkumar",
+      "portfolios": [
+        {
+          "name": "Tourism and Tourism Development Corporation",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Tourism,_Culture_and_Religious_Endowments"
+        }
+      ]
+    },
+    {
+      "sr_no": 13,
+      "minister_name": "A. M. Shahjahan",
+      "minister_url": "https://en.wikipedia.org/wiki/A._M._Shahjahan",
+      "portfolios": [
+        {
+          "name": "Minorities Welfare and Wakf Board",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Backward_Classes,_Most_Backward_Classes_and_Minorities_Welfare_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 14,
+      "minister_name": "Vanni Arasu",
+      "minister_url": "https://en.wikipedia.org/wiki/Vanni_Arasu",
+      "portfolios": [
+        {
+          "name": "Adi Dravidar Welfare and Hill Tribes",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Social_Justice_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 15,
+      "minister_name": "Vijay Tamilan Parthiban",
+      "minister_url": "https://en.wikipedia.org/wiki/Vijay_Tamilan_Parthiban",
+      "portfolios": [
+        {
+          "name": "Motor Vehicle Acts – Administration, Transport, Nationalised Transport and Motor Vehicles Act",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Transport_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 16,
+      "minister_name": "B. Rajkumar",
+      "minister_url": "https://en.wikipedia.org/wiki/B._Rajkumar",
+      "portfolios": [
+        {
+          "name": "Housing, Rural Housing, Town Planning Projects and Housing Development, Accommodation Control, Tamil Nadu Urban Habitat Development Board, Urban Planning and Urban Development",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Housing_and_Urban_Development_(Tamil_Nadu)"
+        },
+        {
+          "name": "CMDA",
+          "url": "https://en.wikipedia.org/wiki/Chennai_Metropolitan_Development_Authority"
+        }
+      ]
+    },
+    {
+      "sr_no": 17,
+      "minister_name": "V. Sampath Kumar",
+      "minister_url": "https://en.wikipedia.org/wiki/V._Sampath_Kumar_(TVK_politician)",
+      "portfolios": [
+        {
+          "name": "Backward Classes Welfare, Most Backward Classes Welfare and De-notified Communities Welfare",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Backward_Classes,_Most_Backward_Classes_and_Minorities_Welfare_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 18,
+      "minister_name": "M. Vijay Balaji",
+      "minister_url": "https://en.wikipedia.org/wiki/M._Vijay_Balaji",
+      "portfolios": [
+        {
+          "name": "Handlooms and Textiles, Khadi and Village Industries Board",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Handlooms,_Handicrafts,_Textiles_and_Khadi"
+        }
+      ]
+    },
+    {
+      "sr_no": 19,
+      "minister_name": "K. Vignesh",
+      "minister_url": "https://en.wikipedia.org/wiki/K._Vignesh",
+      "portfolios": [
+        {
+          "name": "Prohibition and Excise",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Home,_Prohibition_and_Excise"
+        }
+      ]
+    },
+    {
+      "sr_no": 20,
+      "minister_name": "Thennarasu. K.",
+      "minister_url": "https://en.wikipedia.org/wiki/Thennarasu._K.",
+      "portfolios": [
+        {
+          "name": "Non-Resident Tamils Welfare, Refugees & evacuees",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Public_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 21,
+      "minister_name": "J. Mohamed Farvas",
+      "minister_url": "https://en.wikipedia.org/wiki/J._Mohamed_Farvas",
+      "portfolios": [
+        {
+          "name": "Labour Welfare, Population, Employment and Training, Urban and Rural Employment and Bonded Labour Welfare",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Labour_and_Employment_(Tamil_Nadu)"
+        },
+        {
+          "name": "Census",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Public_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 22,
+      "minister_name": "V. Gandhiraj",
+      "minister_url": "https://en.wikipedia.org/wiki/V._Gandhiraj",
+      "portfolios": [
+        {
+          "name": "Co-operation",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Co-operation,_Food_and_Consumer_Protection_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 23,
+      "minister_name": "Jegadeshwari. K.",
+      "minister_url": "https://en.wikipedia.org/wiki/Jegadeshwari._K.",
+      "portfolios": [
+        {
+          "name": "Social Welfare including Women Welfare",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Social_Welfare_and_Women_Empowerment_(Tamil_Nadu)"
+        },
+        {
+          "name": "Orphanages and Correctional Administration and Beggar Homes and Social Reforms & Nutritious Meal Programme",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Social_Reforms_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 24,
+      "minister_name": "R. Vinoth",
+      "minister_url": "https://en.wikipedia.org/wiki/R._Vinoth",
+      "portfolios": [
+        {
+          "name": "Agriculture, Agricultural Engineering, Agro Service Co-operatives, Horticulture, Sugar, Sugarcane Excise, Sugarcane Development and Waste Land Development",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Agriculture_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 25,
+      "minister_name": "C. Vijayalakshmi",
+      "minister_url": "https://en.wikipedia.org/wiki/C._Vijayalakshmi",
+      "portfolios": [
+        {
+          "name": "Milk and Dairy Development",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Animal_Husbandry,_Dairying_and_Fisheries_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 26,
+      "minister_name": "D. Sarathkumar",
+      "minister_url": "https://en.wikipedia.org/wiki/D._Sarathkumar",
+      "portfolios": [
+        {
+          "name": "Human Resources Management & Ex-Servicemen Welfare",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Human_Resources_Management_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 27,
+      "minister_name": "S. Ramesh",
+      "minister_url": "https://en.wikipedia.org/wiki/S._Ramesh_(TVK_politician)",
+      "portfolios": [
+        {
+          "name": "Hindu Religious and Charitable Endowments",
+          "url": "https://en.wikipedia.org/wiki/Hindu_Religious_and_Charitable_Endowments_Department"
+        }
+      ]
+    },
+    {
+      "sr_no": 28,
+      "minister_name": "P. Mathanraja",
+      "minister_url": "https://en.wikipedia.org/wiki/P._Mathanraja",
+      "portfolios": [
+        {
+          "name": "Rural Industries including Cottage Industries, Small Industries",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Micro,_Small_and_Medium_Enterprises_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 29,
+      "minister_name": "N. Marie Wilson",
+      "minister_url": "https://en.wikipedia.org/wiki/N._Marie_Wilson",
+      "portfolios": [
+        {
+          "name": "Finance, Pensions and Pensionary Benefits",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Finance_(Tamil_Nadu)"
+        },
+        {
+          "name": "Planning & Development",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Planning,_Development_and_Special_Initiatives_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 30,
+      "minister_name": "Srinath",
+      "minister_url": "https://en.wikipedia.org/wiki/A._Srinath",
+      "portfolios": [
+        {
+          "name": "Fisheries, Fisheries Development Corporation",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Animal_Husbandry,_Dairying_and_Fisheries_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 31,
+      "minister_name": "S. Kamali",
+      "minister_url": "https://en.wikipedia.org/wiki/S._Kamali",
+      "portfolios": [
+        {
+          "name": "Animal Husbandry",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Animal_Husbandry,_Dairying_and_Fisheries_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 32,
+      "minister_name": "R. Kumar",
+      "minister_url": "https://en.wikipedia.org/wiki/R._Kumar",
+      "portfolios": [
+        {
+          "name": "Artificial Intelligence, Information Technology and Digital Services",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Artificial_Inteligence,_Information_Technology_and_Digital_Services_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 33,
+      "minister_name": "R. V. Ranjithkumar",
+      "minister_url": "https://en.wikipedia.org/wiki/R._V._Ranjithkumar",
+      "portfolios": [
+        {
+          "name": "Forests",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Environment_and_Forests"
+        }
+      ]
+    },
+    {
+      "sr_no": 34,
+      "minister_name": "Logesh Tamilselvan",
+      "minister_url": "https://en.wikipedia.org/wiki/Logesh_Tamilselvan",
+      "portfolios": [
+        {
+          "name": "Commercial Taxes, Registration and Stamp Act, Debt Relief including legislation on Money lending, Chits and Registration of Companies",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Commercial_Taxes_and_Registration_(Tamil_Nadu)"
+        }
+      ]
+    },
+    {
+      "sr_no": 35,
+      "minister_name": "Rajeev",
+      "minister_url": "https://en.wikipedia.org/wiki/Rajeev_(politician)",
+      "portfolios": [
+        {
+          "name": "Environment, Pollution Control Board, Climate Change",
+          "url": "https://en.wikipedia.org/wiki/Department_of_Environment_and_Forests"
+        }
+      ]
+    }
+  ]
+}
