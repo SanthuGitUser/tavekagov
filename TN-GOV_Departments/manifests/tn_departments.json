@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.tn.gov.in/department_list.php",
-  "fetchedAt": "2026-08-14T15:36:24.003073+05:30",
+  "fetchedAt": "2026-08-16T15:51:17.159809+05:30",
   "count": 41,
   "departments": [
     {
@@ -297,7 +297,7 @@
       "dep_id_encoded": "Mzk=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzk=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Tmt Jagadeshwari. K",
+      "minister_name": null,
       "display_order": 33
     },
     {

@@ -1,8 +1,8 @@
 {
   "date": "2026-08-10",
   "fetchedAt": "2026-08-10T14:57:11.693678+05:30",
-  "lastFetchedAt": "2026-08-14T15:35:13.987323+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-16T15:50:26.113070+05:30",
+  "fetchCount": 4,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 9,
   "releases": [
@@ -219,7 +219,17 @@
       "id": 1,
       "name": "Thiru C. Joseph Vijay",
       "designation": "Honourable Chief Minister",
-      "portfolio": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers, Police, Home, Special Programme Implementation, Special Initiatives, Poverty Alleviation and Rural Indebtedness, Youth Welfare, Welfare of Children, Aged, Differently Abled Persons, Municipal Administration, Urban and Water Supply.",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
       "display_order": 1,
       "is_chief_minister": true
@@ -228,7 +238,9 @@
       "id": 4,
       "name": "Dr. K.G. Arunraj",
       "designation": "Minister for Health, Medical Education and Family Welfare",
-      "portfolio": "Health, Medical Education and Family Welfare.",
+      "portfolios": [
+        "Health, Medical Education and Family Welfare"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/096_Arunraj.png",
       "display_order": 4,
       "is_chief_minister": false
@@ -237,7 +249,10 @@
       "id": 5,
       "name": "Thiru K A. Sengottaiyan",
       "designation": "Minister for Revenue and Disaster Management",
-      "portfolio": "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan and Legislative Assembly",
+      "portfolios": [
+        "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan",
+        "Legislative Assembly"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/106_Sengottaiyan.png",
       "display_order": 5,
       "is_chief_minister": false
@@ -246,7 +261,9 @@
       "id": 18,
       "name": "Thiru M. Vijay Balaji",
       "designation": "Minister for Handlooms, Textiles and Khadi",
-      "portfolio": "Handlooms and Textiles, Khadi and Village Industries Board",
+      "portfolios": [
+        "Handlooms and Textiles, Khadi and Village Industries Board"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/098_Vijay_Balaji.png",
       "display_order": 18,
       "is_chief_minister": false
@@ -255,7 +272,10 @@
       "id": 23,
       "name": "Tmt Jagadeshwari. K",
       "designation": "Minister for Social Welfare and Women Empowerment",
-      "portfolio": "Social Welfare including Women Welfare, Orphanages and Correctional Administration and Beggar Homes and Social Reforms &amp; Nutritious Meal Programme.",
+      "portfolios": [
+        "Social Welfare including Women Welfare",
+        "Orphanages and Correctional Administration and Beggar Homes and Social Reforms & Nutritious Meal Programme"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/202_Jegadeshwari.jpeg",
       "display_order": 23,
       "is_chief_minister": false

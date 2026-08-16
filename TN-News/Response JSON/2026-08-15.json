@@ -1,0 +1,471 @@
+{
+  "date": "2026-08-15",
+  "fetchedAt": "2026-08-16T15:52:05.380976+05:30",
+  "lastFetchedAt": "2026-08-16T15:52:05.380976+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 10,
+    "apiReportedTotalResults": 12,
+    "results": [
+      {
+        "article_id": "c724b2047c2a3573ec74257fcb165143",
+        "link": "https://www.timesnownews.com/india/i-hold-immense-concern-for-mother-motherland-mother-tongue-tamil-nadu-bjp-chief-nainar-nagendran-on-vijay-remark-row-article-155685472",
+        "title": "'I Hold Immense Concern For Mother, Motherland, Mother Tongue': Tamil Nadu BJP Chief On Vijay Remark Row",
+        "description": "Tamil Nadu BJP president Nainar Nagendran addressed backlash over his controversial remarks directed at Chief Minister Vijay, claiming they were misrepresented for political gains.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tvk",
+          "bjp",
+          "nainar nagendran",
+          "vijay",
+          "tamil nadu"
+        ],
+        "creator": [
+          "mahima joshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 16:15:35",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 16:33:12",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155686134,thumbsize-40366,width-1280,height-720,resizemode-75/155686134.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "5d164e48fb8cbecb94733e8f99f7cb2c",
+        "link": "https://www.timesnownews.com/videos/times-now/india/bjp-chief-nainar-nagendran-sparks-controversy-personal-attack-tamil-nadu-chief-minister-vijay-video-155682748",
+        "title": "Tamil Nadu BJP Chief Sparks Major Controversy After Making Remark Targeting Chief Minister Vijay",
+        "description": "The Tamil Nadu BJP chief has sparked a major political controversy after making a provocative remark targeting Tamil Nadu Chief Minister Vijay. During his remarks, he said that some were \"searching for father in the Assembly\" and made a reference to asking their mother who the father is. The statement has triggered a sharp political reaction, with questions being raised over the tone and language used against the Chief Minister. The controversy adds to the ongoing political confrontation in Tamil Nadu, with the BJP and its rivals continuing to clash over political issues and public statements. Watch the full video to know more.#tamilnadu #bjp #cmvijay #vijay #tamilnadupolitics #bjpvsvijay #politicalrow #politicalcontroversy #bjpchief #tamilpolitics #timesnow #englishnews",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu chief minister",
+          "political attack",
+          "bjp vs vijay",
+          "tamil nadu latest",
+          "vijay politics",
+          "tamil politics",
+          "bjp vijay row",
+          "tamil nadu political news",
+          "vijay",
+          "bjp chief remark",
+          "political row",
+          "vijay latest news",
+          "controversial remark",
+          "bjp latest news",
+          "father remark",
+          "political controversy",
+          "tamil nadu bjp",
+          "political reaction",
+          "tamil nadu bjp controversy",
+          "cm vijay controversy"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-15 14:51:10",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 15:03:17",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155682748,thumbsize-1085818,width-1280,height-720,resizemode-75/155682748.jpg",
+        "video_url": "https://sw-a.akamaized.net/amd/n1yoozgguo_w/1x/b1/4m/1xb14m3axz_w/ab6c2a4a_F40_360p_800.mp4",
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "61e0be18ecde937de5e918ec4f4451c6",
+        "link": "https://www.thenewsminute.com/karnataka/operation-mukta-bengali-muslim-workers-cannot-be-turned-into-an-arbitrary-suspect-class",
+        "title": "Operation Mukta: Bengali Muslim workers cannot be turned into an arbitrary ‘suspect class’",
+        "description": "A process that begins with collective suspicion and proceeds through detention, document demands and interstate verification risks turning poverty, language and migration into proxies for foreign nationality.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "karnataka",
+          "opinion"
+        ],
+        "creator": [
+          "clifton d’ rozario"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 12:17:06",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 12:37:32",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-15/tp8nu2ev/DKSBengaliMigrants.jpg.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "54f23f2e74c283c6a952fb8848455277",
+        "link": "https://www.timesnownews.com/chennai/tamil-nadu-bjp-chiefs-ask-your-mother-jibe-at-cm-vijay-annamalai-congress-condemn-indecent-comment-article-155674045",
+        "title": "Tamil Nadu BJP Chief's 'Ask Your Mother' Jibe At CM Vijay; Annamalai, Congress Condemn 'Indecent' Comment",
+        "description": "Tamil Nadu BJP president Nainar Nagendran stirred controversy with remarks about Chief Minister Vijay's mother during a speech, suggesting that the search for a father figure in the Assembly could be resolved at home.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu bjp",
+          "cm vijay",
+          "mk stalin",
+          "annamalai",
+          "nainar nagendran",
+          "vijay",
+          "udhayanidhi stalin",
+          "tamil nadu"
+        ],
+        "creator": [
+          "sriram ganesh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 12:06:29",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 12:32:21",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155675223,thumbsize-657555,width-1280,height-720,resizemode-75/155675223.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "036d68854a4ddbac5a88513d5f267bec",
+        "link": "https://www.timesnownews.com/india/52-mentions-7-big-announcements-pm-modis-red-fort-roadmap-for-young-india-article-155664863",
+        "title": "52 Mentions, 7 Big Announcements: PM Modi's Red Fort Roadmap For Young India",
+        "description": "PM Modi mentioned India's youth 52 times in his Independence Day speech, making them a key focus of his address. But what exactly did he announce for India's young population? Here's the full list.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "pm modi at red fort",
+          "independence day 2026",
+          "pm modi independence day speech",
+          "pm modi on youth",
+          "pm modi i day speech",
+          "pm modi address to youth"
+        ],
+        "creator": [
+          "anurag kumar"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 08:22:30",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 08:33:40",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155665119,thumbsize-1192330,width-1280,height-720,resizemode-75/155665119.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "a3f137a75568f528acdb29baff0a0d3c",
+        "link": "https://www.timesnownews.com/india/vanakkam-gen-z-vijays-first-i-day-speech-as-tamil-nadu-cm-focuses-on-unity-anti-corruption-growth-article-155661876",
+        "title": "‘Vanakkam Gen Z’: Vijay’s First I-Day Speech As Tamil Nadu CM Focuses On Unity, Anti-Corruption, Growth",
+        "description": "Tamil Nadu CM Joseph Vijay, in his first Independence Day speech, vowed to fight corruption, promote social unity, continue welfare schemes and target a USD 1.5-trillion economy.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "trsha",
+          "80th independence day",
+          "tamil nadu",
+          "79th independence day",
+          "independence day celebrations",
+          "tamil nadu cm",
+          "thalapathy vijay"
+        ],
+        "creator": [
+          "sumit sharma"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 07:18:58",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 07:33:09",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155662443,thumbsize-108422,width-1280,height-720,resizemode-75/155662443.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "655df0a1603656481af58744f3d70734",
+        "link": "https://www.thenewsminute.com/tamil-nadu/will-defeat-forces-and-conspiracies-against-state-govt-tn-cm-vijay-in-first-i-day-speech",
+        "title": "‘Will defeat forces and conspiracies against state govt': TN CM Vijay in first I-Day speech",
+        "description": "Vijay said his government was working towards establishing an honest and transparent administration and that there should be no compromise in public life.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 07:10:01",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 07:37:10",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-15/7n0wpp1z/WhatsApp-Image-2026-08-15-at-11.38.13-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "43e8556b12dc5b5e329a1614ef3bc27b",
+        "link": "https://www.timesnownews.com/business-economy/economy/from-energy-security-to-global-giants-pm-modi-lays-out-indias-big-economic-roadmap-article-155654273",
+        "title": "From Energy Security To Global Giants: PM Modi Lays Out India’s Big Economic Roadmap",
+        "description": "PM Modi highlights India's energy security push, from 700-city piped gas access and nuclear power to offshore oil and gas exploration.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "pm modi independence day speech 2026",
+          "nuclear power india",
+          "piped gas india",
+          "india energy security",
+          "pm modi energy security"
+        ],
+        "creator": [
+          "priya raghuvanshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 04:48:54",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 05:03:17",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155655675,thumbsize-55932,width-1280,height-720,resizemode-75/155655675.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "9edaeb57fa758ac0e551613c7ca17be5",
+        "link": "https://www.timesnownews.com/entertainment-news/south/tn-cm-vijay-salutes-all-during-independence-day-parade-trisha-krishnan-joins-celebrations-article-155653961",
+        "title": "TN CM Vijay Salutes All During Independence Day Parade, Trisha Krishnan Joins Celebrations",
+        "description": "A video of Tamil Nadu Chief Minister Vijay saluting everyone during the Independence Day parade has surfaced on social media. Actress Trisha Krishnan attended the celebration with her mother, Uma Krishnan.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "independence day parade",
+          "trisha krishnan",
+          "thalapathy vijay",
+          "tamil nadu chief minister vijay",
+          "trisha",
+          "vijay",
+          "independence day"
+        ],
+        "creator": [
+          "nirali kanabar"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 04:25:19",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 04:33:08",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155655336,thumbsize-68590,width-1280,height-720,resizemode-75/155655336.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "d28f30b3701f7cf7b3e875fd230dc2ab",
+        "link": "https://www.timesnownews.com/india/india-has-set-target-of-200-gw-nuclear-energy-setting-up-five-new-reactors-pm-article-155654746",
+        "title": "PM Modi's Big Nuclear Energy Target: 'Setting Up Five New Reactors'",
+        "description": "Prime Minister Narendra Modi on Saturday said that India has taken a step towards becoming self-reliant in the nuclear power sector, with the Prototype Fast Breeder Reactor (PFBR) at Kalpakkam, Tamil Nadu, attaining criticality this year.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india",
+          "parliament",
+          "red fort",
+          "tamil nadu",
+          "narendra modi",
+          "independence day"
+        ],
+        "creator": [
+          "sriram ganesh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-15 04:24:11",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-15 04:33:08",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155654801,thumbsize-681435,width-1280,height-720,resizemode-75/155654801.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}

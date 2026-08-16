@@ -1,8 +1,8 @@
 {
   "date": "2026-08-12",
   "fetchedAt": "2026-08-13T10:04:46.122249+05:30",
-  "lastFetchedAt": "2026-08-14T15:35:13.987323+05:30",
-  "fetchCount": 3,
+  "lastFetchedAt": "2026-08-16T15:50:26.113070+05:30",
+  "fetchCount": 4,
   "source_url": "https://www.tn.gov.in/press_release.php",
   "count": 5,
   "releases": [
@@ -127,7 +127,17 @@
       "id": 1,
       "name": "Thiru C. Joseph Vijay",
       "designation": "Honourable Chief Minister",
-      "portfolio": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers, Police, Home, Special Programme Implementation, Special Initiatives, Poverty Alleviation and Rural Indebtedness, Youth Welfare, Welfare of Children, Aged, Differently Abled Persons, Municipal Administration, Urban and Water Supply.",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
       "display_order": 1,
       "is_chief_minister": true
@@ -136,7 +146,9 @@
       "id": 4,
       "name": "Dr. K.G. Arunraj",
       "designation": "Minister for Health, Medical Education and Family Welfare",
-      "portfolio": "Health, Medical Education and Family Welfare.",
+      "portfolios": [
+        "Health, Medical Education and Family Welfare"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/096_Arunraj.png",
       "display_order": 4,
       "is_chief_minister": false
@@ -145,7 +157,9 @@
       "id": 6,
       "name": "Thiru P. Venkataramanan",
       "designation": "Minister for Food and Civil Supplies",
-      "portfolio": "Food and Civil Supplies, Consumer Protection and Price Control.",
+      "portfolios": [
+        "Food and Civil Supplies, Consumer Protection and Price Control"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/025_Venkataramanan.png",
       "display_order": 6,
       "is_chief_minister": false
@@ -154,7 +168,10 @@
       "id": 16,
       "name": "Thiru B. Rajkumar",
       "designation": "Minister for Housing and Urban Development",
-      "portfolio": "Housing, Rural Housing, Town Planning Projects and Housing Development, Accommodation Control, CMDA, Tamil Nadu Urban Habitat Development Board, Urban Planning and Urban Development",
+      "portfolios": [
+        "Housing, Rural Housing, Town Planning Projects and Housing Development, Accommodation Control, Tamil Nadu Urban Habitat Development Board, Urban Planning and Urban Development",
+        "CMDA"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/155_Rajkumar.png",
       "display_order": 16,
       "is_chief_minister": false
@@ -163,7 +180,9 @@
       "id": 32,
       "name": "Dr Kumar. R",
       "designation": "Minister for Artificial Intelligence, Information Technology and Digital Services",
-      "portfolio": "Artificial Intelligence, Information Technology and Digital Services",
+      "portfolios": [
+        "Artificial Intelligence, Information Technology and Digital Services"
+      ],
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/026_Kumar.png",
       "display_order": 32,
       "is_chief_minister": false

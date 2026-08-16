@@ -1,0 +1,106 @@
+{
+  "date": "2026-08-14",
+  "fetchedAt": "2026-08-16T15:52:05.380976+05:30",
+  "lastFetchedAt": "2026-08-16T15:52:05.380976+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 2,
+    "apiReportedTotalResults": 12,
+    "results": [
+      {
+        "article_id": "2312a1605d75a96d9058e96eeb5eb619",
+        "link": "https://www.thenewsminute.com/podcasts/vikrams-lar-gibbon-video-and-tn-speakers-anti-abortion-speak-south-central-88",
+        "title": "Vikram’s Lar Gibbon video and TN Speaker’s anti-abortion speak | South Central 88",
+        "description": "South Central explores the growing problem of exotic animals being kept in private custody, as well as Tamil Nadu Speaker JCD Prabhakar taking part in an anti-abortion rally in Chennai.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "podcasts",
+          "south central"
+        ],
+        "creator": [
+          "pooja prasanna"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "environment",
+          "top"
+        ],
+        "datatype": "podcast",
+        "pubDate": "2026-08-14 14:13:15",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-14 14:37:44",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-14/xlz2yvw8/SCyt-1.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "b286f64923b3a6ec995b7f8fe0d1a7f7",
+        "link": "https://www.thenewsminute.com/tamil-nadu/should-govt-not-give-employment-supreme-court-stays-hc-order-on-jobs-for-karur-stampede-victims",
+        "title": "‘Should govt not give employment?’: Supreme Court stays HC order on jobs for Karur stampede victims",
+        "description": "SC stays Madras HC order quashing jobs for Karur stampede victims' kin",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-14 12:08:45",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-14 12:37:46",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-07-27/4o7nz6nv/WhatsApp-Image-2026-07-27-at-7.24.05-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}

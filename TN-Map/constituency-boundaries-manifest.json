@@ -2,7 +2,7 @@
   "source": "DataMeet Community Maps \u2014 Assembly Constituencies",
   "source_url": "https://projects.datameet.org/maps/assembly-constituencies/",
   "license": "Creative Commons Attribution 2.5 India",
-  "fetchedAt": "2026-08-14T15:38:50+05:30",
+  "fetchedAt": "2026-08-16T15:52:05+05:30",
   "feature_count": 234,
   "filter": "ST_CODE=33",
   "notes": "Boundaries joined to tn_constituencies.json manifest via ac_number."
