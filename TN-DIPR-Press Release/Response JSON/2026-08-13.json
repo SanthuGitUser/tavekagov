@@ -1,8 +1,8 @@
 {
   "date": "2026-08-13",
   "fetchedAt": "2026-08-13T10:04:43.759379+05:30",
-  "lastFetchedAt": "2026-08-13T10:04:43.759379+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-17T18:12:49.730289+05:30",
+  "fetchCount": 3,
   "request": {
     "method": "GET",
     "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
@@ -11,7 +11,151 @@
     }
   },
   "response": {
-    "success": 2,
-    "data": []
+    "success": 1,
+    "data": [
+      {
+        "id": 22320,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-528_Hon_ble_PWD___Sports_Minister_Press_Release__-_Renovated__Synthetic_Athletic_Tracks-Date_13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-528 Hon'ble PWD & Sports Minister Press Release  - Renovated  Synthetic Athletic Tracks-Date 13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22321,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.529_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-__Vetri_Conclave_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.529 - Hon'ble CM Press Release - Industries Dept -  Vetri Conclave - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22322,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.530_-_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Theni_Dist__Child_death_CMPRF_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.530 - Hon'ble CM Press Release - Condolence and Relief - Theni Dist  Child death CMPRF - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22323,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.531_-_Hon_ble_Food_Minister_Press_Release_-_Ration_Shop_Inspection_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.531 - Hon'ble Food Minister Press Release - Ration Shop Inspection - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22324,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.532_-_Hon_ble_School_Education__Tamil_Development__Information_and_Publicity_Minister_Press_Release_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.532 - Hon'ble School Education, Tamil Development, Information and Publicity Minister Press Release - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22325,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.533_-_Hon_ble_CM_DO_Letter_to_Hon_ble_Union_External_Affairs_Minister_Reg_Fishermen_Arrest_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.533 - Hon'ble CM DO Letter to Hon'ble Union External Affairs Minister Reg Fishermen Arrest - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22326,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.534_-_Registration_Department_Press_Release_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.534 - Registration Department Press Release - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22327,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.535_-_Finance_Department_Press_Release_-_English_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.535 - Finance Department Press Release - English - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22328,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.535_-_Finance_Department_Press_Release_-_Tamil_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.535 - Finance Department Press Release - Tamil - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22329,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.536_-_Hon_ble_CM_DO_Letter_to_Hon_ble_Prime_Minister_Reg_Delimitation_Resolution_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.536 - Hon'ble CM DO Letter to Hon'ble Prime Minister Reg Delimitation Resolution - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22330,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.537_-_Finance_Dept_-_TNRAC_Press_Release_-_English_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.537 - Finance Dept - TNRAC Press Release - English - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22331,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.537_-_Finance_Dept_-_TNRAC_Press_Release_-_Tamil_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.537 - Finance Dept - TNRAC Press Release - Tamil - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      },
+      {
+        "id": 22332,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.538_-_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Sivakasi_Fire_accident_-_Date.13.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-14",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.538 - Hon'ble CM Press Release - Condolence and Relief - Sivakasi Fire accident - Date.13.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-13",
+        "language": "en"
+      }
+    ]
   }
 }

@@ -133,6 +133,8 @@ if (!$SkipInstall) {
   Pip-Install $pythonExe (Join-Path $repoRoot "Sync-Config/requirements.txt")
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-DIPR-Press Release/requirements.txt")
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-GOV-Press Release/requirements.txt")
+  Pip-Install $pythonExe (Join-Path $repoRoot "TN-DVAC-Press Release/requirements.txt")
+  Pip-Install $pythonExe (Join-Path $repoRoot "TN-Finance-Notifications/requirements.txt")
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-Government Orders/requirements.txt")
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-IAS_Transfers-Postings/requirements.txt")
   Pip-Install $pythonExe (Join-Path $repoRoot "TN-TVA-Magazine/requirements.txt")
@@ -149,6 +151,10 @@ if (!$SkipInstall) {
 Run-Py $pythonExe (Join-Path $repoRoot "TN-DIPR-Press Release/tn_press_release_sync.py") $dateOverrideArgs
 
 Run-Py $pythonExe (Join-Path $repoRoot "TN-GOV-Press Release/tn_gov_press_release_sync.py") $dateOverrideArgs
+
+Run-Py $pythonExe (Join-Path $repoRoot "TN-DVAC-Press Release/tn_dvac_press_release_sync.py") $dateOverrideArgs
+
+Run-Py $pythonExe (Join-Path $repoRoot "TN-Finance-Notifications/tn_finance_notifications_sync.py") @()
 
 Run-Py $pythonExe (Join-Path $repoRoot "TN-Government Orders/tn_government_orders_sync.py") @(
   "--from-existing"
@@ -200,6 +206,9 @@ if ($Stage -or $Commit -or $Push) {
   git add "Sync-Config/last-sync.json" | Out-Null
   git add "TN-DIPR-Press Release/Response JSON/" | Out-Null
   git add "TN-GOV-Press Release/Response JSON/" | Out-Null
+  git add "TN-DVAC-Press Release/Response JSON/" | Out-Null
+  git add "TN-Finance-Notifications/manifests/" | Out-Null
+  git add "TN-Finance-Notifications/PDFs/" | Out-Null
   git add "TN-Government Orders/Response JSON/" | Out-Null
   git add "TN-IAS_Transfers-Postings/Response JSON/" | Out-Null
   git add "TN-TVA-Magazine/manifests/magazine.json" | Out-Null

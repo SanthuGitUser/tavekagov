@@ -9,6 +9,7 @@ import { SourceLink } from "@/components/shared/SourceLink";
 import { DashboardDateRangeProvider } from "@/context/DashboardDateRangeContext";
 import { GovernmentSearchProvider } from "@/context/GovernmentSearchContext";
 import { DistrictSearchProvider } from "@/context/DistrictSearchContext";
+import { DvacPressReleaseSearchProvider } from "@/context/DvacPressReleaseSearchContext";
 import { GovPressReleaseSearchProvider } from "@/context/GovPressReleaseSearchContext";
 import { GovPressReleaseViewProvider } from "@/context/GovPressReleaseViewContext";
 import { GovtSchemesSearchProvider } from "@/context/GovtSchemesSearchContext";
@@ -30,6 +31,16 @@ const NewsPage = lazy(() =>
 );
 const PressReleasesPage = lazy(() =>
   import("@/pages/PressReleasesPage").then((module) => ({ default: module.PressReleasesPage })),
+);
+const DvacPressReleasesPage = lazy(() =>
+  import("@/pages/DvacPressReleasesPage").then((module) => ({
+    default: module.DvacPressReleasesPage,
+  })),
+);
+const FinanceNotificationsPage = lazy(() =>
+  import("@/pages/FinanceNotificationsPage").then((module) => ({
+    default: module.FinanceNotificationsPage,
+  })),
 );
 const GovPressReleasesPage = lazy(() =>
   import("@/pages/GovPressReleasesPage").then((module) => ({ default: module.GovPressReleasesPage })),
@@ -159,6 +170,62 @@ export default function App() {
             element={
               <LazyRoute label="Loading press release images…">
                 <GovPressReleasesPage />
+              </LazyRoute>
+            }
+          />
+        </Route>
+        <Route
+          path="/dvac-press-releases"
+          element={
+            <DvacPressReleaseSearchProvider>
+              <AppLayout
+                fillViewport
+                title="DVAC Press Releases"
+                description={
+                  <>
+                    Directorate of Vigilance and Anti-Corruption press releases from{" "}
+                    <SourceLink href="https://www.dvac.tn.gov.in/Press_Release.html">
+                      dvac.tn.gov.in
+                    </SourceLink>
+                    .
+                  </>
+                }
+              />
+            </DvacPressReleaseSearchProvider>
+          }
+        >
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading DVAC press releases…">
+                <DvacPressReleasesPage />
+              </LazyRoute>
+            }
+          />
+        </Route>
+        <Route
+          path="/finance-notifications"
+          element={
+            <AppLayout
+              fillViewport
+              title="Finance Notifications"
+              description={
+                <>
+                  Downloads from the Finance Department homepage notifications widget on{" "}
+                  <SourceLink href="https://financedept.tn.gov.in/en/">
+                    financedept.tn.gov.in
+                  </SourceLink>
+                  .
+                </>
+              }
+            />
+          }
+        >
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading finance notifications…">
+                <FinanceNotificationsPage />
               </LazyRoute>
             }
           />

@@ -2,8 +2,8 @@
   "version": 1,
   "jobs": {
     "dipr_press_releases": {
-      "last_sync_at": "2026-08-17T15:12:47+05:30",
-      "synced_through": "2026-08-17"
+      "last_sync_at": "2026-08-17T18:12:50+05:30",
+      "synced_through": "2026-08-13"
     },
     "government_orders": {
       "last_sync_at": "2026-08-17T15:13:04+05:30",
@@ -39,6 +39,14 @@
     },
     "JOB_WIKI_DEPARTMENTS_MINISTERS": {
       "last_sync_at": "2026-08-17T15:13:49+05:30"
+    },
+    "dvac_press_releases": {
+      "last_sync_at": "2026-08-17T16:26:38+05:30",
+      "synced_through": "2026-08-16"
+    },
+    "finance_notifications": {
+      "last_sync_at": "2026-08-17T17:52:42+05:30",
+      "count": 4
     }
   }
 }

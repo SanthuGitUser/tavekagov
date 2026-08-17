@@ -15,6 +15,22 @@ export type PressRelease = {
   created_at: string;
 };
 
+export type DvacPressRelease = {
+  id: number;
+  title: string;
+  release_date: string;
+  pdf_url: string;
+  file_name: string | null;
+};
+
+export type FinanceNotification = {
+  id: number;
+  title: string;
+  pdf_url: string;
+  file_name: string;
+  local_path: string | null;
+};
+
 export type TnDept = {
   id: number;
   name: string;

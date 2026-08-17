@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-19",
+  "fetchedAt": "2026-08-17T16:26:36.675295+05:30",
+  "lastFetchedAt": "2026-08-17T16:26:36.675295+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.dvac.tn.gov.in/Press_Release.html",
+  "count": 3,
+  "releases": [
+    {
+      "pdf_url": "https://www.dvac.tn.gov.in/pdf/Press_Release/2026/19-06-2026 - Weekly Performance from 13-06-2026 to 19-06-2026.pdf",
+      "release_date": "2026-06-19",
+      "title": "V&AC - Weekly Performance of DVAC from 13.06.2026 to 19.06.2026.",
+      "file_name": "19-06-2026 - Weekly Performance from 13-06-2026 to 19-06-2026.pdf"
+    },
+    {
+      "pdf_url": "https://www.dvac.tn.gov.in/pdf/Press_Release/2026/19-06-2026-Judgement - Tr.Muthukumar, former Kalakadu Town Panchayat, Tirunelveli Dist.pdf",
+      "release_date": "2026-06-19",
+      "title": "V&AC - Judgement - PDJ Court, Thirunelveli sentences, former Chairman of Kalakkadu Town Panchayat and the former Executive Officer of the Town Panchayat to 3 years of rigorous imprisonment and imposed a fine of â¹31,000 each, for causing financial loss to the government by undervaluing land assessment on 19.06.2026.",
+      "file_name": "19-06-2026-Judgement - Tr.Muthukumar, former Kalakadu Town Panchayat, Tirunelveli Dist.pdf"
+    },
+    {
+      "pdf_url": "https://www.dvac.tn.gov.in/pdf/Press_Release/2026/19-06-2026-Judgement - Tr.Ramalingam, AE, Agri Eng Dept, Thiruvarur Dist.pdf",
+      "release_date": "2026-06-19",
+      "title": "V&AC - Judgement - PDJ Court, Thiruvarur sentences then Assistant Engineer, Agriculture Engineering Department, Thiruvarur District, to 4 years Simple Imprisonment with total fine of Rs.12,000/- in a bribery case on 19.06.2026.",
+      "file_name": "19-06-2026-Judgement - Tr.Ramalingam, AE, Agri Eng Dept, Thiruvarur Dist.pdf"
+    }
+  ]
+}

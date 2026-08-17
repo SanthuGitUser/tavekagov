@@ -27,6 +27,8 @@ export const primaryNav: NavPrimaryItem[] = [
     items: [
       { to: "/press-releases", label: "Press Releases" },
       { to: "/gov-press-releases", label: "Press Release Images" },
+      { to: "/dvac-press-releases", label: "DVAC" },
+      { to: "/finance-notifications", label: "Finance" },
       { to: "/government-orders", label: "Government Orders" },
       { to: "/transfers-postings", label: "IAS Transfers and Postings" },
       { to: "/govt-schemes", label: "Government Schemes" },
@@ -157,7 +159,7 @@ export function TopNav() {
         {subItems.length > 0 ? (
           <nav
             aria-label="Section navigation"
-            className="col-start-2 row-start-2 max-w-full justify-self-center overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="col-start-2 row-start-2 max-w-full justify-self-center overflow-x-auto px-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
             <div className="inline-flex min-w-max items-stretch gap-1 rounded-full border border-border/60 bg-muted/40 p-0.5">
               {subItems.map((sub) => {
@@ -172,7 +174,7 @@ export function TopNav() {
                     key={`${sub.to}-${sub.matchCategory ?? sub.label}`}
                     to={subNavLinkTo(sub)}
                     className={cn(
-                      "shrink-0 rounded-full border px-2.5 py-1 text-xs font-medium transition-colors sm:px-3 sm:py-1.5 sm:text-sm",
+                      "shrink-0 rounded-full border px-2 py-1 text-[11px] font-medium leading-tight transition-colors sm:px-2.5 sm:py-1 sm:text-xs",
                       isSubActive
                         ? "border-border bg-card text-foreground shadow-sm"
                         : "border-border/60 text-muted-foreground hover:border-border hover:bg-card/60 hover:text-foreground",

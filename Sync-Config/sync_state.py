@@ -28,6 +28,8 @@ _ISO_JSON_RE = re.compile(r"(?P<y>\d{4})-(?P<m>\d{2})-(?P<d>\d{2})\.json$")
 
 JOB_DIPR_PRESS_RELEASES = "dipr_press_releases"
 JOB_GOV_PRESS_RELEASE_IMAGES = "gov_press_release_images"
+JOB_DVAC_PRESS_RELEASES = "dvac_press_releases"
+JOB_FINANCE_NOTIFICATIONS = "finance_notifications"
 JOB_IAS_TRANSFERS_POSTINGS = "ias_transfers_postings"
 JOB_GOVERNMENT_ORDERS = "government_orders"
 JOB_TVA_MAGAZINE = "tva_magazine"
@@ -41,6 +43,8 @@ JOB_GOVT_SCHEMES = "govt_schemes"
 _ALL_JOBS = (
     JOB_DIPR_PRESS_RELEASES,
     JOB_GOV_PRESS_RELEASE_IMAGES,
+    JOB_DVAC_PRESS_RELEASES,
+    JOB_FINANCE_NOTIFICATIONS,
     JOB_IAS_TRANSFERS_POSTINGS,
     JOB_GOVERNMENT_ORDERS,
     JOB_TVA_MAGAZINE,
@@ -328,6 +332,16 @@ def print_sync_plan(repo_root: Path) -> None:
             default_start,
         )
     )
+    print(
+        _plan_date_range_job(
+            JOB_DVAC_PRESS_RELEASES,
+            "DVAC",
+            repo_root / "TN-DVAC-Press Release/Response JSON",
+            "01-05-2026",
+        )
+    )
+    last_finance = get_job_state(JOB_FINANCE_NOTIFICATIONS).get("last_sync_at") or "never"
+    print(f"  Finance notifications: full refresh (last sync {last_finance})")
     print(
         _plan_date_range_job(
             JOB_IAS_TRANSFERS_POSTINGS,

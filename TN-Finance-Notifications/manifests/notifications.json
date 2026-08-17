@@ -1,0 +1,32 @@
+{
+  "source_url": "https://financedept.tn.gov.in/en/",
+  "fetchedAt": "2026-08-17T17:52:42+05:30",
+  "count": 4,
+  "downloadedThisRun": 4,
+  "items": [
+    {
+      "title": "Revised Budget Speech 2026-2027",
+      "pdf_url": "https://financedept.tn.gov.in/en/my-documents/2020/07/RBE-English_Speech_2026-27_Final-1.pdf",
+      "file_name": "RBE-English_Speech_2026-27_Final-1.pdf",
+      "local_path": "PDFs/RBE-English_Speech_2026-27_Final-1.pdf"
+    },
+    {
+      "title": "Revised Citizen&#039;s Guide to Budget 2026-2027",
+      "pdf_url": "https://financedept.tn.gov.in/en/my-documents/2020/07/CITIZEN-BUDGET-2026-27-ENGLISH.pdf",
+      "file_name": "CITIZEN-BUDGET-2026-27-ENGLISH.pdf",
+      "local_path": "PDFs/CITIZEN-BUDGET-2026-27-ENGLISH.pdf"
+    },
+    {
+      "title": "Governor Address &#8211; June 2026",
+      "pdf_url": "https://financedept.tn.gov.in/en/my-documents/2020/07/A5-Revised-GA_2026_English_FINAL.pdf",
+      "file_name": "A5-Revised-GA_2026_English_FINAL.pdf",
+      "local_path": "PDFs/A5-Revised-GA_2026_English_FINAL.pdf"
+    },
+    {
+      "title": "White Paper 2026",
+      "pdf_url": "https://financedept.tn.gov.in/en/my-documents/2020/07/TN_White_Paper_English-2026.pdf",
+      "file_name": "TN_White_Paper_English-2026.pdf",
+      "local_path": "PDFs/TN_White_Paper_English-2026.pdf"
+    }
+  ]
+}

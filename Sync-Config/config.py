@@ -10,6 +10,8 @@ _DEFAULT_TN_DISTRICTS_SOURCE_URL = "https://www.tn.gov.in/district_list.php"
 _DEFAULT_TN_GO_DEPT_SOURCE_URL = "https://www.tn.gov.in/godept_list.php"
 _DEFAULT_TN_PRESS_RELEASE_SOURCE_URL = "https://dipr.tn.gov.in/press-release1.html"
 _DEFAULT_TN_GOV_PRESS_RELEASE_SOURCE_URL = "https://www.tn.gov.in/press_release.php"
+_DEFAULT_TN_DVAC_PRESS_RELEASE_SOURCE_URL = "https://www.dvac.tn.gov.in/Press_Release.html"
+_DEFAULT_TN_FINANCE_NOTIFICATIONS_SOURCE_URL = "https://financedept.tn.gov.in/en/"
 _DEFAULT_TVA_MAGAZINE_SOURCE_URL = (
     "https://tamildigitallibrary.in/book-search-new"
     "?sub_cat_id=36&cat_id=21&sub_cat_name=%E0%AE%A4%E0%AE%AE%E0%AE%BF%E0%AE%B4%E0%AE%B0%E0%AE%9A%E0%AF%81"
@@ -18,6 +20,7 @@ _DEFAULT_TN_IAS_TRANSFERS_POSTINGS_SOURCE_URL = (
     "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php"
 )
 _DEFAULT_TN_GO_START_DATE = "10-05-2026"
+_DEFAULT_TN_DVAC_PRESS_RELEASE_START_DATE = "01-05-2026"
 
 _ENV_PATH = Path(__file__).resolve().parent / ".env"
 load_dotenv(_ENV_PATH)
@@ -70,6 +73,27 @@ def get_tn_gov_press_release_start_date() -> str:
         or os.getenv("TN_GO_START_DATE")
         or os.getenv("TN_GO_TARGET_DATE")
         or _DEFAULT_TN_GO_START_DATE
+    ).strip()
+
+
+def get_tn_dvac_press_release_source_url() -> str:
+    return (
+        os.getenv("TN_DVAC_PRESS_RELEASE_SOURCE_URL")
+        or _DEFAULT_TN_DVAC_PRESS_RELEASE_SOURCE_URL
+    ).strip()
+
+
+def get_tn_dvac_press_release_start_date() -> str:
+    return (
+        os.getenv("TN_DVAC_PRESS_RELEASE_START_DATE")
+        or _DEFAULT_TN_DVAC_PRESS_RELEASE_START_DATE
+    ).strip()
+
+
+def get_tn_finance_notifications_source_url() -> str:
+    return (
+        os.getenv("TN_FINANCE_NOTIFICATIONS_SOURCE_URL")
+        or _DEFAULT_TN_FINANCE_NOTIFICATIONS_SOURCE_URL
     ).strip()
 
 

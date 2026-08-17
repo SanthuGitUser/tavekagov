@@ -27,7 +27,9 @@ import { useMagazineSearch } from "@/context/MagazineSearchContext";
 import { useNewsSearch } from "@/context/NewsSearchContext";
 import { getConstituencyCategories, getConstituencyDistricts, getConstituencyParties, tamilNaduAssemblyConstituenciesFeed } from "@/lib/tamilNaduAssemblyConstituenciesFeed";
 import { filterConstituencies } from "@/lib/constituencyFilterUtils";
+import { MonthPicker } from "@/components/shared/MonthPicker";
 import { getAvailableNewsDates } from "@/lib/tamilNaduNewsFeed";
+import { useDvacPressReleaseSearch } from "@/context/DvacPressReleaseSearchContext";
 import { usePressReleaseSearch } from "@/context/PressReleaseSearchContext";
 import { usePressReleaseView } from "@/context/PressReleaseViewContext";
 import { useTransfersPostingsSearch } from "@/context/TransfersPostingsSearchContext";
@@ -169,6 +171,7 @@ function TVKManifestoHeader({
 }
 
 export function Header({ title, description }: HeaderProps) {
+  const dvacPressReleaseSearch = useDvacPressReleaseSearch();
   const pressReleaseSearch = usePressReleaseSearch();
   const pressReleaseView = usePressReleaseView();
   const govPressReleaseSearch = useGovPressReleaseSearch();
@@ -296,6 +299,40 @@ export function Header({ title, description }: HeaderProps) {
         search={tvkManifestoSearch.search}
         onSearchChange={tvkManifestoSearch.setSearch}
       />
+    );
+  }
+
+  if (dvacPressReleaseSearch) {
+    const latestMonth = dvacPressReleaseSearch.availableMonths[0] ?? "";
+    const selectedMonth = dvacPressReleaseSearch.selectedMonth || latestMonth;
+
+    return (
+      <HeaderShell>
+        <div className={headerInnerClassName}>
+          <HeaderTitleBlock title={title} description={description} />
+          <div className="flex w-full min-w-0 flex-wrap items-center gap-2 sm:w-auto sm:flex-1 sm:justify-end">
+            <MonthPicker
+              value={selectedMonth}
+              onChange={dvacPressReleaseSearch.setSelectedMonth}
+              availableMonths={dvacPressReleaseSearch.availableMonths}
+            />
+            <div className="relative min-w-0 flex-1 sm:max-w-sm">
+              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="search"
+                placeholder="Search DVAC releases…"
+                value={dvacPressReleaseSearch.search}
+                onChange={(event) => dvacPressReleaseSearch.setSearch(event.target.value)}
+                className="h-9 w-full pl-8"
+                aria-label="Search DVAC press releases"
+              />
+            </div>
+            <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
+              {dvacPressReleaseSearch.filteredCount} shown · {dvacPressReleaseSearch.totalCount} total
+            </p>
+          </div>
+        </div>
+      </HeaderShell>
     );
   }
 
