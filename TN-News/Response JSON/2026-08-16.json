@@ -1,0 +1,239 @@
+{
+  "date": "2026-08-16",
+  "fetchedAt": "2026-08-17T15:14:31.539217+05:30",
+  "lastFetchedAt": "2026-08-17T15:14:31.539217+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 5,
+    "apiReportedTotalResults": 9,
+    "results": [
+      {
+        "article_id": "49ee3c5fdfd9ebc70f77b22ce642b46a",
+        "link": "https://www.timesnownews.com/videos/times-now/shows/political-tensions-rise-in-tamil-nadu-over-crude-remarks-against-chief-minister-video-155707433",
+        "title": "TN BJP's Chief Nainar Nagendran's 'Personal' Remarks On CM Vijay | TVK Calls Out '4th-Grade Barb'",
+        "description": "In this episode of Newshour, anchor Pratibha discusses the growing political controversy in Tamil Nadu after BJP state chief Nainar Nagendran faced backlash over remarks perceived as targeting Vijay's mother. The controversy has drawn a sharp response from Tamilaga Vettri Kazhagam (TVK), which called the remarks a \"4th-grade barb.\" The comments have also sparked criticism from within the BJP, with some party leaders questioning the language and tone used by their own leader. Watch the full discussion to know more. #nainarnagendran #vijay #cmvijay #vijaysmother #tvk #tamilagavettrikazhagam #bjp #tamilnadupolitics #timesnow #englishnews",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tvk response",
+          "tamil politics",
+          "fourth grade barb",
+          "nainar nagendran remarks",
+          "english news",
+          "nainar nagendran",
+          "vijay",
+          "tvk reaction",
+          "4th grade barb",
+          "political controversy",
+          "bjp tamil nadu",
+          "tamil nadu bjp",
+          "vijay mother controversy",
+          "vijay mother",
+          "pratibha",
+          "times now",
+          "vijay political row",
+          "cm vijay",
+          "tamil nadu bjp chief",
+          "tvk"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-16 18:11:29",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-16 18:33:40",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155707433,thumbsize-1344018,width-1280,height-720,resizemode-75/155707433.jpg",
+        "video_url": "https://sw-a.akamaized.net/amd/n1yoozgguo_w/1x/b1/4m/1xb14masqz_w/2a70f42d_F40_360p_800.mp4",
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "bf4eb4dce5b1a1c6a853f3484aa14355",
+        "link": "https://www.news9live.com/state/tamil-nadu/explanation-unacceptable-cm-vijay-demands-probe-into-killing-of-3-tamil-men-in-karnataka-3000031",
+        "title": "‘Explanation unacceptable’: CM Vijay demands probe into killing of 3 Tamil men in Karnataka",
+        "description": "Tamil Nadu Chief Minister Vijay condemned the killing of three Tamil men in Karnataka’s Cauvery Wildlife Sanctuary, calling the Forest Department’s account unacceptable and demanding a thorough probe into the firing and deaths.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "fiza narwal"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-16 18:10:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-16 18:13:50",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/08/CM-Vijay.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://n.bytvi.com/news9live.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f3f20d4aabbfe279ca40e9eaa0b0e976",
+        "link": "https://www.thenewsminute.com/tamil-nadu/bjp-leader-nainar-nagendran-targets-vijays-mother-faces-backlash",
+        "title": "BJP leader Nainar Nagendran targets Vijay’s mother, faces backlash",
+        "description": "Tamil Nadu BJP president Nainar Nagendran’s remark on Chief Minister C Joseph Vijay’s mother has triggered a political row, drawing criticism from TVK leaders and former BJP chief K Annamalai.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-16 08:49:46",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-16 09:08:01",
+        "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/NainarNagenthran_Facebook_60722_1200.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "433fc2428c3dd0acdb08e77a759f62a7",
+        "link": "https://www.thenewsminute.com/news/mamata-banerjees-aide-ashish-banerjee-found-dead-at-tmc-office-in-birbhum",
+        "title": "Mamata Banerjee’s aide Ashish Banerjee found dead at TMC office in Birbhum",
+        "description": "Former West Bengal Assembly Deputy Speaker and five-time Trinamool Congress MLA Ashish Banerjee was found dead at a party office adjoining his residence in Rampurhat.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "news"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-16 05:43:48",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-16 06:07:54",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-08-16%2Fyhdh1c5i%2FHP0efzVa0AACmsW.jpg?rect=0%2C108%2C1600%2C900&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1a061722cad921218d6f4f643986e4c6",
+        "link": "https://www.thenewsminute.com/news/cag-report-says-not-even-half-of-emergency-disaster-funds-transferred-to-states",
+        "title": "CAG report says not even half of emergency disaster funds transferred to states",
+        "description": "CAG has noted this glaring disparity in the head ‘Transfers to state’, which also include assistance to state from National Disaster Mitigation Funds (NDMF) and special assistance.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "news"
+        ],
+        "creator": [
+          "jisha surya"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-16 04:53:31",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-16 05:07:22",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/import/sites/default/files/CAG-pti-750x500.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-17",
+  "fetchedAt": "2026-08-17T15:12:46.899131+05:30",
+  "lastFetchedAt": "2026-08-17T15:12:46.899131+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-17"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22344,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.547_-_Hon_ble_CM_Social_Media_Message_-_VCK_Leader_Thiru_Thol_Thirumavalavan_Birthday_-_Date.17.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.547 - Hon'ble CM Social Media Message - VCK Leader Thiru Thol Thirumavalavan Birthday - Date.17.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-17",
+        "language": "en"
+      },
+      {
+        "id": 22345,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.548_-_Hon_ble_CM_Press_Release_-_Registration_Dept-Presenceless_Mandate-Inauguration_-_Date.17.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.548 - Hon'ble CM Press Release - Registration Dept-Presenceless Mandate-Inauguration - Date.17.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-17",
+        "language": "en"
+      },
+      {
+        "id": 22346,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.549_-_Hon_ble_CM_Press_Release_-_I___PR_Dept_-_TN_Govt_100_days_achievements_book_release_-_Date.17.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.549 - Hon'ble CM Press Release - I & PR Dept - TN Govt 100 days achievements book release - Date.17.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-17",
+        "language": "en"
+      },
+      {
+        "id": 22347,
+        "press_file_name": "/uploads/tn_govt_press_release/TNLA.No.08_-_Hon_ble_CM_Assembly_Speech_-_110_statement__for_Waiver_of_Farmers_Loan_-_Date.17.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-17",
+        "press_release_no": null,
+        "press_name": "TNLA.No.08 - Hon'ble CM Assembly Speech - 110 statement  for Waiver of Farmers Loan - Date.17.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-17",
+        "language": "en"
+      }
+    ]
+  }
+}

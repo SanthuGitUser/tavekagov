@@ -2,43 +2,43 @@
   "version": 1,
   "jobs": {
     "dipr_press_releases": {
-      "last_sync_at": "2026-08-14T15:35:11+05:30",
-      "synced_through": "2026-08-14"
+      "last_sync_at": "2026-08-17T15:12:47+05:30",
+      "synced_through": "2026-08-17"
     },
     "government_orders": {
-      "last_sync_at": "2026-08-16T15:50:40+05:30",
-      "synced_through": "2026-08-16"
+      "last_sync_at": "2026-08-17T15:13:04+05:30",
+      "synced_through": "2026-08-17"
     },
     "tva_magazine": {
-      "last_sync_at": "2026-08-16T15:50:58+05:30",
+      "last_sync_at": "2026-08-17T15:13:30+05:30",
       "synced_through": "2026-06-01"
     },
     "departments": {
-      "last_sync_at": "2026-08-16T15:51:17+05:30"
+      "last_sync_at": "2026-08-17T15:13:48+05:30"
     },
     "ministers": {
-      "last_sync_at": "2026-08-16T15:51:18+05:30"
+      "last_sync_at": "2026-08-17T15:13:50+05:30"
     },
     "districts": {
-      "last_sync_at": "2026-08-16T15:51:43+05:30"
+      "last_sync_at": "2026-08-17T15:14:09+05:30"
     },
     "news": {
-      "last_sync_at": "2026-08-16T15:52:08+05:30",
-      "synced_through": "2026-08-15"
-    },
-    "constituencies": {
-      "last_sync_at": "2026-08-16T15:51:43+05:30"
-    },
-    "gov_press_release_images": {
-      "last_sync_at": "2026-08-16T15:50:26+05:30",
+      "last_sync_at": "2026-08-17T15:14:32+05:30",
       "synced_through": "2026-08-16"
     },
+    "constituencies": {
+      "last_sync_at": "2026-08-17T15:14:09+05:30"
+    },
+    "gov_press_release_images": {
+      "last_sync_at": "2026-08-17T15:12:49+05:30",
+      "synced_through": "2026-08-17"
+    },
     "govt_schemes": {
-      "last_sync_at": "2026-08-16T15:52:00+05:30",
+      "last_sync_at": "2026-08-17T15:14:26+05:30",
       "count": 61
     },
     "JOB_WIKI_DEPARTMENTS_MINISTERS": {
-      "last_sync_at": "2026-08-16T15:51:18+05:30"
+      "last_sync_at": "2026-08-17T15:13:49+05:30"
     }
   }
 }

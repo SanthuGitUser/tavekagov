@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-16",
+  "fetchedAt": "2026-08-17T15:12:46.655996+05:30",
+  "lastFetchedAt": "2026-08-17T15:12:46.655996+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-16"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22343,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.546_-_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Date.16.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.546 - Hon'ble CM Press Release - Condolence and Relief - Date.16.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-16",
+        "language": "en"
+      }
+    ]
+  }
+}

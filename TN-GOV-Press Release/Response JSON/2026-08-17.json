@@ -1,0 +1,144 @@
+{
+  "date": "2026-08-17",
+  "fetchedAt": "2026-08-17T15:12:48.766492+05:30",
+  "lastFetchedAt": "2026-08-17T15:12:48.766492+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 3,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr170826a.jpg",
+      "release_date": "2026-08-17",
+      "title": "Honble Chief Minister inaugurated the India Today – Roundtable Tamil Nadu Conference and launched the India Today Tamil Channel in Chennai",
+      "file_name": "pr170826a.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr170826_hedu.jpg",
+      "release_date": "2026-08-17",
+      "title": "Honble Minister for Higher Education received the Honble Vice-President of India at Tiruchirappalli Airport",
+      "file_name": "pr170826_hedu.jpg",
+      "minister_name": "Thiru P. Viswanathan",
+      "department_name": "Higher Education Department",
+      "minister_id": 11,
+      "department_id": 12,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr170826_sedu.jpg",
+      "release_date": "2026-08-17",
+      "title": "Honble Minister for School Education, Tamil Development, Information and Publicity extends farewell to the Honble Vice-President of India at Chennai Airport",
+      "file_name": "pr170826_sedu.jpg",
+      "minister_name": "Thiru Rajmohan",
+      "department_name": "School Education Department",
+      "minister_id": 8,
+      "department_id": 28,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    },
+    {
+      "id": 8,
+      "name": "Thiru Rajmohan",
+      "designation": "Minister for School Education, Tamil Development, Information and Publicity",
+      "portfolios": [
+        "School Education",
+        "Archaeology",
+        "Tamil Official Language and Tamil Culture, Information & Publicity, Film Technology and Cinematograph Act, Newsprint Control, Stationery and Printing, Government Press"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/016_Rajmohan.png",
+      "display_order": 8,
+      "is_chief_minister": false
+    },
+    {
+      "id": 11,
+      "name": "Thiru P. Viswanathan",
+      "designation": "Minister for Higher Education",
+      "portfolios": [
+        "Higher Education including Technical Education, Electronics, Science and Technology"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/188_Viswanathan.png",
+      "display_order": 11,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 12,
+      "name": "Higher Education Department",
+      "dep_id_encoded": "MTI=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTI=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru P. Viswanathan",
+      "display_order": 11
+    },
+    {
+      "id": 28,
+      "name": "School Education Department",
+      "dep_id_encoded": "Mjg=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Rajmohan",
+      "display_order": 31
+    }
+  ]
+}
