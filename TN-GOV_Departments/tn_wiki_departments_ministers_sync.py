@@ -324,7 +324,11 @@ def write_manifest(rows: list[WikiDepartmentMinister], *, output_dir: Path) -> P
         "count": len(rows),
         "departments": [asdict(r) for r in rows],
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if str((_REPO_ROOT / "Sync-Config")) not in sys.path:
+        sys.path.insert(0, str(_REPO_ROOT / "Sync-Config"))
+    from write_utils import write_json_if_changed
+
+    write_json_if_changed(path, payload, volatile_top_level_keys={"fetchedAt"})
     return path
 
 

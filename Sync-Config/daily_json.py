@@ -59,6 +59,14 @@ def save_daily_json(
 
     merged_items = merge_items_by_key(existing_items, items, merge_key_fn)
 
+    # Avoid touching the file when there are no new items (append-only semantics).
+    # This keeps fetchedAt/lastFetchedAt stable unless the dataset actually grows.
+    existing_keys = {merge_key_fn(item) for item in existing_items if merge_key_fn(item)}
+    incoming_keys = {merge_key_fn(item) for item in items if merge_key_fn(item)}
+    has_new_items = bool(incoming_keys - existing_keys)
+    if existing_record and not has_new_items:
+        return out_path
+
     record: dict[str, Any] = {
         "date": day.isoformat(),
         "fetchedAt": first_fetched_at,

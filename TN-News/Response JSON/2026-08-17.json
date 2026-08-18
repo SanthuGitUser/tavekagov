@@ -1,0 +1,451 @@
+{
+  "date": "2026-08-17",
+  "fetchedAt": "2026-08-18T10:13:41.975227+05:30",
+  "lastFetchedAt": "2026-08-18T10:13:41.975227+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 10,
+    "apiReportedTotalResults": 15,
+    "results": [
+      {
+        "article_id": "0f784e9ec87150e281a6a0594a0293de",
+        "link": "https://www.thenewsminute.com/karnataka/cauvery-dispute-sc-directs-karnataka-to-comply-with-cwma-order-seeks-release-status",
+        "title": "Cauvery dispute: SC directs Karnataka to comply with CWMA order, seeks release status",
+        "description": "The Supreme Court directed Karnataka to comply with the Cauvery Water Management Authority’s order on releasing water to Tamil Nadu and sought a status report on the releases.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "karnataka"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 13:40:41",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 14:07:54",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2024-12-13%2Fvpmz0ghd%2Fsupreme-court13122024ians.jpg?rect=0%2C0%2C300%2C169&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "35c0a36c1016898a2bfa1ac4995388b5",
+        "link": "https://www.thenewsminute.com/kerala/kerala-btech-student-from-arunachal-pradesh-found-dead-minister-orders-probe",
+        "title": "Kerala: BTech student from Arunachal Pradesh found dead, minister orders probe",
+        "description": "Michi Marpu from Naharlagun in Arunachal Pradesh was a student of Mar Athanasius College of Engineering in Kothamangalam.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "kerala"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 12:01:50",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 12:08:08",
+        "image_url": null,
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "9388d0ab7df521ca506997352f6fa528",
+        "link": "https://www.timesnownews.com/india/not-just-cauvery-fresh-karnataka-tamil-nadu-row-explodes-over-poachers-article-155709572",
+        "title": "Not Just Cauvery: Fresh Karnataka-Tamil Nadu Row Explodes Over 'Poachers'",
+        "description": "A forest shootout in Karnataka’s Chamarajanagar district left three Tamil men dead, sparking a political clash between Karnataka and Tamil Nadu.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "karnataka vs tamil nadu",
+          "karnataka vs tamil nadu over poachers",
+          "tamil nadu",
+          "forest department",
+          "karnataka",
+          "male mahadeshwara betta",
+          "tamil men killed",
+          "tamil",
+          "vijay",
+          "shivakumar"
+        ],
+        "creator": [
+          "megha rawat"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 09:22:47",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 09:32:51",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155710301,thumbsize-2666195,width-1280,height-720,resizemode-75/155710301.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "91ab6cd15651df979b432c915a84aeda",
+        "link": "https://www.timesnownews.com/india/supreme-court-cauvery-water-row-karnataka-tamil-nadu-cwma-compliance-article-155709478",
+        "title": "Cauvery Row: SC Tells Tamil Nadu, 'It's Not That Karnataka Is Not Giving Water'",
+        "description": "The Supreme Court directed Karnataka to comply with CWMA orders on Cauvery water release to Tamil Nadu, while noting that the state is already releasing water. The matter will be heard again next week.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu plea",
+          "cauvery water dispute",
+          "cauvery water release",
+          "karnataka water release",
+          "karnataka tamil nadu water row",
+          "cwrc order",
+          "supreme court cauvery hearing",
+          "cauvery dispute latest news",
+          "justice vikram nath",
+          "cwma directions"
+        ],
+        "creator": [
+          "diana george"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 07:51:31",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 08:03:18",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155709689,thumbsize-70912,width-1280,height-720,resizemode-75/155709689.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "09dc792906be8b0251de9a0ee46e6c0c",
+        "link": "https://www.news9live.com/state/tamil-nadu/cm-vijay-100-days-gold-rings-laptops-farm-aid-tamil-nadu-3000162",
+        "title": "Gold rings, laptops, farm aid: What CM Vijay announced in first 100 days",
+        "description": "Tamil Nadu Chief Minister C Joseph Vijay has marked 100 days of his government with a report focused on welfare, agriculture, education and investment. The state highlighted schemes for farmers, women and students, along with investment commitments crossing ₹1 lakh crore.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "news9live staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 07:46:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 08:12:47",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/08/CM-Vijay.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://n.bytvi.com/news9live.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f90f2ddea8de2c3ec4e820550267cc89",
+        "link": "https://www.timesnownews.com/india/100-days-in-power-vijays-welfare-push-in-tamil-nadu-suvendus-bengal-reset-whats-been-done-article-155708459",
+        "title": "100 Days In Power: Vijay's Welfare Push In Tamil Nadu, Suvendu's Bengal Reset — What's Been Done?",
+        "description": "100 days, two states, two distinct agendas: Vijay's Tamil Nadu focuses on welfare, education and farmers, while Suvendu's Bengal pushes welfare, investments and a broader administrative and political reset.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "west bengal government 100 days",
+          "100 days of suvendu adhikari government",
+          "tamil nadu government 100 days",
+          "suvendu 100 days",
+          "vijay 100 days",
+          "100 days of vijay government"
+        ],
+        "creator": [
+          "anurag kumar"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 04:22:24",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 04:33:13",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155708529,thumbsize-1051408,width-1280,height-720,resizemode-75/155708529.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "414bbdb2a1464b99591c8d50f997b9e3",
+        "link": "https://www.thenewsminute.com/tamil-nadu/ennore-fish-kill-fishers-allege-hot-water-discharge-from-thermal-plant-caused-mass-deaths",
+        "title": "Ennore fish kill: Fishers allege hot-water discharge from thermal plant caused mass deaths",
+        "description": "The Railway Bridge Canal receives spent coolant discharged from NTECL Vallur’s 3x500 MW thermal power plant and has been the subject of complaints from local fishing communities over thermal pollution.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 04:08:11",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 04:37:09",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-17/gdtqgkdi/WhatsApp-Image-2026-08-16-at-10.35.47-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "87119089c0044429df1ac1e76bd2a579",
+        "link": "https://www.thenewsminute.com/tamil-nadu/3-tamil-men-shot-dead-in-karnataka-forest-cm-vijay-seeks-high-level-probe",
+        "title": "3 Tamil men shot dead in Karnataka forest, CM Vijay seeks high-level probe",
+        "description": "Anthony Sami, John Rose Peter and Kumar, who were from Tamil Nadu and had been living in villages in Hanur Taluk in Karnataka, were shot dead in the early hours of August 15 in an alleged exchange of fire with state forest personnel.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "karnataka"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 03:34:16",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 03:37:25",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-07/45vt4vsm/WhatsApp-Image-2026-08-07-at-8.38.50-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "953cd4cbbc8301b6ac232e4fb86cec65",
+        "link": "https://www.timesnownews.com/india/supreme-court-to-hear-tamil-nadu-government-plea-seeking-directions-to-karnataka-to-release-cauvery-water-article-155707874",
+        "title": "SC To Hear TN Govt's Plea Seeking Directions To Karnataka To Release Cauvery Water",
+        "description": "The Supreme Court is set to hear Tamil Nadu's request for immediate release of its Cauvery water share from Karnataka.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "karnataka",
+          "cauvery water",
+          "cauvery water dispute",
+          "supreme court",
+          "vijay"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-16 23:48:35",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 00:02:52",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155707875,thumbsize-136680,width-1280,height-720,resizemode-75/155707875.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "75f5fe30b8933c7eb7242524c25215c7",
+        "link": "https://www.timesnownews.com/india/cm-joseph-vijay-tamil-nadu-leaders-condemn-alleged-killing-of-3-tamilians-by-karnataka-forest-officials-calls-for-high-level-probe-article-155707836",
+        "title": "'Unacceptable': CM Vijay, TN Leaders Condemn Alleged Killing of 3 Tamilians by Karnataka Forest Officials, Calls for High-Level Probe",
+        "description": "Tamil Nadu Chief Minister Joseph Vijay condemned the killing of three Tamil farmers by Karnataka forest officials, labeling the explanation for the incident as \"unacceptable.\"",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "poachers",
+          "tamilians",
+          "tamil nadu",
+          "karnataka",
+          "cm vijay",
+          "karnataka forest officials",
+          "vijay",
+          "farmers"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-16 23:33:55",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 00:02:52",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155707873,thumbsize-66606,width-1280,height-720,resizemode-75/155707873.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}

@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from dataclasses import asdict, dataclass
 from datetime import datetime
 from pathlib import Path
@@ -211,7 +212,13 @@ def write_manifest(items: list[MinisterPortfolios], *, source_url: str, output_p
             for item in items
         ],
     }
-    output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    repo_root = Path(__file__).resolve().parent.parent
+    sync_config = repo_root / "Sync-Config"
+    if str(sync_config) not in sys.path:
+        sys.path.insert(0, str(sync_config))
+    from write_utils import write_json_if_changed
+
+    write_json_if_changed(output_path, payload, volatile_top_level_keys={"fetchedAt"})
     return output_path
 
 

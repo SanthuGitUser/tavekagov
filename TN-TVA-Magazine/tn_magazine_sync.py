@@ -361,7 +361,11 @@ def write_manifest(magazines: list[Magazine]) -> Path:
         "count": len(magazines),
         "magazines": [asdict(magazine) for magazine in magazines],
     }
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if str(_SYNC_CONFIG) not in sys.path:
+        sys.path.insert(0, str(_SYNC_CONFIG))
+    from write_utils import write_json_if_changed
+
+    write_json_if_changed(path, payload, volatile_top_level_keys={"fetchedAt"})
     return path
 
 

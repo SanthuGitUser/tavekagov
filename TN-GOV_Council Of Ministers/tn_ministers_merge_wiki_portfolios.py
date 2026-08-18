@@ -19,6 +19,7 @@ import argparse
 import html
 import json
 import re
+import sys
 from dataclasses import dataclass
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -170,7 +171,14 @@ def merge_manifests(
         minister["portfolios"] = portfolios
 
     official["count"] = len([m for m in ministers if isinstance(m, dict)])
-    output_path.write_text(json.dumps(official, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    repo_root = Path(__file__).resolve().parent.parent
+    sync_config = repo_root / "Sync-Config"
+    if str(sync_config) not in sys.path:
+        sys.path.insert(0, str(sync_config))
+    from write_utils import write_json_if_changed
+
+    # Ignore fetchedAt churn in the official manifest.
+    write_json_if_changed(output_path, official, volatile_top_level_keys={"fetchedAt"})
 
     return {"unmatched": unmatched, "total": official["count"]}
 

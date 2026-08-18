@@ -129,6 +129,9 @@ def save_day_response(
         incoming_data = []
 
     existing_record = load_existing_record(out_path)
+    if not incoming_data and not existing_record:
+        # Don't create empty day files; only persist when something new appears.
+        return out_path
     existing_data: list[dict[str, Any]] = []
     fetch_count = 1
     first_fetched_at = fetched_at.isoformat()
@@ -142,6 +145,14 @@ def save_day_response(
         first_fetched_at = str(existing_record.get("fetchedAt") or first_fetched_at)
 
     merged_data = merge_data_items(existing_data, incoming_data)
+
+    # Avoid touching the file when there are no new items (append-only semantics).
+    # This keeps fetchedAt/lastFetchedAt stable unless the dataset actually grows.
+    existing_ids = {int(item.get("id")) for item in existing_data if item.get("id") is not None}
+    incoming_ids = {int(item.get("id")) for item in incoming_data if item.get("id") is not None}
+    has_new_items = bool(incoming_ids - existing_ids)
+    if existing_record and not has_new_items:
+        return out_path
 
     record = {
         "date": selected_date.isoformat(),

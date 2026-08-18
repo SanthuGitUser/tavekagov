@@ -366,6 +366,16 @@ def save_day_response(
 
     merged_results = merge_article_lists(existing_results, incoming_results)
 
+    # Avoid touching the file when there are no new articles (append-only semantics).
+    def _key(article: dict[str, Any]) -> str:
+        return str(article.get("article_id") or article.get("link") or "").strip()
+
+    existing_keys = {_key(a) for a in existing_results if isinstance(a, dict) and _key(a)}
+    incoming_keys = {_key(a) for a in incoming_results if isinstance(a, dict) and _key(a)}
+    has_new_items = bool(incoming_keys - existing_keys)
+    if existing_record and not has_new_items:
+        return out_path
+
     record = {
         "date": pub_date,
         "fetchedAt": first_fetched_at,

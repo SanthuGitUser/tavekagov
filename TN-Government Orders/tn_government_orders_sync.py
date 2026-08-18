@@ -321,6 +321,13 @@ def save_department_json(
             reverse=True,
         )
 
+    # Avoid touching the file when there are no new orders (append-only semantics).
+    existing_keys = {_order_merge_key(item) for item in existing_items if _order_merge_key(item)}
+    incoming_keys = {_order_merge_key(item) for item in records if _order_merge_key(item)}
+    has_new_items = bool(incoming_keys - existing_keys)
+    if existing_record and not replace_orders and not has_new_items:
+        return out_path
+
     department_url = _department_go_url(
         base_url,
         department.dep_id_encoded,

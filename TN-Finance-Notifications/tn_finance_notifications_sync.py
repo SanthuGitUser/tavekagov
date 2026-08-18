@@ -179,6 +179,7 @@ def main() -> int:
     existing = _load_existing_manifest(manifest_path) or {}
     existing_items = existing.get("items")
     existing_by_url: dict[str, dict[str, Any]] = {}
+    existing_urls: set[str] = set()
     if isinstance(existing_items, list):
         for item in existing_items:
             if not isinstance(item, dict):
@@ -186,6 +187,7 @@ def main() -> int:
             url = str(item.get("pdf_url") or "").strip()
             if url:
                 existing_by_url[url] = item
+                existing_urls.add(url)
 
     downloaded = 0
     for index, note in enumerate(notifications, start=1):
@@ -204,6 +206,14 @@ def main() -> int:
             file_name=note.file_name,
             local_path=existing_record.get("local_path") or local_path,
         )
+
+    # Avoid touching the manifest when there are no new PDFs (append-only semantics).
+    scraped_urls = {note.pdf_url for note in notifications}
+    has_new_items = bool(scraped_urls - existing_urls) if existing_urls else True
+    if existing and not has_new_items:
+        print("No new notification PDFs found; manifest unchanged.")
+        record_sync(JOB_FINANCE_NOTIFICATIONS, extra={"count": len(notifications)})
+        return 0
 
     fetched_at = datetime.now(_KOLKATA).isoformat(timespec="seconds")
     payload = {

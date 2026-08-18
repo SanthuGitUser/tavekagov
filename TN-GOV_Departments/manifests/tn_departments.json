@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.tn.gov.in/department_list.php",
-  "fetchedAt": "2026-08-17T15:13:48.716398+05:30",
+  "fetchedAt": "2026-08-18T10:12:57.357385+05:30",
   "count": 41,
   "departments": [
     {
@@ -54,7 +54,7 @@
       "dep_id_encoded": "Nw==",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Nw==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru R. Nirmalkumar",
+      "minister_name": "Thiru C.T.R. Nirmal Kumar",
       "display_order": 6
     },
     {
@@ -171,7 +171,7 @@
       "dep_id_encoded": "MTk=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTk=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru R. Nirmalkumar",
+      "minister_name": "Thiru C.T.R. Nirmal Kumar",
       "display_order": 19
     },
     {
@@ -243,7 +243,7 @@
       "dep_id_encoded": "Mzg=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzg=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru R. Nirmalkumar",
+      "minister_name": "Thiru C.T.R. Nirmal Kumar",
       "display_order": 27
     },
     {
