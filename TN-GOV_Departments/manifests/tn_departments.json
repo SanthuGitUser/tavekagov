@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.tn.gov.in/department_list.php",
-  "fetchedAt": "2026-08-18T10:12:57.357385+05:30",
+  "fetchedAt": "2026-08-19T16:19:47.037070+05:30",
   "count": 41,
   "departments": [
     {
@@ -22,13 +22,22 @@
       "display_order": 2
     },
     {
+      "id": 17,
+      "name": "Artificial Intelligence, Information Technology and Digital Services Department",
+      "dep_id_encoded": "MTc=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTc=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Dr Kumar. R",
+      "display_order": 3
+    },
+    {
       "id": 4,
       "name": "BC, MBC & Minorities Welfare Department",
       "dep_id_encoded": "NA==",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NA==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru A.M. Shahjahan",
-      "display_order": 3
+      "display_order": 4
     },
     {
       "id": 6,
@@ -37,7 +46,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Ng==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru D. Logesh Tamilselvan",
-      "display_order": 4
+      "display_order": 5
     },
     {
       "id": 5,
@@ -46,7 +55,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru V. Gandhiraj",
-      "display_order": 5
+      "display_order": 6
     },
     {
       "id": 7,
@@ -55,7 +64,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Nw==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C.T.R. Nirmal Kumar",
-      "display_order": 6
+      "display_order": 7
     },
     {
       "id": 8,
@@ -64,7 +73,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OA==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru R.V. Ranjithkumar",
-      "display_order": 7
+      "display_order": 8
     },
     {
       "id": 9,
@@ -73,7 +82,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OQ==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Dr N. Marie Wilson",
-      "display_order": 8
+      "display_order": 9
     },
     {
       "id": 10,
@@ -82,7 +91,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTA=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru M. Vijay Balaji",
-      "display_order": 9
+      "display_order": 10
     },
     {
       "id": 11,
@@ -91,7 +100,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTE=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Dr. K.G. Arunraj",
-      "display_order": 10
+      "display_order": 11
     },
     {
       "id": 12,
@@ -100,7 +109,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTI=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru P. Viswanathan",
-      "display_order": 11
+      "display_order": 12
     },
     {
       "id": 13,
@@ -109,7 +118,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTM=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru Aadhav Arjuna",
-      "display_order": 12
+      "display_order": 13
     },
     {
       "id": 14,
@@ -118,7 +127,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 13
+      "display_order": 14
     },
     {
       "id": 15,
@@ -127,7 +136,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTU=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru B. Rajkumar",
-      "display_order": 14
+      "display_order": 15
     },
     {
       "id": 22,
@@ -136,7 +145,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjI=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru D. Sarathkumar",
-      "display_order": 15
+      "display_order": 16
     },
     {
       "id": 16,
@@ -145,15 +154,6 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTY=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Selvi S. Keerthana",
-      "display_order": 16
-    },
-    {
-      "id": 17,
-      "name": "Information Technology and Digital Services Department",
-      "dep_id_encoded": "MTc=",
-      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTc=",
-      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Dr Kumar. R",
       "display_order": 17
     },
     {

@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-19",
+  "fetchedAt": "2026-08-19T16:14:42.788930+05:30",
+  "lastFetchedAt": "2026-08-19T16:14:42.788930+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-19"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22355,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_TNLA.NO.009_-_Hon_ble_CM_Assembly_110_Statement_-_Increase_in_milk_procurement_price_-_Date_-_19.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-19",
+        "press_release_no": null,
+        "press_name": "DIPR - TNLA.NO.009 - Hon'ble CM Assembly 110 Statement - Increase in milk procurement price - Date - 19.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-19",
+        "language": "en"
+      },
+      {
+        "id": 22356,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_TNLA.NO.010_-_Hon_ble_CM_Assembly_110_Statement_-_Health_and_Family_Welfare_Dept_Announcements_-_Date_-_19.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-19",
+        "press_release_no": null,
+        "press_name": "DIPR - TNLA.NO.010 - Hon'ble CM Assembly 110 Statement - Health and Family Welfare Dept Announcements - Date - 19.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-19",
+        "language": "en"
+      },
+      {
+        "id": 22357,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_TNLA.NO.011_-_Hon_ble_CM_Assembly_110_Statement_-_Vehicle_and_Assistant_facilities_to_MLAs_-_Date_-_19.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-19",
+        "press_release_no": null,
+        "press_name": "DIPR - TNLA.NO.011 - Hon'ble CM Assembly 110 Statement - Vehicle and Assistant facilities to MLAs - Date - 19.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-19",
+        "language": "en"
+      },
+      {
+        "id": 22358,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.555_-_Tourism_Department_-_Tamil_Nadu_Tourism_Awards-2026-Application_Inviting-Press_Release_-_Date_-_19.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-19",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.555 - Tourism Department - Tamil Nadu Tourism Awards-2026-Application Inviting-Press Release - Date - 19.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-19",
+        "language": "en"
+      }
+    ]
+  }
+}

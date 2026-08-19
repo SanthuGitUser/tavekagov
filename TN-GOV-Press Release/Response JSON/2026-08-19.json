@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-19",
+  "fetchedAt": "2026-08-19T16:14:44.310117+05:30",
+  "lastFetchedAt": "2026-08-19T16:14:44.310117+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr190826a.jpg",
+      "release_date": "2026-08-19",
+      "title": "Honble Chief Minister announced enhancement of milk procurement price, various Health and Family Welfare initiatives and provision of vehicles and allowances to Members of the Legislative Assembly under Rule 110",
+      "file_name": "pr190826a.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    }
+  ],
+  "departments": []
+}

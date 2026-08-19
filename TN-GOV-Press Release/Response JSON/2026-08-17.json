@@ -1,10 +1,10 @@
 {
   "date": "2026-08-17",
   "fetchedAt": "2026-08-17T15:12:48.766492+05:30",
-  "lastFetchedAt": "2026-08-18T10:12:08.194673+05:30",
-  "fetchCount": 2,
+  "lastFetchedAt": "2026-08-19T16:14:44.310117+05:30",
+  "fetchCount": 3,
   "source_url": "https://www.tn.gov.in/press_release.php",
-  "count": 6,
+  "count": 7,
   "releases": [
     {
       "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr170826a.jpg",
@@ -143,6 +143,29 @@
       "others": false,
       "inspection": false,
       "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr170826_env.jpg",
+      "release_date": "2026-08-17",
+      "title": "Honble Minister for Environment and Climate Change launched the MERRC website, White Category Portal and interacted with newly recruited TNPCB Officials - English Version",
+      "file_name": "pr170826_env.jpg",
+      "minister_name": "Thiru R.V. Ranjithkumar",
+      "department_name": "Environment, Climate Change and Forests Department",
+      "minister_id": 33,
+      "department_id": 8,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
     }
   ],
   "ministers": [
@@ -188,9 +211,29 @@
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/188_Viswanathan.png",
       "display_order": 11,
       "is_chief_minister": false
+    },
+    {
+      "id": 33,
+      "name": "Thiru R.V. Ranjithkumar",
+      "designation": "Minister for Forests",
+      "portfolios": [
+        "Forests"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/037_Ranjithkumar.png",
+      "display_order": 33,
+      "is_chief_minister": false
     }
   ],
   "departments": [
+    {
+      "id": 8,
+      "name": "Environment, Climate Change and Forests Department",
+      "dep_id_encoded": "OA==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OA==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru R.V. Ranjithkumar",
+      "display_order": 7
+    },
     {
       "id": 12,
       "name": "Higher Education Department",

@@ -1,0 +1,523 @@
+{
+  "date": "2026-08-18",
+  "fetchedAt": "2026-08-19T16:20:31.651003+05:30",
+  "lastFetchedAt": "2026-08-19T16:20:31.651003+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 12,
+    "apiReportedTotalResults": 15,
+    "results": [
+      {
+        "article_id": "d4eefc0d03f1f5639bb0f42783e60040",
+        "link": "https://www.timesnownews.com/india/cm-vijays-tamil-nadu-govt-increases-maternity-leave-for-third-child-to-1-year-from-12-weeks-article-155759398",
+        "title": "CM Vijay's Tamil Nadu Govt Increases Maternity Leave For Third Child To 1 Year From 12 Weeks",
+        "description": "The Tamil Nadu government on Tuesday increased the maternity leave for women govt employees for a third child from 12 weeks to 1 yr.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "maternity leave",
+          "vijay",
+          "cm vijay",
+          "tamil nadu government",
+          "tamil nadu",
+          "maternity leave tn govt",
+          "tn"
+        ],
+        "creator": [
+          "apoorva shukla"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 18:05:06",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 18:31:59",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155759606,thumbsize-124628,width-1280,height-720,resizemode-75/155759606.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "9216b1e96d62c5d4f2af57b2c281ccbc",
+        "link": "https://www.thenewsminute.com/powertrip/inside-the-bjps-big-rejig-powertrip-161",
+        "title": "Inside the BJP’s big rejig | Powertrip #161",
+        "description": "Delhi circles are buzzing with speculation that the DMK is likely to join the BJP-led NDA. We spoke to DMK and BJP leaders to understand if there was any truth to the rumours.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "powertrip"
+        ],
+        "creator": [
+          "pooja prasanna"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 13:45:26",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 14:07:41",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-18/qmohyly8/pt-main.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "7fb5a9e678ddb308d0cfef718be84651",
+        "link": "https://www.thenewsminute.com/kerala/arunachal-students-death-in-kerala-raises-questions-over-colleges-22-credit-rule",
+        "title": "Arunachal student’s death in Kerala raises questions over college’s 22-credit rule",
+        "description": "Classmates of Michi Marpu, who died by suicide in Kerala, alleged he faced prolonged distress over the college’s 22-credit requirement to advance to the fifth semester.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "kerala",
+          "news"
+        ],
+        "creator": [
+          "haritha manav"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 13:41:03",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 14:07:41",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-18/a85c5yvl/WhatsApp-Image-2026-08-18-at-19.05.55.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "4f434e89ff1b19b6178adb8e01467fdf",
+        "link": "https://www.thenewsminute.com/tamil-nadu/content-of-protest-should-not-be-concern-of-police-madras-high-court",
+        "title": "‘Content of protest should not be concern of police’: Madras High Court",
+        "description": "The court made the observation while hearing a plea filed by Dravida Kazhagam, challenging the state's refusal to grant permission for a bike rally against the National Eligibility cum Entrance Test (NEET) and EWS reservation.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 10:54:11",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 11:08:00",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-18/sxj6qgwk/thenewsminuteimportsitesdefaultfilesMadrasHC7500x500.avif?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1e14bd465220db3b417c41c5cffda12e",
+        "link": "https://www.timesnownews.com/india/trisha-vijay-tamil-nadu-political-row-murasoli-article-155747181",
+        "title": "Why Is Trisha At The Centre Of Tamil Nadu's Political Storm - And Why Does It Keep Happening?",
+        "description": "Actor Trisha Krishnan has become the focus of a fresh political row in Tamil Nadu after her presence at CM Vijay's Independence Day event drew criticism from the DMK.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "trisha political controversy",
+          "trisha krishnan",
+          "vijay trisha controversy",
+          "cm vijay",
+          "trisha independence day",
+          "vijay independence day event",
+          "trisha tamil nadu politics",
+          "trisha vijay"
+        ],
+        "creator": [
+          "diana george"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 10:24:36",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 10:32:38",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155749089,thumbsize-71710,width-1280,height-720,resizemode-75/155749089.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "854fcd46a26d7e5cf2c32d406ead53fe",
+        "link": "https://www.thenewsminute.com/tamil-nadu/fir-filed-against-tvk-mla-kapil-for-assaulting-journalists-in-ranipet",
+        "title": "FIR filed against TVK MLA Kapil for assaulting journalists in Ranipet",
+        "description": "The incident reportedly began when Siva, a YouTuber, was interviewing people outside a theatre in Sholingur about their reactions to TVK cadres. He was allegedly attacked by MLA Kapil during the interaction.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "yashavini ezhilmurugan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 07:29:20",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 07:37:12",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-18/ovjxlhqg/WhatsApp-Image-2026-08-18-at-11.22.02-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "9234a5503c65d1f6bbf74a0c1373cac2",
+        "link": "https://www.timesnownews.com/india/do-your-job-dks-heavy-pushback-against-vijay-govt-in-tamil-nadu-over-karnataka-forest-shootout-article-155743330",
+        "title": "'Do Your Job': DKS' Heavy Pushback Against Vijay Govt In Tamil Nadu Over Karnataka Forest Shootout",
+        "description": "The tragic killing of three Tamil men by Karnataka forest officials has sparked a political uproar between Karnataka and Tamil Nadu. Karnataka Chief Minister DK Shivakumar criticised Tamil Nadu for interference, labeling the incident a \"federal issue.\"",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "mla bhojarajan",
+          "tamil nadu",
+          "forest department",
+          "dmk",
+          "edappadi palaniswamy",
+          "tamil",
+          "dk shivakumar",
+          "vijay",
+          "shivakumar"
+        ],
+        "creator": [
+          "dharani balasubramaniam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 06:13:04",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 06:32:07",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155743950,thumbsize-1319032,width-1280,height-720,resizemode-75/155743950.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "90c82435852215713b7af1657e42d9e0",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tvk-govt-under-fire-over-alleged-tender-violations-in-cmo-construction",
+        "title": "TVK govt under fire over alleged tender violations in CMO construction",
+        "description": "A Times of India report has flagged alleged lapses in the tendering process for construction of Tamil Nadu Chief Minister Vijay’s office, including the delayed publication of tenders online.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 04:40:29",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 05:08:02",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-08-18%2Fvtjxcsbi%2FCMVijay.jpeg?rect=0%2C0%2C4096%2C2304&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "b7af76bbece7a0ad779b51ceafb19810",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tn-cm-vijay-increases-crop-loan-waiver-cap-to-rs-75000-on-tvk-govts-100th-day",
+        "title": "TN CM Vijay increases crop loan waiver cap to Rs 75,000 on TVK govt’s 100th day",
+        "description": "On the 100th day of his government, Tamil Nadu CM C Joseph Vijay announced an enhanced crop loan waiver, raising the ceiling from Rs 50,000 to Rs 75,000 for eligible loans from cooperative banks.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 03:54:06",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 04:06:51",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-15/7n0wpp1z/WhatsApp-Image-2026-08-15-at-11.38.13-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "236462be95587b4febfa944b52361511",
+        "link": "https://www.thenewsminute.com/karnataka/unsafe-food-expired-medicines-karnataka-now-has-a-qr-code-for-complaints",
+        "title": "Unsafe food, expired medicines? Karnataka now has a QR code for complaints",
+        "description": "QR codes will be displayed at eateries and drug stores. Citizens can scan the codes to lodge complaints about unhygienic food outlets, expired or overpriced medicines, adverse drug reactions and the use of artificial food colours.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "karnataka"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 03:52:19",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 04:06:52",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-18/mucmbc7l/WhatsApp-Image-2026-08-17-at-11.12.42.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "48a0978e1ccadbe2350a00391e3de158",
+        "link": "https://www.timesnownews.com/education/school-assembly-news-headlines-today-aug-18-top-national-international-sports-updates-thought-of-the-day-ugc-net-nta-article-155731770",
+        "title": "School Assembly News Headlines Today (Aug 18): Top National, International & Sports Updates + Thought of the Day",
+        "description": "Take a look at the major national, international, and sports highlights of the day. You may use it in the school assembly on August 18, 2026.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "nta",
+          "trending news",
+          "ugc",
+          "school assembly",
+          "school assembly news headlines",
+          "news headlines"
+        ],
+        "creator": [
+          "tn education desk"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-18 00:13:41",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-18 00:33:03",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155731783,thumbsize-37460,width-1280,height-720,resizemode-75/155731783.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "7b4664f55b60a8bd9deb36c92d1aaa7c",
+        "link": "https://www.timesnownews.com/india/326-mps-14-cms-have-criminal-cases-against-them-supreme-court-told-article-155721036",
+        "title": "326 MPs, 14 CMs Have Criminal Cases Against Them: Supreme Court Told",
+        "description": "251 of 543 Lok Sabha MPs and 75 of 233 Rajya Sabha MPs face criminal cases, an SC affidavit revealed, with 4,192 total cases pending.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "criminalisation of politics",
+          "mps mlas",
+          "vijay hansaria",
+          "criminal cases",
+          "supreme court"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 18:58:45",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 19:03:12",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155721041,thumbsize-83246,width-1280,height-720,resizemode-75/155721041.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": true
+      }
+    ],
+    "pagesFetched": 2
+  }
+}

@@ -2,50 +2,50 @@
   "version": 1,
   "jobs": {
     "dipr_press_releases": {
-      "last_sync_at": "2026-08-18T10:49:18+05:30",
-      "synced_through": "2026-08-18"
+      "last_sync_at": "2026-08-19T16:14:43+05:30",
+      "synced_through": "2026-08-19"
     },
     "government_orders": {
-      "last_sync_at": "2026-08-18T10:12:23+05:30",
-      "synced_through": "2026-08-18"
+      "last_sync_at": "2026-08-19T16:14:59+05:30",
+      "synced_through": "2026-08-19"
     },
     "tva_magazine": {
       "last_sync_at": "2026-08-18T11:14:12+05:30",
       "synced_through": "2026-06-01"
     },
     "departments": {
-      "last_sync_at": "2026-08-18T11:14:33+05:30"
+      "last_sync_at": "2026-08-19T16:19:47+05:30"
     },
     "ministers": {
-      "last_sync_at": "2026-08-18T11:14:35+05:30"
+      "last_sync_at": "2026-08-19T16:19:48+05:30"
     },
     "districts": {
-      "last_sync_at": "2026-08-18T11:14:55+05:30"
+      "last_sync_at": "2026-08-19T16:20:07+05:30"
     },
     "news": {
-      "last_sync_at": "2026-08-18T11:15:20+05:30",
-      "synced_through": "2026-08-17"
-    },
-    "constituencies": {
-      "last_sync_at": "2026-08-18T11:14:57+05:30"
-    },
-    "gov_press_release_images": {
-      "last_sync_at": "2026-08-18T11:13:43+05:30",
+      "last_sync_at": "2026-08-19T16:20:34+05:30",
       "synced_through": "2026-08-18"
     },
+    "constituencies": {
+      "last_sync_at": "2026-08-19T16:20:08+05:30"
+    },
+    "gov_press_release_images": {
+      "last_sync_at": "2026-08-19T16:14:44+05:30",
+      "synced_through": "2026-08-19"
+    },
     "govt_schemes": {
-      "last_sync_at": "2026-08-18T11:15:12+05:30",
+      "last_sync_at": "2026-08-19T16:20:24+05:30",
       "count": 61
     },
     "JOB_WIKI_DEPARTMENTS_MINISTERS": {
-      "last_sync_at": "2026-08-18T11:14:34+05:30"
+      "last_sync_at": "2026-08-19T16:19:48+05:30"
     },
     "dvac_press_releases": {
-      "last_sync_at": "2026-08-17T16:26:38+05:30",
-      "synced_through": "2026-08-16"
+      "last_sync_at": "2026-08-19T16:14:45+05:30",
+      "synced_through": "2026-08-18"
     },
     "finance_notifications": {
-      "last_sync_at": "2026-08-18T11:13:52+05:30",
+      "last_sync_at": "2026-08-19T16:14:46+05:30",
       "count": 4
     }
   }

@@ -1,8 +1,8 @@
 {
   "date": "2026-08-17",
   "fetchedAt": "2026-08-18T10:13:41.975227+05:30",
-  "lastFetchedAt": "2026-08-18T10:13:41.975227+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-19T16:20:31.651003+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://newsdata.io/api/1/news",
@@ -16,9 +16,54 @@
   },
   "response": {
     "status": "success",
-    "totalResults": 10,
+    "totalResults": 11,
     "apiReportedTotalResults": 15,
     "results": [
+      {
+        "article_id": "ccb52255a0796218cde9e99c83b01f10",
+        "link": "https://www.timesnownews.com/india/bjp-resets-national-team-for-2029-elections-smriti-irani-ram-madhav-deepak-mhaskey-51-new-faces-ex-chief-ministers-women-youth-part-of-nitin-nabin-team-article-155714470",
+        "title": "BJP Resets National Team For 2029: 51 New Faces, 3 Ex-CMs, Women And Youth",
+        "description": "The BJP has significantly revamped its national team, appointing 65 office bearers, with a focus on balancing youth and experience. Key figures include Smriti Irani as general secretary and Ram Madhav as vice president.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "deepak mhaskey",
+          "amit malviya",
+          "bjp national team",
+          "social media convener",
+          "bjp",
+          "pm modi",
+          "bjp office bearers team"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-17 18:06:17",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-17 18:32:50",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155719521,thumbsize-65788,width-1280,height-720,resizemode-75/155719521.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
       {
         "article_id": "0f784e9ec87150e281a6a0594a0293de",
         "link": "https://www.thenewsminute.com/karnataka/cauvery-dispute-sc-directs-karnataka-to-comply-with-cwma-order-seeks-release-status",
