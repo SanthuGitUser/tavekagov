@@ -215,9 +215,6 @@ export function ConstituenciesPage() {
   ]);
 
   const visibleConstituencies = useMemo(() => {
-    if (selectedAcNumber) {
-      return filtered.filter((row) => row.ac_number === selectedAcNumber);
-    }
     return filtered;
   }, [filtered, selectedAcNumber]);
 

@@ -9,6 +9,7 @@ type PartyFilterSelectProps = {
   parties: string[];
   onChange: (value: string) => void;
   className?: string;
+  rootClassName?: string;
 };
 
 function PartyFlag({ party, className }: { party: string; className?: string }) {
@@ -30,6 +31,7 @@ export function PartyFilterSelect({
   parties,
   onChange,
   className,
+  rootClassName,
 }: PartyFilterSelectProps) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -63,7 +65,10 @@ export function PartyFilterSelect({
   }
 
   return (
-    <div ref={rootRef} className={cn("relative min-w-[11rem] shrink-0", open && "z-50")}>
+    <div
+      ref={rootRef}
+      className={cn("relative min-w-[11rem] shrink-0", open && "z-50", rootClassName)}
+    >
       <button
         type="button"
         aria-haspopup="listbox"
@@ -88,7 +93,7 @@ export function PartyFilterSelect({
           id={listboxId}
           role="listbox"
           aria-label="Filter by party"
-          className="absolute left-0 top-[calc(100%+0.25rem)] z-50 max-h-64 w-full min-w-[11rem] overflow-y-auto rounded-md border border-border bg-card p-1 text-foreground shadow-lg"
+          className="absolute left-0 top-[calc(100%+0.25rem)] z-50 max-h-64 w-full overflow-y-auto rounded-md border border-border bg-card p-1 text-foreground shadow-lg"
         >
           <li role="option" aria-selected={value === "all"}>
             <button

@@ -43,6 +43,7 @@ export const primaryNav: NavPrimaryItem[] = [
       { to: "/departments", label: "Departments" },
       { to: "/constituencies", label: "Constituencies" },
       { to: "/districts", label: "Districts" },
+      { to: "/mla", label: "MLA" },
     ],
   },
   { id: "tvk-manifesto", label: "TVK Manifesto", to: "/tvk-manifesto" },

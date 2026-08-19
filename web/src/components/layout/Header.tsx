@@ -38,6 +38,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useDashboardDateRange, type DashboardDateRangePreset } from "@/context/DashboardDateRangeContext";
 import { useTVKManifestoSearch } from "@/context/TVKManifestoSearchContext";
+import { useMlaSearch } from "@/context/MlaSearchContext";
 import {
   countTVKManifestoChildSections,
   filterTVKManifestoGroups,
@@ -48,6 +49,7 @@ import {
   loadTVKManifestoFeed,
   type TVKManifestoFeedData,
 } from "@/lib/tvkManifestoFeed";
+import { tamilNaduMlaFeed } from "@/lib/tamilNaduMlaFeed";
 
 type HeaderProps = {
   title: string;
@@ -186,6 +188,7 @@ export function Header({ title, description }: HeaderProps) {
   const governmentOrdersView = useGovernmentOrdersView();
   const transfersPostingsSearch = useTransfersPostingsSearch();
   const tvkManifestoSearch = useTVKManifestoSearch();
+  const mlaSearch = useMlaSearch();
   const dashboardDateRange = useDashboardDateRange();
   const location = useLocation();
   const pageSearch =
@@ -414,7 +417,7 @@ export function Header({ title, description }: HeaderProps) {
       memberFilter: constituencySearch.memberFilter,
     }).length;
     const filterSelectClassName =
-      "h-9 max-w-[11rem] shrink-0 rounded-md border border-input bg-background px-2.5 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50";
+      "h-9 max-w-[9.5rem] shrink-0 rounded-md border border-input bg-background px-2.5 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50";
     const hasActiveFilters =
       constituencySearch.search.trim() !== "" ||
       constituencySearch.districtFilter !== "all" ||
@@ -507,6 +510,224 @@ export function Header({ title, description }: HeaderProps) {
             <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
               {filteredCount} of {constituencies.length} constituencies
             </p>
+          </div>
+        </div>
+      </HeaderShell>
+    );
+  }
+
+  if (mlaSearch) {
+    function normalizeMlaPartyName(value: string): string {
+      const trimmed = value.trim();
+      const withoutSuffix = trimmed.replace(/\s+S$/i, "").trim();
+      const PARTY_CODE_BY_NAME: Record<string, string> = {
+        "Amma Makkal Munnettra Kazagam": "AMMK",
+        "Desiya Murpokku Dravida Kazhagam": "DMDK",
+        "Indian Union Muslim League": "IUML",
+        "Pattali Makkal Katchi": "PMK",
+        "Tamilaga Vettri Kazhagam": "TVK",
+        "Viduthalai Chiruthaigal Katchi": "VCK",
+      };
+      return PARTY_CODE_BY_NAME[withoutSuffix] ?? withoutSuffix;
+    }
+
+    const parties = [...new Set(tamilNaduMlaFeed.mlas.map((m) => m.party).filter(Boolean))].sort(
+      (a, b) => a.localeCompare(b),
+    );
+    const normalizedParties = [
+      ...new Set(parties.map((party) => normalizeMlaPartyName(party)).filter(Boolean)),
+    ].sort((a, b) => a.localeCompare(b));
+    const educations = [
+      ...new Set(
+        tamilNaduMlaFeed.mlas
+          .map((m) => m.education_category || m.education)
+          .map((v) => v?.trim())
+          .filter(Boolean),
+      ),
+    ].sort((a, b) => String(a).localeCompare(String(b)));
+    const districts = [...new Set(tamilNaduMlaFeed.mlas.map((m) => m.district).filter(Boolean))].sort(
+      (a, b) => a.localeCompare(b),
+    );
+    const criminalCaseBuckets: Array<{ value: string; label: string }> = [
+      { value: "all", label: "All Criminal Cases" },
+      { value: "eq:0", label: "0" },
+      { value: "lt:10", label: "< 10" },
+      { value: "btw:10:19", label: "10 - 19" },
+      { value: "btw:20:49", label: "20 - 49" },
+      { value: "gte:50", label: "50+" },
+      { value: "unknown", label: "Unknown" },
+    ];
+
+    function parseRupees(value: string): number | null {
+      const text = String(value ?? "").trim();
+      if (!text) return null;
+
+      // Common MyNeta formats: "Rs. 1,23,456", "Rs 1,23,456", sometimes just "1,23,456".
+      const rsMatch = text.match(/Rs\.?\s*([\d,]+)/i);
+      const numberMatch = rsMatch?.[1] ?? text.match(/([\d,]{2,})/)?.[1] ?? null;
+      if (!numberMatch) return null;
+
+      const n = Number(numberMatch.replace(/,/g, ""));
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function bucketCrores(value: string): string {
+      const rupees = parseRupees(value);
+      if (rupees === null) return "Unknown";
+      const crores = rupees / 10_000_000;
+      if (crores < 1) return "< 1 Cr";
+      if (crores < 10) return "1 - 10 Cr";
+      if (crores < 100) return "10 - 100 Cr";
+      return "100+ Cr";
+    }
+
+    const assetBuckets = [
+      ...new Set(tamilNaduMlaFeed.mlas.map((m) => bucketCrores(m.total_assets))),
+    ].sort((a, b) => a.localeCompare(b));
+    const liabilityBuckets = [
+      ...new Set(tamilNaduMlaFeed.mlas.map((m) => bucketCrores(m.liabilities))),
+    ].sort((a, b) => a.localeCompare(b));
+
+    const filterSelectClassName =
+      "h-9 max-w-[11rem] shrink-0 rounded-md border border-input bg-background px-2.5 text-sm text-foreground shadow-xs outline-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/50";
+
+    const hasActiveFilters =
+      mlaSearch.search.trim() !== "" ||
+      mlaSearch.partyFilter !== "all" ||
+      mlaSearch.criminalCasesFilter !== "all" ||
+      mlaSearch.educationFilter !== "all" ||
+      mlaSearch.assetsFilter !== "all" ||
+      mlaSearch.liabilitiesFilter !== "all" ||
+      mlaSearch.districtFilter !== "all";
+
+    return (
+      <HeaderShell>
+        <div className={headerInnerClassName}>
+          <HeaderTitleBlock title={title} description={description} />
+          <div className="flex w-full min-w-0 flex-wrap items-center gap-2 sm:w-auto sm:flex-1 sm:justify-end">
+            <div className="relative z-20 flex flex-wrap items-center gap-2">
+              <PartyFilterSelect
+                value={mlaSearch.partyFilter}
+                parties={normalizedParties}
+                onChange={mlaSearch.setPartyFilter}
+                className={filterSelectClassName}
+                rootClassName="min-w-[9.5rem]"
+              />
+
+              <label className="sr-only" htmlFor="mla-criminal-filter">
+                Filter by criminal cases
+              </label>
+              <select
+                id="mla-criminal-filter"
+                value={mlaSearch.criminalCasesFilter}
+                onChange={(event) => mlaSearch.setCriminalCasesFilter(event.target.value)}
+                className={filterSelectClassName}
+              >
+                {criminalCaseBuckets.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+
+              <label className="sr-only" htmlFor="mla-education-filter">
+                Filter by education
+              </label>
+              <select
+                id="mla-education-filter"
+                value={mlaSearch.educationFilter}
+                onChange={(event) => mlaSearch.setEducationFilter(event.target.value)}
+                className={filterSelectClassName}
+              >
+                <option value="all">All Education</option>
+                {educations.map((value) => (
+                  <option key={value} value={value}>
+                    {value}
+                  </option>
+                ))}
+              </select>
+
+              <label className="sr-only" htmlFor="mla-assets-filter">
+                Filter by total assets
+              </label>
+              <select
+                id="mla-assets-filter"
+                value={mlaSearch.assetsFilter}
+                onChange={(event) => mlaSearch.setAssetsFilter(event.target.value)}
+                className={filterSelectClassName}
+              >
+                <option value="all">All Assets</option>
+                {assetBuckets.map((value) => (
+                  <option key={value} value={value}>
+                    {value}
+                  </option>
+                ))}
+              </select>
+
+              <label className="sr-only" htmlFor="mla-liabilities-filter">
+                Filter by liabilities
+              </label>
+              <select
+                id="mla-liabilities-filter"
+                value={mlaSearch.liabilitiesFilter}
+                onChange={(event) => mlaSearch.setLiabilitiesFilter(event.target.value)}
+                className={filterSelectClassName}
+              >
+                <option value="all">All Liabilities</option>
+                {liabilityBuckets.map((value) => (
+                  <option key={value} value={value}>
+                    {value}
+                  </option>
+                ))}
+              </select>
+
+              <label className="sr-only" htmlFor="mla-district-filter">
+                Filter by district
+              </label>
+              <select
+                id="mla-district-filter"
+                value={mlaSearch.districtFilter}
+                onChange={(event) => mlaSearch.setDistrictFilter(event.target.value)}
+                className={filterSelectClassName}
+              >
+                <option value="all">All Districts ({tamilNaduMlaFeed.mlas.length})</option>
+                {districts.map((district) => (
+                  <option key={district} value={district}>
+                    {district}
+                  </option>
+                ))}
+              </select>
+
+              <Button
+                type="button"
+                variant="outline"
+                size="icon"
+                className="h-9 w-9 shrink-0"
+                onClick={mlaSearch.resetFilters}
+                disabled={!hasActiveFilters}
+                aria-label="Reset all filters"
+                title="Reset all filters"
+              >
+                <FilterX className="h-4 w-4" />
+              </Button>
+            </div>
+
+            <div className="flex w-full min-w-0 items-center gap-2 sm:w-48 sm:gap-2 md:w-56">
+              <div className="relative min-w-0 flex-1">
+              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="search"
+                placeholder="Search constituency, member, party, district…"
+                value={mlaSearch.search}
+                onChange={(event) => mlaSearch.setSearch(event.target.value)}
+                className="h-9 w-full pl-8"
+                aria-label="Search MLAs"
+              />
+              </div>
+              <p className="shrink-0 whitespace-nowrap text-sm tabular-nums text-muted-foreground">
+                {tamilNaduMlaFeed.mlas.length} total
+              </p>
+            </div>
           </div>
         </div>
       </HeaderShell>

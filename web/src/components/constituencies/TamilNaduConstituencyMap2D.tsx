@@ -60,17 +60,6 @@ export function TamilNaduConstituencyMap2D({
     [],
   );
 
-  const focusAcNumbers = useMemo(() => {
-    if (selectedAcNumber !== null) {
-      return new Set([selectedAcNumber]);
-    }
-    const total = tamilNaduConstituencyMapFeed.features.length;
-    if (activeAcNumbers && activeAcNumbers.size > 0 && activeAcNumbers.size < total) {
-      return activeAcNumbers;
-    }
-    return null;
-  }, [activeAcNumbers, selectedAcNumber]);
-
   useEffect(() => {
     const node = mapAreaRef.current;
     if (!node) return;
@@ -89,8 +78,9 @@ export function TamilNaduConstituencyMap2D({
   }, []);
 
   const { pathGenerator, viewBox } = useMemo(
-    () => buildConstituencyMapProjection(mapSize.width, mapSize.height, focusAcNumbers),
-    [focusAcNumbers, mapSize.height, mapSize.width],
+    // Always render the full Tamil Nadu map (no auto-zoom on selection).
+    () => buildConstituencyMapProjection(mapSize.width, mapSize.height, null),
+    [mapSize.height, mapSize.width],
   );
 
   const constituencyShapes = useMemo(
@@ -120,7 +110,7 @@ export function TamilNaduConstituencyMap2D({
       svg.on(".zoom", null);
       zoomBehaviorRef.current = null;
     };
-  }, [constituencyShapes.length, focusAcNumbers, pathGenerator, viewBox.height, viewBox.width]);
+  }, [constituencyShapes.length, pathGenerator, viewBox.height, viewBox.width]);
 
   const resetZoom = useCallback(() => {
     const svgNode = svgRef.current;

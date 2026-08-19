@@ -12,6 +12,7 @@ import { DistrictSearchProvider } from "@/context/DistrictSearchContext";
 import { DvacPressReleaseSearchProvider } from "@/context/DvacPressReleaseSearchContext";
 import { GovPressReleaseSearchProvider } from "@/context/GovPressReleaseSearchContext";
 import { GovPressReleaseViewProvider } from "@/context/GovPressReleaseViewContext";
+import { MlaSearchProvider } from "@/context/MlaSearchContext";
 import { GovtSchemesSearchProvider } from "@/context/GovtSchemesSearchContext";
 import { GovernmentOrdersSearchProvider } from "@/context/GovernmentOrdersSearchContext";
 import { GovernmentOrdersViewProvider } from "@/context/GovernmentOrdersViewContext";
@@ -62,6 +63,9 @@ const DistrictsPage = lazy(() =>
 );
 const ConstituenciesPage = lazy(() =>
   import("@/pages/ConstituenciesPage").then((module) => ({ default: module.ConstituenciesPage })),
+);
+const MlaPage = lazy(() =>
+  import("@/pages/MlaPage").then((module) => ({ default: module.MlaPage })),
 );
 const MagazinePage = lazy(() =>
   import("@/pages/MagazinePage").then((module) => ({ default: module.MagazinePage })),
@@ -403,6 +407,35 @@ export default function App() {
             element={
               <LazyRoute label="Loading constituencies…">
                 <ConstituenciesPage />
+              </LazyRoute>
+            }
+          />
+        </Route>
+        <Route
+          path="/mla"
+          element={
+            <MlaSearchProvider>
+              <AppLayout
+                fillViewport
+                title="MLA"
+                description={
+                  <>
+                    Winners analyzed from{" "}
+                    <SourceLink href="https://myneta.info/tamilnadu2026/index.php?action=summary&subAction=winner_analyzed&sort=candidate&page=">
+                      myneta.info
+                    </SourceLink>
+                    .
+                  </>
+                }
+              />
+            </MlaSearchProvider>
+          }
+        >
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading MLA…">
+                <MlaPage />
               </LazyRoute>
             }
           />
