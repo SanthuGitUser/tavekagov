@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-22",
+  "fetchedAt": "2026-08-24T16:49:47.114885+05:30",
+  "lastFetchedAt": "2026-08-24T16:49:47.114885+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-22"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22380,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.571-Hon_ble_CM_Social_Media_Message_-_National_Award_for_Best_Teachers_-Date__22.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.571-Hon'ble CM Social Media Message - National Award for Best Teachers -Date  22.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-22",
+        "language": "en"
+      },
+      {
+        "id": 22381,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-572-Hon_ble_CM_Social_Media_Message_-_Chennai_Day_2026-Date_22.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-572-Hon'ble CM Social Media Message - Chennai Day 2026-Date 22.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-22",
+        "language": "en"
+      },
+      {
+        "id": 22382,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.573-Hon_ble_Minister_for_RD___WRD_and_L_SW-Employment___Skill_Training_Dept-Press_Release-Date_22.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.573-Hon'ble Minister for RD & WRD and L&SW-Employment & Skill Training Dept-Press Release-Date 22.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-22",
+        "language": "en"
+      }
+    ]
+  }
+}

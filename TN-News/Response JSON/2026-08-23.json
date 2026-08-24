@@ -1,0 +1,317 @@
+{
+  "date": "2026-08-23",
+  "fetchedAt": "2026-08-24T16:51:21.326031+05:30",
+  "lastFetchedAt": "2026-08-24T16:51:21.326031+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 7,
+    "apiReportedTotalResults": 10,
+    "results": [
+      {
+        "article_id": "063785bd58d7a1e3d09f46af822e0bee",
+        "link": "https://www.timesnownews.com/chennai/red-trolley-body-parts-on-train-at-agra-station-lead-police-to-chennai-house-suspects-missing-article-155972630",
+        "title": "Red Trolley, Body Parts On Train At Agra Station Lead Police To Chennai House; Suspects Missing",
+        "description": "Body parts found on Tamil Nadu Express lead Agra and Chennai police to a Guduvanchery house, with two suspects absconding.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "body parts",
+          "tamil nadu express",
+          "hayathun nisha",
+          "crime news",
+          "chennai",
+          "guduvanchery",
+          "agra railway station"
+        ],
+        "creator": [
+          "sriram ganesh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-23 13:28:18",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-23 13:32:21",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155972633,thumbsize-2003590,width-1280,height-720,resizemode-75/155972633.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "14355f1d17f26828a03473743661e54b",
+        "link": "https://www.timesnownews.com/india/fan-club-mode-manickam-tagore-swipes-at-vijay-for-pm-calls-by-tvk-ministers-article-155971992",
+        "title": "'Fan-Club Mode': Manickam Tagore Swipes At 'Vijay-For-PM' Calls By TVK Ministers",
+        "description": "Recent calls for Vijay to be considered for Prime Minister have sparked varied reactions. Congress MP Manickam Tagore criticized these proposals, suggesting that TVK leaders view Vijay more as a celebrity than a serious political figure.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tvk",
+          "edappadi palaniswami",
+          "tamil nadu",
+          "vijay s",
+          "narendra modi",
+          "congress",
+          "key tamil nadu",
+          "vijay"
+        ],
+        "creator": [
+          "sriram ganesh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-23 10:47:26",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-23 11:02:36",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155972175,thumbsize-1624829,width-1280,height-720,resizemode-75/155972175.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "8b576584708dc2e91ffc59aca39e9ce8",
+        "link": "https://www.thenewsminute.com/karnataka/ramesh-babu-questions-itis-plan-to-auction-44-acres-of-prime-bengaluru-land",
+        "title": "Ramesh Babu questions ITI’s plan to auction 44 acres of prime Bengaluru land",
+        "description": "Former Congress MLC Ramesh Babu has urged the Centre to defer the proposed Rs 1,685-crore e-auction of 44.03 acres of ITI land in Bengaluru, citing its original public-purpose allotment and questions over portions classified as government land.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "karnataka"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-23 06:51:28",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-23 07:08:29",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-23/2qo2zyoz/Ramesh-Babu-Karnataka-Congress.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "79981755a253043a5d8a0737cd828387",
+        "link": "https://www.timesnownews.com/education/tamil-nadu-teachers-body-opposes-notice-to-official-over-withdrawn-student-protest-circular-article-155971259",
+        "title": "Tamil Nadu Teachers’ Body Opposes Notice to Official Over Withdrawn Student Protest Circular",
+        "description": "Tamil Nadu teachers’ body TNGCTA has opposed a notice to Joint Director Cynthia Selvi over a withdrawn student protest circular, calling for immediate withdrawal.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu teachers",
+          "tamil nadu students",
+          "tamil nadu education body",
+          "tamil nadu",
+          "tamil nadu student protest"
+        ],
+        "creator": [
+          "lakshima sareen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-23 06:47:16",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-23 07:03:08",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155971344,thumbsize-1344230,width-1280,height-720,resizemode-75/155971344.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "68de635a1cbdd8dd7d893a0c5cef5f83",
+        "link": "https://www.thenewsminute.com/kerala/railways-to-separate-mangaluru-region-from-palakkad-kerala-upset-ktaka-bjp-hails-move",
+        "title": "Railways to separate Mangaluru region from Palakkad: Kerala upset, K’taka BJP hails move",
+        "description": "Kerala politicians protest the Railway Board’s decision to separate the Mangaluru railway region from Palakkad division, warning of operational and financial losses.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "kerala"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-23 05:36:31",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-23 05:37:24",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-08-23%2Fcs33ocht%2FWhatsApp-Image-2026-08-23-at-10.57.49-AM.jpeg?rect=0%2C0%2C1080%2C608&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "b17fb0e62928a0eb7e22f3f41c00fed8",
+        "link": "https://www.news9live.com/business/biz-news/bank-holidays-next-week-no-work-on-4-days-next-week-check-list-in-our-state-3001761",
+        "title": "Bank holidays next week: No work on 4 days next week, check list in our state",
+        "description": "If you have any important banking work next week, you could complete it on Monday (August 24), as banks will be closed for four days next week. Banks will be closed in differrnt states on different days and, therefore, it is important to know when will banks be closed in which state.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "biz news"
+        ],
+        "creator": [
+          "avijit ghosal"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-23 03:27:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-23 03:42:46",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/08/Bank-closed-freepik.png",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://n.bytvi.com/news9live.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "19e64df18b7b3264f7b0c766a46dd3d8",
+        "link": "https://www.timesnownews.com/entertainment-news/south/chinmayi-sripaada-praises-cm-vijay-team-jana-nayagan-for-addressing-child-sexual-abuse-article-155970312",
+        "title": "Chinmayi Sripaada Praises CM Vijay, Team Jana Nayagan For Addressing Child Sexual Abuse",
+        "description": "Chinmayi Sripaada lauds CM Vijay and H Vinoth for talking about child sexual abuse in the Tamil film which marks the former's final film in his career.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "thalapathy vijay",
+          "vijay",
+          "jana nayagan",
+          "mamitha baiju",
+          "chinmayi sripaada"
+        ],
+        "creator": [
+          "raisa nasreen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-23 01:24:13",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-23 01:33:52",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155970310,thumbsize-73196,width-1280,height-720,resizemode-75/155970310.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

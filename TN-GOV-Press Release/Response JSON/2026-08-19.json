@@ -1,10 +1,10 @@
 {
   "date": "2026-08-19",
   "fetchedAt": "2026-08-19T16:14:44.310117+05:30",
-  "lastFetchedAt": "2026-08-19T16:14:44.310117+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-08-24T16:49:49.027510+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
-  "count": 1,
+  "count": 3,
   "releases": [
     {
       "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr190826a.jpg",
@@ -23,6 +23,52 @@
       "cm_visits": true,
       "postings": false,
       "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr190826_cm_b.jpg",
+      "release_date": "2026-08-19",
+      "title": "On the occasion of World Photography Day, representatives of the Tamil Nadu Press Photographers’ Cooperative Housing Society called on the Honble Chief Minister",
+      "file_name": "pr190826_cm_b.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr190826_msme.JPG",
+      "release_date": "2026-08-19",
+      "title": "Honble Minister for Micro, Small and Medium Enterprises chaired the policy note 2026–2027 review meeting",
+      "file_name": "pr190826_msme.JPG",
+      "minister_name": "Thiru P. Mathan Raja",
+      "department_name": "Micro , Small and Medium Enterprises Department",
+      "minister_id": 28,
+      "department_id": 29,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": true,
       "budget": false,
       "tributes": false,
       "others": false,
@@ -49,7 +95,28 @@
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
       "display_order": 1,
       "is_chief_minister": true
+    },
+    {
+      "id": 28,
+      "name": "Thiru P. Mathan Raja",
+      "designation": "Minister for Micro, Small and Medium Enterprises",
+      "portfolios": [
+        "Rural Industries including Cottage Industries, Small Industries"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/217_Mathan_Raja.png",
+      "display_order": 28,
+      "is_chief_minister": false
     }
   ],
-  "departments": []
+  "departments": [
+    {
+      "id": 29,
+      "name": "Micro , Small and Medium Enterprises Department",
+      "dep_id_encoded": "Mjk=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjk=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru P. Mathan Raja",
+      "display_order": 21
+    }
+  ]
 }

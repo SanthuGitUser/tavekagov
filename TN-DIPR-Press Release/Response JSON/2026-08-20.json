@@ -1,0 +1,73 @@
+{
+  "date": "2026-08-20",
+  "fetchedAt": "2026-08-24T16:49:46.345008+05:30",
+  "lastFetchedAt": "2026-08-24T16:49:46.345008+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-20"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22361,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-558-Hon_ble_CM_Social_Media_Message_-_Freedom_fighter_Ondiveeran_Birthday_-_20.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-20",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-558-Hon'ble CM Social Media Message - Freedom fighter Ondiveeran Birthday - 20.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-20",
+        "language": "en"
+      },
+      {
+        "id": 22362,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.559_-_Finance_Department_Press_Release_English_-_Date.20.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.559 - Finance Department Press Release English - Date.20.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-20",
+        "language": "en"
+      },
+      {
+        "id": 22363,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.559_-_Finance_Department_Press_Release_Tamil_-_Date.20.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.559 - Finance Department Press Release Tamil - Date.20.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-20",
+        "language": "en"
+      },
+      {
+        "id": 22364,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.560_-_Indian_Medicine_and_Homoeopathy_Dept_Press_Release_-_English_-_Date.20.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.560 - Indian Medicine and Homoeopathy Dept Press Release - English - Date.20.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-20",
+        "language": "en"
+      },
+      {
+        "id": 22365,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.560_-_Indian_Medicine_and_Homoeopathy_Dept_Press_Release_-_Tamil_-_Date.20.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-20",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.560 - Indian Medicine and Homoeopathy Dept Press Release - Tamil - Date.20.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-20",
+        "language": "en"
+      }
+    ]
+  }
+}

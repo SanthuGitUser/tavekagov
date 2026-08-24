@@ -1,0 +1,126 @@
+{
+  "date": "2026-08-22",
+  "fetchedAt": "2026-08-24T16:49:49.027510+05:30",
+  "lastFetchedAt": "2026-08-24T16:49:49.027510+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 3,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr220826_sedu1.jpg",
+      "release_date": "2026-08-22",
+      "title": "Honble Ministers for School Education, Tamil Development, Information and Publicity and Tourism inaugurated the “Chennai to Madras” photo exhibition on the occasion of the 387th Madras Day",
+      "file_name": "pr220826_sedu1.jpg",
+      "minister_name": "Thiru Rajmohan",
+      "department_name": "School Education Department",
+      "minister_id": 8,
+      "department_id": 28,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr220826_sedu.jpg",
+      "release_date": "2026-08-22",
+      "title": "Honble Speaker and Honble Ministers paid floral tributes to veteran actress Sowcar Janaki",
+      "file_name": "pr220826_sedu.jpg",
+      "minister_name": null,
+      "department_name": null,
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "low",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": true,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr220826_rd1.jpg",
+      "release_date": "2026-08-22",
+      "title": "Honble Ministers for Rural Development and Water Resources, Labour Welfare and Skill Development chaired the mega private sector job fair in Chennai",
+      "file_name": "pr220826_rd1.jpg",
+      "minister_name": "Thiru N. Anand",
+      "department_name": "Labour Welfare and Skill Development Department",
+      "minister_id": 2,
+      "department_id": 18,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "medium",
+      "department_match_confidence": "medium",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 2,
+      "name": "Thiru N. Anand",
+      "designation": "Minister for Rural Development and Water Resources",
+      "portfolios": [
+        "Rural Development, Panchayats and Panchayat Union",
+        "Irrigation, Irrigation Projects including Small Irrigation"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/024_Anand.png",
+      "display_order": 2,
+      "is_chief_minister": false
+    },
+    {
+      "id": 8,
+      "name": "Thiru Rajmohan",
+      "designation": "Minister for School Education, Tamil Development, Information and Publicity",
+      "portfolios": [
+        "School Education",
+        "Archaeology",
+        "Tamil Official Language and Tamil Culture, Information & Publicity, Film Technology and Cinematograph Act, Newsprint Control, Stationery and Printing, Government Press"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/016_Rajmohan.png",
+      "display_order": 8,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 18,
+      "name": "Labour Welfare and Skill Development Department",
+      "dep_id_encoded": "MTg=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTg=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru J. Mohamed Farvas",
+      "display_order": 18
+    },
+    {
+      "id": 28,
+      "name": "School Education Department",
+      "dep_id_encoded": "Mjg=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Rajmohan",
+      "display_order": 31
+    }
+  ]
+}

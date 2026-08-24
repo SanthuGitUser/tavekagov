@@ -1,0 +1,165 @@
+{
+  "date": "2026-08-21",
+  "fetchedAt": "2026-08-24T16:49:49.027510+05:30",
+  "lastFetchedAt": "2026-08-24T16:49:49.027510+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 4,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr210826_fw.JPG",
+      "release_date": "2026-08-21",
+      "title": "Honble Minister for Fisheries and Fishermen Welfare launched the upgraded Fisheries Department Website",
+      "file_name": "pr210826_fw.JPG",
+      "minister_name": "Hon'ble Minister for Fisheries and Fishermen Welfare launched the upgraded Fisheries Department Website",
+      "department_name": "Fisheries and Fishermen Welfare launched the upgraded Fisheries Department Website Department",
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": false,
+      "parse_confidence": "high",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr210826a.jpg",
+      "release_date": "2026-08-21",
+      "title": "Governor of the Reserve Bank of India called on the Honble Chief Minister",
+      "file_name": "pr210826a.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr210826_frst.JPG",
+      "release_date": "2026-08-21",
+      "title": "Tamil Nadu Biodiversity Board – 13th board meeting held under the chairmanship of the Honble Minister for Forests - English Version",
+      "file_name": "pr210826_frst.JPG",
+      "minister_name": "Thiru R.V. Ranjithkumar",
+      "department_name": "Environment, Climate Change and Forests Department",
+      "minister_id": 33,
+      "department_id": 8,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr210826_it1.JPG",
+      "release_date": "2026-08-21",
+      "title": "Department of Artificial Intelligence, Information Technology and Digital Services – ICT Academy signed MoUs with Global Technology and Corporate (CSR) Organisations to enhance Artificial Intelligence skills in Tamil Nadu",
+      "file_name": "pr210826_it1.JPG",
+      "minister_name": "Dr Kumar. R",
+      "department_name": "Artificial Intelligence, Information Technology and Digital Services Department",
+      "minister_id": 32,
+      "department_id": 17,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "medium",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    },
+    {
+      "id": 32,
+      "name": "Dr Kumar. R",
+      "designation": "Minister for Artificial Intelligence, Information Technology and Digital Services",
+      "portfolios": [
+        "Artificial Intelligence, Information Technology and Digital Services"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/026_Kumar.png",
+      "display_order": 32,
+      "is_chief_minister": false
+    },
+    {
+      "id": 33,
+      "name": "Thiru R.V. Ranjithkumar",
+      "designation": "Minister for Forests",
+      "portfolios": [
+        "Forests"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/037_Ranjithkumar.png",
+      "display_order": 33,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 17,
+      "name": "Artificial Intelligence, Information Technology and Digital Services Department",
+      "dep_id_encoded": "MTc=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTc=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Dr Kumar. R",
+      "display_order": 3
+    },
+    {
+      "id": 8,
+      "name": "Environment, Climate Change and Forests Department",
+      "dep_id_encoded": "OA==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OA==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru R.V. Ranjithkumar",
+      "display_order": 8
+    }
+  ]
+}

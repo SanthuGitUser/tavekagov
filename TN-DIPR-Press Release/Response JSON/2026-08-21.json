@@ -1,0 +1,172 @@
+{
+  "date": "2026-08-21",
+  "fetchedAt": "2026-08-24T16:49:46.881196+05:30",
+  "lastFetchedAt": "2026-08-24T16:49:46.881196+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-21"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22366,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.561_-_Hon_ble_CM_Condolence_Message_-_Death_of_Actress_Tmt._Sowcar_Janaki_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.561 - Hon'ble CM Condolence Message - Death of Actress Tmt. Sowcar Janaki - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22367,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.562_-_Water_Resources_Dept_Water_Release_Press_Release_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.562 - Water Resources Dept Water Release Press Release - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22368,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.563_-_Employment_and_Training_Dept_Press_Release_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.563 - Employment and Training Dept Press Release - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22369,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.564_-_Hon_ble_Artificial_Intelligence__Information_Technology_and_Digital_Services_Minister_Press_Release_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.564 - Hon'ble Artificial Intelligence, Information Technology and Digital Services Minister Press Release - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22370,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.565_-_Tamil_Nadu_Pollution_Control_Board_Press_Release_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.565 - Tamil Nadu Pollution Control Board Press Release - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22371,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.566_-_EDII_-_Expanding_Business_to_Govertnmnet_Through_GeM_Training_Press_Release_-_English_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.566 - EDII - Expanding Business to Govertnmnet Through GeM Training Press Release - English - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22372,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.566_-_EDII_-_Expanding_Business_to_Govertnmnet_Through_GeM_Training_Press_Release_-_Tamil_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.566 - EDII - Expanding Business to Govertnmnet Through GeM Training Press Release - Tamil - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22373,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.567-EDII_-_Food_Products_Training_Press_Release_-_English_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.567-EDII - Food Products Training Press Release - English - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22374,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.567-EDII_-_Food_Products_Training_Press_Release_-_Tamil_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.567-EDII - Food Products Training Press Release - Tamil - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22375,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.568_-_EDII_-_Herbal_Soap_Cosmetics_Products_Making_Training_Press_Release_-_English_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.568 - EDII - Herbal Soap Cosmetics Products Making Training Press Release - English - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22376,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.568_-_EDII_-_Herbal_Soap_Cosmetics_Products_Making_Training_Press_Release_-_Tamil_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.568 - EDII - Herbal Soap Cosmetics Products Making Training Press Release - Tamil - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22377,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.569_-_Hon_ble_Forests_Minister_Press_Release_-_English_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.569 - Hon'ble Forests Minister Press Release - English - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22378,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.569_-_Hon_ble_Forests_Minister_Press_Release_-_Tamil_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.569 - Hon'ble Forests Minister Press Release - Tamil - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      },
+      {
+        "id": 22379,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.570_-_Health__Medical_Education_and_Family_Welfare_Dept_Press_Release_-_Date.21.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.570 - Health, Medical Education and Family Welfare Dept Press Release - Date.21.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-21",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "date": "2026-08-22",
+  "fetchedAt": "2026-08-24T16:51:21.326031+05:30",
+  "lastFetchedAt": "2026-08-24T16:51:21.326031+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 3,
+    "apiReportedTotalResults": 10,
+    "results": [
+      {
+        "article_id": "37d08a216fff6ca1ba2af72919e87271",
+        "link": "https://frontline.thehindu.com/news/omar-abdullah-kashmir-us/article71377621.ece",
+        "title": "Why Omar Abdullah is treading carefully around the US on Kashmir",
+        "description": "Omar Abdullah’s cautious response to the US Ambassador’s Kashmir visit reflects the political risks of inviting foreign involvement in Kashmir, a lesson reinforced by Sheikh Abdullah’s experience in the 1950s.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "news"
+        ],
+        "creator": [
+          "gowhar geelani"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-22 15:11:54",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-22 15:19:16",
+        "image_url": "https://fl-i.thgim.com/public/interviews/1a4cw3/article71378228.ece/alternates/LANDSCAPE_1200/Omar%20Abdullah%20and%20Sergio%20Gor.jpeg",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://n.bytvi.com/frontline_thehindu.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "54e622a7d3bb5218320eba2e0e9d81b8",
+        "link": "https://www.timesnownews.com/india/mk-stalin-lays-out-dmk-overhaul-plan-says-we-are-specialists-in-making-comeback-targets-tvk-cm-vijay-assembly-not-a-movie-set-article-155953886",
+        "title": "'Specialists In Making Comeback': MK Stalin Plans DMK Overhaul With Age Limit For Key Posts, Self Assessment; Targets TVK",
+        "description": "DMK president M K Stalin expressed confidence in the party's ability to rebound politically, targeting Tamil Nadu Chief Minister C Joseph Vijay for focusing on renaming DMK initiatives instead of governance.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tvk",
+          "stalin",
+          "joseph vijay",
+          "mk stalin",
+          "dmk"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-22 12:44:14",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-22 13:02:51",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155953883,thumbsize-1828551,width-1280,height-720,resizemode-75/155953883.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "9bbd3f03f06ef03453796415444bafdc",
+        "link": "https://www.thenewsminute.com/tamil-nadu/chennai-dalit-man-hacked-to-death-for-falling-in-love-demand-for-anti-honour-killing-law-rises",
+        "title": "Chennai Dalit man hacked to death for falling in love, demand for anti-honour killing law rises",
+        "description": "Both the victim and the perpetrators are allegedly from the same Dalit community, but the deceased Praveen hailed from a poorer background. Activists point out that a special state law can prevent such killings, particularly when the PoA Act can’t be invoked.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "bharathy singaravel"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-22 12:29:08",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-22 12:37:26",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-22/wiarokfm/WhatsApp-Image-2026-08-22-at-6.06.00-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}
