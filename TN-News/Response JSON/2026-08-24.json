@@ -1,0 +1,402 @@
+{
+  "date": "2026-08-24",
+  "fetchedAt": "2026-08-25T15:17:30.009912+05:30",
+  "lastFetchedAt": "2026-08-25T15:17:30.009912+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 9,
+    "apiReportedTotalResults": 11,
+    "results": [
+      {
+        "article_id": "ff5fb2ee80b92a42458c65d182d205c4",
+        "link": "https://www.timesnownews.com/india/supreme-court-tells-tamil-nadu-it-can-raise-water-sharing-issues-before-cauvery-water-regulation-committee-cwrc-article-155980047",
+        "title": "SC Tells Tamil Nadu It Can Raise Water‐Sharing Issues Before Cauvery Regulation Committee",
+        "description": "The Supreme Court has advised the Tamil Nadu government to present its concerns regarding the Cauvery water release to the Cauvery Water Management Authority (CWMA).",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "cauvery water dispute",
+          "supreme court",
+          "tn",
+          "cauvery water",
+          "tamil nadu"
+        ],
+        "creator": [
+          "pti"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 15:27:28",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 15:32:24",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155980054,thumbsize-46518,width-1280,height-720,resizemode-75/155980054.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e60f4aeb9c8cea353135dbc05fa9dc0c",
+        "link": "https://www.timesnownews.com/india/monsoon-session-awaits-formal-closure-even-10-days-after-sine-die-adjournment-opposition-suspects-delimitation-motive-article-155978804",
+        "title": "Monsoon Session Awaits Formal Closure Even 10 Days After Sine Die Adjournment, Oppn Suspects Delimitation Motive",
+        "description": "The Monsoon session of Parliament still remains to be formally ended even ten days after both Houses were adjourned sine die, raising speculation that the government intends to pass significant legislation without reconvening.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "parliament",
+          "monsoon session",
+          "congress",
+          "bjp",
+          "parliament session adjourned",
+          "parliament session prorogued",
+          "delimitation bill"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 13:55:15",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 14:02:41",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155978802,thumbsize-155892,width-1280,height-720,resizemode-75/155978802.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "5c0f09986734178405866840228f9046",
+        "link": "https://www.timesnownews.com/india/mk-stalin-moves-madras-high-court-challenges-kolathur-election-defeat-against-tvk-vs-babu-seeks-vote-recount-article-155978397",
+        "title": "MK Stalin Moves Madras High Court, Challenges Kolathur Election Defeat, Seeks Vote Recount",
+        "description": "DMK chief and former Tamil Nadu Chief Minister MK Stalin has moved Madras High Court challenging his assembly election defeat against TVK candidate VS Babu in Kolathur constituency.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "stalin",
+          "madras high court",
+          "mk stalin",
+          "kolathur election defeat",
+          "kolathur assembly election",
+          "vote recount",
+          "tvk vs babu",
+          "high court"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 11:45:24",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 12:04:05",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155978557,thumbsize-18120,width-1280,height-720,resizemode-75/155978557.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "a8c451f1e02e357ec5b3d9516782be82",
+        "link": "https://www.thenewsminute.com/karnataka/aisa-actor-kishore-slam-karnataka-govt-fir-over-free-umar-khalid-posters",
+        "title": "AISA, actor Kishore slam Karnataka govt FIR over 'free Umar Khalid' posters",
+        "description": "The seminar organised by All India Students' Association (AISA) as part of a national campaign also criticised Azim Premji University in Bengaluru for suspending its own student over a book reading.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "karnataka"
+        ],
+        "creator": [
+          "aarush khanna"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 08:37:19",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 08:38:12",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-24/cwaf3lz7/Neha-Bora-AISA-bangalore-event.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e4eafa25647b0044b8a0c9d10bac0fbb",
+        "link": "https://www.thenewsminute.com/news/jaipur-dialogues-a-platform-that-doxxed-15-year-old-protestorhas-bjp-ties",
+        "title": "Jaipur Dialogues —a platform that doxxed 15-year-old protestor—has BJP ties",
+        "description": "This article looks into the founder and directors of the Jaipur Dialogues Forum. The founder Sanjay Dixit is a former IAS officer who also owns a for-profit company called JD Digital. Two of the directors, Sunil Kothari and Pankaj Joshi, are BJP leaders from Rajasthan who have previously occupied office bearer roles in the party.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "news"
+        ],
+        "creator": [
+          "abir dasgupta"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 08:35:13",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 08:38:12",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-24/s6269oem/2.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "09d2b97bc78f816cba71d248ef72b1bf",
+        "link": "https://www.thenewsminute.com/tamil-nadu/victory-of-our-protests-parandur-protesters-celebrate-as-cm-vijay-scraps-airport",
+        "title": "‘Victory of our protests’: Parandur protesters celebrate as CM Vijay scraps airport",
+        "description": "Chief Minister Vijay said the government has identified a few potential alternative sites for Chennai's second airport. These will be assessed through scientific studies and technical feasibility assessments before a final location is selected.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "shabbir ahmed"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 08:11:55",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 08:38:12",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2025-01-20/ujwzc1is/TVK-VIjay-at-Parandur.png?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "abd4247b5b429804f12f469ff31ed670",
+        "link": "https://www.timesnownews.com/chennai/tamil-nadu-govt-shelves-parandur-airport-project-vijay-expresses-solidarity-with-protesters-article-155976484",
+        "title": "Tamil Nadu Govt Shelves Parandur Airport Project, Vijay Expresses Solidarity With Protesters",
+        "description": "Vijay, fulfilling TVK's key electoral assurances, declared that the Parandur Greenfield airport project will be shelved.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "today headlines",
+          "times now news",
+          "english news",
+          "today news headlines",
+          "latest news updates",
+          "times now",
+          "latest news",
+          "english news today"
+        ],
+        "creator": [
+          "dharani balasubramaniam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 06:48:11",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 07:03:40",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155976602,thumbsize-25006,width-1280,height-720,resizemode-75/155976602.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "de9e9a8cd2cb25071aa6bfa0258c2e3b",
+        "link": "https://www.news9live.com/state/tamil-nadu/free-bus-travel-for-women-3-free-lpg-cylinders-tamil-nadu-cm-vijays-major-announcements-3001992",
+        "title": "Free bus travel for women, 3 free LPG cylinders: Tamil Nadu CM Vijay’s major announcements",
+        "description": "Tamil Nadu Chief Minister Vijay announced the shelving of the Parandur greenfield airport project. With his latest announcements, the chief minister tried to fulfil TVK’s electoral promises before the last Assembly elections in the state.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "subhajit sankar dasgupta"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 06:19:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 06:43:10",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/08/vijay.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://n.bytvi.com/news9live.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "722b85b3ed243f52f72ac04843a263ee",
+        "link": "https://www.thenewsminute.com/tamil-nadu/chennai-omr-residents-oppose-mamallan-reservoir-over-flooding-and-wetland-concerns",
+        "title": "Chennai: OMR residents oppose Mamallan reservoir over flooding and wetland concerns",
+        "description": "Residents sought a transparent water allocation policy and drinking water projects based on scientific assessments that do not compromise wetlands or natural drainage channels.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-24 05:39:13",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-24 06:08:25",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-24/li6gpe99/WhatsApp-Image-2026-08-24-at-10.47.32-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}
