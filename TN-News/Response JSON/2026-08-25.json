@@ -1,0 +1,357 @@
+{
+  "date": "2026-08-25",
+  "fetchedAt": "2026-08-26T11:09:59.057886+05:30",
+  "lastFetchedAt": "2026-08-26T11:09:59.057886+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 8,
+    "apiReportedTotalResults": 17,
+    "results": [
+      {
+        "article_id": "1ac7df05e5aadfd634e0b8751c019d0c",
+        "link": "https://www.thenewsminute.com/powertrip/delhi-roadblock-for-revanths-us-trip-powertrip-162",
+        "title": "Delhi roadblock for Revanth’s US trip| Powertrip #162",
+        "description": "The Tamil Nadu bureaucracy seems to have made strong efforts to convince Tamil Nadu CM Vijay not to cancel the Parandur airport project, but they did not succeed",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "powertrip"
+        ],
+        "creator": [
+          "dhanya rajendran"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-25 13:26:21",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-25 13:37:24",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-25/7ydf0xdb/WhatsApp-Image-2026-08-25-at-6.52.08-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "2ef5b275b37e9f5bf1ae0fa72a056f60",
+        "link": "https://frontline.thehindu.com/politics/india-census-2027-need-to-count-all-migrants/article71336874.ece",
+        "title": "Why counting every migrant matters",
+        "description": "The current census needs to ask more questions and improve its methods to capture the full spectrum of India’s migrants, which will go a long way in improving efficient allocation of resources to regions that need it.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "politics"
+        ],
+        "creator": [
+          "s irudaya rajan; arif nizam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-25 12:35:59",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 02:48:51",
+        "image_url": "https://fl-i.thgim.com/public/incoming/jhj3le/article71384975.ece/alternates/LANDSCAPE_1200/migrants-kolkata-hyderabad.JPG",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://n.bytvi.com/frontline_thehindu.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "55ff94d0ac99b6da03596d1171868391",
+        "link": "https://www.thenewsminute.com/tamil-nadu/chennai-woman-dies-in-waterlogged-pit-authorities-wash-hands-off-as-kin-seek-answers",
+        "title": "Chennai woman dies in waterlogged pit, authorities wash hands off as kin seek answers",
+        "description": "According to the police, passers-by noticed Kalavathi lying unconscious in the water and alerted them. Police, with the help of the public, pulled her out and took her to KMCH, where doctors declared her brought dead.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "nithesh kumar m"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-25 09:36:08",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-25 09:37:41",
+        "image_url": null,
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "61a7cde83a5b9c3cfd7b8d452c9911ee",
+        "link": "https://www.timesnownews.com/chennai/bribes-muslims-and-parandur-airport-3-flashpoints-that-triggered-tvk-dmk-showdown-in-tamil-nadu-assembly-article-155983416",
+        "title": "Bribes, Muslims And Parandur Airport: 3 Flashpoints That Triggered TVK-DMK Showdown In Tamil Nadu Assembly",
+        "description": "From corruption allegations and minority rights to the scrapped Parandur airport project, the Tamil Nadu Assembly witnessed a series of fiery exchanges between the ruling TVK and the Opposition DMK.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "muslim",
+          "dmk",
+          "bribes",
+          "tvk",
+          "parandur airport"
+        ],
+        "creator": [
+          "dharani balasubramaniam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-25 09:31:25",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-25 10:03:22",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155983556,thumbsize-46352,width-1280,height-720,resizemode-75/155983556.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "2f240fadeedfaa1ed678420f7b47f564",
+        "link": "https://www.timesnownews.com/education/tamil-nadu-assembly-seeks-permanent-tet-exemption-for-over-3-lakh-teachers-article-155982998",
+        "title": "Tamil Nadu Assembly Seeks Permanent TET Exemption For Over 3 Lakh Teachers",
+        "description": "Tamil Nadu Assembly seeks permanent TET exemption for 3.28 lakh teachers appointed before August 23, 2010, citing job security, promotions and years of service.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tet requirement in schools",
+          "tamil nadu",
+          "government school teachers",
+          "tet",
+          "teacher eligibility test",
+          "teachers in tamil nadu"
+        ],
+        "creator": [
+          "lakshima sareen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-25 07:59:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-25 08:03:17",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155983030,thumbsize-1192901,width-1280,height-720,resizemode-75/155983030.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "9b5edf1e87d647024fa798b2a267a1b4",
+        "link": "https://www.timesnownews.com/chennai/chennai-woman-kalavathi-death-pit-electrocution-tamil-nadu-assembly-article-155982766",
+        "title": "One Death, Two Theories: Chennai Woman's Case Reaches Assembly",
+        "description": "A 59-year-old woman died after falling into stagnant water near Anna Nagar Metro station in Chennai. With two theories surrounding her death, the case has now been raised in the Tamil Nadu Assembly.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "chennai electrocution",
+          "kalavathi death",
+          "anna nagar metro station",
+          "stormwater drain",
+          "stagnant water death",
+          "chennai woman death",
+          "tamil nadu assembly",
+          "chennai assembly",
+          "chennai rainwater"
+        ],
+        "creator": [
+          "diana george"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-25 07:22:04",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-25 07:32:34",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155982844,thumbsize-36082,width-1280,height-720,resizemode-75/155982844.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "b00bac5341976932cab9e0d74f9095ee",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tn-women-mlas-object-to-use-of-kanni-pechu-for-maiden-speeches-in-assembly",
+        "title": "TN women MLAs object to use of ‘kanni pechu’ for maiden speeches in Assembly",
+        "description": "The discussion came up after Usilampatti Tamilaga Vettri Kazhagam (TVK) MLA M Vijay alleged that the previous Dravida Munnetra Kazhagam (DMK) government was responsible for the water crisis in his constituency.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-25 03:35:02",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-25 03:37:24",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-25/hi7mz4ux/WhatsApp-Image-2026-08-25-at-8.43.12-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "6d609274c73a65685523cf86fdd6ed6a",
+        "link": "https://www.timesnownews.com/entertainment-news/south/fefsi-urges-tamil-nadu-producers-organisations-to-reconsider-work-stoppage-article-155981223",
+        "title": "FEFSI Urges Tamil Nadu Producers’ Organisations To Reconsider Work Stoppage",
+        "description": "Tamil film industry faces a potential shutdown as FEFSI urges producers’ bodies and the government to resolve the ongoing OTT window dispute.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil film active producers association",
+          "tfpc",
+          "vijay",
+          "tamil film producers council",
+          "theatre owners association"
+        ],
+        "creator": [
+          "raisa nasreen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-25 00:53:05",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-25 01:03:28",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155981222,thumbsize-43058,width-1280,height-720,resizemode-75/155981222.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}
