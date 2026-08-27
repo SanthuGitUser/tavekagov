@@ -1,0 +1,391 @@
+{
+  "date": "2026-08-26",
+  "fetchedAt": "2026-08-27T16:56:25.189777+05:30",
+  "lastFetchedAt": "2026-08-27T16:56:25.189777+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 9,
+    "apiReportedTotalResults": 11,
+    "results": [
+      {
+        "article_id": "4e6ddb7ae4b3059123b2b40eec20759b",
+        "link": "https://www.thenewsminute.com/tamil-nadu/father-son-die-after-inhaling-toxic-gas-while-cleaning-well-in-chennai",
+        "title": "Father, son die after inhaling toxic gas while cleaning well in Chennai",
+        "description": "Ravi first climbed down into the well, lost consciousness and fell into the water. On seeing his father collapse, Ayyanar climbed down into the well in an attempt to rescue him.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-26 14:28:26",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 14:38:32",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-26/0vufjmhq/WhatsApp-Image-2026-08-26-at-7.57.30-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "6bfccd2e1d2a599f252663b990a0ee2d",
+        "link": "https://www.thenewsminute.com/tamil-nadu/akashs-dalit-identity-known-to-cops-who-tortured-and-killed-him-finds-cb-cid",
+        "title": "Akash’s Dalit identity known to cops who tortured and killed him, finds CB-CID",
+        "description": "The chargesheet says the six policemen knew Akash Delison belonged to the Scheduled Caste (SC) Devendrakula Velalar community when they took him to a secluded spot and beat him, causing injuries that led to his death.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "azeefa fathima"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-26 14:06:24",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 14:07:45",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-26/kwc2uie6/thenewsminute2026-03-24llee1gsuAkashMainImage2400.avif?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "87e01bb0ddf2d5c35d8bc0666f8d3d58",
+        "link": "https://www.timesnownews.com/education/president-droupadi-murmu-to-meet-government-school-students-teachers-on-raksha-bandhan-article-155990403",
+        "title": "President Murmu To Meet Government School Students, Teachers On Raksha Bandhan",
+        "description": "On August 28, 2026, President Droupadi Murmu will engage with students and teachers from government schools at Rashtrapati Bhavan to celebrate Raksha Bandhan.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "education news",
+          "droupadi murmu",
+          "trending news",
+          "rashtrapati bhavan",
+          "tamil nadu",
+          "raksha bandhan"
+        ],
+        "creator": [
+          "deepali samaniya"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-26 12:57:15",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 13:32:30",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155990435,thumbsize-141169,width-1280,height-720,resizemode-75/155990435.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1a4eadf3295f2a0c23cf3fd65937449d",
+        "link": "https://frontline.thehindu.com/politics/tvk-tamilnadu-parandur-project-cancelled-chennai-second-airport/article71392726.ece",
+        "title": "Tamil Nadu decision to cancel Parandur airport project invites praise and criticism",
+        "description": "All parties are keen on a second airport for Chennai, but identifying a massive land parcel for a greenfield project will pose a mammoth challenge.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "politics"
+        ],
+        "creator": [
+          "r k radhakrishnan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-26 12:46:40",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 12:50:28",
+        "image_url": "https://fl-i.thgim.com/public/incoming/no9jq5/article71392744.ece/alternates/LANDSCAPE_1200/vijay-parandur-farmers.jpg",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://n.bytvi.com/frontline_thehindu.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "ad6bd2a88cf4ef94eb18ea1a7f15a61e",
+        "link": "https://www.timesnownews.com/opinion/india/upi10-when-the-bank-came-into-the-hands-of-every-indian-article-155988606",
+        "title": "UPI@10: When the Bank Came into the Hands of Every Indian",
+        "description": "UPI@10 marks a decade of digital transformation, reshaping how Indians pay, transfer money and manage everyday finances, from small local purchases to family support across thousands of kilometres.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "national payments corporation",
+          "india",
+          "tamil nadu",
+          "upi",
+          "reserve bank of india",
+          "narendra modi"
+        ],
+        "creator": [
+          "a sakthivel"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business"
+        ],
+        "datatype": "opinion",
+        "pubDate": "2026-08-26 09:09:18",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 09:33:07",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155988656,thumbsize-116220,width-1280,height-720,resizemode-75/155988656.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f0c6b718c81585ead3b4345df8a40723",
+        "link": "https://www.timesnownews.com/india/why-vijay-said-no-to-parandur-airport-the-sons-in-law-row-that-rocked-tamil-nadu-assembly-article-155987906",
+        "title": "Why Vijay Said No To Parandur Airport: The ‘Sons-In-Law’ Row That Rocked Tamil Nadu Assembly",
+        "description": "Vijay’s Parandur airport decision has triggered a political clash in Tamil Nadu, with environmental concerns, aviation needs and a fiery ‘son-in-law’ exchange adding fresh intrigue to the controversy.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "dmk on parandur airport",
+          "parandur airport scrapped",
+          "tamil nadu assembly",
+          "vijay on parandur airport",
+          "parandur airport"
+        ],
+        "creator": [
+          "anurag kumar"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-26 07:16:36",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 07:32:28",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155987912,thumbsize-1359694,width-1280,height-720,resizemode-75/155987912.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "5864e0719a39f1a7bce8d98b13101ae1",
+        "link": "https://www.timesnownews.com/entertainment-news/south/sobhita-dhulipala-opens-up-about-naga-chaitanya-marriage-says-she-never-expected-to-marry-an-actor-article-155987570",
+        "title": "Sobhita Dhulipala On Marrying Naga Chaitanya: Didn’t Think I’d End Up With Someone Who...",
+        "description": "Sobhita Dhulipala has recently opened up on her marriage to Naga Chaitanya, revealing she never expected to marry an actor. She also went on to discuss about her upcoming film Vettuvam.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "sobhita dhulipala",
+          "naga chaitanya",
+          "telugu cinema",
+          "entertainment news",
+          "tamil cinema"
+        ],
+        "creator": [
+          "raisa nasreen"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-26 06:19:25",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 07:03:24",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155987569,thumbsize-511832,width-1280,height-720,resizemode-75/155987569.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "717195b352d9c3b71c1895af7c7e1dd8",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tamil-nadu-govt-to-explore-industrial-projects-on-land-acquired-for-parandur-airport",
+        "title": "Tamil Nadu govt to explore industrial projects on land acquired for Parandur airport",
+        "description": "Industries Minister S Keerthana said the projects will be taken up without affecting the environment or livelihoods of people in the region.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-26 04:26:03",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 04:37:26",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-26/60tuzg1m/WhatsApp-Image-2026-08-26-at-8.56.55-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "8c57848113718a6fc8263a2480f76dcc",
+        "link": "https://www.thenewsminute.com/tamil-nadu/not-bothered-about-personalities-madras-hc-warns-cm-vijay-min-aadhav-arjuna",
+        "title": "‘Not bothered about personalities’: Madras HC warns CM Vijay, Min Aadhav Arjuna",
+        "description": "The Madras High Court warned Chief Minister C Joseph Vijay and Minister Aadhav Arjuna that it could impose a cost of Rs 50,000 each for seeking further time to file applications seeking rejection of election petitions challenging their victories in the 2026 Assembly elections.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-26 03:02:54",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-26 03:07:53",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2025-03-28/2g2x3tx1/VijayAadhavTVKMeet280325.png?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}

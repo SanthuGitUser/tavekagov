@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.tn.gov.in/department_list.php",
-  "fetchedAt": "2026-08-19T16:19:47.037070+05:30",
+  "fetchedAt": "2026-08-27T16:55:42.132957+05:30",
   "count": 41,
   "departments": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "id": 6,
-      "name": "Commercial Taxes and Registration Department",
+      "name": "Commercial Taxes, Registration and Religious Endowments Department",
       "dep_id_encoded": "Ng==",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Ng==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
@@ -329,7 +329,7 @@
     },
     {
       "id": 32,
-      "name": "Tourism,Culture and Religious Endowments Department",
+      "name": "Tourism, Culture and Special Initiatives Department",
       "dep_id_encoded": "MzI=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzI=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
