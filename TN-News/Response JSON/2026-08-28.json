@@ -1,0 +1,503 @@
+{
+  "date": "2026-08-28",
+  "fetchedAt": "2026-08-29T16:41:31.782395+05:30",
+  "lastFetchedAt": "2026-08-29T16:41:31.782395+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 11,
+    "apiReportedTotalResults": 14,
+    "results": [
+      {
+        "article_id": "4274e5263bc2cdb56cfa1516ce06312c",
+        "link": "https://www.thenewsminute.com/andhra-pradesh/adivasi-farmers-fear-dependence-on-digitisation-will-affect-access-to-ap-govt-schemes",
+        "title": "Adivasi farmers fear dependence on digitisation will affect access to AP govt schemes",
+        "description": "A two-day consultation in Visakhapatnam brought together Adivasi farmers, FPOs and civil society groups to examine how digitisation is reshaping agriculture in Andhra Pradesh, with participants flagging concerns over AgriStack, tenant rights and access to welfare schemes.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "andhra pradesh"
+        ],
+        "creator": [
+          "balakrishna ganeshan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 14:01:21",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 14:08:11",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-28/lvcbt1a9/adivasiconsultation.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c3aaebcd05b10e35af128cfa492b5d82",
+        "link": "https://www.timesnownews.com/videos/times-now/shows/rescue-operations-intensify-nepal-flood-risks-rise-political-tensions-escalate-india-video-156002448",
+        "title": "Nepal Flood Horror: 320 Indians Still Missing, Rescue Mission Expands | Breaking Ground | Top News",
+        "description": "Nepal is battling a devastating flash flood catastrophe, with the death toll climbing to 538 and 320 Indian nationals still uncontactable. As rescue operations intensify, 21 Tamil Nadu pilgrims have returned to India, while 96 Indians stranded on the Chinese side have safely crossed into Nepal. Watch Breaking Ground for the latest updates from Nepal. #nepalfloods #nepaldisaster #nepalflashfloods #nepaltragedy #india #rescueoperation #indiansinnepal #nepalnews #flashfloods #breakingground #timesnow",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "nepal flood rescue",
+          "nepal floods latest news",
+          "nepal flash floods",
+          "320 indians missing",
+          "indians stranded in nepal",
+          "india nepal news",
+          "nepal catastrophe",
+          "kailash mansarovar pilgrims",
+          "indian pilgrims rescued",
+          "nepal army rescue",
+          "indians missing in nepal",
+          "nepal death toll",
+          "nepal disaster",
+          "nepal flood update",
+          "nepal flood news",
+          "nepal floods",
+          "nepal rescue operation"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-08-28 13:41:45",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 14:02:51",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156002448,thumbsize-137761,width-1280,height-720,resizemode-75/156002448.jpg",
+        "video_url": "https://watch.sociofyme.com/player/stg/embed/index.html#apikey=tgbsl486web5ab8uukl9o&env=stg&skipad=true&v=4.0.1&videoid=1xb14twf1z_w",
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "8488f281a80aa3dae0f1428dd0b0d4e9",
+        "link": "https://www.thenewsminute.com/podcasts/cm-vijays-parandur-decision-indias-new-anti-reservation-drama-south-central-90",
+        "title": "CM Vijay’s Parandur decision | India’s new anti-reservation drama | South Central 90",
+        "description": "South Central explores the withdrawal of the Parandur Airport project, as well as the recent anti-reservation movement.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "podcasts",
+          "south central"
+        ],
+        "creator": [
+          "dhanya rajendran"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "podcast",
+        "pubDate": "2026-08-28 12:28:56",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 12:37:37",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-28/jjkgdtiy/SC-YT-2.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "7eee4c67d7fe38de83ed1bf0a1f1c82a",
+        "link": "https://www.timesnownews.com/india/320-indians-uncontactable-400-safe-in-china-mea-shares-big-update-on-nepal-floods-watch-article-156001541",
+        "title": "320 Indians 'Uncontactable', 400 Safe In China; MEA Shares Big Update on Nepal Floods | WATCH",
+        "description": "The Ministry of External Affairs reported that 320 Indian nationals are uncontactable following severe floods in Nepal, with around 100 persons of Indian origin also missing.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "randhir jaiswal",
+          "mea",
+          "jaiswal",
+          "ministry of external affairs"
+        ],
+        "creator": [
+          "ananya varma"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 11:56:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 12:02:38",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156001619,thumbsize-2332168,width-1280,height-720,resizemode-75/156001619.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "28b3f6c685fccb4357d6f7742d25960f",
+        "link": "https://www.thenewsminute.com/tamil-nadu/study-says-tamil-nadu-can-hit-15-trillion-economy-without-parandur-airport",
+        "title": "Study says Tamil Nadu can hit $1.5 trillion economy without Parandur airport",
+        "description": "Amid the abandonment of the Parandur airport project questions have been raised whether Tamil nadu can hit GSDP of 1.5 Trillion dollar economy. A report by the Uvagai Research Foundation answers the questions.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "yashavini ezhilmurugan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "business",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 10:58:21",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 11:07:49",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-28/ktprlb8s/WhatsApp-Image-2026-08-28-at-4.18.51-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c3aa6c0b5c98ccdea03469f953615111",
+        "link": "https://www.timesnownews.com/education/west-bengal-teachers-seek-tet-exemption-for-pre-2010-appointees-article-156000323",
+        "title": "West Bengal Teachers Seek TET Exemption For Pre-2010 Appointees",
+        "description": "Teachers' group urges state government to approach Centre as Supreme Court TET ruling affects nearly 90,000 teachers",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "teacher recruitment",
+          "tet",
+          "tet exam",
+          "sarkari naukri",
+          "teacher eligibility test",
+          "teacher recruitment in west bengal",
+          "education news"
+        ],
+        "creator": [
+          "deeksha teri"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 08:59:49",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 09:03:15",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156000436,thumbsize-137562,width-1280,height-720,resizemode-75/156000436.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e6395b6b80c95e9c7b1ad157db4717c3",
+        "link": "https://www.timesnownews.com/education/president-murmu-vice-president-pm-modi-celebrate-raksha-bandhan-with-school-students-article-156000157",
+        "title": "President Murmu, Vice President, PM Modi Celebrate Raksha Bandhan With School Students",
+        "description": "President Droupadi Murmu interacted with students from schools and organisations across India; Vice President C. P. Radhakrishnan and PM Modi also celebrated Raksha Bandhan with children",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "president of india",
+          "raksha bandhan 2026",
+          "rakhi 2026",
+          "vice president",
+          "president of india draupadi murmu",
+          "rakhi"
+        ],
+        "creator": [
+          "deeksha teri"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 08:22:51",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 08:32:55",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156000233,thumbsize-174990,width-1280,height-720,resizemode-75/156000233.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "b6392d9100551aa4b1933dff19df1969",
+        "link": "https://www.timesnownews.com/chennai/tamil-nadu-class-6-boy-suicide-teacher-assault-virudhunagar-article-155999431",
+        "title": "Beaten Over Notebook And Mocked In Class: TN Class 6 Boy Dies By Suicide Days Later",
+        "description": "A Class 6 student in Tamil Nadu's Virudhunagar district died by suicide days after an alleged teacher assault. A note reportedly left by the boy names the teacher and alleges humiliation in class.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "virudhunagar student suicide",
+          "kariyapatti student death",
+          "aaviyur police",
+          "student suicide note",
+          "teacher assault allegation",
+          "teacher humiliation",
+          "class 6 boy dies by suicide",
+          "tamil nadu student death",
+          "virudhunagar school news",
+          "mustakkurichi school"
+        ],
+        "creator": [
+          "diana george"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 05:34:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 06:02:47",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155999459,thumbsize-49567,width-1280,height-720,resizemode-75/155999459.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "4e042d66ec1afeb59805f5f24bd0cca6",
+        "link": "https://www.thenewsminute.com/telangana/telangana-sets-up-helpline-to-help-residents-stranded-in-nepal-floods",
+        "title": "Telangana sets up helpline to help residents stranded in Nepal floods",
+        "description": "As hundreds remain missing after devastating floods along the Nepal-Tibet border, Telangana has opened a helpline and set up a coordination centre in Delhi to assist residents from the state.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "telangana"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 04:50:16",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 05:07:40",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-08-28/zd3fwtp4/Untitled-design-93.png?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://n.bytvi.com/thenewsminute.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "d1377a1a103ee2da5dcceecabe2392da",
+        "link": "https://www.timesnownews.com/mumbai/thane-woman-dies-by-suicide-after-finding-her-bank-account-used-in-cyber-fraud-cases-article-155999098",
+        "title": "Thane Woman Dies By Suicide After Finding Her Bank Account Used In Cyber Fraud Cases",
+        "description": "A 38-year-old woman from Thane district, Maharashtra, died by suicide after learning that her bank account was linked to multiple cyber fraud cases nationwide.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "cyber fraud",
+          "mumbai news today",
+          "thane woman suicide",
+          "thane news today",
+          "thane woman suicide news"
+        ],
+        "creator": [
+          "aditi pandey"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "crime"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 04:07:18",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 04:32:34",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155999122,thumbsize-34338,width-1280,height-720,resizemode-75/155999122.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "913162b1dd737bac4b249e3338e1073c",
+        "link": "https://www.timesnownews.com/chennai/cm-vijay-breaks-assembly-seating-tradition-moves-from-his-chair-to-sit-with-ministers-article-155998616",
+        "title": "CM Vijay Breaks Assembly Seating Tradition, Moves From His Chair To Sit With Ministers",
+        "description": "Tamil Nadu Chief Minister C Joseph Vijay broke tradition by moving from his official chair to sit among ministers during an Assembly session, a first for a chief minister.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "assembly chair",
+          "ministers",
+          "seating change",
+          "tamil nadu cm vijay",
+          "vijay assembly",
+          "tamil nadu assembly",
+          "vijay"
+        ],
+        "creator": [
+          "sriram ganesh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-08-28 01:32:26",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-08-28 02:02:48",
+        "image_url": "https://images.timesnownews.com/thumb/msid-155998639,thumbsize-74318,width-1280,height-720,resizemode-75/155998639.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://n.bytvi.com/timesnownews.png",
+        "sentiment": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "sentiment_stats": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_tag": "ONLY AVAILABLE IN PROFESSIONAL AND CORPORATE PLANS",
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}
