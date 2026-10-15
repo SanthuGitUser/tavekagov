@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-12",
+  "fetchedAt": "2026-10-15T11:56:03.862726+05:30",
+  "lastFetchedAt": "2026-10-15T11:56:03.862726+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-12"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22714,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.824_-_Hon_ble_Social_Justice_Minister_Press_Release_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.824 - Hon'ble Social Justice Minister Press Release - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22715,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.825_-_TNEB_-_Press_Release_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.825 - TNEB - Press Release - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22716,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.826_-_All_India_Civil_Services_Coaching_Centre_Press_Release_-_English_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.826 - All India Civil Services Coaching Centre Press Release - English - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22717,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.826_-_All_India_Civil_Services_Coaching_Centre_Press_Release_-_Tamil_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.826 - All India Civil Services Coaching Centre Press Release - Tamil - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22718,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.827_-_Hon_ble__Labour_Welfare_and_Skill_Development_Minister_Press_Release_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-12",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.827 - Hon'ble  Labour Welfare and Skill Development Minister Press Release - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22720,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.830_-_TNLA_Press_Release_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-12",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.830 - TNLA Press Release - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22721,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.831_-_Hon_ble_Minister_for_Food_and_Civil_Supplies_Press_Release_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.831 - Hon'ble Minister for Food and Civil Supplies Press Release - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22722,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.832_-_Indian_Medicine_and_Homoeopathy_Dept_Press_Release_-_English_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.832 - Indian Medicine and Homoeopathy Dept Press Release - English - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22723,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.832_-_Indian_Medicine_and_Homoeopathy_Dept_Press_Release_-_Tamil_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.832 - Indian Medicine and Homoeopathy Dept Press Release - Tamil - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      },
+      {
+        "id": 22724,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.833_-_Hon_ble_CM_Social_Media_Press_Release_-_Date.12.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.833 - Hon'ble CM Social Media Press Release - Date.12.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-12",
+        "language": "en"
+      }
+    ]
+  }
+}

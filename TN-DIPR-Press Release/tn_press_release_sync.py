@@ -9,7 +9,7 @@ Usage:
   2. pip install -r requirements.txt
   3. python tn_press_release_sync.py
   4. Optional: python tn_press_release_sync.py --start-date 10-05-2026 --end-date 31-07-2026
-     (defaults: resume from Sync-Config/last-sync.json, end = today Asia/Kolkata)
+     (defaults: from last updated date through today Asia/Kolkata)
 """
 
 from __future__ import annotations
@@ -212,21 +212,21 @@ def sync_press_releases(
         saved_paths.append(out_path)
 
         day_count = len((payload.get("data") or []) if isinstance(payload.get("data"), list) else [])
-        merged_count = len(
-            load_existing_record(out_path).get("response", {}).get("data") or [],
-        )
+        existing_record = load_existing_record(out_path)
+        merged_data = (existing_record or {}).get("response", {}).get("data") or []
+        merged_count = len(merged_data) if isinstance(merged_data, list) else 0
         total_items += day_count
 
-        if day_count:
-            print(
-                f"  [{day_index}/{total_days}] {_format_display_date(current)}: "
-                f"{day_count} fetched, {merged_count} saved"
-            )
+        print(
+            f"  [{day_index}/{total_days}] {_format_display_date(current)}: "
+            f"{day_count} fetched, {merged_count} saved"
+        )
 
         time.sleep(0.15)
         current += timedelta(days=1)
 
-    print(f"Saved {len(saved_paths)} day file(s); {total_items} item(s) fetched this run.")
+    written_count = len([path for path in saved_paths if path.exists()])
+    print(f"Saved {written_count} day file(s); {total_items} item(s) fetched this run.")
     return saved_paths
 
 
@@ -241,11 +241,11 @@ def main() -> int:
     )
     parser.add_argument(
         "--start-date",
-        help="Include releases from this date onward (DD-MM-YYYY). Defaults to TN_PRESS_RELEASE_START_DATE in .env.",
+        help="Include releases from this date onward (DD-MM-YYYY). Defaults to the last updated date.",
     )
     parser.add_argument(
         "--end-date",
-        help="Include releases up to this date (DD-MM-YYYY). Defaults to yesterday (Asia/Kolkata).",
+        help="Include releases up to this date (DD-MM-YYYY). Defaults to today (Asia/Kolkata).",
     )
     args = parser.parse_args()
 
@@ -282,9 +282,10 @@ def main() -> int:
         end_date=end_date,
         timeout=DEFAULT_CONNECT_READ_TIMEOUT,
     )
-    if saved_paths:
-        print(f"Latest file: {saved_paths[-1]}")
-        record_date_range_sync(JOB_DIPR_PRESS_RELEASES, synced_through=end_date)
+    written = [path for path in saved_paths if path.exists()]
+    if written:
+        print(f"Latest file: {written[-1]}")
+    record_date_range_sync(JOB_DIPR_PRESS_RELEASES, synced_through=end_date)
     return 0
 
 

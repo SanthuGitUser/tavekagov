@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-10",
+  "fetchedAt": "2026-10-15T11:56:03.132354+05:30",
+  "lastFetchedAt": "2026-10-15T11:56:03.132354+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-10"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22709,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-820_-Election_Dept_Press_Release-Bye_Election_-English-Date_10.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-820 -Election Dept Press Release-Bye Election -English-Date 10.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-10",
+        "language": "en"
+      },
+      {
+        "id": 22710,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-820_-Election_Dept_Press_Release-Bye_Election_-Tamil_-Date_10.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-820 -Election Dept Press Release-Bye Election -Tamil -Date 10.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-10",
+        "language": "en"
+      },
+      {
+        "id": 22711,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.821-Hon_ble_Minister_for_Public_Works_and_Sports_Development-Press_Release-Date_10.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.821-Hon'ble Minister for Public Works and Sports Development-Press Release-Date 10.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-10",
+        "language": "en"
+      }
+    ]
+  }
+}

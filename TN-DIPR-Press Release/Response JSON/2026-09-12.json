@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-12",
+  "fetchedAt": "2026-10-07T17:07:52.514971+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:52.514971+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-12"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22486,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-648-TN_Govt_Press_Release-Solomon_Pappaiah_Govt_Honors-Date_12.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-12",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-648-TN Govt Press Release-Solomon Pappaiah Govt Honors-Date 12.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-12",
+        "language": "en"
+      },
+      {
+        "id": 22487,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.649-TN_Govt_Press_Release-Social_Security_Schemes-Date_12.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-12",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.649-TN Govt Press Release-Social Security Schemes-Date 12.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-12",
+        "language": "en"
+      },
+      {
+        "id": 22494,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.650_-_Transport_Department_Press_Release_-_Date.12.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.650 - Transport Department Press Release - Date.12.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-12",
+        "language": "en"
+      },
+      {
+        "id": 22495,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.651_-_Energy_Resources_Dept_Press_Release_-_Date.12.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.651 - Energy Resources Dept Press Release - Date.12.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-12",
+        "language": "en"
+      },
+      {
+        "id": 22496,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.652_-_Hon_ble_CM_Press_Release_-_HCM_visited_Silverstone_Motor_Racing_Circuit__and_Inaugurated__2026_Michelin_Le_Mans_Cup_Car_Racing_-_Date.12.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.652 - Hon'ble CM Press Release - HCM visited Silverstone Motor Racing Circuit  and Inaugurated  2026 Michelin Le Mans Cup Car Racing - Date.12.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-12",
+        "language": "en"
+      }
+    ]
+  }
+}

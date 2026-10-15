@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-29",
+  "fetchedAt": "2026-10-07T17:07:48.969524+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:48.969524+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-29"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22418,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-601-Hon_ble_CM_Social_Media_Message__-_National_Sports_Day-Date_29-08-2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-601-Hon'ble CM Social Media Message  - National Sports Day-Date 29-08-2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-29",
+        "language": "en"
+      },
+      {
+        "id": 22419,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.602-WRD_Press_Release-Amaravathi_Dam-Date_29.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.602-WRD Press Release-Amaravathi Dam-Date 29.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-29",
+        "language": "en"
+      }
+    ]
+  }
+}

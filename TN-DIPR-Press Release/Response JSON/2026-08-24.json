@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-24",
+  "fetchedAt": "2026-10-07T17:07:47.651129+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:47.651129+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-24"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22383,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-TNLA_No.12-Hon_ble_CM_Assembly_110_statement_-_3_LPG_cylinders_-Date_24.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-24",
+        "press_release_no": null,
+        "press_name": "DIPR-TNLA No.12-Hon'ble CM Assembly 110 statement - 3 LPG cylinders -Date 24.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-24",
+        "language": "en"
+      },
+      {
+        "id": 22384,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-TNLA_No.13-Hon_ble_CM_Assembly_110_statement_-_Paranthur_Airport_-Date_24.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-24",
+        "press_release_no": null,
+        "press_name": "DIPR-TNLA No.13-Hon'ble CM Assembly 110 statement - Paranthur Airport -Date 24.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-24",
+        "language": "en"
+      },
+      {
+        "id": 22385,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-TNLA_No.14-Hon_ble_CM_Assembly_110_statement_-_Vetri_Payanam_Scheme_-Date_24.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-24",
+        "press_release_no": null,
+        "press_name": "DIPR-TNLA No.14-Hon'ble CM Assembly 110 statement - Vetri Payanam Scheme -Date 24.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-24",
+        "language": "en"
+      },
+      {
+        "id": 22386,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.574_-_Traning_Dept_Competitive_Exams_Coaching_Press_Release_-_Date.24.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.574 - Traning Dept Competitive Exams Coaching Press Release - Date.24.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-24",
+        "language": "en"
+      }
+    ]
+  }
+}

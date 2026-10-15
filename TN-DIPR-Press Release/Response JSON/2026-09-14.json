@@ -1,0 +1,128 @@
+{
+  "date": "2026-09-14",
+  "fetchedAt": "2026-10-07T17:07:53.014401+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:53.014401+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-14"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22501,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.657_-_Hon_ble_CM_Social_Media_Message_-_Vinayagar_Chathurthi_-_Date.14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.657 - Hon'ble CM Social Media Message - Vinayagar Chathurthi - Date.14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22502,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.658_-_Home_Department_-_ANNA_MEDALS_Press_Release_-_English_-_Date.14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.658 - Home Department - ANNA MEDALS Press Release - English - Date.14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22503,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.658_-_Home_Department_-_ANNA_MEDALS_Press_Release_-_Tamil_-_Date.14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.658 - Home Department - ANNA MEDALS Press Release - Tamil - Date.14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22504,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.659-Revenue_Dept-Social_Security_Pension-Press_Release-English-Date_14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.659-Revenue Dept-Social Security Pension-Press Release-English-Date 14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22505,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.659-Revenue_Dept-Social_Security_Pension-Press_Release-Tamil-Date_14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.659-Revenue Dept-Social Security Pension-Press Release-Tamil-Date 14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22506,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.660-Hon_ble_CM_Social_Media_Message__-_MoU_with_Samvardhana_Motherson_Company_-Date_14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.660-Hon'ble CM Social Media Message  - MoU with Samvardhana Motherson Company -Date 14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22507,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.661-Hon_ble_CM_Social_Media_Message__-_MoUs_for_expand_and_establish_GCCs__-Date_14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.661-Hon'ble CM Social Media Message  - MoUs for expand and establish GCCs  -Date 14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22508,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.662-Hon_ble_CM_Social_Media_Message__-_MoU_with_Wilson_Power_Solutions_to_invest_in_Tiruvallur_district_-Date_14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.662-Hon'ble CM Social Media Message  - MoU with Wilson Power Solutions to invest in Tiruvallur district -Date 14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22509,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.663-Hon_ble_CM_Meeting_with_Ashok_Leyland_Chairman_and_Hinduja_Group_officials-Press_Release_-Date.14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.663-Hon'ble CM Meeting with Ashok Leyland Chairman and Hinduja Group officials-Press Release -Date.14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      },
+      {
+        "id": 22510,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.664-Hon_ble_CM_Social_Media_Message_-_Letter_of_Intent_submitted_by_European_Automotive_Manufacturer_to_TN_Govt_-Date_14.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.664-Hon'ble CM Social Media Message - Letter of Intent submitted by European Automotive Manufacturer to TN Govt -Date 14.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-14",
+        "language": "en"
+      }
+    ]
+  }
+}

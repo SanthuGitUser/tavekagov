@@ -1,0 +1,73 @@
+{
+  "date": "2026-08-25",
+  "fetchedAt": "2026-10-07T17:07:47.895577+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:47.895577+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-25"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22387,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.575-Hon_ble_CM_Social_Media_Message_-_DMDK_Founder_Vijayakanth_Birthday_-Date__25.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.575-Hon'ble CM Social Media Message - DMDK Founder Vijayakanth Birthday -Date  25.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-25",
+        "language": "en"
+      },
+      {
+        "id": 22388,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-576-Hon_ble_CM_Press_Release_-_Transport_Dept_-_Inauguration_of_250_New_Buses_-_Date_25.8.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-576-Hon'ble CM Press Release - Transport Dept - Inauguration of 250 New Buses - Date 25.8.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-25",
+        "language": "en"
+      },
+      {
+        "id": 22389,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.577_-_Registration_Department_Press_Release_-_Date.25.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.577 - Registration Department Press Release - Date.25.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-25",
+        "language": "en"
+      },
+      {
+        "id": 22390,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.578_-_Tamil_Development_Dept_Press_Release_-_Date.25.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-25",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.578 - Tamil Development Dept Press Release - Date.25.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-25",
+        "language": "en"
+      },
+      {
+        "id": 22391,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.579_-_Food_and_Civil_Supplies_Dept_-_eKYC_Special_Camp_Press_Release_-_Date.25.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.579 - Food and Civil Supplies Dept - eKYC Special Camp Press Release - Date.25.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-25",
+        "language": "en"
+      }
+    ]
+  }
+}

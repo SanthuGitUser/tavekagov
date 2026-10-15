@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-04",
+  "fetchedAt": "2026-10-07T17:07:50.527017+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:50.527017+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-04"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22446,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.617_-_Hon_ble_CM_Social_Media_Message_-_Krishna_Jayanthi_2026_-_Date.04.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.617 - Hon'ble CM Social Media Message - Krishna Jayanthi 2026 - Date.04.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-04",
+        "language": "en"
+      },
+      {
+        "id": 22447,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.618_-_Hon_ble_CM_Press_Release_-_Condolence___Releif_-_Namakkal_Dist_Konnaiyar_Village_Road_Accident_-_CMPRF-_Date.04.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.618 - Hon'ble CM Press Release - Condolence & Releif - Namakkal Dist Konnaiyar Village Road Accident - CMPRF- Date.04.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-04",
+        "language": "en"
+      },
+      {
+        "id": 22448,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.619-Public_Dept-Vaikom_Award-Press_Release-English-Date-04.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.619-Public Dept-Vaikom Award-Press Release-English-Date-04.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-04",
+        "language": "en"
+      }
+    ]
+  }
+}

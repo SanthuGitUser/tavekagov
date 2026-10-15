@@ -1,0 +1,194 @@
+{
+  "date": "2026-09-24",
+  "fetchedAt": "2026-10-07T17:07:55.635551+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:55.635551+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-24"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22590,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.729-EDII_Press_Release_-_CCTV_Installation_and_Service_Training_-_English_-_Date.24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.729-EDII Press Release - CCTV Installation and Service Training - English - Date.24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22591,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.729-EDII_Press_Release_-_CCTV_Installation_and_Service_Training_-_Tamil_-_Date.24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.729-EDII Press Release - CCTV Installation and Service Training - Tamil - Date.24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22592,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.730-EDII_Press_Release_-_Mobile_Phone_Repair_and_Service_Training_-_English_-_Date.24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.730-EDII Press Release - Mobile Phone Repair and Service Training - English - Date.24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22593,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.730-EDIIT_Press_Release_-_Mobile_Phone_Repair_and_Service_Training_-_Tamil_-_Date.24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.730-EDIIT Press Release - Mobile Phone Repair and Service Training - Tamil - Date.24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22594,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.731_-__TNHB_Press_Release_-_Date.24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.731 -  TNHB Press Release - Date.24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22595,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.732-Social_Justice_Dept-Competitive_Exam_Coaching-Press_Release-English-Date_24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.732-Social Justice Dept-Competitive Exam Coaching-Press Release-English-Date 24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22596,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.732-Social_Justice_Dept-Competitive_Exam_Coaching-Press_Release-Tamil-Date_24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.732-Social Justice Dept-Competitive Exam Coaching-Press Release-Tamil-Date 24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22597,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.733-Art___Culture_Dept-Press_Release-Date_24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.733-Art & Culture Dept-Press Release-Date 24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22598,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.734_-_Election_Dept_-Press_Release-English-Date.24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.734 - Election Dept -Press Release-English-Date.24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22599,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.734_-_Election_Dept_-Press_Release-Tamil-Date.24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.734 - Election Dept -Press Release-Tamil-Date.24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22601,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.736-Finance_Dept-Press_Release-English-Date-24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.736-Finance Dept-Press Release-English-Date-24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22602,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-_P.R.No.736-Finance_Dept-Press_Release-Tamil_-Date-24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR- P.R.No.736-Finance Dept-Press Release-Tamil -Date-24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22603,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.737-Finance_Dept-Press_Release-English-Date-24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.737-Finance Dept-Press Release-English-Date-24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22604,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-_P.R.No.737-Finance_Dept-Press_Release-Tamil_-Date-24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR- P.R.No.737-Finance Dept-Press Release-Tamil -Date-24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22605,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.735-Hon_ble_Minister_for_Handlooms__Textiles_and_Khadi-Press_Release-Date_24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-24",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.735-Hon'ble Minister for Handlooms, Textiles and Khadi-Press Release-Date 24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      },
+      {
+        "id": 22606,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.738-Hon_ble_CM_Social_Media_Message_-_Greetings_to__Asian_Games_Atheletics_Mixed_Relay__-Date_24.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-25",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.738-Hon'ble CM Social Media Message - Greetings to  Asian Games Atheletics Mixed Relay  -Date 24.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-24",
+        "language": "en"
+      }
+    ]
+  }
+}

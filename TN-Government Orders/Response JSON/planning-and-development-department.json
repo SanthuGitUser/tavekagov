@@ -5,11 +5,20 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "18-08-2026",
+  "start_date": "29-08-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:37.688103+05:30",
-  "lastFetchedAt": "2026-08-18T10:12:18.117764+05:30",
-  "fetchCount": 13,
-  "count": 0,
-  "orders": []
+  "lastFetchedAt": "2026-10-07T17:12:04.429527+05:30",
+  "fetchCount": 14,
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-08-31",
+      "go_number": "G.O.Ms.No.65",
+      "go_name": "Government of Tamil Nadu (GOTN) - J-PAL Partnership - Reconstitution of Steering Committee - Orders Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/pnd_e_ms_65_tc3_31082026.pdf",
+      "department_name": "Planning and Development Department",
+      "dep_id_encoded": "MjM="
+    }
+  ]
 }

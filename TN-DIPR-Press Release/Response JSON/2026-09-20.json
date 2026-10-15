@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-20",
+  "fetchedAt": "2026-10-07T17:07:54.570783+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:54.570783+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-20"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22564,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.705-Hon_ble_MSME_Minister_Inspection_for_Golkonda_handicrafts_Showroom_-Date_20.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.705-Hon'ble MSME Minister Inspection for Golkonda handicrafts Showroom -Date 20.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-20",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-08",
+  "fetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "lastFetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 2,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr080926_env1.jpg",
+      "release_date": "2026-09-08",
+      "title": "Honble Minister for Environment and Climate Change called on the Union Minister of State for Power, New and Renewable Energy in Chennai",
+      "file_name": "pr080926_env1.jpg",
+      "minister_name": "Dr V.K. Rajeev",
+      "department_name": "Environment, Climate Change and Forests Department",
+      "minister_id": 35,
+      "department_id": 8,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr080926a.jpg",
+      "release_date": "2026-09-08",
+      "title": "Honble Chief Minister chaired a review meeting on North East Monsoon preparedness measures",
+      "file_name": "pr080926a.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": "Home, Prohibition and Excise Department",
+      "minister_id": 1,
+      "department_id": 14,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "medium",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "medium",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": true,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    },
+    {
+      "id": 35,
+      "name": "Dr V.K. Rajeev",
+      "designation": "Minister for Environment and Climate Change",
+      "portfolios": [
+        "Environment, Pollution Control Board, Climate Change"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/210_Rajeev.png",
+      "display_order": 35,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 8,
+      "name": "Environment, Climate Change and Forests Department",
+      "dep_id_encoded": "OA==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OA==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru R.V. Ranjithkumar",
+      "display_order": 8
+    },
+    {
+      "id": 14,
+      "name": "Home, Prohibition and Excise Department",
+      "dep_id_encoded": "MTQ=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "display_order": 14
+    }
+  ]
+}

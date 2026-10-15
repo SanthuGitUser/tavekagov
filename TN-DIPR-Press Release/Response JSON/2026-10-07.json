@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-07",
+  "fetchedAt": "2026-10-07T17:07:58.990435+05:30",
+  "lastFetchedAt": "2026-10-15T11:56:02.048877+05:30",
+  "fetchCount": 2,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-07"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22680,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.799_Hon_ble_CM_Press_Release_-_Aavin_State_Central_Lab_Addl_Bldg_Inauguration_-_Date.07.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-07",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.799 Hon'ble CM Press Release - Aavin State Central Lab Addl Bldg Inauguration - Date.07.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-07",
+        "language": "en"
+      },
+      {
+        "id": 22681,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No._800_Art_and_Culture_Dept_-_Press_Release_-_Date.07.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-07",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No. 800 Art and Culture Dept - Press Release - Date.07.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-07",
+        "language": "en"
+      },
+      {
+        "id": 22682,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-801-Hon_ble_CM_Press_Release_-_Police_Dept_-_Passing_Out_Parade_of__DSP_14th_Batch_-Date__7.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-801-Hon'ble CM Press Release - Police Dept - Passing Out Parade of  DSP 14th Batch -Date  7.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-07",
+        "language": "en"
+      },
+      {
+        "id": 22683,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-802_-Health_Dept_Press_Release_-Thaimaman_Thanga_Mothiram_Scheme-Date_07.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-802 -Health Dept Press Release -Thaimaman Thanga Mothiram Scheme-Date 07.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-07",
+        "language": "en"
+      },
+      {
+        "id": 22684,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-803_-Election_Dept_Press_Release-_Special_Drive-_English_-Date_07.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-803 -Election Dept Press Release- Special Drive- English -Date 07.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-07",
+        "language": "en"
+      },
+      {
+        "id": 22685,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-803_-Election_Dept_Press_Release-_Special_Drive-_Tamil-Date_07.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-803 -Election Dept Press Release- Special Drive- Tamil-Date 07.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-07",
+        "language": "en"
+      },
+      {
+        "id": 22686,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No._804_Election_Dept_Press_Release-Bye_Election_-Tamil_-Date_07.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No. 804 Election Dept Press Release-Bye Election -Tamil -Date 07.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-07",
+        "language": "en"
+      },
+      {
+        "id": 22687,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No._804_-Election_Dept_Press_Release-Bye_Election_-English_-Date_07.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No. 804 -Election Dept Press Release-Bye Election -English -Date 07.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-07",
+        "language": "en"
+      }
+    ]
+  }
+}

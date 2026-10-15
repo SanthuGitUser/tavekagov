@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-10",
+  "fetchedAt": "2026-10-07T17:07:52.029676+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:52.029676+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-10"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22466,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-634_-Hon_ble_Industries_Minister_Press_Release-HD_KSOE_MoU-_Date_10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-634 -Hon'ble Industries Minister Press Release-HD KSOE MoU- Date 10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22467,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.635-Art_and_Culture_Dept_Press_Release-Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.635-Art and Culture Dept Press Release-Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22468,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.636-EDII-_Spices___Sweet__Ready_Mix__Value_Added_Products_Training_Press_Release_-_English_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.636-EDII- Spices & Sweet (Ready Mix) Value Added Products Training Press Release - English - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22469,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.636-EDII-_Spices___Sweet__Ready_Mix__Value_Added_Products_Training_Press_Release_-_Tamil_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.636-EDII- Spices & Sweet (Ready Mix) Value Added Products Training Press Release - Tamil - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22470,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.637-_Handlooms__Textiles_and_Khadi_Dept_Press_Release_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.637- Handlooms, Textiles and Khadi Dept Press Release - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22471,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.638_-_Election_Dept_Press_Release_-_English_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.638 - Election Dept Press Release - English - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22472,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.638_-_Election_Dept_Press_Release_-_Tamil_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.638 - Election Dept Press Release - Tamil - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22473,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.639_-_Finance_Dept_Press_Release_-_English_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.639 - Finance Dept Press Release - English - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22474,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.639_-_Finance_Dept_Press_Release_-_Tamil_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.639 - Finance Dept Press Release - Tamil - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22475,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.640_-_Finance_Dept_Press_Release_-_English_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.640 - Finance Dept Press Release - English - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22476,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.640_-_Finance_Dept_Press_Release_-_Tamil_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.640 - Finance Dept Press Release - Tamil - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      },
+      {
+        "id": 22477,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.641_-_Hon_ble_CM_Press_Release_-_HCM_visit_to_Britain_for_Foreign_Investment_Meet__for_TN_-_Date.10.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.641 - Hon'ble CM Press Release - HCM visit to Britain for Foreign Investment Meet  for TN - Date.10.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-10",
+        "language": "en"
+      }
+    ]
+  }
+}

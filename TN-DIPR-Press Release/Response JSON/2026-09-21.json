@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-21",
+  "fetchedAt": "2026-10-07T17:07:54.838483+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:54.838483+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-21"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22565,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.706_-_Hon_ble_CM_Press_Release_-_Industries_Dept_-_MoU_with_American_Company__Starbucks_-_Date_-_21.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-21",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.706 - Hon'ble CM Press Release - Industries Dept - MoU with American Company  Starbucks - Date - 21.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-21",
+        "language": "en"
+      },
+      {
+        "id": 22568,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.707_-_Hon_ble_CM_Social_Media_Message_-_Asian_Games_Rifle_Shooting_Silver_Medal_to_Ilavanil_Valarivan_-_Date_-_21.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-21",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.707 - Hon'ble CM Social Media Message - Asian Games Rifle Shooting Silver Medal to Ilavanil Valarivan - Date - 21.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-21",
+        "language": "en"
+      },
+      {
+        "id": 22569,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.708_-_Hon_ble_CM_Press_Release_-_Vettri_Payanam_Scheme_-_Review_Meeting_-_Date_-_21.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-21",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.708 - Hon'ble CM Press Release - Vettri Payanam Scheme - Review Meeting - Date - 21.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-21",
+        "language": "en"
+      },
+      {
+        "id": 22570,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.709_-_Hon_ble_CM_Press_Release_-_Revenue_Dept_-_North_East_Monsoon_and__Dengue_Fever_Review_Meeting_-_Date.21.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.709 - Hon'ble CM Press Release - Revenue Dept - North East Monsoon and  Dengue Fever Review Meeting - Date.21.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-21",
+        "language": "en"
+      },
+      {
+        "id": 22571,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.710_-_Food_and_Civil_Supplies_Dept_Press_Release_-_Whatsapp_No_-_Date.21.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.710 - Food and Civil Supplies Dept Press Release - Whatsapp No - Date.21.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-21",
+        "language": "en"
+      },
+      {
+        "id": 22572,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.711_-_Hon_ble_School_Education__Tamil_Development__Information_and_Publicity_Minister_Press_Release_-_Date.21.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.711 - Hon'ble School Education, Tamil Development, Information and Publicity Minister Press Release - Date.21.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-21",
+        "language": "en"
+      },
+      {
+        "id": 22573,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.712_-_Hon_ble_Natural_Resources_Minister_Review_Meeting_Press_Release_-_Date.21.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.712 - Hon'ble Natural Resources Minister Review Meeting Press Release - Date.21.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-21",
+        "language": "en"
+      }
+    ]
+  }
+}

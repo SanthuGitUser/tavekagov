@@ -1,7 +1,7 @@
 {
   "source_url": "https://www.tn.gov.in/department_list.php",
-  "fetchedAt": "2026-08-27T16:55:42.132957+05:30",
-  "count": 41,
+  "fetchedAt": "2026-10-07T17:12:56.077579+05:30",
+  "count": 42,
   "departments": [
     {
       "id": 2,
@@ -41,7 +41,7 @@
     },
     {
       "id": 6,
-      "name": "Commercial Taxes, Registration and Religious Endowments Department",
+      "name": "Commercial Taxes and Registration Department",
       "dep_id_encoded": "Ng==",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Ng==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
@@ -121,13 +121,22 @@
       "display_order": 13
     },
     {
+      "id": 46,
+      "name": "Hindu Religious and Charitable Endowments Department",
+      "dep_id_encoded": "NDY=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDY=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Ramesh",
+      "display_order": 14
+    },
+    {
       "id": 14,
       "name": "Home, Prohibition and Excise Department",
       "dep_id_encoded": "MTQ=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 14
+      "display_order": 15
     },
     {
       "id": 15,
@@ -136,7 +145,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTU=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru B. Rajkumar",
-      "display_order": 15
+      "display_order": 16
     },
     {
       "id": 22,
@@ -145,7 +154,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjI=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru D. Sarathkumar",
-      "display_order": 16
+      "display_order": 17
     },
     {
       "id": 16,
@@ -154,7 +163,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTY=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Selvi S. Keerthana",
-      "display_order": 17
+      "display_order": 18
     },
     {
       "id": 18,
@@ -163,7 +172,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTg=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru J. Mohamed Farvas",
-      "display_order": 18
+      "display_order": 19
     },
     {
       "id": 19,
@@ -172,7 +181,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTk=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C.T.R. Nirmal Kumar",
-      "display_order": 19
+      "display_order": 20
     },
     {
       "id": 20,
@@ -181,7 +190,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjA=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru K A. Sengottaiyan",
-      "display_order": 20
+      "display_order": 21
     },
     {
       "id": 29,
@@ -190,7 +199,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjk=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru P. Mathan Raja",
-      "display_order": 21
+      "display_order": 22
     },
     {
       "id": 43,
@@ -199,7 +208,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDM=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 22
+      "display_order": 23
     },
     {
       "id": 21,
@@ -208,7 +217,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjE=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 23
+      "display_order": 24
     },
     {
       "id": 45,
@@ -217,7 +226,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDU=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Dr. TK. Prabhu",
-      "display_order": 24
+      "display_order": 25
     },
     {
       "id": 23,
@@ -226,7 +235,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjM=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 25
+      "display_order": 26
     },
     {
       "id": 24,
@@ -235,7 +244,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjQ=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 26
+      "display_order": 27
     },
     {
       "id": 38,
@@ -244,7 +253,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzg=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C.T.R. Nirmal Kumar",
-      "display_order": 27
+      "display_order": 28
     },
     {
       "id": 42,
@@ -253,7 +262,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDI=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru Aadhav Arjuna",
-      "display_order": 28
+      "display_order": 29
     },
     {
       "id": 26,
@@ -262,7 +271,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjY=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru K A. Sengottaiyan",
-      "display_order": 29
+      "display_order": 30
     },
     {
       "id": 27,
@@ -271,7 +280,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjc=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru N. Anand",
-      "display_order": 30
+      "display_order": 31
     },
     {
       "id": 28,
@@ -280,7 +289,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjg=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru Rajmohan",
-      "display_order": 31
+      "display_order": 32
     },
     {
       "id": 1,
@@ -289,7 +298,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru Vanni Arasu",
-      "display_order": 32
+      "display_order": 33
     },
     {
       "id": 39,
@@ -298,7 +307,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mzk=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": null,
-      "display_order": 33
+      "display_order": 34
     },
     {
       "id": 30,
@@ -307,7 +316,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzA=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Tmt Jagadeshwari. K",
-      "display_order": 34
+      "display_order": 35
     },
     {
       "id": 41,
@@ -316,7 +325,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDE=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 35
+      "display_order": 36
     },
     {
       "id": 31,
@@ -325,7 +334,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzE=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru Rajmohan",
-      "display_order": 36
+      "display_order": 37
     },
     {
       "id": 32,
@@ -334,7 +343,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzI=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru S. Rajesh Kumar",
-      "display_order": 37
+      "display_order": 38
     },
     {
       "id": 33,
@@ -343,7 +352,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzM=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru A. Vijay Tamilan Parthiban",
-      "display_order": 38
+      "display_order": 39
     },
     {
       "id": 44,
@@ -352,7 +361,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDQ=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru N. Anand",
-      "display_order": 39
+      "display_order": 40
     },
     {
       "id": 35,
@@ -361,7 +370,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzU=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 40
+      "display_order": 41
     },
     {
       "id": 34,
@@ -370,7 +379,7 @@
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
       "minister_name": "Thiru C. Joseph Vijay",
-      "display_order": 41
+      "display_order": 42
     }
   ]
 }

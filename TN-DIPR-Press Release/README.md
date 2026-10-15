@@ -27,7 +27,7 @@ Shared settings (`TN_PRESS_RELEASE_SOURCE_URL`, `TN_PRESS_RELEASE_START_DATE`) l
 
 ### Run
 
-Fetch from the configured start date through yesterday (default):
+Fetch from the last updated date through today (default):
 
 ```powershell
 python tn_press_release_sync.py

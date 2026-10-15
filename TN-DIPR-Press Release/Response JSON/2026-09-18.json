@@ -1,0 +1,128 @@
+{
+  "date": "2026-09-18",
+  "fetchedAt": "2026-10-07T17:07:54.065241+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:54.065241+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-18"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22545,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.693-Hon_ble_CM_Press_Release_-_Industries_Dept_-_Wall_Greens_India_MoU_-Date_18.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.693-Hon'ble CM Press Release - Industries Dept - Wall Greens India MoU -Date 18.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22546,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.694-Hon_ble_CM_Press_Release_-Social_Welfare_Dept_-_Perunthalaivar_Kamarajar_Breakfast_Scheme_Extension_-Date_18.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.694-Hon'ble CM Press Release -Social Welfare Dept - Perunthalaivar Kamarajar Breakfast Scheme Extension -Date 18.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22548,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-696-Tribal_Welfare_Dept_Press_Release-Natural_Farming_Certification_-Date_18.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-696-Tribal Welfare Dept Press Release-Natural Farming Certification -Date 18.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22554,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-697_-Hon_ble_RD___WRD_Minister_Press_Release-_Valaikaappu-Date_18.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-697 -Hon'ble RD & WRD Minister Press Release- Valaikaappu-Date 18.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22555,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-698-Finance_Dept_Press_Release-Revenue_Enhancement_Committee-English_-Date_18.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-698-Finance Dept Press Release-Revenue Enhancement Committee-English -Date 18.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22556,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-698-Finance_Dept_Press_Release-Revenue_Enhancement_Committee-Tamil-Date_18.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-698-Finance Dept Press Release-Revenue Enhancement Committee-Tamil-Date 18.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22557,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.699-_Hon_ble_Transport_Minister-Zone_12_and_13_Monsoon_Meeting-Press_Release-Date_18.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.699- Hon'ble Transport Minister-Zone 12 and 13 Monsoon Meeting-Press Release-Date 18.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22558,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-700__-Hon_ble_Milk_and_Dairy_Development_Minister_-Review_Meeting_-_Appointment_-Date_18.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-700  -Hon'ble Milk and Dairy Development Minister -Review Meeting - Appointment -Date 18.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22559,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.695-Hon_ble_CM_Press_Release_-_Health_Dept_-_Thaimaman_Thangamothiram_Scheme_Review_Meeting__-Date_18.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-19",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.695-Hon'ble CM Press Release - Health Dept - Thaimaman Thangamothiram Scheme Review Meeting  -Date 18.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      },
+      {
+        "id": 22560,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.701_-_SIPCOT_Press_Release_-_Date_-_18.09.2026.docx.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-19",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.701 - SIPCOT Press Release - Date - 18.09.2026.docx.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-18",
+        "language": "en"
+      }
+    ]
+  }
+}

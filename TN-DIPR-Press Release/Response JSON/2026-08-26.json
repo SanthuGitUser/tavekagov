@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-26",
+  "fetchedAt": "2026-10-07T17:07:48.176146+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:48.176146+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-26"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22392,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.580-Hon_ble_CM_Social_Media_Message_-_Miladi_Nabi_2026-Date_26.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.580-Hon'ble CM Social Media Message - Miladi Nabi 2026-Date 26.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-26",
+        "language": "en"
+      },
+      {
+        "id": 22393,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.581-Hon_ble_CM_Social_Media_Message_-_Onam_Festival_Greetings_-Date_26.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.581-Hon'ble CM Social Media Message - Onam Festival Greetings -Date 26.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-26",
+        "language": "en"
+      },
+      {
+        "id": 22394,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.582_-_Election_Dept_Press_Release_-_English_-_Date.26.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.582 - Election Dept Press Release - English - Date.26.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-26",
+        "language": "en"
+      },
+      {
+        "id": 22396,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.583_-_Hon_ble_Rural_Development_and_Water_Resources_Minister_Press_Release_-_Date.26.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.583 - Hon'ble Rural Development and Water Resources Minister Press Release - Date.26.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-26",
+        "language": "en"
+      },
+      {
+        "id": 22397,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.584_-_Hon_ble_CM_Social_Media_Message_Press_Release_-_Nepal_Disaster-_Date.26.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-26",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.584 - Hon'ble CM Social Media Message Press Release - Nepal Disaster- Date.26.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-26",
+        "language": "en"
+      },
+      {
+        "id": 22398,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.582_-_Election_Dept_Press_Release_-_Tamil_-_Date.26.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.582 - Election Dept Press Release - Tamil - Date.26.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-26",
+        "language": "en"
+      }
+    ]
+  }
+}

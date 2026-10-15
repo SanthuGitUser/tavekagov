@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-30",
+  "fetchedAt": "2026-10-07T17:07:57.219618+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:57.219618+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-30"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22636,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.762_-_Food_and_Consumer_Protection_Department_Press_Release_-_Date_-_30.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.762 - Food and Consumer Protection Department Press Release - Date - 30.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-30",
+        "language": "en"
+      },
+      {
+        "id": 22637,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.763_-_Voluntary_Blood_Donation_Day_-_Press_Release_-_Date.30.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.763 - Voluntary Blood Donation Day - Press Release - Date.30.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-30",
+        "language": "en"
+      },
+      {
+        "id": 22638,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.764_Treasuries_and_Accounts_Dept_-_Press_Release_SGPF_-_English_-_Date.30.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.764 Treasuries and Accounts Dept - Press Release SGPF - English - Date.30.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-30",
+        "language": "en"
+      },
+      {
+        "id": 22639,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.764_Treasuries_and_Accounts_Dept_-_Press_Release_SGPF_-_Tamil_-_Date.30.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.764 Treasuries and Accounts Dept - Press Release SGPF - Tamil - Date.30.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-30",
+        "language": "en"
+      },
+      {
+        "id": 22640,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.765_-_Tamil_Development_DEPT_-_Press_Release_-_Date_-_30.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.765 - Tamil Development DEPT - Press Release - Date - 30.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-30",
+        "language": "en"
+      },
+      {
+        "id": 22641,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.766_-_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Ramanathapuram_Dist_2_children_death_due_to_Electrocution_-_Date_-_30.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.766 - Hon'ble CM Press Release - Condolence and Relief - Ramanathapuram Dist 2 children death due to Electrocution - Date - 30.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-30",
+        "language": "en"
+      },
+      {
+        "id": 22642,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.767_-_Hon_ble_CM_Social_Media_Message_-_Worldskills_Shanghai_2026_-_TN_youngsters_won_Medals_-_Date_-_30.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.767 - Hon'ble CM Social Media Message - Worldskills Shanghai 2026 - TN youngsters won Medals - Date - 30.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-30",
+        "language": "en"
+      },
+      {
+        "id": 22643,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.768_-_Hon_ble_CM_Press_Release_-_Grama_Sabha_-_Date_-_30.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.768 - Hon'ble CM Press Release - Grama Sabha - Date - 30.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-30",
+        "language": "en"
+      }
+    ]
+  }
+}

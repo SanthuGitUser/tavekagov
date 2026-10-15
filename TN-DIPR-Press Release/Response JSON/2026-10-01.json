@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-01",
+  "fetchedAt": "2026-10-07T17:07:57.485728+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:57.485728+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-01"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22646,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.769-Hon_ble_CM_Social_Media_Message_-_Nadigar_Thilagam_Sivaji_Ganesan_Birthday_-Date__1.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.769-Hon'ble CM Social Media Message - Nadigar Thilagam Sivaji Ganesan Birthday -Date  1.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22647,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.770-Hon_ble_CM_Social_Media_Message_-_National_Voluntary_Blood_Donation_Day_-_Date_1.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.770-Hon'ble CM Social Media Message - National Voluntary Blood Donation Day - Date 1.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22648,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.771-Hon_ble_CM_Social_Media_Message__-_Asian_Games_Squash_Womens__Doubles_Bronze_Medal_-Date__1.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.771-Hon'ble CM Social Media Message  - Asian Games Squash Womens  Doubles Bronze Medal -Date  1.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22649,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.772_-Hon_ble_CM_Press_Release_-_Gandhi_Jayanthi_Khader_Message_-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.772 -Hon'ble CM Press Release - Gandhi Jayanthi Khader Message -Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22650,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-773_-Hon_ble_Ministers_Press_Release-Sivaji_Ganesan-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-773 -Hon'ble Ministers Press Release-Sivaji Ganesan-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22651,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.774-Social_Justice_Dept-Press_Release-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.774-Social Justice Dept-Press Release-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22652,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.775-Treasuries___Accounts_Dept-Press_Release-English-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.775-Treasuries & Accounts Dept-Press Release-English-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22653,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.775-Treasuries___Accounts_Dept-Press_Release-Tamil-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.775-Treasuries & Accounts Dept-Press Release-Tamil-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22654,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.776-Tamil_Development_Dept-Press_Release-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.776-Tamil Development Dept-Press Release-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22655,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.777-Transport_Dept-Press_Release-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.777-Transport Dept-Press Release-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22656,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPRP.R.No.778-Registration_Dept-Press_Release-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPRP.R.No.778-Registration Dept-Press Release-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22657,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.779-Hon_ble_CM_Social_Media_Message_-_Asian_Games_Squash_Gents_Doubles_Bronze_Medal_-_Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.779-Hon'ble CM Social Media Message - Asian Games Squash Gents Doubles Bronze Medal - Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22658,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.780-TNCDW_-_Navarathiri_Mathi_Exbition__Inaugural__Function_-_Press_Release_-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.780-TNCDW - Navarathiri Mathi Exbition  Inaugural  Function - Press Release -Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22659,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.781-Home_Dept-Press_Release-English-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.781-Home Dept-Press Release-English-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      },
+      {
+        "id": 22660,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.781-Home_Dept-Press_Release-Tamil-Date_01.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-01",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.781-Home Dept-Press Release-Tamil-Date 01.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-01",
+        "language": "en"
+      }
+    ]
+  }
+}

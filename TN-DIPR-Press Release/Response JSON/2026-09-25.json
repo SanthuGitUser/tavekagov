@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-25",
+  "fetchedAt": "2026-10-07T17:07:55.886957+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:55.886957+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-25"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22607,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-739_-Hon_ble_School_Edu_TD_I__PR_Minister_Press_Release-TD_Dept_Function_-Date_25.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-739 -Hon'ble School Edu,TD,I &PR Minister Press Release-TD Dept Function -Date 25.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-25",
+        "language": "en"
+      },
+      {
+        "id": 22608,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-740_-Art___Culture_Dept_Press_Release-_Admissions-Date_25.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-740 -Art & Culture Dept Press Release- Admissions-Date 25.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-25",
+        "language": "en"
+      },
+      {
+        "id": 22609,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.741_-_Civil_Supplies___Consumer_Protection_Dept_Press_Release-__eKYC__camp-Date_25.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.741 - Civil Supplies & Consumer Protection Dept Press Release- (eKYC) camp-Date 25.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-25",
+        "language": "en"
+      },
+      {
+        "id": 22610,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-742_-Minorities_Welfare_Press_Release-Date_25.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-25",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-742 -Minorities Welfare Press Release-Date 25.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-25",
+        "language": "en"
+      },
+      {
+        "id": 22611,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_PR_No.743-Hon_ble_CM_Social_Media_Message_-_Greetings_to__Asian_Games_Bronze_Medal_for_Pole_Vault_Baranika_-Date_25.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-25",
+        "press_release_no": null,
+        "press_name": "DIPR PR No.743-Hon'ble CM Social Media Message - Greetings to  Asian Games Bronze Medal for Pole Vault Baranika -Date 25.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-25",
+        "language": "en"
+      }
+    ]
+  }
+}

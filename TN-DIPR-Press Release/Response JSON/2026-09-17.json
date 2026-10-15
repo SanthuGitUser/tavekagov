@@ -1,0 +1,172 @@
+{
+  "date": "2026-09-17",
+  "fetchedAt": "2026-10-07T17:07:53.806898+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:53.806898+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-17"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22531,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P._R._NO._682_-_Hon_ble_CM_Press_Release_-_HCM_visits_to_UK_-_Investors_Meet_at_UK_and_MoU_details_-_17.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR - P. R. NO. 682 - Hon'ble CM Press Release - HCM visits to UK - Investors Meet at UK and MoU details - 17.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22532,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.683_-_Hon_ble_CM_Social_Media_Message_-_Thanthai_Periyar_Birthday_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.683 - Hon'ble CM Social Media Message - Thanthai Periyar Birthday - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22533,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.684_-_Hon_ble_CM_Social_Media_Message_-_Hon_ble_Prime_Minister_Thiru_Narendra_Modi_Birthday_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.684 - Hon'ble CM Social Media Message - Hon'ble Prime Minister Thiru Narendra Modi Birthday - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22534,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.685_-_Hon_ble_Co-operation_Minister_Press_Release_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.685 - Hon'ble Co-operation Minister Press Release - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22535,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.686_-_Hon_ble_Ministers_I_PR_Dept_Press_Release_-_Thanthai_Periyar_Birthday_Function_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.686 - Hon'ble Ministers I&PR Dept Press Release - Thanthai Periyar Birthday Function - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22536,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.687_EDII-_Gold_Appraiser_Training_Press_Release_-English_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.687 EDII- Gold Appraiser Training Press Release -English - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22537,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.687_EDII-_Gold_Appraiser_Training_Press_Release_-Tamil_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.687 EDII- Gold Appraiser Training Press Release -Tamil - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22538,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.688_-_EDII_-_App_Development_Using_AI_Training_Press_Release_-_English_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.688 - EDII - App Development Using AI Training Press Release - English - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22539,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.688_-_EDII_-_App_Development_Using_AI_Training_Press_Release_-_Tamil_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.688 - EDII - App Development Using AI Training Press Release - Tamil - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22540,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.689_-_Tribal_Welfare_Dept_Press_Release_-_English_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.689 - Tribal Welfare Dept Press Release - English - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22541,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.689_-_Tribal_Welfare_Dept_Press_Release_-_Tamil_-_Date.17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.689 - Tribal Welfare Dept Press Release - Tamil - Date.17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22542,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.690_-_OMCL_Recruitment_Of_Production-Press_Release_-_Date_-_17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.690 - OMCL Recruitment Of Production-Press Release - Date - 17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22543,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO_-_691_-_Tamil_Nadu_Housing_Board_Dept_Press_Release_-_Date_-_17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-17",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO - 691 - Tamil Nadu Housing Board Dept Press Release - Date - 17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      },
+      {
+        "id": 22544,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.692_-_Social_Justice_Department_Press_Release_-_Date_-_17.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-18",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.692 - Social Justice Department Press Release - Date - 17.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-17",
+        "language": "en"
+      }
+    ]
+  }
+}

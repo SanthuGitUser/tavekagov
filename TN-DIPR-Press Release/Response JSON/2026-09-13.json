@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-13",
+  "fetchedAt": "2026-10-07T17:07:52.757645+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:52.757645+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-13"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22497,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.653-TNEB_Press_Release-Date_13.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.653-TNEB Press Release-Date 13.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-13",
+        "language": "en"
+      },
+      {
+        "id": 22498,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.654_Transport_Dept._press_release-Date_13.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.654 Transport Dept. press release-Date 13.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-13",
+        "language": "en"
+      },
+      {
+        "id": 22499,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.655_Civil_Supplies_Dept_Press_Release-Date_13.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.655 Civil Supplies Dept Press Release-Date 13.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-13",
+        "language": "en"
+      },
+      {
+        "id": 22500,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.656_-_Transport_Dept_-_Special_Arrangements_Press_Release_-_Date.13.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.656 - Transport Dept - Special Arrangements Press Release - Date.13.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-13",
+        "language": "en"
+      }
+    ]
+  }
+}

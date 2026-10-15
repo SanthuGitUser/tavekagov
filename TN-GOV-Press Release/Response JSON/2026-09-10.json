@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-10",
+  "fetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "lastFetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 2,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr100926c.jpg",
+      "release_date": "2026-09-10",
+      "title": "Honble Chief Minister visited the United Kingdom to facilitate investments in Tamil Nadu",
+      "file_name": "pr100926c.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr100926_ind.jpg",
+      "release_date": "2026-09-10",
+      "title": "Thoothukudi Shipyard Project advances to detailed feasibility and project preparation with Government Support",
+      "file_name": "pr100926_ind.jpg",
+      "minister_name": null,
+      "department_name": null,
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": false,
+      "parse_confidence": "low",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    }
+  ],
+  "departments": []
+}

@@ -1,0 +1,3242 @@
+{
+  "election_id": "tn-assembly-2026",
+  "source_base": "https://results.eci.gov.in/ResultAcGenMay2026/",
+  "archive_snapshot": "20260505000000",
+  "fetchedAt": "2026-10-10T16:45:31.043951+05:30",
+  "count": 1,
+  "results": [
+    {
+      "ac_number": 10,
+      "source_url": "https://web.archive.org/web/20260505000000/https://results.eci.gov.in/ResultAcGenMay2026/RoundwiseS2210.htm?ac=10",
+      "evm_round_status": "26/26",
+      "total_rounds": 26,
+      "rounds": [
+        {
+          "round": 1,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 0,
+              "current_round": 1014,
+              "total": 1014
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 0,
+              "current_round": 325,
+              "total": 325
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 0,
+              "current_round": 2026,
+              "total": 2026
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 0,
+              "current_round": 20,
+              "total": 20
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 0,
+              "current_round": 7,
+              "total": 7
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 0,
+              "current_round": 4062,
+              "total": 4062
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 0,
+              "current_round": 16,
+              "total": 16
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 0,
+              "current_round": 2,
+              "total": 2
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 0,
+              "current_round": 1,
+              "total": 1
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 0,
+              "current_round": 2,
+              "total": 2
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 0,
+              "current_round": 9,
+              "total": 9
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 0,
+              "current_round": 5,
+              "total": 5
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 0,
+              "current_round": 7,
+              "total": 7
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 0,
+              "current_round": 14,
+              "total": 14
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 0,
+              "current_round": 4,
+              "total": 4
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 0,
+              "current_round": 22,
+              "total": 22
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 0,
+              "current_round": 7536,
+              "total": 7536
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 1014,
+              "current_round": 1301,
+              "total": 2315
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 325,
+              "current_round": 343,
+              "total": 668
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 2026,
+              "current_round": 2190,
+              "total": 4216
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 20,
+              "current_round": 18,
+              "total": 38
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 7,
+              "current_round": 13,
+              "total": 20
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 4062,
+              "current_round": 4677,
+              "total": 8739
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 16,
+              "current_round": 21,
+              "total": 37
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 2,
+              "current_round": 9,
+              "total": 11
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 1,
+              "current_round": 3,
+              "total": 4
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 2,
+              "current_round": 5,
+              "total": 7
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 9,
+              "current_round": 7,
+              "total": 16
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 5,
+              "current_round": 5,
+              "total": 10
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 7,
+              "current_round": 9,
+              "total": 16
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 14,
+              "current_round": 11,
+              "total": 25
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 4,
+              "current_round": 1,
+              "total": 5
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 22,
+              "current_round": 33,
+              "total": 55
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 7536,
+              "current_round": 8646,
+              "total": 16182
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 2315,
+              "current_round": 1264,
+              "total": 3579
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 668,
+              "current_round": 297,
+              "total": 965
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 4216,
+              "current_round": 1789,
+              "total": 6005
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 38,
+              "current_round": 12,
+              "total": 50
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 20,
+              "current_round": 7,
+              "total": 27
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 8739,
+              "current_round": 4137,
+              "total": 12876
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 37,
+              "current_round": 12,
+              "total": 49
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 11,
+              "current_round": 4,
+              "total": 15
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 4,
+              "current_round": 4,
+              "total": 8
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 7,
+              "current_round": 3,
+              "total": 10
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 16,
+              "current_round": 4,
+              "total": 20
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 10,
+              "current_round": 9,
+              "total": 19
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 16,
+              "current_round": 10,
+              "total": 26
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 25,
+              "current_round": 20,
+              "total": 45
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 5,
+              "current_round": 3,
+              "total": 8
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 55,
+              "current_round": 22,
+              "total": 77
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 16182,
+              "current_round": 7597,
+              "total": 23779
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 3579,
+              "current_round": 1294,
+              "total": 4873
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 965,
+              "current_round": 397,
+              "total": 1362
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 6005,
+              "current_round": 2890,
+              "total": 8895
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 50,
+              "current_round": 31,
+              "total": 81
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 27,
+              "current_round": 14,
+              "total": 41
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 12876,
+              "current_round": 4535,
+              "total": 17411
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 49,
+              "current_round": 8,
+              "total": 57
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 15,
+              "current_round": 8,
+              "total": 23
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 8,
+              "current_round": 4,
+              "total": 12
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 10,
+              "current_round": 7,
+              "total": 17
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 20,
+              "current_round": 4,
+              "total": 24
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 19,
+              "current_round": 14,
+              "total": 33
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 26,
+              "current_round": 17,
+              "total": 43
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 45,
+              "current_round": 12,
+              "total": 57
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 8,
+              "current_round": 3,
+              "total": 11
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 77,
+              "current_round": 27,
+              "total": 104
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 23779,
+              "current_round": 9265,
+              "total": 33044
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 4873,
+              "current_round": 1384,
+              "total": 6257
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 1362,
+              "current_round": 428,
+              "total": 1790
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 8895,
+              "current_round": 2577,
+              "total": 11472
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 81,
+              "current_round": 17,
+              "total": 98
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 41,
+              "current_round": 10,
+              "total": 51
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 17411,
+              "current_round": 4624,
+              "total": 22035
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 57,
+              "current_round": 8,
+              "total": 65
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 23,
+              "current_round": 5,
+              "total": 28
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 12,
+              "current_round": 7,
+              "total": 19
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 17,
+              "current_round": 4,
+              "total": 21
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 24,
+              "current_round": 5,
+              "total": 29
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 33,
+              "current_round": 15,
+              "total": 48
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 43,
+              "current_round": 18,
+              "total": 61
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 57,
+              "current_round": 12,
+              "total": 69
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 11,
+              "current_round": 3,
+              "total": 14
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 104,
+              "current_round": 22,
+              "total": 126
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 33044,
+              "current_round": 9139,
+              "total": 42183
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 6257,
+              "current_round": 2186,
+              "total": 8443
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 1790,
+              "current_round": 426,
+              "total": 2216
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 11472,
+              "current_round": 2252,
+              "total": 13724
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 98,
+              "current_round": 12,
+              "total": 110
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 51,
+              "current_round": 15,
+              "total": 66
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 22035,
+              "current_round": 5266,
+              "total": 27301
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 65,
+              "current_round": 9,
+              "total": 74
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 28,
+              "current_round": 4,
+              "total": 32
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 19,
+              "current_round": 4,
+              "total": 23
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 21,
+              "current_round": 4,
+              "total": 25
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 29,
+              "current_round": 5,
+              "total": 34
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 48,
+              "current_round": 23,
+              "total": 71
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 61,
+              "current_round": 21,
+              "total": 82
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 69,
+              "current_round": 11,
+              "total": 80
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 14,
+              "current_round": 5,
+              "total": 19
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 126,
+              "current_round": 36,
+              "total": 162
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 42183,
+              "current_round": 10279,
+              "total": 52462
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 8443,
+              "current_round": 1362,
+              "total": 9805
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 2216,
+              "current_round": 491,
+              "total": 2707
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 13724,
+              "current_round": 2289,
+              "total": 16013
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 110,
+              "current_round": 18,
+              "total": 128
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 66,
+              "current_round": 11,
+              "total": 77
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 27301,
+              "current_round": 4658,
+              "total": 31959
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 74,
+              "current_round": 7,
+              "total": 81
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 32,
+              "current_round": 17,
+              "total": 49
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 23,
+              "current_round": 2,
+              "total": 25
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 25,
+              "current_round": 6,
+              "total": 31
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 34,
+              "current_round": 9,
+              "total": 43
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 71,
+              "current_round": 14,
+              "total": 85
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 82,
+              "current_round": 23,
+              "total": 105
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 80,
+              "current_round": 14,
+              "total": 94
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 19,
+              "current_round": 5,
+              "total": 24
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 162,
+              "current_round": 17,
+              "total": 179
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 52462,
+              "current_round": 8943,
+              "total": 61405
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 9805,
+              "current_round": 718,
+              "total": 10523
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 2707,
+              "current_round": 315,
+              "total": 3022
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 16013,
+              "current_round": 1555,
+              "total": 17568
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 128,
+              "current_round": 30,
+              "total": 158
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 77,
+              "current_round": 18,
+              "total": 95
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 31959,
+              "current_round": 4852,
+              "total": 36811
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 81,
+              "current_round": 10,
+              "total": 91
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 49,
+              "current_round": 16,
+              "total": 65
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 25,
+              "current_round": 1,
+              "total": 26
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 31,
+              "current_round": 4,
+              "total": 35
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 43,
+              "current_round": 1,
+              "total": 44
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 85,
+              "current_round": 19,
+              "total": 104
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 105,
+              "current_round": 18,
+              "total": 123
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 94,
+              "current_round": 10,
+              "total": 104
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 24,
+              "current_round": 5,
+              "total": 29
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 179,
+              "current_round": 17,
+              "total": 196
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 61405,
+              "current_round": 7589,
+              "total": 68994
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 10523,
+              "current_round": 1055,
+              "total": 11578
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 3022,
+              "current_round": 361,
+              "total": 3383
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 17568,
+              "current_round": 2701,
+              "total": 20269
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 158,
+              "current_round": 24,
+              "total": 182
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 95,
+              "current_round": 6,
+              "total": 101
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 36811,
+              "current_round": 4600,
+              "total": 41411
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 91,
+              "current_round": 8,
+              "total": 99
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 65,
+              "current_round": 12,
+              "total": 77
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 26,
+              "current_round": 3,
+              "total": 29
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 35,
+              "current_round": 6,
+              "total": 41
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 44,
+              "current_round": 5,
+              "total": 49
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 104,
+              "current_round": 11,
+              "total": 115
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 123,
+              "current_round": 73,
+              "total": 196
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 104,
+              "current_round": 12,
+              "total": 116
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 29,
+              "current_round": 3,
+              "total": 32
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 196,
+              "current_round": 34,
+              "total": 230
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 68994,
+              "current_round": 8914,
+              "total": 77908
+            }
+          ]
+        },
+        {
+          "round": 10,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 11578,
+              "current_round": 823,
+              "total": 12401
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 3383,
+              "current_round": 305,
+              "total": 3688
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 20269,
+              "current_round": 2918,
+              "total": 23187
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 182,
+              "current_round": 31,
+              "total": 213
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 101,
+              "current_round": 18,
+              "total": 119
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 41411,
+              "current_round": 4234,
+              "total": 45645
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 99,
+              "current_round": 4,
+              "total": 103
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 77,
+              "current_round": 4,
+              "total": 81
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 29,
+              "current_round": 3,
+              "total": 32
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 41,
+              "current_round": 4,
+              "total": 45
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 49,
+              "current_round": 5,
+              "total": 54
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 115,
+              "current_round": 20,
+              "total": 135
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 196,
+              "current_round": 374,
+              "total": 570
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 116,
+              "current_round": 10,
+              "total": 126
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 32,
+              "current_round": 6,
+              "total": 38
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 230,
+              "current_round": 45,
+              "total": 275
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 77908,
+              "current_round": 8804,
+              "total": 86712
+            }
+          ]
+        },
+        {
+          "round": 11,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 12401,
+              "current_round": 1056,
+              "total": 13457
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 3688,
+              "current_round": 452,
+              "total": 4140
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 23187,
+              "current_round": 2297,
+              "total": 25484
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 213,
+              "current_round": 17,
+              "total": 230
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 119,
+              "current_round": 8,
+              "total": 127
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 45645,
+              "current_round": 4519,
+              "total": 50164
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 103,
+              "current_round": 4,
+              "total": 107
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 81,
+              "current_round": 3,
+              "total": 84
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 32,
+              "current_round": 2,
+              "total": 34
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 45,
+              "current_round": 4,
+              "total": 49
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 54,
+              "current_round": 4,
+              "total": 58
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 135,
+              "current_round": 14,
+              "total": 149
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 570,
+              "current_round": 38,
+              "total": 608
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 126,
+              "current_round": 11,
+              "total": 137
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 38,
+              "current_round": 10,
+              "total": 48
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 275,
+              "current_round": 41,
+              "total": 316
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 86712,
+              "current_round": 8480,
+              "total": 95192
+            }
+          ]
+        },
+        {
+          "round": 12,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 13457,
+              "current_round": 1220,
+              "total": 14677
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 4140,
+              "current_round": 391,
+              "total": 4531
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 25484,
+              "current_round": 2301,
+              "total": 27785
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 230,
+              "current_round": 18,
+              "total": 248
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 127,
+              "current_round": 14,
+              "total": 141
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 50164,
+              "current_round": 5420,
+              "total": 55584
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 107,
+              "current_round": 9,
+              "total": 116
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 84,
+              "current_round": 7,
+              "total": 91
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 34,
+              "current_round": 5,
+              "total": 39
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 49,
+              "current_round": 5,
+              "total": 54
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 58,
+              "current_round": 6,
+              "total": 64
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 149,
+              "current_round": 13,
+              "total": 162
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 608,
+              "current_round": 14,
+              "total": 622
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 137,
+              "current_round": 9,
+              "total": 146
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 48,
+              "current_round": 7,
+              "total": 55
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 316,
+              "current_round": 41,
+              "total": 357
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 95192,
+              "current_round": 9480,
+              "total": 104672
+            }
+          ]
+        },
+        {
+          "round": 13,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 14677,
+              "current_round": 1358,
+              "total": 16035
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 4531,
+              "current_round": 443,
+              "total": 4974
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 27785,
+              "current_round": 2011,
+              "total": 29796
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 248,
+              "current_round": 14,
+              "total": 262
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 141,
+              "current_round": 17,
+              "total": 158
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 55584,
+              "current_round": 5465,
+              "total": 61049
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 116,
+              "current_round": 5,
+              "total": 121
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 91,
+              "current_round": 9,
+              "total": 100
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 39,
+              "current_round": 4,
+              "total": 43
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 54,
+              "current_round": 8,
+              "total": 62
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 64,
+              "current_round": 13,
+              "total": 77
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 162,
+              "current_round": 11,
+              "total": 173
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 622,
+              "current_round": 5,
+              "total": 627
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 146,
+              "current_round": 12,
+              "total": 158
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 55,
+              "current_round": 15,
+              "total": 70
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 357,
+              "current_round": 34,
+              "total": 391
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 104672,
+              "current_round": 9424,
+              "total": 114096
+            }
+          ]
+        },
+        {
+          "round": 14,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 16035,
+              "current_round": 1371,
+              "total": 17406
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 4974,
+              "current_round": 363,
+              "total": 5337
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 29796,
+              "current_round": 2505,
+              "total": 32301
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 262,
+              "current_round": 18,
+              "total": 280
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 158,
+              "current_round": 4,
+              "total": 162
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 61049,
+              "current_round": 4887,
+              "total": 65936
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 121,
+              "current_round": 7,
+              "total": 128
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 100,
+              "current_round": 7,
+              "total": 107
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 43,
+              "current_round": 3,
+              "total": 46
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 62,
+              "current_round": 5,
+              "total": 67
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 77,
+              "current_round": 6,
+              "total": 83
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 173,
+              "current_round": 10,
+              "total": 183
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 627,
+              "current_round": 29,
+              "total": 656
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 158,
+              "current_round": 10,
+              "total": 168
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 70,
+              "current_round": 5,
+              "total": 75
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 391,
+              "current_round": 47,
+              "total": 438
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 114096,
+              "current_round": 9277,
+              "total": 123373
+            }
+          ]
+        },
+        {
+          "round": 15,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 17406,
+              "current_round": 1013,
+              "total": 18419
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 5337,
+              "current_round": 326,
+              "total": 5663
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 32301,
+              "current_round": 2129,
+              "total": 34430
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 280,
+              "current_round": 10,
+              "total": 290
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 162,
+              "current_round": 7,
+              "total": 169
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 65936,
+              "current_round": 4483,
+              "total": 70419
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 128,
+              "current_round": 10,
+              "total": 138
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 107,
+              "current_round": 4,
+              "total": 111
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 46,
+              "current_round": 2,
+              "total": 48
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 67,
+              "current_round": 10,
+              "total": 77
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 83,
+              "current_round": 5,
+              "total": 88
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 183,
+              "current_round": 24,
+              "total": 207
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 656,
+              "current_round": 24,
+              "total": 680
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 168,
+              "current_round": 12,
+              "total": 180
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 75,
+              "current_round": 3,
+              "total": 78
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 438,
+              "current_round": 47,
+              "total": 485
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 123373,
+              "current_round": 8109,
+              "total": 131482
+            }
+          ]
+        },
+        {
+          "round": 16,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 18419,
+              "current_round": 1175,
+              "total": 19594
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 5663,
+              "current_round": 260,
+              "total": 5923
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 34430,
+              "current_round": 1948,
+              "total": 36378
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 290,
+              "current_round": 21,
+              "total": 311
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 169,
+              "current_round": 14,
+              "total": 183
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 70419,
+              "current_round": 3759,
+              "total": 74178
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 138,
+              "current_round": 5,
+              "total": 143
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 111,
+              "current_round": 6,
+              "total": 117
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 48,
+              "current_round": 2,
+              "total": 50
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 77,
+              "current_round": 6,
+              "total": 83
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 88,
+              "current_round": 10,
+              "total": 98
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 207,
+              "current_round": 19,
+              "total": 226
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 680,
+              "current_round": 27,
+              "total": 707
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 180,
+              "current_round": 12,
+              "total": 192
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 78,
+              "current_round": 4,
+              "total": 82
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 485,
+              "current_round": 24,
+              "total": 509
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 131482,
+              "current_round": 7292,
+              "total": 138774
+            }
+          ]
+        },
+        {
+          "round": 17,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 19594,
+              "current_round": 929,
+              "total": 20523
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 5923,
+              "current_round": 298,
+              "total": 6221
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 36378,
+              "current_round": 2262,
+              "total": 38640
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 311,
+              "current_round": 11,
+              "total": 322
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 183,
+              "current_round": 9,
+              "total": 192
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 74178,
+              "current_round": 3987,
+              "total": 78165
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 143,
+              "current_round": 5,
+              "total": 148
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 117,
+              "current_round": 8,
+              "total": 125
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 50,
+              "current_round": 5,
+              "total": 55
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 83,
+              "current_round": 2,
+              "total": 85
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 98,
+              "current_round": 0,
+              "total": 98
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 226,
+              "current_round": 9,
+              "total": 235
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 707,
+              "current_round": 11,
+              "total": 718
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 192,
+              "current_round": 11,
+              "total": 203
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 82,
+              "current_round": 5,
+              "total": 87
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 509,
+              "current_round": 24,
+              "total": 533
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 138774,
+              "current_round": 7576,
+              "total": 146350
+            }
+          ]
+        },
+        {
+          "round": 18,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 20523,
+              "current_round": 1180,
+              "total": 21703
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 6221,
+              "current_round": 316,
+              "total": 6537
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 38640,
+              "current_round": 2032,
+              "total": 40672
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 322,
+              "current_round": 21,
+              "total": 343
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 192,
+              "current_round": 8,
+              "total": 200
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 78165,
+              "current_round": 4003,
+              "total": 82168
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 148,
+              "current_round": 8,
+              "total": 156
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 125,
+              "current_round": 3,
+              "total": 128
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 55,
+              "current_round": 1,
+              "total": 56
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 85,
+              "current_round": 9,
+              "total": 94
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 98,
+              "current_round": 8,
+              "total": 106
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 235,
+              "current_round": 10,
+              "total": 245
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 718,
+              "current_round": 13,
+              "total": 731
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 203,
+              "current_round": 17,
+              "total": 220
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 87,
+              "current_round": 2,
+              "total": 89
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 533,
+              "current_round": 48,
+              "total": 581
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 146350,
+              "current_round": 7679,
+              "total": 154029
+            }
+          ]
+        },
+        {
+          "round": 19,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 21703,
+              "current_round": 870,
+              "total": 22573
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 6537,
+              "current_round": 231,
+              "total": 6768
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 40672,
+              "current_round": 2158,
+              "total": 42830
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 343,
+              "current_round": 16,
+              "total": 359
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 200,
+              "current_round": 8,
+              "total": 208
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 82168,
+              "current_round": 3898,
+              "total": 86066
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 156,
+              "current_round": 1,
+              "total": 157
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 128,
+              "current_round": 5,
+              "total": 133
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 56,
+              "current_round": 2,
+              "total": 58
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 94,
+              "current_round": 5,
+              "total": 99
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 106,
+              "current_round": 2,
+              "total": 108
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 245,
+              "current_round": 7,
+              "total": 252
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 731,
+              "current_round": 19,
+              "total": 750
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 220,
+              "current_round": 14,
+              "total": 234
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 89,
+              "current_round": 2,
+              "total": 91
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 581,
+              "current_round": 29,
+              "total": 610
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 154029,
+              "current_round": 7267,
+              "total": 161296
+            }
+          ]
+        },
+        {
+          "round": 20,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 22573,
+              "current_round": 931,
+              "total": 23504
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 6768,
+              "current_round": 216,
+              "total": 6984
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 42830,
+              "current_round": 2822,
+              "total": 45652
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 359,
+              "current_round": 17,
+              "total": 376
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 208,
+              "current_round": 22,
+              "total": 230
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 86066,
+              "current_round": 4537,
+              "total": 90603
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 157,
+              "current_round": 8,
+              "total": 165
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 133,
+              "current_round": 3,
+              "total": 136
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 58,
+              "current_round": 3,
+              "total": 61
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 99,
+              "current_round": 2,
+              "total": 101
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 108,
+              "current_round": 12,
+              "total": 120
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 252,
+              "current_round": 6,
+              "total": 258
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 750,
+              "current_round": 13,
+              "total": 763
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 234,
+              "current_round": 18,
+              "total": 252
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 91,
+              "current_round": 1,
+              "total": 92
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 610,
+              "current_round": 20,
+              "total": 630
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 161296,
+              "current_round": 8631,
+              "total": 169927
+            }
+          ]
+        },
+        {
+          "round": 21,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 23504,
+              "current_round": 953,
+              "total": 24457
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 6984,
+              "current_round": 234,
+              "total": 7218
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 45652,
+              "current_round": 2665,
+              "total": 48317
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 376,
+              "current_round": 18,
+              "total": 394
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 230,
+              "current_round": 7,
+              "total": 237
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 90603,
+              "current_round": 3635,
+              "total": 94238
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 165,
+              "current_round": 5,
+              "total": 170
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 136,
+              "current_round": 4,
+              "total": 140
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 61,
+              "current_round": 3,
+              "total": 64
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 101,
+              "current_round": 4,
+              "total": 105
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 120,
+              "current_round": 4,
+              "total": 124
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 258,
+              "current_round": 12,
+              "total": 270
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 763,
+              "current_round": 21,
+              "total": 784
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 252,
+              "current_round": 8,
+              "total": 260
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 92,
+              "current_round": 6,
+              "total": 98
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 630,
+              "current_round": 27,
+              "total": 657
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 169927,
+              "current_round": 7606,
+              "total": 177533
+            }
+          ]
+        },
+        {
+          "round": 22,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 24457,
+              "current_round": 1127,
+              "total": 25584
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 7218,
+              "current_round": 326,
+              "total": 7544
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 48317,
+              "current_round": 2021,
+              "total": 50338
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 394,
+              "current_round": 25,
+              "total": 419
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 237,
+              "current_round": 12,
+              "total": 249
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 94238,
+              "current_round": 4613,
+              "total": 98851
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 170,
+              "current_round": 10,
+              "total": 180
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 140,
+              "current_round": 2,
+              "total": 142
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 64,
+              "current_round": 2,
+              "total": 66
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 105,
+              "current_round": 4,
+              "total": 109
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 124,
+              "current_round": 5,
+              "total": 129
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 270,
+              "current_round": 14,
+              "total": 284
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 784,
+              "current_round": 10,
+              "total": 794
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 260,
+              "current_round": 18,
+              "total": 278
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 98,
+              "current_round": 3,
+              "total": 101
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 657,
+              "current_round": 38,
+              "total": 695
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 177533,
+              "current_round": 8230,
+              "total": 185763
+            }
+          ]
+        },
+        {
+          "round": 23,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 25584,
+              "current_round": 885,
+              "total": 26469
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 7544,
+              "current_round": 283,
+              "total": 7827
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 50338,
+              "current_round": 2027,
+              "total": 52365
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 419,
+              "current_round": 10,
+              "total": 429
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 249,
+              "current_round": 10,
+              "total": 259
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 98851,
+              "current_round": 3519,
+              "total": 102370
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 180,
+              "current_round": 7,
+              "total": 187
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 142,
+              "current_round": 3,
+              "total": 145
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 66,
+              "current_round": 2,
+              "total": 68
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 109,
+              "current_round": 2,
+              "total": 111
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 129,
+              "current_round": 2,
+              "total": 131
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 284,
+              "current_round": 6,
+              "total": 290
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 794,
+              "current_round": 13,
+              "total": 807
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 278,
+              "current_round": 8,
+              "total": 286
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 101,
+              "current_round": 3,
+              "total": 104
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 695,
+              "current_round": 46,
+              "total": 741
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 185763,
+              "current_round": 6826,
+              "total": 192589
+            }
+          ]
+        },
+        {
+          "round": 24,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 26469,
+              "current_round": 977,
+              "total": 27446
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 7827,
+              "current_round": 340,
+              "total": 8167
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 52365,
+              "current_round": 1910,
+              "total": 54275
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 429,
+              "current_round": 13,
+              "total": 442
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 259,
+              "current_round": 3,
+              "total": 262
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 102370,
+              "current_round": 4085,
+              "total": 106455
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 187,
+              "current_round": 9,
+              "total": 196
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 145,
+              "current_round": 1,
+              "total": 146
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 68,
+              "current_round": 4,
+              "total": 72
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 111,
+              "current_round": 3,
+              "total": 114
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 131,
+              "current_round": 2,
+              "total": 133
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 290,
+              "current_round": 5,
+              "total": 295
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 807,
+              "current_round": 11,
+              "total": 818
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 286,
+              "current_round": 11,
+              "total": 297
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 104,
+              "current_round": 1,
+              "total": 105
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 741,
+              "current_round": 32,
+              "total": 773
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 192589,
+              "current_round": 7407,
+              "total": 199996
+            }
+          ]
+        },
+        {
+          "round": 25,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 27446,
+              "current_round": 646,
+              "total": 28092
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 8167,
+              "current_round": 167,
+              "total": 8334
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 54275,
+              "current_round": 1611,
+              "total": 55886
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 442,
+              "current_round": 10,
+              "total": 452
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 262,
+              "current_round": 7,
+              "total": 269
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 106455,
+              "current_round": 2684,
+              "total": 109139
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 196,
+              "current_round": 2,
+              "total": 198
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 146,
+              "current_round": 2,
+              "total": 148
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 72,
+              "current_round": 0,
+              "total": 72
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 114,
+              "current_round": 3,
+              "total": 117
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 133,
+              "current_round": 3,
+              "total": 136
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 295,
+              "current_round": 11,
+              "total": 306
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 818,
+              "current_round": 14,
+              "total": 832
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 297,
+              "current_round": 10,
+              "total": 307
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 105,
+              "current_round": 3,
+              "total": 108
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 773,
+              "current_round": 17,
+              "total": 790
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 199996,
+              "current_round": 5190,
+              "total": 205186
+            }
+          ]
+        },
+        {
+          "round": 26,
+          "candidates": [
+            {
+              "name": "KUPPAN. K",
+              "party": "All India Anna Dravida Munnetra Kazhagam",
+              "brought_forward": 28092,
+              "current_round": 98,
+              "total": 28190
+            },
+            {
+              "name": "SATHYA. B",
+              "party": "Naam Tamilar Katchi",
+              "brought_forward": 8334,
+              "current_round": 46,
+              "total": 8380
+            },
+            {
+              "name": "SUNDARARAJ. L",
+              "party": "Communist Party of India (Marxist)",
+              "brought_forward": 55886,
+              "current_round": 379,
+              "total": 56265
+            },
+            {
+              "name": "MAHENDRA KUMAR. D",
+              "party": "Bahujan Samaj Party",
+              "brought_forward": 452,
+              "current_round": 3,
+              "total": 455
+            },
+            {
+              "name": "SASIREKHA. M",
+              "party": "Veerath Thiyagi Viswanathadoss Thozhilalarkal Katchi",
+              "brought_forward": 269,
+              "current_round": 2,
+              "total": 271
+            },
+            {
+              "name": "SENTHIL KUMAR. N",
+              "party": "Tamilaga Vettri Kazhagam",
+              "brought_forward": 109139,
+              "current_round": 649,
+              "total": 109788
+            },
+            {
+              "name": "DILLI KUMAR. R",
+              "party": "Democratic National Allegiance",
+              "brought_forward": 198,
+              "current_round": 0,
+              "total": 198
+            },
+            {
+              "name": "VENKATARAMANAN. J",
+              "party": "Tamizhaga Vaazhvurimai Katchi",
+              "brought_forward": 148,
+              "current_round": 0,
+              "total": 148
+            },
+            {
+              "name": "ARAVIND. R",
+              "party": "Independent",
+              "brought_forward": 72,
+              "current_round": 0,
+              "total": 72
+            },
+            {
+              "name": "GOPI. K",
+              "party": "Independent",
+              "brought_forward": 117,
+              "current_round": 0,
+              "total": 117
+            },
+            {
+              "name": "THANIKASALAM. B",
+              "party": "Independent",
+              "brought_forward": 136,
+              "current_round": 2,
+              "total": 138
+            },
+            {
+              "name": "BALARUBAN",
+              "party": "Independent",
+              "brought_forward": 306,
+              "current_round": 1,
+              "total": 307
+            },
+            {
+              "name": "MICHAELRAJ. M. A",
+              "party": "Independent",
+              "brought_forward": 832,
+              "current_round": 0,
+              "total": 832
+            },
+            {
+              "name": "VIJAY. A",
+              "party": "Independent",
+              "brought_forward": 307,
+              "current_round": 3,
+              "total": 310
+            },
+            {
+              "name": "JANAGARAJ",
+              "party": "Independent",
+              "brought_forward": 108,
+              "current_round": 1,
+              "total": 109
+            },
+            {
+              "name": "NOTA",
+              "party": "None of the Above",
+              "brought_forward": 790,
+              "current_round": 5,
+              "total": 795
+            },
+            {
+              "name": "",
+              "party": "Total",
+              "brought_forward": 205186,
+              "current_round": 1189,
+              "total": 206375
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

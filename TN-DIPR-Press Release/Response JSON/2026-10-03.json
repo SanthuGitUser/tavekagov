@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-03",
+  "fetchedAt": "2026-10-07T17:07:57.983379+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:57.983379+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-03"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22670,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.791_-_Elections_Department_-_press_release__48_hours_Restrictions_before_time_Closure_-_English_-_Date_-_03.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.791 - Elections Department - press release  48 hours Restrictions before time Closure - English - Date - 03.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-03",
+        "language": "en"
+      },
+      {
+        "id": 22671,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.791_-_Elections_Department_-_press_release__48_hours_Restrictions_before_time_Closure_-_Tamil_-_Date_-_03.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.791 - Elections Department - press release  48 hours Restrictions before time Closure - Tamil - Date - 03.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-03",
+        "language": "en"
+      },
+      {
+        "id": 22672,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.792_-_Hon_ble_CM_Social_Media_Message_-_Wishes_to_Indian_Mens_Cricket_Team_Player_Washington_Sundar_-_Gold_Medal_-_Date_-_3.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.792 - Hon'ble CM Social Media Message - Wishes to Indian Mens Cricket Team Player Washington Sundar - Gold Medal - Date - 3.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-03",
+        "language": "en"
+      }
+    ]
+  }
+}

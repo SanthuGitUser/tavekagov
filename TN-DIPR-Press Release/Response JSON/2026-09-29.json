@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-29",
+  "fetchedAt": "2026-10-07T17:07:56.976279+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:56.976279+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-29"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22621,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.753-Hon_ble_Ministers-Mayor_Sivaraj_Statue_Garlanding-Date_29.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.753-Hon'ble Ministers-Mayor Sivaraj Statue Garlanding-Date 29.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22625,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No._754_-TN__Handicrafts_Development_Corporation_Press_Relesae_-_Poompuhar_-English_-Date-29.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No. 754 -TN  Handicrafts Development Corporation Press Relesae - Poompuhar -English -Date-29.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22626,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No._754_-TN__Handicrafts_Development_Corporation_Press_Relesae_-_Poompuhar_-Tamil_-Date-29.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No. 754 -TN  Handicrafts Development Corporation Press Relesae - Poompuhar -Tamil -Date-29.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22627,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.755-Hon_ble_CM_Press_Release_-_HCM_Praised_Kovilpalayam_HC_Velmurugan_for_arresting_Drug_traffickers_-Date__29.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.755-Hon'ble CM Press Release - HCM Praised Kovilpalayam HC Velmurugan for arresting Drug traffickers -Date  29.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22628,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-756-TN_Skill_Development_Corporation_Press_Release-_TN_Skills_2026_-English_-Date_29.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-756-TN Skill Development Corporation Press Release- TN Skills 2026 -English -Date 29.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22629,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.756-_TN_Skill_Development_Corporation__Press_Release_TN_Skills_2026_-Tamil_-_Date-_29.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.756- TN Skill Development Corporation  Press Release TN Skills 2026 -Tamil - Date- 29.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22630,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-757_-Employment___Training__Press_Release-SKOCH_Award_-Date_29.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-757 -Employment & Training  Press Release-SKOCH Award -Date 29.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22631,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.758-Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Death_of_HC_Kannaki_-_Ramanathapuram_Dist_-_Date_29.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.758-Hon'ble CM Press Release - Condolence and Relief - Death of HC Kannaki - Ramanathapuram Dist - Date 29.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22632,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.759-Hon_ble_CM_Social_Media_Message_-_Asian_Games_Athlete_Vidya_Ramraj_Gold_Medal_in_Womens_Relay_Race_-_Date_29.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-29",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.759-Hon'ble CM Social Media Message - Asian Games Athlete Vidya Ramraj Gold Medal in Womens Relay Race - Date 29.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22633,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-760-Hon_ble_CM_Social_Media_Message_-_Asian_Games_-_4_X_400_Mens_Relay_Race_Bronze_Medal_-_Date_29.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-760-Hon'ble CM Social Media Message - Asian Games - 4 X 400 Mens Relay Race Bronze Medal - Date 29.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22634,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-761-Hon_ble_CM_Social_Media_Message_-_Asian_Games_-_Athelete_Abinaya_Rajarajan_won_Bronze_Medal_-Date__29.9.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-761-Hon'ble CM Social Media Message - Asian Games - Athelete Abinaya Rajarajan won Bronze Medal -Date  29.9.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      },
+      {
+        "id": 22635,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-761-Hon_ble_CM_Social_Media_Message_-_Asian_Games_-_Athelete_Abinaya_Rajarajan_won_Bronze_Medal_-Date__29.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-30",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-761-Hon'ble CM Social Media Message - Asian Games - Athelete Abinaya Rajarajan won Bronze Medal -Date  29.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-29",
+        "language": "en"
+      }
+    ]
+  }
+}

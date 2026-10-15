@@ -1,0 +1,166 @@
+{
+  "date": "2026-09-03",
+  "fetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "lastFetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 4,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr030926_e.jpg",
+      "release_date": "2026-09-03",
+      "title": "A consultation meeting was held at the Secretariat in the presence of the Honble Minister for Finance, Planning and Development and the Honble Minister for Commercial Taxes and Registration, ahead of the 57th meeting of the Goods and Services Tax Council",
+      "file_name": "pr030926_e.jpg",
+      "minister_name": "Dr N. Marie Wilson",
+      "department_name": "Finance Department",
+      "minister_id": 29,
+      "department_id": 9,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr030926b.jpg",
+      "release_date": "2026-09-03",
+      "title": "Government Resolution moved by the Honble Chief Minister in the Tamil Nadu Legislative Assembly urging the Union Government to recognize Tamil as the primary court language of the Madras High Court",
+      "file_name": "pr030926b.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr030926a.jpg",
+      "release_date": "2026-09-03",
+      "title": "Honble Chief Minister announced the establishment of a world-class “Tamil Nadu Olympic City” in Chennai, a world-class “Motor Sports City” in Tamil Nadu, and a new building complex comprising the Legislative Assembly and Secretariat with modern facilities in Chennai under Rule 110 in the Tamil Nadu Legislative Assembly",
+      "file_name": "pr030926a.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr030926_cfcpa.jpg",
+      "release_date": "2026-09-03",
+      "title": "Honble Minister for Food and Civil Supplies and Honble Minister for Cooperation inaugurated the scheme for selling onions at ₹35 per kg to family cardholders at the Fair Price Shop of the Triplicane Urban Cooperative Society in Alwarpet, Chennai, to control the rise in onion prices",
+      "file_name": "pr030926_cfcpa.jpg",
+      "minister_name": "Thiru P. Venkataramanan",
+      "department_name": "Co-operation, Food and Consumer Protection Department",
+      "minister_id": 6,
+      "department_id": 5,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    },
+    {
+      "id": 6,
+      "name": "Thiru P. Venkataramanan",
+      "designation": "Minister for Food and Civil Supplies",
+      "portfolios": [
+        "Food and Civil Supplies, Consumer Protection and Price Control"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/025_Venkataramanan.png",
+      "display_order": 6,
+      "is_chief_minister": false
+    },
+    {
+      "id": 29,
+      "name": "Dr N. Marie Wilson",
+      "designation": "Minister for Finance, Planning and Development",
+      "portfolios": [
+        "Finance, Pensions and Pensionary Benefits",
+        "Planning & Development"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/011_Marie_Wilson.png",
+      "display_order": 29,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 5,
+      "name": "Co-operation, Food and Consumer Protection Department",
+      "dep_id_encoded": "NQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru V. Gandhiraj",
+      "display_order": 6
+    },
+    {
+      "id": 9,
+      "name": "Finance Department",
+      "dep_id_encoded": "OQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=OQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Dr N. Marie Wilson",
+      "display_order": 9
+    }
+  ]
+}

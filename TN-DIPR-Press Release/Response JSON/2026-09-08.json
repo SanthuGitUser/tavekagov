@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-08",
+  "fetchedAt": "2026-10-07T17:07:51.512109+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:51.512109+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-08"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22459,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.629_-_Hon_ble_CM_Press_Release_-_North_East_Monsoon_Precautionary_Meeting_-_Date_-_8.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-08",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.629 - Hon'ble CM Press Release - North East Monsoon Precautionary Meeting - Date - 8.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-08",
+        "language": "en"
+      },
+      {
+        "id": 22460,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.630_-TN__Dr.J.Jayalalithaa_Music___Fine_Arts_University_Press_Release-Date_08.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-08",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.630 -TN  Dr.J.Jayalalithaa Music & Fine Arts University Press Release-Date 08.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-08",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-19",
+  "fetchedAt": "2026-10-07T17:07:54.328526+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:54.328526+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-19"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22561,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.702_-_Employment_and_Training_Dept_Press_Release_-_Date_-_19.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-19",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.702 - Employment and Training Dept Press Release - Date - 19.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-19",
+        "language": "en"
+      },
+      {
+        "id": 22562,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.703_-_Forest_Dept_-_Press_Release_-_Date_-_19.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-19",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.703 - Forest Dept - Press Release - Date - 19.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-19",
+        "language": "en"
+      },
+      {
+        "id": 22563,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.704-Hon___ble_MSME_Minister___s_First_Domestic_Exposure_Visit_Commences_in_the_State_of_Telangana____Press_Release-Date_19.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-21",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.704-Hon’ble MSME Minister’s First Domestic Exposure Visit Commences in the State of Telangana –Press Release-Date 19.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-19",
+        "language": "en"
+      }
+    ]
+  }
+}

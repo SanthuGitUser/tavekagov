@@ -1,9 +1,15 @@
 {
   "source_url": "https://financedept.tn.gov.in/en/",
-  "fetchedAt": "2026-08-18T10:12:09+05:30",
-  "count": 4,
-  "downloadedThisRun": 0,
+  "fetchedAt": "2026-10-07T17:11:55+05:30",
+  "count": 5,
+  "downloadedThisRun": 1,
   "items": [
+    {
+      "title": "Main Appropriation G.O for the year 2026-27",
+      "pdf_url": "https://financedept.tn.gov.in/en/my-documents/2020/07/G.O.188_Main-Appropriation-Act.pdf",
+      "file_name": "G.O.188_Main-Appropriation-Act.pdf",
+      "local_path": "PDFs/G.O.188_Main-Appropriation-Act.pdf"
+    },
     {
       "title": "Revised Budget Speech 2026-2027",
       "pdf_url": "https://financedept.tn.gov.in/en/my-documents/2020/07/RBE-English_Speech_2026-27_Final-1.pdf",
@@ -11,7 +17,7 @@
       "local_path": "PDFs/RBE-English_Speech_2026-27_Final-1.pdf"
     },
     {
-      "title": "Revised Citizen&#039;s Guide to Budget 2026-2027",
+      "title": "Citizen’s Guide Revised Budget 2026-2027",
       "pdf_url": "https://financedept.tn.gov.in/en/my-documents/2020/07/CITIZEN-BUDGET-2026-27-ENGLISH.pdf",
       "file_name": "CITIZEN-BUDGET-2026-27-ENGLISH.pdf",
       "local_path": "PDFs/CITIZEN-BUDGET-2026-27-ENGLISH.pdf"

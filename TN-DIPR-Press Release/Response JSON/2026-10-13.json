@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-13",
+  "fetchedAt": "2026-10-15T11:56:04.403539+05:30",
+  "lastFetchedAt": "2026-10-15T11:56:04.403539+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-13"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22725,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.834-Hon_ble_CM_Social_Media_Message_-_Thyagi_Sankaralinganaar_Death_Anniversary_-_Date_13.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.834-Hon'ble CM Social Media Message - Thyagi Sankaralinganaar Death Anniversary - Date 13.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-13",
+        "language": "en"
+      },
+      {
+        "id": 22726,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No._835_-Environment___Climate_Change_Dept_Press_Release-Awards-Date_13.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No. 835 -Environment & Climate Change Dept Press Release-Awards-Date 13.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-13",
+        "language": "en"
+      },
+      {
+        "id": 22727,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.836_-_Indian_Medicine_and_Homoeopathy_Department_Press_Release_-_English_-_Date_-_13.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.836 - Indian Medicine and Homoeopathy Department Press Release - English - Date - 13.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-13",
+        "language": "en"
+      },
+      {
+        "id": 22728,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.836_-_Indian_Medicine_and_Homoeopathy_Department_Press_Release_-_Tamil_-_Date_-_13.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.836 - Indian Medicine and Homoeopathy Department Press Release - Tamil - Date - 13.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-13",
+        "language": "en"
+      },
+      {
+        "id": 22729,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.837_-_Hon_ble_CM_Press_Release_-_Hon_ble_TN_CM_met_Hon_ble_AP_CM_Reg_Godavari_Cauvery_link_project_and_Krishna_Water_-_Date_-_13.10.2.026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-13",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.837 - Hon'ble CM Press Release - Hon'ble TN CM met Hon'ble AP CM Reg Godavari Cauvery link project and Krishna Water - Date - 13.10.2.026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-13",
+        "language": "en"
+      },
+      {
+        "id": 22730,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.838_-__Directorate_of_Minorities_Welfare_Press_Release_-_Date_-_13.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-14",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.838 -  Directorate of Minorities Welfare Press Release - Date - 13.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-13",
+        "language": "en"
+      }
+    ]
+  }
+}

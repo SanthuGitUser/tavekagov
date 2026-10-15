@@ -5,13 +5,21 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "18-08-2026",
+  "start_date": "29-08-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:38.071420+05:30",
-  "lastFetchedAt": "2026-08-18T10:12:18.478283+05:30",
-  "fetchCount": 13,
-  "count": 7,
+  "lastFetchedAt": "2026-10-07T17:12:04.841809+05:30",
+  "fetchCount": 14,
+  "count": 8,
   "orders": [
+    {
+      "go_date": "2026-09-18",
+      "go_number": "G.O Ms. No. 575",
+      "go_name": "Holidays - Public Holiday - Bye-Election to Tamil Nadu Legislative Assembly from 35.Madurantakam (SC) and 101.Dharapuram (SC) Assembly Constituencies - Declaration of the poll day 06.10.2026 (Tuesday) as Public Holiday - Notified",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/public_e_575_2026.pdf",
+      "department_name": "Public Department",
+      "dep_id_encoded": "MjQ="
+    },
     {
       "go_date": "2026-05-30",
       "go_number": "G.O Ms. No. 366",

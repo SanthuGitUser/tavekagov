@@ -5,13 +5,21 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "18-08-2026",
+  "start_date": "29-08-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:32.497505+05:30",
-  "lastFetchedAt": "2026-08-18T10:12:13.036116+05:30",
-  "fetchCount": 13,
-  "count": 9,
+  "lastFetchedAt": "2026-10-07T17:11:59.100729+05:30",
+  "fetchCount": 14,
+  "count": 10,
   "orders": [
+    {
+      "go_date": "2026-09-11",
+      "go_number": "Letter No. 15120106/Finance (TAPS)/2026-2",
+      "go_name": "Tamil Nadu Assured Pension Scheme (TAPS) - Grant of Interim Monthly Payout – Further clarification issued- Regarding",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_15120106_2026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
     {
       "go_date": "2026-07-28",
       "go_number": "G.O.Ms.No. 152",

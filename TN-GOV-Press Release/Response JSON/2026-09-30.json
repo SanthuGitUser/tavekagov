@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-30",
+  "fetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "lastFetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr300926_he.jpg",
+      "release_date": "2026-09-30",
+      "title": "Honble Minister for Higher Education chaired a tripartite meeting on Annamalai University staff demands",
+      "file_name": "pr300926_he.jpg",
+      "minister_name": "Thiru P. Viswanathan",
+      "department_name": "Higher Education Department",
+      "minister_id": 11,
+      "department_id": 12,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 11,
+      "name": "Thiru P. Viswanathan",
+      "designation": "Minister for Higher Education",
+      "portfolios": [
+        "Higher Education including Technical Education, Electronics, Science and Technology"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/188_Viswanathan.png",
+      "display_order": 11,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 12,
+      "name": "Higher Education Department",
+      "dep_id_encoded": "MTI=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTI=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru P. Viswanathan",
+      "display_order": 12
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-06",
+  "fetchedAt": "2026-10-07T17:07:58.744706+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:58.744706+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-06"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22676,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.796_-_EDII_-_Laptop_Harware___Chip_Level_Training_Press_Release_-_English_-_Date.06.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.796 - EDII - Laptop Harware & Chip Level Training Press Release - English - Date.06.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-06",
+        "language": "en"
+      },
+      {
+        "id": 22677,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.796_-_EDII_-_Laptop_Harware___Chip_Level_Training_Press_Release_-_Tamil_-_Date.06.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.796 - EDII - Laptop Harware & Chip Level Training Press Release - Tamil - Date.06.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-06",
+        "language": "en"
+      },
+      {
+        "id": 22678,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.797_-_Hon_ble_Minister_for_Housing_and_Urban_Development_Press_Release_Tamilnadu_Housing_Board_-_Date_-_06.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.797 - Hon'ble Minister for Housing and Urban Development Press Release Tamilnadu Housing Board - Date - 06.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-06",
+        "language": "en"
+      },
+      {
+        "id": 22679,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.798_-_Recruitment_For_Various_Posts_at_DCWSS_Press_Release_-_Date_-_06.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.798 - Recruitment For Various Posts at DCWSS Press Release - Date - 06.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-06",
+        "language": "en"
+      }
+    ]
+  }
+}

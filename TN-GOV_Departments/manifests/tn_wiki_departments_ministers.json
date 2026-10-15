@@ -1,6 +1,6 @@
 {
   "source_url": "https://en.wikipedia.org/wiki/List_of_departments_of_the_government_of_Tamil_Nadu",
-  "fetchedAt": "2026-08-18T10:12:58.265109+05:30",
+  "fetchedAt": "2026-10-07T17:12:57.465568+05:30",
   "count": 43,
   "departments": [
     {
@@ -233,9 +233,9 @@
     },
     {
       "department": "Department of Tourism, Culture and Religious Endowments",
-      "minister": "Thiru S. Rajesh Kumar",
+      "minister": "Thiru Ramesh",
       "minister_source": "tn.gov.in dept_profile",
-      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzI="
+      "department_profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDY="
     },
     {
       "department": "Department of Transport",

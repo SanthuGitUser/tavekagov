@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-15",
+  "fetchedAt": "2026-10-07T17:07:53.272843+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:53.272843+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-15"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22511,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.665_-_Hon_ble_CM_Social_Media_Message_-_Perarignar_Anna_Birthday_-_Date.15.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.665 - Hon'ble CM Social Media Message - Perarignar Anna Birthday - Date.15.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22512,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.666_Hon_ble_CM_Social_Media_Message_-_National_Engineers_Day-Press_Release_-Date-15.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.666 Hon'ble CM Social Media Message - National Engineers Day-Press Release -Date-15.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22513,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.667_-_Hon_ble_Ministers_Function_I_PR_Dept_Press_Release_-_Perarignar_Anna_Birthday_-_Date.15.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.667 - Hon'ble Ministers Function I&PR Dept Press Release - Perarignar Anna Birthday - Date.15.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22514,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.668_-_Hon_ble_CM_Press_Release_-_HCM_visit_to_UK_-_Investors_Meet_-_Date_-_15.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.668 - Hon'ble CM Press Release - HCM visit to UK - Investors Meet - Date - 15.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22515,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.669_-_Elections_Press_Release_-_The_Notification_For_The_Bye_Election_to_Tamilnadu_-_English_-_Date_-_15.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.669 - Elections Press Release - The Notification For The Bye Election to Tamilnadu - English - Date - 15.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22516,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.669_-_Elections_Press_Release_-_The_Notification_For_The_Bye_Election_to_Tamilnadu_-_Tamil_-_Date_-_15.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.669 - Elections Press Release - The Notification For The Bye Election to Tamilnadu - Tamil - Date - 15.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22517,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.670_-_Transport_Department_Press_Release_-_0mni_Bus_Checking_-_Date_-_15.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.670 - Transport Department Press Release - 0mni Bus Checking - Date - 15.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22518,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.671_-_Transport_Department_Press_Release_on_Digital_DL__RC_-_English_-_Date_-_15.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.671 - Transport Department Press Release on Digital DL  RC - English - Date - 15.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22519,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.671_-_Transport_Department_Press_Release_on_Digital_DL__RC_-_Tamil_-_Date_-_15.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.671 - Transport Department Press Release on Digital DL  RC - Tamil - Date - 15.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22520,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.672_-_Elections_Press_Release_-_Exit_Poll_Bye_Elections_-_English_-_Date_-_15.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.672 - Elections Press Release - Exit Poll Bye Elections - English - Date - 15.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22521,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.672_-_Elections_Press_Release_-_Exit_Poll_Bye_Elections_-_Tamil_-_Date_-_15.09.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-15",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.672 - Elections Press Release - Exit Poll Bye Elections - Tamil - Date - 15.09.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      },
+      {
+        "id": 22522,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.673__-_Tambaram_Corporation_-_Press_Release__-_Date_-_15.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-16",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.673  - Tambaram Corporation - Press Release  - Date - 15.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-15",
+        "language": "en"
+      }
+    ]
+  }
+}

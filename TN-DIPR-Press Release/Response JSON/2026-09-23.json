@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-23",
+  "fetchedAt": "2026-10-07T17:07:55.382758+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:55.382758+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-23"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22581,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.720_-_Hon_ble_CM_Social_Media_Message_-_Tamil_Nadu_Organ_Donation_Day_-_Date_-_23.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.720 - Hon'ble CM Social Media Message - Tamil Nadu Organ Donation Day - Date - 23.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      },
+      {
+        "id": 22582,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.721_-_Hon_ble_CM_Press_Release_-_HCM_Inspection_to_TNEB_Head_Office_and_Review_-_Date_-_23.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.721 - Hon'ble CM Press Release - HCM Inspection to TNEB Head Office and Review - Date - 23.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      },
+      {
+        "id": 22583,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.722_-_Hon_ble_Ministers_Press_Release_Review_Meeting_-_Date_-_23.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.722 - Hon'ble Ministers Press Release Review Meeting - Date - 23.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      },
+      {
+        "id": 22584,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.723-Hon_ble_Minister_for_Social_Justice-Press_Release-Date_23.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.723-Hon'ble Minister for Social Justice-Press Release-Date 23.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      },
+      {
+        "id": 22585,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.724-Hon_ble_Speaker_Press_Release-Date_23.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.724-Hon'ble Speaker Press Release-Date 23.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      },
+      {
+        "id": 22586,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.725-Hon_ble_Minister_for_Food_and_Civil_Supplies-Press_Release-Date_23.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.725-Hon'ble Minister for Food and Civil Supplies-Press Release-Date 23.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      },
+      {
+        "id": 22587,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.726-Hon_ble_CM_Social_Media_Message_-_Greetings_to_TN_Badmiton_Player_Hariharan_for_Asian_Games_Bronze_Medal_-Date_23.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.726-Hon'ble CM Social Media Message - Greetings to TN Badmiton Player Hariharan for Asian Games Bronze Medal -Date 23.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      },
+      {
+        "id": 22588,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.727-Hon_ble_Minister_for_Handlooms__Textiles_and_Khadi-Press_Release-Date_23.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.727-Hon'ble Minister for Handlooms, Textiles and Khadi-Press Release-Date 23.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      },
+      {
+        "id": 22589,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.728-Hon_ble_Minister_for_Handlooms__Textiles_and_Khadi-Kolu_Exhibition-Press_Release-Date.23.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.728-Hon'ble Minister for Handlooms, Textiles and Khadi-Kolu Exhibition-Press Release-Date.23.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-23",
+        "language": "en"
+      }
+    ]
+  }
+}

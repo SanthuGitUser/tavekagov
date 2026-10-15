@@ -1,0 +1,150 @@
+{
+  "date": "2026-09-03",
+  "fetchedAt": "2026-10-07T17:07:50.257465+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:50.257465+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-03"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22434,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.TNLA.NO.021_-_Hon_ble_CM_Assembly_110_Statement_-_Sports_Dept_-_Tamil_Nadu_Olympic_City_-_Date_-_3.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR.TNLA.NO.021 - Hon'ble CM Assembly 110 Statement - Sports Dept - Tamil Nadu Olympic City - Date - 3.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22435,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.TNLA.NO.022_-_Hon_ble_CM_Assembly_110_Statement_-_Sports_Dept_-_Motor_Sports_City_-_Date_-_3.9.2026.doc.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR.TNLA.NO.022 - Hon'ble CM Assembly 110 Statement - Sports Dept - Motor Sports City - Date - 3.9.2026.doc.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22436,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.TNLA.023_-_Hon_ble_CM_Assembly_110_Statement_-_Construction_of_New_Secretariat_Building_-_Date_-_3.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR.TNLA.023 - Hon'ble CM Assembly 110 Statement - Construction of New Secretariat Building - Date - 3.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22437,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.609_-_Hon_ble_Ministers_Press_Release_-_Co-Operative_Ration_Shop_-_Date_-_03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.609 - Hon'ble Ministers Press Release - Co-Operative Ration Shop - Date - 03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22438,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.610_-_Employement_Tranining_Admission_Extension_Press_Release_-_Date_-_03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.610 - Employement Tranining Admission Extension Press Release - Date - 03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22439,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.611_-_Non-Resident_Tamils_Welfare_Dept_Press_Release_-_Nepal_Flood_Disaster_-_DNA_Test_for_Missing_Tamil_People_-_Date.03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.611 - Non-Resident Tamils Welfare Dept Press Release - Nepal Flood Disaster - DNA Test for Missing Tamil People - Date.03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22440,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.612_-_Co-operation_Dept_Press_Release_-_Date.03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.612 - Co-operation Dept Press Release - Date.03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22441,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.613_-_Minorities_Welfare_Dept_Press_Release_-_Date.03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.613 - Minorities Welfare Dept Press Release - Date.03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22442,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.614_-_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Fire_Crackers_Accident_CMPRF_-_Date.03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.614 - Hon'ble CM Press Release - Condolence and Relief - Fire Crackers Accident CMPRF - Date.03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22443,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.615_-_Tamil_Development_Dept_TamilOli_Potti_Press_Release_-_Date.03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.615 - Tamil Development Dept TamilOli Potti Press Release - Date.03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22444,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.616_-_Tamilnadu_Pollution_Control_Board_Press_Rlease_-_English_-_Date.03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.616 - Tamilnadu Pollution Control Board Press Rlease - English - Date.03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      },
+      {
+        "id": 22445,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.616_-_Tamilnadu_Pollution_Control_Board_Press_Rlease_-_Tamil_-_Date.03.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.616 - Tamilnadu Pollution Control Board Press Rlease - Tamil - Date.03.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-03",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-25",
+  "fetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "lastFetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr250926_sedu.jpg",
+      "release_date": "2026-09-25",
+      "title": "Honble Minister for School Education, Tamil Development, Information and Publicity inaugurated the Ilaiyor Ilakkiya Payirchi Pasarai Programme",
+      "file_name": "pr250926_sedu.jpg",
+      "minister_name": "Thiru Rajmohan",
+      "department_name": "Tamil Dev. and Information Department",
+      "minister_id": 8,
+      "department_id": 31,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "medium",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 8,
+      "name": "Thiru Rajmohan",
+      "designation": "Minister for School Education, Tamil Development, Information and Publicity",
+      "portfolios": [
+        "School Education",
+        "Archaeology",
+        "Tamil Official Language and Tamil Culture, Information & Publicity, Film Technology and Cinematograph Act, Newsprint Control, Stationery and Printing, Government Press"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/016_Rajmohan.png",
+      "display_order": 8,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 31,
+      "name": "Tamil Dev. and Information Department",
+      "dep_id_encoded": "MzE=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzE=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Rajmohan",
+      "display_order": 36
+    }
+  ]
+}

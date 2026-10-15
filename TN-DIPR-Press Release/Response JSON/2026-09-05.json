@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-05",
+  "fetchedAt": "2026-10-07T17:07:50.768961+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:50.768961+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-05"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22449,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-620-Hon_ble_CM_Social_Media_Message_-_Teachers_Day_2026-Date_05.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-620-Hon'ble CM Social Media Message - Teachers Day 2026-Date 05.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-05",
+        "language": "en"
+      },
+      {
+        "id": 22450,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-621-Hon_ble_CM_Social_Media_Message_-_Freedom_fighter_VOC_Birthday__-Date__5.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-621-Hon'ble CM Social Media Message - Freedom fighter VOC Birthday  -Date  5.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-05",
+        "language": "en"
+      },
+      {
+        "id": 22451,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-622_-Hon_ble_Minister_Press_Release-V.O_Chidambaram_Birth_Anniversary_-Date_05.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-622 -Hon'ble Minister Press Release-V.O Chidambaram Birth Anniversary -Date 05.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-05",
+        "language": "en"
+      },
+      {
+        "id": 22452,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.623_-_CS__Press_Release_-__GCC_Inspection_-_Date.05.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.623 - CS  Press Release -  GCC Inspection - Date.05.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-05",
+        "language": "en"
+      },
+      {
+        "id": 22453,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.624_-_TNPCB_Press_Release_-_English_-_Date.05.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.624 - TNPCB Press Release - English - Date.05.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-05",
+        "language": "en"
+      },
+      {
+        "id": 22454,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.624_-_TNPCB_Press_Release_-_Tamil_-_Date.05.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-05",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.624 - TNPCB Press Release - Tamil - Date.05.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-05",
+        "language": "en"
+      },
+      {
+        "id": 22455,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.625_-_Hon_ble_CM_Press_Release_-_Condolence_-__Road_Accident___Keralam_-_Dindigul_Dist_8_College_Students_death_-_Date.05.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.625 - Hon'ble CM Press Release - Condolence -  Road Accident @ Keralam - Dindigul Dist 8 College Students death - Date.05.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-05",
+        "language": "en"
+      },
+      {
+        "id": 22456,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.626_-_Hon_ble_CM_Press_Release_-_Condolence___Releif_-_Viruthunagar_Dist__Othaiyal_Village_-_Fire_Accident_-_CMPRF-_Date.05.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.626 - Hon'ble CM Press Release - Condolence & Releif - Viruthunagar Dist, Othaiyal Village - Fire Accident - CMPRF- Date.05.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-05",
+        "language": "en"
+      }
+    ]
+  }
+}

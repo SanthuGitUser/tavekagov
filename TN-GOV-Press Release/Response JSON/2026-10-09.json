@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-09",
+  "fetchedAt": "2026-10-15T11:56:06.696549+05:30",
+  "lastFetchedAt": "2026-10-15T11:56:06.696549+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 3,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr091026_cf1.jpg",
+      "release_date": "2026-10-09",
+      "title": "Hon’ble Cooperation Minister inspected the dispatch of 700 metric tonnes of onions to fair price shops in Chennai",
+      "file_name": "pr091026_cf1.jpg",
+      "minister_name": null,
+      "department_name": null,
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": false,
+      "parse_confidence": "low",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr091026_he.jpg",
+      "release_date": "2026-10-09",
+      "title": "Hiroshima Deputy Governor paid a courtesy visit to the Hon’ble Minister for Higher Education at the Secretariat",
+      "file_name": "pr091026_he.jpg",
+      "minister_name": "Thiru P. Viswanathan",
+      "department_name": "Higher Education Department",
+      "minister_id": 11,
+      "department_id": 12,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "medium",
+      "department_match_confidence": "medium",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr081026_fd1.jpg",
+      "release_date": "2026-10-09",
+      "title": "Hon’ble Forest Minister launched a wildlife ambulance at Guindy Children’s Nature Park - Tamil Version",
+      "file_name": "pr081026_fd1.jpg",
+      "minister_name": null,
+      "department_name": null,
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": false,
+      "parse_confidence": "low",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [
+    {
+      "id": 11,
+      "name": "Thiru P. Viswanathan",
+      "designation": "Minister for Higher Education",
+      "portfolios": [
+        "Higher Education including Technical Education, Electronics, Science and Technology"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/188_Viswanathan.png",
+      "display_order": 11,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 12,
+      "name": "Higher Education Department",
+      "dep_id_encoded": "MTI=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTI=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru P. Viswanathan",
+      "display_order": 12
+    }
+  ]
+}

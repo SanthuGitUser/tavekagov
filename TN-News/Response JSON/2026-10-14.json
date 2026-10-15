@@ -1,0 +1,490 @@
+{
+  "date": "2026-10-14",
+  "fetchedAt": "2026-10-15T11:58:05.894673+05:30",
+  "lastFetchedAt": "2026-10-15T11:58:05.894673+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 10,
+    "apiReportedTotalResults": 21,
+    "results": [
+      {
+        "article_id": "623d8ed4bc458b12e071eeb50a9b5f0b",
+        "link": "https://www.thenewsminute.com/tamil-nadu/madras-hc-questions-tamil-nadu-police-over-repeated-denial-of-rss-route-marches",
+        "title": "Madras HC questions Tamil Nadu police over repeated denial of RSS route marches",
+        "description": "The remarks came during the hearing of a petition filed by RSS member VG Jagadeesan, who sought permission for route marches on October 18, October 25, November 1, or other dates.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-14 11:04:21",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 11:07:01",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2Fimport%2Fsites%2Fdefault%2Ffiles%2FMadras_High_court_1200_250621_WikimediaCommons_GerdEichmann.jpg?rect=0%2C125%2C1200%2C675&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 27.93,
+          "neutral": 71.98,
+          "positive": 0.09
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "f2b56cdf0ce88bba43485be925e5bb02",
+        "link": "https://frontline.thehindu.com/columns/france-student-protests-police-crackdown-education-crisis/article71582664.ece",
+        "title": "France’s war on its schoolchildren",
+        "description": "Leaking roofs, overcrowded classrooms and a university admissions system that leaves thousands in limbo have driven French students to protest. The state’s answer has been a campaign of police violence.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "columns"
+        ],
+        "creator": [
+          "susan ram ai summary"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "opinion",
+        "pubDate": "2026-10-14 10:50:36",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 11:19:13",
+        "image_url": "https://fl-i.thgim.com/public/incoming/q4xzwk/article71583084.ece/alternates/LANDSCAPE_1200/france%20student%20protest%202026.jpg",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://i.newsdata.io/frontline_thehindu.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 98.39,
+          "neutral": 1.56,
+          "positive": 0.05
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "2f0225ba157a2e860469cd17f8bc0b34",
+        "link": "https://www.timesnownews.com/india/seeing-citizens-as-enemies-madras-hc-questions-tn-police-over-denial-of-rss-march-permission-article-156338071",
+        "title": "'Seeing Citizens As Enemies': Madras HC Questions TN Police Over Denial Of RSS March Permission",
+        "description": "The Madras High Court questioned Tamil Nadu’s repeated denial of RSS route march permissions, remarking that the state government appeared to treat citizens as “enemies.”",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "rss",
+          "madras hc",
+          "tamil nadu police",
+          "rss route march",
+          "madras high court",
+          "tamil nadu",
+          "rashtriya swayamsevak sangh"
+        ],
+        "creator": [
+          "sumit sharma"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-14 08:45:41",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 09:03:17",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156338053,thumbsize-47934,width-1280,height-720,resizemode-75/156338053.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 67.97,
+          "neutral": 31.84,
+          "positive": 0.19
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e328675f1bc113c154874d0aaf0906c0",
+        "link": "https://www.timesnownews.com/chennai/tvk-to-join-india-blocs-anticec-stir-set-to-protest-in-chennai-article-156336258",
+        "title": "TVK To Join INDIA Bloc's Anti-CEC Stir, Set To Protest In Chennai",
+        "description": "The ruling TVK in Tamil Nadu is set to join the INDIA bloc's protest against Chief Election Commissioner Gyanesh Kumar.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "manickam tagore",
+          "tamil nadu congress",
+          "tvk",
+          "rajmohan",
+          "tamil nadu",
+          "thirumavalavan"
+        ],
+        "creator": [
+          "dharani balasubramaniam"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-14 05:28:31",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 05:32:27",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156029769,thumbsize-1257852,width-1280,height-720,resizemode-75/156029769.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 43.55,
+          "neutral": 51.47,
+          "positive": 4.98
+        },
+        "ai_tag": [
+          "elections",
+          "government"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c40c9878f0eccd0da0a703e8465c0ae1",
+        "link": "https://www.thenewsminute.com/kerala/keralam-seven-youths-held-over-lynching-of-unidentified-man-in-palakkad",
+        "title": "Keralam: Seven youths held over lynching of unidentified man in Palakkad",
+        "description": "Seven youths were arrested in Palakkad after an unidentified man was beaten to death on October 10. A post-mortem at Thrissur Medical College Hospital confirmed deep wounds consistent with a brutal assault.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "kerala"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-14 05:20:03",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 05:37:31",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2023-09%2F5c452b17-e273-4a50-b4ec-8285c11de008%2Fhandcuffs_Ians_150923.jpg?rect=0%2C0%2C400%2C225&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 90.87,
+          "neutral": 9.08,
+          "positive": 0.05
+        },
+        "ai_tag": [
+          "accidents"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "19cb5c7a1220d508bbdc494412bc3f0c",
+        "link": "https://www.timesnownews.com/education/tn-tet-result-2026-declared-heres-how-to-check-qualifying-status-sarkari-naukri-article-156335820",
+        "title": "TN TET Result 2026 Declared; Here's How to Check Qualifying Status",
+        "description": "TN TET result 2026 has been announced. Qualified candidates can access their scorecards via trb.tn.gov.in.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "teacher recruitment",
+          "sarkari naukri and results",
+          "trending news",
+          "tn tet",
+          "tamil nadu"
+        ],
+        "creator": [
+          "deepali samaniya"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "education"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-14 03:43:34",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 04:02:32",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156335846,thumbsize-58229,width-1280,height-720,resizemode-75/156335846.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 0.06,
+          "neutral": 72.99,
+          "positive": 26.95
+        },
+        "ai_tag": [
+          "education"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c696753eeea121cc27f6e62826fd32a9",
+        "link": "https://www.thenewsminute.com/tamil-nadu/l-murugan-quits-as-minister-of-state-fuels-cabinet-reshuffle-speculation",
+        "title": "L Murugan quits as Minister of State, fuels Cabinet reshuffle speculation",
+        "description": "L Murugan’s Rajya Sabha term was due to end in April 2030. He was the Minister of State for Information and Broadcasting and Parliamentary Affairs in the Narendra Modi-led government.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-14 03:29:30",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 03:37:28",
+        "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/L-Murugan_BJP_Tamilnadu_120721_1200.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 8.79,
+          "neutral": 91.06,
+          "positive": 0.15
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "235305c49ae5cdb85153aa23c79f7c9d",
+        "link": "https://www.news9live.com/india/breaking-news-live-updates-todays-news-headlines-october-14-2026-3015793",
+        "title": "Breaking News LIVE: Marco Rubio to visit India, Uzbekistan from October 17 to 22",
+        "description": "Today’s Breaking News Headlines, October 14, 2026: US Secretary of State Marco Rubio will visit Uzbekistan and India from October 17 to 22 for diplomatic meetings with regional officials and Indian government and business leaders.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india"
+        ],
+        "creator": [
+          "saumya agrawal"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "blog",
+        "pubDate": "2026-10-14 02:00:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 02:13:20",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/10/Marco-Rubio-to-visit-India-Uzbekistan-from-October-17-to-22.png",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://i.newsdata.io/news9live.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 0.07,
+          "neutral": 96.32,
+          "positive": 3.61
+        },
+        "ai_tag": [
+          "government"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "fb31a7ad03578a120e5c260eca71ada6",
+        "link": "https://www.news9live.com/state/tamil-nadu/tamil-nadu-weather-alert-heavy-rain-likely-in-kanyakumari-tirunelveli-and-thanjavur-thunderstorms-in-puducherry-3015778",
+        "title": "Tamil Nadu weather alert: Heavy rain likely in Kanyakumari, Tirunelveli and Thanjavur; thunderstorms in Puducherry",
+        "description": "Tamil Nadu weather alert: Heavy rain is forecast in Kanyakumari, parts of Tirunelveli and Thanjavur, while Puducherry and Karaikal may see thunderstorms. The Chennai weather centre has warned of lightning and strong winds as the northeast monsoon approaches.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "fiza narwal"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "environment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-14 01:12:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 01:14:08",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/05/2-8.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://i.newsdata.io/news9live.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 0.6,
+          "neutral": 99.29,
+          "positive": 0.11
+        },
+        "ai_tag": [
+          "climate and weather"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "755dd9d4f1259a43099fec105fd66757",
+        "link": "https://www.news9live.com/india/imd-weather-today-thunderstorms-hailstorms-likely-in-delhi-ncr-punjab-and-haryana-heavy-rain-forecast-for-south-india-3015777",
+        "title": "IMD weather today: Thunderstorms, hailstorms likely in Delhi-NCR, Punjab and Haryana; heavy rain forecast for South India",
+        "description": "The IMD has forecast thunderstorms, lightning, gusty winds and isolated hailstorms in Delhi-NCR, Punjab and Haryana on October 14. Heavy rainfall is also expected in parts of Jammu and Kashmir, Ladakh and southern India, with alerts covering several states.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india"
+        ],
+        "creator": [
+          "ajay awana"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "environment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-14 01:12:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-14 01:14:10",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/04/Weather-in-Delhi.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://i.newsdata.io/news9live.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 0.27,
+          "neutral": 99.56,
+          "positive": 0.17
+        },
+        "ai_tag": [
+          "climate and weather"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 3
+  }
+}

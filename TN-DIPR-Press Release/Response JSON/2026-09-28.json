@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-28",
+  "fetchedAt": "2026-10-07T17:07:56.724688+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:56.724688+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-28"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22617,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.749-Hon_ble_CM_Press_Release_-_Thai_Mamaan_Thangamothiram_Scheme_Inauguration_-_Date_28.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-28",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.749-Hon'ble CM Press Release - Thai Mamaan Thangamothiram Scheme Inauguration - Date 28.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-28",
+        "language": "en"
+      },
+      {
+        "id": 22618,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-750-Hon_ble_CM_Press_Release_-_Inauguration_of_Renovated_Madurai_Gandhi_Memorial_Museum_-Date__28.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-28",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-750-Hon'ble CM Press Release - Inauguration of Renovated Madurai Gandhi Memorial Museum -Date  28.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-28",
+        "language": "en"
+      },
+      {
+        "id": 22619,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-751-Differently_Abled_Welfare__Dept_Press_Release-Awards_-Date_28.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-28",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-751-Differently Abled Welfare  Dept Press Release-Awards -Date 28.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-28",
+        "language": "en"
+      },
+      {
+        "id": 22620,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.752-Hon_ble_CM_Social_Media_Message_-_Greetings_to__Asian_Games_Bronze_Medal_winner_Vidhya_Ramraj_for_Hurdles_Race_-Date_28.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-28",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.752-Hon'ble CM Social Media Message - Greetings to  Asian Games Bronze Medal winner Vidhya Ramraj for Hurdles Race -Date 28.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-28",
+        "language": "en"
+      }
+    ]
+  }
+}

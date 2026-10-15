@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-11",
+  "fetchedAt": "2026-10-15T11:56:03.385328+05:30",
+  "lastFetchedAt": "2026-10-15T11:56:03.385328+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-11"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22712,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.822-Hon_ble_CM_Social_Media_Message_-_International_Day_of_the_Girl_-Date_11.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.822-Hon'ble CM Social Media Message - International Day of the Girl -Date 11.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-11",
+        "language": "en"
+      },
+      {
+        "id": 22713,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-823-Hon_ble_CM_Press_Release_-_Chennai_Metro_Rail_Ltd_-_Poonamallee_Vadapalani_Stretch_Inaguration_by_Hon_ble_PM_-Date__11.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-11",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-823-Hon'ble CM Press Release - Chennai Metro Rail Ltd - Poonamallee Vadapalani Stretch Inaguration by Hon'ble PM -Date  11.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-11",
+        "language": "en"
+      }
+    ]
+  }
+}

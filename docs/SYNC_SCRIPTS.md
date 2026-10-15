@@ -71,7 +71,7 @@ python tn_transfers_postings_sync.py --start-date 10-05-2026 --end-date 31-07-20
 
 | Flag | Format | Default |
 |------|--------|---------|
-| `--start-date` | `DD-MM-YYYY` | Day after last sync (`Sync-Config/last-sync.json`), else `TN_*_START_DATE` in `.env` |
+| `--start-date` | `DD-MM-YYYY` | Last updated date (`Sync-Config/last-sync.json` or latest JSON), else `TN_*_START_DATE` in `.env` |
 | `--end-date` | `DD-MM-YYYY` | Today (Asia/Kolkata) |
 | `--output-dir` | path | `Response JSON/` in module folder |
 

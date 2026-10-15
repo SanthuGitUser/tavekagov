@@ -1,0 +1,150 @@
+{
+  "date": "2026-08-27",
+  "fetchedAt": "2026-10-07T17:07:48.429795+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:48.429795+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-27"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22399,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.585-Hon_ble_CM_Press_Release___-_Home_Dept_-_Buildings_Inauguration_-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.585-Hon'ble CM Press Release   - Home Dept - Buildings Inauguration -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22400,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.586-Hon_ble_CM_Press_Release_-_Agri_Dept_-_Nammazhvar_award_for_the_year_2025-26_-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.586-Hon'ble CM Press Release - Agri Dept - Nammazhvar award for the year 2025-26 -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22401,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.587-Hon_ble_CM_Press_Release_-_Public_Dept_-_Jeevan_Raksha_Award_to_Late_Gowrisankar_Raja_-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.587-Hon'ble CM Press Release - Public Dept - Jeevan Raksha Award to Late Gowrisankar Raja -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22402,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.588-Registration_Dept-Press_Release-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.588-Registration Dept-Press Release-Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22403,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.589_-Hon_ble_CM_Press_Release_-_Public_Dept_-_Missing_of_Tamil_People_due_to_Nepal_Flood_-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.589 -Hon'ble CM Press Release - Public Dept - Missing of Tamil People due to Nepal Flood -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22404,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-590_-Hon_ble_Higher_Education_Minister_Press_Release-_M.Ed_Admissions_Extension_-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-590 -Hon'ble Higher Education Minister Press Release- M.Ed Admissions Extension -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22405,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-592_-Election_Dept_Press_Release_-_ELC_Conference_-_English__-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-592 -Election Dept Press Release - ELC Conference - English  -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22406,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-592_-Election_Dept_Press_Release_-_ELC_Conference_-_Tamil_-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-592 -Election Dept Press Release - ELC Conference - Tamil -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22407,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-593_-Hon_ble_MSME_Minister_Press_Release-_Hon_ble_Union_Food_processing_Minister_PMFME_award_given_to_TN_MSME_Minister-English_-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-593 -Hon'ble MSME Minister Press Release- Hon'ble Union Food processing Minister PMFME award given to TN MSME Minister-English -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22408,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-593_-Hon_ble_MSME_Minister_Press_Release-_Hon_ble_Union_Food_processing_Minister_PMFME_award_given_to_TN_MSME_Minister-Tamil-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-593 -Hon'ble MSME Minister Press Release- Hon'ble Union Food processing Minister PMFME award given to TN MSME Minister-Tamil-Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22409,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.594_-Finance_Dept_Press_Release-Revenue_Augumentation_Committee_English__-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.594 -Finance Dept Press Release-Revenue Augumentation Committee English  -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      },
+      {
+        "id": 22410,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-594_-Finance_Dept_Press_Release-Revenue_Augumentation_Committee_Tamil_-Date_27.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-27",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-594 -Finance Dept Press Release-Revenue Augumentation Committee Tamil -Date 27.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-27",
+        "language": "en"
+      }
+    ]
+  }
+}

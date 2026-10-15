@@ -2,7 +2,7 @@
 Shared last-sync state for TN data fetch scripts.
 
 Persists checkpoint dates in Sync-Config/last-sync.json so each script can resume
-from the previous successful run when --start-date / --since-date are omitted.
+from the last updated date through today when --start-date / --since-date are omitted.
 
 Usage (from sync scripts):
   from sync_state import resolve_date_range, record_date_range_sync, JOB_DIPR_PRESS_RELEASES
@@ -224,7 +224,9 @@ def resolve_date_range(
 
     default_start = parse_display_date(default_start_display)
     checkpoint = _checkpoint_date(job_key, output_dir)
-    start = checkpoint + timedelta(days=1) if checkpoint else default_start
+    # Resume from the last stored date (inclusive) through today so late
+    # uploads on the last day are picked up and empty days cannot skip the till date.
+    start = checkpoint if checkpoint else default_start
 
     if lookback_days > 0:
         lookback_start = end - timedelta(days=lookback_days - 1)

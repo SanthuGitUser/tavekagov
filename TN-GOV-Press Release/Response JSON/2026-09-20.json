@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-20",
+  "fetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "lastFetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr200926_msme1.jpeg",
+      "release_date": "2026-09-20",
+      "title": "Honble Minister for Micro, Small and Medium Enterprises inspected the Telangana Handicrafts Development Corporation (Golconda) showroom for marketing poompuhar handicrafts",
+      "file_name": "pr200926_msme1.jpeg",
+      "minister_name": "Thiru P. Mathan Raja",
+      "department_name": "Micro , Small and Medium Enterprises Department",
+      "minister_id": 28,
+      "department_id": 29,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
+    }
+  ],
+  "ministers": [
+    {
+      "id": 28,
+      "name": "Thiru P. Mathan Raja",
+      "designation": "Minister for Micro, Small and Medium Enterprises",
+      "portfolios": [
+        "Rural Industries including Cottage Industries, Small Industries"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/217_Mathan_Raja.png",
+      "display_order": 28,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 29,
+      "name": "Micro , Small and Medium Enterprises Department",
+      "dep_id_encoded": "Mjk=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=Mjk=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru P. Mathan Raja",
+      "display_order": 21
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-02",
+  "fetchedAt": "2026-10-07T17:07:50.002776+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:50.002776+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-02"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22427,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-TNLA_No.18-Hon_ble_CM_Assembly_110_statement_-_MAWS_Dept_Various_Schemes_Announcements_-Date__2.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-02",
+        "press_release_no": null,
+        "press_name": "DIPR-TNLA No.18-Hon'ble CM Assembly 110 statement - MAWS Dept Various Schemes Announcements -Date  2.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-02",
+        "language": "en"
+      },
+      {
+        "id": 22428,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-TNLA_No.19-Hon_ble_CM_Assembly_110_statement_-_Transport_Dept_-_Digital_Driving_Licence_and_Reg_Certificate_-Date__2.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-02",
+        "press_release_no": null,
+        "press_name": "DIPR-TNLA No.19-Hon'ble CM Assembly 110 statement - Transport Dept - Digital Driving Licence and Reg Certificate -Date  2.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-02",
+        "language": "en"
+      },
+      {
+        "id": 22429,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-TNLA_No.20-Hon_ble_CM_Assembly_110_Statement_-_Withdrawal_of_Cases_Against_Farmers_and_Teachers_-_Date_2.9.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-02",
+        "press_release_no": null,
+        "press_name": "DIPR-TNLA No.20-Hon'ble CM Assembly 110 Statement - Withdrawal of Cases Against Farmers and Teachers - Date 2.9.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-02",
+        "language": "en"
+      },
+      {
+        "id": 22430,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.607_-_CBCID_Branch-_AI_video_-Press_Release_English-_Date_02.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.607 - CBCID Branch- AI video -Press Release English- Date 02.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-02",
+        "language": "en"
+      },
+      {
+        "id": 22431,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.607_-_CBCID_Branch-_AI_video_-Press_Release_Tamil_-_Date_02.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.607 - CBCID Branch- AI video -Press Release Tamil - Date 02.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-02",
+        "language": "en"
+      },
+      {
+        "id": 22432,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.608-DIRECTORATE_OF_INDIAN_MEDICINE_AND_HOMOEOPATHY_Dept-Press_Release-English-Date_02.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-02",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.608-DIRECTORATE OF INDIAN MEDICINE AND HOMOEOPATHY Dept-Press Release-English-Date 02.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-02",
+        "language": "en"
+      },
+      {
+        "id": 22433,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.608-DIRECTORATE_OF_INDIAN_MEDICINE_AND_HOMOEOPATHY_Dept-Press_Release-Tamil-Date_02.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-02",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.608-DIRECTORATE OF INDIAN MEDICINE AND HOMOEOPATHY Dept-Press Release-Tamil-Date 02.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-02",
+        "language": "en"
+      }
+    ]
+  }
+}

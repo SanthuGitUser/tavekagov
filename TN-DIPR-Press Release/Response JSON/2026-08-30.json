@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-30",
+  "fetchedAt": "2026-10-07T17:07:49.232339+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:49.232339+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-08-30"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22420,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.603_-_Hon_ble_CM_Press_Release_-_Dindigul_Dist__Kollapatti_Road_accident_-_Condolence_and_Relief_-_CMPRF__-_Date_-_30.08.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-08-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.603 - Hon'ble CM Press Release - Dindigul Dist, Kollapatti Road accident - Condolence and Relief - CMPRF  - Date - 30.08.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-08-30",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-22",
+  "fetchedAt": "2026-10-07T17:07:55.098514+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:55.098514+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-22"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22574,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.713-Hon_ble_CM_Press_Release_-_Inauguration_of_Perunthalaivar_Kamarajar_Breakfast_Scheme_Extension_-Date_22.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.713-Hon'ble CM Press Release - Inauguration of Perunthalaivar Kamarajar Breakfast Scheme Extension -Date 22.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-22",
+        "language": "en"
+      },
+      {
+        "id": 22575,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-_P.R.No.714-Hon_ble_CM_Press_Release_-_North_East_Monsoon_Prepardness_Meeting_-_Southern_Non-Coastal_and_Western_Dists_-Date_22.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-22",
+        "press_release_no": null,
+        "press_name": "DIPR- P.R.No.714-Hon'ble CM Press Release - North East Monsoon Prepardness Meeting - Southern Non-Coastal and Western Dists -Date 22.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-22",
+        "language": "en"
+      },
+      {
+        "id": 22576,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.715-Hon_ble_CM_Press_Release_-_Cooum_River_Restoration_Review_Meeting_-Date_22.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.715-Hon'ble CM Press Release - Cooum River Restoration Review Meeting -Date 22.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-22",
+        "language": "en"
+      },
+      {
+        "id": 22577,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.716-Hon_ble_CM_Social_Media_Message_-_Wishes_to_Indian_Women_Cricket_Team_and_TN_player_Kamalini_-Date_22.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.716-Hon'ble CM Social Media Message - Wishes to Indian Women Cricket Team and TN player Kamalini -Date 22.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-22",
+        "language": "en"
+      },
+      {
+        "id": 22578,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-717-Hon_ble_MSME_Minister_Press_Release-Telangana_Visit-Date_22.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-22",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-717-Hon'ble MSME Minister Press Release-Telangana Visit-Date 22.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-22",
+        "language": "en"
+      },
+      {
+        "id": 22579,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.718_-_Hon_ble_Public_Works_and_Sports_Development_Minister_Review_Meeting_Press_Release_-_Date.22.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.718 - Hon'ble Public Works and Sports Development Minister Review Meeting Press Release - Date.22.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-22",
+        "language": "en"
+      },
+      {
+        "id": 22580,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.719_-_Hon_ble_Natural_Resources_Minister_Review_Press_Release_-_Date.22.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-23",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.719 - Hon'ble Natural Resources Minister Review Press Release - Date.22.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-22",
+        "language": "en"
+      }
+    ]
+  }
+}

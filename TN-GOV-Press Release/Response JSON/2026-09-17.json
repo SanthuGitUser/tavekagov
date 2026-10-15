@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-17",
+  "fetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "lastFetchedAt": "2026-10-07T17:11:52.596248+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 2,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr170926a.jpg",
+      "release_date": "2026-09-17",
+      "title": "Honble Chief Minister and Ministers took the Social Justice Day pledge on the 148th birth anniversary of Thanthai Periyar",
+      "file_name": "pr170926a.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr170926_sedu.jpg",
+      "release_date": "2026-09-17",
+      "title": "Honble Ministers paid floral tributes to Thanthai Periyar on the occasion of Social Justice Day",
+      "file_name": "pr170926_sedu.jpg",
+      "minister_name": "Thiru Vanni Arasu",
+      "department_name": "Social Justice Department",
+      "minister_id": 14,
+      "department_id": 1,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "medium",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": true,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [
+    {
+      "id": 1,
+      "name": "Thiru C. Joseph Vijay",
+      "designation": "Honourable Chief Minister",
+      "portfolios": [
+        "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers",
+        "Police",
+        "Home",
+        "Special Programme Implementation, Poverty Alleviation and Rural Indebtedness",
+        "Special Initiatives",
+        "Youth Welfare",
+        "Welfare of Children, Aged",
+        "Differently Abled Persons",
+        "Municipal Administration, Urban and Water Supply"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
+      "display_order": 1,
+      "is_chief_minister": true
+    },
+    {
+      "id": 14,
+      "name": "Thiru Vanni Arasu",
+      "designation": "Minister for Social Justice",
+      "portfolios": [
+        "Adi Dravidar Welfare and Hill Tribes"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/072_Vanni_Arasu.png",
+      "display_order": 14,
+      "is_chief_minister": false
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Social Justice Department",
+      "dep_id_encoded": "MQ==",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru Vanni Arasu",
+      "display_order": 32
+    }
+  ]
+}

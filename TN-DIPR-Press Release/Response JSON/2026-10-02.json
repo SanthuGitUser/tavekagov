@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-02",
+  "fetchedAt": "2026-10-07T17:07:57.741693+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:57.741693+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-02"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22661,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.782-Hon_ble_CM_Social_Media_Message-Gandhi_Jayanti-Date_02.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.782-Hon'ble CM Social Media Message-Gandhi Jayanti-Date 02.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      },
+      {
+        "id": 22662,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-783_-Hon_ble_CM_Social_Media_Message_-_Perunthalaivar_Kamarajar_Death_Anniversary_-Date_02.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-783 -Hon'ble CM Social Media Message - Perunthalaivar Kamarajar Death Anniversary -Date 02.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      },
+      {
+        "id": 22663,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.784-TN_Govt_Press_Release-_Suspension_of_NH_Engineers_for_writing_Hindi_Nameboard_-_Date_2.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.784-TN Govt Press Release- Suspension of NH Engineers for writing Hindi Nameboard - Date 2.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      },
+      {
+        "id": 22664,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-785-Hon_ble_CM_Press_Release_-_Transport_Dept_-_Vettri_Payanam_Scheme_Inauguration_-Date__2.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-785-Hon'ble CM Press Release - Transport Dept - Vettri Payanam Scheme Inauguration -Date  2.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      },
+      {
+        "id": 22665,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.786_Hon_ble_Speaker___Hon_ble_Minister_Press_Release-GANDHI_-_Date_02.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.786 Hon'ble Speaker & Hon'ble Minister Press Release-GANDHI - Date 02.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      },
+      {
+        "id": 22666,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.787-Hon_ble_CM_Social_Media_Message_-_Asian_Games_2026_-_Greetings_to_Sailing_Bronze_Medal_winner_-Date__2.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.787-Hon'ble CM Social Media Message - Asian Games 2026 - Greetings to Sailing Bronze Medal winner -Date  2.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      },
+      {
+        "id": 22667,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-788_-Hon_ble_PWD_Minister_Press_Release_Asian_Games_-Date_2.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-788 -Hon'ble PWD Minister Press Release Asian Games -Date 2.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      },
+      {
+        "id": 22668,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.789_-_TN_Khadir_Village_Industries_Board_-_Gandhi_Jayathi___Diwali_Sales_Press_Release_-_Date_02.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-03",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.789 - TN Khadir Village Industries Board - Gandhi Jayathi & Diwali Sales Press Release - Date 02.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      },
+      {
+        "id": 22669,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.790_-_Transport_Dept__Press_Release_-_Omni_Bus_Inspection_-_Date.02.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.790 - Transport Dept  Press Release - Omni Bus Inspection - Date.02.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-02",
+        "language": "en"
+      }
+    ]
+  }
+}

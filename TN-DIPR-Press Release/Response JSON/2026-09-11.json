@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-11",
+  "fetchedAt": "2026-10-07T17:07:52.269765+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:52.269765+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-11"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22478,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.642-_Hon_ble_Ministers_function-I_PR_Dept-Dr.Subbrayan_Birthday_Anniversary-Press_Release_-Date-11.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.642- Hon'ble Ministers function-I&PR Dept-Dr.Subbrayan Birthday Anniversary-Press Release -Date-11.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-11",
+        "language": "en"
+      },
+      {
+        "id": 22479,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.643-Hon_ble_Ministers_Function-I_PR_Dept-_Mahakavi_Bharathiyar_Death_Anniversary_-Press_Release_-Date-11.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.643-Hon'ble Ministers Function-I&PR Dept- Mahakavi Bharathiyar Death Anniversary -Press Release -Date-11.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-11",
+        "language": "en"
+      },
+      {
+        "id": 22480,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.644-Hon_ble_CM_Social_Media_Message_-Thiyagi_Immanuel_Sekaranar_Death_Anniversary_-Date_11.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.644-Hon'ble CM Social Media Message -Thiyagi Immanuel Sekaranar Death Anniversary -Date 11.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-11",
+        "language": "en"
+      },
+      {
+        "id": 22481,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.645-Hon_ble_CM_Social_Media_Message_-_Condolence_for_the_Death_of_Tamil_Scholar_Thiru_Solomon_Pappaiya_-Date_11.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.645-Hon'ble CM Social Media Message - Condolence for the Death of Tamil Scholar Thiru Solomon Pappaiya -Date 11.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-11",
+        "language": "en"
+      },
+      {
+        "id": 22482,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.646_-_Election_Dept_Press_Release_for__First_Randomization_of_EVMs_-_English_-_Date.11.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.646 - Election Dept Press Release for  First Randomization of EVMs - English - Date.11.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-11",
+        "language": "en"
+      },
+      {
+        "id": 22483,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.646_-_Election_Dept_Press_Release_for__First_Randomization_of_EVMs_-_Tamil_-_Date.11.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.646 - Election Dept Press Release for  First Randomization of EVMs - Tamil - Date.11.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-11",
+        "language": "en"
+      },
+      {
+        "id": 22484,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.647-AD_Welfare_Dept_Press_Release_Competitive_Exams-_English_-_Date.11.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.647-AD Welfare Dept Press Release Competitive Exams- English - Date.11.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-11",
+        "language": "en"
+      },
+      {
+        "id": 22485,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.647-AD_Welfare_Dept_Press_Release_Competitive_Exams-_Tamil_-_Date.11.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-11",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.647-AD Welfare Dept Press Release Competitive Exams- Tamil - Date.11.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-11",
+        "language": "en"
+      }
+    ]
+  }
+}

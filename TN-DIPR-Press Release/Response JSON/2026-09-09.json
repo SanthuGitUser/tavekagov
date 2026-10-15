@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-09",
+  "fetchedAt": "2026-10-07T17:07:51.774831+05:30",
+  "lastFetchedAt": "2026-10-07T17:07:51.774831+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-09-09"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22461,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.631_-_Hon_ble_Public_Works_and_Sports_Development_Minister_Press_Release_-_Date.09.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.631 - Hon'ble Public Works and Sports Development Minister Press Release - Date.09.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-09",
+        "language": "en"
+      },
+      {
+        "id": 22462,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.632_-_EDII_-_Mobile_Phone_Repair___Service_Training_Press_Release_-_English_-_Date.09.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.632 - EDII - Mobile Phone Repair & Service Training Press Release - English - Date.09.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-09",
+        "language": "en"
+      },
+      {
+        "id": 22463,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.632_-_EDII_-_Mobile_Phone_Repair___Service_Training_Press_Release_-_Tamil_-_Date.09.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.632 - EDII - Mobile Phone Repair & Service Training Press Release - Tamil - Date.09.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-09",
+        "language": "en"
+      },
+      {
+        "id": 22464,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-TNLA_No.24-Tamil_Nadu_Legislative_Assembly_Budget_Session_-Date_09.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-09",
+        "press_release_no": null,
+        "press_name": "DIPR-TNLA No.24-Tamil Nadu Legislative Assembly Budget Session -Date 09.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-09",
+        "language": "en"
+      },
+      {
+        "id": 22465,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R._No-633-Hon_ble_Minister_for_School_Education__TD__Info___Publicity-Art___Culture_Dept_-_Press_Release-Date_-09.09.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-09-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R. No-633-Hon'ble Minister for School Education, TD, Info & Publicity-Art & Culture Dept - Press Release-Date -09.09.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-09-09",
+        "language": "en"
+      }
+    ]
+  }
+}

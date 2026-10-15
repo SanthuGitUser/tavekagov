@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-09",
+  "fetchedAt": "2026-10-15T11:56:02.879372+05:30",
+  "lastFetchedAt": "2026-10-15T11:56:02.879372+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-09"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22699,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.814_-_Hon_ble_CM_Social_Media_Message_-_Thyagi_Immanuel_Birthday_-_Date.09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-09",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.814 - Hon'ble CM Social Media Message - Thyagi Immanuel Birthday - Date.09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22700,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.815-Hon_ble_CM_Social_Media_Message_-_Greetings_to_Nobel_Prize_Winner_Tmt._Navaneetham_Pillai_-Date_09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.815-Hon'ble CM Social Media Message - Greetings to Nobel Prize Winner Tmt. Navaneetham Pillai -Date 09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22701,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.816_-_Hon_ble_Forests_Minister_-_WILDLIFE_WEEK_Press_Release_-_English_-_Date.09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.816 - Hon'ble Forests Minister - WILDLIFE WEEK Press Release - English - Date.09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22702,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.816_-_Hon_ble_Forests_Minister_-_WILDLIFE_WEEK_Press_Release_-_Tamil_-_Date.09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-09",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.816 - Hon'ble Forests Minister - WILDLIFE WEEK Press Release - Tamil - Date.09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22703,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.817-EDII_Press_Release-Micro_Greens_Cultivation_and_Value-Added_Training-English-Date.09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.817-EDII Press Release-Micro Greens Cultivation and Value-Added Training-English-Date.09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22704,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.817-EDII_Press_Release-Micro_Greens_Cultivation_and_Value-Added_Training-Tamil-Date_09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.817-EDII Press Release-Micro Greens Cultivation and Value-Added Training-Tamil-Date 09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22705,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.818-EDII_Press_Release-Moringa_Value_Added_Training-English-Date.09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.818-EDII Press Release-Moringa Value Added Training-English-Date.09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22706,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.818-EDII_Press_Release-Moringa_Value_Added_Training-Tamil-Date.09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.818-EDII Press Release-Moringa Value Added Training-Tamil-Date.09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22707,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.819-Hon_ble_Minister_for_Environment_and_Climate_Change-Press_Release-English-Date_09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.819-Hon'ble Minister for Environment and Climate Change-Press Release-English-Date 09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      },
+      {
+        "id": 22708,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.819-Hon_ble_Minister_for_Environment_and_Climate_Change-Press_Release-Tamil-Date_09.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.819-Hon'ble Minister for Environment and Climate Change-Press Release-Tamil-Date 09.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-09",
+        "language": "en"
+      }
+    ]
+  }
+}
