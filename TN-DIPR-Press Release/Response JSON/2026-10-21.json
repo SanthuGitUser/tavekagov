@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-21",
+  "fetchedAt": "2026-10-25T15:47:27.288518+05:30",
+  "lastFetchedAt": "2026-10-25T15:47:27.288518+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-21"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22775,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.879-_Hon_ble_CM_Social_Media_Message_-_Kavalar_Veera_Vanaka_Naal_-_Press_Release-Date-_21.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-21",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.879- Hon'ble CM Social Media Message - Kavalar Veera Vanaka Naal - Press Release-Date- 21.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-21",
+        "language": "en"
+      },
+      {
+        "id": 22776,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.880-_Hon_ble_CM_Press_Release_-_Police_Commemoration_Day__function_-Date-_21.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-21",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.880- Hon'ble CM Press Release - Police Commemoration Day  function -Date- 21.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-21",
+        "language": "en"
+      },
+      {
+        "id": 22777,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No-881_Hon_ble_CM_Social_Media_Message_-_Japan_Paralympic_Press_Release-Date.21.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-21",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No-881 Hon'ble CM Social Media Message - Japan Paralympic Press Release-Date.21.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-21",
+        "language": "en"
+      },
+      {
+        "id": 22778,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.882-Home_Dept_Press_Release_-Date_21-10-2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-21",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.882-Home Dept Press Release -Date 21-10-2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-21",
+        "language": "en"
+      },
+      {
+        "id": 22779,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.883-Hon_ble_Hon_ble_CM_Social_Media_Message_-_Japan_Paralympic_Asian_Games_-_Date_21.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-21",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.883-Hon'ble Hon'ble CM Social Media Message - Japan Paralympic Asian Games - Date 21.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-21",
+        "language": "en"
+      },
+      {
+        "id": 22780,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-884_Finance_Dept_Press_Release-English_-Date_21.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-21",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-884 Finance Dept Press Release-English -Date 21.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-21",
+        "language": "en"
+      },
+      {
+        "id": 22781,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-884_Finance_Dept_Press_Release-Tamil-Date_21.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-21",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-884 Finance Dept Press Release-Tamil-Date 21.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-21",
+        "language": "en"
+      },
+      {
+        "id": 22782,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.885-Hon_ble_CM_Press_Release_-_MAWS_Dept_-_Rain_Water_Harvesting_Awareness_Program_-Date__21.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-21",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.885-Hon'ble CM Press Release - MAWS Dept - Rain Water Harvesting Awareness Program -Date  21.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-21",
+        "language": "en"
+      }
+    ]
+  }
+}

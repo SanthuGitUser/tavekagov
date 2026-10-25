@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "fetchedAt": "2026-10-25T15:47:29.730808+05:30",
+  "lastFetchedAt": "2026-10-25T15:47:29.730808+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr201026_1.jpg",
+      "release_date": "2026-10-20",
+      "title": "Chief Ministers Cup Sports Competitions 2026 Minister presents prizes to winning teams in college football tournament",
+      "file_name": "pr201026_1.jpg",
+      "minister_name": null,
+      "department_name": null,
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": false,
+      "parse_confidence": "low",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [],
+  "departments": []
+}

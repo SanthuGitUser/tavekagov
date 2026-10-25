@@ -46,6 +46,7 @@ export const primaryNav: NavPrimaryItem[] = [
       { to: "/mla", label: "MLA" },
     ],
   },
+  { id: "election-results", label: "Election Results", to: "/election-results" },
   { id: "tvk-manifesto", label: "TVK Manifesto", to: "/tvk-manifesto" },
   { id: "about", label: "About", to: "/about" },
 ];

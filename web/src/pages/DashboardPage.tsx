@@ -19,6 +19,14 @@ import {
   useDashboardAsyncCounts,
 } from "@/components/dashboard/widgets/ContentDashboardWidgets";
 import {
+  Bye2026VsMayComparisonWidget,
+  May2026CloseRacesWidget,
+  May2026ElectionSnapshotWidget,
+  May2026PartySeatsWidget,
+  May2026TvKWinsWidget,
+  May2026VoteShareWidget,
+} from "@/components/dashboard/widgets/ElectionDashboardWidgets";
+import {
   GovPressReleasesImageGridWidget,
   GovPressReleasesRecentWidget,
   GovernmentOrdersRecentWidget,
@@ -62,6 +70,20 @@ export function DashboardPage() {
             loading={loading}
             asyncLoading={asyncCounts.loading}
           />
+        </DashboardSection>
+
+        <DashboardSection
+          title="May 2026 election results"
+          description="Seat and vote summaries from ECI round-wise counts (same data as Election Results → May 2026)."
+        >
+          <div className="grid gap-4 xl:grid-cols-2">
+            <May2026ElectionSnapshotWidget />
+            <May2026PartySeatsWidget />
+            <May2026VoteShareWidget />
+            <May2026CloseRacesWidget />
+            <May2026TvKWinsWidget />
+            <Bye2026VsMayComparisonWidget />
+          </div>
         </DashboardSection>
 
         <DashboardSection

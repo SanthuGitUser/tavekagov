@@ -1,0 +1,263 @@
+{
+  "ac_number": 56,
+  "election_id": "tn-assembly-2026-form20",
+  "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt5/AC056.pdf",
+  "layout": "detailed",
+  "candidates": [
+    "YD R .N )ihctaK D AM ER AM M ISAR ralim M ISAR AN aT AN SAILA m aaN (",
+    "C .R AM atanaJ U K H ayitarahB )ytraP SEGAN .R ( D",
+    "agahzim )ihctaK aT( iam G iruvhzaaV .H TIJA",
+    "agalim )m agahzaK aT( G .H SER irtteV U S",
+    "annA )ihctaK ( N .M AR lakkaM AYAJ",
+    "K )tnednepednI( .AJAR N A SA",
+    ")tnednepednI( J.D .R AM U K",
+    "Y )tnednepednI( .APPAVED",
+    ")tnednepednI( M .N A GAJ",
+    "N O IT P O E V O B A E H T F O E N O N R O F S E T O V"
+  ],
+  "booth_count": 11,
+  "booths": [
+    {
+      "polling_station_serial": 1,
+      "location": "Panchayat Union Primary School, Komaranapalli 635 114., North Facing East Wing Terraced Building.",
+      "electors": 481,
+      "votes": [
+        9,
+        340,
+        2,
+        134,
+        2,
+        3,
+        0,
+        0,
+        4,
+        5
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 980,
+      "nota": 0,
+      "total": 1079,
+      "tendered_votes": 9036
+    },
+    {
+      "polling_station_serial": 2,
+      "location": "Panchayat Union Primary School Kothageekur 635 114., East Facing North Wing Terraced Building.",
+      "electors": 259,
+      "votes": [
+        7,
+        262,
+        2,
+        85,
+        2,
+        1,
+        0,
+        0,
+        0,
+        5
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 623,
+      "nota": 0,
+      "total": 691,
+      "tendered_votes": 8944
+    },
+    {
+      "polling_station_serial": 3,
+      "location": "Panchayat Union Primary School , Bellagondapalli 635 114, East Facing Terraced Building.",
+      "electors": 249,
+      "votes": [
+        8,
+        300,
+        2,
+        170,
+        3,
+        3,
+        0,
+        1,
+        1,
+        7
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 744,
+      "nota": 0,
+      "total": 896,
+      "tendered_votes": 8225
+    },
+    {
+      "polling_station_serial": 4,
+      "location": "Panchayat Union Primary School , Belagondapalli - 635 114., East Facing North Wing Terraced Building",
+      "electors": 285,
+      "votes": [
+        14,
+        256,
+        7,
+        193,
+        1,
+        0,
+        1,
+        1,
+        1,
+        10
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 769,
+      "nota": 0,
+      "total": 887,
+      "tendered_votes": 8557
+    },
+    {
+      "polling_station_serial": 5,
+      "location": "Govt Girls High School , Belagondapalli 635 114 North Facing East wing Terraced Building Belagondapalli 635 114",
+      "electors": 172,
+      "votes": [
+        13,
+        230,
+        4,
+        158,
+        2,
+        1,
+        0,
+        0,
+        3,
+        4
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 587,
+      "nota": 0,
+      "total": 734,
+      "tendered_votes": 7943
+    },
+    {
+      "polling_station_serial": 6,
+      "location": "Govt Girls High School , Belagondapalli - 635 114., North Facing West wing Terraced Building",
+      "electors": 206,
+      "votes": [
+        7,
+        257,
+        3,
+        141,
+        2,
+        0,
+        0,
+        3,
+        1,
+        3
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 623,
+      "nota": 0,
+      "total": 760,
+      "tendered_votes": 8158
+    },
+    {
+      "polling_station_serial": 7,
+      "location": "Panchayat Union Primary School , Kalugondappalli 635 114, North Facing East Wing Terraced Building",
+      "electors": 305,
+      "votes": [
+        18,
+        221,
+        3,
+        159,
+        4,
+        3,
+        1,
+        1,
+        4,
+        5
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 724,
+      "nota": 0,
+      "total": 849,
+      "tendered_votes": 8469
+    },
+    {
+      "polling_station_serial": 8,
+      "location": "Panchayat Union Primary School , Kalugondappalli 635 114, North Facing West Wing Terraced Building",
+      "electors": 345,
+      "votes": [
+        22,
+        190,
+        5,
+        211,
+        1,
+        3,
+        2,
+        4,
+        4,
+        6
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 793,
+      "nota": 0,
+      "total": 965,
+      "tendered_votes": 8155
+    },
+    {
+      "polling_station_serial": 9,
+      "location": "Panchayat Union Primary School, Venkatapuram - 635 114 , West Facing North Wing Terraced Building",
+      "electors": 65,
+      "votes": [
+        7,
+        107,
+        2,
+        72,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 258,
+      "nota": 0,
+      "total": 285,
+      "tendered_votes": 8912
+    },
+    {
+      "polling_station_serial": 10,
+      "location": "Panchayat Union Primary School, Uliveernapalli - 635 114,East Facing Terraced Building",
+      "electors": 183,
+      "votes": [
+        14,
+        302,
+        6,
+        179,
+        2,
+        1,
+        0,
+        1,
+        4,
+        5
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 697,
+      "nota": 0,
+      "total": 818,
+      "tendered_votes": 8460
+    },
+    {
+      "polling_station_serial": 11,
+      "location": "Panchayat Union Primary School, Uliveeranapalli -635114, East Facing North Wing Terraced Building.",
+      "electors": 69,
+      "votes": [
+        7,
+        107,
+        1,
+        44,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 232,
+      "nota": 0,
+      "total": 267,
+      "tendered_votes": 8652
+    }
+  ]
+}

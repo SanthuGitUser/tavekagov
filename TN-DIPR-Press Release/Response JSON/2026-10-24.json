@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-24",
+  "fetchedAt": "2026-10-25T15:47:28.109500+05:30",
+  "lastFetchedAt": "2026-10-25T15:47:28.109500+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-24"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22824,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No._917-_Hon_ble_CM_Social_Media_Message_-_Death_Anniversary_of_Maruthu_Brothers_Press_Release-_Date_-_24.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No. 917- Hon'ble CM Social Media Message - Death Anniversary of Maruthu Brothers Press Release- Date - 24.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-24",
+        "language": "en"
+      },
+      {
+        "id": 22825,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.918-Hon_ble_School_Edu_TD_I_PR__Minister_Press_Release-_Marudhu_Pandiyargal_Dealth_Anniversary-Date_24.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.918-Hon'ble School Edu,TD,I&PR  Minister Press Release- Marudhu Pandiyargal Dealth Anniversary-Date 24.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-24",
+        "language": "en"
+      },
+      {
+        "id": 22826,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.919_-_Hon_ble_CM_Social_Media_Message_-_Condolence_for_the_death_of_Former_Chief_Secretary_Thiru_Sukavaneshvar__IAS__Rtd.__-_Date_-_24.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.919 - Hon'ble CM Social Media Message - Condolence for the death of Former Chief Secretary Thiru Sukavaneshvar, IAS (Rtd.) - Date - 24.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-24",
+        "language": "en"
+      }
+    ]
+  }
+}

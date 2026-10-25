@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useTransition } from "react";
 
 import { NewsStoryCard } from "@/components/news/NewsStoryCard";
 import { NewsCategoryFilters } from "@/components/news/NewsCategoryFilters";
@@ -16,44 +16,59 @@ import {
   getLatestNewsDate,
   loadNewsArticlesForDateRange,
 } from "@/lib/tamilNaduNewsFeed";
-import type { NewsStoryGroup } from "@/types/news";
+import type { NewsArticle } from "@/types/news";
 
 export function NewsPage() {
   const newsSearch = useNewsSearch();
   const search = newsSearch?.search ?? "";
+  const setFilterDateRange = newsSearch?.setFilterDateRange;
+  const setArticleCounts = newsSearch?.setArticleCounts;
   const filterDateRange = newsSearch?.filterDateRange ?? {
     from: getLatestNewsDate(),
     to: getLatestNewsDate(),
   };
   const [activeCategory, setActiveCategory] = useState("all");
   const [isLoading, setIsLoading] = useState(true);
-  const [storyGroups, setStoryGroups] = useState<NewsStoryGroup[]>([]);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [articles, setArticles] = useState<NewsArticle[]>([]);
+  const [, startTransition] = useTransition();
+
   const availableDates = useMemo(() => getAvailableNewsDates(), []);
   const latestDate = useMemo(() => getLatestValidDate(availableDates), [availableDates]);
 
   useEffect(() => {
-    if (!latestDate || !newsSearch) return;
-    const { from, to } = newsSearch.filterDateRange;
+    if (!latestDate || !setFilterDateRange) return;
+    const { from, to } = filterDateRange;
     if (!from || !to) {
-      newsSearch.setFilterDateRange({ from: latestDate, to: latestDate });
+      setFilterDateRange({ from: latestDate, to: latestDate });
     }
-  }, [latestDate, newsSearch]);
+  }, [latestDate, setFilterDateRange, filterDateRange.from, filterDateRange.to]);
 
   useEffect(() => {
     const { from, to } = filterDateRange;
     if (!from || !to) {
-      setStoryGroups([]);
+      setArticles([]);
+      setLoadError(null);
       setIsLoading(false);
       return;
     }
 
     let cancelled = false;
     setIsLoading(true);
+    setLoadError(null);
 
     loadNewsArticlesForDateRange(from, to)
-      .then((articles) => {
+      .then((loaded) => {
         if (cancelled) return;
-        setStoryGroups(groupNewsArticles(articles));
+        startTransition(() => {
+          setArticles(loaded);
+        });
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return;
+        console.error("Failed to load news articles:", error);
+        setArticles([]);
+        setLoadError("Unable to load news for the selected date range.");
       })
       .finally(() => {
         if (!cancelled) setIsLoading(false);
@@ -63,6 +78,8 @@ export function NewsPage() {
       cancelled = true;
     };
   }, [filterDateRange.from, filterDateRange.to]);
+
+  const storyGroups = useMemo(() => groupNewsArticles(articles), [articles]);
 
   const query = search.trim().toLowerCase();
 
@@ -88,8 +105,8 @@ export function NewsPage() {
   }, [activeCategory, filters]);
 
   useEffect(() => {
-    newsSearch?.setArticleCounts(filteredGroups.length, storyGroups.length);
-  }, [filteredGroups.length, storyGroups.length, newsSearch?.setArticleCounts]);
+    setArticleCounts?.(filteredGroups.length, storyGroups.length);
+  }, [filteredGroups.length, storyGroups.length, setArticleCounts]);
 
   if (availableDates.length === 0) {
     return (
@@ -112,6 +129,10 @@ export function NewsPage() {
       <div className="min-h-0 flex-1 overflow-y-auto pr-1">
         {isLoading ? (
           <PageLoading label="Loading news…" />
+        ) : loadError ? (
+          <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+            {loadError}
+          </p>
         ) : filteredGroups.length === 0 ? (
           <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
             No stories match your search, date, or category filter.

@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-15",
+  "fetchedAt": "2026-10-25T15:47:25.388259+05:30",
+  "lastFetchedAt": "2026-10-25T15:47:25.388259+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-15"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22739,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.846_-_Hon_ble_CM_Social_Media_Message_-_Former_President_APJ_Abdul_Kalam_Birthday_-_Date.15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.846 - Hon'ble CM Social Media Message - Former President APJ Abdul Kalam Birthday - Date.15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22740,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.847_-_Hon_ble_Speaker___Hon_ble_Ministers_Press_Release_-_Dr._APJ_Abdul_Kalam_Birthday_Celebration_-_Date.15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.847 - Hon'ble Speaker & Hon'ble Ministers Press Release - Dr. APJ Abdul Kalam Birthday Celebration - Date.15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22741,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.848_-_Hon_ble_CM_DO_Letter_Hon_ble_Union_External_Affairs_Minister_-_Arrest_of_Fishermen_at_Maldives_-_Date.15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.848 - Hon'ble CM DO Letter Hon'ble Union External Affairs Minister - Arrest of Fishermen at Maldives - Date.15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22742,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-849-Hon_ble_CM_Press_Release_-_Industries_Dept_-_Release_of__Semicon_Eco_Scheme_-_15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-15",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-849-Hon'ble CM Press Release - Industries Dept - Release of  Semicon Eco Scheme - 15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22743,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No_-850-Tribal_Welfare_Dept_Press_Release_-_Date.15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-16",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No -850-Tribal Welfare Dept Press Release - Date.15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22744,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No-851-Finance_Dept_Press_Release-_English_-_Date_-_15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-16",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No-851-Finance Dept Press Release- English - Date - 15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22745,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No-851-Finance_Dept_Press_Release-_Tamil_-_Date_-_15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-16",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No-851-Finance Dept Press Release- Tamil - Date - 15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22746,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No-852-Food_and_Civil_Supplies__Consumer_Protection_Dept_Press_Release_-_Date_-_15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-16",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No-852-Food and Civil Supplies, Consumer Protection Dept Press Release - Date - 15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22747,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.PR.NO.853-_Hon_ble_Minister_for_Agriculture_-_Farmers_Welfare_Press_Release_-_Date-15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-16",
+        "press_release_no": null,
+        "press_name": "DIPR.PR.NO.853- Hon'ble Minister for Agriculture - Farmers Welfare Press Release - Date-15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22748,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-854_-_CEO_Press_Release-Special_drive-Tamil-Date_15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-16",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-854 - CEO Press Release-Special drive-Tamil-Date 15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      },
+      {
+        "id": 22749,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.PR.No-_855-_Hon_ble_Minister_for_RD___WRD_Press_Release_-Second_Regional_Conference_at_Coimbatore-Date-15.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-16",
+        "press_release_no": null,
+        "press_name": "DIPR.PR.No- 855- Hon'ble Minister for RD & WRD Press Release -Second Regional Conference at Coimbatore-Date-15.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-15",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "ac_number": 35,
+  "election_id": "tn-assembly-2026-form20",
+  "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt35/AC035.pdf",
+  "layout": "detailed",
+  "candidates": [
+    "ramukmaR.E maleeN",
+    "namarikanaJ.G",
+    "enirahtak ialamlihzE lihzE",
+    "naguS.R",
+    "ittokayinnuP.S",
+    "levridaK.M",
+    "M.mahtijnaR"
+  ],
+  "booth_count": 17,
+  "booths": [
+    {
+      "polling_station_serial": 1,
+      "location": null,
+      "electors": 4,
+      "votes": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "valid_votes": 12,
+      "rejected_votes": 26,
+      "nota": 27,
+      "total": 28,
+      "tendered_votes": 29
+    },
+    {
+      "polling_station_serial": 2,
+      "location": null,
+      "electors": 243,
+      "votes": [
+        2,
+        16,
+        179,
+        1,
+        0,
+        0,
+        1
+      ],
+      "valid_votes": 4,
+      "rejected_votes": 579,
+      "nota": 0,
+      "total": 579,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 3,
+      "location": null,
+      "electors": 291,
+      "votes": [
+        3,
+        52,
+        282,
+        0,
+        0,
+        0,
+        2
+      ],
+      "valid_votes": 3,
+      "rejected_votes": 908,
+      "nota": 0,
+      "total": 908,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 4,
+      "location": null,
+      "electors": 208,
+      "votes": [
+        0,
+        21,
+        391,
+        2,
+        2,
+        0,
+        1
+      ],
+      "valid_votes": 5,
+      "rejected_votes": 977,
+      "nota": 0,
+      "total": 977,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 5,
+      "location": null,
+      "electors": 189,
+      "votes": [
+        1,
+        11,
+        209,
+        0,
+        0,
+        0,
+        2
+      ],
+      "valid_votes": 1,
+      "rejected_votes": 579,
+      "nota": 0,
+      "total": 579,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 6,
+      "location": null,
+      "electors": 110,
+      "votes": [
+        3,
+        13,
+        193,
+        2,
+        0,
+        0,
+        0
+      ],
+      "valid_votes": 3,
+      "rejected_votes": 480,
+      "nota": 0,
+      "total": 480,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 7,
+      "location": null,
+      "electors": 197,
+      "votes": [
+        2,
+        32,
+        354,
+        1,
+        0,
+        0,
+        0
+      ],
+      "valid_votes": 3,
+      "rejected_votes": 884,
+      "nota": 0,
+      "total": 884,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 8,
+      "location": null,
+      "electors": 283,
+      "votes": [
+        3,
+        18,
+        181,
+        0,
+        1,
+        1,
+        3
+      ],
+      "valid_votes": 7,
+      "rejected_votes": 676,
+      "nota": 0,
+      "total": 676,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 9,
+      "location": null,
+      "electors": 212,
+      "votes": [
+        1,
+        20,
+        83,
+        0,
+        0,
+        0,
+        0
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 415,
+      "nota": 0,
+      "total": 415,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 10,
+      "location": null,
+      "electors": 323,
+      "votes": [
+        1,
+        37,
+        374,
+        1,
+        2,
+        1,
+        0
+      ],
+      "valid_votes": 5,
+      "rejected_votes": 994,
+      "nota": 0,
+      "total": 994,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 11,
+      "location": null,
+      "electors": 379,
+      "votes": [
+        2,
+        19,
+        267,
+        0,
+        3,
+        0,
+        0
+      ],
+      "valid_votes": 7,
+      "rejected_votes": 920,
+      "nota": 0,
+      "total": 920,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 12,
+      "location": null,
+      "electors": 211,
+      "votes": [
+        2,
+        8,
+        229,
+        0,
+        0,
+        0,
+        1
+      ],
+      "valid_votes": 1,
+      "rejected_votes": 667,
+      "nota": 0,
+      "total": 667,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 13,
+      "location": null,
+      "electors": 248,
+      "votes": [
+        5,
+        24,
+        200,
+        4,
+        0,
+        0,
+        1
+      ],
+      "valid_votes": 0,
+      "rejected_votes": 619,
+      "nota": 0,
+      "total": 619,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 14,
+      "location": null,
+      "electors": 148,
+      "votes": [
+        1,
+        14,
+        209,
+        0,
+        0,
+        0,
+        1
+      ],
+      "valid_votes": 3,
+      "rejected_votes": 566,
+      "nota": 0,
+      "total": 566,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 15,
+      "location": null,
+      "electors": 229,
+      "votes": [
+        1,
+        18,
+        182,
+        0,
+        0,
+        0,
+        2
+      ],
+      "valid_votes": 5,
+      "rejected_votes": 596,
+      "nota": 0,
+      "total": 596,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 16,
+      "location": null,
+      "electors": 145,
+      "votes": [
+        0,
+        15,
+        192,
+        0,
+        1,
+        1,
+        2
+      ],
+      "valid_votes": 2,
+      "rejected_votes": 541,
+      "nota": 0,
+      "total": 541,
+      "tendered_votes": 0
+    },
+    {
+      "polling_station_serial": 17,
+      "location": null,
+      "electors": 177,
+      "votes": [
+        1,
+        23,
+        187,
+        0,
+        1,
+        1,
+        2
+      ],
+      "valid_votes": 4,
+      "rejected_votes": 554,
+      "nota": 0,
+      "total": 554,
+      "tendered_votes": 0
+    }
+  ]
+}

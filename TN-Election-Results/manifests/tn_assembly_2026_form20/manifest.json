@@ -1,0 +1,1621 @@
+{
+  "election_id": "tn-assembly-2026-form20",
+  "source_index": "https://www.elections.tn.gov.in/Form20_TNLA2026.aspx",
+  "fetchedAt": "2026-10-19T09:59:39.512873+05:30",
+  "count": 225,
+  "constituencies": [
+    {
+      "ac_number": 1,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC001.pdf",
+      "booth_count": 337,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 2,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC002.pdf",
+      "booth_count": 320,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 3,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC003.pdf",
+      "booth_count": 330,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 4,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC004.pdf",
+      "booth_count": 335,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 5,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC005.pdf",
+      "booth_count": 452,
+      "candidate_count": 11,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 6,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC006.pdf",
+      "booth_count": 499,
+      "candidate_count": 20,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 7,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC007.pdf",
+      "booth_count": 482,
+      "candidate_count": 21,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 8,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC008.pdf",
+      "booth_count": 364,
+      "candidate_count": 23,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 9,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC009.pdf",
+      "booth_count": 511,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 10,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt1/AC010.pdf",
+      "booth_count": 336,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 11,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC011.pdf",
+      "booth_count": 244,
+      "candidate_count": 38,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 12,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC012.pdf",
+      "booth_count": 296,
+      "candidate_count": 47,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 13,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC013.pdf",
+      "booth_count": 283,
+      "candidate_count": 35,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 14,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC014.pdf",
+      "booth_count": 252,
+      "candidate_count": 28,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 15,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC015.pdf",
+      "booth_count": 221,
+      "candidate_count": 23,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 16,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC016.pdf",
+      "booth_count": 197,
+      "candidate_count": 18,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 17,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC017.pdf",
+      "booth_count": 194,
+      "candidate_count": 28,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 18,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC018.pdf",
+      "booth_count": 189,
+      "candidate_count": 23,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 19,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC019.pdf",
+      "booth_count": 232,
+      "candidate_count": 26,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 20,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC020.pdf",
+      "booth_count": 244,
+      "candidate_count": 18,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 21,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC021.pdf",
+      "booth_count": 273,
+      "candidate_count": 24,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 22,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC022.pdf",
+      "booth_count": 311,
+      "candidate_count": 24,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 23,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC023.pdf",
+      "booth_count": 276,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 24,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC024.pdf",
+      "booth_count": 248,
+      "candidate_count": 26,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 25,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC025.pdf",
+      "booth_count": 268,
+      "candidate_count": 19,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 26,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt2/AC026.pdf",
+      "booth_count": 314,
+      "candidate_count": 27,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 27,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt35/AC027.pdf",
+      "booth_count": 49,
+      "candidate_count": 25,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 28,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt3/AC028.pdf",
+      "booth_count": 426,
+      "candidate_count": 23,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 29,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt3/AC029.pdf",
+      "booth_count": 435,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 30,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt35/AC030.pdf",
+      "booth_count": 46,
+      "candidate_count": 21,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 31,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt35/AC031.pdf",
+      "booth_count": 25,
+      "candidate_count": 13,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 32,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt35/AC032.pdf",
+      "booth_count": 29,
+      "candidate_count": 13,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 33,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt35/AC033.pdf",
+      "booth_count": 14,
+      "candidate_count": 9,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 34,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt35/AC034.pdf",
+      "booth_count": 21,
+      "candidate_count": 11,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 35,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt35/AC035.pdf",
+      "booth_count": 17,
+      "candidate_count": 7,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 36,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt3/AC036.pdf",
+      "booth_count": 321,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 37,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt3/AC037.pdf",
+      "booth_count": 358,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 38,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt37/AC038.pdf",
+      "booth_count": 284,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 39,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt37/AC039.pdf",
+      "booth_count": 341,
+      "candidate_count": 23,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 40,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt4/AC040.pdf",
+      "booth_count": 280,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 41,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt37/AC041.pdf",
+      "booth_count": 304,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 42,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt37/AC042.pdf",
+      "booth_count": 318,
+      "candidate_count": 14,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 43,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt4/AC043.pdf",
+      "booth_count": 268,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 44,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt4/AC044.pdf",
+      "booth_count": 295,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 45,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt4/AC045.pdf",
+      "booth_count": 265,
+      "candidate_count": 11,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 46,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt4/AC046.pdf",
+      "booth_count": 319,
+      "candidate_count": 11,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 47,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt36/AC047.pdf",
+      "booth_count": 306,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 48,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt36/AC048.pdf",
+      "booth_count": 294,
+      "candidate_count": 16,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 49,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt36/AC049.pdf",
+      "booth_count": 282,
+      "candidate_count": 19,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 50,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt36/AC050.pdf",
+      "booth_count": 299,
+      "candidate_count": 24,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 51,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt5/AC051.pdf",
+      "booth_count": 13,
+      "candidate_count": 13,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 52,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt5/AC052.pdf",
+      "booth_count": 324,
+      "candidate_count": 15,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 53,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt5/AC053.pdf",
+      "booth_count": 10,
+      "candidate_count": 15,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 54,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt5/AC054.pdf",
+      "booth_count": 10,
+      "candidate_count": 13,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 55,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt5/AC055.pdf",
+      "booth_count": 16,
+      "candidate_count": 14,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 56,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt5/AC056.pdf",
+      "booth_count": 11,
+      "candidate_count": 10,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 57,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt6/AC057.pdf",
+      "booth_count": 312,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 58,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt6/AC058.pdf",
+      "booth_count": 320,
+      "candidate_count": 21,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 59,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt6/AC059.pdf",
+      "booth_count": 320,
+      "candidate_count": 18,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 60,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt6/AC060.pdf",
+      "booth_count": 322,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 61,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt6/AC061.pdf",
+      "booth_count": 322,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 62,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt7/AC062.pdf",
+      "booth_count": 342,
+      "candidate_count": 15,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 63,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt7/AC063.pdf",
+      "booth_count": 318,
+      "candidate_count": 30,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 64,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt7/AC064.pdf",
+      "booth_count": 307,
+      "candidate_count": 23,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 65,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt7/AC065.pdf",
+      "booth_count": 301,
+      "candidate_count": 21,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 66,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt7/AC066.pdf",
+      "booth_count": 299,
+      "candidate_count": 15,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 67,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt7/AC067.pdf",
+      "booth_count": 323,
+      "candidate_count": 24,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 68,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt7/AC068.pdf",
+      "booth_count": 334,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 69,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt7/AC069.pdf",
+      "booth_count": 293,
+      "candidate_count": 15,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 70,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt8/AC070.pdf",
+      "booth_count": 9,
+      "candidate_count": 19,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 71,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt8/AC071.pdf",
+      "booth_count": 11,
+      "candidate_count": 21,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 72,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt8/AC072.pdf",
+      "booth_count": 8,
+      "candidate_count": 14,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 73,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt8/AC073.pdf",
+      "booth_count": 8,
+      "candidate_count": 15,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 74,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt8/AC074.pdf",
+      "booth_count": 12,
+      "candidate_count": 24,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 75,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt8/AC075.pdf",
+      "booth_count": 11,
+      "candidate_count": 24,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 76,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt8/AC076.pdf",
+      "booth_count": 330,
+      "candidate_count": 17,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 77,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt33/AC077.pdf",
+      "booth_count": 375,
+      "candidate_count": 14,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 78,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt33/AC078.pdf",
+      "booth_count": 350,
+      "candidate_count": 25,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 79,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt33/AC079.pdf",
+      "booth_count": 340,
+      "candidate_count": 22,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 80,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt33/AC080.pdf",
+      "booth_count": 370,
+      "candidate_count": 11,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 81,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC081.pdf",
+      "booth_count": 280,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 82,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC082.pdf",
+      "booth_count": 300,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 83,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC083.pdf",
+      "booth_count": 336,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 84,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC084.pdf",
+      "booth_count": 362,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 85,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC085.pdf",
+      "booth_count": 327,
+      "candidate_count": 18,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 86,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC086.pdf",
+      "booth_count": 335,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 87,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC087.pdf",
+      "booth_count": 334,
+      "candidate_count": 20,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 88,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC088.pdf",
+      "booth_count": 307,
+      "candidate_count": 31,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 89,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC089.pdf",
+      "booth_count": 280,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 90,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC090.pdf",
+      "booth_count": 268,
+      "candidate_count": 19,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 91,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt9/AC091.pdf",
+      "booth_count": 307,
+      "candidate_count": 20,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 92,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt10/AC092.pdf",
+      "booth_count": 285,
+      "candidate_count": 18,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 93,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt10/AC093.pdf",
+      "booth_count": 304,
+      "candidate_count": 12,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 94,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt10/AC094.pdf",
+      "booth_count": 310,
+      "candidate_count": 27,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 95,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt10/AC095.pdf",
+      "booth_count": 268,
+      "candidate_count": 31,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 96,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt10/AC096.pdf",
+      "booth_count": 289,
+      "candidate_count": 23,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 97,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt10/AC097.pdf",
+      "booth_count": 312,
+      "candidate_count": 21,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 98,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt11/AC098.pdf",
+      "booth_count": 256,
+      "candidate_count": 20,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 99,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt11/AC099.pdf",
+      "booth_count": 325,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 100,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt11/AC100.pdf",
+      "booth_count": 285,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 101,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt32/AC101.pdf",
+      "booth_count": 320,
+      "candidate_count": 9,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 102,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt32/AC102.pdf",
+      "booth_count": 318,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 103,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt11/AC103.pdf",
+      "booth_count": 292,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 104,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt11/AC104.pdf",
+      "booth_count": 306,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 105,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt11/AC105.pdf",
+      "booth_count": 266,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 106,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt11/AC106.pdf",
+      "booth_count": 305,
+      "candidate_count": 18,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 107,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt11/AC107.pdf",
+      "booth_count": 327,
+      "candidate_count": 12,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 108,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt12/AC108.pdf",
+      "booth_count": 254,
+      "candidate_count": 6,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 109,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt12/AC109.pdf",
+      "booth_count": 229,
+      "candidate_count": 6,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 110,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt12/AC110.pdf",
+      "booth_count": 234,
+      "candidate_count": 6,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 111,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC111.pdf",
+      "booth_count": 356,
+      "candidate_count": 22,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 112,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt32/AC112.pdf",
+      "booth_count": 372,
+      "candidate_count": 14,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 113,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt32/AC113.pdf",
+      "booth_count": 442,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 114,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt32/AC114.pdf",
+      "booth_count": 289,
+      "candidate_count": 24,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 115,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt32/AC115.pdf",
+      "booth_count": 480,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 116,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC116.pdf",
+      "booth_count": 378,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 117,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC117.pdf",
+      "booth_count": 547,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 118,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC118.pdf",
+      "booth_count": 333,
+      "candidate_count": 28,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 119,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC119.pdf",
+      "booth_count": 367,
+      "candidate_count": 21,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 120,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC120.pdf",
+      "booth_count": 275,
+      "candidate_count": 31,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 121,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC121.pdf",
+      "booth_count": 353,
+      "candidate_count": 28,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 122,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC122.pdf",
+      "booth_count": 362,
+      "candidate_count": 5,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 123,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC123.pdf",
+      "booth_count": 268,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 124,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt13/AC124.pdf",
+      "booth_count": 241,
+      "candidate_count": 6,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 125,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt32/AC125.pdf",
+      "booth_count": 307,
+      "candidate_count": 11,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 126,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt32/AC126.pdf",
+      "booth_count": 294,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 127,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt14/AC127.pdf",
+      "booth_count": 339,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 128,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt14/AC128.pdf",
+      "booth_count": 314,
+      "candidate_count": 14,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 129,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt14/AC129.pdf",
+      "booth_count": 341,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 130,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt14/AC130.pdf",
+      "booth_count": 305,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 131,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt14/AC131.pdf",
+      "booth_count": 359,
+      "candidate_count": 21,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 132,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt14/AC132.pdf",
+      "booth_count": 316,
+      "candidate_count": 20,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 133,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt14/AC133.pdf",
+      "booth_count": 327,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 134,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt15/AC134.pdf",
+      "booth_count": 27,
+      "candidate_count": 30,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 135,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt15/AC135.pdf",
+      "booth_count": 283,
+      "candidate_count": 79,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 136,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt15/AC136.pdf",
+      "booth_count": 275,
+      "candidate_count": 28,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 137,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt15/AC137.pdf",
+      "booth_count": 286,
+      "candidate_count": 29,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 138,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC138.pdf",
+      "booth_count": 346,
+      "candidate_count": 18,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 139,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC139.pdf",
+      "booth_count": 366,
+      "candidate_count": 21,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 140,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC140.pdf",
+      "booth_count": 305,
+      "candidate_count": 14,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 141,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC141.pdf",
+      "booth_count": 304,
+      "candidate_count": 20,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 142,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC142.pdf",
+      "booth_count": 312,
+      "candidate_count": 26,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 143,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC143.pdf",
+      "booth_count": 276,
+      "candidate_count": 24,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 144,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC144.pdf",
+      "booth_count": 296,
+      "candidate_count": 22,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 145,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC145.pdf",
+      "booth_count": 283,
+      "candidate_count": 11,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 146,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt16/AC146.pdf",
+      "booth_count": 297,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 147,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt17/AC147.pdf",
+      "booth_count": 387,
+      "candidate_count": 11,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 148,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt17/AC148.pdf",
+      "booth_count": 345,
+      "candidate_count": 19,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 149,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt31/AC149.pdf",
+      "booth_count": 331,
+      "candidate_count": 14,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 150,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt31/AC150.pdf",
+      "booth_count": 322,
+      "candidate_count": 18,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 160,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt38/AC160.pdf",
+      "booth_count": 305,
+      "candidate_count": 10,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 161,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt38/AC161.pdf",
+      "booth_count": 299,
+      "candidate_count": 20,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 162,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt38/AC162.pdf",
+      "booth_count": 342,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 163,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt19/AC163.pdf",
+      "booth_count": 21,
+      "candidate_count": 11,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 164,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt19/AC164.pdf",
+      "booth_count": 11,
+      "candidate_count": 5,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 165,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt19/AC165.pdf",
+      "booth_count": 18,
+      "candidate_count": 9,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 166,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt20/AC166.pdf",
+      "booth_count": 293,
+      "candidate_count": 9,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 167,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt20/AC167.pdf",
+      "booth_count": 300,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 168,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt20/AC168.pdf",
+      "booth_count": 327,
+      "candidate_count": 8,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 169,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt20/AC169.pdf",
+      "booth_count": 337,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 170,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt21/AC170.pdf",
+      "booth_count": 320,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 171,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt21/AC171.pdf",
+      "booth_count": 293,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 172,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt21/AC172.pdf",
+      "booth_count": 315,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 173,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt21/AC173.pdf",
+      "booth_count": 331,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 174,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt21/AC174.pdf",
+      "booth_count": 309,
+      "candidate_count": 11,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 175,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt21/AC175.pdf",
+      "booth_count": 314,
+      "candidate_count": 9,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 176,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt21/AC176.pdf",
+      "booth_count": 301,
+      "candidate_count": 11,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 177,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt21/AC177.pdf",
+      "booth_count": 284,
+      "candidate_count": 10,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 178,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt22/AC178.pdf",
+      "booth_count": 250,
+      "candidate_count": 8,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 179,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt22/AC179.pdf",
+      "booth_count": 276,
+      "candidate_count": 24,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 180,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt22/AC180.pdf",
+      "booth_count": 295,
+      "candidate_count": 30,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 181,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt22/AC181.pdf",
+      "booth_count": 300,
+      "candidate_count": 12,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 182,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt22/AC182.pdf",
+      "booth_count": 258,
+      "candidate_count": 12,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 183,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt22/AC183.pdf",
+      "booth_count": 302,
+      "candidate_count": 13,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 184,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt23/AC184.pdf",
+      "booth_count": 33,
+      "candidate_count": 22,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 185,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt23/AC185.pdf",
+      "booth_count": 21,
+      "candidate_count": 12,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 186,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt23/AC186.pdf",
+      "booth_count": 21,
+      "candidate_count": 14,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 187,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt23/AC187.pdf",
+      "booth_count": 21,
+      "candidate_count": 11,
+      "layout": "detailed"
+    },
+    {
+      "ac_number": 188,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC188.pdf",
+      "booth_count": 291,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 189,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC189.pdf",
+      "booth_count": 398,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 190,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC190.pdf",
+      "booth_count": 256,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 191,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC191.pdf",
+      "booth_count": 266,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 192,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC192.pdf",
+      "booth_count": 227,
+      "candidate_count": 6,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 193,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC193.pdf",
+      "booth_count": 253,
+      "candidate_count": 12,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 194,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC194.pdf",
+      "booth_count": 327,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 195,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC195.pdf",
+      "booth_count": 352,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 196,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC196.pdf",
+      "booth_count": 344,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 197,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt24/AC197.pdf",
+      "booth_count": 342,
+      "candidate_count": 12,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 198,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt25/AC198.pdf",
+      "booth_count": 344,
+      "candidate_count": 18,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 199,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt25/AC199.pdf",
+      "booth_count": 359,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 200,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt25/AC200.pdf",
+      "booth_count": 346,
+      "candidate_count": 15,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 201,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt25/AC201.pdf",
+      "booth_count": 345,
+      "candidate_count": 19,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 202,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt26/AC202.pdf",
+      "booth_count": 266,
+      "candidate_count": 22,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 203,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt26/AC203.pdf",
+      "booth_count": 308,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 204,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt26/AC204.pdf",
+      "booth_count": 291,
+      "candidate_count": 22,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 205,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt26/AC205.pdf",
+      "booth_count": 288,
+      "candidate_count": 14,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 206,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt26/AC206.pdf",
+      "booth_count": 275,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 207,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt26/AC207.pdf",
+      "booth_count": 267,
+      "candidate_count": 25,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 208,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt26/AC208.pdf",
+      "booth_count": 289,
+      "candidate_count": 23,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 209,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt27/AC209.pdf",
+      "booth_count": 314,
+      "candidate_count": 12,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 210,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt27/AC210.pdf",
+      "booth_count": 378,
+      "candidate_count": 21,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 211,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt27/AC211.pdf",
+      "booth_count": 399,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 212,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt27/AC212.pdf",
+      "booth_count": 408,
+      "candidate_count": 20,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 213,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt28/AC213.pdf",
+      "booth_count": 268,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 214,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt28/AC214.pdf",
+      "booth_count": 352,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 215,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt28/AC215.pdf",
+      "booth_count": 307,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 216,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt28/AC216.pdf",
+      "booth_count": 293,
+      "candidate_count": 15,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 217,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt28/AC217.pdf",
+      "booth_count": 308,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 218,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt28/AC218.pdf",
+      "booth_count": 311,
+      "candidate_count": 21,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 219,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt34/AC219.pdf",
+      "booth_count": 309,
+      "candidate_count": 20,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 220,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt34/AC220.pdf",
+      "booth_count": 310,
+      "candidate_count": 18,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 221,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt34/AC221.pdf",
+      "booth_count": 359,
+      "candidate_count": 22,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 222,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt34/AC222.pdf",
+      "booth_count": 359,
+      "candidate_count": 22,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 223,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt34/AC223.pdf",
+      "booth_count": 332,
+      "candidate_count": 13,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 224,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt29/AC224.pdf",
+      "booth_count": 386,
+      "candidate_count": 20,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 225,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt29/AC225.pdf",
+      "booth_count": 309,
+      "candidate_count": 5,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 226,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt29/AC226.pdf",
+      "booth_count": 296,
+      "candidate_count": 17,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 227,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt29/AC227.pdf",
+      "booth_count": 345,
+      "candidate_count": 25,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 228,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt29/AC228.pdf",
+      "booth_count": 322,
+      "candidate_count": 23,
+      "layout": "simple"
+    },
+    {
+      "ac_number": 229,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt30/AC229.pdf",
+      "booth_count": 363,
+      "candidate_count": 14,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 230,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt30/AC230.pdf",
+      "booth_count": 322,
+      "candidate_count": 20,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 231,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt30/AC231.pdf",
+      "booth_count": 316,
+      "candidate_count": 13,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 232,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt30/AC232.pdf",
+      "booth_count": 312,
+      "candidate_count": 11,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 233,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt30/AC233.pdf",
+      "booth_count": 300,
+      "candidate_count": 14,
+      "layout": "indexed"
+    },
+    {
+      "ac_number": 234,
+      "source_url": "https://www.elections.tn.gov.in/Form20_TNLA2026/dt30/AC234.pdf",
+      "booth_count": 301,
+      "candidate_count": 13,
+      "layout": "indexed"
+    }
+  ],
+  "errors": [
+    {
+      "ac_number": 151,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 152,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 153,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 154,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 155,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 156,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 157,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 158,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 159,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    }
+  ]
+}

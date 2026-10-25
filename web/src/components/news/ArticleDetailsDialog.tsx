@@ -22,9 +22,28 @@ import { formatArticlePubDateInIst } from "@/lib/newsDateUtils";
 import type { NewsArticle } from "@/types/news";
 import { cn } from "@/lib/utils";
 
-function isPaidOnly(value: string | null | undefined): boolean {
-  if (!value) return false;
-  return value.startsWith("ONLY AVAILABLE IN");
+function isPaidOnly(value: unknown): boolean {
+  return typeof value === "string" && value.startsWith("ONLY AVAILABLE IN");
+}
+
+function formatNewsDetailValue(value: unknown): ReactNode {
+  if (value === null || value === undefined || value === "") return "—";
+  if (typeof value === "string") return value;
+  if (Array.isArray(value)) {
+    const strings = value.filter((item): item is string => typeof item === "string");
+    if (strings.length === value.length && strings.length > 0) {
+      return <BadgeList items={strings} />;
+    }
+    return value.map((item) => String(item)).join(", ");
+  }
+  if (typeof value === "object") {
+    return (
+      <span className="whitespace-pre-wrap break-words font-mono text-xs">
+        {JSON.stringify(value, null, 2)}
+      </span>
+    );
+  }
+  return String(value);
 }
 
 function formatFetchedAt(value: string): string {
@@ -271,32 +290,32 @@ export function ArticleDetailsDialog({
           />
           <DetailRow
             label="Sentiment"
-            value={article.sentiment ?? "—"}
+            value={formatNewsDetailValue(article.sentiment)}
             locked={isPaidOnly(article.sentiment)}
           />
           <DetailRow
             label="Sentiment stats"
-            value={article.sentiment_stats ?? "—"}
+            value={formatNewsDetailValue(article.sentiment_stats)}
             locked={isPaidOnly(article.sentiment_stats)}
           />
           <DetailRow
             label="AI tag"
-            value={article.ai_tag ?? "—"}
+            value={formatNewsDetailValue(article.ai_tag)}
             locked={isPaidOnly(article.ai_tag)}
           />
           <DetailRow
             label="AI region"
-            value={article.ai_region ?? "—"}
+            value={formatNewsDetailValue(article.ai_region)}
             locked={isPaidOnly(article.ai_region)}
           />
           <DetailRow
             label="AI org"
-            value={article.ai_org ?? "—"}
+            value={formatNewsDetailValue(article.ai_org)}
             locked={isPaidOnly(article.ai_org)}
           />
           <DetailRow
             label="AI summary"
-            value={article.ai_summary ?? "—"}
+            value={formatNewsDetailValue(article.ai_summary)}
             locked={isPaidOnly(article.ai_summary)}
           />
           <DetailRow

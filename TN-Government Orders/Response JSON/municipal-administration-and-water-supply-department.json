@@ -5,11 +5,20 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "18-08-2026",
+  "start_date": "15-10-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:37.026354+05:30",
-  "lastFetchedAt": "2026-08-18T10:12:17.488773+05:30",
-  "fetchCount": 13,
-  "count": 0,
-  "orders": []
+  "lastFetchedAt": "2026-10-25T15:47:39.803804+05:30",
+  "fetchCount": 14,
+  "count": 1,
+  "orders": [
+    {
+      "go_date": "2026-10-16",
+      "go_number": "G.O.(Ms) No.184",
+      "go_name": "Rain Water Harvesting - Rejuvenation of Rain Water Harvesting Structures /Implementation of Rain Water Harvesting Programme as a Mass Movement for achieving Water Abundance - Orders - Issued.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/maws_e_184_2026.pdf",
+      "department_name": "Municipal Administration and Water Supply Department",
+      "dep_id_encoded": "MjE="
+    }
+  ]
 }

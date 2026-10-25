@@ -69,4 +69,59 @@
   #root {
     min-height: 100vh;
   }
+
+  .election-round-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1.75rem;
+    margin: 0;
+  }
+
+  .election-round-slider:focus-visible {
+    outline: none;
+  }
+
+  .election-round-slider:focus-visible::-webkit-slider-thumb {
+    box-shadow:
+      0 0 0 3px color-mix(in oklch, var(--color-ring) 35%, transparent),
+      0 2px 6px rgb(0 0 0 / 0.2);
+  }
+
+  .election-round-slider::-webkit-slider-runnable-track {
+    height: 0.625rem;
+    background: transparent;
+  }
+
+  .election-round-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: -0.28rem;
+    border-radius: 9999px;
+    border: 3px solid var(--color-card);
+    background: var(--color-primary);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.22);
+    cursor: grab;
+  }
+
+  .election-round-slider:active::-webkit-slider-thumb {
+    cursor: grabbing;
+    transform: scale(1.06);
+  }
+
+  .election-round-slider::-moz-range-track {
+    height: 0.625rem;
+    background: transparent;
+    border: none;
+  }
+
+  .election-round-slider::-moz-range-thumb {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 9999px;
+    border: 3px solid var(--color-card);
+    background: var(--color-primary);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.22);
+    cursor: grab;
+  }
 }

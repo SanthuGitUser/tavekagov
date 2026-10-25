@@ -1,0 +1,17 @@
+{
+  "election_id": "tn-assembly-2026-bye-form20",
+  "source_index": "https://www.elections.tn.gov.in/Form20_BE2026_35_101.aspx",
+  "fetchedAt": "2026-10-19T10:01:01.017403+05:30",
+  "count": 0,
+  "constituencies": [],
+  "errors": [
+    {
+      "ac_number": 35,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    },
+    {
+      "ac_number": 101,
+      "error": "image-only PDF (no extractable text; OCR not configured)"
+    }
+  ]
+}

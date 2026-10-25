@@ -89,7 +89,7 @@ def parse_roundwise_html(html: str, ac: int, source_url: str) -> dict:
             if len(cells) < 5 or _is_header_row(cells):
                 continue
             name, party = cells[0], cells[1]
-            if name.lower() == "total":
+            if name.lower() == "total" or party.lower() == "total" or not name.strip():
                 continue
             candidates.append(
                 {
@@ -164,6 +164,23 @@ def live_results_available(session: requests.Session, timeout: tuple[float, floa
         return False
 
 
+def load_existing_results(path: Path) -> dict[int, dict]:
+    if not path.is_file():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    results = data.get("results")
+    if not isinstance(results, list):
+        return {}
+    by_ac: dict[int, dict] = {}
+    for row in results:
+        if isinstance(row, dict) and isinstance(row.get("ac_number"), int):
+            by_ac[row["ac_number"]] = row
+    return by_ac
+
+
 def write_payload(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     if str(_SYNC_CONFIG) not in sys.path:
@@ -196,6 +213,12 @@ def main() -> int:
         default=_MANIFESTS_DIR / "tn_assembly_2026_roundwise.json",
         help="Output JSON path.",
     )
+    parser.add_argument(
+        "--resume",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Skip ACs already present in the output file (default: on).",
+    )
     args = parser.parse_args()
 
     if args.ac is not None and not (TN_AC_MIN <= args.ac <= TN_AC_MAX):
@@ -219,13 +242,35 @@ def main() -> int:
     )
     if archive_only:
         print(
-            f"Live ECI round-wise pages unavailable; using web.archive.org snapshot {archive_snapshot}."
+            f"Live ECI round-wise pages unavailable; using web.archive.org snapshot {archive_snapshot}.",
+            flush=True,
         )
 
-    results: list[dict] = []
+    results_by_ac: dict[int, dict] = {}
+    if args.resume and args.ac is None:
+        results_by_ac = load_existing_results(args.output)
+        if results_by_ac:
+            print(f"Resuming: {len(results_by_ac)} constituencies already in {args.output.name}.", flush=True)
+
     errors: list[dict] = []
 
+    def flush_output() -> None:
+        results = sorted(results_by_ac.values(), key=lambda item: item["ac_number"])
+        payload = {
+            "election_id": "tn-assembly-2026",
+            "source_base": BASE,
+            "archive_snapshot": archive_snapshot,
+            "fetchedAt": datetime.now(KOLKATA).isoformat(),
+            "count": len(results),
+            "results": results,
+            "errors": errors,
+        }
+        write_payload(args.output, payload)
+
     for index, ac in enumerate(ac_numbers, start=1):
+        if args.ac is None and ac in results_by_ac:
+            print(f"[{index}/{len(ac_numbers)}] AC {ac}: skipped (already imported)")
+            continue
         try:
             row = fetch_ac(
                 session,
@@ -238,7 +283,8 @@ def main() -> int:
                 errors.append({"ac_number": ac, "error": "no rounds parsed"})
                 print(f"[{index}/{len(ac_numbers)}] AC {ac}: no rounds parsed", file=sys.stderr)
             else:
-                results.append(row)
+                results_by_ac[ac] = row
+                flush_output()
                 print(
                     f"[{index}/{len(ac_numbers)}] AC {ac}: "
                     f"{len(row['rounds'])} rounds ({row.get('evm_round_status') or '?'})"
@@ -253,18 +299,8 @@ def main() -> int:
         if index < len(ac_numbers):
             time.sleep(args.delay)
 
-    payload = {
-        "election_id": "tn-assembly-2026",
-        "source_base": BASE,
-        "archive_snapshot": archive_snapshot,
-        "fetchedAt": datetime.now(KOLKATA).isoformat(),
-        "count": len(results),
-        "results": sorted(results, key=lambda item: item["ac_number"]),
-        "errors": errors,
-    }
-
-    write_payload(args.output, payload)
-    print(f"Wrote {args.output} ({len(results)} OK, {len(errors)} errors)")
+    flush_output()
+    print(f"Wrote {args.output} ({len(results_by_ac)} OK, {len(errors)} errors)")
     return 0 if not errors else 1
 
 

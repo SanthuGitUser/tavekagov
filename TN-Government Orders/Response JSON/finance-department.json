@@ -5,13 +5,21 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "29-08-2026",
+  "start_date": "15-10-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:32.497505+05:30",
-  "lastFetchedAt": "2026-10-07T17:11:59.100729+05:30",
-  "fetchCount": 14,
-  "count": 10,
+  "lastFetchedAt": "2026-10-25T15:47:35.345222+05:30",
+  "fetchCount": 15,
+  "count": 11,
   "orders": [
+    {
+      "go_date": "2026-10-16",
+      "go_number": "14190711/TAPS/2026-5",
+      "go_name": "Tamil Nadu Assured Pension Scheme - Interim monthly payout - Clarifications - Adjustment of excess interim monthly payout - Further clarifications Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/LrNo14190711-2026-5dt16102026.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
     {
       "go_date": "2026-09-11",
       "go_number": "Letter No. 15120106/Finance (TAPS)/2026-2",

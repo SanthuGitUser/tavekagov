@@ -85,7 +85,7 @@ function sortSources(sources: NewsArticle[]): NewsArticle[] {
   });
 }
 
-export function groupNewsArticles(articles: NewsArticle[]): NewsStoryGroup[] {
+function groupNewsArticlesForDay(articles: NewsArticle[]): NewsStoryGroup[] {
   if (articles.length === 0) return [];
 
   const parent = articles.map((_, index) => index);
@@ -131,6 +131,25 @@ export function groupNewsArticles(articles: NewsArticle[]): NewsStoryGroup[] {
       };
     })
     .sort((left, right) => right.primary.pubDate.localeCompare(left.primary.pubDate));
+}
+
+export function groupNewsArticles(articles: NewsArticle[]): NewsStoryGroup[] {
+  if (articles.length === 0) return [];
+
+  const byDate = new Map<string, NewsArticle[]>();
+  for (const article of articles) {
+    const date = getArticleDateInIst(article);
+    const bucket = byDate.get(date);
+    if (bucket) bucket.push(article);
+    else byDate.set(date, [article]);
+  }
+
+  const groups: NewsStoryGroup[] = [];
+  for (const dayArticles of byDate.values()) {
+    groups.push(...groupNewsArticlesForDay(dayArticles));
+  }
+
+  return groups.sort((left, right) => right.primary.pubDate.localeCompare(left.primary.pubDate));
 }
 
 export function storyMatchesSearch(group: NewsStoryGroup, query: string): boolean {

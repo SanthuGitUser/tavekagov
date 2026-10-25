@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-22",
+  "fetchedAt": "2026-10-25T15:47:27.563037+05:30",
+  "lastFetchedAt": "2026-10-25T15:47:27.563037+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-22"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22783,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.886-_Hon_ble_CM_Social_Media_Message_-Press_Release-Date-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.886- Hon'ble CM Social Media Message -Press Release-Date- 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22784,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.887_-_Hon_ble_CM_Press_Release_-_Paralympic_Badminton_Bronze_medalist_NIthyasree_-_Date.22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.887 - Hon'ble CM Press Release - Paralympic Badminton Bronze medalist NIthyasree - Date.22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22785,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.888_-_Hon_ble_CM_Press_Release-Fire_crackers_unit_accident-Anaicut__Vellure_District-CMPRF-Date.22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.888 - Hon'ble CM Press Release-Fire crackers unit accident-Anaicut, Vellure District-CMPRF-Date.22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22786,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.889_-_Hon_ble_CM_Message_on_Hon_ble_Union_Home_Minister_s_birthday_-_Date.22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.889 - Hon'ble CM Message on Hon'ble Union Home Minister's birthday - Date.22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22787,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.890_-Hon_ble_CM_Condolence_Message_for_playback_singer_Krishnaraj_Press_Release_-_Date._22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.890 -Hon'ble CM Condolence Message for playback singer Krishnaraj Press Release - Date. 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22788,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.891_-_AD_Welfare_Department_Press_Release_-_Date.22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.891 - AD Welfare Department Press Release - Date.22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22789,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.892_-_Hon_ble_CM_Social_Media_Message_Japan_Paralympic_-_Manisha_Ramdoss_II_-_Press_Release_-_Date-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.892 - Hon'ble CM Social Media Message Japan Paralympic - Manisha Ramdoss II - Press Release - Date- 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22790,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.893_-_Hon_ble_CM_Social_Media_Message_on_Rajaraja_Chola_Sadaya_Vizha_-_Press_Release_-_Date_-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.893 - Hon'ble CM Social Media Message on Rajaraja Chola Sadaya Vizha - Press Release - Date - 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22791,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.894_-_Hon_ble_CM_North-East_Monsoon-Inspection_at_Ezhilagam_-_Press_Release_-_Date-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.894 - Hon'ble CM North-East Monsoon-Inspection at Ezhilagam - Press Release - Date- 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22794,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.895_EDII_-_Gold_Appraiser_Training_-_Press_Release_-_English_-_Date-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.895 EDII - Gold Appraiser Training - Press Release - English - Date- 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22795,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.895_EDII_-_Gold_Appraiser_Training_-_Press_Release_-_Tamil_-_Date-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.895 EDII - Gold Appraiser Training - Press Release - Tamil - Date- 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22796,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.896_-_Hon_ble_CM_Social_Media_Message_-Asian_Para_Games_-_Naveen_Sivakumar_-_Press_Release_-_Date_-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.896 - Hon'ble CM Social Media Message -Asian Para Games - Naveen Sivakumar - Press Release - Date - 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22797,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.897_-_Tribal_Welfare_Dept_-_Press_Release_-_Date_-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.897 - Tribal Welfare Dept - Press Release - Date - 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22798,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.898_Hon_ble_CM_Social_Media_Message_-_Japan_Para_Asian_Games_-_Solairaj_Dharmaraj_-_Press_Release_-_Date_-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.898 Hon'ble CM Social Media Message - Japan Para Asian Games - Solairaj Dharmaraj - Press Release - Date - 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22799,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR__-P.R.No.899_-_Hon_ble_Minister_for_Human_Resources_Management_Dept_-_Press_Release_-_Date_-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR  -P.R.No.899 - Hon'ble Minister for Human Resources Management Dept - Press Release - Date - 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      },
+      {
+        "id": 22800,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.900_-_Social_Justice_Dept_-_Press_Release_-_Date_-_22.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-22",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.900 - Social Justice Dept - Press Release - Date - 22.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-22",
+        "language": "en"
+      }
+    ]
+  }
+}

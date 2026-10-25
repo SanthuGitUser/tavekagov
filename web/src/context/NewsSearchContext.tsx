@@ -27,8 +27,8 @@ export function NewsSearchProvider({ children }: { children: ReactNode }) {
   const [totalCount, setTotalCount] = useState(0);
 
   const setArticleCounts = useCallback((filtered: number, total: number) => {
-    setFilteredCount(filtered);
-    setTotalCount(total);
+    setFilteredCount((current) => (current === filtered ? current : filtered));
+    setTotalCount((current) => (current === total ? current : total));
   }, []);
 
   const value = useMemo(

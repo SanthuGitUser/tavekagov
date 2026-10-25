@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-23",
+  "fetchedAt": "2026-10-25T15:47:27.859433+05:30",
+  "lastFetchedAt": "2026-10-25T15:47:27.859433+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-23"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22801,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.901-Hon_ble_CM_Press_Release_-Agriculture_Dept_-_Appointment_Orders_and_Awards__-_Date_23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.901-Hon'ble CM Press Release -Agriculture Dept - Appointment Orders and Awards  - Date 23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22802,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No._902_-EDII_Press_Release-Perfumery_Formulation_Workshop_-English_-Date_23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No. 902 -EDII Press Release-Perfumery Formulation Workshop -English -Date 23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22803,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No._902_-EDII_Press_Release-Perfumery_Formulation_Workshop_-Tamil__-Date_23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No. 902 -EDII Press Release-Perfumery Formulation Workshop -Tamil  -Date 23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22804,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.903-Hon_ble_CM_Social_Media_Message_-_Japan_Para_Asian_Games_-_Greeting_Winners_-Date__23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.903-Hon'ble CM Social Media Message - Japan Para Asian Games - Greeting Winners -Date  23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22805,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.904-_EDII_Press_Release-_Spices___Sweet__Ready_Mix__Value_Added_Products-English__-Date_23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.904- EDII Press Release- Spices & Sweet (Ready Mix) Value Added Products-English  -Date 23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22806,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.904_-_EDII_Press_Release-_Spices___Sweet__Ready_Mix__Value_Added_Products_-Tamil_-Date_23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.904 - EDII Press Release- Spices & Sweet (Ready Mix) Value Added Products -Tamil -Date 23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22807,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.905_-_EDII_Press_Release-Travel___Tourism_Training_Program_-English_-Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.905 - EDII Press Release-Travel & Tourism Training Program -English -Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22808,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.905_-_EDII_Press_Release-Travel___Tourism_Training_Program_-Tamil_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.905 - EDII Press Release-Travel & Tourism Training Program -Tamil - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22809,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.906_-_Police_Department_Press_Release_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.906 - Police Department Press Release - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22810,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.907_-_Hon_ble_CM_Social_Media_Message_-_Japan_Para_Asian_Games_-_Badminton_Thulasimathi_Murugesan_Press_Release_-_Date_-_23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.907 - Hon'ble CM Social Media Message - Japan Para Asian Games - Badminton Thulasimathi Murugesan Press Release - Date - 23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22811,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.908_-_Hon_ble_Rural_Development_and_Water_Resources__Minister_-_Pechipparai_Dam_Award_Press_Release_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.908 - Hon'ble Rural Development and Water Resources  Minister - Pechipparai Dam Award Press Release - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22812,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.909_-_Hon_ble_Minister_for_Rural_Development_and_Water_Resources_-3rd_Regional_Conference_at_Madurai_Press_Release_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.909 - Hon'ble Minister for Rural Development and Water Resources -3rd Regional Conference at Madurai Press Release - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22813,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.910_-_Finance_Dept_Press_Release_-_English_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.910 - Finance Dept Press Release - English - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22814,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.910_-_Finance_Dept_Press_Release_-_Tamil_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.910 - Finance Dept Press Release - Tamil - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22815,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.911_-_Hon_ble_Minister_for_Housing_and_Urban_Development_Press_Release_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.911 - Hon'ble Minister for Housing and Urban Development Press Release - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22816,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.912_-_Hon_ble_Minister_for_School_Education__Tamil_Development__Information_and_Publicity_Press_Release_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-23",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.912 - Hon'ble Minister for School Education, Tamil Development, Information and Publicity Press Release - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22818,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.913_Indian_Medicine_and_Homeopathy_Dept_Press_Release_-_English_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.913 Indian Medicine and Homeopathy Dept Press Release - English - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22819,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.913_Indian_Medicine_and_Homeopathy_Dept_Press_Release_-_Tamil_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.913 Indian Medicine and Homeopathy Dept Press Release - Tamil - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22820,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.914_-_Co-Operative_Dept_Press_Release_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.914 - Co-Operative Dept Press Release - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22821,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.915_-__Agriculture_-_Farmers_Welfare_Dept_Press_Release_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.915 -  Agriculture - Farmers Welfare Dept Press Release - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22822,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.916_-_Election_Dept_Press_Release_-_English_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.916 - Election Dept Press Release - English - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      },
+      {
+        "id": 22823,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.916_-_Election_Dept_Press_Release_-_Tamil_-_Date.23.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-24",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.916 - Election Dept Press Release - Tamil - Date.23.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-23",
+        "language": "en"
+      }
+    ]
+  }
+}

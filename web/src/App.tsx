@@ -76,6 +76,9 @@ const GovtSchemesPage = lazy(() =>
 const TVKManifestoPage = lazy(() =>
   import("@/pages/TVKManifestoPage").then((module) => ({ default: module.TVKManifestoPage })),
 );
+const ElectionResultsPage = lazy(() =>
+  import("@/pages/ElectionResultsPage").then((module) => ({ default: module.ElectionResultsPage })),
+);
 
 function LazyRoute({
   children,
@@ -84,7 +87,11 @@ function LazyRoute({
   children: ReactNode;
   label?: string;
 }) {
-  return <Suspense fallback={<PageLoading label={label} />}>{children}</Suspense>;
+  return (
+    <div className="flex min-h-0 flex-1 flex-col">
+      <Suspense fallback={<PageLoading label={label} />}>{children}</Suspense>
+    </div>
+  );
 }
 
 export default function App() {
@@ -494,6 +501,21 @@ export default function App() {
             element={
               <LazyRoute label="Loading government schemes…">
                 <GovtSchemesPage />
+              </LazyRoute>
+            }
+          />
+        </Route>
+        <Route
+          path="/election-results"
+          element={
+            <AppLayout fillViewport hidePageHeader title="Election Results" />
+          }
+        >
+          <Route
+            index
+            element={
+              <LazyRoute label="Loading election results…">
+                <ElectionResultsPage />
               </LazyRoute>
             }
           />

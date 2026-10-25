@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-23",
+  "fetchedAt": "2026-10-25T15:49:07.834665+05:30",
+  "lastFetchedAt": "2026-10-25T15:49:07.834665+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 4,
+    "apiReportedTotalResults": 9,
+    "results": [
+      {
+        "article_id": "6d25db45ee082aba68d2114cad098b53",
+        "link": "https://www.timesnownews.com/videos/times-now/shows/controversy-over-parole-granted-to-coimbatore-blast-convicts-sparks-political-debate-video-156393152",
+        "title": "1998 Coimbatore Blast | Who 'Freed' Convicted Terrorists? | On Cam: Admissions By Family | WATCH",
+        "description": "CM Vijay-led Tamil Nadu government granted 60-day parole to five convicts in the 1998 Coimbatore serial bomb blasts case. Massive on cam admission by family members of the convict. The question here arises is - Who 'Freed' Convicted Terrorists? Watch Times Now's show, Blueprint with Madhavdas G.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu news",
+          "coimbatore blast case parole controversy",
+          "60 day parole",
+          "tamil nadu politics",
+          "coimbatore bomb blast case",
+          "coimbatore serial blasts",
+          "coimbatore blast case",
+          "coimbatore blast victims",
+          "1998 coimbatore blasts",
+          "convicted blast accused",
+          "times now",
+          "5 convicts released on parole",
+          "justice for coimbatore blast victims",
+          "parole for blast convicts",
+          "coimbatore blast case latest news",
+          "parole order controversy",
+          "coimbatore blast case update",
+          "coimbatore blast convicts"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-10-23 14:53:58",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-23 15:02:46",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156393152,thumbsize-119878,width-1280,height-720,resizemode-75/156393152.jpg",
+        "video_url": "https://sw-a.akamaized.net/amd/n1yoozgguo_w/1x/b1/3p/1xb13p5vqz_w/13672db8_F40_360p_800.mp4",
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 5.08,
+          "neutral": 69.53,
+          "positive": 25.39
+        },
+        "ai_tag": [
+          "accidents"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e867aa717b5e21183f8142685ac8173d",
+        "link": "https://www.thenewsminute.com/tamil-nadu/sit-deboards-gem-veeramanis-daughter-from-singapore-bound-flight-detains-for-questioning",
+        "title": "SIT deboards Gem Veeramani’s daughter from Singapore-bound flight, detains for questioning",
+        "description": "Archana is expected to be questioned about alleged cash transactions and other attempts to cover up the POCSO cases against her father.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-23 13:49:38",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-23 14:08:38",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-09-24%2Fmeceibtl%2Fveeramani021200240926.jpg.jpeg?rect=0%2C63%2C1200%2C675&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 10.35,
+          "neutral": 89.53,
+          "positive": 0.12
+        },
+        "ai_tag": [
+          "crime",
+          "law and justice"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "116562af38b06a4722239f65b6732731",
+        "link": "https://www.news9live.com/india/tvk-dmk-walk-out-of-tamil-nadu-electoral-roll-meeting-seek-cec-gyanesh-kumars-resignation-3018442",
+        "title": "TVK, DMK walk out of Tamil Nadu electoral roll meeting, seek CEC Gyanesh Kumar’s resignation",
+        "description": "Representatives of the TVK-led ruling alliance and Opposition DMK walked out of an all-party meeting on electoral roll revision in Tamil Nadu. Both sides demanded Chief Election Commissioner Gyanesh Kumar’s resignation over alleged irregularities in the earlier SIR exercise. The meeting concerned the special summary revision, a separate process for updating voter lists.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india"
+        ],
+        "creator": [
+          "adan khan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-23 13:31:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-23 13:43:07",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/10/vijay-slams-stalin.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://i.newsdata.io/news9live.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 36.91,
+          "neutral": 63.0,
+          "positive": 0.09
+        },
+        "ai_tag": [
+          "elections",
+          "government"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "0652b76b0cd10031c8da8c334855a7e1",
+        "link": "https://www.timesnownews.com/india/tvk-congress-dmk-boycott-tamil-nadu-ssr-meet-seek-gyanesh-kumar-exit-say-fix-sir-errors-first-article-156390975",
+        "title": "'Fix SIR Errors First': TVK, DMK Boycott Tamil Nadu SSR Meet, Seek Gyanesh's Exit",
+        "description": "The Tamilaga Vettri Kazhagam (TVK), led by Chief Minister C. Joseph Vijay, boycotted an all-party meeting convened by Chief Electoral Officer Archana Patnaik.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "aap",
+          "dmdk",
+          "gyanesh kumar",
+          "tvk",
+          "tamil nadu",
+          "cpm",
+          "congress",
+          "sir protest",
+          "dmk",
+          "sir"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-23 11:02:02",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-23 11:33:06",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156391572,thumbsize-186706,width-1280,height-720,resizemode-75/156391572.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 84.32,
+          "neutral": 15.43,
+          "positive": 0.25
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

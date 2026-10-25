@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-19",
+  "fetchedAt": "2026-10-25T15:47:26.725429+05:30",
+  "lastFetchedAt": "2026-10-25T15:47:26.725429+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-19"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22768,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.873-Hon_ble_CM_Social_Media_Message_-_Ayudha_Pooja_and_Vijayadasami_Greetings_-_Date_19.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-20",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.873-Hon'ble CM Social Media Message - Ayudha Pooja and Vijayadasami Greetings - Date 19.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-19",
+        "language": "en"
+      },
+      {
+        "id": 22769,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.874_Hon_ble_CM__Announcement_of_New_Schemes_for_Maduranthagam_Assembly_Constitution-Press_Release-_Date-_19.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-20",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.874 Hon'ble CM  Announcement of New Schemes for Maduranthagam Assembly Constitution-Press Release- Date- 19.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-19",
+        "language": "en"
+      },
+      {
+        "id": 22770,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.875-Hon_ble_CM_Announcement_of_New_Schemes_for_Dharapuram_Assembly_Constituency-Press_Release_-Date-_19.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-20",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.875-Hon'ble CM Announcement of New Schemes for Dharapuram Assembly Constituency-Press Release -Date- 19.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-19",
+        "language": "en"
+      },
+      {
+        "id": 22771,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No.876_-_Hon_ble_CM_Social_Media-_Press_Release_-_Date-_19.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-20",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No.876 - Hon'ble CM Social Media- Press Release - Date- 19.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-19",
+        "language": "en"
+      }
+    ]
+  }
+}

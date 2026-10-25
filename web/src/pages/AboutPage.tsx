@@ -51,6 +51,7 @@ export function AboutPage() {
                 <p>News — Tamil Nadu headlines (loads one day at a time)</p>
                 <p>Govt Publications — Press releases, press release images, G.O.s, IAS transfers, government schemes, magazines</p>
                 <p>Govt Administration — Ministers, departments, constituencies, districts</p>
+                <p>Election Results — TN Assembly 2026 round-wise EVM counts (ECI)</p>
                 <p>TVK Manifesto — Tamilaga Vetri Kazhagam election manifesto by category and section</p>
                 <p>About — Project overview and data sources</p>
               </CardContent>

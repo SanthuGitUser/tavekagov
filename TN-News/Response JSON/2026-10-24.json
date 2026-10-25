@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-24",
+  "fetchedAt": "2026-10-25T15:49:07.834665+05:30",
+  "lastFetchedAt": "2026-10-25T15:49:07.834665+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 5,
+    "apiReportedTotalResults": 9,
+    "results": [
+      {
+        "article_id": "d36eda796c6919a61eb3d462e94d471e",
+        "link": "https://www.timesnownews.com/videos/times-now/blue-print/coimbatore-blast-case-convicted-terrorists-granted-parole-video-156399165",
+        "title": "Coimbatore Blast Case: Convicted Terrorists Granted Parole",
+        "description": "Five convicts in the 1998 Coimbatore blast case, which claimed 58 lives and injured over 200 people, have been granted 60 days of parole by the Tamil Nadu TVK government. This decision has sparked a political debate, with opposing parties questioning the rationale behind granting temporary release to individuals convicted of terrorism-related offenses. The TVK government has defended its decision, citing humanitarian grounds and the advanced age of the convicts, who have been imprisoned for over 25 years. Coimbatore Blast Case Developments The 1998 Coimbatore serial blasts targeted several locations, including public markets and temples, and were orchestrated by the extremist group Al Ummah. The attacks were aimed at the then Deputy Prime Minister of India, L.K. Advani, but resulted in the deaths of 58 people and injuries to more than 200 others. The mastermind behind the attacks, S.A. Basha, along with other convicts, received life sentences in 2009. The recent decision to grant parole has reignited debates about the appropriateness of such measures for individuals convicted of terrorism. Political Reactions and Controversy The parole decision has led to sharp political exchanges between the TVK and BJP. The TVK government argues that the convicts have served over 25 years in prison and are now elderly, justifying their release on humanitarian grounds. However, the BJP has criticized the move, labeling it as an attempt to appease minority communities and questioning the safety implications of releasing individuals convicted of such heinous crimes. The BJP has also highlighted the ongoing trial of one convict's son, who is accused in a 2022 car bomb blast in Coimbatore, as evidence of the continued threat posed by extremist ideologies. The decision has raised broader concerns about the balance between legal provisions for parole and the message it sends regarding the treatment of terrorism-related offenses. Critics argue that such actions could undermine public trust in the justice system and compromise national security.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tvk government",
+          "coimbatore blast case",
+          "convicted terrorists",
+          "dmk government",
+          "parole controversy"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-10-24 16:46:22",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-24 17:02:38",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156399165,thumbsize-156269,width-1280,height-720,resizemode-75/156399165.jpg",
+        "video_url": "https://sw-a.akamaized.net/amd/dm/qp/1vdmqpzoul/360p_600.mp4",
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 89.52,
+          "neutral": 9.42,
+          "positive": 1.06
+        },
+        "ai_tag": [
+          "accidents"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "7b93d1766576010394f2f1ef2caf68aa",
+        "link": "https://www.thenewsminute.com/kerala/keralam-govt-exempts-t-branch-of-vigilance-from-rti-act",
+        "title": "Keralam govt exempts ‘T’ branch of Vigilance from RTI Act",
+        "description": "The first and second sections of the T (Top Secret) branch, which deal with sensitive information such as intelligence reports, confidential reports of government officials, etc., have been exempted from RTI.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "kerala"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-24 05:59:36",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-24 06:07:41",
+        "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/rti_rep_image_311222_1200.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 1.9,
+          "neutral": 66.46,
+          "positive": 31.64
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "3f552ef8ba69e5888e86cfb2febf395a",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tvk-dmk-walk-out-of-meeting-over-sir-deletions-demand-gyanesh-kumars-resignation",
+        "title": "TVK, DMK walk out of meeting over SIR deletions, demand Gyanesh Kumar’s resignation",
+        "description": "The meeting, convened by Chief Electoral Officer Archana Patnaik at the Secretariat in Chennai, was held to discuss the upcoming Special Summary Revision (SSR), scheduled to begin in the state on November 12.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-24 05:49:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-24 06:07:41",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-10-09%2Fwofbzlt4%2Fgyanesh.jpg?rect=0%2C28%2C2048%2C1152&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 75.06,
+          "neutral": 24.9,
+          "positive": 0.04
+        },
+        "ai_tag": [
+          "elections"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "efcaff947ddd24206706f3b6678bd1ff",
+        "link": "https://www.timesnownews.com/india/congress-cpim-slam-kerala-governor-om-prakash-mathur-veg-only-diktat-in-lok-bhavan-article-156395238",
+        "title": "'Food Freedom A Right': Congress, CPI(M) Slam Kerala Guv's Veg-Only Diktat in Lok Bhavan",
+        "description": "Keralam's new Governor, Om Prakash Mathur, sparked controversy on his first day by reportedly mandating a strictly vegetarian Lok Bhavan kitchen.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "om prakash mathur",
+          "kerala",
+          "veg kitchen",
+          "opposition",
+          "kc venugopal",
+          "kerala governor"
+        ],
+        "creator": [
+          "shashwat bhandari"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-24 05:16:26",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-24 05:32:38",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156395248,thumbsize-541626,width-1280,height-720,resizemode-75/156395248.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 86.66,
+          "neutral": 13.18,
+          "positive": 0.16
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "67541fad7c7bf29faec8c2c6bf527492",
+        "link": "https://frontline.thehindu.com/the-nation/election-commission-india-independence-gyanesh-kumar-controversy/article71604203.ece",
+        "title": "From hero to villain",
+        "description": "The ECI’s decisions began to be tracked and critiqued by the opposition from 2017 onwards. Since then, the censure has only grown louder, with each exposé reducing the credibility of this once-venerated institution.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india"
+        ],
+        "creator": [
+          "soni  mishra"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-24 03:57:04",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-24 04:48:59",
+        "image_url": "https://fl-i.thgim.com/public/incoming/o2j3yk/article71615021.ece/alternates/LANDSCAPE_1200/ECI%20A%20Regressive%20Journey",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://i.newsdata.io/frontline_thehindu.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 99.85,
+          "neutral": 0.13,
+          "positive": 0.02
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

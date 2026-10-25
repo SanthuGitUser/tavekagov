@@ -106,11 +106,19 @@ export async function loadNewsArticlesForDateRange(
   if (!from || !to) return [];
 
   const dates = getDatesInRange(from, to);
-  const batches = await Promise.all(dates.map((date) => loadArticlesForDate(date)));
   const seen = new Set<string>();
   const results: NewsArticle[] = [];
 
-  for (const articles of batches) {
+  // Load one day at a time so a stuck/failed chunk cannot hang the whole page.
+  for (const date of dates) {
+    let articles: NewsArticle[] = [];
+    try {
+      articles = await loadArticlesForDate(date);
+    } catch (error) {
+      console.warn(`Failed to load news JSON for ${date}:`, error);
+      continue;
+    }
+
     for (const article of articles) {
       const articleDate = getArticleDateInIst(article);
       if (!isDateInRange(articleDate, from, to)) continue;

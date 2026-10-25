@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-18",
+  "fetchedAt": "2026-10-25T15:47:26.434158+05:30",
+  "lastFetchedAt": "2026-10-25T15:47:26.434158+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-18"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22766,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.871_-_GCC_-_NE_Monsoon_Preparedness_Works_-_Press_Release_-_Date_-_18.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-18",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.871 - GCC - NE Monsoon Preparedness Works - Press Release - Date - 18.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-18",
+        "language": "en"
+      },
+      {
+        "id": 22767,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-872-Hon_ble_CM_Press_Release_-_GCC_ICCC_Inspection_by_HCM_-_Date_18.10.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-18",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-872-Hon'ble CM Press Release - GCC ICCC Inspection by HCM - Date 18.10.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-18",
+        "language": "en"
+      }
+    ]
+  }
+}

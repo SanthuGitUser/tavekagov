@@ -21,8 +21,8 @@ export type NewsArticle = {
   source_url: string;
   source_icon: string | null;
   sentiment: string | null;
-  sentiment_stats: string | null;
-  ai_tag: string | null;
+  sentiment_stats: string | Record<string, number> | null;
+  ai_tag: string | string[] | null;
   ai_region: string | null;
   ai_org: string | null;
   ai_summary: string | null;
