@@ -1,10 +1,10 @@
 {
   "date": "2026-10-21",
   "fetchedAt": "2026-10-25T15:47:29.730808+05:30",
-  "lastFetchedAt": "2026-10-25T15:47:29.730808+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-10-27T22:21:27.764477+05:30",
+  "fetchCount": 2,
   "source_url": "https://www.tn.gov.in/press_release.php",
-  "count": 2,
+  "count": 4,
   "releases": [
     {
       "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr211026_4.jpg",
@@ -51,6 +51,52 @@
       "others": false,
       "inspection": false,
       "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr211026_12.jpg",
+      "release_date": "2026-10-21",
+      "title": "The Hon’ble Chief Minister of Tamil Nadu visits the rainwater harvesting model house at the Tamil Nadu Drinking Water and Drainage Board Headquarters, Chepauk, Chennai",
+      "file_name": "pr211026_12.jpg",
+      "minister_name": "Thiru C. Joseph Vijay",
+      "department_name": null,
+      "minister_id": 1,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "high",
+      "minister_match_confidence": "high",
+      "department_match_confidence": null,
+      "cm_visits": true,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    },
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr211026_11.jpg",
+      "release_date": "2026-10-21",
+      "title": "The Hon’ble Speaker of the Legislative Assembly inaugurates the first meeting of the Tamil Nadu Legislative Assembly Evaluation Committee for 2026 to 2027 at Omandurar, Chennai",
+      "file_name": "pr211026_11.jpg",
+      "minister_name": "Thiru K A. Sengottaiyan",
+      "department_name": "Legislative Assembly Department",
+      "minister_id": 5,
+      "department_id": 20,
+      "district_id": null,
+      "title_parsed": true,
+      "parse_confidence": "medium",
+      "minister_match_confidence": "high",
+      "department_match_confidence": "high",
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": true
     }
   ],
   "ministers": [
@@ -72,7 +118,29 @@
       "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/cm_new.jpg",
       "display_order": 1,
       "is_chief_minister": true
+    },
+    {
+      "id": 5,
+      "name": "Thiru K A. Sengottaiyan",
+      "designation": "Minister for Revenue and Disaster Management",
+      "portfolios": [
+        "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan",
+        "Legislative Assembly"
+      ],
+      "photo_url": "https://cms.tn.gov.in/cms_migrated/document/ministers_list/106_Sengottaiyan.png",
+      "display_order": 5,
+      "is_chief_minister": false
     }
   ],
-  "departments": []
+  "departments": [
+    {
+      "id": 20,
+      "name": "Legislative Assembly Department",
+      "dep_id_encoded": "MjA=",
+      "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjA=",
+      "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
+      "minister_name": "Thiru K A. Sengottaiyan",
+      "display_order": 21
+    }
+  ]
 }

@@ -20,7 +20,10 @@ import {
 } from "@/components/dashboard/widgets/ContentDashboardWidgets";
 import {
   Bye2026VsMayComparisonWidget,
-  May2026CloseRacesWidget,
+  May2026BiggestLossesWidget,
+  May2026BiggestWinsWidget,
+  May2026CloseLossesWidget,
+  May2026CloseWinsWidget,
   May2026ElectionSnapshotWidget,
   May2026PartySeatsWidget,
   May2026TvKWinsWidget,
@@ -80,7 +83,10 @@ export function DashboardPage() {
             <May2026ElectionSnapshotWidget />
             <May2026PartySeatsWidget />
             <May2026VoteShareWidget />
-            <May2026CloseRacesWidget />
+            <May2026BiggestWinsWidget />
+            <May2026BiggestLossesWidget />
+            <May2026CloseWinsWidget />
+            <May2026CloseLossesWidget />
             <May2026TvKWinsWidget />
             <Bye2026VsMayComparisonWidget />
           </div>

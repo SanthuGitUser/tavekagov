@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-25",
+  "fetchedAt": "2026-10-27T22:21:16.637428+05:30",
+  "lastFetchedAt": "2026-10-27T22:21:16.637428+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-25"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22827,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.920_-_Hon_ble_CM_Social_Media_Message_-_Japan_Para_Asian_Games_-_Greetings_to_Medal_Winners_of_Tamil_Nadu_-_Date_-_25.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-26",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.920 - Hon'ble CM Social Media Message - Japan Para Asian Games - Greetings to Medal Winners of Tamil Nadu - Date - 25.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-25",
+        "language": "en"
+      },
+      {
+        "id": 22828,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.921_-_Hon_ble_CM_Social_Media_Condolence_Message_-_Chef_Damu_-_Press_Release_-_Date.25.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-26",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.921 - Hon'ble CM Social Media Condolence Message - Chef Damu - Press Release - Date.25.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-25",
+        "language": "en"
+      }
+    ]
+  }
+}

@@ -1,7 +1,5 @@
 import { Landmark, Trophy, Vote } from "lucide-react";
-import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
-
+import { useMemo, useState, type ReactNode } from "react";
 import {
   DashboardEmptyState,
   DashboardWidgetCard,
@@ -12,10 +10,16 @@ import { useAsyncData } from "@/hooks/useAsyncData";
 import {
   loadByeVsMayComparisons,
   loadMay2026DashboardAnalytics,
+  selectMarginRaces,
   type ByeVsMayAcComparison,
+  type May2026CloseRaceRow,
   type May2026DashboardAnalytics,
+  type May2026MarginMetric,
+  type May2026MarginPartyFilter,
 } from "@/lib/dashboardElectionWidgetData";
+import { getPartyFillColor, getPartyFillColorMuted } from "@/lib/partyColorUtils";
 import { getPartyFlagUrl } from "@/lib/partyFlagUtils";
+import { cn } from "@/lib/utils";
 
 function useMay2026Analytics() {
   return useAsyncData(() => loadMay2026DashboardAnalytics(), []);
@@ -105,6 +109,346 @@ function AcByeVsMayChart({ comparison }: { comparison: ByeVsMayAcComparison }) {
         {comparison.byeTotalVotes.toLocaleString()}
       </p>
     </div>
+  );
+}
+
+const MARGIN_PARTY_FILTERS: May2026MarginPartyFilter[] = ["All", "TVK", "AIADMK", "DMK"];
+
+function formatMarginCompact(value: number): string {
+  if (value >= 100_000) return `${(value / 100_000).toFixed(1)}L`;
+  if (value >= 1000) return `${Math.round(value / 1000)}k`;
+  return value.toLocaleString();
+}
+
+function marginMetricAccent(metric: May2026MarginMetric): { stroke: string; fill: string } {
+  switch (metric) {
+    case "close-win":
+      return { stroke: "#059669", fill: "#059669" };
+    case "close-loss":
+      return { stroke: "#d97706", fill: "#d97706" };
+    case "biggest-loss":
+      return { stroke: "#e11d48", fill: "#e11d48" };
+    default:
+      return { stroke: "#6366f1", fill: "#6366f1" };
+  }
+}
+
+function MarginPartyFilterTabs({
+  value,
+  onChange,
+}: {
+  value: May2026MarginPartyFilter;
+  onChange: (party: May2026MarginPartyFilter) => void;
+}) {
+  return (
+    <div className="mb-3 flex flex-wrap gap-1" role="tablist" aria-label="Filter by party">
+      {MARGIN_PARTY_FILTERS.map((party) => {
+        const isActive = value === party;
+        return (
+          <button
+            key={party}
+            type="button"
+            role="tab"
+            aria-selected={isActive}
+            onClick={() => onChange(party)}
+            className={cn(
+              "rounded-md px-2.5 py-1 text-xs font-medium transition-colors",
+              isActive
+                ? "bg-primary/10 text-primary"
+                : "text-muted-foreground hover:bg-accent hover:text-foreground",
+            )}
+          >
+            {party}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function MarginRaceLineChart({
+  races,
+  metric,
+}: {
+  races: May2026CloseRaceRow[];
+  metric: May2026MarginMetric;
+}) {
+  const isLossView = metric === "biggest-loss" || metric === "close-loss";
+  const accent = marginMetricAccent(metric);
+  const maxMargin = Math.max(...races.map((race) => race.margin), 1);
+  const gradientId = `margin-area-${metric}`;
+
+  const layout = useMemo(() => {
+    const width = 400;
+    const height = 132;
+    const padLeft = 40;
+    const padRight = 12;
+    const padTop = 10;
+    const padBottom = 22;
+    const chartW = width - padLeft - padRight;
+    const chartH = height - padTop - padBottom;
+    const count = races.length;
+
+    const points = races.map((race, index) => {
+      const focusParty = isLossView ? race.runnerParty : race.leaderParty;
+      const t = count <= 1 ? 0.5 : index / (count - 1);
+      const x = padLeft + t * chartW;
+      const y = padTop + chartH - (race.margin / maxMargin) * chartH;
+      return { race, focusParty, x, y, index };
+    });
+
+    const linePath =
+      points.length > 0
+        ? points.map((point, i) => `${i === 0 ? "M" : "L"} ${point.x} ${point.y}`).join(" ")
+        : "";
+
+    const baselineY = padTop + chartH;
+    const areaPath =
+      points.length > 0
+        ? `${linePath} L ${points[points.length - 1].x} ${baselineY} L ${points[0].x} ${baselineY} Z`
+        : "";
+
+    const yTicks = [0, maxMargin / 2, maxMargin];
+    return {
+      width,
+      height,
+      padLeft,
+      padRight,
+      padTop,
+      chartH,
+      points,
+      linePath,
+      areaPath,
+      yTicks,
+      maxMargin,
+      baselineY,
+    };
+  }, [races, isLossView, maxMargin]);
+
+  return (
+    <div className="rounded-lg border border-border/60 bg-gradient-to-b from-muted/25 to-transparent p-3">
+      <p className="mb-2 text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+        Margin trend · rank 1 → {races.length}
+      </p>
+      <svg
+        viewBox={`0 0 ${layout.width} ${layout.height}`}
+        className="h-auto w-full"
+        role="img"
+        aria-label="Victory margin line chart by rank"
+      >
+        <defs>
+          <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor={accent.fill} stopOpacity={0.35} />
+            <stop offset="100%" stopColor={accent.fill} stopOpacity={0.02} />
+          </linearGradient>
+        </defs>
+        {layout.yTicks.map((tick) => {
+          const y = layout.padTop + layout.chartH - (tick / layout.maxMargin) * layout.chartH;
+          return (
+            <g key={tick}>
+              <line
+                x1={layout.padLeft}
+                y1={y}
+                x2={layout.width - layout.padRight}
+                y2={y}
+                className="stroke-border/40"
+                strokeWidth={1}
+              />
+              <text
+                x={layout.padLeft - 6}
+                y={y + 3}
+                textAnchor="end"
+                className="fill-muted-foreground text-[8px] tabular-nums"
+              >
+                {formatMarginCompact(tick)}
+              </text>
+            </g>
+          );
+        })}
+        {layout.areaPath ? <path d={layout.areaPath} fill={`url(#${gradientId})`} /> : null}
+        {layout.linePath ? (
+          <path
+            d={layout.linePath}
+            fill="none"
+            stroke={accent.stroke}
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        ) : null}
+        {layout.points.map(({ race, focusParty, x, y, index }) => (
+          <g key={race.acNumber}>
+            <title>
+              #{index + 1} {race.constituencyName}: {race.margin.toLocaleString()} votes (
+              {race.marginPct.toFixed(1)}%)
+            </title>
+            <circle cx={x} cy={y} r={5} fill={getPartyFillColor(focusParty)} stroke="white" strokeWidth={1.5} />
+          </g>
+        ))}
+        <text
+          x={layout.padLeft}
+          y={layout.height - 4}
+          className="fill-muted-foreground text-[8px]"
+        >
+          Rank
+        </text>
+        <text
+          x={layout.width - layout.padRight}
+          y={layout.height - 4}
+          textAnchor="end"
+          className="fill-muted-foreground text-[8px]"
+        >
+          #{races.length}
+        </text>
+      </svg>
+    </div>
+  );
+}
+
+function MarginRaceLeaderboard({
+  races,
+  metric,
+}: {
+  races: May2026CloseRaceRow[];
+  metric: May2026MarginMetric;
+}) {
+  const isLossView = metric === "biggest-loss" || metric === "close-loss";
+  const maxMargin = Math.max(...races.map((race) => race.margin), 1);
+
+  return (
+    <ul className="mt-3 space-y-2">
+      {races.map((race, index) => {
+        const focusParty = isLossView ? race.runnerParty : race.leaderParty;
+        const flagUrl = getPartyFlagUrl(focusParty);
+        const accent = getPartyFillColor(focusParty);
+        const muted = getPartyFillColorMuted(focusParty);
+        const widthPct = Math.max(8, (race.margin / maxMargin) * 100);
+
+        return (
+          <li
+            key={race.acNumber}
+            className="relative overflow-hidden rounded-lg border border-border/60 bg-card/80 shadow-sm"
+          >
+            <div
+              className="absolute inset-y-0 left-0 w-1"
+              style={{ backgroundColor: accent }}
+              aria-hidden
+            />
+            <div
+              className="absolute inset-y-2 left-1.5 right-2 rounded-md opacity-100"
+              style={{
+                width: `calc(${widthPct}% - 0.5rem)`,
+                maxWidth: "100%",
+                background: `linear-gradient(90deg, ${muted} 0%, transparent 100%)`,
+              }}
+              aria-hidden
+            />
+            <div className="relative flex items-start gap-2.5 px-3 py-2.5 pl-3.5">
+              <span
+                className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-muted text-[11px] font-semibold tabular-nums text-muted-foreground"
+              >
+                {index + 1}
+              </span>
+              {flagUrl ? (
+                <img
+                  src={flagUrl}
+                  alt=""
+                  className="mt-0.5 h-5 w-8 shrink-0 rounded border border-border/60 object-cover shadow-sm"
+                />
+              ) : (
+                <span
+                  className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full"
+                  style={{ backgroundColor: accent }}
+                />
+              )}
+              <div className="min-w-0 flex-1">
+                <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
+                  <span className="text-sm font-semibold leading-tight">{race.constituencyName}</span>
+                  <Badge variant="outline" className="h-5 px-1.5 text-[10px] font-normal tabular-nums">
+                    AC {race.acNumber}
+                  </Badge>
+                </div>
+                <p className="mt-0.5 line-clamp-2 text-[11px] leading-snug text-muted-foreground">
+                  {isLossView ? (
+                    <>
+                      <span className="font-medium text-foreground">{race.runnerName}</span>
+                      <span className="text-foreground/80"> ({race.runnerParty})</span>
+                      {" · lost to "}
+                      <span className="font-medium text-foreground">{race.leaderParty}</span>
+                    </>
+                  ) : (
+                    <>
+                      <span className="font-medium text-foreground">{race.leaderName}</span>
+                      <span className="text-foreground/80"> ({race.leaderParty})</span>
+                      {" · beat "}
+                      <span className="font-medium text-foreground">{race.runnerParty}</span>
+                    </>
+                  )}
+                </p>
+              </div>
+              <div className="shrink-0 text-right">
+                <p className="text-sm font-bold tabular-nums tracking-tight">
+                  {race.margin.toLocaleString()}
+                </p>
+                <p className="text-[10px] tabular-nums text-muted-foreground">
+                  {race.marginPct.toFixed(1)}% margin
+                </p>
+              </div>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function MarginRaceVisualization({
+  races,
+  metric,
+}: {
+  races: May2026CloseRaceRow[];
+  metric: May2026MarginMetric;
+}) {
+  return (
+    <div>
+      <MarginRaceLineChart races={races} metric={metric} />
+      <MarginRaceLeaderboard races={races} metric={metric} />
+    </div>
+  );
+}
+
+function May2026MarginWidget({
+  title,
+  description,
+  metric,
+}: {
+  title: string;
+  description: string;
+  metric: May2026MarginMetric;
+}) {
+  const { data, loading, error } = useMay2026Analytics();
+  const [partyFilter, setPartyFilter] = useState<May2026MarginPartyFilter>("All");
+
+  return (
+    <DashboardWidgetCard title={title} description={description} viewAllTo="/election-results">
+      <AnalyticsShell analytics={data} loading={loading} error={error}>
+        {(analytics) => {
+          const races = selectMarginRaces(analytics.marginRaces, metric, partyFilter);
+          return (
+            <>
+              <MarginPartyFilterTabs value={partyFilter} onChange={setPartyFilter} />
+              {races.length === 0 ? (
+                <DashboardEmptyState
+                  message={`No constituencies match “${partyFilter}” for this chart.`}
+                />
+              ) : (
+                <MarginRaceVisualization races={races} metric={metric} />
+              )}
+            </>
+          );
+        }}
+      </AnalyticsShell>
+    </DashboardWidgetCard>
   );
 }
 
@@ -285,52 +629,43 @@ export function May2026VoteShareWidget() {
   );
 }
 
-export function May2026CloseRacesWidget() {
-  const { data, loading, error } = useMay2026Analytics();
-
+export function May2026BiggestWinsWidget() {
   return (
-    <DashboardWidgetCard
-      title="Closest contests"
-      description="Smallest victory margins (final EVM round)"
-      viewAllTo="/election-results"
-    >
-      <AnalyticsShell analytics={data} loading={loading} error={error}>
-        {(analytics) => (
-          <ul className="space-y-2">
-            {analytics.closeRaces.map((race) => (
-              <li
-                key={race.acNumber}
-                className="rounded-md border border-border/70 bg-background/40 px-3 py-2.5"
-              >
-                <div className="flex flex-wrap items-start justify-between gap-2">
-                  <div className="min-w-0">
-                    <Link
-                      to="/election-results"
-                      className="text-sm font-semibold text-foreground hover:text-primary"
-                    >
-                      {race.constituencyName}
-                    </Link>
-                    <p className="text-xs text-muted-foreground">
-                      AC {race.acNumber}
-                      {race.district ? ` · ${race.district}` : ""}
-                    </p>
-                  </div>
-                  <Badge variant="secondary" className="shrink-0 tabular-nums">
-                    +{race.margin.toLocaleString()}
-                  </Badge>
-                </div>
-                <p className="mt-1.5 text-xs text-muted-foreground">
-                  <span className="font-medium text-foreground">{race.leaderParty}</span>{" "}
-                  {race.leaderName} ({race.leaderVotes.toLocaleString()}) vs{" "}
-                  <span className="font-medium text-foreground">{race.runnerParty}</span>{" "}
-                  {race.runnerName}
-                </p>
-              </li>
-            ))}
-          </ul>
-        )}
-      </AnalyticsShell>
-    </DashboardWidgetCard>
+    <May2026MarginWidget
+      title="Biggest wins"
+      description="Largest victory margins in May 2026 (winner view)"
+      metric="biggest-win"
+    />
+  );
+}
+
+export function May2026CloseWinsWidget() {
+  return (
+    <May2026MarginWidget
+      title="Close wins"
+      description="Narrowest victories — constituencies decided by the fewest votes"
+      metric="close-win"
+    />
+  );
+}
+
+export function May2026BiggestLossesWidget() {
+  return (
+    <May2026MarginWidget
+      title="Biggest losses"
+      description="Runners-up defeated by the largest vote gaps (final round)"
+      metric="biggest-loss"
+    />
+  );
+}
+
+export function May2026CloseLossesWidget() {
+  return (
+    <May2026MarginWidget
+      title="Close losses"
+      description="Runners-up who narrowly missed winning"
+      metric="close-loss"
+    />
   );
 }
 

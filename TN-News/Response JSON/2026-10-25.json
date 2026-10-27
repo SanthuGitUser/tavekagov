@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-25",
+  "fetchedAt": "2026-10-27T22:23:28.423255+05:30",
+  "lastFetchedAt": "2026-10-27T22:23:28.423255+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 1,
+    "apiReportedTotalResults": 16,
+    "results": [
+      {
+        "article_id": "ad06efabbc7fc8384277d0a7b1cac3b0",
+        "link": "https://www.timesnownews.com/videos/times-now/newshour/political-speculation-surrounds-dhanush-potential-entry-into-tamil-nadu-politics-video-156404968",
+        "title": "Dhanush Political Entry: Congress Claims 'Op D' Is BJP's Secret Plan To Challenge Vijay In TN | NH9",
+        "description": "Actor Dhanush’s possible entry into Tamil Nadu politics has triggered a political storm, with Congress MP Manickam Tagore alleging that the BJP is behind “Operation D” to promote the actor as a political challenger. As speculation grows following Dhanush’s meeting with thousands of women office-bearers of his restructured fan association, political analysts debate whether he could emerge as a force in Tamil Nadu and challenge Vijay’s growing influence. #dhanush #dhanushpolitics #tamilnadupolitics #congress #bjp #operationd #actorpolitics #vijay #tvk #manickamtagore #timesnow #englishnews",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "bjp tamil nadu strategy",
+          "dhanush fan association",
+          "dhanush welfare movement",
+          "dhanush",
+          "vijay politics",
+          "dhanush tamil nadu politics",
+          "dhanush politics",
+          "manickam tagore",
+          "actor vijay",
+          "dhanush bjp connection claim",
+          "dhanush versus vijay",
+          "tamil nadu politics",
+          "congress alleges bjp plan",
+          "dhanush political entry",
+          "congress operation d claim",
+          "cinema stars in politics",
+          "operation d",
+          "vijay political influence",
+          "actor entering politics",
+          "dhanush political debut"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "politics"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-10-25 18:05:31",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-25 18:32:33",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156404968,thumbsize-898636,width-1280,height-720,resizemode-75/156404968.jpg",
+        "video_url": "https://sw-a.akamaized.net/amd/dm/7n/1vdm7nzouu/360p_600.mp4",
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 4.13,
+          "neutral": 95.55,
+          "positive": 0.32
+        },
+        "ai_tag": [
+          "elections"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}

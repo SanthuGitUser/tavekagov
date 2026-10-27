@@ -1,0 +1,488 @@
+{
+  "date": "2026-10-26",
+  "fetchedAt": "2026-10-27T22:23:28.423255+05:30",
+  "lastFetchedAt": "2026-10-27T22:23:28.423255+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 10,
+    "apiReportedTotalResults": 16,
+    "results": [
+      {
+        "article_id": "805f8215b6c72d0e7cc7aa12113c2e08",
+        "link": "https://www.thenewsminute.com/videos/anbil-mahesh-arrest-%E0%AE%AA%E0%AE%B4%E0%AE%BF-%E0%AE%B5%E0%AE%BE%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D-%E0%AE%A8%E0%AE%9F%E0%AE%B5%E0%AE%9F%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%88%E0%AE%AF%E0%AE%BE-shabbir-ahmed-mani-interview",
+        "title": "Anbil Mahesh arrest: பழி வாங்கும் நடவடிக்கையா? | Shabbir Ahmed | Mani Interview",
+        "description": "Anbil Mahesh arrest: பழி வாங்கும் நடவடிக்கையா? | Shabbir Ahmed | Mani Interview",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "video"
+        ],
+        "creator": [
+          "shabbir ahmed"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "multimedia",
+        "pubDate": "2026-10-26 17:46:15",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 18:07:23",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-26/i5tygbq0/WhatsApp-Image-2026-10-26-at-10.24.58-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": "https://www.thenewsminute.com/videos/anbil-mahesh-arrest-%E0%AE%AA%E0%AE%B4%E0%AE%BF-%E0%AE%B5%E0%AE%BE%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AF%81%E0%AE%AE%E0%AF%8D-%E0%AE%A8%E0%AE%9F%E0%AE%B5%E0%AE%9F%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%88%E0%AE%AF%E0%AE%BE-shabbir-ahmed-mani-interview",
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 33.01,
+          "neutral": 65.64,
+          "positive": 1.35
+        },
+        "ai_tag": [
+          "crime",
+          "law and justice"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "2a2ad97a3bad204c163232ab5cc3378f",
+        "link": "https://www.news9live.com/india/former-dmk-minister-anbil-mahesh-arrested-in-alleged-rs-100-crore-school-corruption-case-3019220",
+        "title": "Former DMK Minister Anbil Mahesh arrested in alleged Rs 100 crore school corruption case",
+        "description": "Former Tamil Nadu minister Anbil Mahesh Poyyamozhi was arrested after the Madras High Court rejected his anticipatory bail plea in a case involving alleged collections of over Rs 100 crore from private schools.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india"
+        ],
+        "creator": [
+          "fiza narwal"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-26 12:36:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 12:42:56",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/10/Former-DMK-Minister-Anbil-Mahesh.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://i.newsdata.io/news9live.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 95.81,
+          "neutral": 3.52,
+          "positive": 0.67
+        },
+        "ai_tag": [
+          "law and justice",
+          "crime"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "af21d24068e09730f4f620f3bab7ebd1",
+        "link": "https://www.timesnownews.com/india/former-dmk-minister-anbil-mahesh-poyyamozhi-arrested-in-rs-100-crore-corruption-case-article-156408678",
+        "title": "Former DMK Minister Anbil Mahesh Poyyamozhi Arrested In Rs 100-Crore Corruption Case",
+        "description": "Former DMK Minister Anbil Mahesh Poyyamozhi Arrested In Rs 100-Crore Corruption Case",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "prevention of corruption act",
+          "enforcement directorate",
+          "anbil mahesh poyyamozhi",
+          "corruption case",
+          "dmk"
+        ],
+        "creator": [
+          "mahima joshi"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-26 12:17:03",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 12:32:57",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156409355,thumbsize-413112,width-1280,height-720,resizemode-75/156409355.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 82.57,
+          "neutral": 16.58,
+          "positive": 0.85
+        },
+        "ai_tag": [
+          "law and justice",
+          "crime"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "3f2e68d3480fab6ad2fccba6507430a0",
+        "link": "https://www.thenewsminute.com/tamil-nadu/former-minister-anbil-mahesh-arrested-in-alleged-school-approval-scam",
+        "title": "Former Minister Anbil Mahesh arrested in alleged school approval scam",
+        "description": "Justice V Lakshminarayanan had earlier in the day denied the former minister’s plea for anticipatory bail in the Rs 100 crore school approval racket being investigated by the Chennai police’s Central Crime Branch (CCB).",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-26 11:30:34",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 11:37:35",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-26/5g8n4xpv/WhatsApp-Image-2026-10-26-at-4.52.52-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 92.87,
+          "neutral": 6.6,
+          "positive": 0.53
+        },
+        "ai_tag": [
+          "law and justice",
+          "crime"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "ce0bb79f29a3229b041c828c74a69869",
+        "link": "https://frontline.thehindu.com/politics/cjp-protests-crackdown-gyanesh-kumar-cec-resignation-sir/article71606791.ece",
+        "title": "Running scared of the Roaches",
+        "description": "With the CJP’s call for the CEC’s resignation resonating across the nation, a rattled Central government seems determined to clamp down on the youth even as it goes easy on the political opposition.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "politics"
+        ],
+        "creator": [
+          "anand mishra"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-26 11:29:17",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 11:49:38",
+        "image_url": "https://fl-i.thgim.com/public/incoming/bvwbom/article71626405.ece/alternates/LANDSCAPE_1200/cjp-saurav-das-ranka.JPG",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://i.newsdata.io/frontline_thehindu.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 97.3,
+          "neutral": 1.65,
+          "positive": 1.05
+        },
+        "ai_tag": [
+          "politics",
+          "government"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e32b26e4b9768638e183bbb88c21653d",
+        "link": "https://www.thenewsminute.com/news/cyclone-arnab-explainer-how-will-it-affect-andhra-pradesh-odisha-and-tamil-nadu",
+        "title": "Cyclone Arnab explainer: How will it affect Andhra Pradesh, Odisha and Tamil Nadu?",
+        "description": "Cyclone Arnab is expected to cross the Andhra Pradesh coast on October 28, bringing winds of up to 125 kmph and gusts of 140 kmph.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "news"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-26 09:59:15",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 10:07:07",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-26/9rg1nio4/rain.jpg.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 0.85,
+          "neutral": 98.42,
+          "positive": 0.73
+        },
+        "ai_tag": [
+          "climate and weather",
+          "natural disasters"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "60e7a88d12917178967638e7e0438d2b",
+        "link": "https://www.thenewsminute.com/tamil-nadu/madras-hc-denies-anticipatory-bail-to-anbil-mahesh-in-alleged-school-approval-racket",
+        "title": "Madras HC denies anticipatory bail to Anbil Mahesh in alleged school approval racket",
+        "description": "The allegations against former Minister Anbil Mahesh Poyyamozhi are linked to collecting more than Rs 100 crore from private school managements by promising to secure government approvals during the previous DMK regime.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-26 09:00:14",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 09:07:47",
+        "image_url": "https://cf-images.assettype.com/tnm/import/sites/default/files/AnbilMahesh_Facebook_13102021_1200.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 94.69,
+          "neutral": 4.84,
+          "positive": 0.47
+        },
+        "ai_tag": [
+          "law and justice",
+          "crime"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "a20dee194c4fafe895483dcebbaa20bb",
+        "link": "https://www.thenewsminute.com/tamil-nadu/mk-stalin-calls-on-dmk-cadres-to-bring-down-tvk-government",
+        "title": "MK Stalin calls on DMK cadres to bring down TVK government",
+        "description": "Former Chief Minister MK Stalin alleged that news reports of crimes and administrative lapses had become a daily occurrence under the TVK government.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-26 07:27:08",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 07:37:53",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2025-10-24%2Fbi3f0opl%2Fcm-stalin.jpg?rect=0%2C34%2C449%2C253&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 93.86,
+          "neutral": 4.92,
+          "positive": 1.22
+        },
+        "ai_tag": [
+          "law and justice",
+          "crime"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "bae4d05b6793690e47e98c1a9aba1619",
+        "link": "https://www.thenewsminute.com/kerala/former-kerala-guv-recommends-removing-psc-chairman-ldf-calls-it-abuse-of-power",
+        "title": "Former Kerala Guv recommends removing PSC chairman, LDF calls it abuse of power",
+        "description": "Former Kerala Governor recommends the removal of the Kerala PSC Chairman following a Crime Branch probe into exam irregularities that found unexamined answer sheets and evaluation errors.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "kerala"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-26 06:34:50",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-26 06:37:26",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2025-09-23%2Fs6gvxp2l%2FRajendra-Arlekar.jpg?rect=0%2C101%2C1003%2C564&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 90.93,
+          "neutral": 8.94,
+          "positive": 0.13
+        },
+        "ai_tag": [
+          "crime",
+          "law and justice"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "dca101901415024e29d30d08b20b7cc0",
+        "link": "https://www.news9live.com/india/india-weather-october-26-heavy-rain-alert-in-5-southern-states-delhi-to-remain-cloudy-3018959",
+        "title": "India weather, October 26: Heavy rain alert in 5 southern states, Delhi to remain cloudy",
+        "description": "The IMD has forecast heavy rain in parts of southern India on October 26, with a developing Bay of Bengal cyclone expected to threaten Andhra Pradesh and Odisha. Delhi may remain partly cloudy while Bengaluru could see showers.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india"
+        ],
+        "creator": [
+          "ajay awana"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "environment",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-10-25 23:30:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-10-25 23:42:38",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/10/Kerala-weather.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://i.newsdata.io/news9live.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 0.36,
+          "neutral": 99.5,
+          "positive": 0.14
+        },
+        "ai_tag": [
+          "climate and weather"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 2
+  }
+}

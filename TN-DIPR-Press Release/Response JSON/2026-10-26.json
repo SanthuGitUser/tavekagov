@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-26",
+  "fetchedAt": "2026-10-27T22:21:24.693999+05:30",
+  "lastFetchedAt": "2026-10-27T22:21:24.693999+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-26"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22829,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.922_-_Hon_ble_CM_Press_Release_-_HCM_Inspection_at_Chembarambakkam_Lake_-_Date.26.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-26",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.922 - Hon'ble CM Press Release - HCM Inspection at Chembarambakkam Lake - Date.26.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-26",
+        "language": "en"
+      }
+    ]
+  }
+}

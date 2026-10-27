@@ -27,7 +27,9 @@ export type May2026CloseRaceRow = {
   runnerName: string;
   runnerParty: string;
   margin: number;
+  marginPct: number;
   leaderVotes: number;
+  runnerVotes: number;
 };
 
 export type May2026TvKHighlightRow = {
@@ -44,6 +46,7 @@ export type May2026DashboardAnalytics = {
   constituencyCount: number;
   partySeats: May2026PartySeatsRow[];
   partyVotes: May2026PartyVotesRow[];
+  marginRaces: May2026CloseRaceRow[];
   closeRaces: May2026CloseRaceRow[];
   tvkHighlights: May2026TvKHighlightRow[];
   averageFinalRounds: number;
@@ -85,6 +88,7 @@ function analyzeConstituency(result: TnElectionConstituencyResult): {
     const leader = candidates[0];
     const runner = candidates[1];
     const margin = leader.total - runner.total;
+    const validTotal = candidates.reduce((sum, row) => sum + row.total, 0);
     const { name, district } = constituencyLabel(result.ac_number);
     closeRace = {
       acNumber: result.ac_number,
@@ -95,7 +99,9 @@ function analyzeConstituency(result: TnElectionConstituencyResult): {
       runnerName: runner.name,
       runnerParty: partyCodeFromEciName(runner.party),
       margin,
+      marginPct: validTotal > 0 ? (margin / validTotal) * 100 : 0,
       leaderVotes: leader.total,
+      runnerVotes: runner.total,
     };
   }
 
@@ -141,14 +147,16 @@ async function buildMay2026DashboardAnalytics(): Promise<May2026DashboardAnalyti
     .sort((left, right) => right.seats - left.seats || left.party.localeCompare(right.party));
 
   const voteTotals = new Map<string, number>();
-  const closeRaces: May2026CloseRaceRow[] = [];
+  const marginRaces: May2026CloseRaceRow[] = [];
   const tvkRows: May2026TvKHighlightRow[] = [];
   let roundSum = 0;
 
   for (const result of feed.results) {
     const analysis = analyzeConstituency(result);
     roundSum += analysis.finalRoundNumber;
-    if (analysis.closeRace) closeRaces.push(analysis.closeRace);
+    if (analysis.closeRace && analysis.closeRace.margin > 0) {
+      marginRaces.push(analysis.closeRace);
+    }
     if (analysis.tvk) tvkRows.push(analysis.tvk);
     for (const [party, votes] of analysis.partyVotes.entries()) {
       voteTotals.set(party, (voteTotals.get(party) ?? 0) + votes);
@@ -164,7 +172,8 @@ async function buildMay2026DashboardAnalytics(): Promise<May2026DashboardAnalyti
     }))
     .sort((left, right) => right.votes - left.votes || left.party.localeCompare(right.party));
 
-  closeRaces.sort((left, right) => left.margin - right.margin);
+  const closeWins = [...marginRaces].sort((left, right) => left.margin - right.margin);
+
   tvkRows.sort((left, right) => {
     if (left.won !== right.won) return left.won ? -1 : 1;
     return right.votes - left.votes;
@@ -178,13 +187,42 @@ async function buildMay2026DashboardAnalytics(): Promise<May2026DashboardAnalyti
     constituencyCount: feed.results.length,
     partySeats,
     partyVotes,
-    closeRaces: closeRaces.slice(0, 6),
+    marginRaces,
+    closeRaces: closeWins.slice(0, 6),
     tvkHighlights: tvkRows.slice(0, 6),
     averageFinalRounds:
       feed.results.length > 0 ? roundSum / feed.results.length : 0,
     majoritySeats,
     leadingParty,
   };
+}
+
+export type May2026MarginPartyFilter = "All" | "TVK" | "AIADMK" | "DMK";
+
+export type May2026MarginMetric = "biggest-win" | "close-win" | "biggest-loss" | "close-loss";
+
+const MARGIN_CHART_LIMIT = 8;
+
+export function selectMarginRaces(
+  races: May2026CloseRaceRow[],
+  metric: May2026MarginMetric,
+  party: May2026MarginPartyFilter,
+  limit = MARGIN_CHART_LIMIT,
+): May2026CloseRaceRow[] {
+  const isLossView = metric === "biggest-loss" || metric === "close-loss";
+  const isCloseMetric = metric === "close-win" || metric === "close-loss";
+
+  let filtered = races;
+  if (party !== "All") {
+    filtered = races.filter((race) =>
+      isLossView ? race.runnerParty === party : race.leaderParty === party,
+    );
+  }
+
+  const sorted = [...filtered].sort((left, right) =>
+    isCloseMetric ? left.margin - right.margin : right.margin - left.margin,
+  );
+  return sorted.slice(0, limit);
 }
 
 export type ByeVsMayPartyRow = {
