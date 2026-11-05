@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-05",
+  "fetchedAt": "2026-11-05T19:00:08.404276+05:30",
+  "lastFetchedAt": "2026-11-05T19:00:08.404276+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-05"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22926,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.996_-_Hon_ble_Minister_for_Environment_and_Climate_Change_Press_Release_-_Pollution_Control_Board_-_Date.05.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.996 - Hon'ble Minister for Environment and Climate Change Press Release - Pollution Control Board - Date.05.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-05",
+        "language": "en"
+      },
+      {
+        "id": 22927,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.997_-_Tamil_Development_and_Information_Dept_Press_Release_-_Thiruvalluvar_Award_-_Date.05.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.997 - Tamil Development and Information Dept Press Release - Thiruvalluvar Award - Date.05.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-05",
+        "language": "en"
+      },
+      {
+        "id": 22928,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.998_-_Finance_Dept_Press_Release_-_English_-_Date.05.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.998 - Finance Dept Press Release - English - Date.05.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-05",
+        "language": "en"
+      },
+      {
+        "id": 22929,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.998_-_Finance_Dept_Press_Release_-_Tamil_-_Date.05.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.998 - Finance Dept Press Release - Tamil - Date.05.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-05",
+        "language": "en"
+      },
+      {
+        "id": 22930,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.999_-_Co-operation__Food_and_Consumer_Protection_Dept_Press_Release_-_Date.05.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.999 - Co-operation, Food and Consumer Protection Dept Press Release - Date.05.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-05",
+        "language": "en"
+      }
+    ]
+  }
+}
