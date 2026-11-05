@@ -206,6 +206,7 @@ if (!$Stage -and !$Commit -and !$Push) {
 if ($Stage -or $Commit -or $Push) {
   Write-Host "Staging outputs..."
   git add "Sync-Config/last-sync.json" | Out-Null
+  git add "Sync-Config/data-version.json" | Out-Null
   git add "TN-DIPR-Press Release/Response JSON/" | Out-Null
   git add "TN-GOV-Press Release/Response JSON/" | Out-Null
   git add "TN-DVAC-Press Release/Response JSON/" | Out-Null
