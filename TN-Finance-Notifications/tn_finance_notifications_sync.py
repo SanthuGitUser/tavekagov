@@ -212,6 +212,11 @@ def main() -> int:
     has_new_items = bool(scraped_urls - existing_urls) if existing_urls else True
     if existing and not has_new_items:
         print("No new notification PDFs found; manifest unchanged.")
+        fetched_at = datetime.now(_KOLKATA).isoformat(timespec="seconds")
+        existing["lastFetchedAt"] = fetched_at
+        if not existing.get("fetchedAt"):
+            existing["fetchedAt"] = fetched_at
+        _safe_write_json(manifest_path, existing)
         record_sync(JOB_FINANCE_NOTIFICATIONS, extra={"count": len(notifications)})
         return 0
 

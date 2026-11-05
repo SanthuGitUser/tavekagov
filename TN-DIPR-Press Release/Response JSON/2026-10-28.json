@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-28",
+  "fetchedAt": "2026-11-03T19:25:41.998223+05:30",
+  "lastFetchedAt": "2026-11-03T19:25:41.998223+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-28"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22835,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No._928_-_Hon_ble_CM_Press_Release_-_Labour___Employment_Dept_-_Appt_orders__Appreciation_Certificates_to_ITI_Toppers_-_Date-28.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-28",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No. 928 - Hon'ble CM Press Release - Labour & Employment Dept - Appt orders, Appreciation Certificates to ITI Toppers - Date-28.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-28",
+        "language": "en"
+      },
+      {
+        "id": 22836,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.929-Transport_Dept-Auto_Fare-Press_Release-Date_28.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-28",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.929-Transport Dept-Auto Fare-Press Release-Date 28.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-28",
+        "language": "en"
+      },
+      {
+        "id": 22837,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.930-Tamil_Nadu_Minorities_Economic_Development_Corporation_Ltd-Press_Release-Date_28.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-28",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.930-Tamil Nadu Minorities Economic Development Corporation Ltd-Press Release-Date 28.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-28",
+        "language": "en"
+      },
+      {
+        "id": 22838,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.931-Hon_ble_Minister_for_ForestsPress_Release_-_Tamil-Date_28.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-29",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.931-Hon'ble Minister for ForestsPress Release - Tamil-Date 28.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-28",
+        "language": "en"
+      }
+    ]
+  }
+}

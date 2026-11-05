@@ -1,8 +1,8 @@
 {
   "date": "2026-10-27",
   "fetchedAt": "2026-10-27T22:21:25.112445+05:30",
-  "lastFetchedAt": "2026-10-27T22:21:25.112445+05:30",
-  "fetchCount": 1,
+  "lastFetchedAt": "2026-11-03T19:25:41.454955+05:30",
+  "fetchCount": 2,
   "request": {
     "method": "GET",
     "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
@@ -53,6 +53,17 @@
         "uploaded_date": "2026-10-27",
         "press_release_no": null,
         "press_name": "DIPR-P.R.No.926 - Hon'ble Public Works and Sports Development Minister Press Release - Asian Para Games - Date.27.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-27",
+        "language": "en"
+      },
+      {
+        "id": 22834,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.927_-_Handlooms__Textiles_and_Khadi_Dept_Press_Release_-_Date.27.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-28",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.927 - Handlooms, Textiles and Khadi Dept Press Release - Date.27.10.2026.pdf",
         "mimetype": "application/pdf",
         "pr_date": "2026-10-27",
         "language": "en"

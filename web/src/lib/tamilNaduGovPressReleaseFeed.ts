@@ -1,4 +1,5 @@
 import { normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
+import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
 import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
 import type { GovPressRelease, TnDept, TnMinister } from "@/types/models";
@@ -16,10 +17,10 @@ type DailyResponseFile = {
   departments?: DailyReference[];
 };
 
-const dailyJsonFiles = import.meta.glob(
+const dailyJsonLoaders = import.meta.glob(
   "../../../TN-GOV-Press Release/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
-  { eager: true, import: "default" },
-) as Record<string, DailyResponseFile>;
+  { import: "default" },
+) as Record<string, () => Promise<DailyResponseFile>>;
 
 const officialDepartmentsById = new Map(
   tamilNaduDepartmentsFeed.departments.map((department) => [department.id, department.name]),
@@ -141,22 +142,20 @@ function parseRelease(raw: Record<string, unknown>): GovPressRelease | null {
   };
 }
 
-function mergeDailyFiles(): {
+async function mergeDailyFiles(): Promise<{
   releases: GovPressRelease[];
   ministers: TnMinister[];
   departments: TnDept[];
   sourceUrl: string;
-} {
+}> {
   const releasesByUrl = new Map<string, GovPressRelease>();
   const ministersById = new Map<number, TnMinister>();
   const departmentsById = new Map<number, TnDept>();
   let sourceUrl = "https://www.tn.gov.in/press_release.php";
 
-  const sortedDailyFiles = Object.entries(dailyJsonFiles).sort(([left], [right]) =>
-    left.localeCompare(right),
-  );
+  const sortedDailyFiles = await loadJsonModules<DailyResponseFile>(dailyJsonLoaders);
 
-  for (const [, file] of sortedDailyFiles) {
+  for (const { file } of sortedDailyFiles) {
     sourceUrl = file.source_url ?? sourceUrl;
 
     for (const reference of file.ministers ?? []) {
@@ -247,8 +246,26 @@ function mergeDailyFiles(): {
   return { releases, ministers, departments, sourceUrl };
 }
 
-function buildFeed() {
-  const { releases, ministers, departments, sourceUrl } = mergeDailyFiles();
+type GovPressReleaseFeed = {
+  sourceUrl: string;
+  totalResults: number;
+  releases: GovPressRelease[];
+  ministers: TnMinister[];
+  departments: TnDept[];
+};
+
+let loadPromise: Promise<GovPressReleaseFeed> | null = null;
+
+export let tamilNaduGovPressReleaseFeed: GovPressReleaseFeed = {
+  sourceUrl: "https://www.tn.gov.in/press_release.php",
+  totalResults: 0,
+  releases: [],
+  ministers: [],
+  departments: [],
+};
+
+async function buildFeedAsync(): Promise<GovPressReleaseFeed> {
+  const { releases, ministers, departments, sourceUrl } = await mergeDailyFiles();
 
   return {
     sourceUrl,
@@ -259,7 +276,29 @@ function buildFeed() {
   };
 }
 
-export const tamilNaduGovPressReleaseFeed = buildFeed();
+export function ensureTamilNaduGovPressReleaseFeedLoaded(): Promise<GovPressReleaseFeed> {
+  if (tamilNaduGovPressReleaseFeed.releases.length > 0) {
+    return Promise.resolve(tamilNaduGovPressReleaseFeed);
+  }
+  if (!loadPromise) {
+    loadPromise = buildFeedAsync().then((feed) => {
+      tamilNaduGovPressReleaseFeed = feed;
+      return feed;
+    });
+  }
+  return loadPromise;
+}
+
+export function resetTamilNaduGovPressReleaseFeedCache(): void {
+  loadPromise = null;
+  tamilNaduGovPressReleaseFeed = {
+    sourceUrl: "https://www.tn.gov.in/press_release.php",
+    totalResults: 0,
+    releases: [],
+    ministers: [],
+    departments: [],
+  };
+}
 
 export function getGovPressReleases(): GovPressRelease[] {
   return tamilNaduGovPressReleaseFeed.releases;

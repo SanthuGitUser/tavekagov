@@ -2,7 +2,13 @@ import { useEffect, useMemo } from "react";
 
 import { isDateInNewsRange } from "@/components/news/NewsDatePicker";
 import { TransfersPostingsTable } from "@/components/transfers-postings/TransfersPostingsTable";
+import {
+  PublicationFeedGate,
+  usePublicationFeed,
+} from "@/hooks/usePublicationFeed";
 import { useTransfersPostingsSearch } from "@/context/TransfersPostingsSearchContext";
+import { snapSingleDayRangeToLatest } from "@/lib/dateRangeUtils";
+import { ensureTransfersPostingsPageFeedsLoaded } from "@/lib/publicationFeedsLoader";
 import {
   expandTransferPostingRows,
   getAvailableTransfersPostingDates,
@@ -28,13 +34,17 @@ function matchesSearch(row: TnTransfersPostingRow, query: string): boolean {
 }
 
 export function TransfersPostingsPage() {
+  const feed = usePublicationFeed({
+    load: ensureTransfersPostingsPageFeedsLoaded,
+    select: () => getTransfersPostings(),
+  });
   const transfersPostingsSearch = useTransfersPostingsSearch();
   const query = transfersPostingsSearch?.search.trim().toLowerCase() ?? "";
   const filterDateRange = transfersPostingsSearch?.filterDateRange ?? { from: "", to: "" };
 
-  const allPostings = useMemo(() => getTransfersPostings(), []);
+  const allPostings = feed.data;
   const allRows = useMemo(() => expandTransferPostingRows(allPostings), [allPostings]);
-  const availableDates = useMemo(() => getAvailableTransfersPostingDates(), []);
+  const availableDates = useMemo(() => getAvailableTransfersPostingDates(), [allPostings]);
 
   useEffect(() => {
     transfersPostingsSearch?.setAvailableDates(availableDates);
@@ -43,9 +53,16 @@ export function TransfersPostingsPage() {
 
   useEffect(() => {
     if (!transfersPostingsSearch || availableDates.length === 0) return;
-    if (filterDateRange.from && filterDateRange.to) return;
-    transfersPostingsSearch.setFilterDateRange(getDefaultTransfersPostingDateRange(availableDates));
-  }, [availableDates, filterDateRange.from, filterDateRange.to, transfersPostingsSearch]);
+    const latest = availableDates[0];
+    if (!filterDateRange.from || !filterDateRange.to) {
+      transfersPostingsSearch.setFilterDateRange(getDefaultTransfersPostingDateRange(availableDates));
+      return;
+    }
+    const snapped = snapSingleDayRangeToLatest(filterDateRange, latest);
+    if (snapped.from !== filterDateRange.from || snapped.to !== filterDateRange.to) {
+      transfersPostingsSearch.setFilterDateRange(snapped);
+    }
+  }, [availableDates, filterDateRange, transfersPostingsSearch]);
 
   const rows = useMemo(() => {
     let filtered = allRows;
@@ -63,8 +80,10 @@ export function TransfersPostingsPage() {
   }, [rows.length, transfersPostingsSearch]);
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
-      <TransfersPostingsTable rows={rows} />
-    </div>
+    <PublicationFeedGate loading={feed.loading} error={feed.error} label="Loading transfers and postings…">
+      <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+        <TransfersPostingsTable rows={rows} />
+      </div>
+    </PublicationFeedGate>
   );
 }

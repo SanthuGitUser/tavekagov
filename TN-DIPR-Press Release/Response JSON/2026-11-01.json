@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-01",
+  "fetchedAt": "2026-11-03T19:25:42.930339+05:30",
+  "lastFetchedAt": "2026-11-03T19:25:42.930339+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-01"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22876,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.958-Hon_ble_CM_Social_Media_Message_-__Tamil_Nadu_Day_-Date_01.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.958-Hon'ble CM Social Media Message -  Tamil Nadu Day -Date 01.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-01",
+        "language": "en"
+      },
+      {
+        "id": 22877,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.959-TN_Govt-Press_Release_on_POCSO_Courts-Date_01.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.959-TN Govt-Press Release on POCSO Courts-Date 01.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-01",
+        "language": "en"
+      },
+      {
+        "id": 22878,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.960_-_Hon_ble_CM_Press_Release_-_Condolences_and_Financial_Support_for_Ariyalur_Homeguard_Death_01.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.960 - Hon'ble CM Press Release - Condolences and Financial Support for Ariyalur Homeguard Death 01.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-01",
+        "language": "en"
+      },
+      {
+        "id": 22879,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.961_-_Hon_ble_Ministers_Press_Release_-_Tamilnadu_Naal_-_Date.01.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.961 - Hon'ble Ministers Press Release - Tamilnadu Naal - Date.01.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-01",
+        "language": "en"
+      },
+      {
+        "id": 22880,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.962_-_TNDRRA_Press_Release_-_Public_Advisory_Cyclone_Murasu_-_Tamil_-_Date.01.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.962 - TNDRRA Press Release - Public Advisory Cyclone Murasu - Tamil - Date.01.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-01",
+        "language": "en"
+      }
+    ]
+  }
+}

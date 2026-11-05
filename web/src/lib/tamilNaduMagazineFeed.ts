@@ -1,4 +1,5 @@
 import { mergeUniqueByKey, stableIdFromKey } from "@/lib/jsonFeedUtils";
+import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import type { Magazine } from "@/types/models";
 
 import magazineManifest from "../../../TN-TVA-Magazine/manifests/magazine.json";
@@ -14,10 +15,10 @@ type MagazineManifest = {
   magazines: Magazine[];
 };
 
-const dailyJsonFiles = import.meta.glob(
+const dailyJsonLoaders = import.meta.glob(
   "../../../TN-TVA-Magazine/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
-  { eager: true, import: "default" },
-) as Record<string, DailyResponseFile>;
+  { import: "default" },
+) as Record<string, () => Promise<DailyResponseFile>>;
 
 const manifest = magazineManifest as MagazineManifest;
 
@@ -36,7 +37,7 @@ function parseMagazine(raw: Record<string, unknown>): Magazine | null {
   };
 }
 
-function collectRawMagazines(): Record<string, unknown>[] {
+function collectRawMagazines(dailyFiles: DailyResponseFile[]): Record<string, unknown>[] {
   const byId = new Map<string, Record<string, unknown>>();
 
   for (const file of Object.values(manifest.magazines ?? [])) {
@@ -44,7 +45,7 @@ function collectRawMagazines(): Record<string, unknown>[] {
     if (parsed) byId.set(String(parsed.id), file as unknown as Record<string, unknown>);
   }
 
-  for (const file of Object.values(dailyJsonFiles)) {
+  for (const file of dailyFiles) {
     if (!Array.isArray(file.magazines)) continue;
     for (const raw of file.magazines) {
       const parsed = parseMagazine(raw);
@@ -56,9 +57,26 @@ function collectRawMagazines(): Record<string, unknown>[] {
   return [...byId.values()];
 }
 
-function buildFeed() {
+type MagazineFeed = {
+  sourceUrl: string;
+  totalResults: number;
+  magazines: Magazine[];
+};
+
+let loadPromise: Promise<MagazineFeed> | null = null;
+
+export let tamilNaduMagazineFeed: MagazineFeed = {
+  sourceUrl: "https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21",
+  totalResults: 0,
+  magazines: [],
+};
+
+async function buildFeedAsync(): Promise<MagazineFeed> {
+  const loaded = await loadJsonModules<DailyResponseFile>(dailyJsonLoaders);
+  const dailyFiles = loaded.map((entry) => entry.file);
+
   const magazines = mergeUniqueByKey(
-    collectRawMagazines()
+    collectRawMagazines(dailyFiles)
       .map((raw) => parseMagazine(raw))
       .filter((magazine): magazine is Magazine => magazine !== null),
     (magazine) => String(magazine.id),
@@ -67,7 +85,7 @@ function buildFeed() {
   magazines.sort((left, right) => right.issue_date.localeCompare(left.issue_date));
 
   const sourceUrl =
-    Object.values(dailyJsonFiles).at(-1)?.source_url ??
+    dailyFiles.at(-1)?.source_url ??
     manifest.source_url ??
     "https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21";
 
@@ -78,7 +96,27 @@ function buildFeed() {
   };
 }
 
-export const tamilNaduMagazineFeed = buildFeed();
+export function ensureTamilNaduMagazineFeedLoaded(): Promise<MagazineFeed> {
+  if (tamilNaduMagazineFeed.magazines.length > 0) {
+    return Promise.resolve(tamilNaduMagazineFeed);
+  }
+  if (!loadPromise) {
+    loadPromise = buildFeedAsync().then((feed) => {
+      tamilNaduMagazineFeed = feed;
+      return feed;
+    });
+  }
+  return loadPromise;
+}
+
+export function resetTamilNaduMagazineFeedCache(): void {
+  loadPromise = null;
+  tamilNaduMagazineFeed = {
+    sourceUrl: "https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21",
+    totalResults: 0,
+    magazines: [],
+  };
+}
 
 export function getMagazines(): Magazine[] {
   return tamilNaduMagazineFeed.magazines.map((magazine) => ({

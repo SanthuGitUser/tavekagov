@@ -5,13 +5,21 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "29-08-2026",
+  "start_date": "27-10-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:34.320016+05:30",
-  "lastFetchedAt": "2026-10-07T17:12:00.985198+05:30",
-  "fetchCount": 14,
-  "count": 3,
+  "lastFetchedAt": "2026-11-03T19:25:53.185131+05:30",
+  "fetchCount": 15,
+  "count": 4,
   "orders": [
+    {
+      "go_date": "2026-10-29",
+      "go_number": "G.O.(Ms)No.63",
+      "go_name": "Home, Prohibition Excise Department - Tamil Nadu State Marketing Cpation Limited - Introduction of a technology-enabled Incentive mechanism through Reverse Vending Machine RVMs instead of existing Buy-Back Scheme f empty liqu containers - Fixation of incentive at Rs10 per eligible container -Financial arrangements - Selection of System Operat - Supersession of existing scheme phased termination of existing contracts -Orders - Issued",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/home_e_63_2026_ms.pdf",
+      "department_name": "Home, Prohibition and Excise Department",
+      "dep_id_encoded": "MTQ="
+    },
     {
       "go_date": "2026-09-30",
       "go_number": "G.O.(Ms) No. 329",

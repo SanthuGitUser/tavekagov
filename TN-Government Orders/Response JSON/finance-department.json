@@ -5,13 +5,21 @@
   "years_fetched": [
     2026
   ],
-  "start_date": "15-10-2026",
+  "start_date": "27-10-2026",
   "source_url": "https://www.tn.gov.in/godept_list.php",
   "fetchedAt": "2026-08-02T00:34:32.497505+05:30",
-  "lastFetchedAt": "2026-10-25T15:47:35.345222+05:30",
-  "fetchCount": 15,
-  "count": 11,
+  "lastFetchedAt": "2026-11-03T19:25:51.346264+05:30",
+  "fetchCount": 16,
+  "count": 12,
   "orders": [
+    {
+      "go_date": "2026-10-31",
+      "go_number": "Letter No.16042026-A/Pension/2026",
+      "go_name": "PENSION – Extension of the orders of Dearness Allowance issued for employees who are in pre-2016 pay scales for grant of Dearness Allowance to Pensioners/Family Pensioners who are drawing pre-revised Pension and Family Pension - Regarding.",
+      "pdf_url": "https://cms.tn.gov.in/cms_migrated/document/GO/fin_e_16042026-A_2026_lr.pdf",
+      "department_name": "Finance Department",
+      "dep_id_encoded": "OQ=="
+    },
     {
       "go_date": "2026-10-16",
       "go_number": "14190711/TAPS/2026-5",

@@ -1,24 +1,30 @@
-import { useMemo } from "react";
-
 import { GovPressReleaseTimeline } from "@/components/gov-press-releases/GovPressReleaseTimeline";
-import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
-import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
 import {
-  getGovPressReleases,
-} from "@/lib/tamilNaduGovPressReleaseFeed";
+  PublicationFeedGate,
+  usePublicationFeed,
+} from "@/hooks/usePublicationFeed";
+import { ensureGovPressReleasePageFeedsLoaded } from "@/lib/publicationFeedsLoader";
+import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
+import { getGovPressReleases } from "@/lib/tamilNaduGovPressReleaseFeed";
+import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
 
 export function GovPressReleasesPage() {
-  const releases = useMemo(() => getGovPressReleases(), []);
-  const departments = useMemo(() => tamilNaduDepartmentsFeed.departments, []);
-  const ministers = useMemo(() => tamilNaduMinistersFeed.ministers, []);
+  const feed = usePublicationFeed({
+    load: ensureGovPressReleasePageFeedsLoaded,
+    select: () => getGovPressReleases(),
+  });
+  const departments = tamilNaduDepartmentsFeed.departments;
+  const ministers = tamilNaduMinistersFeed.ministers;
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col">
-      <GovPressReleaseTimeline
-        releases={releases}
-        departments={departments}
-        ministers={ministers}
-      />
-    </div>
+    <PublicationFeedGate loading={feed.loading} error={feed.error} label="Loading press release images…">
+      <div className="flex min-h-0 flex-1 flex-col">
+        <GovPressReleaseTimeline
+          releases={feed.data}
+          departments={departments}
+          ministers={ministers}
+        />
+      </div>
+    </PublicationFeedGate>
   );
 }

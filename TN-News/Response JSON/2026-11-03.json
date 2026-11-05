@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-03",
+  "fetchedAt": "2026-11-03T19:27:25.794029+05:30",
+  "lastFetchedAt": "2026-11-05T16:04:22.063929+05:30",
+  "fetchCount": 2,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 2,
+    "apiReportedTotalResults": 4,
+    "results": [
+      {
+        "article_id": "cf1ace058e3b0133af12666a8ae40ac2",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tn-fisherfolk-question-urgent-demolitions-in-pattinapakkam-amid-proposed-secretariat-project",
+        "title": "TN fisherfolk question urgent demolitions in Pattinapakkam amid proposed Secretariat project",
+        "description": "The TNHB's decision to invite tenders for demolishing 96 rental tenements at Foreshore Estate in Pattinapakkam has raised fresh concerns as fishing community representatives have been demanding the 3.82-acre site for their long-term rehabilitation.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "nithesh kumar m"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "business"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-03 14:14:53",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-03 14:38:48",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-03/pb4q03s1/WhatsApp-Image-2026-11-03-at-6.57.50-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 16.28,
+          "neutral": 83.0,
+          "positive": 0.72
+        },
+        "ai_tag": [
+          "real estate"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "da03bf650583184923e5d7effd6e4db9",
+        "link": "https://www.timesnownews.com/india/cyclone-murasu-landfall-continues-in-andhra-pradesh-heavy-rain-and-winds-of-up-to-120-kmph-check-top-updates-article-156455136",
+        "title": "Cyclone Murasu Landfall Continues In Andhra Pradesh, Heavy Rain And Winds Of Up To 120 Kmph – Check Top Updates",
+        "description": "Severe Cyclonic Storm Murasu began making landfall along the Andhra Pradesh coast in the early hours of Tuesday, bringing heavy rainfall and strong winds.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "andhra pradesh news",
+          "cyclone murasu makes landfall",
+          "cyclone murasu top updates",
+          "cyclone murasu",
+          "andhra pradesh"
+        ],
+        "creator": [
+          "surbhi kaul"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "environment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-03 01:31:14",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-03 01:32:29",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156455157,thumbsize-36918,width-1280,height-720,resizemode-75/156455157.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 5.01,
+          "neutral": 93.72,
+          "positive": 1.27
+        },
+        "ai_tag": [
+          "natural disasters",
+          "climate and weather"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

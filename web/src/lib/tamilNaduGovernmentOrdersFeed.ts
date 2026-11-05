@@ -1,4 +1,5 @@
 import { mergeUniqueByKey, normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
+import { loadJsonModulesByKey } from "@/lib/lazyDailyJsonFeed";
 import type { TnGoDept } from "@/types/models";
 
 type DepartmentResponseFile = {
@@ -8,10 +9,10 @@ type DepartmentResponseFile = {
   orders?: Record<string, unknown>[];
 };
 
-const departmentJsonFiles = import.meta.glob(
+const departmentJsonLoaders = import.meta.glob(
   "../../../TN-Government Orders/Response JSON/*.json",
-  { eager: true, import: "default" },
-) as Record<string, DepartmentResponseFile>;
+  { import: "default" },
+) as Record<string, () => Promise<DepartmentResponseFile>>;
 
 function orderKey(order: TnGoDept): string {
   return `${order.go_number}|${order.dep_id_encoded}|${order.go_date}|${order.pdf_url}`;
@@ -35,10 +36,10 @@ function parseOrder(raw: Record<string, unknown>): TnGoDept | null {
   };
 }
 
-function collectRawOrders(): Record<string, unknown>[] {
+function collectRawOrders(files: DepartmentResponseFile[]): Record<string, unknown>[] {
   const byKey = new Map<string, Record<string, unknown>>();
 
-  for (const file of Object.values(departmentJsonFiles)) {
+  for (const file of files) {
     if (!Array.isArray(file.orders)) continue;
 
     const departmentName =
@@ -67,9 +68,26 @@ function collectRawOrders(): Record<string, unknown>[] {
   return [...byKey.values()];
 }
 
-function buildFeed() {
+type GovernmentOrdersFeed = {
+  sourceUrl: string;
+  totalResults: number;
+  orders: TnGoDept[];
+};
+
+let loadPromise: Promise<GovernmentOrdersFeed> | null = null;
+
+export let tamilNaduGovernmentOrdersFeed: GovernmentOrdersFeed = {
+  sourceUrl: "https://www.tn.gov.in/godept_list.php",
+  totalResults: 0,
+  orders: [],
+};
+
+async function buildFeedAsync(): Promise<GovernmentOrdersFeed> {
+  const loaded = await loadJsonModulesByKey<DepartmentResponseFile>(departmentJsonLoaders);
+  const files = loaded.map((entry) => entry.file);
+
   const orders = mergeUniqueByKey(
-    collectRawOrders()
+    collectRawOrders(files)
       .map((raw) => parseOrder(raw))
       .filter((order): order is TnGoDept => order !== null),
     orderKey,
@@ -81,9 +99,7 @@ function buildFeed() {
     return left.go_number.localeCompare(right.go_number);
   });
 
-  const sourceUrl =
-    Object.values(departmentJsonFiles)[0]?.source_url ??
-    "https://www.tn.gov.in/godept_list.php";
+  const sourceUrl = files[0]?.source_url ?? "https://www.tn.gov.in/godept_list.php";
 
   return {
     sourceUrl,
@@ -92,8 +108,28 @@ function buildFeed() {
   };
 }
 
-export const tamilNaduGovernmentOrdersFeed = buildFeed();
+export function ensureTamilNaduGovernmentOrdersFeedLoaded(): Promise<GovernmentOrdersFeed> {
+  if (tamilNaduGovernmentOrdersFeed.orders.length > 0) {
+    return Promise.resolve(tamilNaduGovernmentOrdersFeed);
+  }
+  if (!loadPromise) {
+    loadPromise = buildFeedAsync().then((feed) => {
+      tamilNaduGovernmentOrdersFeed = feed;
+      return feed;
+    });
+  }
+  return loadPromise;
+}
 
 export function getGovernmentOrders(): TnGoDept[] {
   return tamilNaduGovernmentOrdersFeed.orders;
+}
+
+export function resetTamilNaduGovernmentOrdersFeedCache(): void {
+  loadPromise = null;
+  tamilNaduGovernmentOrdersFeed = {
+    sourceUrl: "https://www.tn.gov.in/godept_list.php",
+    totalResults: 0,
+    orders: [],
+  };
 }

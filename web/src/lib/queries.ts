@@ -12,11 +12,13 @@ import {
   tamilNaduPressReleaseFeed,
   tamilNaduTransfersPostingsFeed,
 } from "@/lib/dashboardWidgetData";
+import { ensureDashboardPublicationFeedsLoaded } from "@/lib/publicationFeedsLoader";
 import type { DashboardStats } from "@/types/models";
 
 export async function fetchDashboardStatsForRange(
   dateRange: { from: string; to: string } | null,
 ): Promise<DashboardStats> {
+  await ensureDashboardPublicationFeedsLoaded();
   const pressReleases = tamilNaduPressReleaseFeed.results.filter((release) =>
     inDashboardDateRange(release.pr_date, dateRange),
   ).length;

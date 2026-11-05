@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-31",
+  "fetchedAt": "2026-11-03T19:25:42.696827+05:30",
+  "lastFetchedAt": "2026-11-03T19:25:42.696827+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-31"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22871,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO.953-Hon_ble_CM_Press_Release_-Incident_of_prisoners_escaping_from_the_Theni_District_Jail-Date_31.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO.953-Hon'ble CM Press Release -Incident of prisoners escaping from the Theni District Jail-Date 31.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-31",
+        "language": "en"
+      },
+      {
+        "id": 22872,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.954_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Electrocution_death_at_Thiruvarur_Dist_CMPRF_-Date_-_31.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.954 Hon'ble CM Press Release - Condolence and Relief - Electrocution death at Thiruvarur Dist CMPRF -Date - 31.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-31",
+        "language": "en"
+      },
+      {
+        "id": 22873,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_PR_No.955_-_Hon_ble_CM_Press_Release_-Increase_of_3__DA_to_Govt_Staffs__Teachers_and_Pensioners__-Date_31.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR PR No.955 - Hon'ble CM Press Release -Increase of 3% DA to Govt Staffs, Teachers and Pensioners  -Date 31.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-31",
+        "language": "en"
+      },
+      {
+        "id": 22874,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.956-TN_Govt_Press_Release-Neet_Case_Withdrawal_-Date_31.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.956-TN Govt Press Release-Neet Case Withdrawal -Date 31.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-31",
+        "language": "en"
+      },
+      {
+        "id": 22875,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-957_-WRD_Dept_Press_Release-Manimutharu_Dam_Water_Release-Date_31.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-957 -WRD Dept Press Release-Manimutharu Dam Water Release-Date 31.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-31",
+        "language": "en"
+      }
+    ]
+  }
+}

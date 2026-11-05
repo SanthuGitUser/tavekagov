@@ -1,5 +1,6 @@
 import { enrichPressReleases } from "@/lib/pressReleaseNameParser";
 import { parseRawPressReleaseItems } from "@/lib/pressReleaseParseUtils";
+import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
 import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
 import type { PressRelease } from "@/types/models";
@@ -27,25 +28,28 @@ export type PressReleaseFeedResponse = {
 };
 
 // One JSON file per API date: TN-DIPR-Press Release/Response JSON/YYYY-MM-DD.json
-const responseJsonFiles = import.meta.glob(
+const responseJsonLoaders = import.meta.glob(
   "../../../TN-DIPR-Press Release/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
-  { eager: true, import: "default" },
-) as Record<string, PressReleaseResponseFile>;
+  { import: "default" },
+) as Record<string, () => Promise<PressReleaseResponseFile>>;
 
 const enrichmentContext = {
   departments: tamilNaduDepartmentsFeed.departments,
   ministers: tamilNaduMinistersFeed.ministers,
 };
 
-function extractRawItems(file: PressReleaseResponseFile): Record<string, unknown>[] {
-  const data = file.response?.data;
-  return Array.isArray(data) ? data : [];
-}
+let loadPromise: Promise<PressReleaseFeedResponse> | null = null;
 
-function buildFeed(): PressReleaseFeedResponse {
-  const files = Object.entries(responseJsonFiles)
-    .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath))
-    .map(([, file]) => file);
+export let tamilNaduPressReleaseFeed: PressReleaseFeedResponse = {
+  totalResults: 0,
+  filterDate: "",
+  sourceUrl: "https://dipr.tn.gov.in/press-release1.html",
+  results: [],
+};
+
+async function buildFeedAsync(): Promise<PressReleaseFeedResponse> {
+  const loadedFiles = await loadJsonModules<PressReleaseResponseFile>(responseJsonLoaders);
+  const files = loadedFiles.map((entry) => entry.file);
 
   const seen = new Set<number>();
   const rawResults: PressRelease[] = [];
@@ -79,7 +83,33 @@ function buildFeed(): PressReleaseFeedResponse {
   };
 }
 
-export const tamilNaduPressReleaseFeed = buildFeed();
+function extractRawItems(file: PressReleaseResponseFile): Record<string, unknown>[] {
+  const data = file.response?.data;
+  return Array.isArray(data) ? data : [];
+}
+
+export function ensureTamilNaduPressReleaseFeedLoaded(): Promise<PressReleaseFeedResponse> {
+  if (tamilNaduPressReleaseFeed.results.length > 0) {
+    return Promise.resolve(tamilNaduPressReleaseFeed);
+  }
+  if (!loadPromise) {
+    loadPromise = buildFeedAsync().then((feed) => {
+      tamilNaduPressReleaseFeed = feed;
+      return feed;
+    });
+  }
+  return loadPromise;
+}
+
+export function resetTamilNaduPressReleaseFeedCache(): void {
+  loadPromise = null;
+  tamilNaduPressReleaseFeed = {
+    totalResults: 0,
+    filterDate: "",
+    sourceUrl: "https://dipr.tn.gov.in/press-release1.html",
+    results: [],
+  };
+}
 
 export function getAvailablePressReleaseDates(): string[] {
   const dates = new Set(tamilNaduPressReleaseFeed.results.map((release) => release.pr_date));

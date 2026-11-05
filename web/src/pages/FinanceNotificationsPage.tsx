@@ -13,14 +13,22 @@ import {
 import { tamilNaduFinanceNotificationsFeed } from "@/lib/tamilNaduFinanceNotificationsFeed";
 
 export function FinanceNotificationsPage() {
-  const results = useMemo(() => tamilNaduFinanceNotificationsFeed.results, []);
+  const feed = tamilNaduFinanceNotificationsFeed;
+  const results = useMemo(() => feed.results, [feed.results]);
+  const lastUpdated = feed.lastFetchedAt || feed.fetchedAt;
 
   if (results.length === 0) {
     return <DashboardEmptyState message="No finance notifications found yet." />;
   }
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col">
+    <div className="flex min-h-0 flex-1 flex-col gap-3">
+      {lastUpdated ? (
+        <p className="text-xs text-muted-foreground">
+          Manifest last checked: {lastUpdated}. Finance publishes budget documents on the homepage
+          widget; run <code className="text-[11px]">sync-all.ps1</code> to refresh.
+        </p>
+      ) : null}
       <div className="rounded-xl border border-border">
         <Table>
           <TableHeader>

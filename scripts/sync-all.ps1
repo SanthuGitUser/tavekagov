@@ -192,6 +192,8 @@ try {
   Write-Host "News sync skipped/failed (likely NEWSDATA_API_KEY missing). Error: $($_.Exception.Message)"
 }
 
+Run-Py $pythonExe (Join-Path $repoRoot "Sync-Config/sync_health.py") @()
+
 if (!$Stage -and !$Commit -and !$Push) {
   Write-Host ""
   Write-Host "Sync complete."

@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-04",
+  "fetchedAt": "2026-11-05T16:04:22.063929+05:30",
+  "lastFetchedAt": "2026-11-05T16:04:22.063929+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 3,
+    "apiReportedTotalResults": 4,
+    "results": [
+      {
+        "article_id": "8c9a7e691cb6a1d48655c315cde947d1",
+        "link": "https://frontline.thehindu.com/politics/arvind-kejriwal-aap-punjab-crisis-india-bloc-political-future/article71665824.ece",
+        "title": "AAP at a crossroads: Divorced from INDIA bloc, struggling in Punjab",
+        "description": "The AAP’s troubles go beyond the upcoming Punjab Assembly election. Its internal divisions, weakening opposition credentials, and uncertain national standing point to a larger crisis of political direction.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "politics"
+        ],
+        "creator": [
+          "sayantan ghosh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-04 14:54:18",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-04 15:21:01",
+        "image_url": "https://fl-i.thgim.com/public/incoming/l0nj9s/article71666155.ece/alternates/LANDSCAPE_1200/kejriwal%20bhagwant%20mann.jpg",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://i.newsdata.io/frontline_thehindu.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 96.72,
+          "neutral": 2.68,
+          "positive": 0.6
+        },
+        "ai_tag": [
+          "elections",
+          "government"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "72a01e3972207f2e3aaf0d2e8699b4b1",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tamil-nadu-govt-allows-six-shows-a-day-for-new-tamil-films",
+        "title": "Tamil Nadu govt allows six shows a day for new Tamil films",
+        "description": "The government's move reverses a 2023 decision of the previous DMK government, when early morning screenings were stopped after a fan’s death while celebrating the release of actor Ajith Kumar's film Thunivu.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics",
+          "entertainment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-04 05:35:17",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-04 05:38:13",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-04/iwsdw7yv/WhatsApp-Image-2026-11-04-at-10.41.16-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "positive",
+        "sentiment_stats": {
+          "negative": 0.83,
+          "neutral": 2.5,
+          "positive": 96.67
+        },
+        "ai_tag": [
+          "movies",
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "50d7f9c803a8bb6405b19f9e0836a67c",
+        "link": "https://www.thenewsminute.com/tamil-nadu/dmk-faces-criticism-over-vedic-rituals-at-durai-murugans-granddaughters-wedding",
+        "title": "DMK faces criticism over Vedic rituals at Durai Murugan's granddaughter's wedding",
+        "description": "The wedding of DMK general secretary Durai Murugan’s granddaughter has triggered criticism from Dravidian leaders over the use of Vedic rituals and Sanskrit mantras. Dravidar Kazhagam president K Veeramani questioned how the ceremony aligned with the DMK’s commitment to rationalism and self-respect marriages.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-04 03:36:42",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-04 03:37:18",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-04/2c9xj6l7/duraimurugan.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 94.01,
+          "neutral": 5.32,
+          "positive": 0.67
+        },
+        "ai_tag": [
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": true
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

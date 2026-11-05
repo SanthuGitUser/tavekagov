@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tavekagov.local/schemas/manifest-base.schema.json",
+  "title": "TavekaGov manifest base",
+  "type": "object",
+  "required": ["fetchedAt", "count"],
+  "properties": {
+    "source_url": { "type": "string", "format": "uri" },
+    "fetchedAt": { "type": "string" },
+    "lastFetchedAt": { "type": "string" },
+    "fetchCount": { "type": "integer", "minimum": 1 },
+    "count": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": true
+}

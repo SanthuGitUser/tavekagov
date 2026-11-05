@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-03",
+  "fetchedAt": "2026-11-05T16:02:27.579132+05:30",
+  "lastFetchedAt": "2026-11-05T16:02:27.579132+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr031126_1.jpeg",
+      "release_date": "2026-11-03",
+      "title": "The Hon’ble Minister for Food and Food Supplies directs officials to ensure the availability of all essential commodities at fair price shops during the Deepavali festival",
+      "file_name": "pr031126_1.jpeg",
+      "minister_name": "Hon'ble Minister for Food and Food Supplies directs officials to ensure the availability of all essential commodities at fair price shops during the Deepavali festival",
+      "department_name": "Food and Food Supplies directs officials to ensure the availability of all essential commodities at fair price shops during the Deepavali festival Department",
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": false,
+      "parse_confidence": "high",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [],
+  "departments": []
+}

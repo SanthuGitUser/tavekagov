@@ -1,12 +1,15 @@
 # GitHub Actions
 
-This repository uses GitHub Actions to **build and deploy** the static web dashboard to GitHub Pages.
+This repository uses GitHub Actions to **test**, **sync data**, **build**, and **deploy** the static web dashboard to GitHub Pages.
 
 ## Workflows overview
 
-| Workflow | Script(s) | Output paths | Secret |
-|----------|-----------|--------------|--------|
-| [deploy-web.yml](../.github/workflows/deploy-web.yml) | `npm run build` in `web/` | GitHub Pages (`web/dist`) | — |
+| Workflow | Purpose | Secret |
+|----------|---------|--------|
+| [ci-web.yml](../.github/workflows/ci-web.yml) | `npm run lint`, `npm run test`, `npm run build` | — |
+| [ci-sync.yml](../.github/workflows/ci-sync.yml) | Python tests in `Sync-Config/` | — |
+| [sync-data.yml](../.github/workflows/sync-data.yml) | Daily `sync-all.ps1`, health refresh, commit, deploy dispatch | `NEWSDATA_API_KEY` (optional) |
+| [deploy-web.yml](../.github/workflows/deploy-web.yml) | Build `web/dist` and deploy GitHub Pages | — |
 
 ## Deploy workflow
 
@@ -14,8 +17,9 @@ This repository uses GitHub Actions to **build and deploy** the static web dashb
 
 **Triggers:**
 
-- **Push to `main`** — rebuilds and deploys when GitHub accepts the push event
+- **Push to `main`** — when GitHub accepts the push event
 - **Manual** — Actions → Deploy Web Dashboard → Run workflow
+- **`repository_dispatch`** — fired after [sync-data.yml](../.github/workflows/sync-data.yml) commits data
 - **CLI** — `pwsh scripts/trigger-deploy.ps1` (requires [GitHub CLI](https://cli.github.com/) and `gh auth login`)
 
 ### Push did not start a deploy?
@@ -37,6 +41,21 @@ Pushes from an external terminal with SSH or a personal access token usually aut
 - Node.js 22
 - `VITE_BASE_PATH=/tavekagov/` (project site URL)
 
+## Scheduled data sync
+
+[sync-data.yml](../.github/workflows/sync-data.yml) runs daily (17:30 UTC ≈ 11:00 PM IST) and:
+
+1. Runs `scripts/sync-all.ps1` (skips IAS PDF OCR on CI via `-SkipTransfersPdfParse`)
+2. Runs `Sync-Config/sync_health.py` to update `last_item_count` / `health_status` in `last-sync.json`
+3. Commits and pushes data changes when present
+4. Dispatches `deploy-web` to refresh GitHub Pages
+
+Add **`NEWSDATA_API_KEY`** in repository secrets for the news fetch step.
+
+## CI (web)
+
+[ci-web.yml](../.github/workflows/ci-web.yml) runs on pushes and PRs that touch `web/`. It runs oxlint, Vitest, and production build with `VITE_BASE_PATH=/tavekagov/`.
+
 ## Fork setup
 
 ### 1. Enable GitHub Pages
@@ -46,9 +65,16 @@ Pushes from an external terminal with SSH or a personal access token usually aut
 
 ### 2. Adjust base path (optional)
 
-If your repo is not named `tavekagov`, update `VITE_BASE_PATH` in:
+If your repo is not named `tavekagov`, run:
+
+```powershell
+pwsh scripts/configure-fork.ps1 -RepoName your-repo-name
+```
+
+Or set `VITE_BASE_PATH` manually in:
 
 - `.github/workflows/deploy-web.yml`
+- `.github/workflows/ci-web.yml`
 - `web/.env.local` for local preview
 
 For a user site (`username.github.io`), use `/` instead of `/tavekagov/`.
@@ -61,10 +87,14 @@ Ensure **Settings → Actions → General** allows workflow runs on the default 
 
 | Workflow | `contents` | Other |
 |----------|------------|-------|
+| CI Web | `read` | — |
+| CI Sync | `read` | — |
+| Sync Data | `write` | — |
 | Deploy | `read` | `pages: write`, `id-token: write` |
 
 ## Related docs
 
 - [SYNC_SCRIPTS.md](SYNC_SCRIPTS.md)
 - [DATA.md](DATA.md)
+- [DATA_RETENTION.md](DATA_RETENTION.md)
 - [CONTRIBUTING.md](../CONTRIBUTING.md)

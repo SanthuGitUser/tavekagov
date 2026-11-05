@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-03",
+  "fetchedAt": "2026-11-03T19:25:43.391091+05:30",
+  "lastFetchedAt": "2026-11-05T16:02:25.181147+05:30",
+  "fetchCount": 2,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-03"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22897,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.973_-_Co-Operative_Dept_Press_Release_-_Onion_purchase_order_cancelled-_Date.03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.973 - Co-Operative Dept Press Release - Onion purchase order cancelled- Date.03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22898,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.974_-_Hon_ble_CM_Press_Release_-_Magalir_Thittam_Welfare_Schemes_Function_at_Erode_-_Date.3.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.974 - Hon'ble CM Press Release - Magalir Thittam Welfare Schemes Function at Erode - Date.3.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22899,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR.P.R.No-975_-_Hon_ble_HRM_Minister_-_Press_Release_-_Date_-_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR.P.R.No-975 - Hon'ble HRM Minister - Press Release - Date - 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22900,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.976_-_Hon_ble_Minister_for_Energy_Resources_and_Law_-_TNGECL_-_Renewable_Energy_Application_Portal_-_Press_Release_-_Date.03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.976 - Hon'ble Minister for Energy Resources and Law - TNGECL - Renewable Energy Application Portal - Press Release - Date.03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22901,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.978-TN_Govt-Press_Release-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.978-TN Govt-Press Release-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22902,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.977-TNPCB-Deepavali_2026-_Press_Release-English-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.977-TNPCB-Deepavali 2026- Press Release-English-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22903,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.977-TNPCB-Deepavali_2026-_Press_Release-Tamil-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.977-TNPCB-Deepavali 2026- Press Release-Tamil-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22904,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.979-Indian_Medicine___Homeopathy_Dept-Press_Release-English-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.979-Indian Medicine & Homeopathy Dept-Press Release-English-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22905,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.979-Indian_Medicine___Homeopathy_Dept-Press_Release-Tamil-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.979-Indian Medicine & Homeopathy Dept-Press Release-Tamil-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22906,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.980-Election_Commission-Rationalization_of_PS_SSR_2027-Press_Release-_English-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.980-Election Commission-Rationalization of PS_SSR 2027-Press Release- English-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22907,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.980-Election_Commission-Rationalization_of_PS_SSR_2027-Press_Release-Tamil-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.980-Election Commission-Rationalization of PS_SSR 2027-Press Release-Tamil-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22908,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.981-Hon_ble_CM_Press_Release_-_Death_of_Grade_-II_Police_Constable_at_Nagapattinam_Road_Accident_-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.981-Hon'ble CM Press Release - Death of Grade -II Police Constable at Nagapattinam Road Accident -Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22909,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.982-WRD_Press_Release-Thirumoorthy_Dam-Water_Release-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.982-WRD Press Release-Thirumoorthy Dam-Water Release-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22910,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.983-WRD_Press_Release-Thirumoorthy_Dam-Water_Release-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-03",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.983-WRD Press Release-Thirumoorthy Dam-Water Release-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      },
+      {
+        "id": 22911,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.984-Hon_ble_Minister_for_Food_and_Civil_Supplies-Press_Release-Date_03.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.984-Hon'ble Minister for Food and Civil Supplies-Press Release-Date 03.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-03",
+        "language": "en"
+      }
+    ]
+  }
+}

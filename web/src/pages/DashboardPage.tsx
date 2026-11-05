@@ -44,6 +44,7 @@ import { ErrorState } from "@/components/shared/ErrorState";
 import { useAsyncData } from "@/hooks/useAsyncData";
 import { useDashboardDateRange } from "@/context/DashboardDateRangeContext";
 import { fetchDashboardStatsForRange } from "@/lib/queries";
+import { PageLoading } from "@/components/shared/PageLoading";
 
 export function DashboardPage() {
   const dashboardDateRange = useDashboardDateRange();
@@ -96,6 +97,9 @@ export function DashboardPage() {
           title="Govt Publications"
           description="Press releases, press release images, government orders, and IAS transfers."
         >
+          {loading ? (
+            <PageLoading label="Loading publication data…" />
+          ) : (
           <div className="grid gap-4 xl:grid-cols-2">
             <PressReleasesRecentWidget dateRange={dateRange} />
             <PressReleasesTrendWidget dateRange={dateRange} />
@@ -107,6 +111,24 @@ export function DashboardPage() {
             <TransfersRecentWidget dateRange={dateRange} />
             <TransfersTableWidget dateRange={dateRange} />
           </div>
+          )}
+        </DashboardSection>
+
+        <DashboardSection
+          title="Schemes, Magazine & News"
+          description="Government schemes, Tamil Arasu magazine, and Tamil Nadu news previews."
+        >
+          {loading ? (
+            <PageLoading label="Loading schemes and magazine…" />
+          ) : (
+          <div className="grid gap-4 xl:grid-cols-2">
+            <GovtSchemesPopularWidget />
+            <GovtSchemesRecentWidget />
+            <MagazineLatestWidget />
+            <NewsHeadlinesWidget dateRange={dateRange} />
+            <NewsFullPagePreviewWidget dateRange={dateRange} />
+          </div>
+          )}
         </DashboardSection>
 
         <DashboardSection
@@ -120,19 +142,6 @@ export function DashboardPage() {
             <DistrictsMiniMapWidget />
             <ConstituenciesPartyBreakdownWidget />
             <MapsMetaWidget />
-          </div>
-        </DashboardSection>
-
-        <DashboardSection
-          title="Schemes, Magazine & News"
-          description="Government schemes, Tamil Arasu magazine, and Tamil Nadu news previews."
-        >
-          <div className="grid gap-4 xl:grid-cols-2">
-            <GovtSchemesPopularWidget />
-            <GovtSchemesRecentWidget />
-            <MagazineLatestWidget />
-            <NewsHeadlinesWidget dateRange={dateRange} />
-            <NewsFullPagePreviewWidget dateRange={dateRange} />
           </div>
         </DashboardSection>
 

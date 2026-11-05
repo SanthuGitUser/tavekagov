@@ -19,6 +19,12 @@ python tn_dept_sync.py
 | Script | Folder | Output |
 |--------|--------|--------|
 | `scripts/sync-all.ps1` | `scripts/` | Runs all sync jobs (recommended) |
+| `scripts/sync-election.ps1` | `scripts/` | Election Form 20 / round-wise import (`TN-Election-Results/`) |
+| `scripts/configure-fork.ps1` | `scripts/` | Set `VITE_BASE_PATH` for forks |
+| `Sync-Config/sync_health.py` | `Sync-Config/` | Refresh `last-sync.json` health metadata |
+| `tn_dvac_press_release_sync.py` | [TN-DVAC-Press Release](../TN-DVAC-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` |
+| `tn_finance_notifications_sync.py` | [TN-Finance-Notifications](../TN-Finance-Notifications/) | `manifests/notifications.json` |
+| `fetch_constituency_boundaries.py` | [TN-Map](../TN-Map/) | `tamil-nadu-constituencies.geojson` |
 | `tn_press_release_sync.py` | [TN-DIPR-Press Release](../TN-DIPR-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` |
 | `tn_gov_press_release_sync.py` | [TN-GOV-Press Release](../TN-GOV-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` |
 | `tn_government_orders_sync.py` | [TN-Government Orders](../TN-Government%20Orders/) | `Response JSON/<department>.json` |

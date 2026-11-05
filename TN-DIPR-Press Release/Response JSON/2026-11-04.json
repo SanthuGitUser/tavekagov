@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-04",
+  "fetchedAt": "2026-11-05T16:02:25.646793+05:30",
+  "lastFetchedAt": "2026-11-05T16:02:25.646793+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-04"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22912,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR__-_P.R.NO.985_-_Hon_ble_CM_Press_Release__-_Police_Dept_-_Buildings_Inauguration_-__Date_-_4.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR  - P.R.NO.985 - Hon'ble CM Press Release  - Police Dept - Buildings Inauguration -  Date - 4.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22913,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR__-_P.R.NO.986_-_Hon_ble_CM_Press_Release_-_MSME_Dept_-_Inauguration_of_Industrial_Estates__Office_Buildings_-_Date_-_4.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR  - P.R.NO.986 - Hon'ble CM Press Release - MSME Dept - Inauguration of Industrial Estates, Office Buildings - Date - 4.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22914,
+        "press_file_name": "/uploads/tn_govt_press_release/DIR_-_P.R.NO.987__-_Hon_ble_CM_Press_Release_-_Handlooms_Dept_-_Inauguration_of_Integrated_Govt_Cocoon_Market_Complex_-_Date_-_4.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIR - P.R.NO.987  - Hon'ble CM Press Release - Handlooms Dept - Inauguration of Integrated Govt Cocoon Market Complex - Date - 4.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22915,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR__-P.R.NO.988__-_Hon_ble_CM_Press_Release_-_Housing_Dept_-_TNHB_and_TNUHDB_Housing_Projects_Inauguration_-_Date_-_4.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR  -P.R.NO.988  - Hon'ble CM Press Release - Housing Dept - TNHB and TNUHDB Housing Projects Inauguration - Date - 4.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22916,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR__-_P.R.NO.989_-_Hon_ble_CM_Press_Release_-_Agriculture_Dept_-_Spl_Incentive_to_SugarCane_farmers_-_Date_-_04.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR  - P.R.NO.989 - Hon'ble CM Press Release - Agriculture Dept - Spl Incentive to SugarCane farmers - Date - 04.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22917,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.990-Hon_ble_CM_D.O._Letter_to_Hon_ble_PM_-_To_set_up_a_Bench_of_Supreme_Court_in_Chennai_-Date__4.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.990-Hon'ble CM D.O. Letter to Hon'ble PM - To set up a Bench of Supreme Court in Chennai -Date  4.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22918,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR__-_P.R.NO.991_-_Hon_ble_Minister_for_Commercial_Taxes_and_Registration_Review_Meeting_Press_Release_-_Date_-_04.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR  - P.R.NO.991 - Hon'ble Minister for Commercial Taxes and Registration Review Meeting Press Release - Date - 04.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22919,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-_P.R.No.992_-_Hon_ble_Commercial_Taxes_and_Registration_Minister_Press_Release_-_Earned_Revenue_-_Date.04.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR- P.R.No.992 - Hon'ble Commercial Taxes and Registration Minister Press Release - Earned Revenue - Date.04.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22922,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.993_-_Indian_Medicine_And_Homoeopathy_-_Press_Release_-_English_-_Admission_To_Under_Graduate_AYUSH_Courses_2026_-_2027_-_Date.04.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.993 - Indian Medicine And Homoeopathy - Press Release - English - Admission To Under Graduate AYUSH Courses 2026 - 2027 - Date.04.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22923,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.993_-_Indian_Medicine_And_Homoeopathy_-_Press_Release_-_Tamil_-_Admission_To_Under_Graduate_AYUSH_Courses_2026_-_2027_-_Date.04.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-04",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.993 - Indian Medicine And Homoeopathy - Press Release - Tamil - Admission To Under Graduate AYUSH Courses 2026 - 2027 - Date.04.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22924,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.994_-_Hon_ble_Fisheries_-_Fishermen_Welfare_Minister_Press_Release_-_Various_Government_Welfare_Schemes_Given_To_Beneficiaries_-_Date.04.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.994 - Hon'ble Fisheries - Fishermen Welfare Minister Press Release - Various Government Welfare Schemes Given To Beneficiaries - Date.04.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      },
+      {
+        "id": 22925,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.995_-_Hon_ble_Minister_for_Environment_and_Climate_Change_Press_Release_-_Tamil_-_Inaugurates_TN_Fishnet_Initiative_-_Date.04.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-05",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.995 - Hon'ble Minister for Environment and Climate Change Press Release - Tamil - Inaugurates TN Fishnet Initiative - Date.04.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-04",
+        "language": "en"
+      }
+    ]
+  }
+}

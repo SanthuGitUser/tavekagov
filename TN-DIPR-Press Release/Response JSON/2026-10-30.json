@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-30",
+  "fetchedAt": "2026-11-03T19:25:42.464325+05:30",
+  "lastFetchedAt": "2026-11-03T19:25:42.464325+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-10-30"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22844,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.936_-_Hon_ble_CM__Social_Media_Message_-_Pasumpon_Muthuramalinga_Thevar_Jayanthi_-_Date_-_30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.936 - Hon'ble CM  Social Media Message - Pasumpon Muthuramalinga Thevar Jayanthi - Date - 30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22845,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.937_-_Hon_ble_CM_Press_Release_-_Pasumpon_Muthuramalinga_Devar_Birthday_-_Date_-_30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.937 - Hon'ble CM Press Release - Pasumpon Muthuramalinga Devar Birthday - Date - 30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22846,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.938_-_Hon_ble_Minister_for_Finance_Message-World_Thrift_Day_2026-Press_Release_-_Date_-_30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.938 - Hon'ble Minister for Finance Message-World Thrift Day 2026-Press Release - Date - 30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22847,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.939_-_AD_Welfare_Department_-_FPO_Press_Release_-_Date_-_30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.939 - AD Welfare Department - FPO Press Release - Date - 30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22848,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.940_-_AD_Welfare_Department_vetripadi_thittam_Press_Release_-_Date_-_30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.940 - AD Welfare Department vetripadi thittam Press Release - Date - 30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22850,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.942_-_Pollution_Control_Board_____stringent_enforcement_-_Press_Release_-_English_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.942 - Pollution Control Board – stringent enforcement - Press Release - English - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22851,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.942_-_Pollution_Control_Board_____stringent_enforcement_-_Press_Release_-_Tamil_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.942 - Pollution Control Board – stringent enforcement - Press Release - Tamil - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22852,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No._943_-_Welfare_of_Differently_Abled_Persons_Dept_-_Press_Release_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No. 943 - Welfare of Differently Abled Persons Dept - Press Release - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22853,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.944_-_Co-operation__Food_and_Consumer_Protection_Dept_Press_Release_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.944 - Co-operation, Food and Consumer Protection Dept Press Release - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22854,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.NO-945_-_Hon_ble_Minister_for_School_Education__Tamil_Development__Information_and_Publicity_Dept_-__Cinema_Subsidy_-_Press_Release_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-10-30",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.NO-945 - Hon'ble Minister for School Education, Tamil Development, Information and Publicity Dept -  Cinema Subsidy - Press Release - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22861,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.946_-_Transport_Dept_-_Press_Release_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.946 - Transport Dept - Press Release - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22862,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.947_-_Transport_Dept_-_Vetri_Payana_Thittam_Social_Media_Clarification_-_Press_Release_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.947 - Transport Dept - Vetri Payana Thittam Social Media Clarification - Press Release - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22863,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.948_-_Commissioner_of_Town_and_Country_Planning_Press_Release_-_English_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.948 - Commissioner of Town and Country Planning Press Release - English - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22864,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.948_-_Commissioner_of_Town_and_Country_Planning_Press_Release_-_Tamil_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.948 - Commissioner of Town and Country Planning Press Release - Tamil - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22865,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.949_-_TN_Guidance_Press_Release_-_FTA_Workshop_-English_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.949 - TN Guidance Press Release - FTA Workshop -English - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22866,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.949_-_TN_Guidance_Press_Release_-_FTA_Workshop_-Tamil__-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.949 - TN Guidance Press Release - FTA Workshop -Tamil  - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22867,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.950_-_Commissioner_of_Town_and_Country_Planning_Press_Release-Power_Delication-LB_-_English_-_Date-30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.950 - Commissioner of Town and Country Planning Press Release-Power Delication-LB - English - Date-30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22868,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.950_-_Commissioner_of_Town_and_Country_Planning_Press_Release-Power_Delication-LB_-_Tamil_-_Date-30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.950 - Commissioner of Town and Country Planning Press Release-Power Delication-LB - Tamil - Date-30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22869,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.951_-_Social_Justice_Dept_-_Press_Release_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.951 - Social Justice Dept - Press Release - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      },
+      {
+        "id": 22870,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.952_-_Tamil_Development_Dept__Press_Release_-_Tamilnadu_Day_-_Date.30.10.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.952 - Tamil Development Dept  Press Release - Tamilnadu Day - Date.30.10.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-10-30",
+        "language": "en"
+      }
+    ]
+  }
+}

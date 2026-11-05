@@ -1,0 +1,420 @@
+{
+  "date": "2026-11-02",
+  "fetchedAt": "2026-11-03T19:27:25.794029+05:30",
+  "lastFetchedAt": "2026-11-03T19:27:25.794029+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 8,
+    "apiReportedTotalResults": 9,
+    "results": [
+      {
+        "article_id": "7150e9034694df24a105674b69b37731",
+        "link": "https://www.thenewsminute.com/tamil-nadu/theni-jailbreak-inmates-mother-alleges-police-violence-on-rearrest-moves-madras-hc",
+        "title": "Theni jailbreak: Inmate’s mother alleges police violence on rearrest, moves Madras HC",
+        "description": "The mother of two male inmates who escaped from Theni jail has moved the Madras High Court seeking immediate medical treatment for her sons and two other remand prisoners who were allegedly assaulted by prison officials when they were rearrested.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "politics",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-02 14:39:02",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-02 15:07:21",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-10-27/lqladxr5/WhatsApp-Image-2026-10-27-at-9.54.50-AM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 88.98,
+          "neutral": 10.34,
+          "positive": 0.68
+        },
+        "ai_tag": [
+          "accidents",
+          "human rights"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1a5ad8e51d95b0ba0701153526780c94",
+        "link": "https://www.timesnownews.com/india/in-hyderabad-amit-shah-dares-rahul-gandhi-to-debate-sir-in-parliament-says-govt-ready-for-special-session-article-156453081",
+        "title": "In Hyderabad, Amit Shah Dares Rahul Gandhi To Debate SIR In Parliament, Says Govt Ready For Special Session",
+        "description": "Union Home Minister Amit Shah challenged Rahul Gandhi to debate SIR and EVMs in Parliament, offering a special session while targeting Congress and Telangana's Revanth Reddy government.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "revanth reddy",
+          "special intensive revision",
+          "evm controversy",
+          "special parliament session",
+          "india bloc rally",
+          "amit shah",
+          "sir debate",
+          "rahul gandhi"
+        ],
+        "creator": [
+          "apoorva shukla"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-02 13:16:28",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-02 13:32:34",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156453163,thumbsize-1975091,width-1280,height-720,resizemode-75/156453163.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 11.7,
+          "neutral": 85.77,
+          "positive": 2.53
+        },
+        "ai_tag": [
+          "government",
+          "elections"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "145a583788f87ae53c2948f77007b16a",
+        "link": "https://www.thenewsminute.com/news/how-bjp-helped-judicial-krishnamoorthy-get-five-elephants-to-tamil-nadu",
+        "title": "How BJP helped ‘Judicial Krishnamoorthy’ get five elephants to Tamil Nadu",
+        "description": "Five young elephants were moved from Assam to Tamil Nadu temples through Seva Trust, run by Anuradha Subramanian, wife of ‘Judicial’ Krishnamoorthy. The Himanta Biswa Sarma government in Assam agreed to the transfers, while the TVK government in Tamil Nadu cleared them at remarkable speed, raising questions over the elephants’ ownership, origins and the approvals.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu",
+          "news"
+        ],
+        "creator": [
+          "m rajshekhar"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics",
+          "environment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-02 12:30:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-02 12:37:18",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-02/ebf12uj2/Elephant-TNM-assam-tamil-nadu.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "positive",
+        "sentiment_stats": {
+          "negative": 1.09,
+          "neutral": 23.85,
+          "positive": 75.06
+        },
+        "ai_tag": [
+          "wildlife",
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "839dc550e158da1cf3b94d3516fe6a47",
+        "link": "https://www.thenewsminute.com/tamil-nadu/cm-vijay-forms-high-level-panel-to-review-security-in-tn-prisons",
+        "title": "CM Vijay forms high-level panel to review security in TN prisons",
+        "description": "The committee’s formation comes days after 17 remand prisoners escaped from the Thekkampatti sub-jail in Theni district on the night of October 26.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-02 12:16:38",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-02 12:37:18",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-07-19%2Ffaga3hf5%2FVijayTNCMO16072026.jpg?rect=0%2C214%2C4096%2C2304&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "neutral",
+        "sentiment_stats": {
+          "negative": 1.21,
+          "neutral": 96.73,
+          "positive": 2.06
+        },
+        "ai_tag": [
+          "accidents"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "faa33d70c1438633a4ed6ffb7c497d97",
+        "link": "https://www.timesnownews.com/short-videos/row-over-tamil-nadu-flag-proposal-reels-156452774",
+        "title": "Row Over Tamil Nadu Flag Proposal",
+        "description": "Row Over Tamil Nadu Flag Political row has erupted after TVK's Aadhav Arjuna demanded a separate Tamil Nadu flag on a par with the national Tricolour. The BJP criticised the demand, warning that it could promote a separatist mindset and create a divide between Tamil and Indian identities.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "latest news",
+          "english news",
+          "today news headlines",
+          "times now news",
+          "english news today",
+          "times now",
+          "today headlines",
+          "latest news updates"
+        ],
+        "creator": [
+          "times now digital"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-02 11:57:19",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-02 12:03:34",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156452774,width-1280,height-720,resizemode-75/156452774.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 73.95,
+          "neutral": 25.35,
+          "positive": 0.7
+        },
+        "ai_tag": [
+          "politics",
+          "government"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "e1f48a223004d471a916b624ccfaa64f",
+        "link": "https://www.thenewsminute.com/tamil-nadu/theni-jailbreak-accused-says-poor-conditions-of-jail-triggered-collective-escape-plan",
+        "title": "Theni jailbreak accused says poor conditions of jail triggered collective escape plan",
+        "description": "Meenakshi Sundaram, who surrendered to police two days after the jailbreak, alleged that 21 inmates were involved in the jailbreak. The police have maintained that only 17 escaped the prison.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-02 09:09:17",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-02 09:36:40",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-02/11pj79g6/WhatsApp-Image-2026-11-02-at-2.10.31-PM.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 82.08,
+          "neutral": 17.06,
+          "positive": 0.86
+        },
+        "ai_tag": [
+          "crime",
+          "law and justice"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "fbffdb6f212704c752a4351e286c42d2",
+        "link": "https://www.timesnownews.com/india/cyclone-murasu-intensifies-11-chennai-flights-cancelled-odisha-speeds-up-evacuations-article-156451228",
+        "title": "Cyclone Murasu Intensifies: 11 Chennai Flights Cancelled, Odisha Speeds Up Evacuations",
+        "description": "Cyclone Murasu has strengthened into a severe cyclonic storm. Chennai airport has cancelled 11 flights. The IMD expects landfall on the southern Andhra Pradesh coast, between Nellore and Narsapur near Ongole,.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "landfall",
+          "evacuation",
+          "murasu",
+          "odisha",
+          "cyclone",
+          "ndrf",
+          "odraf",
+          "chennai",
+          "andhra"
+        ],
+        "creator": [
+          "sriram ganesh"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "environment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-02 08:31:30",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-02 08:33:20",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156451260,thumbsize-2346817,width-1280,height-720,resizemode-75/156451260.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 93.21,
+          "neutral": 6.17,
+          "positive": 0.62
+        },
+        "ai_tag": [
+          "natural disasters"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "ab89757d494bca5cf043a588a11f8823",
+        "link": "https://www.timesnownews.com/india/why-andhra-pradesh-is-bracing-for-another-cyclone-murasu-just-days-after-arnab-how-government-is-preparing-article-156449618",
+        "title": "Why Andhra Is Bracing For Second Cyclone Just Days After Arnab: How Govt Is Preparing",
+        "description": "Cyclone Murasu is expected to hit Andhra Pradesh days after Cyclone Arnab, raising concerns over back-to-back storms along India's eastern coast. Here's why the Bay of Bengal is witnessing successive cyclones and where Murasu is likely to make landfall.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "andhra pradesh",
+          "cyclone arnab",
+          "cyclones",
+          "cyclone murasu",
+          "andhra pradesh government",
+          "bay of bengal"
+        ],
+        "creator": [
+          "surbhi kaul"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "environment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-02 04:51:40",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-02 05:02:38",
+        "image_url": "https://images.timesnownews.com/thumb/msid-156449884,thumbsize-128404,width-1280,height-720,resizemode-75/156449884.jpg",
+        "video_url": null,
+        "source_id": "timesnownews",
+        "source_name": "Times Now News",
+        "source_priority": 2243,
+        "source_url": "https://www.timesnownews.com",
+        "source_icon": "https://i.newsdata.io/timesnownews.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 76.7,
+          "neutral": 22.59,
+          "positive": 0.71
+        },
+        "ai_tag": [
+          "natural disasters"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

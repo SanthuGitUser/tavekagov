@@ -14,6 +14,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { usePressReleaseSearch } from "@/context/PressReleaseSearchContext";
 import { usePressReleaseView } from "@/context/PressReleaseViewContext";
+import { snapSingleDayRangeToLatest } from "@/lib/dateRangeUtils";
 import type { PressRelease, TnDept, TnMinister } from "@/types/models";
 
 import { CrossDatePressReleaseBrowse } from "./CrossDatePressReleaseBrowse";
@@ -202,21 +203,16 @@ export function PressReleaseTimeline({
   }, [datesForPicker, setAvailableDates]);
 
   useEffect(() => {
-    if (latestDate && !selectedDateRange.from) {
+    if (!latestDate) return;
+    if (!selectedDateRange.from) {
       setSelectedDateRange?.({ from: latestDate, to: latestDate });
+      return;
     }
-  }, [latestDate, selectedDateRange.from, setSelectedDateRange]);
-
-  useEffect(() => {
-    if (
-      selectedDateRange.from
-      && allDates.length > 0
-      && !allDates.includes(selectedDateRange.from)
-      && latestDate
-    ) {
-      setSelectedDateRange?.({ from: latestDate, to: latestDate });
+    const snapped = snapSingleDayRangeToLatest(selectedDateRange, latestDate);
+    if (snapped.from !== selectedDateRange.from || snapped.to !== selectedDateRange.to) {
+      setSelectedDateRange?.(snapped);
     }
-  }, [allDates, latestDate, selectedDateRange.from, setSelectedDateRange]);
+  }, [latestDate, selectedDateRange, setSelectedDateRange]);
 
   const filteredReleasesByDate = useMemo(
     () => groupReleasesByDate(filteredReleases),

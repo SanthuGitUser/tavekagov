@@ -11,11 +11,13 @@ import {
 import { PageLoading } from "@/components/shared/PageLoading";
 import { getLatestValidDate } from "@/components/shared/VerticalDatePicker";
 import { useNewsSearch } from "@/context/NewsSearchContext";
+import { snapSingleDayRangeToLatest } from "@/lib/dateRangeUtils";
 import {
   getAvailableNewsDates,
   getLatestNewsDate,
   loadNewsArticlesForDateRange,
 } from "@/lib/tamilNaduNewsFeed";
+import { refreshBundledDataIfStale } from "@/lib/publicationFeedsLoader";
 import type { NewsArticle } from "@/types/news";
 
 export function NewsPage() {
@@ -31,16 +33,32 @@ export function NewsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [articles, setArticles] = useState<NewsArticle[]>([]);
+  const [dataRefreshTick, setDataRefreshTick] = useState(0);
   const [, startTransition] = useTransition();
 
-  const availableDates = useMemo(() => getAvailableNewsDates(), []);
+  useEffect(() => {
+    void refreshBundledDataIfStale().then(() => {
+      setDataRefreshTick((tick) => tick + 1);
+    });
+  }, []);
+
+  const availableDates = useMemo(() => getAvailableNewsDates(), [dataRefreshTick]);
   const latestDate = useMemo(() => getLatestValidDate(availableDates), [availableDates]);
+
+  useEffect(() => {
+    void refreshBundledDataIfStale();
+  }, []);
 
   useEffect(() => {
     if (!latestDate || !setFilterDateRange) return;
     const { from, to } = filterDateRange;
     if (!from || !to) {
       setFilterDateRange({ from: latestDate, to: latestDate });
+      return;
+    }
+    const snapped = snapSingleDayRangeToLatest({ from, to }, latestDate);
+    if (snapped.from !== from || snapped.to !== to) {
+      setFilterDateRange(snapped);
     }
   }, [latestDate, setFilterDateRange, filterDateRange.from, filterDateRange.to]);
 

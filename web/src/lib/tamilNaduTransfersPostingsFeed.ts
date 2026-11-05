@@ -1,4 +1,5 @@
 import { mergeUniqueByKey, normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
+import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import type { TnTransferOfficer, TnTransfersPosting, TnTransfersPostingRow } from "@/types/models";
 
 type DailyResponseFile = {
@@ -6,10 +7,10 @@ type DailyResponseFile = {
   postings?: Record<string, unknown>[];
 };
 
-const dailyJsonFiles = import.meta.glob(
+const dailyJsonLoaders = import.meta.glob(
   "../../../TN-IAS_Transfers-Postings/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
-  { eager: true, import: "default" },
-) as Record<string, DailyResponseFile>;
+  { import: "default" },
+) as Record<string, () => Promise<DailyResponseFile>>;
 
 function parseOfficer(raw: unknown): TnTransferOfficer | null {
   if (!raw || typeof raw !== "object") return null;
@@ -56,10 +57,10 @@ function parsePosting(raw: Record<string, unknown>): TnTransfersPosting | null {
   };
 }
 
-function collectRawPostings(): Record<string, unknown>[] {
+function collectRawPostings(files: DailyResponseFile[]): Record<string, unknown>[] {
   const byKey = new Map<string, Record<string, unknown>>();
 
-  for (const file of Object.values(dailyJsonFiles)) {
+  for (const file of files) {
     if (!Array.isArray(file.postings)) continue;
     for (const raw of file.postings) {
       const parsed = parsePosting(raw);
@@ -71,9 +72,26 @@ function collectRawPostings(): Record<string, unknown>[] {
   return [...byKey.values()];
 }
 
-function buildFeed() {
+type TransfersPostingsFeed = {
+  sourceUrl: string;
+  totalResults: number;
+  postings: TnTransfersPosting[];
+};
+
+let loadPromise: Promise<TransfersPostingsFeed> | null = null;
+
+export let tamilNaduTransfersPostingsFeed: TransfersPostingsFeed = {
+  sourceUrl: "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
+  totalResults: 0,
+  postings: [],
+};
+
+async function buildFeedAsync(): Promise<TransfersPostingsFeed> {
+  const loaded = await loadJsonModules<DailyResponseFile>(dailyJsonLoaders);
+  const files = loaded.map((entry) => entry.file);
+
   const postings = mergeUniqueByKey(
-    collectRawPostings()
+    collectRawPostings(files)
       .map((raw) => parsePosting(raw))
       .filter((posting): posting is TnTransfersPosting => posting !== null),
     (posting) => posting.pdf_url,
@@ -85,9 +103,7 @@ function buildFeed() {
     return left.serial_number - right.serial_number;
   });
 
-  const sourceUrl =
-    Object.values(dailyJsonFiles)[0]?.source_url ??
-    "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php";
+  const sourceUrl = files[0]?.source_url ?? "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php";
 
   return {
     sourceUrl,
@@ -96,7 +112,27 @@ function buildFeed() {
   };
 }
 
-export const tamilNaduTransfersPostingsFeed = buildFeed();
+export function ensureTamilNaduTransfersPostingsFeedLoaded(): Promise<TransfersPostingsFeed> {
+  if (tamilNaduTransfersPostingsFeed.postings.length > 0) {
+    return Promise.resolve(tamilNaduTransfersPostingsFeed);
+  }
+  if (!loadPromise) {
+    loadPromise = buildFeedAsync().then((feed) => {
+      tamilNaduTransfersPostingsFeed = feed;
+      return feed;
+    });
+  }
+  return loadPromise;
+}
+
+export function resetTamilNaduTransfersPostingsFeedCache(): void {
+  loadPromise = null;
+  tamilNaduTransfersPostingsFeed = {
+    sourceUrl: "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
+    totalResults: 0,
+    postings: [],
+  };
+}
 
 export function getTransfersPostings(): TnTransfersPosting[] {
   return tamilNaduTransfersPostingsFeed.postings;

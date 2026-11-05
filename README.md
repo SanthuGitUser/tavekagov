@@ -24,16 +24,20 @@ Open the URL shown in the terminal (usually `http://localhost:5173`). JSON data 
 |------|--------|---------|--------|
 | DIPR press releases | [dipr.tn.gov.in](https://dipr.tn.gov.in/press-release1.html) | `TN-DIPR-Press Release/Response JSON/` | Press Releases |
 | Government press release images | [tn.gov.in](https://www.tn.gov.in/press_release.php) | `TN-GOV-Press Release/Response JSON/` | Press Releases Images |
+| DVAC press releases | [dvac.tn.gov.in](https://www.dvac.tn.gov.in/Press_Release.html) | `TN-DVAC-Press Release/Response JSON/` | DVAC |
+| Finance notifications | [financedept.tn.gov.in](https://financedept.tn.gov.in/en/) | `TN-Finance-Notifications/manifests/notifications.json` | Finance |
 | Government orders (G.O.s) | [tn.gov.in](https://www.tn.gov.in/godept_list.php) | `TN-Government Orders/Response JSON/` | Government Orders |
 | IAS transfers & postings | [tn.gov.in](https://tnsectdemo.tn.gov.in/ias/transferandpostings.php) | `TN-IAS_Transfers-Postings/Response JSON/` | Transfers and Postings |
 | Departments (directory) | [tn.gov.in](https://www.tn.gov.in/department_list.php) | `TN-GOV_Departments/manifests/tn_departments.json` | Departments |
 | Council of ministers | [tn.gov.in](https://www.tn.gov.in/minister_list.php) | `TN-GOV_Council Of Ministers/manifests/tn_ministers.json` | Ministers |
 | Districts | [tn.gov.in](https://www.tn.gov.in/district_list.php) | `TN-GOV_Districts/manifests/tn_districts.json` | Districts |
-| District map boundaries | [india-maps-data](https://github.com/udit-001/india-maps-data) | `TN-Map/tamil-nadu-districts.geojson` | Districts (map) |
+| District / AC map boundaries | [india-maps-data](https://github.com/udit-001/india-maps-data) | `TN-Map/` | Districts / Constituencies |
 | Tamil Arasu magazine | [Tamil Digital Library](https://tamildigitallibrary.in/) | `TN-TVA-Magazine/manifests/magazine.json` (+ optional `Response JSON/`) | Magazine |
 | Tamil Nadu news | [NewsData.io](https://newsdata.io/) | `TN-News/Response JSON/` | News |
 | Government schemes | [Schemes in India](https://schemesinindia.in/schemes/tamil-nadu) | `TN-Govt-Schemes/manifests/tn_govt_schemes.json` | Government Schemes |
 | Assembly constituencies | [assembly.tn.gov.in](https://assembly.tn.gov.in/17thassembly_members.php) | `TN-Constituencies/manifests/tn_constituencies.json` | Constituencies |
+| MLA candidate summaries | [myneta.info](https://myneta.info/tamilnadu2026/) | `TN-Constituencies/manifests/tn_mla_myneta.json` | MLA |
+| Assembly 2026 election results | ECI Form 20 / round-wise (import) | `TN-Election-Results/manifests/` | Election Results |
 | TVK election manifesto | PDF extraction (manual) | `TN-TVK-Manifesto/manifests/tvk_manifesto.json` | TVK Manifesto |
 
 Daily scrapers write one JSON file per date under each folder's `Response JSON/`. Government orders use one JSON file per department. Directory syncs (departments, ministers, districts) and the magazine manifest are single snapshot files refreshed by scheduled jobs.
@@ -91,6 +95,7 @@ tavekagov/
 | Document | Description |
 |----------|-------------|
 | [docs/DATA.md](docs/DATA.md) | JSON architecture, schemas, feed modules |
+| [docs/DATA_RETENTION.md](docs/DATA_RETENTION.md) | Data retention and archival guidance |
 | [docs/SYNC_SCRIPTS.md](docs/SYNC_SCRIPTS.md) | All Python sync scripts and CLI flags |
 | [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) | Scheduled workflows, secrets, fork setup |
 | [docs/DISCLAIMER.md](docs/DISCLAIMER.md) | Non-affiliation, data accuracy, usage |
@@ -201,6 +206,7 @@ Built with Vite, React 19, TypeScript, Tailwind CSS v4, and TanStack Table. Page
 - **Govt Publications** — Press releases, press release images, government orders, IAS transfers and postings, government schemes, magazines
 - **Govt Administration** — Ministers, departments, constituencies, districts (interactive map with weather)
 - **TVK Manifesto** — Tamilaga Vetri Kazhagam election manifesto grouped by Aram, Inbam, and Porul
+- **Search** — Full-text search across bundled datasets (`/search`)
 - **About** — Project overview and data sources
 
 Legacy `/government` URLs redirect to `/ministers`. Unknown routes show a 404 page.

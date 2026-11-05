@@ -1,0 +1,25 @@
+name: CI Sync Config
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Sync-Config/**"
+      - ".github/workflows/ci-sync.yml"
+  pull_request:
+    paths:
+      - "Sync-Config/**"
+
+jobs:
+  pytest:
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: Sync-Config
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        run: python -m pytest test_json_validate.py -q

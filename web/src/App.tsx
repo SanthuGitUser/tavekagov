@@ -26,6 +26,7 @@ import { AboutPage } from "@/pages/AboutPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { HomePage } from "@/pages/HomePage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
+import { SearchPage } from "@/pages/SearchPage";
 
 const NewsPage = lazy(() =>
   import("@/pages/NewsPage").then((module) => ({ default: module.NewsPage })),
@@ -566,6 +567,18 @@ export default function App() {
               </LazyRoute>
             }
           />
+        </Route>
+        <Route
+          path="/search"
+          element={
+            <AppLayout
+              fillViewport
+              title="Search"
+              description="Full-text search across bundled datasets."
+            />
+          }
+        >
+          <Route index element={<SearchPage />} />
         </Route>
         <Route
           path="/about"

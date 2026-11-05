@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-30",
+  "fetchedAt": "2026-11-03T19:25:45.405375+05:30",
+  "lastFetchedAt": "2026-11-03T19:25:45.405375+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.tn.gov.in/press_release.php",
+  "count": 1,
+  "releases": [
+    {
+      "image_url": "https://cms.tn.gov.in/cms_migrated/document/press_release/pr301026_1.jpg",
+      "release_date": "2026-10-30",
+      "title": "The Hon’ble Minister for Cooperation launches a special grocery package containing 10 essential items for Rs. 200 to control rising prices of essential commodities",
+      "file_name": "pr301026_1.jpg",
+      "minister_name": "Hon'ble Minister for Cooperation launches a special grocery package containing 10 essential items for Rs. 200 to control rising prices of essential commodities",
+      "department_name": "Cooperation launches a special grocery package containing 10 essential items for Rs. 200 to control rising prices of essential commodities Department",
+      "minister_id": null,
+      "department_id": null,
+      "district_id": null,
+      "title_parsed": false,
+      "parse_confidence": "high",
+      "minister_match_confidence": null,
+      "department_match_confidence": null,
+      "cm_visits": false,
+      "postings": false,
+      "review_meetings": false,
+      "budget": false,
+      "tributes": false,
+      "others": false,
+      "inspection": false,
+      "portfolio": false
+    }
+  ],
+  "ministers": [],
+  "departments": []
+}

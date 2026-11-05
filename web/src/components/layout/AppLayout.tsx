@@ -27,8 +27,16 @@ export function AppLayout({
       )}
     >
       <TopNav />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded-md focus:bg-card focus:px-3 focus:py-2 focus:text-sm focus:shadow"
+      >
+        Skip to main content
+      </a>
       {hidePageHeader ? null : <Header title={title} description={description} />}
       <main
+        id="main-content"
+        tabIndex={-1}
         className={cn(
           "flex-1",
           fillViewport

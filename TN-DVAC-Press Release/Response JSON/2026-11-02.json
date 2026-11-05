@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-02",
+  "fetchedAt": "2026-11-03T19:25:46.524946+05:30",
+  "lastFetchedAt": "2026-11-03T19:25:46.524946+05:30",
+  "fetchCount": 1,
+  "source_url": "https://www.dvac.tn.gov.in/Press_Release.html",
+  "count": 3,
+  "releases": [
+    {
+      "pdf_url": "https://www.dvac.tn.gov.in/pdf/Press_Release/2026/02-11-2026 - Press Release-123 - Monthly Performance.pdf",
+      "release_date": "2026-11-02",
+      "title": "V&AC - Press Release-123 - Monthly Performance Report of DVAC for the month of October 2026.",
+      "file_name": "02-11-2026 - Press Release-123 - Monthly Performance.pdf"
+    },
+    {
+      "pdf_url": "https://www.dvac.tn.gov.in/pdf/Press_Release/2026/02-11-2026 - Search - Press Release-125 - JSC at Government Offices across Tamil Nadu.pdf",
+      "release_date": "2026-11-02",
+      "title": "V&AC - Press Release-125 - Conducted joint surprise check at 14 Sub Registrars Offices across Tamil Nadu and seized unaccounted total money of Rs.38,99,030/- on 02.11.2026.",
+      "file_name": "02-11-2026 - Search - Press Release-125 - JSC at Government Offices across Tamil Nadu.pdf"
+    },
+    {
+      "pdf_url": "https://www.dvac.tn.gov.in/pdf/Press_Release/2026/02-11-2026-Judgement - Press Release-124 - Tr.Chandrasekar, Duffadar, Secretariat, Chennai.pdf",
+      "release_date": "2026-11-02",
+      "title": "V&AC - Press Release-124 - Judgement - Special Court, Chennai sentences Tr.Chandrasekar, Duffadar (Office Assistant), O/o the Hon'ble Minister for Health, Secretariat, Chennai to undergo 2 years Rigorous Imprisonment with fine of Rs.3,000/- in a bribe case on 02.11.2026.",
+      "file_name": "02-11-2026-Judgement - Press Release-124 - Tr.Chandrasekar, Duffadar, Secretariat, Chennai.pdf"
+    }
+  ]
+}

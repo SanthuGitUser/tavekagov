@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-02",
+  "fetchedAt": "2026-11-03T19:25:43.159621+05:30",
+  "lastFetchedAt": "2026-11-03T19:25:43.159621+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-02"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22881,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.963_-_Hon_ble_CM_Press_Release_-_Pudhukotai_Govt_function_-_Inauguration_laying_foundation_and_welfare_schemes_-_Date.2.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.963 - Hon'ble CM Press Release - Pudhukotai Govt function - Inauguration laying foundation and welfare schemes - Date.2.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22884,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.965-Hon_ble_CM_Press_Release-Strengthening_of_security_in_jails_in_Tamil_Nadu_-English_-Date_02.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.965-Hon'ble CM Press Release-Strengthening of security in jails in Tamil Nadu -English -Date 02.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22885,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.965-Hon_ble_CM_Press_Release-Strengthening_of_security_in_jails_in_Tamil_Nadu_-Tamil_-Date_02.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.965-Hon'ble CM Press Release-Strengthening of security in jails in Tamil Nadu -Tamil -Date 02.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22886,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-966-Hon_ble_Transport_Minister_Press_Release-Bonus-Date_02.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-966-Hon'ble Transport Minister Press Release-Bonus-Date 02.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22887,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-967-Hon_ble_MSME_Minister_Press_Release_-_heavey_rainfall-Date_02.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-967-Hon'ble MSME Minister Press Release - heavey rainfall-Date 02.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22888,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-968_-Co-operative_Dept___Press_Release-Date_02.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-968 -Co-operative Dept   Press Release-Date 02.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22889,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-969-Co-operation__Food___Consumer_Protection_Dept_Press_Release-Bonus_-Date_02.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-969-Co-operation ,Food & Consumer Protection Dept Press Release-Bonus -Date 02.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22890,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-970_-Co-operative_Sugar_Mills_-__Bonus__Press_Release-Date_02.11.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-970 -Co-operative Sugar Mills -  Bonus  Press Release-Date 02.11.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22891,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.964-Directorate_of_AdiDravidar_Welfare_Dept_Press_Release-Date_02.11.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.964-Directorate of AdiDravidar Welfare Dept Press Release-Date 02.11.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22892,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-971_-Hon_ble_Health_Minister_Press_Release-_Thailand_Conference_-Date_02.11.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-971 -Hon'ble Health Minister Press Release- Thailand Conference -Date 02.11.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      },
+      {
+        "id": 22893,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.-972-Co-operative__Marketing_Societies__Dept_Press_Release-Santhai_Procurement_-Date_02.11.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-02",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.-972-Co-operative  Marketing Societies  Dept Press Release-Santhai Procurement -Date 02.11.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-02",
+        "language": "en"
+      }
+    ]
+  }
+}

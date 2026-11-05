@@ -23,8 +23,10 @@ Some feeds defer loading until their page is opened, reducing the initial bundle
 |------|--------|---------|
 | News | `tamilNaduNewsFeed.ts` | Lazy `import.meta.glob` + per-day JSON chunks |
 | TVK Manifesto | `tvkManifestoFeed.ts` | Dynamic `import()` of manifest JSON |
+| DIPR / Gov PR / DVAC / G.O.s / IAS / Magazine | `tamilNadu*Feed.ts` | Lazy `import.meta.glob` + `ensure*FeedLoaded()` |
+| Election results / Form 20 | `tamilNaduElectionResultsFeed.ts`, `tamilNaduElectionForm20Feed.ts` | Dynamic import per manifest / AC |
 
-Other feeds still load eagerly at build time via `import.meta.glob(..., { eager: true })`.
+Directory manifests (departments, ministers, districts, schemes, constituencies) use static JSON imports.
 
 ## Storage patterns
 
@@ -260,9 +262,17 @@ Default project start date for backfills: **10 May 2026** (`10-05-2026`), config
 | Constituencies | `tamilNaduAssemblyConstituenciesFeed.ts` |
 | Government Schemes | `tamilNaduGovtSchemesFeed.ts` |
 | TVK Manifesto | `tvkManifestoFeed.ts` (lazy) |
+| DVAC press releases | `tamilNaduDvacPressReleaseFeed.ts` (lazy) |
+| Finance notifications | `tamilNaduFinanceNotificationsFeed.ts` |
+| MLA (MyNeta) | `tamilNaduMlaFeed.ts` |
+| Election results | `tamilNaduElectionResultsFeed.ts`, `tamilNaduElectionForm20Feed.ts` (lazy) |
+| Site search | `siteSearchDocuments.ts`, `/search` page |
+
+JSON Schema drafts: [docs/schemas/manifest-base.schema.json](schemas/manifest-base.schema.json). Python validation helper: `Sync-Config/json_validate.py`.
 
 ## Related docs
 
 - [SYNC_SCRIPTS.md](SYNC_SCRIPTS.md) — script reference and CLI flags
-- [GITHUB_ACTIONS.md](GITHUB_ACTIONS.md) — automated fetch and deploy
+- [DATA_RETENTION.md](DATA_RETENTION.md) — retention and archival
+- [GITHUB_ACTIONS.md](GITHUB_ACTIONS.md) — CI, sync, and deploy
 - [DISCLAIMER.md](DISCLAIMER.md) — data usage and non-affiliation notice

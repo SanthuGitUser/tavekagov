@@ -1,4 +1,5 @@
 import { normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
+import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import type { DvacPressRelease } from "@/types/models";
 
 type DailyResponseFile = {
@@ -13,11 +14,10 @@ export type DvacPressReleaseFeedResponse = {
   results: DvacPressRelease[];
 };
 
-// One JSON file per release date: TN-DVAC-Press Release/Response JSON/YYYY-MM-DD.json
-const dailyJsonFiles = import.meta.glob(
+const dailyJsonLoaders = import.meta.glob(
   "../../../TN-DVAC-Press Release/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
-  { eager: true, import: "default" },
-) as Record<string, DailyResponseFile>;
+  { import: "default" },
+) as Record<string, () => Promise<DailyResponseFile>>;
 
 function parseRelease(raw: Record<string, unknown>): DvacPressRelease | null {
   const pdfUrl = typeof raw.pdf_url === "string" ? raw.pdf_url.trim() : "";
@@ -36,15 +36,21 @@ function parseRelease(raw: Record<string, unknown>): DvacPressRelease | null {
   };
 }
 
-function buildFeed(): DvacPressReleaseFeedResponse {
+let loadPromise: Promise<DvacPressReleaseFeedResponse> | null = null;
+
+export let tamilNaduDvacPressReleaseFeed: DvacPressReleaseFeedResponse = {
+  sourceUrl: "https://www.dvac.tn.gov.in/Press_Release.html",
+  totalResults: 0,
+  results: [],
+};
+
+async function buildFeedAsync(): Promise<DvacPressReleaseFeedResponse> {
   const releasesByUrl = new Map<string, DvacPressRelease>();
   let sourceUrl = "https://www.dvac.tn.gov.in/Press_Release.html";
 
-  const sortedDailyFiles = Object.entries(dailyJsonFiles).sort(([left], [right]) =>
-    left.localeCompare(right),
-  );
+  const sortedDailyFiles = await loadJsonModules<DailyResponseFile>(dailyJsonLoaders);
 
-  for (const [, file] of sortedDailyFiles) {
+  for (const { file } of sortedDailyFiles) {
     sourceUrl = file.source_url ?? sourceUrl;
     for (const raw of file.releases ?? []) {
       if (!raw || typeof raw !== "object") continue;
@@ -67,7 +73,27 @@ function buildFeed(): DvacPressReleaseFeedResponse {
   };
 }
 
-export const tamilNaduDvacPressReleaseFeed = buildFeed();
+export function ensureTamilNaduDvacPressReleaseFeedLoaded(): Promise<DvacPressReleaseFeedResponse> {
+  if (tamilNaduDvacPressReleaseFeed.results.length > 0) {
+    return Promise.resolve(tamilNaduDvacPressReleaseFeed);
+  }
+  if (!loadPromise) {
+    loadPromise = buildFeedAsync().then((feed) => {
+      tamilNaduDvacPressReleaseFeed = feed;
+      return feed;
+    });
+  }
+  return loadPromise;
+}
+
+export function resetTamilNaduDvacPressReleaseFeedCache(): void {
+  loadPromise = null;
+  tamilNaduDvacPressReleaseFeed = {
+    sourceUrl: "https://www.dvac.tn.gov.in/Press_Release.html",
+    totalResults: 0,
+    results: [],
+  };
+}
 
 export function getAvailableDvacPressReleaseDates(): string[] {
   const dates = new Set(
@@ -75,4 +101,3 @@ export function getAvailableDvacPressReleaseDates(): string[] {
   );
   return [...dates].sort().reverse();
 }
-

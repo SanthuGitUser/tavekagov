@@ -2,7 +2,10 @@ import { Link, useLocation } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { useLocale } from "@/context/LocaleContext";
 import { useTheme } from "@/context/ThemeContext";
+import type { MessageKey } from "@/i18n/messages";
+import { translate } from "@/i18n/messages";
 import { cn } from "@/lib/utils";
 
 export type NavItem = {
@@ -18,38 +21,43 @@ export type NavPrimaryItem = {
   items?: NavItem[];
 };
 
-export const primaryNav: NavPrimaryItem[] = [
-  { id: "dashboard", label: "Dashboard", to: "/dashboard" },
-  { id: "news", label: "News", to: "/news" },
-  {
-    id: "publications",
-    label: "Govt Publications",
-    items: [
-      { to: "/press-releases", label: "Press Releases" },
-      { to: "/gov-press-releases", label: "Press Release Images" },
-      { to: "/dvac-press-releases", label: "DVAC" },
-      { to: "/finance-notifications", label: "Finance" },
-      { to: "/government-orders", label: "Government Orders" },
-      { to: "/transfers-postings", label: "IAS Transfers and Postings" },
-      { to: "/govt-schemes", label: "Government Schemes" },
-      { to: "/magazine", label: "Magazines" },
-    ],
-  },
-  {
-    id: "administration",
-    label: "Govt Administration",
-    items: [
-      { to: "/ministers", label: "Ministers" },
-      { to: "/departments", label: "Departments" },
-      { to: "/constituencies", label: "Constituencies" },
-      { to: "/districts", label: "Districts" },
-      { to: "/mla", label: "MLA" },
-    ],
-  },
-  { id: "election-results", label: "Election Results", to: "/election-results" },
-  { id: "tvk-manifesto", label: "TVK Manifesto", to: "/tvk-manifesto" },
-  { id: "about", label: "About", to: "/about" },
-];
+function localizedPrimaryNav(t: (key: MessageKey) => string): NavPrimaryItem[] {
+  return [
+    { id: "dashboard", label: t("nav.dashboard"), to: "/dashboard" },
+    { id: "news", label: t("nav.news"), to: "/news" },
+    {
+      id: "publications",
+      label: t("nav.publications"),
+      items: [
+        { to: "/press-releases", label: "Press Releases" },
+        { to: "/gov-press-releases", label: "Press Release Images" },
+        { to: "/dvac-press-releases", label: "DVAC" },
+        { to: "/finance-notifications", label: "Finance" },
+        { to: "/government-orders", label: "Government Orders" },
+        { to: "/transfers-postings", label: "IAS Transfers and Postings" },
+        { to: "/govt-schemes", label: "Government Schemes" },
+        { to: "/magazine", label: "Magazines" },
+      ],
+    },
+    {
+      id: "administration",
+      label: t("nav.administration"),
+      items: [
+        { to: "/ministers", label: "Ministers" },
+        { to: "/departments", label: "Departments" },
+        { to: "/constituencies", label: "Constituencies" },
+        { to: "/districts", label: "Districts" },
+        { to: "/mla", label: "MLA" },
+      ],
+    },
+    { id: "election-results", label: t("nav.electionResults"), to: "/election-results" },
+    { id: "tvk-manifesto", label: t("nav.tvkManifesto"), to: "/tvk-manifesto" },
+    { id: "search", label: t("nav.search"), to: "/search" },
+    { id: "about", label: t("nav.about"), to: "/about" },
+  ];
+}
+
+export const primaryNav: NavPrimaryItem[] = localizedPrimaryNav((key) => translate("en", key));
 
 export const tvkManifestoSubNav: NavItem[] = [
   { to: "/tvk-manifesto", label: "All", matchCategory: "all" },
@@ -62,8 +70,8 @@ function isActivePath(pathname: string, to: string) {
   return pathname === to || pathname.startsWith(`${to}/`);
 }
 
-function resolvePrimaryId(pathname: string): string | null {
-  for (const item of primaryNav) {
+function resolvePrimaryId(pathname: string, nav: NavPrimaryItem[]): string | null {
+  for (const item of nav) {
     if (item.to && isActivePath(pathname, item.to)) return item.id;
     if (item.items?.some((sub) => isActivePath(pathname, sub.to))) return item.id;
   }
@@ -89,12 +97,16 @@ function subNavLinkTo(sub: NavItem): string {
   return `${sub.to}?category=${encodeURIComponent(sub.matchCategory)}`;
 }
 
-function resolveSubItems(pathname: string, activePrimaryId: string | null): NavItem[] {
+function resolveSubItems(
+  pathname: string,
+  activePrimaryId: string | null,
+  nav: NavPrimaryItem[],
+): NavItem[] {
   if (activePrimaryId === "tvk-manifesto" && isActivePath(pathname, "/tvk-manifesto")) {
     return tvkManifestoSubNav;
   }
 
-  const activePrimary = primaryNav.find((item) => item.id === activePrimaryId);
+  const activePrimary = nav.find((item) => item.id === activePrimaryId);
   return activePrimary?.items ?? [];
 }
 
@@ -104,9 +116,11 @@ function primaryLinkTo(item: NavPrimaryItem): string {
 
 export function TopNav() {
   const { theme, toggleTheme } = useTheme();
+  const { locale, setLocale, t } = useLocale();
   const location = useLocation();
-  const activePrimaryId = resolvePrimaryId(location.pathname);
-  const subItems = resolveSubItems(location.pathname, activePrimaryId);
+  const nav = localizedPrimaryNav(t);
+  const activePrimaryId = resolvePrimaryId(location.pathname, nav);
+  const subItems = resolveSubItems(location.pathname, activePrimaryId, nav);
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-xl supports-[backdrop-filter]:bg-background/70">
@@ -115,7 +129,7 @@ export function TopNav() {
           <div className="text-sm font-bold tracking-tight text-foreground transition-colors group-hover:text-primary sm:text-base">
             TavekaGov
           </div>
-          <p className="text-[10px] text-muted-foreground sm:text-xs">Tamil Nadu open data</p>
+          <p className="text-[10px] text-muted-foreground sm:text-xs">{t("app.tagline")}</p>
         </Link>
 
         <nav
@@ -123,7 +137,7 @@ export function TopNav() {
           className="col-start-2 row-start-1 max-w-full justify-self-center"
         >
           <div className="flex flex-wrap items-center justify-center gap-1 rounded-full bg-muted/80 p-1 shadow-inner">
-            {primaryNav.map((item) => {
+            {nav.map((item) => {
               const isActive = item.id === activePrimaryId;
               const linkTo = primaryLinkTo(item);
 
@@ -146,17 +160,29 @@ export function TopNav() {
           </div>
         </nav>
 
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon"
-          className="col-start-3 row-start-1 h-8 w-8 shrink-0 justify-self-end rounded-full text-muted-foreground hover:text-foreground"
-          onClick={toggleTheme}
-          aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
-          title={theme === "light" ? "Dark mode" : "Light mode"}
-        >
-          {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
-        </Button>
+        <div className="col-start-3 row-start-1 flex shrink-0 items-center justify-end gap-1 justify-self-end">
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            className="h-8 rounded-full px-2 text-xs"
+            onClick={() => setLocale(locale === "en" ? "ta" : "en")}
+            aria-label="Switch language"
+          >
+            {locale === "en" ? t("locale.ta") : t("locale.en")}
+          </Button>
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            className="h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
+            onClick={toggleTheme}
+            aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
+            title={theme === "light" ? "Dark mode" : "Light mode"}
+          >
+            {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+          </Button>
+        </div>
 
         {subItems.length > 0 ? (
           <nav

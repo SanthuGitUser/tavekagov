@@ -66,6 +66,10 @@ export function DvacPressReleaseTimeline({ releases }: DvacPressReleaseTimelineP
     if (!dvacSearch) return;
     if (!dvacSearch.selectedMonth && latestMonth) {
       dvacSearch.setSelectedMonth(latestMonth);
+      return;
+    }
+    if (dvacSearch.selectedMonth && latestMonth && dvacSearch.selectedMonth < latestMonth) {
+      dvacSearch.setSelectedMonth(latestMonth);
     }
   }, [dvacSearch, latestMonth]);
 

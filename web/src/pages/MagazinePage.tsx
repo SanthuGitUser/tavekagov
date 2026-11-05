@@ -2,8 +2,13 @@ import { format, parseISO } from "date-fns";
 import { FileText } from "lucide-react";
 import { useMemo } from "react";
 
-import { getMagazines } from "@/lib/tamilNaduMagazineFeed";
+import {
+  PublicationFeedGate,
+  usePublicationFeed,
+} from "@/hooks/usePublicationFeed";
 import { useMagazineSearch } from "@/context/MagazineSearchContext";
+import { ensureMagazinePageFeedsLoaded } from "@/lib/publicationFeedsLoader";
+import { getMagazines } from "@/lib/tamilNaduMagazineFeed";
 import type { Magazine } from "@/types/models";
 
 function formatIssueDate(value: string): string {
@@ -47,9 +52,13 @@ function MagazineTile({ magazine }: { magazine: Magazine }) {
 }
 
 export function MagazinePage() {
+  const feed = usePublicationFeed({
+    load: ensureMagazinePageFeedsLoaded,
+    select: () => getMagazines(),
+  });
   const magazineSearch = useMagazineSearch();
   const search = magazineSearch?.search ?? "";
-  const magazines = useMemo(() => getMagazines(), []);
+  const magazines = feed.data;
 
   const filtered = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -57,27 +66,23 @@ export function MagazinePage() {
     return magazines.filter((magazine) => matchesSearch(magazine, query));
   }, [magazines, search]);
 
-  if (magazines.length === 0) {
-    return (
-      <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-        No magazines found. Run the Tamil Digital Library sync to load Tamil Arasu issues.
-      </p>
-    );
-  }
-
-  if (filtered.length === 0) {
-    return (
-      <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-        No magazines match your search.
-      </p>
-    );
-  }
-
   return (
-    <div className="grid gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-      {filtered.map((magazine) => (
-        <MagazineTile key={magazine.id} magazine={magazine} />
-      ))}
-    </div>
+    <PublicationFeedGate loading={feed.loading} error={feed.error} label="Loading magazines…">
+      {magazines.length === 0 ? (
+        <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+          No magazines found. Run the Tamil Digital Library sync to load Tamil Arasu issues.
+        </p>
+      ) : filtered.length === 0 ? (
+        <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+          No magazines match your search.
+        </p>
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+          {filtered.map((magazine) => (
+            <MagazineTile key={magazine.id} magazine={magazine} />
+          ))}
+        </div>
+      )}
+    </PublicationFeedGate>
   );
 }

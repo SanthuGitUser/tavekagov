@@ -34,10 +34,10 @@ export function AboutPage() {
                   into JSON files in this repository using Python sync scripts.
                 </p>
                 <p>
-                  This frontend is built with Vite, React, TypeScript, Tailwind CSS, and shadcn-style
-                  components. Most datasets are bundled as JSON at build time; News and the TVK
-                  Manifesto load their JSON on demand when you open those pages. The site is designed
-                  for static hosting on GitHub Pages.
+                  Large publication datasets (press releases, G.O.s, transfers, magazine daily JSON) load
+                  on demand via Vite code splitting. Use <strong>Search</strong> for cross-dataset lookup.
+                  Sync health metadata lives in <code>Sync-Config/last-sync.json</code> (see{" "}
+                  <code>sync_health.py</code>).
                 </p>
               </CardContent>
             </Card>
@@ -51,7 +51,9 @@ export function AboutPage() {
                 <p>News — Tamil Nadu headlines (loads one day at a time)</p>
                 <p>Govt Publications — Press releases, press release images, G.O.s, IAS transfers, government schemes, magazines</p>
                 <p>Govt Administration — Ministers, departments, constituencies, districts</p>
-                <p>Election Results — TN Assembly 2026 round-wise EVM counts (ECI)</p>
+                <p>Search — Full-text search across indexed datasets</p>
+                <p>DVAC / Finance — Vigilance press releases and Finance Department notifications</p>
+                <p>MLA — MyNeta winner summaries (manifest JSON)</p>
                 <p>TVK Manifesto — Tamilaga Vetri Kazhagam election manifesto by category and section</p>
                 <p>About — Project overview and data sources</p>
               </CardContent>
@@ -73,7 +75,10 @@ export function AboutPage() {
                 <p>Constituencies — 17th Tamil Nadu Legislative Assembly (manifest JSON)</p>
                 <p>Districts — tn.gov.in district profiles; map boundaries in `TN-Map/`</p>
                 <p>News — NewsData.io API (daily JSON, loaded on demand in the browser)</p>
-                <p>TVK Manifesto — PDF extraction to `TN-TVK-Manifesto/manifests/tvk_manifesto.json` (manual refresh)</p>
+                <p>Election Results — TN Assembly 2026 ECI round-wise counts and Form 20 (`scripts/sync-election.ps1`)</p>
+                <p>DVAC — dvac.tn.gov.in press releases (daily JSON)</p>
+                <p>Finance notifications — financedept.tn.gov.in manifest</p>
+                <p>MLA — myneta.info Tamil Nadu 2026 winners manifest</p>
               </CardContent>
             </Card>
           </div>

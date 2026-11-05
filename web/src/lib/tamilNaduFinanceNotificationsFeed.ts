@@ -4,6 +4,7 @@ import type { FinanceNotification } from "@/types/models";
 type FinanceNotificationsManifest = {
   source_url?: string;
   fetchedAt?: string;
+  lastFetchedAt?: string;
   count?: number;
   items?: Record<string, unknown>[];
 };
@@ -11,6 +12,7 @@ type FinanceNotificationsManifest = {
 export type FinanceNotificationsFeedResponse = {
   sourceUrl: string;
   fetchedAt: string;
+  lastFetchedAt: string;
   totalResults: number;
   results: FinanceNotification[];
 };
@@ -40,6 +42,8 @@ function buildFeed(): FinanceNotificationsFeedResponse {
   const manifest = Object.values(manifestFiles)[0] ?? {};
   const sourceUrl = manifest.source_url ?? "https://financedept.tn.gov.in/en/";
   const fetchedAt = manifest.fetchedAt ?? "";
+  const lastFetchedAt =
+    typeof manifest.lastFetchedAt === "string" ? manifest.lastFetchedAt : fetchedAt;
 
   const results: FinanceNotification[] = [];
   for (const raw of manifest.items ?? []) {
@@ -51,6 +55,7 @@ function buildFeed(): FinanceNotificationsFeedResponse {
   return {
     sourceUrl,
     fetchedAt,
+    lastFetchedAt,
     totalResults: results.length,
     results,
   };

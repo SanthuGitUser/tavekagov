@@ -28,12 +28,16 @@ const responseJsonLoaders = import.meta.glob(
 
 const dateToLoader = new Map<string, () => Promise<NewsResponseFile>>();
 
-for (const [path, loader] of Object.entries(responseJsonLoaders)) {
-  const date = extractPublicationDateFromPath(path);
-  if (date) dateToLoader.set(date, loader);
+function rebuildDateToLoader(): void {
+  dateToLoader.clear();
+  for (const [path, loader] of Object.entries(responseJsonLoaders)) {
+    const date = extractPublicationDateFromPath(path);
+    if (date) dateToLoader.set(date, loader);
+  }
 }
 
-const availableNewsDates = [...dateToLoader.keys()].sort().reverse();
+rebuildDateToLoader();
+
 const articlesByDateCache = new Map<string, NewsArticle[]>();
 let latestSourceQuery: NewsSourceQuery | null = null;
 
@@ -69,7 +73,8 @@ function isDateInRange(date: string, from: string, to: string): boolean {
 
 function getDatesInRange(from: string, to: string): string[] {
   const range = normalizeDateRange(from, to);
-  return availableNewsDates.filter(
+  const dates = getAvailableNewsDates();
+  return dates.filter(
     (date) => date >= range.from && date <= range.to,
   );
 }
@@ -92,11 +97,17 @@ async function loadArticlesForDate(date: string): Promise<NewsArticle[]> {
 }
 
 export function getAvailableNewsDates(): string[] {
-  return availableNewsDates;
+  rebuildDateToLoader();
+  return [...dateToLoader.keys()].sort().reverse();
+}
+
+export function refreshTamilNaduNewsFeedIndex(): void {
+  rebuildDateToLoader();
+  articlesByDateCache.clear();
 }
 
 export function getLatestNewsDate(): string {
-  return availableNewsDates[0] ?? "";
+  return getAvailableNewsDates()[0] ?? "";
 }
 
 export async function loadNewsArticlesForDateRange(

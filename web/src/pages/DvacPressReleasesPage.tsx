@@ -1,15 +1,23 @@
-import { useMemo } from "react";
-
 import { DvacPressReleaseTimeline } from "@/components/dvac-press-releases/DvacPressReleaseTimeline";
+import {
+  PublicationFeedGate,
+  usePublicationFeed,
+} from "@/hooks/usePublicationFeed";
+import { ensureDvacPressReleasePageFeedsLoaded } from "@/lib/publicationFeedsLoader";
 import { tamilNaduDvacPressReleaseFeed } from "@/lib/tamilNaduDvacPressReleaseFeed";
 
 export function DvacPressReleasesPage() {
-  const releases = useMemo(() => tamilNaduDvacPressReleaseFeed.results, []);
+  const feed = usePublicationFeed({
+    load: ensureDvacPressReleasePageFeedsLoaded,
+    select: () => tamilNaduDvacPressReleaseFeed.results,
+  });
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col">
-      <DvacPressReleaseTimeline releases={releases} />
-    </div>
+    <PublicationFeedGate loading={feed.loading} error={feed.error} label="Loading DVAC releases…">
+      <div className="flex min-h-0 flex-1 flex-col">
+        <DvacPressReleaseTimeline releases={feed.data} />
+      </div>
+    </PublicationFeedGate>
   );
 }
 
