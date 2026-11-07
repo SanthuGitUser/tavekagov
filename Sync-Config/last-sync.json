@@ -5,7 +5,7 @@
       "last_sync_at": "2026-11-05T19:00:08+05:30",
       "synced_through": "2026-11-05",
       "last_item_count": 1149,
-      "health_status": "ok"
+      "health_status": "stale"
     },
     "government_orders": {
       "last_sync_at": "2026-11-05T19:00:25+05:30",
@@ -38,7 +38,7 @@
       "last_sync_at": "2026-11-05T19:01:46+05:30",
       "synced_through": "2026-11-05",
       "last_item_count": 299,
-      "health_status": "ok"
+      "health_status": "stale"
     },
     "constituencies": {
       "last_sync_at": "2026-11-05T19:01:26+05:30",
@@ -79,5 +79,5 @@
       "health_status": "stale"
     }
   },
-  "health_refreshed_at": "2026-11-07"
+  "health_refreshed_at": "2026-11-08"
 }
