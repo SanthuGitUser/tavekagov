@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 
 import { PageLoading } from "@/components/shared/PageLoading";
 import { ErrorState } from "@/components/shared/ErrorState";
@@ -9,6 +9,11 @@ type UsePublicationFeedOptions<T> = {
   load: () => Promise<unknown>;
   select: () => T;
 };
+
+function hasContent(value: unknown): boolean {
+  if (Array.isArray(value)) return value.length > 0;
+  return value !== null && value !== undefined;
+}
 
 export function usePublicationFeed<T>({
   load,
@@ -21,12 +26,17 @@ export function usePublicationFeed<T>({
 } {
   const query = useAsyncData(load, []);
   const data = select();
+  // Feeds are cached per session. If the data is already here (revisit, or it was
+  // prefetched on hover), render it straight away instead of flashing a spinner
+  // while the (instant) load promise settles.
+  const [cachedAtMount] = useState(() => hasContent(data));
+  const loading = query.loading && !cachedAtMount;
 
   return {
     data,
-    loading: query.loading,
+    loading,
     error: query.error,
-    ready: !query.loading && !query.error,
+    ready: !loading && !query.error,
   };
 }
 
@@ -42,7 +52,7 @@ export function PublicationFeedGate({
   children: ReactNode;
 }) {
   if (loading) {
-    return <PageLoading label={label ?? "Loading data…"} />;
+    return <PageLoading className="flex-1" label={label ?? "Loading data…"} />;
   }
   if (error) {
     return <ErrorState message={error} />;

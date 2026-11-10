@@ -1,3 +1,4 @@
+import { segmentedGroupClass, segmentedItemClass } from "@/lib/navStyles";
 import { cn } from "@/lib/utils";
 
 export type ElectionResultsViewTab = "may-2026" | "bye-2026";
@@ -20,7 +21,7 @@ export function ElectionResultsViewTabs({
 }: ElectionResultsViewTabsProps) {
   return (
     <nav
-      className={cn("flex gap-0.5 overflow-x-auto", className)}
+      className={cn(segmentedGroupClass, className)}
       role="tablist"
       aria-label="Election period"
     >
@@ -33,12 +34,7 @@ export function ElectionResultsViewTabs({
             role="tab"
             aria-selected={isActive}
             onClick={() => onTabChange(id)}
-            className={cn(
-              "relative shrink-0 px-2.5 pb-1 pt-0 text-xs font-medium transition-colors",
-              isActive
-                ? "text-primary after:absolute after:inset-x-2 after:bottom-0 after:h-0.5 after:rounded-full after:bg-primary"
-                : "text-muted-foreground hover:text-foreground",
-            )}
+            className={segmentedItemClass(isActive)}
           >
             {label}
           </button>

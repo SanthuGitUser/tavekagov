@@ -10,7 +10,7 @@ import { getLatestValidDate } from "@/components/shared/VerticalDatePicker";
 import { Badge } from "@/components/ui/badge";
 import { useGovPressReleaseSearch } from "@/context/GovPressReleaseSearchContext";
 import { useGovPressReleaseView } from "@/context/GovPressReleaseViewContext";
-import { snapSingleDayRangeToLatest } from "@/lib/dateRangeUtils";
+import { useLatestDateRange } from "@/hooks/useLatestDateRange";
 import type { GovPressRelease, TnDept, TnMinister } from "@/types/models";
 
 import { CrossDateReleaseBrowse } from "./CrossDateReleaseBrowse";
@@ -314,24 +314,7 @@ export function GovPressReleaseTimeline({
     setAvailableDates?.(datesForPicker);
   }, [datesForPicker, setAvailableDates]);
 
-  useEffect(() => {
-    if (!latestDate) return;
-    if (!selectedDateRange.from) {
-      setSelectedDateRange?.({ from: latestDate, to: latestDate });
-      return;
-    }
-    const snapped = snapSingleDayRangeToLatest(selectedDateRange, latestDate);
-    if (snapped.from !== selectedDateRange.from || snapped.to !== selectedDateRange.to) {
-      setSelectedDateRange?.(snapped);
-    }
-    if (
-      selectedDateRange.from
-      && allDates.length > 0
-      && !allDates.includes(selectedDateRange.from)
-    ) {
-      setSelectedDateRange?.({ from: latestDate, to: latestDate });
-    }
-  }, [allDates, latestDate, selectedDateRange, setSelectedDateRange]);
+  useLatestDateRange(selectedDateRange, setSelectedDateRange, latestDate, allDates);
 
   const releasesInRange = useMemo(() => {
     return datedReleases

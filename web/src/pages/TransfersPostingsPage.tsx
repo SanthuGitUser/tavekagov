@@ -7,7 +7,7 @@ import {
   usePublicationFeed,
 } from "@/hooks/usePublicationFeed";
 import { useTransfersPostingsSearch } from "@/context/TransfersPostingsSearchContext";
-import { snapSingleDayRangeToLatest } from "@/lib/dateRangeUtils";
+import { useLatestDateRange } from "@/hooks/useLatestDateRange";
 import { ensureTransfersPostingsPageFeedsLoaded } from "@/lib/publicationFeedsLoader";
 import {
   expandTransferPostingRows,
@@ -51,18 +51,17 @@ export function TransfersPostingsPage() {
     transfersPostingsSearch?.setTotalCount(allRows.length);
   }, [allRows.length, availableDates, transfersPostingsSearch]);
 
-  useEffect(() => {
-    if (!transfersPostingsSearch || availableDates.length === 0) return;
-    const latest = availableDates[0];
-    if (!filterDateRange.from || !filterDateRange.to) {
-      transfersPostingsSearch.setFilterDateRange(getDefaultTransfersPostingDateRange(availableDates));
-      return;
-    }
-    const snapped = snapSingleDayRangeToLatest(filterDateRange, latest);
-    if (snapped.from !== filterDateRange.from || snapped.to !== filterDateRange.to) {
-      transfersPostingsSearch.setFilterDateRange(snapped);
-    }
-  }, [availableDates, filterDateRange, transfersPostingsSearch]);
+  const defaultDateRange = useMemo(
+    () => (availableDates.length > 0 ? getDefaultTransfersPostingDateRange(availableDates) : undefined),
+    [availableDates],
+  );
+  useLatestDateRange(
+    filterDateRange,
+    transfersPostingsSearch?.setFilterDateRange,
+    availableDates[0] ?? null,
+    undefined,
+    defaultDateRange,
+  );
 
   const rows = useMemo(() => {
     let filtered = allRows;

@@ -4,6 +4,7 @@ import {
   GOV_PRESS_RELEASE_VIEW_LABELS,
   type GovPressReleaseView,
 } from "./govPressReleaseUtils";
+import { segmentedGroupClass, segmentedItemClass } from "@/lib/navStyles";
 import { cn } from "@/lib/utils";
 
 type GovPressReleaseViewTabsProps = {
@@ -28,7 +29,7 @@ export function GovPressReleaseViewTabs({
 }: GovPressReleaseViewTabsProps) {
   return (
     <nav
-      className={cn("flex gap-1 overflow-x-auto", className)}
+      className={cn(segmentedGroupClass, className)}
       role="tablist"
       aria-label="PR images browse view"
     >
@@ -41,12 +42,7 @@ export function GovPressReleaseViewTabs({
             role="tab"
             aria-selected={isActive}
             onClick={() => onViewModeChange(mode)}
-            className={cn(
-              "relative inline-flex shrink-0 items-center gap-1.5 px-2.5 pb-1.5 pt-0.5 text-xs font-medium transition-colors",
-              isActive
-                ? "text-primary after:absolute after:inset-x-2.5 after:bottom-0 after:h-0.5 after:rounded-full after:bg-primary"
-                : "text-muted-foreground hover:text-foreground",
-            )}
+            className={segmentedItemClass(isActive)}
           >
             <Icon className="h-3.5 w-3.5 shrink-0" />
             {GOV_PRESS_RELEASE_VIEW_LABELS[mode]}

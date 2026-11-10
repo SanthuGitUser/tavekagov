@@ -1,10 +1,9 @@
-import { lazy, Suspense, type ReactNode } from "react";
+import { lazy, type ReactNode } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { ConstituencySearchProvider } from "@/context/ConstituencySearchContext";
 
-import { AppLayout } from "@/components/layout/AppLayout";
-import { PageLoading } from "@/components/shared/PageLoading";
+import { AppLayout, RootLayout } from "@/components/layout/AppLayout";
 import { SourceLink } from "@/components/shared/SourceLink";
 import { DashboardDateRangeProvider } from "@/context/DashboardDateRangeContext";
 import { GovernmentSearchProvider } from "@/context/GovernmentSearchContext";
@@ -81,24 +80,15 @@ const ElectionResultsPage = lazy(() =>
   import("@/pages/ElectionResultsPage").then((module) => ({ default: module.ElectionResultsPage })),
 );
 
-function LazyRoute({
-  children,
-  label = "Loading…",
-}: {
-  children: ReactNode;
-  label?: string;
-}) {
-  return (
-    <div className="flex min-h-0 flex-1 flex-col">
-      <Suspense fallback={<PageLoading label={label} />}>{children}</Suspense>
-    </div>
-  );
+function LazyRoute({ children }: { children: ReactNode }) {
+  return <div className="flex min-h-0 flex-1 flex-col">{children}</div>;
 }
 
 export default function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
+        <Route element={<RootLayout />}>
         <Route
           path="/"
           element={<AppLayout hidePageHeader title="Home" />}
@@ -149,7 +139,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading press releases…">
+              <LazyRoute>
                 <PressReleasesPage />
               </LazyRoute>
             }
@@ -180,7 +170,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading press release images…">
+              <LazyRoute>
                 <GovPressReleasesPage />
               </LazyRoute>
             }
@@ -209,7 +199,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading DVAC press releases…">
+              <LazyRoute>
                 <DvacPressReleasesPage />
               </LazyRoute>
             }
@@ -236,7 +226,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading finance notifications…">
+              <LazyRoute>
                 <FinanceNotificationsPage />
               </LazyRoute>
             }
@@ -267,7 +257,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading government orders…">
+              <LazyRoute>
                 <GovernmentOrdersPage />
               </LazyRoute>
             }
@@ -296,7 +286,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading transfers and postings…">
+              <LazyRoute>
                 <TransfersPostingsPage />
               </LazyRoute>
             }
@@ -326,7 +316,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading ministers…">
+              <LazyRoute>
                 <MinistersPage />
               </LazyRoute>
             }
@@ -355,7 +345,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading departments…">
+              <LazyRoute>
                 <DepartmentsPage />
               </LazyRoute>
             }
@@ -384,7 +374,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading districts…">
+              <LazyRoute>
                 <DistrictsPage />
               </LazyRoute>
             }
@@ -413,7 +403,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading constituencies…">
+              <LazyRoute>
                 <ConstituenciesPage />
               </LazyRoute>
             }
@@ -442,7 +432,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading MLA…">
+              <LazyRoute>
                 <MlaPage />
               </LazyRoute>
             }
@@ -471,7 +461,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading magazine…">
+              <LazyRoute>
                 <MagazinePage />
               </LazyRoute>
             }
@@ -500,7 +490,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading government schemes…">
+              <LazyRoute>
                 <GovtSchemesPage />
               </LazyRoute>
             }
@@ -515,7 +505,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading election results…">
+              <LazyRoute>
                 <ElectionResultsPage />
               </LazyRoute>
             }
@@ -536,7 +526,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading manifesto…">
+              <LazyRoute>
                 <TVKManifestoPage />
               </LazyRoute>
             }
@@ -562,7 +552,7 @@ export default function App() {
           <Route
             index
             element={
-              <LazyRoute label="Loading news…">
+              <LazyRoute>
                 <NewsPage />
               </LazyRoute>
             }
@@ -603,6 +593,7 @@ export default function App() {
           element={<AppLayout fillViewport title="Page not found" hidePageHeader />}
         >
           <Route index element={<NotFoundPage />} />
+        </Route>
         </Route>
       </Routes>
     </BrowserRouter>

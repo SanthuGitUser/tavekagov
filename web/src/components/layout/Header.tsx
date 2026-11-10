@@ -3,6 +3,7 @@ import { FilterX, Search } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 
+import { VariantSwitch } from "@/components/layout/VariantSwitch";
 import { NewsDatePicker } from "@/components/news/NewsDatePicker";
 import { GovernmentOrdersViewTabs } from "@/components/government-orders/GovernmentOrdersViewTabs";
 import { PartyFilterSelect } from "@/components/constituencies/PartyFilterSelect";
@@ -56,7 +57,9 @@ type HeaderProps = {
   description?: ReactNode;
 };
 
-const headerShellClassName = "border-b border-border bg-card px-3 py-3 sm:px-4";
+// Minimum height keeps the content from jumping between pages with and without filters.
+const headerShellClassName =
+  "flex min-h-[4.5rem] flex-col justify-center border-b border-border bg-card px-3 py-3 sm:px-4";
 const headerInnerClassName =
   "flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between";
 
@@ -79,7 +82,10 @@ function HeaderTitleBlock({
 }) {
   return (
     <div className="min-w-0">
-      <h1 className="text-xl font-bold tracking-tight">{title}</h1>
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+        <h1 className="text-xl font-bold tracking-tight">{title}</h1>
+        <VariantSwitch />
+      </div>
       {description ? (
         <p className="mt-0.5 max-w-3xl text-xs text-muted-foreground">{description}</p>
       ) : null}

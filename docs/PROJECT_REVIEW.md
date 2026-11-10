@@ -119,6 +119,16 @@ Cause: the workflow ran `sync-all.ps1 -SkipInstall` on a fresh GitHub runner. Wi
 
 - Removed the English/தமிழ் toggle from the top navigation, the `LocaleContext` provider and the Tamil labels. `web/src/i18n/messages.ts` is now a plain English label list (`t(key)`), used by the navigation and search page.
 
+### Round 4 — navigation quick wins
+
+- **Bug fix:** six page search contexts (Press Releases, tn.gov.in images, Magazine, Districts, Ministers, Departments) were aliases of one shared context, so those pages showed the **TVK manifesto** search bar and counts instead of their own controls (live since 5 Nov 2026). Each now has its own context.
+- **Persistent top bar:** the top bar is rendered once (`RootLayout`) instead of being rebuilt on every page change; the content area is the scroll container.
+- **Fixed heights:** top bar (48 px) and section strip (36 px) never change height; page headers have a minimum height, so content doesn't jump between sections.
+- **Three distinct styles:** main menu = text tabs with an underline; section links = small plain text, active in primary colour; view switches = boxed segmented control (`web/src/lib/navStyles.ts`).
+- **Shorter menu:** 8 → 6 items; Search and About moved to icons on the right.
+- **Merged tabs:** "Press Releases" covers DIPR releases and tn.gov.in images; "Constituencies & MLAs" covers both pages. A segmented switch next to the page title moves between them (`VariantSwitch`).
+- **No loading flash:** one Suspense boundary at the root keeps the current page visible while the next page's code loads; pages with cached data skip the spinner; hovering a menu link preloads that page's code and data (`web/src/lib/routePrefetch.ts`).
+
 ---
 
 ## 4. Open items
@@ -130,6 +140,10 @@ Manual sync works but depends on someone remembering to run it. Free or cheap op
 1. **Windows Task Scheduler on your PC** (free, simplest): run `scripts\sync-all.ps1 -Push` nightly. Only runs while the PC is on.
 2. **Self-hosted GitHub runner on your PC** (free; self-hosted runners use no paid minutes): restores a workflow and run history, but the PC must be on and it's more setup than option 1.
 3. **Always-free cloud VM in an Indian region** (e.g. Oracle Cloud's Mumbai/Hyderabad regions) with a cron job: always on, but cloud IPs may also be blocked, so test with `check_reachable.py` first.
+
+### Navigation redesign (next step after the quick wins)
+
+Option A + B from the UI review: a left sidebar replacing the two top rows, and one combined "Publications" timeline with source chips (DIPR, tn.gov.in, DVAC, Finance, G.O., IAS). Mobile page headers with many filters (e.g. MLA) still overflow sideways and need a "Filters" drawer.
 
 ### Other backlog
 

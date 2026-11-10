@@ -10,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useGovernmentOrdersSearch } from "@/context/GovernmentOrdersSearchContext";
 import { useGovernmentOrdersView } from "@/context/GovernmentOrdersViewContext";
-import { snapSingleDayRangeToLatest } from "@/lib/dateRangeUtils";
+import { useLatestDateRange } from "@/hooks/useLatestDateRange";
 import { cn } from "@/lib/utils";
 import type { TnDept, TnGoDept, TnMinister } from "@/types/models";
 
@@ -117,17 +117,7 @@ export function GovernmentOrdersTimeline({
     setAvailableDates?.(availableDates);
   }, [availableDates, setAvailableDates]);
 
-  useEffect(() => {
-    if (!latestDate || !setFilterDateRange) return;
-    if (!filterDateRange.from || !filterDateRange.to) {
-      setFilterDateRange({ from: latestDate, to: latestDate });
-      return;
-    }
-    const snapped = snapSingleDayRangeToLatest(filterDateRange, latestDate);
-    if (snapped.from !== filterDateRange.from || snapped.to !== filterDateRange.to) {
-      setFilterDateRange(snapped);
-    }
-  }, [filterDateRange, latestDate, setFilterDateRange]);
+  useLatestDateRange(filterDateRange, setFilterDateRange, latestDate);
 
   const ordersInRange = useMemo(() => {
     if (viewMode === "department") return orders;
