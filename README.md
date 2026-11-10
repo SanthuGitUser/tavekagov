@@ -22,34 +22,34 @@ Open the URL shown in the terminal (usually `http://localhost:5173`). JSON data 
 
 | Area | Source | Storage | UI tab |
 |------|--------|---------|--------|
-| DIPR press releases | [dipr.tn.gov.in](https://dipr.tn.gov.in/press-release1.html) | `TN-DIPR-Press Release/Response JSON/` | Press Releases |
-| Government press release images | [tn.gov.in](https://www.tn.gov.in/press_release.php) | `TN-GOV-Press Release/Response JSON/` | Press Releases Images |
-| DVAC press releases | [dvac.tn.gov.in](https://www.dvac.tn.gov.in/Press_Release.html) | `TN-DVAC-Press Release/Response JSON/` | DVAC |
+| DIPR press releases | [dipr.tn.gov.in](https://dipr.tn.gov.in/press-release1.html) | `TN-DIPR-Press-Release/Response-JSON/` | Press Releases |
+| Government press release images | [tn.gov.in](https://www.tn.gov.in/press_release.php) | `TN-GOV-Press-Release/Response-JSON/` | Press Releases Images |
+| DVAC press releases | [dvac.tn.gov.in](https://www.dvac.tn.gov.in/Press_Release.html) | `TN-DVAC-Press-Release/Response-JSON/` | DVAC |
 | Finance notifications | [financedept.tn.gov.in](https://financedept.tn.gov.in/en/) | `TN-Finance-Notifications/manifests/notifications.json` | Finance |
-| Government orders (G.O.s) | [tn.gov.in](https://www.tn.gov.in/godept_list.php) | `TN-Government Orders/Response JSON/` | Government Orders |
-| IAS transfers & postings | [tn.gov.in](https://tnsectdemo.tn.gov.in/ias/transferandpostings.php) | `TN-IAS_Transfers-Postings/Response JSON/` | Transfers and Postings |
+| Government orders (G.O.s) | [tn.gov.in](https://www.tn.gov.in/godept_list.php) | `TN-Government-Orders/Response-JSON/` | Government Orders |
+| IAS transfers & postings | [tn.gov.in](https://tnsectdemo.tn.gov.in/ias/transferandpostings.php) | `TN-IAS_Transfers-Postings/Response-JSON/` | Transfers and Postings |
 | Departments (directory) | [tn.gov.in](https://www.tn.gov.in/department_list.php) | `TN-GOV_Departments/manifests/tn_departments.json` | Departments |
-| Council of ministers | [tn.gov.in](https://www.tn.gov.in/minister_list.php) | `TN-GOV_Council Of Ministers/manifests/tn_ministers.json` | Ministers |
+| Council of ministers | [tn.gov.in](https://www.tn.gov.in/minister_list.php) | `TN-GOV_Council-Of-Ministers/manifests/tn_ministers.json` | Ministers |
 | Districts | [tn.gov.in](https://www.tn.gov.in/district_list.php) | `TN-GOV_Districts/manifests/tn_districts.json` | Districts |
 | District / AC map boundaries | [india-maps-data](https://github.com/udit-001/india-maps-data) | `TN-Map/` | Districts / Constituencies |
-| Tamil Arasu magazine | [Tamil Digital Library](https://tamildigitallibrary.in/) | `TN-TVA-Magazine/manifests/magazine.json` (+ optional `Response JSON/`) | Magazine |
-| Tamil Nadu news | [NewsData.io](https://newsdata.io/) | `TN-News/Response JSON/` | News |
+| Tamil Arasu magazine | [Tamil Digital Library](https://tamildigitallibrary.in/) | `TN-TVA-Magazine/manifests/magazine.json` (+ optional `Response-JSON/`) | Magazine |
+| Tamil Nadu news | [NewsData.io](https://newsdata.io/) | `TN-News/Response-JSON/` | News |
 | Government schemes | [Schemes in India](https://schemesinindia.in/schemes/tamil-nadu) | `TN-Govt-Schemes/manifests/tn_govt_schemes.json` | Government Schemes |
 | Assembly constituencies | [assembly.tn.gov.in](https://assembly.tn.gov.in/17thassembly_members.php) | `TN-Constituencies/manifests/tn_constituencies.json` | Constituencies |
 | MLA candidate summaries | [myneta.info](https://myneta.info/tamilnadu2026/) | `TN-Constituencies/manifests/tn_mla_myneta.json` | MLA |
 | Assembly 2026 election results | ECI Form 20 / round-wise (import) | `TN-Election-Results/manifests/` | Election Results |
 | TVK election manifesto | PDF extraction (manual) | `TN-TVK-Manifesto/manifests/tvk_manifesto.json` | TVK Manifesto |
 
-Daily scrapers write one JSON file per date under each folder's `Response JSON/`. Government orders use one JSON file per department. Directory syncs (departments, ministers, districts) and the magazine manifest are single snapshot files refreshed by scheduled jobs.
+Daily scrapers write one JSON file per date under each folder's `Response-JSON/`. Government orders use one JSON file per department. Directory syncs (departments, ministers, districts) and the magazine manifest are single snapshot files refreshed when `scripts/sync-all.ps1` is run locally.
 
-### `TN-GOV_Departments` vs `TN-Government Orders`
+### `TN-GOV_Departments` vs `TN-Government-Orders`
 
 These names look similar but serve different purposes:
 
 | Folder | What it stores | tn.gov.in page |
 |--------|----------------|----------------|
 | `TN-GOV_Departments` | **Department directory** — names, IDs, minister assignments | [department_list.php](https://www.tn.gov.in/department_list.php) |
-| `TN-Government Orders` | **Government Orders (G.O.s)** — order number, subject, PDF link by department | [godept_list.php](https://www.tn.gov.in/godept_list.php) |
+| `TN-Government-Orders` | **Government Orders (G.O.s)** — order number, subject, PDF link by department | [godept_list.php](https://www.tn.gov.in/godept_list.php) |
 
 **GO** here means **Government Order**, not "go to departments."
 
@@ -74,12 +74,12 @@ tavekagov/
 ├── web/                          # Vite + React dashboard (see web/README.md)
 ├── Sync-Config/                  # Shared sync settings (.env) and JSON helpers
 ├── docs/                         # Project documentation (see below)
-├── TN-DIPR-Press Release/        # DIPR press release sync + PDF downloader
-├── TN-GOV-Press Release/         # tn.gov.in press release image sync
-├── TN-Government Orders/         # Government orders (G.O.s) sync
+├── TN-DIPR-Press-Release/        # DIPR press release sync + PDF downloader
+├── TN-GOV-Press-Release/         # tn.gov.in press release image sync
+├── TN-Government-Orders/         # Government orders (G.O.s) sync
 ├── TN-GOV_Departments/           # Department directory sync (not G.O.s)
 ├── TN-IAS_Transfers-Postings/    # IAS transfers & postings sync
-├── TN-GOV_Council Of Ministers/  # Ministers sync
+├── TN-GOV_Council-Of-Ministers/  # Ministers sync
 ├── TN-GOV_Districts/             # District directory sync
 ├── TN-TVA-Magazine/              # Tamil Arasu magazine sync
 ├── TN-News/                      # Daily news fetch (NewsData.io)
@@ -97,7 +97,8 @@ tavekagov/
 | [docs/DATA.md](docs/DATA.md) | JSON architecture, schemas, feed modules |
 | [docs/DATA_RETENTION.md](docs/DATA_RETENTION.md) | Data retention and archival guidance |
 | [docs/SYNC_SCRIPTS.md](docs/SYNC_SCRIPTS.md) | All Python sync scripts and CLI flags |
-| [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) | Scheduled workflows, secrets, fork setup |
+| [docs/GITHUB_ACTIONS.md](docs/GITHUB_ACTIONS.md) | CI and deploy workflows, fork setup |
+| [docs/PROJECT_REVIEW.md](docs/PROJECT_REVIEW.md) | SWOT and gap analysis, change log, open items |
 | [docs/DISCLAIMER.md](docs/DISCLAIMER.md) | Non-affiliation, data accuracy, usage |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
 | [SECURITY.md](SECURITY.md) | Reporting vulnerabilities |
@@ -134,6 +135,15 @@ Recommended: run all sync jobs in one command:
 .\scripts\sync-all.ps1
 ```
 
+Data sync is **manual**: there is no scheduled GitHub workflow (the TN government portals block GitHub's runners, and a self-hosted runner or proxy would cost money). `sync-all.ps1` pulls the latest commit, fetches everything new up to today, archives old daily files, and leaves the changes for you to review and commit:
+
+```powershell
+git status
+git add -A
+git commit -m "chore: sync data through <date>"
+git push      # deploys the dashboard
+```
+
 ```powershell
 cd "TN-GOV_Departments"
 python -m pip install -r requirements.txt
@@ -143,18 +153,18 @@ python tn_dept_sync.py
 | Script | Folder | Output |
 |--------|--------|--------|
 | `tn_dept_sync.py` | `TN-GOV_Departments/` | `manifests/tn_departments.json` |
-| `tn_ministers_sync.py` | `TN-GOV_Council Of Ministers/` | `manifests/tn_ministers.json` |
+| `tn_ministers_sync.py` | `TN-GOV_Council-Of-Ministers/` | `manifests/tn_ministers.json` |
 | `tn_districts_sync.py` | `TN-GOV_Districts/` | `manifests/tn_districts.json` |
-| `tn_government_orders_sync.py` | `TN-Government Orders/` | `Response JSON/<department>.json` |
-| `tn_press_release_sync.py` | `TN-DIPR-Press Release/` | `Response JSON/YYYY-MM-DD.json` |
-| `tn_gov_press_release_sync.py` | `TN-GOV-Press Release/` | `Response JSON/YYYY-MM-DD.json` |
-| `tn_transfers_postings_sync.py` | `TN-IAS_Transfers-Postings/` | `Response JSON/YYYY-MM-DD.json` |
+| `tn_government_orders_sync.py` | `TN-Government-Orders/` | `Response-JSON/<department>.json` |
+| `tn_press_release_sync.py` | `TN-DIPR-Press-Release/` | `Response-JSON/YYYY-MM-DD.json` |
+| `tn_gov_press_release_sync.py` | `TN-GOV-Press-Release/` | `Response-JSON/YYYY-MM-DD.json` |
+| `tn_transfers_postings_sync.py` | `TN-IAS_Transfers-Postings/` | `Response-JSON/YYYY-MM-DD.json` |
 | `tn_magazine_sync.py` | `TN-TVA-Magazine/` | `manifests/magazine.json` (+ daily JSON) |
-| `fetch_tamil_nadu_news.py` | `TN-News/Code/` | `TN-News/Response JSON/YYYY-MM-DD.json` |
+| `fetch_tamil_nadu_news.py` | `TN-News/Code/` | `TN-News/Response-JSON/YYYY-MM-DD.json` |
 | `tn_constituencies_sync.py` | `TN-Constituencies/` | `manifests/tn_constituencies.json` |
 | `tn_govt_schemes_sync.py` | `TN-Govt-Schemes/` | `manifests/tn_govt_schemes.json` |
-| `tn_ministers_wikipedia_portfolios_sync.py` | `TN-GOV_Council Of Ministers/` | `manifests/tn_ministers_wikipedia_portfolios.json` |
-| `tn_ministers_merge_wiki_portfolios.py` | `TN-GOV_Council Of Ministers/` | merges portfolios into `manifests/tn_ministers.json` |
+| `tn_ministers_wikipedia_portfolios_sync.py` | `TN-GOV_Council-Of-Ministers/` | `manifests/tn_ministers_wikipedia_portfolios.json` |
+| `tn_ministers_merge_wiki_portfolios.py` | `TN-GOV_Council-Of-Ministers/` | merges portfolios into `manifests/tn_ministers.json` |
 | `tn_wiki_departments_ministers_sync.py` | `TN-GOV_Departments/` | `manifests/tn_wiki_departments_ministers.json` |
 
 ### 3. Run the web dashboard locally
@@ -188,7 +198,7 @@ Pushing changes to `main` triggers `.github/workflows/deploy-web.yml`, which bui
 
 1. **Fork** this repository on GitHub.
 2. **Enable GitHub Pages** — Settings → Pages → Source: **GitHub Actions**.
-3. **Add secret** `NEWSDATA_API_KEY` if you want the news workflow (Settings → Secrets → Actions).
+3. **Add** `NEWSDATA_API_KEY` to your local `Sync-Config/.env` if you want the news feed.
 4. **Update base path** if your repo name differs from `tavekagov`:
    - `.github/workflows/deploy-web.yml` → `VITE_BASE_PATH`
    - For a user site at `username.github.io`, use `/` instead of `/tavekagov/`.
@@ -219,7 +229,7 @@ No database configuration is required.
 
 ## Security
 
-- Do not commit API keys. Use `Sync-Config/.env` locally and GitHub Actions secrets for `NEWSDATA_API_KEY`.
+- Do not commit API keys. Keep `NEWSDATA_API_KEY` in your local `Sync-Config/.env`.
 - `.env` and `.env.local` are gitignored.
 - See [SECURITY.md](SECURITY.md) for reporting vulnerabilities.
 

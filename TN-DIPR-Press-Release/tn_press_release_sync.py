@@ -1,7 +1,7 @@
 """
 Fetch Tamil Nadu DIPR press releases and save one JSON file per API date.
 
-Each day writes to Response JSON/YYYY-MM-DD.json (the `date` query param).
+Each day writes to Response-JSON/YYYY-MM-DD.json (the `date` query param).
 Re-runs merge items in `response.data` by DIPR `id` (incoming entries win).
 
 Usage:
@@ -29,7 +29,7 @@ import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
-_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response-JSON"
 
 _BASE_API_URL = "https://dipr.tn.gov.in/dipr_api/v1"
 _API_PATH = "general/pressReleases/press_release"

@@ -2,10 +2,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { useLocale } from "@/context/LocaleContext";
 import { useTheme } from "@/context/ThemeContext";
-import type { MessageKey } from "@/i18n/messages";
-import { translate } from "@/i18n/messages";
+import { t } from "@/i18n/messages";
 import { cn } from "@/lib/utils";
 
 export type NavItem = {
@@ -21,7 +19,7 @@ export type NavPrimaryItem = {
   items?: NavItem[];
 };
 
-function localizedPrimaryNav(t: (key: MessageKey) => string): NavPrimaryItem[] {
+function buildPrimaryNav(): NavPrimaryItem[] {
   return [
     { id: "dashboard", label: t("nav.dashboard"), to: "/dashboard" },
     { id: "news", label: t("nav.news"), to: "/news" },
@@ -57,7 +55,7 @@ function localizedPrimaryNav(t: (key: MessageKey) => string): NavPrimaryItem[] {
   ];
 }
 
-export const primaryNav: NavPrimaryItem[] = localizedPrimaryNav((key) => translate("en", key));
+export const primaryNav: NavPrimaryItem[] = buildPrimaryNav();
 
 export const tvkManifestoSubNav: NavItem[] = [
   { to: "/tvk-manifesto", label: "All", matchCategory: "all" },
@@ -116,9 +114,8 @@ function primaryLinkTo(item: NavPrimaryItem): string {
 
 export function TopNav() {
   const { theme, toggleTheme } = useTheme();
-  const { locale, setLocale, t } = useLocale();
   const location = useLocation();
-  const nav = localizedPrimaryNav(t);
+  const nav = primaryNav;
   const activePrimaryId = resolvePrimaryId(location.pathname, nav);
   const subItems = resolveSubItems(location.pathname, activePrimaryId, nav);
 
@@ -161,16 +158,6 @@ export function TopNav() {
         </nav>
 
         <div className="col-start-3 row-start-1 flex shrink-0 items-center justify-end gap-1 justify-self-end">
-          <Button
-            type="button"
-            variant="ghost"
-            size="sm"
-            className="h-8 rounded-full px-2 text-xs"
-            onClick={() => setLocale(locale === "en" ? "ta" : "en")}
-            aria-label="Switch language"
-          >
-            {locale === "en" ? t("locale.ta") : t("locale.en")}
-          </Button>
           <Button
             type="button"
             variant="ghost"

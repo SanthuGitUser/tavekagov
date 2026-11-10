@@ -1,7 +1,7 @@
 """
 Fetch Tamil Nadu government press release images from tn.gov.in and save daily JSON files.
 
-Each release date writes to Response JSON/YYYY-MM-DD.json. Re-runs merge by image_url.
+Each release date writes to Response-JSON/YYYY-MM-DD.json. Re-runs merge by image_url.
 
 Usage:
   1. pip install -r requirements.txt
@@ -29,7 +29,7 @@ import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
-_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response-JSON"
 _KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _ITEM_RE = re.compile(
@@ -262,7 +262,7 @@ def _build_json_records(releases: list[GovPressReleaseImage]) -> list[dict[str, 
 
 
 def _load_reference_manifests() -> tuple[list[dict[str, object]], list[dict[str, object]]]:
-    ministers_path = _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json"
+    ministers_path = _REPO_ROOT / "TN-GOV_Council-Of-Ministers" / "manifests" / "tn_ministers.json"
     departments_path = _REPO_ROOT / "TN-GOV_Departments" / "manifests" / "tn_departments.json"
     ministers_payload = json.loads(ministers_path.read_text(encoding="utf-8"))
     departments_payload = json.loads(departments_path.read_text(encoding="utf-8"))

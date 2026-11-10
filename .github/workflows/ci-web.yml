@@ -5,10 +5,16 @@ on:
     branches: [main]
     paths:
       - "web/**"
+      # The build bundles data from these folders, so data changes can break it.
+      - "TN-*/**"
+      - "Sync-Config/*.json"
       - ".github/workflows/ci-web.yml"
   pull_request:
     paths:
       - "web/**"
+      # The build bundles data from these folders, so data changes can break it.
+      - "TN-*/**"
+      - "Sync-Config/*.json"
       - ".github/workflows/ci-web.yml"
 
 permissions:

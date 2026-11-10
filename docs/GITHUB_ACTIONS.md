@@ -7,8 +7,7 @@ This repository uses GitHub Actions to **test**, **sync data**, **build**, and *
 | Workflow | Purpose | Secret |
 |----------|---------|--------|
 | [ci-web.yml](../.github/workflows/ci-web.yml) | `npm run lint`, `npm run test`, `npm run build` | — |
-| [ci-sync.yml](../.github/workflows/ci-sync.yml) | Python tests in `Sync-Config/` | — |
-| [sync-data.yml](../.github/workflows/sync-data.yml) | Daily `sync-all.ps1`, health refresh, commit, deploy dispatch | `NEWSDATA_API_KEY` (optional) |
+| [ci-sync.yml](../.github/workflows/ci-sync.yml) | Compile every scraper, parse-check PowerShell, Python tests + committed-data checks | — |
 | [deploy-web.yml](../.github/workflows/deploy-web.yml) | Build `web/dist` and deploy GitHub Pages | — |
 
 ## Deploy workflow
@@ -19,7 +18,7 @@ This repository uses GitHub Actions to **test**, **sync data**, **build**, and *
 
 - **Push to `main`** — when GitHub accepts the push event
 - **Manual** — Actions → Deploy Web Dashboard → Run workflow
-- **`repository_dispatch`** — fired after [sync-data.yml](../.github/workflows/sync-data.yml) commits data
+- **`repository_dispatch`** — event type `deploy-web` (e.g. from `scripts/trigger-deploy.ps1` or another automation)
 - **CLI** — `pwsh scripts/trigger-deploy.ps1` (requires [GitHub CLI](https://cli.github.com/) and `gh auth login`)
 
 ### Push did not start a deploy?
@@ -41,20 +40,22 @@ Pushes from an external terminal with SSH or a personal access token usually aut
 - Node.js 22
 - `VITE_BASE_PATH=/tavekagov/` (project site URL)
 
-## Scheduled data sync
+## Data sync (manual, no workflow)
 
-[sync-data.yml](../.github/workflows/sync-data.yml) runs daily (17:30 UTC ≈ 11:00 PM IST) and:
+There is **no scheduled sync workflow**. Tamil Nadu government portals block GitHub-hosted runners, and the workarounds (a self-hosted runner in India or a paid proxy) cost money. Data is refreshed locally:
 
-1. Runs `scripts/sync-all.ps1` (skips IAS PDF OCR on CI via `-SkipTransfersPdfParse`)
-2. Runs `Sync-Config/sync_health.py` to update `last_item_count` / `health_status` in `last-sync.json`
-3. Commits and pushes data changes when present
-4. Dispatches `deploy-web` to refresh GitHub Pages
+```powershell
+.\scripts\sync-all.ps1      # pulls latest, syncs up to today, archives old daily files
+git add -A
+git commit -m "chore: sync data through <date>"
+git push                     # triggers deploy-web.yml
+```
 
-Add **`NEWSDATA_API_KEY`** in repository secrets for the news fetch step.
+If the push does not start a deploy, run `pwsh scripts/trigger-deploy.ps1` (see above).
 
 ## CI (web)
 
-[ci-web.yml](../.github/workflows/ci-web.yml) runs on pushes and PRs that touch `web/`. It runs oxlint, Vitest, and production build with `VITE_BASE_PATH=/tavekagov/`.
+[ci-web.yml](../.github/workflows/ci-web.yml) runs on pushes and PRs that touch `web/` or the data folders it bundles (`TN-*/`, `Sync-Config/*.json`). It runs oxlint, Vitest, and production build with `VITE_BASE_PATH=/tavekagov/`.
 
 ## Fork setup
 
@@ -89,7 +90,6 @@ Ensure **Settings → Actions → General** allows workflow runs on the default 
 |----------|------------|-------|
 | CI Web | `read` | — |
 | CI Sync | `read` | — |
-| Sync Data | `write` | — |
 | Deploy | `read` | `pages: write`, `id-token: write` |
 
 ## Related docs

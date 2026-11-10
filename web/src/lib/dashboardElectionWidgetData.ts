@@ -6,8 +6,8 @@ import {
 } from "@/lib/electionResultsUtils";
 import { tamilNaduAssemblyConstituenciesFeed } from "@/lib/tamilNaduAssemblyConstituenciesFeed";
 import {
-  loadTamilNaduElectionByeResultsFeed,
-  loadTamilNaduElectionResultsFeed,
+  loadTamilNaduElectionByeFinalRoundFeed,
+  loadTamilNaduElectionFinalRoundFeed,
   type TnElectionConstituencyResult,
   type TnElectionResultsFeedData,
 } from "@/lib/tamilNaduElectionResultsFeed";
@@ -140,7 +140,7 @@ export async function loadMay2026DashboardAnalytics(): Promise<May2026DashboardA
 }
 
 async function buildMay2026DashboardAnalytics(): Promise<May2026DashboardAnalytics> {
-  const feed = await loadTamilNaduElectionResultsFeed();
+  const feed = await loadTamilNaduElectionFinalRoundFeed();
   const seatMap = computePartySeatCounts(feed.results);
   const partySeats = [...seatMap.entries()]
     .map(([party, seats]) => ({ party, seats }))
@@ -319,8 +319,8 @@ export async function loadByeVsMayComparisons(): Promise<ByeVsMayAcComparison[]>
 
   cachedByeVsMayPromise = (async () => {
     const [mayFeed, byeFeed] = await Promise.all([
-      loadTamilNaduElectionResultsFeed(),
-      loadTamilNaduElectionByeResultsFeed(),
+      loadTamilNaduElectionFinalRoundFeed(),
+      loadTamilNaduElectionByeFinalRoundFeed(),
     ]);
 
     return TN_2026_BYE_AC_NUMBERS.map((acNumber) => {

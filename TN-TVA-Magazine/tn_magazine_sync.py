@@ -2,7 +2,7 @@
 Fetch Tamil Arasu magazines from Tamil Virtual Academy Digital Library and save to JSON.
 
 Writes a rolling catalog to manifests/magazine.json and a daily snapshot to
-Response JSON/YYYY-MM-DD.json on each run.
+Response-JSON/YYYY-MM-DD.json on each run.
 
 Usage:
   1. pip install -r requirements.txt
@@ -31,7 +31,7 @@ from bs4 import BeautifulSoup
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
-_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response-JSON"
 _KOLKATA = ZoneInfo("Asia/Kolkata")
 _BASE_URL = "https://tamildigitallibrary.in"
 _LIST_ENDPOINT = f"{_BASE_URL}/book-list-data-ajax-new"

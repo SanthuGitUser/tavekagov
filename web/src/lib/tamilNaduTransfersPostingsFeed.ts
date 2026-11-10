@@ -1,5 +1,5 @@
 import { mergeUniqueByKey, normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
-import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
+import { createLazyFeed, loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import type { TnTransferOfficer, TnTransfersPosting, TnTransfersPostingRow } from "@/types/models";
 
 type DailyResponseFile = {
@@ -8,7 +8,7 @@ type DailyResponseFile = {
 };
 
 const dailyJsonLoaders = import.meta.glob(
-  "../../../TN-IAS_Transfers-Postings/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
+  "../../../TN-IAS_Transfers-Postings/Response-JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { import: "default" },
 ) as Record<string, () => Promise<DailyResponseFile>>;
 
@@ -78,13 +78,15 @@ type TransfersPostingsFeed = {
   postings: TnTransfersPosting[];
 };
 
-let loadPromise: Promise<TransfersPostingsFeed> | null = null;
+function emptyFeed(): TransfersPostingsFeed {
+  return {
+    sourceUrl: "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
+    totalResults: 0,
+    postings: [],
+  };
+}
 
-export let tamilNaduTransfersPostingsFeed: TransfersPostingsFeed = {
-  sourceUrl: "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
-  totalResults: 0,
-  postings: [],
-};
+export let tamilNaduTransfersPostingsFeed: TransfersPostingsFeed = emptyFeed();
 
 async function buildFeedAsync(): Promise<TransfersPostingsFeed> {
   const loaded = await loadJsonModules<DailyResponseFile>(dailyJsonLoaders);
@@ -112,26 +114,21 @@ async function buildFeedAsync(): Promise<TransfersPostingsFeed> {
   };
 }
 
+const lazyFeed = createLazyFeed({
+  empty: emptyFeed,
+  build: buildFeedAsync,
+  isLoaded: (feed) => feed.postings.length > 0,
+  onLoaded: (feed) => {
+    tamilNaduTransfersPostingsFeed = feed;
+  },
+});
+
 export function ensureTamilNaduTransfersPostingsFeedLoaded(): Promise<TransfersPostingsFeed> {
-  if (tamilNaduTransfersPostingsFeed.postings.length > 0) {
-    return Promise.resolve(tamilNaduTransfersPostingsFeed);
-  }
-  if (!loadPromise) {
-    loadPromise = buildFeedAsync().then((feed) => {
-      tamilNaduTransfersPostingsFeed = feed;
-      return feed;
-    });
-  }
-  return loadPromise;
+  return lazyFeed.ensureLoaded();
 }
 
 export function resetTamilNaduTransfersPostingsFeedCache(): void {
-  loadPromise = null;
-  tamilNaduTransfersPostingsFeed = {
-    sourceUrl: "https://tnsectdemo.tn.gov.in/ias/transferandpostings.php",
-    totalResults: 0,
-    postings: [],
-  };
+  lazyFeed.reset();
 }
 
 export function getTransfersPostings(): TnTransfersPosting[] {

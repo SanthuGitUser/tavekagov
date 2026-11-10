@@ -40,6 +40,18 @@ export type TnElectionResultsFeedData = {
   results: TnElectionConstituencyResult[];
 };
 
+// Large files: shipped as separate .json assets and fetched on demand (see vite.config.ts).
+import mayRoundwiseUrl from "../../../TN-Election-Results/manifests/tn_assembly_2026_roundwise.json?json-asset";
+import byeRoundwiseUrl from "../../../TN-Election-Results/manifests/tn_assembly_2026_bye_roundwise.json?json-asset";
+
+async function fetchManifest(url: string): Promise<TnElectionResultsManifest> {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Failed to load election results (${response.status})`);
+  }
+  return (await response.json()) as TnElectionResultsManifest;
+}
+
 let cachedMayFeed: TnElectionResultsFeedData | null = null;
 let loadMayPromise: Promise<TnElectionResultsFeedData> | null = null;
 let cachedByeFeed: TnElectionResultsFeedData | null = null;
@@ -64,15 +76,17 @@ export async function loadTamilNaduElectionResultsFeed(): Promise<TnElectionResu
   if (cachedMayFeed) return cachedMayFeed;
   if (loadMayPromise) return loadMayPromise;
 
-  loadMayPromise = import(
-    "../../../TN-Election-Results/manifests/tn_assembly_2026_roundwise.json"
-  ).then((module) => {
-    cachedMayFeed = normalizeManifest(module.default as TnElectionResultsManifest, {
+  loadMayPromise = fetchManifest(mayRoundwiseUrl).then((manifest) => {
+    cachedMayFeed = normalizeManifest(manifest, {
       electionId: "tn-assembly-2026",
       electionLabel: "Tamil Nadu Legislative Assembly — May 2026",
       sourceBase: "https://results.eci.gov.in/ResultAcGenMay2026/",
     });
     return cachedMayFeed;
+  });
+  // Allow a retry after a network error instead of caching the rejection.
+  loadMayPromise.catch(() => {
+    loadMayPromise = null;
   });
 
   return loadMayPromise;
@@ -82,18 +96,56 @@ export async function loadTamilNaduElectionByeResultsFeed(): Promise<TnElectionR
   if (cachedByeFeed) return cachedByeFeed;
   if (loadByePromise) return loadByePromise;
 
-  loadByePromise = import(
-    "../../../TN-Election-Results/manifests/tn_assembly_2026_bye_roundwise.json"
-  ).then((module) => {
-    cachedByeFeed = normalizeManifest(module.default as TnElectionResultsManifest, {
+  loadByePromise = fetchManifest(byeRoundwiseUrl).then((manifest) => {
+    cachedByeFeed = normalizeManifest(manifest, {
       electionId: "tn-assembly-2026-bye",
       electionLabel: "Assembly bye-election — October 2026",
       sourceBase: "https://results.eci.gov.in/ResultAcByeOct2026/",
     });
     return cachedByeFeed;
   });
+  loadByePromise.catch(() => {
+    loadByePromise = null;
+  });
 
   return loadByePromise;
+}
+
+// Final-round-only copies (built by TN-Election-Results/build_final_round_results.py).
+// Enough for seat/vote summaries; ~500 KB instead of the full round-wise data.
+import mayFinalRoundUrl from "../../../TN-Election-Results/manifests/tn_assembly_2026_final_round.json?json-asset";
+import byeFinalRoundUrl from "../../../TN-Election-Results/manifests/tn_assembly_2026_bye_final_round.json?json-asset";
+
+const finalRoundCache = new Map<string, Promise<TnElectionResultsFeedData>>();
+
+function loadFinalRoundFeed(
+  url: string,
+  defaults: { electionId: string; electionLabel: string; sourceBase: string },
+): Promise<TnElectionResultsFeedData> {
+  const cached = finalRoundCache.get(url);
+  if (cached) return cached;
+  const promise = fetchManifest(url).then((manifest) => normalizeManifest(manifest, defaults));
+  finalRoundCache.set(url, promise);
+  promise.catch(() => finalRoundCache.delete(url));
+  return promise;
+}
+
+/** May 2026 results with only each constituency's final round (for summaries). */
+export function loadTamilNaduElectionFinalRoundFeed(): Promise<TnElectionResultsFeedData> {
+  return loadFinalRoundFeed(mayFinalRoundUrl, {
+    electionId: "tn-assembly-2026",
+    electionLabel: "Tamil Nadu Legislative Assembly — May 2026",
+    sourceBase: "https://results.eci.gov.in/ResultAcGenMay2026/",
+  });
+}
+
+/** October 2026 bye-election results with only each constituency's final round. */
+export function loadTamilNaduElectionByeFinalRoundFeed(): Promise<TnElectionResultsFeedData> {
+  return loadFinalRoundFeed(byeFinalRoundUrl, {
+    electionId: "tn-assembly-2026-bye",
+    electionLabel: "Assembly bye-election — October 2026",
+    sourceBase: "https://results.eci.gov.in/ResultAcByeOct2026/",
+  });
 }
 
 export function getElectionResultByAc(

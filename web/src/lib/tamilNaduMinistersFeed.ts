@@ -1,6 +1,6 @@
 import type { TnMinister } from "@/types/models";
 
-import ministersManifest from "../../../TN-GOV_Council Of Ministers/manifests/tn_ministers.json";
+import ministersManifest from "../../../TN-GOV_Council-Of-Ministers/manifests/tn_ministers.json";
 
 type RawMinister = {
   id: number;

@@ -1,25 +1,62 @@
-name: CI Sync Config
+name: CI Sync Scripts
 
 on:
   push:
     branches: [main]
     paths:
       - "Sync-Config/**"
+      - "TN-*/**"
+      - "scripts/**"
+      - "requirements-sync.txt"
       - ".github/workflows/ci-sync.yml"
   pull_request:
     paths:
       - "Sync-Config/**"
+      - "TN-*/**"
+      - "scripts/**"
+      - "requirements-sync.txt"
+      - ".github/workflows/ci-sync.yml"
+
+permissions:
+  contents: read
 
 jobs:
-  pytest:
+  test:
     runs-on: ubuntu-22.04
-    defaults:
-      run:
-        working-directory: Sync-Config
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run tests
-        run: python -m pytest test_json_validate.py -q
+          cache: pip
+          cache-dependency-path: requirements-sync.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements-sync.txt pytest
+
+      # Catches syntax errors in every scraper, including ones CI never runs.
+      - name: Compile all Python scripts
+        run: git ls-files -z '*.py' | xargs -0 python -m py_compile
+
+      - name: Check PowerShell scripts parse
+        shell: pwsh
+        run: |
+          $failed = $false
+          foreach ($file in Get-ChildItem -Recurse -Filter *.ps1 -Path scripts, "TN-DIPR-Press-Release") {
+            $tokens = $null; $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($file.FullName, [ref]$tokens, [ref]$errors)
+            if ($errors.Count -gt 0) {
+              $failed = $true
+              $errors | ForEach-Object { Write-Host "::error file=$($file.FullName)::$($_.Message)" }
+            }
+          }
+          if ($failed) { exit 1 }
+
+      - name: Check derived election files are up to date
+        run: python TN-Election-Results/build_final_round_results.py --check
+
+      - name: Run tests (helpers + committed data checks)
+        working-directory: Sync-Config
+        run: python -m pytest -q

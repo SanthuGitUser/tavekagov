@@ -1,7 +1,7 @@
 """
 Fetch DVAC press releases and save one JSON file per release date.
 
-Each release date writes to Response JSON/YYYY-MM-DD.json. Re-runs merge by pdf_url.
+Each release date writes to Response-JSON/YYYY-MM-DD.json. Re-runs merge by pdf_url.
 
 Usage:
   1. Ensure Sync-Config/.env has TN_DVAC_PRESS_RELEASE_* settings (optional).
@@ -28,7 +28,7 @@ import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
-_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response-JSON"
 
 _KOLKATA = ZoneInfo("Asia/Kolkata")
 

@@ -21,27 +21,30 @@ python tn_dept_sync.py
 | `scripts/sync-all.ps1` | `scripts/` | Runs all sync jobs (recommended) |
 | `scripts/sync-election.ps1` | `scripts/` | Election Form 20 / round-wise import (`TN-Election-Results/`) |
 | `scripts/configure-fork.ps1` | `scripts/` | Set `VITE_BASE_PATH` for forks |
-| `Sync-Config/sync_health.py` | `Sync-Config/` | Refresh `last-sync.json` health metadata |
-| `tn_dvac_press_release_sync.py` | [TN-DVAC-Press Release](../TN-DVAC-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` |
+| `Sync-Config/sync_health.py` | `Sync-Config/` | Refresh `last-sync.json` health metadata (`--fail-on-stale` exits 2 when a feed is stale or empty) |
+| `Sync-Config/data_retention.py` | `Sync-Config/` | Move daily files older than N months to `<feed>/archive/YYYY/` (`--dry-run`, `--keep-months`) |
+| `Sync-Config/check_reachable.py` | `Sync-Config/` | Check source portals respond (`dipr`, `tn-gov`, `ias`, `magazine`; default all) |
+| `build_final_round_results.py` | [TN-Election-Results](../TN-Election-Results/) | `manifests/*_final_round.json` (dashboard copy of round-wise results; re-run after any round-wise import, `--check` in CI) |
+| `tn_dvac_press_release_sync.py` | [TN-DVAC-Press-Release](../TN-DVAC-Press-Release/) | `Response-JSON/YYYY-MM-DD.json` |
 | `tn_finance_notifications_sync.py` | [TN-Finance-Notifications](../TN-Finance-Notifications/) | `manifests/notifications.json` |
 | `fetch_constituency_boundaries.py` | [TN-Map](../TN-Map/) | `tamil-nadu-constituencies.geojson` |
-| `tn_press_release_sync.py` | [TN-DIPR-Press Release](../TN-DIPR-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` |
-| `tn_gov_press_release_sync.py` | [TN-GOV-Press Release](../TN-GOV-Press%20Release/) | `Response JSON/YYYY-MM-DD.json` |
-| `tn_government_orders_sync.py` | [TN-Government Orders](../TN-Government%20Orders/) | `Response JSON/<department>.json` |
-| `tn_transfers_postings_sync.py` | [TN-IAS_Transfers-Postings](../TN-IAS_Transfers-Postings/) | `Response JSON/YYYY-MM-DD.json` |
-| `tn_magazine_sync.py` | [TN-TVA-Magazine](../TN-TVA-Magazine/) | `manifests/magazine.json`, `Response JSON/` |
+| `tn_press_release_sync.py` | [TN-DIPR-Press-Release](../TN-DIPR-Press-Release/) | `Response-JSON/YYYY-MM-DD.json` |
+| `tn_gov_press_release_sync.py` | [TN-GOV-Press-Release](../TN-GOV-Press-Release/) | `Response-JSON/YYYY-MM-DD.json` |
+| `tn_government_orders_sync.py` | [TN-Government-Orders](../TN-Government-Orders/) | `Response-JSON/<department>.json` |
+| `tn_transfers_postings_sync.py` | [TN-IAS_Transfers-Postings](../TN-IAS_Transfers-Postings/) | `Response-JSON/YYYY-MM-DD.json` |
+| `tn_magazine_sync.py` | [TN-TVA-Magazine](../TN-TVA-Magazine/) | `manifests/magazine.json`, `Response-JSON/` |
 | `tn_dept_sync.py` | [TN-GOV_Departments](../TN-GOV_Departments/) | `manifests/tn_departments.json` |
-| `tn_ministers_sync.py` | [TN-GOV_Council Of Ministers](../TN-GOV_Council%20Of%20Ministers/) | `manifests/tn_ministers.json` |
+| `tn_ministers_sync.py` | [TN-GOV_Council-Of-Ministers](../TN-GOV_Council-Of-Ministers/) | `manifests/tn_ministers.json` |
 | `tn_districts_sync.py` | [TN-GOV_Districts](../TN-GOV_Districts/) | `manifests/tn_districts.json` |
 | `tn_constituencies_sync.py` | [TN-Constituencies](../TN-Constituencies/) | `manifests/tn_constituencies.json` |
 | `tn_govt_schemes_sync.py` | [TN-Govt-Schemes](../TN-Govt-Schemes/) | `manifests/tn_govt_schemes.json` |
-| `fetch_tamil_nadu_news.py` | [TN-News/Code](../TN-News/Code/) | `TN-News/Response JSON/YYYY-MM-DD.json` |
+| `fetch_tamil_nadu_news.py` | [TN-News/Code](../TN-News/Code/) | `TN-News/Response-JSON/YYYY-MM-DD.json` |
 
 ## Run everything (recommended)
 
 `scripts/sync-all.ps1` runs all sync jobs in a single command. Each script resumes
 from the last successful run using `Sync-Config/last-sync.json` (and existing
-`Response JSON/YYYY-MM-DD.json` files as a fallback). The end date defaults to
+`Response-JSON/YYYY-MM-DD.json` files as a fallback). The end date defaults to
 **today (IST)** for date-range sources.
 
 ```powershell
@@ -63,7 +66,21 @@ Optional flags:
 .\scripts\sync-all.ps1 -Stage
 .\scripts\sync-all.ps1 -Commit -CommitMessage "chore: sync data"
 .\scripts\sync-all.ps1 -Push
+.\scripts\sync-all.ps1 -FailOnError   # exit 1 at the end if any scraper failed
+.\scripts\sync-all.ps1 -NoPull        # don't `git pull --ff-only` first
+.\scripts\sync-all.ps1 -SkipRetention # don't archive old daily files
 ```
+
+Sync is run **manually** (there is no scheduled workflow). Each run:
+
+1. Pulls the latest commit (`git pull --ff-only`, skipped with a warning if you have local changes)
+2. Runs every scraper from its last checkpoint up to today (IST). A failing scraper doesn't stop the rest; failures are listed at the end
+3. Archives daily files older than the retention window (`Sync-Config/data_retention.py`, see [DATA_RETENTION.md](DATA_RETENTION.md))
+4. Refreshes `Sync-Config/last-sync.json` health and lists stale or empty feeds
+5. Leaves the changes for you to review, commit and push (or use `-Stage` / `-Commit` / `-Push`)
+
+The news step is skipped with a warning when `NEWSDATA_API_KEY` is not set in `Sync-Config/.env`.
+Check connectivity first with `python Sync-Config/check_reachable.py`.
 
 ## CLI flags
 
@@ -79,13 +96,13 @@ python tn_transfers_postings_sync.py --start-date 10-05-2026 --end-date 31-07-20
 |------|--------|---------|
 | `--start-date` | `DD-MM-YYYY` | Last updated date (`Sync-Config/last-sync.json` or latest JSON), else `TN_*_START_DATE` in `.env` |
 | `--end-date` | `DD-MM-YYYY` | Today (Asia/Kolkata) |
-| `--output-dir` | path | `Response JSON/` in module folder |
+| `--output-dir` | path | `Response-JSON/` in module folder |
 
 ### DIPR press releases (`tn_press_release_sync.py`)
 
 - API: `https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release?date=YYYY-MM-DD`
 - Merges by DIPR `id` on re-run
-- See [TN-DIPR-Press Release/README.md](../TN-DIPR-Press%20Release/README.md)
+- See [TN-DIPR-Press-Release/README.md](../TN-DIPR-Press-Release/README.md)
 
 ### Gov press release images (`tn_gov_press_release_sync.py`)
 
@@ -96,7 +113,7 @@ python tn_transfers_postings_sync.py --start-date 10-05-2026 --end-date 31-07-20
 ### Government orders (`tn_government_orders_sync.py`)
 
 - Scrapes `godept_list.php` and fetches each department's G.O. page
-- One JSON file per department under `Response JSON/`
+- One JSON file per department under `Response-JSON/`
 - Only includes G.O.s from **10 May 2026** onward (configurable via `--start-date`)
 - Refresh existing files: `python tn_government_orders_sync.py --from-existing --replace-orders`
 
@@ -108,10 +125,10 @@ python tn_government_orders_sync.py --start-date 10-05-2026 --end-date 31-07-202
 
 | Flag | Purpose |
 |------|---------|
-| `--from-existing` | Refresh JSON files already in `Response JSON/` |
+| `--from-existing` | Refresh JSON files already in `Response-JSON/` |
 | `--replace-orders` | Replace the `orders` array instead of merging |
 | `--start-date` / `--end-date` | Filter G.O.s by date (`DD-MM-YYYY`) |
-| `--output-dir` | Output folder (default: `Response JSON/`) |
+| `--output-dir` | Output folder (default: `Response-JSON/`) |
 
 ### Transfers & postings (`tn_transfers_postings_sync.py`)
 
@@ -176,8 +193,8 @@ python fetch_tamil_nadu_news.py --max-pages 2
 
 | Script | Purpose |
 |--------|---------|
-| `TN-DIPR-Press Release/dipr_press_release_download.py` | Download PDFs locally (Windows helper) |
-| `TN-GOV-Press Release/tn_gov_press_release_parse_titles.py` | Title parsing audit CLI |
+| `TN-DIPR-Press-Release/dipr_press_release_download.py` | Download PDFs locally (Windows helper) |
+| `TN-GOV-Press-Release/tn_gov_press_release_parse_titles.py` | Title parsing audit CLI |
 | `TN-*/migrate_manifests_to_daily_json.py` | One-off manifest → daily JSON migration (where present) |
 
 ## Environment variables

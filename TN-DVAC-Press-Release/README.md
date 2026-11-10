@@ -1,6 +1,6 @@
 # TN-DVAC Press Release
 
-Fetches DVAC press releases from `https://www.dvac.tn.gov.in/Press_Release.html` and writes one JSON file per release date into `Response JSON/YYYY-MM-DD.json`.
+Fetches DVAC press releases from `https://www.dvac.tn.gov.in/Press_Release.html` and writes one JSON file per release date into `Response-JSON/YYYY-MM-DD.json`.
 
 ## Usage
 

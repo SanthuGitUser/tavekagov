@@ -26,7 +26,6 @@ function parseItem(raw: Record<string, unknown>): FinanceNotification | null {
   const title = typeof raw.title === "string" ? raw.title.trim() : "";
   const pdfUrl = typeof raw.pdf_url === "string" ? raw.pdf_url.trim() : "";
   const fileName = typeof raw.file_name === "string" ? raw.file_name.trim() : "";
-  const localPath = typeof raw.local_path === "string" ? raw.local_path.trim() : null;
   if (!title || !pdfUrl || !fileName) return null;
 
   return {
@@ -34,7 +33,6 @@ function parseItem(raw: Record<string, unknown>): FinanceNotification | null {
     title,
     pdf_url: pdfUrl,
     file_name: fileName,
-    local_path: localPath || null,
   };
 }
 

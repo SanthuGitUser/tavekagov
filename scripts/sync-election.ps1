@@ -10,7 +10,9 @@ $pythonExe = if (Test-Path ".venv/Scripts/python.exe") { ".venv/Scripts/python.e
 
 $commands = @(
   @{ Label = "Form 20 (May 2026)"; Script = "TN-Election-Results/import_form20_once.py"; Args = @() },
-  @{ Label = "Round-wise (May 2026)"; Script = "TN-Election-Results/import_roundwise_once.py"; Args = @() }
+  @{ Label = "Round-wise (May 2026)"; Script = "TN-Election-Results/import_roundwise_once.py"; Args = @() },
+  # Must run after the round-wise imports: the dashboard reads these small copies.
+  @{ Label = "Final-round copies for dashboard"; Script = "TN-Election-Results/build_final_round_results.py"; Args = @() }
 )
 
 Write-Host "Election data refresh (manual import scripts)"

@@ -28,7 +28,7 @@ import requests
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
 _TN_DEPTS_MANIFEST = _MANIFESTS_DIR / "tn_departments.json"
-_MINISTERS_MANIFEST = _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json"
+_MINISTERS_MANIFEST = _REPO_ROOT / "TN-GOV_Council-Of-Ministers" / "manifests" / "tn_ministers.json"
 _KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _WIKI_LIST_TITLE = "List_of_departments_of_the_government_of_Tamil_Nadu"
@@ -369,11 +369,11 @@ def main() -> int:
 
     # Record sync in central state if present.
     try:
-        from sync_state import record_sync
+        from sync_state import JOB_WIKI_DEPARTMENTS_MINISTERS, record_sync
 
-        record_sync("JOB_WIKI_DEPARTMENTS_MINISTERS")
-    except Exception:
-        pass
+        record_sync(JOB_WIKI_DEPARTMENTS_MINISTERS)
+    except Exception as exc:  # state is optional; never fail the sync over it
+        print(f"Warning: could not record sync state: {exc}", file=sys.stderr)
 
     return 0
 

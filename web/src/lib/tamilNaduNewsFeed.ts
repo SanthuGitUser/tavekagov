@@ -20,9 +20,9 @@ type NewsResponseFile = {
   results?: NewsArticle[];
 };
 
-// One JSON file per publication day (IST): TN-News/Response JSON/YYYY-MM-DD.json
+// One JSON file per publication day (IST): TN-News/Response-JSON/YYYY-MM-DD.json
 const responseJsonLoaders = import.meta.glob(
-  "../../../TN-News/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
+  "../../../TN-News/Response-JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { import: "default" },
 ) as Record<string, () => Promise<NewsResponseFile>>;
 

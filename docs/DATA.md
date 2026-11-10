@@ -30,14 +30,14 @@ Directory manifests (departments, ministers, districts, schemes, constituencies)
 
 ## Storage patterns
 
-### Daily JSON (`Response JSON/YYYY-MM-DD.json`)
+### Daily JSON (`Response-JSON/YYYY-MM-DD.json`)
 
 One file per calendar day. Used by scrapers that fetch date-range data.
 
 | Folder | Items key | Merge key |
 |--------|-----------|-----------|
-| `TN-DIPR-Press Release/` | `response.data` (DIPR API shape) | DIPR `id` |
-| `TN-GOV-Press Release/` | `releases` | `image_url` |
+| `TN-DIPR-Press-Release/` | `response.data` (DIPR API shape) | DIPR `id` |
+| `TN-GOV-Press-Release/` | `releases` | `image_url` |
 | `TN-IAS_Transfers-Postings/` | `postings` | `pdf_url` |
 | `TN-TVA-Magazine/` | `magazines` | `id` |
 | `TN-News/` | `response.results` | `article_id` |
@@ -62,13 +62,13 @@ Single rolling snapshot, replaced or merged on each sync. Used for directory-sty
 | File | Items key |
 |------|-----------|
 | `TN-GOV_Departments/manifests/tn_departments.json` | `departments` |
-| `TN-GOV_Council Of Ministers/manifests/tn_ministers.json` | `ministers` |
+| `TN-GOV_Council-Of-Ministers/manifests/tn_ministers.json` | `ministers` |
 | `TN-GOV_Districts/manifests/tn_districts.json` | `districts` |
 | `TN-TVA-Magazine/manifests/magazine.json` | `magazines` |
 | `TN-Constituencies/manifests/tn_constituencies.json` | `constituencies` |
 | `TN-Govt-Schemes/manifests/tn_govt_schemes.json` | `schemes` |
 | `TN-TVK-Manifesto/manifests/tvk_manifesto.json` | nested `section` rows (manual PDF extract) |
-| `TN-GOV_Council Of Ministers/manifests/tn_ministers_wikipedia_portfolios.json` | Wikipedia portfolio enrichment |
+| `TN-GOV_Council-Of-Ministers/manifests/tn_ministers_wikipedia_portfolios.json` | Wikipedia portfolio enrichment |
 | `TN-GOV_Departments/manifests/tn_wiki_departments_ministers.json` | Wikipedia department cross-reference |
 
 Typical manifest shape:
@@ -86,7 +86,7 @@ Typical manifest shape:
 
 ### DIPR press releases
 
-Path: `TN-DIPR-Press Release/Response JSON/YYYY-MM-DD.json`
+Path: `TN-DIPR-Press-Release/Response-JSON/YYYY-MM-DD.json`
 
 Uses the native DIPR API response wrapper (not the shared `daily_json.py` helper):
 
@@ -116,7 +116,7 @@ Frontend feed: `web/src/lib/tamilNaduPressReleaseFeed.ts`
 
 ### Government press release images
 
-Path: `TN-GOV-Press Release/Response JSON/YYYY-MM-DD.json`
+Path: `TN-GOV-Press-Release/Response-JSON/YYYY-MM-DD.json`
 
 ```json
 {
@@ -139,7 +139,7 @@ Daily files may also include `ministers[]` and `departments[]` reference snapsho
 
 ### Government orders (G.O.s)
 
-Path: `TN-Government Orders/Response JSON/<department-slug>.json`
+Path: `TN-Government-Orders/Response-JSON/<department-slug>.json`
 
 One file per department. Re-runs replace the `orders` array when using `--replace-orders`.
 
@@ -167,7 +167,7 @@ Only G.O.s on or after **10 May 2026** are included. Frontend: `tamilNaduGovernm
 
 ### IAS transfers and postings
 
-Path: `TN-IAS_Transfers-Postings/Response JSON/YYYY-MM-DD.json`
+Path: `TN-IAS_Transfers-Postings/Response-JSON/YYYY-MM-DD.json`
 
 ```json
 {
@@ -189,7 +189,7 @@ Frontend: `tamilNaduTransfersPostingsFeed.ts`.
 ### Tamil Arasu magazine
 
 - Rolling catalog: `TN-TVA-Magazine/manifests/magazine.json`
-- Optional daily snapshot: `TN-TVA-Magazine/Response JSON/YYYY-MM-DD.json`
+- Optional daily snapshot: `TN-TVA-Magazine/Response-JSON/YYYY-MM-DD.json`
 
 ```json
 {
@@ -204,7 +204,7 @@ Frontend: `tamilNaduMagazineFeed.ts` (reads manifest and daily JSON).
 
 ### Tamil Nadu news
 
-Path: `TN-News/Response JSON/YYYY-MM-DD.json` (one file per **publication day** in IST)
+Path: `TN-News/Response-JSON/YYYY-MM-DD.json` (one file per **publication day** in IST)
 
 Wraps the NewsData.io API response. Saved files omit the API key from `request.params`.
 

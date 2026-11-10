@@ -1,0 +1,10 @@
+# Pinned dependencies for the sync scripts, used by CI (.github/workflows/ci-sync.yml).
+# Covers every scraper run by scripts/sync-all.ps1 except IAS transfer PDF OCR.
+# For OCR, also install TN-IAS_Transfers-Postings/requirements.txt.
+#
+# Local runs of sync-all.ps1 install the per-folder requirements.txt files.
+requests==2.34.2
+urllib3==2.7.0
+python-dotenv==1.2.2
+beautifulsoup4==4.15.0
+pyshp==3.1.6

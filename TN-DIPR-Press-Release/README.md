@@ -13,13 +13,13 @@ It also includes a standalone **PDF downloader** for local use on Windows.
 
 Fetches releases for each day in a date range and writes:
 
-`Response JSON/YYYY-MM-DD.json`
+`Response-JSON/YYYY-MM-DD.json`
 
 ### Setup
 
 ```powershell
 copy "..\Sync-Config\.env.example" "..\Sync-Config\.env"
-cd "TN-DIPR-Press Release"
+cd "TN-DIPR-Press-Release"
 python -m pip install -r requirements.txt
 ```
 
@@ -93,7 +93,7 @@ Optional Windows helper that downloads PDF files to a local date folder (not use
 ### Setup (PowerShell)
 
 ```powershell
-cd "TN-DIPR-Press Release"
+cd "TN-DIPR-Press-Release"
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt

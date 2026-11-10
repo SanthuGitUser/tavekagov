@@ -28,7 +28,6 @@ export type FinanceNotification = {
   title: string;
   pdf_url: string;
   file_name: string;
-  local_path: string | null;
 };
 
 export type TnDept = {

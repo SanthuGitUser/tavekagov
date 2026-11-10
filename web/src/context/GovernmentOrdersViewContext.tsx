@@ -1,48 +1,18 @@
-import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
+import { createStateContext } from "@/context/createStateContext";
 
 export type GovernmentOrdersViewMode = "calendar" | "department";
 
-type GovernmentOrdersViewContextValue = {
+const { Provider, useValue } = createStateContext("GovernmentOrdersView", (): {
   viewMode: GovernmentOrdersViewMode;
-  setViewMode: (value: GovernmentOrdersViewMode) => void;
   selectedDate: string;
-  setSelectedDate: (value: string) => void;
   availableDates: string[];
-  setAvailableDates: (value: string[]) => void;
   selectedDateOrderCount: number;
-  setSelectedDateOrderCount: (value: number) => void;
-};
+} => ({
+  viewMode: "calendar",
+  selectedDate: "",
+  availableDates: [],
+  selectedDateOrderCount: 0,
+}));
 
-const GovernmentOrdersViewContext =
-  createContext<GovernmentOrdersViewContextValue | null>(null);
-
-export function GovernmentOrdersViewProvider({ children }: { children: ReactNode }) {
-  const [viewMode, setViewMode] = useState<GovernmentOrdersViewMode>("calendar");
-  const [selectedDate, setSelectedDate] = useState("");
-  const [availableDates, setAvailableDates] = useState<string[]>([]);
-  const [selectedDateOrderCount, setSelectedDateOrderCount] = useState(0);
-
-  const value = useMemo(
-    () => ({
-      viewMode,
-      setViewMode,
-      selectedDate,
-      setSelectedDate,
-      availableDates,
-      setAvailableDates,
-      selectedDateOrderCount,
-      setSelectedDateOrderCount,
-    }),
-    [viewMode, selectedDate, availableDates, selectedDateOrderCount],
-  );
-
-  return (
-    <GovernmentOrdersViewContext.Provider value={value}>
-      {children}
-    </GovernmentOrdersViewContext.Provider>
-  );
-}
-
-export function useGovernmentOrdersView() {
-  return useContext(GovernmentOrdersViewContext);
-}
+export const GovernmentOrdersViewProvider = Provider;
+export const useGovernmentOrdersView = useValue;

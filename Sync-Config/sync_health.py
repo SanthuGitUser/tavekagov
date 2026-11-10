@@ -7,6 +7,7 @@ Run after sync-all.ps1 or on a schedule to surface item counts and stale-feed wa
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 from datetime import date, timedelta
 from pathlib import Path
@@ -34,6 +35,8 @@ from sync_state import (
 )
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
+# Feeds that publish irregularly (weeks can pass with nothing new).
+_IRREGULAR_FEED_STALE_DAYS = 14
 _ISO_JSON_RE = __import__("re").compile(r"(?P<y>\d{4})-(?P<m>\d{2})-(?P<d>\d{2})\.json$")
 
 
@@ -153,14 +156,38 @@ def _merge_job_health(
     jobs[job_key] = entry
 
 
-def refresh_sync_health(*, stale_days: int = 2) -> Path:
+def _checkpoint_date(jobs: dict[str, Any], job_key: str, file_date: date | None) -> date | None:
+    """Latest of the newest output file and the scraper's own synced_through checkpoint.
+
+    Irregular feeds only write a file when the source publishes something, so the
+    checkpoint is the better signal that the scraper itself is still running.
+    """
+    entry = jobs.get(job_key)
+    raw = entry.get("synced_through") if isinstance(entry, dict) else None
+    checkpoint: date | None = None
+    if isinstance(raw, str):
+        try:
+            checkpoint = date.fromisoformat(raw)
+        except ValueError:
+            checkpoint = None
+    candidates = [d for d in (file_date, checkpoint) if d is not None]
+    return max(candidates) if candidates else None
+
+
+def refresh_sync_health(*, stale_days: int = 2) -> tuple[Path, dict[str, Any]]:
+    """Recompute job health. Returns (state path, jobs).
+
+    data-version.json is only rewritten when job health actually changed, so a
+    sync run with no new data does not produce a commit or a redeploy.
+    """
     state = load_sync_state()
     jobs = state.setdefault("jobs", {})
     if not isinstance(jobs, dict):
         jobs = {}
         state["jobs"] = jobs
+    jobs_before = copy.deepcopy(jobs)
 
-    dipr_dir = _REPO_ROOT / "TN-DIPR-Press Release" / "Response JSON"
+    dipr_dir = _REPO_ROOT / "TN-DIPR-Press-Release" / "Response-JSON"
     dipr_through = find_latest_iso_json_date(dipr_dir)
     dipr_count = _count_daily_items(dipr_dir, ("data",))
     _merge_job_health(
@@ -172,7 +199,7 @@ def refresh_sync_health(*, stale_days: int = 2) -> Path:
         stale_days=stale_days,
     )
 
-    gov_pr_dir = _REPO_ROOT / "TN-GOV-Press Release" / "Response JSON"
+    gov_pr_dir = _REPO_ROOT / "TN-GOV-Press-Release" / "Response-JSON"
     _merge_job_health(
         jobs,
         JOB_GOV_PRESS_RELEASE_IMAGES,
@@ -181,13 +208,15 @@ def refresh_sync_health(*, stale_days: int = 2) -> Path:
         stale_days=stale_days,
     )
 
-    dvac_dir = _REPO_ROOT / "TN-DVAC-Press Release" / "Response JSON"
+    dvac_dir = _REPO_ROOT / "TN-DVAC-Press-Release" / "Response-JSON"
     _merge_job_health(
         jobs,
         JOB_DVAC_PRESS_RELEASES,
         item_count=_count_daily_items(dvac_dir, ("releases",)),
-        synced_through=find_latest_iso_json_date(dvac_dir),
-        stale_days=stale_days,
+        synced_through=_checkpoint_date(
+            jobs, JOB_DVAC_PRESS_RELEASES, find_latest_iso_json_date(dvac_dir)
+        ),
+        stale_days=max(stale_days, _IRREGULAR_FEED_STALE_DAYS),
     )
 
     finance_manifest = _REPO_ROOT / "TN-Finance-Notifications" / "manifests" / "notifications.json"
@@ -197,20 +226,22 @@ def refresh_sync_health(*, stale_days: int = 2) -> Path:
         item_count=_count_manifest_items(finance_manifest, "items"),
     )
 
-    go_dir = _REPO_ROOT / "TN-Government Orders" / "Response JSON"
+    go_dir = _REPO_ROOT / "TN-Government-Orders" / "Response-JSON"
     _merge_job_health(
         jobs,
         JOB_GOVERNMENT_ORDERS,
         item_count=_count_go_orders(go_dir),
     )
 
-    ias_dir = _REPO_ROOT / "TN-IAS_Transfers-Postings" / "Response JSON"
+    ias_dir = _REPO_ROOT / "TN-IAS_Transfers-Postings" / "Response-JSON"
     _merge_job_health(
         jobs,
         JOB_IAS_TRANSFERS_POSTINGS,
         item_count=_count_daily_items(ias_dir, ("postings",)),
-        synced_through=find_latest_iso_json_date(ias_dir),
-        stale_days=stale_days,
+        synced_through=_checkpoint_date(
+            jobs, JOB_IAS_TRANSFERS_POSTINGS, find_latest_iso_json_date(ias_dir)
+        ),
+        stale_days=max(stale_days, _IRREGULAR_FEED_STALE_DAYS),
     )
 
     magazine_manifest = _REPO_ROOT / "TN-TVA-Magazine" / "manifests" / "magazine.json"
@@ -232,7 +263,7 @@ def refresh_sync_health(*, stale_days: int = 2) -> Path:
         jobs,
         JOB_MINISTERS,
         item_count=_count_manifest_items(
-            _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json",
+            _REPO_ROOT / "TN-GOV_Council-Of-Ministers" / "manifests" / "tn_ministers.json",
             "ministers",
         ),
     )
@@ -261,7 +292,7 @@ def refresh_sync_health(*, stale_days: int = 2) -> Path:
         ),
     )
 
-    news_dir = _REPO_ROOT / "TN-News" / "Response JSON"
+    news_dir = _REPO_ROOT / "TN-News" / "Response-JSON"
     news_count = _count_news_articles(news_dir)
     _merge_job_health(
         jobs,
@@ -270,6 +301,9 @@ def refresh_sync_health(*, stale_days: int = 2) -> Path:
         synced_through=find_latest_iso_json_date(news_dir),
         stale_days=stale_days,
     )
+
+    if jobs == jobs_before and state.get("health_refreshed_at"):
+        return save_sync_state(state), jobs
 
     state["health_refreshed_at"] = kolkata_today().isoformat()
     version_path = _REPO_ROOT / "Sync-Config" / "data-version.json"
@@ -285,7 +319,16 @@ def refresh_sync_health(*, stale_days: int = 2) -> Path:
         + "\n",
         encoding="utf-8",
     )
-    return save_sync_state(state)
+    return save_sync_state(state), jobs
+
+
+def unhealthy_jobs(jobs: dict[str, Any]) -> dict[str, str]:
+    """Jobs whose health_status is stale or empty, as {job: status}."""
+    return {
+        key: str(entry.get("health_status"))
+        for key, entry in jobs.items()
+        if isinstance(entry, dict) and entry.get("health_status") in ("stale", "empty")
+    }
 
 
 def main() -> int:
@@ -296,9 +339,20 @@ def main() -> int:
         default=2,
         help="Mark date-range jobs stale if synced_through is older than this many days",
     )
+    parser.add_argument(
+        "--fail-on-stale",
+        action="store_true",
+        help="Exit with code 2 if any job is stale or empty (for CI alerts)",
+    )
     args = parser.parse_args()
-    path = refresh_sync_health(stale_days=max(0, args.stale_days))
+    path, jobs = refresh_sync_health(stale_days=max(0, args.stale_days))
     print(f"Updated sync health in {path}")
+
+    bad = unhealthy_jobs(jobs)
+    for key, status in sorted(bad.items()):
+        print(f"UNHEALTHY: {key} is {status}")
+    if bad and args.fail_on_stale:
+        return 2
     return 0
 
 

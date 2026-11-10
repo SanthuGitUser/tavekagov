@@ -11,11 +11,11 @@ import json
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
-_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response-JSON"
 
 
 def main() -> int:
-    ministers_path = _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json"
+    ministers_path = _REPO_ROOT / "TN-GOV_Council-Of-Ministers" / "manifests" / "tn_ministers.json"
     departments_path = _REPO_ROOT / "TN-GOV_Departments" / "manifests" / "tn_departments.json"
     ministers = {
         item["id"]: item for item in json.loads(ministers_path.read_text(encoding="utf-8"))["ministers"]

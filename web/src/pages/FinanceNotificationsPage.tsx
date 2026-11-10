@@ -1,4 +1,4 @@
-import { ExternalLink, FileDown } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { useMemo } from "react";
 
 import { DashboardEmptyState } from "@/components/dashboard/DashboardWidgetCard";
@@ -49,16 +49,9 @@ export function FinanceNotificationsPage() {
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1 text-primary hover:underline"
-                    title={item.local_path ? `Downloaded to ${item.local_path}` : undefined}
                   >
                     Open <ExternalLink className="h-3.5 w-3.5" />
                   </a>
-                  {item.local_path ? (
-                    <span className="ml-3 inline-flex items-center gap-1 text-xs text-muted-foreground">
-                      <FileDown className="h-3.5 w-3.5" />
-                      Saved
-                    </span>
-                  ) : null}
                 </TableCell>
               </TableRow>
             ))}

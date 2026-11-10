@@ -15,6 +15,12 @@ declare module "*.geojson" {
   export default value;
 }
 
+// Large JSON emitted as a separate asset; the import is its URL (see vite.config.ts).
+declare module "*.json?json-asset" {
+  const url: string;
+  export default url;
+}
+
 interface ImportMetaEnv {
   readonly VITE_BASE_PATH?: string;
 }

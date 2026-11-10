@@ -63,7 +63,7 @@ For news fetch, add `NEWSDATA_API_KEY` to `Sync-Config/.env`.
 
 ## JSON and git
 
-Daily JSON files under `TN-*/Response JSON/` are **expected** in this repository. GitHub Actions also commits them automatically. When reviewing PRs:
+Daily JSON files under `TN-*/Response-JSON/` are **expected** in this repository. GitHub Actions also commits them automatically. When reviewing PRs:
 
 - Prefer smaller, date-scoped JSON updates over huge unrelated backfills
 - Ensure API keys in news JSON are redacted (`<redacted>`)

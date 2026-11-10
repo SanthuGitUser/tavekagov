@@ -1,6 +1,6 @@
 """
 Fetch Tamil Nadu Government Orders by department from tn.gov.in and save one JSON
-file per department under Response JSON/.
+file per department under Response-JSON/.
 
 Source list: https://www.tn.gov.in/godept_list.php
 
@@ -31,7 +31,7 @@ import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
-_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response-JSON"
 _KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _DEPT_LINK_RE = re.compile(

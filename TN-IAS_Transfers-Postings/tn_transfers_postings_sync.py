@@ -1,7 +1,7 @@
 """
 Fetch IAS transfer and posting G.O.s from tnsectdemo.tn.gov.in and save daily JSON files.
 
-Each G.O. date writes to Response JSON/YYYY-MM-DD.json. Re-runs merge by pdf_url.
+Each G.O. date writes to Response-JSON/YYYY-MM-DD.json. Re-runs merge by pdf_url.
 
 Usage:
   1. pip install -r requirements.txt
@@ -30,7 +30,7 @@ from tn_ias_transfer_pdf_parse import TransferOfficer, parse_transfer_pdf
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
-_OUTPUT_DIR = Path(__file__).resolve().parent / "Response JSON"
+_OUTPUT_DIR = Path(__file__).resolve().parent / "Response-JSON"
 _KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _ROW_RE = re.compile(

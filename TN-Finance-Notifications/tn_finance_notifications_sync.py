@@ -1,11 +1,10 @@
 """
-Fetch Finance Department homepage notifications and download linked PDFs.
+Fetch Finance Department homepage notifications (titles + links to the official PDFs).
 
 Writes a rolling manifest to:
   TN-Finance-Notifications/manifests/notifications.json
 
-Downloads PDFs to:
-  TN-Finance-Notifications/PDFs/
+PDFs are not downloaded or re-hosted: the dashboard links to the source site.
 """
 
 from __future__ import annotations
@@ -14,7 +13,6 @@ import argparse
 import json
 import re
 import sys
-import time
 from dataclasses import asdict, dataclass
 from datetime import datetime
 from pathlib import Path
@@ -27,7 +25,6 @@ import requests
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _OUT_DIR = Path(__file__).resolve().parent
-_PDF_DIR = _OUT_DIR / "PDFs"
 _MANIFEST_PATH = _OUT_DIR / "manifests" / "notifications.json"
 _KOLKATA = ZoneInfo("Asia/Kolkata")
 
@@ -55,7 +52,6 @@ class FinanceNotification:
     title: str
     pdf_url: str
     file_name: str
-    local_path: str | None
 
 
 def _load_config() -> str:
@@ -107,7 +103,6 @@ def parse_notifications(html: str) -> list[FinanceNotification]:
                 title=title,
                 pdf_url=href,
                 file_name=_file_name_from_url(href),
-                local_path=None,
             )
         )
 
@@ -128,22 +123,8 @@ def _load_existing_manifest(path: Path) -> dict[str, Any] | None:
         return None
 
 
-def _download_pdf(session: requests.Session, url: str, out_path: Path) -> None:
-    if str(_SYNC_CONFIG) not in sys.path:
-        sys.path.insert(0, str(_SYNC_CONFIG))
-    from http_client import DEFAULT_CONNECT_READ_TIMEOUT
-
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    with session.get(url, stream=True, timeout=DEFAULT_CONNECT_READ_TIMEOUT) as resp:
-        resp.raise_for_status()
-        with out_path.open("wb") as f:
-            for chunk in resp.iter_content(chunk_size=1024 * 128):
-                if chunk:
-                    f.write(chunk)
-
-
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Sync Finance Department notifications PDFs.")
+    parser = argparse.ArgumentParser(description="Sync Finance Department notification links.")
     parser.add_argument(
         "--output-dir",
         default=str(_OUT_DIR),
@@ -153,14 +134,13 @@ def main() -> int:
         "--max-items",
         type=int,
         default=50,
-        help="Max notification items to keep/download (default 50).",
+        help="Max notification items to keep (default 50).",
     )
     args = parser.parse_args()
 
     source_url = _load_config()
 
     out_dir = Path(args.output_dir)
-    pdf_dir = out_dir / "PDFs"
     manifest_path = out_dir / "manifests" / "notifications.json"
 
     if str(_SYNC_CONFIG) not in sys.path:
@@ -178,7 +158,6 @@ def main() -> int:
 
     existing = _load_existing_manifest(manifest_path) or {}
     existing_items = existing.get("items")
-    existing_by_url: dict[str, dict[str, Any]] = {}
     existing_urls: set[str] = set()
     if isinstance(existing_items, list):
         for item in existing_items:
@@ -186,32 +165,13 @@ def main() -> int:
                 continue
             url = str(item.get("pdf_url") or "").strip()
             if url:
-                existing_by_url[url] = item
                 existing_urls.add(url)
 
-    downloaded = 0
-    for index, note in enumerate(notifications, start=1):
-        out_path = pdf_dir / note.file_name
-        if not out_path.exists():
-            print(f"  [{index}/{len(notifications)}] Downloading: {note.file_name}")
-            _download_pdf(session, note.pdf_url, out_path)
-            downloaded += 1
-            time.sleep(0.2)
-
-        local_path = str(out_path.relative_to(out_dir)).replace("\\", "/")
-        existing_record = existing_by_url.get(note.pdf_url) or {}
-        notifications[index - 1] = FinanceNotification(
-            title=note.title,
-            pdf_url=note.pdf_url,
-            file_name=note.file_name,
-            local_path=existing_record.get("local_path") or local_path,
-        )
-
-    # Avoid touching the manifest when there are no new PDFs (append-only semantics).
+    # Avoid touching the manifest when there are no new notifications (append-only semantics).
     scraped_urls = {note.pdf_url for note in notifications}
     has_new_items = bool(scraped_urls - existing_urls) if existing_urls else True
     if existing and not has_new_items:
-        print("No new notification PDFs found; manifest unchanged.")
+        print("No new notifications found; manifest unchanged.")
         fetched_at = datetime.now(_KOLKATA).isoformat(timespec="seconds")
         existing["lastFetchedAt"] = fetched_at
         if not existing.get("fetchedAt"):
@@ -225,13 +185,12 @@ def main() -> int:
         "source_url": source_url,
         "fetchedAt": fetched_at,
         "count": len(notifications),
-        "downloadedThisRun": downloaded,
+        "newThisRun": len(scraped_urls - existing_urls),
         "items": [asdict(item) for item in notifications],
     }
     _safe_write_json(manifest_path, payload)
     record_sync(JOB_FINANCE_NOTIFICATIONS, extra={"count": len(notifications)})
     print(f"Saved manifest: {manifest_path}")
-    print(f"Downloaded {downloaded} PDF(s) this run.")
     return 0
 
 

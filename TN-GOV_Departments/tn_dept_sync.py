@@ -6,7 +6,7 @@ Usage:
   2. python tn_dept_sync.py
   3. Optional: python tn_dept_sync.py --output-dir path/to/manifests
 
-Minister portfolio fallback uses TN-GOV_Council Of Ministers/manifests/tn_ministers.json when
+Minister portfolio fallback uses TN-GOV_Council-Of-Ministers/manifests/tn_ministers.json when
 department profile pages do not expose a minister name.
 """
 
@@ -30,7 +30,7 @@ import requests
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
 _MANIFESTS_DIR = Path(__file__).resolve().parent / "manifests"
-_MINISTERS_MANIFEST = _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json"
+_MINISTERS_MANIFEST = _REPO_ROOT / "TN-GOV_Council-Of-Ministers" / "manifests" / "tn_ministers.json"
 _KOLKATA = ZoneInfo("Asia/Kolkata")
 
 _CARD_RE = re.compile(

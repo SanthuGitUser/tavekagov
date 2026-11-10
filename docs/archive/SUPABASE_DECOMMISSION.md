@@ -18,7 +18,7 @@ If the project still has tables with data you have not migrated to JSON:
 2. Select your project ref
 3. **Database → Backups** or use `pg_dump` before deletion
 
-Most scraped datasets now live under `TN-*/Response JSON/` and `TN-*/manifests/` in git.
+Most scraped datasets now live under `TN-*/Response-JSON/` and `TN-*/manifests/` in git.
 
 ## 3. Delete the Supabase project
 

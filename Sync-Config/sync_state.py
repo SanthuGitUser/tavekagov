@@ -39,6 +39,7 @@ JOB_DISTRICTS = "districts"
 JOB_CONSTITUENCIES = "constituencies"
 JOB_NEWS = "news"
 JOB_GOVT_SCHEMES = "govt_schemes"
+JOB_WIKI_DEPARTMENTS_MINISTERS = "wiki_departments_ministers"
 
 _ALL_JOBS = (
     JOB_DIPR_PRESS_RELEASES,
@@ -322,7 +323,7 @@ def print_sync_plan(repo_root: Path) -> None:
         _plan_date_range_job(
             JOB_DIPR_PRESS_RELEASES,
             "DIPR",
-            repo_root / "TN-DIPR-Press Release/Response JSON",
+            repo_root / "TN-DIPR-Press-Release/Response-JSON",
             default_start,
         )
     )
@@ -330,7 +331,7 @@ def print_sync_plan(repo_root: Path) -> None:
         _plan_date_range_job(
             JOB_GOV_PRESS_RELEASE_IMAGES,
             "PR images",
-            repo_root / "TN-GOV-Press Release/Response JSON",
+            repo_root / "TN-GOV-Press-Release/Response-JSON",
             default_start,
         )
     )
@@ -338,7 +339,7 @@ def print_sync_plan(repo_root: Path) -> None:
         _plan_date_range_job(
             JOB_DVAC_PRESS_RELEASES,
             "DVAC",
-            repo_root / "TN-DVAC-Press Release/Response JSON",
+            repo_root / "TN-DVAC-Press-Release/Response-JSON",
             "01-05-2026",
         )
     )
@@ -348,13 +349,13 @@ def print_sync_plan(repo_root: Path) -> None:
         _plan_date_range_job(
             JOB_IAS_TRANSFERS_POSTINGS,
             "Transfers",
-            repo_root / "TN-IAS_Transfers-Postings/Response JSON",
+            repo_root / "TN-IAS_Transfers-Postings/Response-JSON",
             default_start,
         )
     )
     start, end = resolve_date_range(
         JOB_GOVERNMENT_ORDERS,
-        output_dir=repo_root / "TN-Government Orders/Response JSON",
+        output_dir=repo_root / "TN-Government-Orders/Response-JSON",
         default_start_display=default_start,
     )
     if start > end:
@@ -364,7 +365,7 @@ def print_sync_plan(repo_root: Path) -> None:
 
     since = resolve_since_date(
         JOB_TVA_MAGAZINE,
-        output_dir=repo_root / "TN-TVA-Magazine/Response JSON",
+        output_dir=repo_root / "TN-TVA-Magazine/Response-JSON",
         manifest_path=repo_root / "TN-TVA-Magazine/manifests/magazine.json",
         default_start_display=default_start,
     )

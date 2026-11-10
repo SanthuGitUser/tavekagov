@@ -2,7 +2,7 @@
 Parse gov press release titles into minister and department enrichment fields.
 
 Used by tn_gov_press_release_sync.py during JSON export. Optional CLI audits
-enrichment coverage across Response JSON files.
+enrichment coverage across Response-JSON files.
 
 Usage:
   python tn_gov_press_release_parse_titles.py
@@ -576,7 +576,7 @@ def _department_from_minister(
 
 def load_ministers_from_manifest(manifest_path: Path | None = None) -> list[MinisterRow]:
     path = manifest_path or (
-        _REPO_ROOT / "TN-GOV_Council Of Ministers" / "manifests" / "tn_ministers.json"
+        _REPO_ROOT / "TN-GOV_Council-Of-Ministers" / "manifests" / "tn_ministers.json"
     )
     payload = json.loads(path.read_text(encoding="utf-8"))
     return [
@@ -758,7 +758,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--json-dir",
-        default=str(_REPO_ROOT / "TN-GOV-Press Release" / "Response JSON"),
+        default=str(_REPO_ROOT / "TN-GOV-Press-Release" / "Response-JSON"),
         help="Folder containing YYYY-MM-DD.json files.",
     )
     parser.add_argument(

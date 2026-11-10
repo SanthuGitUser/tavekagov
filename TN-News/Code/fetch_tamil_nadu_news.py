@@ -1,7 +1,7 @@
 """
 Fetch Tamil Nadu news from NewsData.io and save one JSON file per publication day.
 
-Each article is stored in Response JSON/YYYY-MM-DD.json where the date is the
+Each article is stored in Response-JSON/YYYY-MM-DD.json where the date is the
 article's publication calendar day in Asia/Kolkata (matching the web dashboard).
 Re-runs merge by article_id/link (incoming entries win on conflict).
 
@@ -36,7 +36,7 @@ import requests
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 _SYNC_CONFIG = _REPO_ROOT / "Sync-Config"
-_OUTPUT_DIR = Path(__file__).resolve().parent.parent / "Response JSON"
+_OUTPUT_DIR = Path(__file__).resolve().parent.parent / "Response-JSON"
 
 NEWSDATA_NEWS_URL = "https://newsdata.io/api/1/news"
 DEFAULT_Q = "Tamil Nadu"
@@ -436,7 +436,7 @@ def save_responses_by_pub_date(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Fetch Tamil Nadu news from NewsData.io and save to Response JSON/.",
+        description="Fetch Tamil Nadu news from NewsData.io and save to Response-JSON/.",
     )
     parser.add_argument(
         "--output-dir",

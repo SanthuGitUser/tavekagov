@@ -238,14 +238,6 @@ export function GovernmentOrdersTimeline({
     return selectedDepartmentTile?.orders ?? [];
   }, [selectedDepartmentTile]);
 
-  if (!latestDate) {
-    return (
-      <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
-        {isSearching ? "No government orders match your search." : "No government orders found."}
-      </p>
-    );
-  }
-
   const ordersByDate = useMemo(() => {
     const grouped = new Map<string, TnGoDept[]>();
     for (const order of viewOrders) {
@@ -258,6 +250,15 @@ export function GovernmentOrdersTimeline({
     entries.forEach(([, dayOrders]) => dayOrders.sort(compareByGoNumber));
     return entries;
   }, [viewOrders]);
+
+  if (!latestDate) {
+    return (
+      <p className="rounded-lg border border-border bg-card p-4 text-center text-sm text-muted-foreground">
+        {isSearching ? "No government orders match your search." : "No government orders found."}
+      </p>
+    );
+  }
+
 
   if (viewMode === "department") {
     return (

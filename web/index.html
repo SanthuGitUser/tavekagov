@@ -14,8 +14,30 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TavekaGov" />
+    <meta property="og:title" content="TavekaGov — Tamil Nadu open data" />
+    <meta
+      property="og:description"
+      content="Independent dashboard of Tamil Nadu press releases, government orders, transfers, schemes, constituencies and election results."
+    />
+    <meta name="twitter:card" content="summary" />
     <title>TavekaGov — TN Open Data</title>
     <script>
+      // GitHub Pages serves 404.html for deep links; it saves the requested path
+      // and redirects here. Restore it before the router reads the URL.
+      (function () {
+        try {
+          var redirect = sessionStorage.getItem("gh-pages-redirect");
+          if (redirect) {
+            sessionStorage.removeItem("gh-pages-redirect");
+            history.replaceState(null, "", redirect);
+          }
+        } catch (error) {
+          /* ignore */
+        }
+      })();
       (function () {
         try {
           if (localStorage.getItem("tavekagov-theme") === "dark") {

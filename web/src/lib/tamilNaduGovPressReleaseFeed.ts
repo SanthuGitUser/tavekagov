@@ -1,5 +1,5 @@
 import { normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
-import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
+import { createLazyFeed, loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
 import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
 import type { GovPressRelease, TnDept, TnMinister } from "@/types/models";
@@ -18,7 +18,7 @@ type DailyResponseFile = {
 };
 
 const dailyJsonLoaders = import.meta.glob(
-  "../../../TN-GOV-Press Release/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
+  "../../../TN-GOV-Press-Release/Response-JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { import: "default" },
 ) as Record<string, () => Promise<DailyResponseFile>>;
 
@@ -254,15 +254,17 @@ type GovPressReleaseFeed = {
   departments: TnDept[];
 };
 
-let loadPromise: Promise<GovPressReleaseFeed> | null = null;
+function emptyFeed(): GovPressReleaseFeed {
+  return {
+    sourceUrl: "https://www.tn.gov.in/press_release.php",
+    totalResults: 0,
+    releases: [],
+    ministers: [],
+    departments: [],
+  };
+}
 
-export let tamilNaduGovPressReleaseFeed: GovPressReleaseFeed = {
-  sourceUrl: "https://www.tn.gov.in/press_release.php",
-  totalResults: 0,
-  releases: [],
-  ministers: [],
-  departments: [],
-};
+export let tamilNaduGovPressReleaseFeed: GovPressReleaseFeed = emptyFeed();
 
 async function buildFeedAsync(): Promise<GovPressReleaseFeed> {
   const { releases, ministers, departments, sourceUrl } = await mergeDailyFiles();
@@ -276,28 +278,21 @@ async function buildFeedAsync(): Promise<GovPressReleaseFeed> {
   };
 }
 
+const lazyFeed = createLazyFeed({
+  empty: emptyFeed,
+  build: buildFeedAsync,
+  isLoaded: (feed) => feed.releases.length > 0,
+  onLoaded: (feed) => {
+    tamilNaduGovPressReleaseFeed = feed;
+  },
+});
+
 export function ensureTamilNaduGovPressReleaseFeedLoaded(): Promise<GovPressReleaseFeed> {
-  if (tamilNaduGovPressReleaseFeed.releases.length > 0) {
-    return Promise.resolve(tamilNaduGovPressReleaseFeed);
-  }
-  if (!loadPromise) {
-    loadPromise = buildFeedAsync().then((feed) => {
-      tamilNaduGovPressReleaseFeed = feed;
-      return feed;
-    });
-  }
-  return loadPromise;
+  return lazyFeed.ensureLoaded();
 }
 
 export function resetTamilNaduGovPressReleaseFeedCache(): void {
-  loadPromise = null;
-  tamilNaduGovPressReleaseFeed = {
-    sourceUrl: "https://www.tn.gov.in/press_release.php",
-    totalResults: 0,
-    releases: [],
-    ministers: [],
-    departments: [],
-  };
+  lazyFeed.reset();
 }
 
 export function getGovPressReleases(): GovPressRelease[] {

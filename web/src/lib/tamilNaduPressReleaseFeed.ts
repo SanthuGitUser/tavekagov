@@ -1,6 +1,6 @@
 import { enrichPressReleases } from "@/lib/pressReleaseNameParser";
 import { parseRawPressReleaseItems } from "@/lib/pressReleaseParseUtils";
-import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
+import { createLazyFeed, loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import { tamilNaduDepartmentsFeed } from "@/lib/tamilNaduDepartmentsFeed";
 import { tamilNaduMinistersFeed } from "@/lib/tamilNaduMinistersFeed";
 import type { PressRelease } from "@/types/models";
@@ -27,9 +27,9 @@ export type PressReleaseFeedResponse = {
   results: PressRelease[];
 };
 
-// One JSON file per API date: TN-DIPR-Press Release/Response JSON/YYYY-MM-DD.json
+// One JSON file per API date: TN-DIPR-Press-Release/Response-JSON/YYYY-MM-DD.json
 const responseJsonLoaders = import.meta.glob(
-  "../../../TN-DIPR-Press Release/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
+  "../../../TN-DIPR-Press-Release/Response-JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { import: "default" },
 ) as Record<string, () => Promise<PressReleaseResponseFile>>;
 
@@ -38,14 +38,16 @@ const enrichmentContext = {
   ministers: tamilNaduMinistersFeed.ministers,
 };
 
-let loadPromise: Promise<PressReleaseFeedResponse> | null = null;
+function emptyFeed(): PressReleaseFeedResponse {
+  return {
+    totalResults: 0,
+    filterDate: "",
+    sourceUrl: "https://dipr.tn.gov.in/press-release1.html",
+    results: [],
+  };
+}
 
-export let tamilNaduPressReleaseFeed: PressReleaseFeedResponse = {
-  totalResults: 0,
-  filterDate: "",
-  sourceUrl: "https://dipr.tn.gov.in/press-release1.html",
-  results: [],
-};
+export let tamilNaduPressReleaseFeed: PressReleaseFeedResponse = emptyFeed();
 
 async function buildFeedAsync(): Promise<PressReleaseFeedResponse> {
   const loadedFiles = await loadJsonModules<PressReleaseResponseFile>(responseJsonLoaders);
@@ -88,27 +90,21 @@ function extractRawItems(file: PressReleaseResponseFile): Record<string, unknown
   return Array.isArray(data) ? data : [];
 }
 
+const lazyFeed = createLazyFeed({
+  empty: emptyFeed,
+  build: buildFeedAsync,
+  isLoaded: (feed) => feed.results.length > 0,
+  onLoaded: (feed) => {
+    tamilNaduPressReleaseFeed = feed;
+  },
+});
+
 export function ensureTamilNaduPressReleaseFeedLoaded(): Promise<PressReleaseFeedResponse> {
-  if (tamilNaduPressReleaseFeed.results.length > 0) {
-    return Promise.resolve(tamilNaduPressReleaseFeed);
-  }
-  if (!loadPromise) {
-    loadPromise = buildFeedAsync().then((feed) => {
-      tamilNaduPressReleaseFeed = feed;
-      return feed;
-    });
-  }
-  return loadPromise;
+  return lazyFeed.ensureLoaded();
 }
 
 export function resetTamilNaduPressReleaseFeedCache(): void {
-  loadPromise = null;
-  tamilNaduPressReleaseFeed = {
-    totalResults: 0,
-    filterDate: "",
-    sourceUrl: "https://dipr.tn.gov.in/press-release1.html",
-    results: [],
-  };
+  lazyFeed.reset();
 }
 
 export function getAvailablePressReleaseDates(): string[] {

@@ -1,5 +1,5 @@
 import { mergeUniqueByKey, normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
-import { loadJsonModulesByKey } from "@/lib/lazyDailyJsonFeed";
+import { createLazyFeed, loadJsonModulesByKey } from "@/lib/lazyDailyJsonFeed";
 import type { TnGoDept } from "@/types/models";
 
 type DepartmentResponseFile = {
@@ -10,7 +10,7 @@ type DepartmentResponseFile = {
 };
 
 const departmentJsonLoaders = import.meta.glob(
-  "../../../TN-Government Orders/Response JSON/*.json",
+  "../../../TN-Government-Orders/Response-JSON/*.json",
   { import: "default" },
 ) as Record<string, () => Promise<DepartmentResponseFile>>;
 
@@ -74,13 +74,15 @@ type GovernmentOrdersFeed = {
   orders: TnGoDept[];
 };
 
-let loadPromise: Promise<GovernmentOrdersFeed> | null = null;
+function emptyFeed(): GovernmentOrdersFeed {
+  return {
+    sourceUrl: "https://www.tn.gov.in/godept_list.php",
+    totalResults: 0,
+    orders: [],
+  };
+}
 
-export let tamilNaduGovernmentOrdersFeed: GovernmentOrdersFeed = {
-  sourceUrl: "https://www.tn.gov.in/godept_list.php",
-  totalResults: 0,
-  orders: [],
-};
+export let tamilNaduGovernmentOrdersFeed: GovernmentOrdersFeed = emptyFeed();
 
 async function buildFeedAsync(): Promise<GovernmentOrdersFeed> {
   const loaded = await loadJsonModulesByKey<DepartmentResponseFile>(departmentJsonLoaders);
@@ -108,17 +110,17 @@ async function buildFeedAsync(): Promise<GovernmentOrdersFeed> {
   };
 }
 
+const lazyFeed = createLazyFeed({
+  empty: emptyFeed,
+  build: buildFeedAsync,
+  isLoaded: (feed) => feed.orders.length > 0,
+  onLoaded: (feed) => {
+    tamilNaduGovernmentOrdersFeed = feed;
+  },
+});
+
 export function ensureTamilNaduGovernmentOrdersFeedLoaded(): Promise<GovernmentOrdersFeed> {
-  if (tamilNaduGovernmentOrdersFeed.orders.length > 0) {
-    return Promise.resolve(tamilNaduGovernmentOrdersFeed);
-  }
-  if (!loadPromise) {
-    loadPromise = buildFeedAsync().then((feed) => {
-      tamilNaduGovernmentOrdersFeed = feed;
-      return feed;
-    });
-  }
-  return loadPromise;
+  return lazyFeed.ensureLoaded();
 }
 
 export function getGovernmentOrders(): TnGoDept[] {
@@ -126,10 +128,5 @@ export function getGovernmentOrders(): TnGoDept[] {
 }
 
 export function resetTamilNaduGovernmentOrdersFeedCache(): void {
-  loadPromise = null;
-  tamilNaduGovernmentOrdersFeed = {
-    sourceUrl: "https://www.tn.gov.in/godept_list.php",
-    totalResults: 0,
-    orders: [],
-  };
+  lazyFeed.reset();
 }

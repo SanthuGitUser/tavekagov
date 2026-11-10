@@ -1,5 +1,5 @@
 import { mergeUniqueByKey, stableIdFromKey } from "@/lib/jsonFeedUtils";
-import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
+import { createLazyFeed, loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import type { Magazine } from "@/types/models";
 
 import magazineManifest from "../../../TN-TVA-Magazine/manifests/magazine.json";
@@ -16,7 +16,7 @@ type MagazineManifest = {
 };
 
 const dailyJsonLoaders = import.meta.glob(
-  "../../../TN-TVA-Magazine/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
+  "../../../TN-TVA-Magazine/Response-JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { import: "default" },
 ) as Record<string, () => Promise<DailyResponseFile>>;
 
@@ -63,13 +63,15 @@ type MagazineFeed = {
   magazines: Magazine[];
 };
 
-let loadPromise: Promise<MagazineFeed> | null = null;
+function emptyFeed(): MagazineFeed {
+  return {
+    sourceUrl: "https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21",
+    totalResults: 0,
+    magazines: [],
+  };
+}
 
-export let tamilNaduMagazineFeed: MagazineFeed = {
-  sourceUrl: "https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21",
-  totalResults: 0,
-  magazines: [],
-};
+export let tamilNaduMagazineFeed: MagazineFeed = emptyFeed();
 
 async function buildFeedAsync(): Promise<MagazineFeed> {
   const loaded = await loadJsonModules<DailyResponseFile>(dailyJsonLoaders);
@@ -96,26 +98,21 @@ async function buildFeedAsync(): Promise<MagazineFeed> {
   };
 }
 
+const lazyFeed = createLazyFeed({
+  empty: emptyFeed,
+  build: buildFeedAsync,
+  isLoaded: (feed) => feed.magazines.length > 0,
+  onLoaded: (feed) => {
+    tamilNaduMagazineFeed = feed;
+  },
+});
+
 export function ensureTamilNaduMagazineFeedLoaded(): Promise<MagazineFeed> {
-  if (tamilNaduMagazineFeed.magazines.length > 0) {
-    return Promise.resolve(tamilNaduMagazineFeed);
-  }
-  if (!loadPromise) {
-    loadPromise = buildFeedAsync().then((feed) => {
-      tamilNaduMagazineFeed = feed;
-      return feed;
-    });
-  }
-  return loadPromise;
+  return lazyFeed.ensureLoaded();
 }
 
 export function resetTamilNaduMagazineFeedCache(): void {
-  loadPromise = null;
-  tamilNaduMagazineFeed = {
-    sourceUrl: "https://tamildigitallibrary.in/book-search-new?sub_cat_id=36&cat_id=21",
-    totalResults: 0,
-    magazines: [],
-  };
+  lazyFeed.reset();
 }
 
 export function getMagazines(): Magazine[] {

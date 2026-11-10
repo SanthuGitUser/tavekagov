@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 
 import { PageLoading } from "@/components/shared/PageLoading";
 import { Input } from "@/components/ui/input";
-import { useLocale } from "@/context/LocaleContext";
+import { t } from "@/i18n/messages";
 import { loadSiteSearchDocuments } from "@/lib/siteSearchDocuments";
 import { querySearchIndex } from "@/lib/siteSearchIndex";
 
 export function SearchPage() {
-  const { t } = useLocale();
   const [ready, setReady] = useState(false);
   const [query, setQuery] = useState("");
 

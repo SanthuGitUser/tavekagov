@@ -1,5 +1,5 @@
 import { normalizeToIsoDate, stableIdFromKey } from "@/lib/jsonFeedUtils";
-import { loadJsonModules } from "@/lib/lazyDailyJsonFeed";
+import { createLazyFeed, loadJsonModules } from "@/lib/lazyDailyJsonFeed";
 import type { DvacPressRelease } from "@/types/models";
 
 type DailyResponseFile = {
@@ -15,7 +15,7 @@ export type DvacPressReleaseFeedResponse = {
 };
 
 const dailyJsonLoaders = import.meta.glob(
-  "../../../TN-DVAC-Press Release/Response JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
+  "../../../TN-DVAC-Press-Release/Response-JSON/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].json",
   { import: "default" },
 ) as Record<string, () => Promise<DailyResponseFile>>;
 
@@ -36,13 +36,15 @@ function parseRelease(raw: Record<string, unknown>): DvacPressRelease | null {
   };
 }
 
-let loadPromise: Promise<DvacPressReleaseFeedResponse> | null = null;
+function emptyFeed(): DvacPressReleaseFeedResponse {
+  return {
+    sourceUrl: "https://www.dvac.tn.gov.in/Press_Release.html",
+    totalResults: 0,
+    results: [],
+  };
+}
 
-export let tamilNaduDvacPressReleaseFeed: DvacPressReleaseFeedResponse = {
-  sourceUrl: "https://www.dvac.tn.gov.in/Press_Release.html",
-  totalResults: 0,
-  results: [],
-};
+export let tamilNaduDvacPressReleaseFeed: DvacPressReleaseFeedResponse = emptyFeed();
 
 async function buildFeedAsync(): Promise<DvacPressReleaseFeedResponse> {
   const releasesByUrl = new Map<string, DvacPressRelease>();
@@ -73,26 +75,21 @@ async function buildFeedAsync(): Promise<DvacPressReleaseFeedResponse> {
   };
 }
 
+const lazyFeed = createLazyFeed({
+  empty: emptyFeed,
+  build: buildFeedAsync,
+  isLoaded: (feed) => feed.results.length > 0,
+  onLoaded: (feed) => {
+    tamilNaduDvacPressReleaseFeed = feed;
+  },
+});
+
 export function ensureTamilNaduDvacPressReleaseFeedLoaded(): Promise<DvacPressReleaseFeedResponse> {
-  if (tamilNaduDvacPressReleaseFeed.results.length > 0) {
-    return Promise.resolve(tamilNaduDvacPressReleaseFeed);
-  }
-  if (!loadPromise) {
-    loadPromise = buildFeedAsync().then((feed) => {
-      tamilNaduDvacPressReleaseFeed = feed;
-      return feed;
-    });
-  }
-  return loadPromise;
+  return lazyFeed.ensureLoaded();
 }
 
 export function resetTamilNaduDvacPressReleaseFeedCache(): void {
-  loadPromise = null;
-  tamilNaduDvacPressReleaseFeed = {
-    sourceUrl: "https://www.dvac.tn.gov.in/Press_Release.html",
-    totalResults: 0,
-    results: [],
-  };
+  lazyFeed.reset();
 }
 
 export function getAvailableDvacPressReleaseDates(): string[] {
