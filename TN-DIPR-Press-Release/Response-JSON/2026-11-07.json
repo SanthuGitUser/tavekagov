@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-07",
+  "fetchedAt": "2026-11-10T16:02:23.554549+05:30",
+  "lastFetchedAt": "2026-11-10T16:02:23.554549+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-07"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22941,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.1008-Hon_ble_CM_Press_Release_-_Vetri_Laptop_Scheme-Date_07.11.2026_.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.1008-Hon'ble CM Press Release - Vetri Laptop Scheme-Date 07.11.2026 .pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-07",
+        "language": "en"
+      },
+      {
+        "id": 22942,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-PR_No.1009-Hon_ble_CM_DO_Letter_to_Hon_ble_PM_-_Mekedatu_Dam_Project_-Date__7.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-07",
+        "press_release_no": null,
+        "press_name": "DIPR-PR No.1009-Hon'ble CM DO Letter to Hon'ble PM - Mekedatu Dam Project -Date  7.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-07",
+        "language": "en"
+      },
+      {
+        "id": 22943,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.1010_Hon_ble_CM_Social_Media_Message_-_Deepawali_Festival_2026_-Date.07.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-07",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.1010 Hon'ble CM Social Media Message - Deepawali Festival 2026 -Date.07.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-07",
+        "language": "en"
+      },
+      {
+        "id": 22944,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.1011_Health_Department_Press_Release_-_Deepawali_Festival_2026_-Date.07.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.1011 Health Department Press Release - Deepawali Festival 2026 -Date.07.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-07",
+        "language": "en"
+      }
+    ]
+  }
+}

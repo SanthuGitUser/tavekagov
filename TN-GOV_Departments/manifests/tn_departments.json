@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.tn.gov.in/department_list.php",
-  "fetchedAt": "2026-10-07T17:12:56.077579+05:30",
+  "fetchedAt": "2026-11-10T16:03:20.538499+05:30",
   "count": 42,
   "departments": [
     {
@@ -135,7 +135,7 @@
       "dep_id_encoded": "MTQ=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MTQ=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru C. Joseph Vijay",
+      "minister_name": "Thiru A. Vijay Tamilan Parthiban",
       "display_order": 15
     },
     {
@@ -216,7 +216,7 @@
       "dep_id_encoded": "MjE=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjE=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru C. Joseph Vijay",
+      "minister_name": null,
       "display_order": 24
     },
     {
@@ -234,7 +234,7 @@
       "dep_id_encoded": "MjM=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjM=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru C. Joseph Vijay",
+      "minister_name": "Dr N. Marie Wilson",
       "display_order": 26
     },
     {
@@ -243,7 +243,7 @@
       "dep_id_encoded": "MjQ=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MjQ=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru C. Joseph Vijay",
+      "minister_name": "Thiru K. Thennarasu",
       "display_order": 27
     },
     {
@@ -297,7 +297,7 @@
       "dep_id_encoded": "MQ==",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MQ==",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru Vanni Arasu",
+      "minister_name": "Thiru C. Joseph Vijay",
       "display_order": 33
     },
     {
@@ -324,7 +324,7 @@
       "dep_id_encoded": "NDE=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=NDE=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru C. Joseph Vijay",
+      "minister_name": null,
       "display_order": 36
     },
     {
@@ -369,7 +369,7 @@
       "dep_id_encoded": "MzU=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzU=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru C. Joseph Vijay",
+      "minister_name": null,
       "display_order": 41
     },
     {
@@ -378,7 +378,7 @@
       "dep_id_encoded": "MzQ=",
       "profile_url": "https://www.tn.gov.in/dept_profile.php?dep_id=MzQ=",
       "icon_url": "https://www.tn.gov.in/sites/default/depart-list.png",
-      "minister_name": "Thiru C. Joseph Vijay",
+      "minister_name": "Thiru Aadhav Arjuna",
       "display_order": 42
     }
   ]

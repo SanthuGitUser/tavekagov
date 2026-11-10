@@ -2,70 +2,72 @@
   "version": 1,
   "jobs": {
     "dipr_press_releases": {
-      "last_sync_at": "2026-11-05T19:00:08+05:30",
-      "synced_through": "2026-11-05",
-      "last_item_count": 1149,
-      "health_status": "stale"
+      "last_sync_at": "2026-11-10T16:02:24+05:30",
+      "synced_through": "2026-11-10",
+      "last_item_count": 1170,
+      "health_status": "ok"
     },
     "government_orders": {
-      "last_sync_at": "2026-11-05T19:00:25+05:30",
-      "synced_through": "2026-11-05",
+      "last_sync_at": "2026-11-10T16:02:44+05:30",
+      "synced_through": "2026-11-10",
       "last_item_count": 76,
       "health_status": "ok"
     },
     "tva_magazine": {
-      "last_sync_at": "2026-11-05T19:00:44+05:30",
+      "last_sync_at": "2026-11-10T16:03:00+05:30",
       "synced_through": "2026-06-01",
       "last_item_count": 3,
       "health_status": "ok"
     },
     "departments": {
-      "last_sync_at": "2026-11-05T19:01:05+05:30",
+      "last_sync_at": "2026-11-10T16:03:20+05:30",
       "last_item_count": 42,
       "health_status": "ok"
     },
     "ministers": {
-      "last_sync_at": "2026-11-05T19:01:06+05:30",
+      "last_sync_at": "2026-11-10T16:03:22+05:30",
       "last_item_count": 35,
       "health_status": "ok"
     },
     "districts": {
-      "last_sync_at": "2026-11-05T19:01:25+05:30",
+      "last_sync_at": "2026-11-10T16:03:40+05:30",
       "last_item_count": 38,
       "health_status": "ok"
     },
     "news": {
-      "last_sync_at": "2026-11-05T19:01:46+05:30",
-      "synced_through": "2026-11-05",
-      "last_item_count": 299,
-      "health_status": "stale"
+      "last_sync_at": "2026-11-10T16:04:01+05:30",
+      "synced_through": "2026-11-09",
+      "last_item_count": 306,
+      "health_status": "ok"
     },
     "constituencies": {
-      "last_sync_at": "2026-11-05T19:01:26+05:30",
+      "last_sync_at": "2026-11-10T16:03:41+05:30",
       "last_item_count": 234,
       "health_status": "ok"
     },
     "gov_press_release_images": {
-      "last_sync_at": "2026-11-05T19:00:10+05:30",
-      "synced_through": "2026-11-05",
-      "last_item_count": 863,
+      "last_sync_at": "2026-11-10T16:02:26+05:30",
+      "synced_through": "2026-11-10",
+      "last_item_count": 864,
       "health_status": "stale"
     },
     "govt_schemes": {
-      "last_sync_at": "2026-11-05T19:01:41+05:30",
+      "last_sync_at": "2026-11-10T16:03:56+05:30",
       "count": 57,
       "last_item_count": 57,
       "health_status": "ok"
     },
     "dvac_press_releases": {
-      "last_sync_at": "2026-11-05T16:02:28+05:30",
-      "synced_through": "2026-11-04",
-      "last_item_count": 92,
+      "last_sync_at": "2026-11-10T16:02:28+05:30",
+      "synced_through": "2026-11-09",
+      "last_item_count": 93,
       "health_status": "ok"
     },
     "finance_notifications": {
-      "last_sync_at": "2026-11-10T15:46:56+05:30",
-      "count": 5
+      "last_sync_at": "2026-11-10T16:02:30+05:30",
+      "count": 5,
+      "last_item_count": 5,
+      "health_status": "ok"
     },
     "ias_transfers_postings": {
       "last_sync_at": "2026-11-05T16:02:49+05:30",
@@ -74,7 +76,7 @@
       "health_status": "ok"
     },
     "wiki_departments_ministers": {
-      "last_sync_at": "2026-11-05T19:01:06+05:30"
+      "last_sync_at": "2026-11-10T16:03:21+05:30"
     }
   },
   "health_refreshed_at": "2026-11-10"

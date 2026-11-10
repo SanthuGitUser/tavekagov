@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-10",
+  "fetchedAt": "2026-11-10T16:02:24.305686+05:30",
+  "lastFetchedAt": "2026-11-10T16:02:24.305686+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-10"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22949,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No.1016_Hon_ble_CM_Press_Release_-_WRD_Dept_-_ERI_Portal_Inauguration_-Date-_10.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-10",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No.1016 Hon'ble CM Press Release - WRD Dept - ERI Portal Inauguration -Date- 10.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-10",
+        "language": "en"
+      },
+      {
+        "id": 22950,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No_1017_OMCL-_Recruitment-Press_Release-Date.10.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-10",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No_1017 OMCL- Recruitment-Press Release-Date.10.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-10",
+        "language": "en"
+      },
+      {
+        "id": 22951,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_P.R.No_1018_Hon_ble_CM_Press_Release_-_Condolence_and_Relief_-_Thiruvannamalai__Dist_-CMPRF__Drowning_in_lake_-Date._10.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-10",
+        "press_release_no": null,
+        "press_name": "DIPR P.R.No_1018 Hon'ble CM Press Release - Condolence and Relief - Thiruvannamalai  Dist -CMPRF  Drowning in lake -Date. 10.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-10",
+        "language": "en"
+      }
+    ]
+  }
+}

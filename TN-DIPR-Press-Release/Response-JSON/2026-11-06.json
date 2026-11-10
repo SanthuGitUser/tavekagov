@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-06",
+  "fetchedAt": "2026-11-10T16:02:23.284209+05:30",
+  "lastFetchedAt": "2026-11-10T16:02:23.284209+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-06"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22933,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.1002-Training_Dept_Press_Release-All_India_Civil_Service_Coaching_Centre-English-Date_06.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.1002-Training Dept Press Release-All India Civil Service Coaching Centre-English-Date 06.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-06",
+        "language": "en"
+      },
+      {
+        "id": 22934,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.1002-Training_Dept_Press_Release-All_India_Civil_Service_Coaching_Centre-Tamil-Date_06.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.1002-Training Dept Press Release-All India Civil Service Coaching Centre-Tamil-Date 06.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-06",
+        "language": "en"
+      },
+      {
+        "id": 22935,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.1003-Directorate_of_Adi_Dravidar_Welfare-Press_Release-English-Date_06.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.1003-Directorate of Adi Dravidar Welfare-Press Release-English-Date 06.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-06",
+        "language": "en"
+      },
+      {
+        "id": 22936,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.1003-Directorate_of_Adi_Dravidar_Welfare-Press_Release-Tamil-Date_06.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.1003-Directorate of Adi Dravidar Welfare-Press Release-Tamil-Date 06.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-06",
+        "language": "en"
+      },
+      {
+        "id": 22937,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.1004-Dept_of_Employment___Training-Press_Release-Date_06.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.1004-Dept of Employment & Training-Press Release-Date 06.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-06",
+        "language": "en"
+      },
+      {
+        "id": 22938,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No-1005__Hon_ble_HRM_Minister_Press_Release_-_Date_-_06.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-06",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No-1005  Hon'ble HRM Minister Press Release - Date - 06.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-06",
+        "language": "en"
+      },
+      {
+        "id": 22939,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR__-_P.R.NO.1006_-_Hon_ble_Social_Justice_Minister_-_Press_Release_Mullai_-_Date_-_06.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-06",
+        "press_release_no": null,
+        "press_name": "DIPR  - P.R.NO.1006 - Hon'ble Social Justice Minister - Press Release Mullai - Date - 06.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-06",
+        "language": "en"
+      },
+      {
+        "id": 22940,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.NO.1007_-_Hon_ble_Social_Justice_Minister_-__Press_Release_Certificate_course_-_Date_-_06.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-06",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.NO.1007 - Hon'ble Social Justice Minister -  Press Release Certificate course - Date - 06.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-06",
+        "language": "en"
+      }
+    ]
+  }
+}

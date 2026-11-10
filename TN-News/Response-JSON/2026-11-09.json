@@ -1,0 +1,301 @@
+{
+  "date": "2026-11-09",
+  "fetchedAt": "2026-11-10T16:04:01.109382+05:30",
+  "lastFetchedAt": "2026-11-10T16:04:01.109382+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://newsdata.io/api/1/news",
+    "params": {
+      "q": "Tamil Nadu",
+      "country": "in",
+      "language": "en",
+      "domainurl": "news9live.com,frontline.thehindu.com,thenewsminute.com,timesnownews.com",
+      "category": "crime,business,politics,education,environment"
+    }
+  },
+  "response": {
+    "status": "success",
+    "totalResults": 6,
+    "apiReportedTotalResults": 7,
+    "results": [
+      {
+        "article_id": "a8910184b1a84ce42447e0acbbec88fd",
+        "link": "https://www.thenewsminute.com/tamil-nadu/tn-deputy-speaker-threatened-to-kill-my-family-made-me-record-video-absolving-him-victim",
+        "title": "TN Deputy Speaker threatened to kill my family, made me record video absolving him: Victim",
+        "description": "Karthik Kumar, who was seen in an earlier video saying that nothing had happened after he was assaulted by Tamil Nadu Deputy Speaker Ravi Shankar, now claims he was threatened into making that statement.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-09 12:22:23",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-09 12:37:27",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-09/qpspsler/Karthik.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 97.45,
+          "neutral": 1.83,
+          "positive": 0.72
+        },
+        "ai_tag": [
+          "crime",
+          "law and justice"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "9ef047d041e22e9041321df002a4afc7",
+        "link": "https://www.news9live.com/india/cop-beaten-to-death-it-techie-stabbed-10-unrelated-murders-reported-across-tamil-nadu-on-diwali-day-3023094",
+        "title": "Cop beaten to death, IT techie stabbed: 10 unrelated murders reported across Tamil Nadu on Diwali day",
+        "description": "10 unconnected murders were reported across Tamil Nadu during Diwali celebrations, claiming the lives of a police officer, an IT employee, and others. Police have set up special teams to arrest the suspects involved in the violent clashes.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "india"
+        ],
+        "creator": [
+          "ajay awana"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-09 11:26:00",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-09 11:43:02",
+        "image_url": "https://images.news9live.com/wp-content/uploads/2026/10/crime1.jpg",
+        "video_url": null,
+        "source_id": "news9live",
+        "source_name": "News9live",
+        "source_priority": 193096,
+        "source_url": "https://www.news9live.com",
+        "source_icon": "https://i.newsdata.io/news9live.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 96.8,
+          "neutral": 2.6,
+          "positive": 0.6
+        },
+        "ai_tag": [
+          "accidents"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "c0121d91093192d8fb9b2f9bc58a213e",
+        "link": "https://frontline.thehindu.com/politics/tamil-nadu-tvk-scraps-kurien-joseph-federalism-committee/article71682134.ece",
+        "title": "TVK allies oppose move to scrap Kurien Committee, while Congress stays largely silent",
+        "description": "The CPI, CPI(M), and VCK have demanded a rethink of the decision, while Congress MPs remain split and the IUML stays silent, exposing the political fault lines within Vijay’s ruling coalition.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "politics"
+        ],
+        "creator": [
+          "r.k. radhakrishnan"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-09 10:17:16",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-09 10:18:56",
+        "image_url": "https://fl-i.thgim.com/public/incoming/dqjw7d/article71682176.ece/alternates/LANDSCAPE_1200/tvk%20union%20state%20relations%20panel%20disbanded.jpg",
+        "video_url": null,
+        "source_id": "frontline_thehindu",
+        "source_name": "Frontline Thehindu",
+        "source_priority": 1079805,
+        "source_url": "https://frontline.thehindu.com",
+        "source_icon": "https://i.newsdata.io/frontline_thehindu.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 76.46,
+          "neutral": 22.78,
+          "positive": 0.76
+        },
+        "ai_tag": [
+          "politics",
+          "government"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "1803fcdc4601db233d16a41f2af06a37",
+        "link": "https://www.thenewsminute.com/tamil-nadu/kamal-haasans-sandiyar-title-reignites-row-over-caste-pride-and-violence-in-kollywood",
+        "title": "Kamal Haasan’s ‘Sandiyar’ title reignites row over caste pride and violence in Kollywood",
+        "description": "More than two decades after Virumandi, Kamal Haasan’s decision to reuse the controversial title Sandiyar has brought back criticism about the tendency to romantise dominant caste pride and violence in southern Tamil Nadu.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "top",
+          "politics",
+          "entertainment"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-09 09:32:01",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-09 09:36:26",
+        "image_url": "https://cf-images.assettype.com/thenewsminute%2F2026-11-09%2F3f67sgbt%2Fsandiyar.jpg?rect=0%2C0%2C3508%2C1973&w=1200&h=675&auto=format%2Ccompress&fit=crop",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 93.55,
+          "neutral": 5.75,
+          "positive": 0.7
+        },
+        "ai_tag": [
+          "movies",
+          "politics"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "6f6ec699ce2bb55150ad1c34ec44598b",
+        "link": "https://www.thenewsminute.com/tamil-nadu/video-of-tn-deputy-speaker-slapping-man-goes-viral-victim-says-incident-misrepresented",
+        "title": "Video of TN Deputy Speaker slapping man goes viral, victim says incident misrepresented",
+        "description": "The man, identified as Karthik Kumar, a resident of Tiruchirappalli district, had reportedly approached the MLA with complaints about drinking water shortages and garbage accumulation in his neighbourhood.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "tamil nadu"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-09 07:25:27",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-09 07:36:18",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/2026-11-09/y5cylpvd/TNDeputySpeaker.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 92.55,
+          "neutral": 6.81,
+          "positive": 0.64
+        },
+        "ai_tag": [
+          "accidents",
+          "crime"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      },
+      {
+        "article_id": "3bdf1fb8ebd26bf4dc699986818c8ddd",
+        "link": "https://www.thenewsminute.com/karnataka/bengaluru-grindstone-murders-five-of-seven-victims-found-two-bodies-recovered-in-mysuru",
+        "title": "Bengaluru grindstone murders: Five of seven victims found, two bodies recovered in Mysuru",
+        "description": "The accused, Indushekhar, a cab driver who also ran a YouTube channel, was arrested on November 5.",
+        "content": "ONLY AVAILABLE IN PAID PLANS",
+        "keywords": [
+          "karnataka"
+        ],
+        "creator": [
+          "tnm staff"
+        ],
+        "language": "english",
+        "country": [
+          "india"
+        ],
+        "category": [
+          "crime",
+          "top"
+        ],
+        "datatype": "news",
+        "pubDate": "2026-11-09 04:43:21",
+        "pubDateTZ": "UTC",
+        "fetched_at": "2026-11-09 05:06:41",
+        "image_url": "https://cf-images.assettype.com/thenewsminute/import/sites/default/files/suicide_-_1200.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+        "video_url": null,
+        "source_id": "thenewsminute",
+        "source_name": "The News Minute",
+        "source_priority": 51417,
+        "source_url": "https://www.thenewsminute.com",
+        "source_icon": "https://i.newsdata.io/thenewsminute.png",
+        "sentiment": "negative",
+        "sentiment_stats": {
+          "negative": 94.48,
+          "neutral": 4.95,
+          "positive": 0.57
+        },
+        "ai_tag": [
+          "crime",
+          "law and justice"
+        ],
+        "ai_region": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_org": "ONLY AVAILABLE IN CORPORATE PLANS",
+        "ai_summary": "ONLY AVAILABLE IN PAID PLANS",
+        "duplicate": false
+      }
+    ],
+    "pagesFetched": 1
+  }
+}

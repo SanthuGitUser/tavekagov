@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-09",
+  "fetchedAt": "2026-11-10T16:02:24.063125+05:30",
+  "lastFetchedAt": "2026-11-10T16:02:24.063125+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-09"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22946,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.1013_-_Hon_ble_CM_Condolences_and_Relief_for_the_family_of_the_deceased_Special_Sub-Inspector_of_Police_-_Date.09.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.1013 - Hon'ble CM Condolences and Relief for the family of the deceased Special Sub-Inspector of Police - Date.09.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-09",
+        "language": "en"
+      },
+      {
+        "id": 22947,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.1014_-_Hon_ble_CM_Press_Release_-_Transport_Dept_-_Vehicle_Location_Tracking_Device_-_Date.09.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.1014 - Hon'ble CM Press Release - Transport Dept - Vehicle Location Tracking Device - Date.09.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-09",
+        "language": "en"
+      },
+      {
+        "id": 22948,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR_-_P.R.No.1015_-_Hon_ble_CM_Press_Release_-_Transport_Dept_-_1000_AC_Buses_-_Date.09.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-10",
+        "press_release_no": null,
+        "press_name": "DIPR - P.R.No.1015 - Hon'ble CM Press Release - Transport Dept - 1000 AC Buses - Date.09.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-09",
+        "language": "en"
+      }
+    ]
+  }
+}

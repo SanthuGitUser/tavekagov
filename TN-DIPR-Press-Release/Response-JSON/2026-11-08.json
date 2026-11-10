@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-08",
+  "fetchedAt": "2026-11-10T16:02:23.808803+05:30",
+  "lastFetchedAt": "2026-11-10T16:02:23.808803+05:30",
+  "fetchCount": 1,
+  "request": {
+    "method": "GET",
+    "url": "https://dipr.tn.gov.in/dipr_api/v1/general/pressReleases/press_release",
+    "params": {
+      "date": "2026-11-08"
+    }
+  },
+  "response": {
+    "success": 1,
+    "data": [
+      {
+        "id": 22945,
+        "press_file_name": "/uploads/tn_govt_press_release/DIPR-P.R.No.1012-Hon_ble_Ministers_Press_Release-Veeramamunivar_Birthday_Function-Date_08.11.2026.pdf",
+        "uploaded_by": "459",
+        "uploaded_date": "2026-11-10",
+        "press_release_no": null,
+        "press_name": "DIPR-P.R.No.1012-Hon'ble Ministers Press Release-Veeramamunivar Birthday Function-Date 08.11.2026.pdf",
+        "mimetype": "application/pdf",
+        "pr_date": "2026-11-08",
+        "language": "en"
+      }
+    ]
+  }
+}
